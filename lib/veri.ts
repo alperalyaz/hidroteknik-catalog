@@ -21,9 +21,17 @@ export type Kategori = {
   h1: string
   ozet: string
   giris: string
+  /** Ürün ADINDA aranan regex. Kodla eşleşen gruplarda boş olabilir. */
   eslesme: string
   eslesme2?: string
   haric: string
+  /**
+   * Stok KODUNDA aranan regex. Ürün adı ne olduğunu söylemediğinde tek
+   * dayanak budur (ör. sızdırmazlıkta "k21-040/11", imalatta "CNC-AK-63X75").
+   */
+  eslesmeKod?: string
+  /** Stok kodu üzerinden hariç tutma. */
+  haricKod?: string
   sss: Sss[]
   /** Bu grupta stokta bulunan markalar. Marka araması yapan kullanıcı için. */
   markalar?: string[]

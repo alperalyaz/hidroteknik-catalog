@@ -6,7 +6,7 @@
   "ozet": "Hidrolik hortum: 1SN, 2SN, 2SC, 4SP, 4SH ve R6 tipleri. Gates, Alfagomma, Forcestream, Seltex ve Ultimate. Presleme yerinde, aynı gün.",
   "giris": "Hidrolik hortum, sistemdeki basıncı kaybetmeden akışkanı taşıyan esnek bağlantı elemanıdır. Doğru hortum seçimi üç değere bağlıdır: çalışma basıncı, akışkan sıcaklığı ve iç çap. Bu üçünden biri yanlış seçildiğinde hortum ya erken yorulur ya da patlama riski taşır.\n\nHidroteknik, Denizli'deki deposunda 1SN ve 2SN tek/çift örgülü, 4SP ve 4SH çok katlı spiral ve termoplastik hortum tiplerini bulundurur. Hortum presleme işlemi kendi tesisimizde yapılır; standart ölçüler için genellikle aynı gün teslim edilir.",
   "eslesme": "HORTUM",
-  "haric": "KELEPÇE|KELEPCE|MAKAS|VALF|KART[İIi]C[İIi]|PATLAMA|MAKARA|SPREY|[İIi]MALAT|REV[İIi]ZYON|DEĞ[İIi]Ş[İIi]M|TAM[İIi]R|MONTAJ|[İIi]ŞÇ[İIi]L[İIi]K|BAKIM",
+  "haric": "RAKOR|REKOR|N[İIi]PEL|TAPA|SOKET|KELEPÇE|KELEPCE|MAKAS|VALF|KART[İIi]C[İIi]|PATLAMA|MAKARA|SPREY|POL[İIi][ÜU]R[AE]TAN|POLYAM[İIi]D|HAVA HORTUMU|TEFLON|PTFE|[İIi]MALAT|REV[İIi]ZYON|DEĞ[İIi]Ş[İIi]M|TAM[İIi]R|MONTAJ|[İIi]ŞÇ[İIi]L[İIi]K|BAKIM",
   "sss": [
    {
     "s": "1SN ve 2SN hortum arasındaki fark nedir?",
@@ -30,6 +30,7 @@
    "Alfagomma",
    "Forcestream",
    "Gates",
+   "HansaFlex",
    "Seltex",
    "Ultimate",
    "Vereks"
@@ -66,7 +67,9 @@
    }
   ],
   "eslesme2": "",
-  "markalar": [],
+  "markalar": [
+   "Ferro"
+  ],
   "standartlar": [
    "DIN 2353 (L / S serisi)",
    "BSP (ISO 228)",
@@ -127,7 +130,9 @@
     "c": "Katalog basıncı içinde kaldığı sürece evet. Dikkat edilecek nokta uzunluğun yarattığı kaldıraç etkisidir: titreşimli uygulamalarda uzun nipel bağlantı noktasına ek yük bindirir, mümkünse desteklenmelidir."
    }
   ],
-  "markalar": [],
+  "markalar": [
+   "Pemaks"
+  ],
   "standartlar": [
    "DIN 2353 (L / S)",
    "BSP (ISO 228)",
@@ -169,13 +174,13 @@
  },
  {
   "slug": "hidrolik-valf",
-  "ad": "Hidrolik ve Pnömatik Valf",
-  "h1": "Hidrolik ve Pnömatik Valfler",
-  "ozet": "Yön kontrol, basınç ayar, çek ve hız ayar valfleri. NG6/NG10 modüler valfler ve pnömatik seri dahil 750+ kalem.",
+  "ad": "Hidrolik Valf",
+  "h1": "Hidrolik Valf: Yön Kontrol, Basınç, Çek ve Hız Ayar Valfleri",
+  "ozet": "Yön kontrol, basınç ayar, çek ve hız ayar valfleri. NG6/NG10 modüler valfler, hat tipi yük tutma ve kilit valfleri. Pnömatik valfler ayrı bir gruptur.",
   "giris": "Valf, hidrolik veya pnömatik devrede akışkanın nereye, ne kadar ve hangi basınçla gideceğini belirleyen elemandır. Devrenin \"karar veren\" parçasıdır: silindir kuvveti üretir, pompa akış sağlar, ama hareketin yönünü ve hızını valf tayin eder.\n\nÜç ana aile vardır. Yön kontrol valfleri akışın hangi hatta gideceğini seçer (4/2, 4/3 gibi konum-yol tanımlarıyla anılır). Basınç valfleri emniyet ve ayar görevi görür; emniyet valfi sistemin maksimum basıncını sınırlar. Akış valfleri ise hızı belirler. Modüler NG6 ve NG10 valfler bunları üst üste dizerek kompakt devre kurmayı sağlar.",
   "eslesme": "VALF",
   "eslesme2": "",
-  "haric": "[İIi]MALAT|REV[İIi]ZYON|DEĞ[İIi]Ş[İIi]M|TAM[İIi]R|MONTAJ|[İIi]ŞÇ[İIi]L[İIi]K|BAKIM",
+  "haric": "(PN[ÖO]MAT|NAMUR|SEMAKMAT|PEMAKS|VEMA|CAMOZZ[İI]|METALWORK|[35]/[23]|[35]-[23]|SLAYT|PEDAL|MEKAN[İIi]K KONTROL|HAVA KUMANDALI|HAVA UYAR|HAVA YAY|KOL KUMANDA|MAN[İIi]FOLDU|GRUP VALF).*VALF|VALF.*(PN[ÖO]MAT|NAMUR|SEMAKMAT|PEMAKS|VEMA|CAMOZZ[İI]|METALWORK|[35]/[23]|[35]-[23]|SLAYT|PEDAL|MEKAN[İIi]K KONTROL|HAVA KUMANDALI|HAVA UYAR|HAVA YAY|KOL KUMANDA|MAN[İIi]FOLDU|GRUP VALF)|[İIi]MALAT|REV[İIi]ZYON|DEĞ[İIi]Ş[İIi]M|TAM[İIi]R|MONTAJ|[İIi]ŞÇ[İIi]L[İIi]K|BAKIM",
   "sss": [
    {
     "s": "Emniyet valfi ile basınç düşürme valfi aynı şey mi?",
@@ -193,10 +198,13 @@
   "markalar": [
    "Akon",
    "Ferro",
+   "Hema",
    "Hidroteknik",
+   "Hydropack",
    "Hystar",
    "Oleocontrol",
-   "SMS"
+   "Oleostar",
+   "SMS Tork"
   ],
   "standartlar": [
    "NG6 / CETOP 3",
@@ -229,9 +237,10 @@
   ],
   "markalar": [
    "Casappa",
-   "HMS",
    "Hema",
-   "Hidroteknik"
+   "Hidroteknik",
+   "HMS",
+   "Hydropack"
   ],
   "standartlar": [
    "Dişli pompa",
@@ -246,8 +255,8 @@
   "h1": "Hidrolik Silindir İmalatı, Revizyonu ve Yedek Parçaları",
   "ozet": "Ölçüye göre hidrolik silindir imalatı ve revizyonu. Arka kapak, çelik kep, piston, boğaz takozu ve bilezik kendi tezgâhlarımızda işlenir.",
   "giris": "Hidrolik silindir, basınçlı akışkanın enerjisini doğrusal harekete ve kuvvete çeviren elemandır. Ürettiği kuvvet basit bir ilişkiye dayanır: kuvvet, basınç ile piston alanının çarpımıdır. İtme yönünde tam piston alanı çalışır; çekme yönünde mil kesiti düştüğü için aynı basınçta elde edilen kuvvet daha küçüktür. Bir silindiri değiştirirken yalnız çapa değil, mil çapına ve bağlantı tipine de bakmak gerekir.\n\nBiz bu ürünü raftan satmıyoruz — ölçüye göre imal ediyoruz. Arka kapak, döküm ve çelik kep, vidalı ve yataklamalı piston, boğaz takozu ve bilezik gibi parçalar kendi tezgâhlarımızda işlenir; bu yüzden standart dışı boy, özel bağlantı veya artık tedarik edilemeyen bir silindirin muadili de yapılabilir.\n\nRevizyonda önce sökülüp ölçü alınır: mil aşınması, boru iç çapı ve keçe yuvaları kontrol edilir. Çoğu arıza silindirin tamamını değiştirmeyi gerektirmez; keçe takımı, boğaz takozu veya mil değişimiyle çözülür. Elinizdeki silindiri getirin, ölçüsünü bilmenize gerek yok.",
-  "eslesme": "CNC yedek parça / imalat kalemleri",
-  "haric": "",
+  "eslesme": "",
+  "haric": "[İIi]MALAT|REV[İIi]ZYON|DEĞ[İIi]Ş[İIi]M|TAM[İIi]R|MONTAJ|[İIi]ŞÇ[İIi]L[İIi]K|BAKIM",
   "sss": [
    {
     "s": "Stokta hazır hidrolik silindir var mı?",
@@ -274,7 +283,8 @@
    "Ölçüye göre imalat",
    "Revizyon",
    "Tek ve çift etkili"
-  ]
+  ],
+  "eslesmeKod": "^CNC\\."
  },
  {
   "slug": "kuresel-vana",
@@ -301,7 +311,9 @@
   ],
   "markalar": [
    "Duravis",
-   "Oleocontrol"
+   "Ferro",
+   "Oleocontrol",
+   "SMS Tork"
   ],
   "standartlar": [
    "BSPP",
@@ -314,7 +326,7 @@
   "ad": "O-Ring ve Conta",
   "h1": "O-Ring Ölçüleri, Şerit O-Ring ve Conta",
   "ozet": "NBR, FKM (Viton) ve EPDM malzemelerde metrik ve inç O-ring ölçüleri. Silindir keçesi, nutring ve sıyırıcı ayrı bir gruptur.",
-  "giris": "O-ring, iki yüzey arasında sıkışarak sızdırmazlık sağlayan en yaygın conta tipidir. Seçimde iki değer belirleyicidir: ölçü (iç çap × kesit çapı) ve malzeme.\n\nMalzeme seçimi akışkana ve sıcaklığa göre yapılır. NBR genel hidrolik yağlarda standart tercihtir ve yaklaşık -30 °C ile +100 °C arasında çalışır. FKM (Viton) yüksek sıcaklık ve agresif akışkanlarda kullanılır. EPDM su ve fren hidroliğinde uygundur ancak mineral yağla birlikte kullanılmaz — bu, sahada en sık yapılan malzeme hatasıdır.\n\nO-ring, sızdırmazlık takımının yalnızca bir parçasıdır. Hidrolik silindirlerde asıl işi yapan nutring, piston keçesi, sıyırıcı ve yataklama ayrı bir gruptur ve stoğumuzun çok daha büyük bölümünü oluşturur (5.307 kalem); onlar için «Hidrolik Keçe, Nutring ve Sıyırıcı» sayfasına bakın.",
+  "giris": "O-ring, iki yüzey arasında sıkışarak sızdırmazlık sağlayan en yaygın conta tipidir. Seçimde iki değer belirleyicidir: ölçü (iç çap × kesit çapı) ve malzeme.\n\nMalzeme seçimi akışkana ve sıcaklığa göre yapılır. NBR genel hidrolik yağlarda standart tercihtir ve yaklaşık -30 °C ile +100 °C arasında çalışır. FKM (Viton) yüksek sıcaklık ve agresif akışkanlarda kullanılır. EPDM su ve fren hidroliğinde uygundur ancak mineral yağla birlikte kullanılmaz — bu, sahada en sık yapılan malzeme hatasıdır.\n\nO-ring, sızdırmazlık takımının yalnızca bir parçasıdır. Hidrolik silindirlerde asıl işi yapan nutring, piston keçesi, sıyırıcı ve yataklama ayrı bir gruptur ve stoğumuzun çok daha büyük bölümünü oluşturur (5.297 kalem); onlar için «Hidrolik Keçe, Nutring ve Sıyırıcı» sayfasına bakın.",
   "eslesme": "O.?R[İIi]NG",
   "haric": "POMPA|VALF|S[İIi]L[İIi]ND[İIi]R|TAKOZ|[İIi]MALAT|REV[İIi]ZYON|DEĞ[İIi]Ş[İIi]M|TAM[İIi]R|MONTAJ|[İIi]ŞÇ[İIi]L[İIi]K|BAKIM|APARAT",
   "sss": [
@@ -347,7 +359,7 @@
   "slug": "hidrolik-kece-nutring",
   "ad": "Hidrolik Keçe, Nutring ve Sıyırıcı",
   "h1": "Hidrolik Keçe, Nutring ve Sıyırıcı — Kastaş Profil Kodlarıyla",
-  "ozet": "Mil ve piston keçesi, nutring, sıyırıcı, yataklama ve destek ringi. K21, K06, K22, K23, K33 ve diğer Kastaş profillerinde 5.300’ü aşkın ölçü stokta.",
+  "ozet": "Mil ve piston keçesi, nutring, sıyırıcı, yataklama ve destek ringi. K21, K06, K22, K23, K33 ve diğer Kastaş profillerinde 5.290'ı aşkın ölçü stokta.",
   "giris": "Bir hidrolik silindirin sızdırmazlığını tek bir parça sağlamaz. Mil tarafında nutring ve boğaz keçesi, piston tarafında piston keçesi, dışarıya karşı sıyırıcı (toz keçesi), yükü taşıyan yataklama ve yüksek basınçta keçeyi arkadan tutan destek ringi birlikte çalışır. Revizyonda genellikle takımın tamamı yenilenir; yalnız sızdıran parçayı değiştirmek çoğu zaman aynı arızayı kısa sürede geri getirir.\n\nKastaş'ta her profilin bir kodu vardır: K21, K06, K22, K23, K33 ve devamı. Sipariş için gereken iki bilgi profil kodu ve üç ölçüdür. Ölçü daima üç sayı halinde yazılır — örneğin K21-040/11 (40 × 50 × 8): iki çap ve yükseklik.\n\nÖlçü sırası parçanın nereye oturduğunu da söyler. Sayılar büyüyorsa (40 × 50) parça mil üzerine geçer, küçülüyorsa (63 × 51) piston üzerine oturur. Stoğumuzda bu ayrım kod bazında tutarlıdır: K21, K22, K06, K33, K68 ve K37 mil tarafı; K23, K18, K69 ve K17 piston tarafıdır.\n\nMalzeme kodun sonunda yazar. PU (poliüretan) aşınmaya en dayanıklı seçenektir ve mobil hidrolikte standart tercihtir; NBR mineral yağlı sistemlerde ekonomik çözümdür; FKM (Viton) yüksek sıcaklık ve agresif akışkanlar içindir. Aynı profilin PU ve NBR versiyonu çoğu zaman birlikte stoklanır — K21 ailesinin 1.223 ölçüsünün yarısı PU'dur.\n\nProfil kodunu bilmiyorsanız sorun değil: sökülen parçanın fotoğrafı ile mil çapı, yatak çapı ve yükseklik ölçüsü yeterlidir. Ölçüyü temizlenmiş ve gerilmemiş parça üzerinden, tercihen kumpasla alın; basınç altında kalmış bir keçe kalıcı deforme olabildiği için gözle tahmin yanıltır.",
   "eslesmeKod": "^KASTAS\\.",
   "haricKod": "^KASTAS\\.(KO|KX|KSO)",
@@ -389,7 +401,7 @@
   "profiller": [
    {
     "kod": "K21",
-    "ad": "Nutring",
+    "ad": "Nutring — piston boğaz keçesi",
     "yer": "Mil",
     "adet": 1223,
     "ornek": "K21-008/5 PU · 8 × 14 × 4"
@@ -398,23 +410,26 @@
     "kod": "K22",
     "yer": "Mil",
     "adet": 399,
-    "ornek": "K22-030/1 PU · 30 × 40 × 6"
+    "ornek": "K22-030/1 PU · 30 × 40 × 6",
+    "ad": "Mil keçesi"
    },
    {
     "kod": "K06",
     "yer": "Mil",
     "adet": 342,
-    "ornek": "K06-040 PU · 40 × 48 × 7/5"
+    "ornek": "K06-040 PU · 40 × 48 × 7/5",
+    "ad": "Sıyırıcı (toz keçesi)"
    },
    {
     "kod": "K23",
     "yer": "Piston",
     "adet": 328,
-    "ornek": "K23-014/1 · 14 × 8 × 4,5"
+    "ornek": "K23-014/1 · 14 × 8 × 4,5",
+    "ad": "Piston keçesi"
    },
    {
     "kod": "K33",
-    "ad": "Boğaz nutringi",
+    "ad": "Boğaz nutringi (mil keçesi)",
     "yer": "Mil",
     "adet": 294,
     "ornek": "K33-040 PU · 40 × 50 × 10"
@@ -423,49 +438,57 @@
     "kod": "K68",
     "yer": "Mil",
     "adet": 198,
-    "ornek": "K68-040/1 · 40 × 44 × 9,5"
+    "ornek": "K68-040/1 · 40 × 44 × 9,5",
+    "ad": "Mil yataklaması (kılavuz ring)"
    },
    {
     "kod": "K37",
     "yer": "Mil",
     "adet": 197,
-    "ornek": "K37-006 · 6 × 14 × 6,5"
+    "ornek": "K37-006 · 6 × 14 × 6,5",
+    "ad": "Mil keçesi"
    },
    {
     "kod": "K18",
     "yer": "Piston",
     "adet": 166,
-    "ornek": "K18 063-051 · 63 × 51 × 20,5"
+    "ornek": "K18 063-051 · 63 × 51 × 20,5",
+    "ad": "Kompakt piston keçesi"
    },
    {
     "kod": "K38",
     "yer": "Mil",
     "adet": 151,
-    "ornek": "K38-045 PU · 45 × 53 × 5,8"
+    "ornek": "K38-045 PU · 45 × 53 × 5,8",
+    "ad": "Mil keçesi"
    },
    {
     "kod": "K69",
     "yer": "Piston",
     "adet": 150,
-    "ornek": "K69-035/6 · 35 × 30 × 5,4"
+    "ornek": "K69-035/6 · 35 × 30 × 5,4",
+    "ad": "Piston yataklaması (kılavuz ring)"
    },
    {
     "kod": "K09",
     "yer": "Mil",
     "adet": 124,
-    "ornek": "K09-025 · 25 × 33 × 7/4"
+    "ornek": "K09-025 · 25 × 33 × 7/4",
+    "ad": "Sıyırıcı"
    },
    {
     "kod": "K27",
     "yer": "Mil",
     "adet": 113,
-    "ornek": "K27-036 · 36 × 44 × 7/5"
+    "ornek": "K27-036 · 36 × 44 × 7/5",
+    "ad": "Çift dudaklı sıyırıcı"
    },
    {
     "kod": "K01",
     "yer": "Mil",
     "adet": 106,
-    "ornek": "K01-080 · 80 × 95 × 22,5"
+    "ornek": "K01-080 · 80 × 95 × 22,5",
+    "ad": "Mil sızdırmazlık paketi"
    },
    {
     "kod": "KBT / KPB / KSB",
@@ -483,7 +506,7 @@
    },
    {
     "kod": "K19",
-    "ad": "Piston keçesi",
+    "ad": "Çift etkili kompakt piston keçesi",
     "yer": "Piston",
     "adet": 5,
     "ornek": "K19 075-060 · 75 × 60 × 11"
@@ -497,13 +520,13 @@
    },
    {
     "kod": "K94",
-    "ad": "Toz keçesi (sıyırıcı)",
+    "ad": "Sıyırıcı (toz keçesi)",
     "yer": "Mil",
     "adet": 2,
     "ornek": "K94-060 · 60 × 70 × 6,3/10"
    }
   ],
-  "profilNot": "«Takıldığı yer» sütunu ölçü sırasından okunur: iç çaptan dış çapa büyüyen ölçü mil tarafı, dış çaptan iç çapa küçülen ölçü piston tarafıdır. Tabloda en çok stok tuttuğumuz profiller vardır; Kastaş kataloğundaki diğer profilleri de temin ediyoruz."
+  "profilNot": "«Takıldığı yer» sütunu ölçü sırasından okunur: iç çaptan dış çapa büyüyen ölçü mil tarafı, dış çaptan iç çapa küçülen ölçü piston tarafıdır. Bu ayrımı Kastaş kataloğuyla karşılaştırdık ve tablodaki her kodda tuttu. İşlev sütunu da Kastaş kataloğundan alınmıştır; kataloğda karşılığını bulamadığımız kodlarda boş bırakıldı. Tabloda en çok stok tuttuğumuz profiller vardır; Kastaş kataloğundaki diğer profilleri de temin ediyoruz."
  },
  {
   "slug": "hortum-kelepce",
@@ -562,6 +585,7 @@
   ],
   "eslesme2": "S[İIi]L[İIi]ND[İIi]R",
   "markalar": [
+   "Ferro",
    "KDNT",
    "Pemaks"
   ],
@@ -578,8 +602,8 @@
   "h1": "Pnömatik Yön Kontrol Valfleri (5/2, 3/2, 5/3)",
   "ozet": "Solenoid, pedal, kol ve el kumandalı pnömatik valfler; 5/2, 3/2 ve 5/3 tipler, valf manifoldları. Pemaks ve muadili.",
   "giris": "Pnömatik valf, silindire havanın hangi yoldan gireceğini belirler. Adlandırma iki sayıdan oluşur: ilki yol (port) sayısı, ikincisi konum sayısıdır. 5/2 bir valf beş yollu ve iki konumludur ve çift etkili bir silindiri ileri–geri sürer. 3/2 valf üç yollu iki konumludur; tek etkili silindirlerde ve hava kesme görevinde kullanılır. 5/3 valfler ortada üçüncü bir konum taşır — kapalı merkezli tipte silindir bulunduğu yerde durur.\n\nKumanda şekli ikinci seçimdir: solenoid (bobinli) valfler elektrik sinyaliyle sürülür ve otomasyona bağlanır; pedal, kol ve el kumandalı tipler ise operatörün doğrudan kullandığı basit devrelerde tercih edilir. Solenoidlerde bobin gerilimi (24V DC, 220V AC) sipariş sırasında belirtilmelidir; gövde aynı olsa da bobin farklıdır.\n\nBirden çok valf kullanılan hatlarda tek tek bağlantı yerine manifold pleyt kullanılır: hava girişi ortaktır, montaj derli toplu olur ve bakım kolaylaşır.",
-  "eslesme": "VALF (pnömatik gövde ve seriler)",
-  "haric": "H[İI]DROL[İI]K",
+  "eslesme": "(PN[ÖO]MAT|NAMUR|SEMAKMAT|PEMAKS|VEMA|CAMOZZ[İI]|METALWORK|[35]/[23]|[35]-[23]|SLAYT|PEDAL|MEKAN[İIi]K KONTROL|HAVA KUMANDALI|HAVA UYAR|HAVA YAY|KOL KUMANDA|MAN[İIi]FOLDU|GRUP VALF).*VALF|VALF.*(PN[ÖO]MAT|NAMUR|SEMAKMAT|PEMAKS|VEMA|CAMOZZ[İI]|METALWORK|[35]/[23]|[35]-[23]|SLAYT|PEDAL|MEKAN[İIi]K KONTROL|HAVA KUMANDALI|HAVA UYAR|HAVA YAY|KOL KUMANDA|MAN[İIi]FOLDU|GRUP VALF)",
+  "haric": "H[İIi]DROL[İIi]|Y[ÜU]K TUT|K[İIi]L[İIi]T VALF|EMN[İIi]YET VALF|HORTUM PAT|AK[ÜU] ŞARJ|BASINÇ SIRALAMA|PLATFORM VALF|KATR[İIi]C|POPET|MOTOR VALF|SIFIRLAMA|ÇEKVALF|ÇEK VALF|BUHAR|YAKIT|DOĞALGAZ|SULAMA|KOMPRES[ÖO]R|OS[İIi]LAT[ÖO]R|DAMPER|AUTO DRAIN|[İIi]MALAT|REV[İIi]ZYON|DEĞ[İIi]Ş[İIi]M|TAM[İIi]R|MONTAJ|[İIi]ŞÇ[İIi]L[İIi]K|BAKIM",
   "sss": [
    {
     "s": "5/2 ile 3/2 valf arasındaki fark nedir?",
@@ -597,7 +621,9 @@
   "markalar": [
    "Hidroteknik",
    "Pemaks",
-   "Semakmatik"
+   "Semakmatik",
+   "SMS Tork",
+   "Vema"
   ],
   "standartlar": [
    "5/2",
@@ -613,7 +639,7 @@
   "ozet": "Push-in rakor, döner dirsek, te ve nipel bağlantılar; susturucu ve hız ayar elemanları. Pemaks ve muadili, 4–16 mm.",
   "giris": "Pnömatik bağlantıda hortum sıkılmaz, itilir: takmatik (push-in) rakorun içindeki paslanmaz tırnak hortumu tutar, o-ring sızdırmazlığı sağlar. Sökmek için bilezik bastırılır. Bu yüzden montaj alet istemez, ama rakor ölçüsünün hortumun DIŞ çapıyla eşleşmesi şarttır — 8 mm rakor 8x5,5 hortuma girer, 6x4’e girmez.\n\nGrupta düz rakor, 90° döner dirsek, te, düşürücü nipel ve kör tapa gibi tipler bulunur. Döner tipler montajdan sonra kendi ekseninde döndüğü için hortumun burulmasını engeller; hareketli aparatlarda ömrü belirgin şekilde uzatır. Diş tarafı genelde BSP (1/8, 1/4, 3/8, 1/2) veya metriktir; hazneye vidalanan uçta oring veya conta bulunur.\n\nAynı grupta egzoz susturucu, ayarlı susturucu ve otomatik tahliye elemanları da yer alır; bunlar valfin çıkış gürültüsünü ve hava hızını düzenler.",
   "eslesme": "REKOR BAĞLANTI|D[ÖO]NER D[İI]RSEK|ÇABUK EKLEME|TE BAĞLANTI|SUSTURUCU",
-  "haric": "",
+  "haric": "H[İIi]DROL[İIi]K|BSP-METR[İIi]K|[İIi]MALAT|REV[İIi]ZYON|DEĞ[İIi]Ş[İIi]M|TAM[İIi]R|MONTAJ|[İIi]ŞÇ[İIi]L[İIi]K|BAKIM",
   "sss": [
    {
     "s": "Takmatik rakor ölçüsü nasıl seçilir?",
@@ -629,6 +655,7 @@
    }
   ],
   "markalar": [
+   "Ferro",
    "Pemaks"
   ],
   "standartlar": [
@@ -643,7 +670,7 @@
   "h1": "Poliüretan, Polyamid ve PTFE Pnömatik Hortum",
   "ozet": "Basınçlı hava hatları için poliüretan (PU), polyamid (PA) ve teflon (PTFE) hortum. 4x2,5’ten 16x12’ye kadar metrede satış.",
   "giris": "Pnömatik hortum, hidrolik hortumla aynı işi yapmaz: basınç çok daha düşüktür (tipik olarak 6–10 bar), buna karşılık hat sık hareket eder ve dar yerlerden kıvrılarak geçer. Bu yüzden çelik örgü değil, esnek plastik gövde kullanılır ve ölçü dış çap x iç çap olarak verilir — 8x5,5 ifadesi 8 mm dış, 5,5 mm iç çap demektir. Takmatik (push-in) rakorlar dış çapa göre seçildiği için bu iki sayıyı karıştırmamak gerekir.\n\nPoliüretan (PU) en yaygın olanıdır: yumuşaktır, küçük yarıçapta kıvrılır, hareketli aparatlarda ezilmeye dayanır. Polyamid (PA) daha serttir ve daha yüksek sıcaklığa çıkar; sabit tesisat hatlarında ve makine içi döşemede tercih edilir. PTFE (teflon) hortum ise kimyasal dayanımı ve sıcaklık aralığı gerektiren yerlerde kullanılır.\n\nMetre ile satılır; istenen boyda kesilir. Şeffaf spiral ve örgülü hava hortumu tipleri de aynı grupta bulunur.",
-  "eslesme": "POL[İI][ÜU]RETAN|POLYAM[İI]D|TEFLON HORTUM|PTFE|HAVA HORTUMU",
+  "eslesme": "POL[İIi][ÜU]R[AE]TAN|POLYAM[İIi]D|TEFLON HORTUM|PTFE|HAVA HORTUMU",
   "haric": "RAKOR|REKOR|SOKET|KELEP",
   "sss": [
    {
@@ -660,7 +687,9 @@
    }
   ],
   "markalar": [
+   "HansaFlex",
    "Java",
+   "Pemaks",
    "Seltex"
   ],
   "standartlar": [

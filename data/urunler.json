@@ -4,1740 +4,808 @@
  "siralama": "aylık tüketim (sa_aylik_tuketim) — en çok hareket gören üstte",
  "kategoriler": {
   "hidrolik-hortum": {
-   "toplamUrun": 287,
+   "toplamUrun": 349,
    "urunler": [
     {
      "kod": "SEL.YIKAMA.01805",
-     "ad": "SEL YIKAMA HORTUMU 5/16 R2",
-     "marka": "Seltex",
-     "model": "R2"
-    },
-    {
-     "kod": "ALFA.H2-013",
-     "ad": "ALFAGOMMA R2 HİDROLİK HORTUM 1/2",
-     "marka": "Alfagomma",
-     "model": "R2"
-    },
-    {
-     "kod": "ALFA.H2-010",
-     "ad": "ALFAGOMMA R2 HİDROLİK HORTUM 3/8",
-     "marka": "Alfagomma",
-     "model": "R2"
-    },
-    {
-     "kod": "GATES.4657-9923",
-     "ad": "GATES 8PRO 2SC 1/2 HİDROLİK HORTUM",
-     "marka": "Gates",
-     "model": "8PRO 2SC"
-    },
-    {
-     "kod": "VR.H2-008-ST-YIKAMA",
-     "ad": "VEREKS YIKAMA HORTUMU 5/16",
-     "marka": "Vereks",
-     "model": ""
-    },
-    {
-     "kod": "GATES.4657-9922",
-     "ad": "GATES 6PRO2TX 3/8 HİDROLİK HORTUM",
-     "marka": "Gates",
-     "model": "6PRO2TX"
+     "ad": "SEL YIKAMA HORTUMU 5/16 R2"
     },
     {
      "kod": "SEL.R6.08",
      "ad": "SELTEX R6 ( 1/2 ) HİDROLİK HORTUM",
-     "marka": "Seltex",
-     "model": "R6"
+     "marka": "Seltex"
+    },
+    {
+     "kod": "SEL.FR2.SC.07",
+     "ad": "FORCESTREAM R2AT /2 SC ( 5/16 ) HİDROLİK HORTUM",
+     "marka": "Forcestream"
+    },
+    {
+     "kod": "HANSA.KP208",
+     "ad": "HansaFlex 2SC 5/16 hidrolik hortum",
+     "marka": "HansaFlex"
+    },
+    {
+     "kod": "HANSA.HD525",
+     "ad": "HansaFlex 4SH 1 İNÇ hidrolik hortum",
+     "marka": "HansaFlex"
+    },
+    {
+     "kod": "GATES.4657-9923",
+     "ad": "GATES 8PRO 2SC 1/2 HİDROLİK HORTUM",
+     "marka": "Gates"
     },
     {
      "kod": "GATES.MXT.06",
      "ad": "GATES 6MXT 3/8 2SC HİDROLİK HORTUM",
-     "marka": "Gates",
-     "model": "6MXT"
+     "marka": "Gates"
     },
     {
-     "kod": "ALFA.H2-006",
-     "ad": "ALFAGOMMA R2 HİDROLİK HORTUM 1/4",
-     "marka": "Alfagomma",
-     "model": "R2"
+     "kod": "SARI.1502",
+     "ad": "SARI HORTUM EKLERİ 8 mm",
+     "model": "8 mm"
     },
     {
-     "kod": "SEL.FR2.SC.07",
-     "ad": "FORCESTREAM R2AT / 2SC ( 5/16 ) HİDROLİK HORTUM",
-     "marka": "Forcestream",
-     "model": "R2AT / 2SC"
+     "kod": "SARI.1503",
+     "ad": "SARI HORTUM EKLERİ 10 mm",
+     "model": "10 mm"
+    },
+    {
+     "kod": "AD-0808-HE",
+     "ad": "HORTUM EKİ 5/16",
+     "model": "5/16"
+    },
+    {
+     "kod": "AD-1010-HE",
+     "ad": "HORTUM EKİ 3/8",
+     "model": "3/8"
+    },
+    {
+     "kod": "MUH.246",
+     "ad": "5/8 HİDROLİK HORTUM"
     },
     {
      "kod": "SEL.YIKAMA.MAVİ",
-     "ad": "SEL YIKAMA 5/16 CAR WASH MAVİ HORTUM",
-     "marka": "Seltex",
-     "model": ""
+     "ad": "SEL YIKAMA 5/16 CAR WASH MAVİ HORTUM"
     },
     {
-     "kod": "SEL.FR1.08",
-     "ad": "FORCESTREAM R1AT / 1SN ( 1/2 ) HİDROLİK HORTUM",
-     "marka": "Forcestream",
-     "model": "R1AT / 1SN"
+     "kod": "HANSA.KP225",
+     "ad": "HansaFlex 2SC 1 inç hidrolik hortum",
+     "marka": "HansaFlex"
     },
     {
-     "kod": "SEL.FR2.SC.04",
-     "ad": "FORCESTREAM R2 SC ( 1/4 ) HİDROLİK HORTUM",
-     "marka": "Forcestream",
-     "model": "R2"
+     "kod": "SARI.1403",
+     "ad": "SARI HORTUM TE ÜÇLÜ 10 mm",
+     "model": "10 mm"
     },
     {
      "kod": "GATES.MXT.05",
      "ad": "GATES 5MXT 5/16 2SC HİDROLİK HORTUM",
-     "marka": "Gates",
-     "model": "5MXT"
+     "marka": "Gates"
     },
     {
-     "kod": "SEL.FR2SC.12",
-     "ad": "FORCESTREAM R2AT / 2SC ( 3/4 ) HİDROLİK HORTUM",
-     "marka": "Forcestream",
-     "model": "R2AT / 2SC"
+     "kod": "MUH.227",
+     "ad": "5/16 HİDROLİK HORTUM"
     },
     {
-     "kod": "SEL.U1.12",
-     "ad": "ULTIMATE 1SN ( 3/4 ) HİDROLİK HORTUM",
-     "marka": "Ultimate",
-     "model": "1SN"
-    },
-    {
-     "kod": "SEL.FR1.06",
-     "ad": "FORCESTREAM R1AT / 1SN ( 3/8 ) HİDROLİK HORTUM",
-     "marka": "Forcestream",
-     "model": "R1AT / 1SN"
-    },
-    {
-     "kod": "SEL.FR1.04",
-     "ad": "FORCESTREAM R1AT / 1SN ( 1/4 ) HİDROLİK HORTUM",
-     "marka": "Forcestream",
-     "model": "R1AT / 1SN"
-    },
-    {
-     "kod": "ALFA.H2-016",
-     "ad": "ALFAGOMMA R2 HİDROLİK HORTUM 5/8",
-     "marka": "Alfagomma",
-     "model": "R2"
-    },
-    {
-     "kod": "SEL.FR1.20",
-     "ad": "FORCESTREAM R1AT / 1SN ( 1 1/4 ) HİDROLİK HORTUM",
-     "marka": "Forcestream",
-     "model": "R1AT / 1SN"
-    },
-    {
-     "kod": "SEL.SICAK.SU.12.7",
-     "ad": "SEL SICAK SU LONG HORTUMU 1/2",
-     "marka": "Seltex",
-     "model": "1/2"
-    },
-    {
-     "kod": "GATES.R6.8GTH",
-     "ad": "GATES R6 1/2 HİDROLİK HORTUM",
-     "marka": "Gates",
-     "model": "R6"
-    }
-   ]
-  },
-  "pnomatik-hortum": {
-   "toplamUrun": 94,
-   "urunler": [
-    {
-     "kod": "EKO.PU.0805,5",
-     "ad": "POLİÜRETAN HORTUM 8X5,5",
-     "marka": "",
-     "model": "8X5,5"
-    },
-    {
-     "kod": "EKO.PU.1006,5",
-     "ad": "POLİÜRETAN HORTUM 10X6,5",
-     "marka": "",
-     "model": "10X6,5"
-    },
-    {
-     "kod": "EKO.PU.0604",
-     "ad": "POLİÜRETAN HORTUM 6X4",
-     "marka": "",
-     "model": "6X4"
-    },
-    {
-     "kod": "EKO.PU.0402,5",
-     "ad": "POLİÜRETAN HORTUM 4X2,5",
-     "marka": "",
-     "model": "4X2,5"
-    },
-    {
-     "kod": "EKO.PA.0604",
-     "ad": "POLYAMİD HORTUM 6X4",
-     "marka": "",
-     "model": "6X4"
-    },
-    {
-     "kod": "EKO.PA.0604-N",
-     "ad": "POLYAMİD HORTUM 6X4 NATURAL",
-     "marka": "",
-     "model": "6X4"
-    },
-    {
-     "kod": "EKO.PU.1007",
-     "ad": "POLİÜRETAN HORTUM 10X7",
-     "marka": "",
-     "model": "10X7"
-    },
-    {
-     "kod": "SEL.JAVA.08.155",
-     "ad": "JAVA 8 MM HAVA HORTUMU (155 GR)",
-     "marka": "Java",
-     "model": ""
-    },
-    {
-     "kod": "EKO.PU.1208",
-     "ad": "POLİÜRETAN HORTUM 12X8",
-     "marka": "",
-     "model": "12X8"
-    },
-    {
-     "kod": "EKO.PU.1612",
-     "ad": "POLİÜRETAN HORTUM 16X12",
-     "marka": "",
-     "model": "16X12"
-    },
-    {
-     "kod": "SEL.TFLN.05",
-     "ad": "TEFLON HORTUM BOĞUMLU 1/2",
-     "marka": "Seltex",
-     "model": "1/2"
-    },
-    {
-     "kod": "EKO.PA.0806",
-     "ad": "POLYAMİD HORTUM 8X6",
-     "marka": "",
-     "model": "8X6"
-    },
-    {
-     "kod": "SEL.JAVA.10.230",
-     "ad": "JAVA 10 MM HAVA HORTUMU (230 GR)",
-     "marka": "Java",
-     "model": ""
-    },
-    {
-     "kod": "EKO.PU.0806",
-     "ad": "POLİÜRETAN HORTUM 8X6",
-     "marka": "",
-     "model": "8X6"
-    },
-    {
-     "kod": "EKO.PU.1209",
-     "ad": "POLİÜRETAN HORTUM 12X9",
-     "marka": "",
-     "model": "12X9"
-    },
-    {
-     "kod": "EKO.PU.1410",
-     "ad": "POLİÜRETAN HORTUM 14X10",
-     "marka": "",
-     "model": "14X10"
-    },
-    {
-     "kod": "EKO.PA.0402-N",
-     "ad": "POLYAMİD HORTUM 4X2 NATURAL",
-     "marka": "",
-     "model": "4X2"
-    },
-    {
-     "kod": "EKO.PTFE.0604",
-     "ad": "TEFLON HORTUM 6X4",
-     "marka": "",
-     "model": "6X4"
-    },
-    {
-     "kod": "EKO.PA.1008",
-     "ad": "POLYAMİD HORTUM 10X8",
-     "marka": "",
-     "model": "10X8"
-    },
-    {
-     "kod": "EKO.PTFE.1008",
-     "ad": "TEFLON HORTUM 10X8",
-     "marka": "",
-     "model": "10X8"
-    },
-    {
-     "kod": "EKO.PTFE.0806",
-     "ad": "TEFLON HORTUM 8X6",
-     "marka": "",
-     "model": "8X6"
-    },
-    {
-     "kod": "SEL.JAVA.08.156",
-     "ad": "JAVA 8 MM HAVA HORTUMU MAVİ (155 GR)",
-     "marka": "Java",
-     "model": ""
+     "kod": "EKO.TCP6X6",
+     "ad": "6X6 HORTUM KANALI"
     }
    ]
   },
   "hidrolik-rakor": {
-   "toplamUrun": 1047,
+   "toplamUrun": 1466,
    "urunler": [
     {
      "kod": "AD-1324-MSD",
      "ad": "METRİK SOMUNLU DÜZ HORTUM RAKORU 1/2 M24X1,5 16S",
-     "marka": "",
      "model": "M24X1,5 16S"
     },
     {
      "kod": "AD-1324-MS90",
      "ad": "METRİK SOMUNLU 90 HORTUM RAKORU 1/2 M24x1,5 16S",
-     "marka": "",
-     "model": "M24x1,5 16S"
-    },
-    {
-     "kod": "AD-1018-MSD",
-     "ad": "METRİK SOMUNLU DÜZ HORTUM RAKORU 3/8 M18x1,5 12L",
-     "marka": "",
-     "model": "M18x1,5 12L"
-    },
-    {
-     "kod": "SARI.0116",
-     "ad": "ERKEK HORTUM RAKORU (AĞIR TİP) 1/2 x 10 mm",
-     "marka": "",
-     "model": "2 x 10"
-    },
-    {
-     "kod": "AD-0821-RİAT",
-     "ad": "BSP İÇE HAVŞALI HORTUM RAKORU 5/16 1/2 (YIKAMA)",
-     "marka": "",
-     "model": "BSP"
-    },
-    {
-     "kod": "AD-1324-ME",
-     "ad": "METRİK ERKEK HORTUM RAKORU 1/2 M24x1,5 16S",
-     "marka": "",
      "model": "M24x1,5 16S"
     },
     {
      "kod": "HF.PN10AOL90",
      "ad": "METRİK SOMUNLU 90 HORTUM RAKORU 3/8 M18x1,5 12L",
-     "marka": "",
      "model": "M18x1,5 12L"
-    },
-    {
-     "kod": "AD-1020-MSD",
-     "ad": "METRİK SOMUNLU DÜZ HORTUM RAKORU 3/8 M20x1,5 12S",
-     "marka": "",
-     "model": "M20x1,5 12S"
-    },
-    {
-     "kod": "SARI.0107",
-     "ad": "ERKEK HORTUM RAKORU (AĞIR TİP) 1/4 x 10 mm",
-     "marka": "",
-     "model": "4 x 10"
-    },
-    {
-     "kod": "AD-1314-RMTN",
-     "ad": "BSP-METRİK PFX TERS RAKOR 1/4 M14x1,5 8L",
-     "marka": "",
-     "model": "M14x1,5 8L"
-    },
-    {
-     "kod": "AD-1936-MS90",
-     "ad": "METRİK SOMUNLU 90 HORTUM RAKORU 3/4 M36x2 25S",
-     "marka": "",
-     "model": "M36x2 25S"
     },
     {
      "kod": "HF.PN08AOL",
      "ad": "METRİK SOMUNLU DÜZ HORTUM RAKORU 5/16 M16x1,5 10L",
-     "marka": "",
      "model": "M16x1,5 10L"
-    },
-    {
-     "kod": "AD-3242-RSD",
-     "ad": "BSP SOMUNLU DÜZ HORTUM RAKORU 1.1/4 1.1/4",
-     "marka": "",
-     "model": "BSP"
-    },
-    {
-     "kod": "SARI.0106",
-     "ad": "ERKEK HORTUM RAKORU (AĞIR TİP) 1/4 x 8 mm",
-     "marka": "",
-     "model": "4 x 8"
-    },
-    {
-     "kod": "AD-1930-MSD",
-     "ad": "METRİK SOMUNLU DÜZ HORTUM RAKORU 3/4 M30x2 20S",
-     "marka": "",
-     "model": "M30x2 20S"
-    },
-    {
-     "kod": "HF.PN10HS08",
-     "ad": "METRİK ERKEK HORTUM RAKORU 3/8 M20x1,5 12S",
-     "marka": "",
-     "model": "M20x1,5 12S"
-    },
-    {
-     "kod": "AD-1017-RS90",
-     "ad": "BSP SOMUNLU 90 HORTUM RAKORU 3/8 3/8",
-     "marka": "",
-     "model": "BSP"
-    },
-    {
-     "kod": "AD-1020-MS90",
-     "ad": "METRİK SOMUNLU 90 HORTUM RAKORU 3/8 M20x1,5 12S",
-     "marka": "",
-     "model": "M20x1,5 12S"
-    },
-    {
-     "kod": "AD-1021-RSD",
-     "ad": "BSP SOMUNLU DÜZ HORTUM RAKORU 3/8 1/2",
-     "marka": "",
-     "model": "BSP"
-    },
-    {
-     "kod": "AD-1322-TMD",
-     "ad": "METRİK TOPKAFA DÜZ HORTUM RAKORU 1/2 M22X1,5",
-     "marka": "",
-     "model": "1/2"
-    },
-    {
-     "kod": "AD-1322-MS90",
-     "ad": "METRİK SOMUNLU 90 HORTUM RAKORU 1/2 M22x1,5 15L",
-     "marka": "",
-     "model": "M22x1,5 15L"
-    },
-    {
-     "kod": "AD-1021-PSE",
-     "ad": "BSPT ERKEK HORTUM RAKORU 3/8 1/2 PUL SIKMALI",
-     "marka": "",
-     "model": "BSPT"
-    }
-   ]
-  },
-  "pnomatik-rakor": {
-   "toplamUrun": 798,
-   "urunler": [
-    {
-     "kod": "PEM.REK.PRD.04.08",
-     "ad": "PEMAKS REKOR BAĞLANTI 1/4 x 8",
-     "marka": "Pemaks",
-     "model": "4 x 8"
-    },
-    {
-     "kod": "PEM.REK.PRL.04.010",
-     "ad": "PEMAKS DÖNER DİRSEK BAĞLANTI 1/4 x 10",
-     "marka": "Pemaks",
-     "model": "4 x 10"
-    },
-    {
-     "kod": "EKO.REK.PU-0800",
-     "ad": "NİPEL BAĞLANTI 8",
-     "marka": "",
-     "model": ""
-    },
-    {
-     "kod": "PEM.REK.PRD.08.08",
-     "ad": "PEMAKS REKOR BAĞLANTI 1/8 x 8",
-     "marka": "Pemaks",
-     "model": "8 x 8"
     },
     {
      "kod": "EKO.REK.PC.04.08",
      "ad": "REKOR BAĞLANTI 1/4 x 8",
-     "marka": "",
      "model": "4 x 8"
     },
     {
-     "kod": "EKO.REK.PU-0600",
-     "ad": "NİPEL BAĞLANTI 6",
-     "marka": "",
-     "model": ""
-    },
-    {
-     "kod": "EKO.REK.PL.04.08",
-     "ad": "DÖNER DİRSEK BAĞLANTI 1/4 x 8",
-     "marka": "",
-     "model": "4 x 8"
-    },
-    {
-     "kod": "EKO.REK.PE-0800",
-     "ad": "TE BAĞLANTI 8",
-     "marka": "",
-     "model": ""
-    },
-    {
-     "kod": "PC08-1/8",
-     "ad": "REKOR BAĞLANTI 1/8-8",
-     "marka": "",
-     "model": "1/8"
-    },
-    {
-     "kod": "EKO.REK.PU-1000",
-     "ad": "NİPEL BAĞLANTI 10",
-     "marka": "",
-     "model": ""
-    },
-    {
-     "kod": "EKO.REK.BSLM.04.00",
-     "ad": "KISA TİP SİNTER SUSTURUCU 1/4",
-     "marka": "",
-     "model": "1/4"
-    },
-    {
-     "kod": "PL08-1/4",
-     "ad": "DÖNER DİRSEK 1/4-8",
-     "marka": "",
-     "model": "1/4"
-    },
-    {
-     "kod": "PL06-1/4",
-     "ad": "DÖNER DİRSEK 1/4-6",
-     "marka": "",
-     "model": "1/4"
-    },
-    {
-     "kod": "EKO.REK.SD.04.00",
-     "ad": "AYARLI SİNTER SUSTURUCU 1/4",
-     "marka": "",
-     "model": "1/4"
-    },
-    {
-     "kod": "PC8-1/4",
-     "ad": "REKOR BAĞLANTI 1/4-8",
-     "marka": "",
-     "model": "1/4"
-    },
-    {
-     "kod": "EKO.REK.PL.04.06",
-     "ad": "DÖNER DİRSEK BAĞLANTI 1/4 x 6",
-     "marka": "",
+     "kod": "EKO.REK.PC.04.06",
+     "ad": "REKOR BAĞLANTI 1/4 x 6",
      "model": "4 x 6"
     },
     {
-     "kod": "EKO.REK.PG.00.1008",
-     "ad": "DÜŞÜRÜCÜ NİPEL BAĞLANTI 10 x 8",
-     "marka": "",
-     "model": "10 x 8"
+     "kod": "SARI.0116",
+     "ad": "ERKEK HORTUM RAKORU (AĞIR TİP) 1/2 x 10 mm",
+     "model": "2 x 10"
     },
     {
-     "kod": "PC10-1/4",
-     "ad": "REKOR BAĞLANTI 1/4-10",
-     "marka": "",
-     "model": "1/4"
+     "kod": "SARI.0107",
+     "ad": "ERKEK HORTUM RAKORU (AĞIR TİP) 1/4 x 10 mm",
+     "model": "4 x 10"
     },
     {
-     "kod": "EKO.REK.PE-0600",
-     "ad": "TE BAĞLANTI 6",
-     "marka": "",
-     "model": ""
+     "kod": "FR.FFG12FN",
+     "ad": "FERRO OTOMATİK REKOR - DÜZ ALIN - 1/2 - DİŞİ",
+     "marka": "Ferro"
     },
     {
-     "kod": "EKO.REK.PL.02.08",
-     "ad": "DÖNER DİRSEK BAĞLANTI 1/8 x 8",
-     "marka": "",
-     "model": "8 x 8"
+     "kod": "FR.TCM162G14N",
+     "ad": "FERRO TEST REKORU M16 x 2-1/4 BSP (TCM162G14N)",
+     "marka": "Ferro"
     },
     {
-     "kod": "EKO.REK.PG.00.0806",
-     "ad": "DÜŞÜRÜCÜ NİPEL BAĞLANTI 8 x 6",
-     "marka": "",
-     "model": "8 x 6"
+     "kod": "OLEOC.QCA-25B-G1",
+     "ad": "HİDROLİK POPET TİP ÇABUK EKLEME RAKORU ERKEK 1"
     },
     {
-     "kod": "PEM.REK.PRN-0600",
-     "ad": "PEMAKS NİPEL BAĞLANTI 6",
-     "marka": "Pemaks",
-     "model": ""
+     "kod": "OLEOC.QCA-10A-G38",
+     "ad": "HİDROLİK POPET TİP ÇABUK EKLEME RAKORU DİŞİ 3/8",
+     "model": "3/8"
+    },
+    {
+     "kod": "PC08-1/8",
+     "ad": "REKOR BAĞLANTI 1/8-8"
+    },
+    {
+     "kod": "AD-1018-MSD",
+     "ad": "METRİK SOMUNLU DÜZ HORTUM RAKORU 3/8 M18x1,5 12L",
+     "model": "M18x1,5 12L"
+    },
+    {
+     "kod": "HF.PN10HS08",
+     "ad": "METRİK ERKEK HORTUM RAKORU 3/8 M20x1,5 12S",
+     "model": "M20x1,5 12S"
+    },
+    {
+     "kod": "HF.PN08AOL90",
+     "ad": "METRİK SOMUNLU 90 HORTUM RAKORU 5/16 M16x1,5 10L",
+     "model": "M16x1,5 10L"
+    },
+    {
+     "kod": "EKO.REK.PC.04.10",
+     "ad": "REKOR BAĞLANTI 1/4 x 10",
+     "model": "4 x 10"
+    },
+    {
+     "kod": "EKO.REK.PC.08.08",
+     "ad": "REKOR BAĞLANTI 1/2 x 8",
+     "model": "2 x 8"
+    },
+    {
+     "kod": "SARI.0106",
+     "ad": "ERKEK HORTUM RAKORU (AĞIR TİP) 1/4 x 8 mm",
+     "model": "4 x 8"
+    },
+    {
+     "kod": "SARI.0119",
+     "ad": "ERKEK HORTUM RAKORU (AĞIR TİP) 1/2 x 20 mm",
+     "model": "2 x 20"
+    },
+    {
+     "kod": "FR.QCBPCG12MN",
+     "ad": "FERRO HİDROLİK OTOMATİK REKOR 1/2 - ERKEK (KAPAKLI)",
+     "marka": "Ferro"
+    },
+    {
+     "kod": "FR.FFG12SN",
+     "ad": "FERRO OTOMATİK REKOR - DÜZ ALIN - 1/2 - TAKIM",
+     "marka": "Ferro"
+    },
+    {
+     "kod": "OLEOC.QCF-12A-G34",
+     "ad": "HİDROLİK DÜZ ALIN ÇABUK EKLEME RAKORU DİŞİ 3/4",
+     "model": "3/4"
+    },
+    {
+     "kod": "OLEOC.QCA-10B-G38",
+     "ad": "HİDROLİK POPET TİP ÇABUK EKLEME RAKORU ERKEK 3/8",
+     "model": "3/8"
     }
    ]
   },
   "orfs-rakor": {
-   "toplamUrun": 232,
+   "toplamUrun": 233,
    "urunler": [
-    {
-     "kod": "AD-0614-OSD",
-     "ad": "ORFS SOMUNLU DÜZ HORTUM RAKORU 1/4 9/16",
-     "marka": "",
-     "model": "ORFS"
-    },
-    {
-     "kod": "AD-0617-OSD",
-     "ad": "ORFS SOMUNLU DÜZ HORTUM RAKORU 1/4 11/16",
-     "marka": "",
-     "model": "ORFS"
-    },
-    {
-     "kod": "AD-1017-OSD",
-     "ad": "ORFS SOMUNLU DÜZ HORTUM RAKORU 3/8 11/16",
-     "marka": "",
-     "model": "ORFS"
-    },
     {
      "kod": "HF.PN13AJF",
      "ad": "ORFS SOMUNLU DÜZ HORTUM RAKORU 1/2 13/16",
-     "marka": "",
-     "model": "ORFS"
-    },
-    {
-     "kod": "AD-1930-OS90",
-     "ad": "ORFS SOMUNLU 90 HORTUM RAKORU 3/4 13/16",
-     "marka": "",
-     "model": "ORFS"
-    },
-    {
-     "kod": "AD-0817-OSD",
-     "ad": "ORFS SOMUNLU DÜZ HORTUM RAKORU 5/16 11/16",
-     "marka": "",
-     "model": "ORFS"
-    },
-    {
-     "kod": "AD-1314-RORFS",
-     "ad": "BSP - ORFS PFX NİPEL 1/4 9/16",
-     "marka": "",
-     "model": "ORFS"
+     "model": "1/2 13/16"
     },
     {
      "kod": "HF.PN20AJF",
      "ad": "ORFS SOMUNLU DÜZ HORTUM RAKORU 3/4 13/16",
-     "marka": "",
-     "model": "ORFS"
-    },
-    {
-     "kod": "AD-1314-ROTN",
-     "ad": "BSP-ORFS TERS NİPEL 1/4 9/16",
-     "marka": "",
-     "model": "ORFS"
-    },
-    {
-     "kod": "AD-1625-OSD",
-     "ad": "ORFS SOMUNLU DÜZ HORTUM RAKORU 5/8 1",
-     "marka": "",
-     "model": "ORFS"
+     "model": "3/4 13/16"
     },
     {
      "kod": "HF.PN25AJF",
      "ad": "ORFS SOMUNLU DÜZ HORTUM RAKORU 1 17/16",
-     "marka": "",
-     "model": "ORFS"
+     "model": "17/16"
     },
     {
-     "kod": "AD-1417-RORFS",
-     "ad": "BSP - ORFS PFX NİPEL 1/4 11/16",
-     "marka": "",
-     "model": "ORFS"
+     "kod": "AD-0614-OSD",
+     "ad": "ORFS SOMUNLU DÜZ HORTUM RAKORU 1/4 9/16",
+     "model": "1/4 9/16"
+    },
+    {
+     "kod": "AD-0617-OSD",
+     "ad": "ORFS SOMUNLU DÜZ HORTUM RAKORU 1/4 11/16",
+     "model": "1/4 11/16"
+    },
+    {
+     "kod": "AD-1017-OSD",
+     "ad": "ORFS SOMUNLU DÜZ HORTUM RAKORU 3/8 11/16",
+     "model": "3/8 11/16"
+    },
+    {
+     "kod": "AD.1930.OE",
+     "ad": "ORFS ERKEK HORTUM RAKORU 3/4 13/16",
+     "model": "3/4 13/16"
+    },
+    {
+     "kod": "MUH.173",
+     "ad": "ORFS SOMUNLU 90 HORTUM RAKORU 1/2 1"
     },
     {
      "kod": "HF.GEHRED06HJOF",
      "ad": "BSP - ORFS PFX NİPEL 3/8 11/16",
-     "marka": "",
-     "model": "ORFS"
+     "model": "3/8 11/16"
     },
     {
-     "kod": "AD-1317-ROTN",
-     "ad": "BSP-ORFS TERS NİPEL 1/4 11/16",
-     "marka": "",
-     "model": "ORFS"
-    },
-    {
-     "kod": "AD-1321-OS45",
-     "ad": "ORFS SOMUNLU 45 HORTUM RAKORU 1/2 13/16",
-     "marka": "",
-     "model": "ORFS"
-    },
-    {
-     "kod": "AD-1017-OS90",
-     "ad": "ORFS SOMUNLU 90 HORTUM RAKORU 3/8 11/16-16",
-     "marka": "",
-     "model": "ORFS"
-    },
-    {
-     "kod": "HF.VERSCHLUSSAJF12",
-     "ad": "ORFS SOMUNLU TAPA 13/16",
-     "marka": "",
-     "model": "ORFS"
-    },
-    {
-     "kod": "AD-1937-OE",
-     "ad": "ORFS ERKEK HORTUM RAKORU 3/4 17/16",
-     "marka": "",
-     "model": "ORFS"
-    },
-    {
-     "kod": "AD-1021-OE",
-     "ad": "ORFS ERKEK HORTUM RAKORU 3/8 13/16",
-     "marka": "",
-     "model": "ORFS"
-    },
-    {
-     "kod": "AD-1717-OREKT",
-     "ad": "ORFS ERKEK TAPA 11/16",
-     "marka": "",
-     "model": "ORFS"
-    },
-    {
-     "kod": "AD-1630-OSD",
-     "ad": "ORFS SOMUNLU DÜZ HORTUM RAKORU 5/8 13/16",
-     "marka": "",
-     "model": "ORFS"
-    },
-    {
-     "kod": "AD-1021-OS90",
-     "ad": "ORFS SOMUNLU 90 HORTUM RAKORU 3/8 13/16",
-     "marka": "",
-     "model": "ORFS"
+     "kod": "AD-1930-OS90",
+     "ad": "ORFS SOMUNLU 90 HORTUM RAKORU 3/4 13/16",
+     "model": "3/4 13/16"
     }
    ]
   },
   "nipel": {
-   "toplamUrun": 504,
+   "toplamUrun": 578,
    "urunler": [
-    {
-     "kod": "AD-1314-RWN",
-     "ad": "BSP-UNF NİPEL 1/4 9/16",
-     "marka": "",
-     "model": "BSP"
-    },
-    {
-     "kod": "AD-1316-RMN",
-     "ad": "BSP-METRİK PFX NİPEL 1/4 M16x1,5 10L",
-     "marka": "",
-     "model": "M16x1,5 10L"
-    },
-    {
-     "kod": "AD-2124-RMN",
-     "ad": "BSP-METRİK PFX NİPEL 1/2 M24x1,5 16S",
-     "marka": "",
-     "model": "M24x1,5 16S"
-    },
-    {
-     "kod": "SARI.0302",
-     "ad": "SARI DÜZ NİPEL 1/4",
-     "marka": "",
-     "model": "1/4"
-    },
     {
      "kod": "HF.XVRNW20HL1/2ED",
      "ad": "BSP-METRİK PFX NİPEL 1/2 M30x2 22L",
-     "marka": "",
      "model": "M30x2 22L"
-    },
-    {
-     "kod": "AD-1014-RMN",
-     "ad": "BSP-METRİK PFX NİPEL 1/8-28 M14x1,5 8L",
-     "marka": "",
-     "model": "M14x1,5 8L"
-    },
-    {
-     "kod": "SARI.0304",
-     "ad": "SARI DÜZ NİPEL 1/2",
-     "marka": "",
-     "model": "1/2"
-    },
-    {
-     "kod": "AD-1716-RWN",
-     "ad": "BSP-UNF NİPEL 3/8 5/8",
-     "marka": "",
-     "model": "BSP"
-    },
-    {
-     "kod": "AD-2118-RMN",
-     "ad": "BSP-METRİK PFX NİPEL 1/2 M18x1,5 12L",
-     "marka": "",
-     "model": "M18x1,5 12L"
     },
     {
      "kod": "HF.XVRNW08HLED",
      "ad": "BSP-METRİK PFX NİPEL 1/4 M16x1,5 10L",
-     "marka": "",
      "model": "M16x1,5 10L"
+    },
+    {
+     "kod": "AD-1314-RWN",
+     "ad": "BSP-UNF NİPEL 1/4 9/16",
+     "model": "1/4 9/16"
+    },
+    {
+     "kod": "AD-1316-RMN",
+     "ad": "BSP-METRİK PFX NİPEL 1/4 M16x1,5 10L",
+     "model": "M16x1,5 10L"
+    },
+    {
+     "kod": "EKO.REK.PU-0800",
+     "ad": "NİPEL BAĞLANTI 8"
+    },
+    {
+     "kod": "EKO.REK.PU-0600",
+     "ad": "NİPEL BAĞLANTI 6"
+    },
+    {
+     "kod": "SARI.0302",
+     "ad": "SARI DÜZ NİPEL 1/4",
+     "model": "1/4"
+    },
+    {
+     "kod": "SARI.0304",
+     "ad": "SARI DÜZ NİPEL 1/2",
+     "model": "1/2"
+    },
+    {
+     "kod": "PEM.REK.PRN-0600",
+     "ad": "PEMAKS NİPEL BAĞLANTI 6",
+     "marka": "Pemaks"
+    },
+    {
+     "kod": "PEM.REK.PRN-0800",
+     "ad": "PEMAKS NİPEL BAĞLANTI 8",
+     "marka": "Pemaks"
+    },
+    {
+     "kod": "MUH.MUH.117",
+     "ad": "1 1/4\" İNOX 304 TT NİPEL"
+    },
+    {
+     "kod": "MUH.MUH.145",
+     "ad": "2\" NİPEL SİYAH DÖKÜM HEX"
     },
     {
      "kod": "HF.XVRNW08HL3/8ED",
      "ad": "BSP-METRİK PFX NİPEL 3/8 M16x1,5 10L",
-     "marka": "",
      "model": "M16x1,5 10L"
-    },
-    {
-     "kod": "AD-2630-RMN",
-     "ad": "BSP-METRİK PFX NİPEL 3/4 M30x2 20S",
-     "marka": "",
-     "model": "M30x2 20S"
-    },
-    {
-     "kod": "AD-1718-RMN",
-     "ad": "BSP-METRİK PFX NİPEL 3/8 M18x1,5 12L",
-     "marka": "",
-     "model": "M18x1,5 12L"
-    },
-    {
-     "kod": "AD-2130-RMN",
-     "ad": "BSP-METRİK PFX NİPEL 1/2 M30x2 20S",
-     "marka": "",
-     "model": "M30x2 20S"
-    },
-    {
-     "kod": "AD-2122-RMN",
-     "ad": "BSP-METRİK PFX NİPEL 1/2 M22x1,5 15L",
-     "marka": "",
-     "model": "M22x1,5 15L"
-    },
-    {
-     "kod": "AD-1012-RMN",
-     "ad": "BSP-METRİK PFX NİPEL 1/8 M12x1,5 6L",
-     "marka": "",
-     "model": "M12x1,5 6L"
     },
     {
      "kod": "HF.XVNW08HL",
      "ad": "METRİK ARA NİPEL M16x1,5 10L",
-     "marka": "",
      "model": "M16x1,5 10L"
     },
     {
-     "kod": "AD-3324-RMN",
-     "ad": "BSP-METRİK PFX NİPEL 1 M24x1,5 16S",
-     "marka": "",
+     "kod": "PU-6",
+     "ad": "NİPEL BAĞLANTI 6"
+    },
+    {
+     "kod": "AD-2124-RMN",
+     "ad": "BSP-METRİK PFX NİPEL 1/2 M24x1,5 16S",
      "model": "M24x1,5 16S"
     },
     {
-     "kod": "HF.GHB04",
-     "ad": "BSP ARA NİPELİ 1/4",
-     "marka": "",
-     "model": "BSP"
+     "kod": "EKO.REK.PU-1000",
+     "ad": "NİPEL BAĞLANTI 10"
     },
     {
-     "kod": "AD-2120-RMN",
-     "ad": "BSP-METRİK PFX NİPEL 1/2 M20x1,5 12S",
-     "marka": "",
-     "model": "M20x1,5 12S"
+     "kod": "EKO.REK.PG.00.1008",
+     "ad": "DÜŞÜRÜCÜ NİPEL BAĞLANTI 10 x 8",
+     "model": "10 x 8"
+    },
+    {
+     "kod": "SARI.0301",
+     "ad": "SARI DÜZ NİPEL 1/8",
+     "model": "1/8"
+    },
+    {
+     "kod": "SARI.0409",
+     "ad": "SARI ORANTILI NİPEL 3/4 x 1/2",
+     "model": "1/2"
+    },
+    {
+     "kod": "PEM.REK.PRND.06.04",
+     "ad": "PEMAKS NİPEL DÜŞÜRÜCÜ 6 X 4",
+     "marka": "Pemaks",
+     "model": "6 X 4"
+    },
+    {
+     "kod": "PEM.REK.PRN-0400",
+     "ad": "PEMAKS NİPEL BAĞLANTI 4",
+     "marka": "Pemaks"
+    },
+    {
+     "kod": "MUH.MUH.119",
+     "ad": "2\" İNOX 304 TT NİPEL"
     }
    ]
   },
   "hidrolik-tapa": {
-   "toplamUrun": 225,
+   "toplamUrun": 226,
    "urunler": [
+    {
+     "kod": "HF.VHR90-3/8ED",
+     "ad": "BSP PFX ALYANBAŞLI KÖRTAPA 3/8",
+     "model": "3/8"
+    },
+    {
+     "kod": "HF.VLMNW10",
+     "ad": "METRİK SOMUNLU TAPA M18x1,5 12L 22 ANAHTAR"
+    },
     {
      "kod": "AD-1018-RAT",
      "ad": "BSP PFX ALYANBAŞLI KÖRTAPA 1/8",
-     "marka": "",
-     "model": "BSP"
-    },
-    {
-     "kod": "SARI.1002",
-     "ad": "SARI KÖR TAPA 1/4",
-     "marka": "",
-     "model": "1/4"
+     "model": "1/8"
     },
     {
      "kod": "AD-24-MEKT",
      "ad": "METRİK ERKEK TAPA M24x1,5 16S",
-     "marka": "",
      "model": "M24x1,5 16S"
-    },
-    {
-     "kod": "MINTOR.TSS.06",
-     "ad": "MİNTOR TSS2 - 3/8 ÇEKLİ HAVALANDIRMA TAPASI",
-     "marka": "Mintor",
-     "model": "3/8"
     },
     {
      "kod": "AD-3819-EKT",
      "ad": "BSP KÖRTAPA 3/8",
-     "marka": "",
-     "model": "BSP"
+     "model": "3/8"
+    },
+    {
+     "kod": "SARI.1002",
+     "ad": "SARI KÖR TAPA 1/4",
+     "model": "1/4"
+    },
+    {
+     "kod": "SARI.1006",
+     "ad": "SARI KÖR TAPA 1"
+    },
+    {
+     "kod": "EKO.REK.PAL.00.08",
+     "ad": "PLASTİK KÖRTAPA ERKEK BAĞLANTI 8"
+    },
+    {
+     "kod": "EKO.PPF.08",
+     "ad": "PPF 8 MM KÖR TAPA DİŞİ"
+    },
+    {
+     "kod": "MINTOR.TSS.06",
+     "ad": "MİNTOR TSS2 - 3/8 ÇEKLİ HAVALANDIRMA TAPASI",
+     "marka": "Mintor"
     },
     {
      "kod": "MINTOR.TSF05G",
      "ad": "MINTOR TSF5G 1 SİNTERLİ HAVALANDIRMA TAPASI",
-     "marka": "Mintor",
-     "model": ""
+     "marka": "Mintor"
+    },
+    {
+     "kod": "MUH.163",
+     "ad": "ALYAN KÖRTAPA"
+    },
+    {
+     "kod": "HF.VERSCHLUSSAJF12",
+     "ad": "ORFS SOMUNLU TAPA 13/16",
+     "model": "13/16"
     },
     {
      "kod": "AD-1319-RAT",
      "ad": "BSP PFX ALYANBAŞLI KÖRTAPA 1/4",
-     "marka": "",
-     "model": "BSP"
+     "model": "1/4"
+    },
+    {
+     "kod": "SARI.1003",
+     "ad": "SARI KÖR TAPA 3/8",
+     "model": "3/8"
+    },
+    {
+     "kod": "EKO.REK.MUH.05",
+     "ad": "PNR 1/4 KÖRTAPA ALLEN BAŞLI (ORİNGLİ)"
     },
     {
      "kod": "MINTOR.TSS.08",
      "ad": "MİNTOR TSS3 - 1/2 ÇEKLİ HAVALANDIRMA TAPASI",
-     "marka": "Mintor",
-     "model": "1/2"
-    },
-    {
-     "kod": "HF.VHR90-3/8ED",
-     "ad": "BSP PFX ALYANBAŞLI KÖRTAPA 3/8",
-     "marka": "",
-     "model": "BSP"
+     "marka": "Mintor"
     },
     {
      "kod": "MINTOR.TSS.M16",
      "ad": "MINTOR TSS2M M16X1,5 HAVALANDIRMA TAPASI",
-     "marka": "Mintor",
-     "model": "M16X1,5"
-    },
-    {
-     "kod": "HF.VHR90-1/8ED",
-     "ad": "BSP PFX ALYANBAŞLI KÖRTAPA 1/8",
-     "marka": "",
-     "model": "BSP"
-    },
-    {
-     "kod": "AD-2020-MSKT",
-     "ad": "METRİK SOMUNLU TAPA M20x1,5 12S 24 ANAHTAR",
-     "marka": "",
-     "model": "M20x1,5 12S"
-    },
-    {
-     "kod": "AD-1818-MSKT",
-     "ad": "METRİK SOMUNLU TAPA M18x1,5 12L",
-     "marka": "",
-     "model": "M18x1,5 12L"
-    },
-    {
-     "kod": "EKO.REK.PAL.00.08",
-     "ad": "PLASTİK KÖRTAPA ERKEK BAĞLANTI 8",
-     "marka": "",
-     "model": ""
-    },
-    {
-     "kod": "AD-1719-RAT",
-     "ad": "BSP PFX ALYANBAŞLI KÖRTAPA 3/8",
-     "marka": "",
-     "model": "BSP"
-    },
-    {
-     "kod": "AD-1419-EKT",
-     "ad": "BSP KÖRTAPA 1/4",
-     "marka": "",
-     "model": "BSP"
-    },
-    {
-     "kod": "AD-1828-EKT",
-     "ad": "BSP KÖRTAPA 1/8",
-     "marka": "",
-     "model": "BSP"
-    },
-    {
-     "kod": "AD-1615-MAT",
-     "ad": "METRİK PFX ALYANBAŞLI KÖRTAPA M16x1,5",
-     "marka": "",
-     "model": "M16x1,5"
-    },
-    {
-     "kod": "EKO.REK.MUH.06",
-     "ad": "PNR 1/8 KÖRTAPA ALLEN BAŞLI (ORİNGLİ)",
-     "marka": "",
-     "model": "1/8"
-    },
-    {
-     "kod": "AD-2424-MSKT",
-     "ad": "METRİK SOMUNLU TAPA M24x1,5 16S 30 ANAHTAR",
-     "marka": "",
-     "model": "M24x1,5 16S"
-    },
-    {
-     "kod": "EKO.PPF.08",
-     "ad": "PPF 8 MM KÖR TAPA DİŞİ",
-     "marka": "",
-     "model": ""
-    },
-    {
-     "kod": "MINTOR.TSF03G",
-     "ad": "MINTOR TSF3G 1/2 SİNTERLİ HAVALANDIRMA TAPASI",
-     "marka": "Mintor",
-     "model": "1/2"
+     "marka": "Mintor"
     }
    ]
   },
   "hidrolik-valf": {
-   "toplamUrun": 477,
+   "toplamUrun": 508,
    "urunler": [
     {
-     "kod": "OLEOC.TLV-06-G14",
-     "ad": "HİDROLİK İKİZ KİLİT VALFİ 1/4",
-     "marka": "Oleocontrol",
-     "model": "1/4"
+     "kod": "OLEOSTAR.01.171",
+     "ad": "( VDSRL 10-12 ) 1/2 HAT TİPİ BASINÇ SIRALAMA VALFİ",
+     "marka": "Oleostar"
     },
     {
-     "kod": "SMS.PL101005P",
-     "ad": "SMS PATLAÇ VALF 1'' 2/2 YOLLU",
-     "marka": "SMS",
-     "model": "2/2"
-    },
-    {
-     "kod": "AKON.MUH.35",
-     "ad": "AKON AMV50 CARRY-OVER VALFİ",
-     "marka": "Akon",
-     "model": ""
-    },
-    {
-     "kod": "SMS.S1010.08",
-     "ad": "SMS TORK SOLENOİD VALF N.K. 1/2 (S1010.03.145)",
-     "marka": "SMS",
-     "model": "S1010.03.145"
+     "kod": "OLEOSTAR.01.191",
+     "ad": "( VSRU/C 34 ) 3/4 HAT TİP ÇEKLİ HIZ KONTROL VALFİ",
+     "marka": "Oleostar"
     },
     {
      "kod": "FR.FCCG38N",
      "ad": "FERRO HIZ AYAR VALFİ 3/8 - ÇEKLİ (FCCG38N)",
-     "marka": "Ferro",
-     "model": "FCCG38N"
+     "marka": "Ferro"
     },
     {
      "kod": "FR.DCG38N",
      "ad": "FERRO İKİZ KİLİT VALFİ 3/8 (DCG38N)",
-     "marka": "Ferro",
-     "model": "DCG38N"
+     "marka": "Ferro"
     },
     {
-     "kod": "HT.SET.04",
-     "ad": "DÖRTLÜ ÇIKIŞ HİDROLİK KOLLU VALF DAĞITICI SETİ",
-     "marka": "Hidroteknik",
-     "model": ""
+     "kod": "SMS.S1010.08",
+     "ad": "SMS TORK SOLENOİD VALF N.K. 1/2 ( S1010.03.145 )",
+     "marka": "SMS Tork"
     },
     {
-     "kod": "HR.K.YEDEK.004",
-     "ad": "(P40) KEROVIR VALFİ",
-     "marka": "",
-     "model": ""
-    },
-    {
-     "kod": "SMS.S1011.08",
-     "ad": "SMS TORK SOLENOİD VALF N.A. 1/2 (S1011.03.145)",
-     "marka": "SMS",
-     "model": "S1011.03.145"
-    },
-    {
-     "kod": "SMS.S1010.04",
-     "ad": "SMS TORK SOLENOİD VALF N.K. 1/4 (S1010.01.018)",
-     "marka": "SMS",
-     "model": "S1010.01.018"
+     "kod": "SMS.PL101005P",
+     "ad": "SMS PATLAÇ VALF 1' 2/2 YOLLU",
+     "marka": "SMS Tork"
     },
     {
      "kod": "HR.VALF.VBPDE 3/8 A",
-     "ad": "(VBPDE 3/8 A) İKİZ KİLİT VALFİ",
-     "marka": "",
-     "model": "VBPDE"
+     "ad": "( VBPDE 3/8 A ) İKİZ KİLİT VALFİ",
+     "marka": "Hydropack"
     },
     {
-     "kod": "OLEOC.TLV-10-M18",
-     "ad": "HİDROLİK İKİZ KİLİT VALFİ M18",
-     "marka": "Oleocontrol",
-     "model": ""
+     "kod": "HR.O-VU2P-1/2",
+     "ad": "V0670 - VEYA VALFİ",
+     "marka": "Hydropack"
     },
     {
-     "kod": "MTS.30637",
-     "ad": "NG6 A-B HATTI MODÜLER DEBİ AYAR VALFİ MSW01 HYSTAR",
-     "marka": "Hystar",
-     "model": "MSW01"
-    },
-    {
-     "kod": "SMS.S1014.03",
-     "ad": "SMS TORK SOLENOİD VALF N.A. 1/2 (S1014.03)",
-     "marka": "SMS",
-     "model": "S1014.03"
-    },
-    {
-     "kod": "FR.CVG12N",
-     "ad": "FERRO ÇEKVALF 1/2 (CVG12N)",
-     "marka": "Ferro",
-     "model": "CVG12N"
+     "kod": "OLEOC.TLV-06-G14",
+     "ad": "HİDROLİK İKİZ KİLİT VALFİ 1/4",
+     "model": "1/4"
     },
     {
      "kod": "OLEOC.OL-10 FCV G38",
      "ad": "HİDROLİK HIZ AYAR VALFİ ÇEKSİZ 3/8",
-     "marka": "Oleocontrol",
      "model": "3/8"
     },
     {
-     "kod": "OLEOC.OL-12 FUV G12",
-     "ad": "HİDROLİK HIZ AYAR VALFİ ÇEKLİ 1/2",
-     "marka": "Oleocontrol",
+     "kod": "HEMA.HV040HPCO12",
+     "ad": "HV040 CARRY-OVER VALFİ 1/2",
+     "marka": "Hema",
      "model": "1/2"
     },
     {
-     "kod": "OLEOC.OL-10 FUV G38",
-     "ad": "HİDROLİK HIZ AYAR VALFİ ÇEKLİ 3/8",
-     "marka": "Oleocontrol",
-     "model": "3/8"
-    },
-    {
-     "kod": "SARI.6139",
-     "ad": "YAYLI DİK ÇEKVALF SESSİZ MODEL 1",
-     "marka": "",
-     "model": ""
-    },
-    {
-     "kod": "SARI.MUH.19",
-     "ad": "PİRİNÇ DİŞ ÇEKVALF 1/2",
-     "marka": "",
-     "model": "1/2"
-    }
-   ]
-  },
-  "pnomatik-valf": {
-   "toplamUrun": 238,
-   "urunler": [
-    {
-     "kod": "EKO.4V210-08",
-     "ad": "1/4 5/2 TEK BOBİN EXPF VALF",
-     "marka": "",
-     "model": "1/4"
-    },
-    {
-     "kod": "EKO.3V210-08",
-     "ad": "1/4 3/2 TEK BOBİN VALF",
-     "marka": "",
-     "model": "1/4"
-    },
-    {
-     "kod": "HT.4V210-08",
-     "ad": "HT 1/4 5/2 TEK BOBİN VALF",
-     "marka": "Hidroteknik",
-     "model": "1/4"
-    },
-    {
-     "kod": "PEM.VALF.PV1E-32NO-14-V3",
-     "ad": "PEMAKS PV1 SERİSİ SOLENOİD VALF N.A. 3/2-1/4 220V AC",
-     "marka": "Pemaks",
-     "model": "3/2"
-    },
-    {
-     "kod": "PEM.VALF.PV1E-52-14V1",
-     "ad": "PEMAKS VALF TEK BOBİN 5/2-1/4 24V DC",
-     "marka": "Pemaks",
-     "model": "5/2"
-    },
-    {
-     "kod": "EKO.FV320",
-     "ad": "1/4 3/2 YAYLI PEDAL VALF",
-     "marka": "",
-     "model": "1/4"
-    },
-    {
-     "kod": "EKO.CV-01",
-     "ad": "1/8 ÇEKVALF PNÖMATİK",
-     "marka": "",
-     "model": "1/8"
-    },
-    {
-     "kod": "EKO.4F210-08",
-     "ad": "1/4 5/2 BÜYÜK GÖVDE YAYLI PEDAL VALF",
-     "marka": "",
-     "model": "1/4"
-    },
-    {
-     "kod": "EKO.REK.PCF.02.09",
-     "ad": "1/2 AUTO DRAIN VALF",
-     "marka": "",
-     "model": "1/2"
-    },
-    {
-     "kod": "PEM.VALF.PV1E-52-14V3",
-     "ad": "PEMAKS VALF TEK BOBİN 5/2-1/4 220V AC",
-     "marka": "Pemaks",
-     "model": "5/2"
-    },
-    {
-     "kod": "EKO.TSV86522",
-     "ad": "1/4 5/2 KOL KUMANDALI VALF",
-     "marka": "",
-     "model": "1/4"
-    },
-    {
-     "kod": "EKO.N4H330-C-08S",
-     "ad": "1/4 5/3 BÜYÜK GÖVDE KAPALI MERKEZ YAYLI KOL KUMANDALI VALF",
-     "marka": "",
-     "model": "1/4"
-    },
-    {
-     "kod": "EKO.4V110-06",
-     "ad": "1/8 5/2 TEK BOBİN VALF",
-     "marka": "",
-     "model": "1/8"
-    },
-    {
-     "kod": "EKO.200M-02F",
-     "ad": "1/4 5/2 İKİLİ VALF MANİFOLDU PLEYT",
-     "marka": "",
-     "model": "1/4"
-    },
-    {
-     "kod": "EKO.3V1-06A-4F",
-     "ad": "1/8 3/2 DÖRTLÜ GRUP VALFİ",
-     "marka": "",
-     "model": "1/8"
-    },
-    {
-     "kod": "EKO.N4H330-C-08L",
-     "ad": "1/4 5/3 BÜYÜK GÖVDE KAPALI MERKEZ KALMALI KOL KUMANDALI VALF",
-     "marka": "",
-     "model": "1/4"
-    },
-    {
-     "kod": "SM.SME3214KK",
-     "ad": "SEMAKMATİK 3/2 - 1/4 KOL KUMANDA VALFİ",
-     "marka": "Semakmatik",
-     "model": "3/2"
-    },
-    {
-     "kod": "EKO.N3R210-08",
-     "ad": "1/4 3/2 KÜÇÜK GÖVDE EL KUMANDALI VALF",
-     "marka": "",
-     "model": "1/4"
-    },
-    {
-     "kod": "EKO.4V310-08",
-     "ad": "1/4 5/2 BÜYÜK GÖVDE TEK BOBİN VALF",
-     "marka": "",
-     "model": "1/4"
-    },
-    {
-     "kod": "EKO.4V220-08",
-     "ad": "1/4 5/2 ÇİFT BOBİN VALF",
-     "marka": "",
-     "model": "1/4"
+     "kod": "HEMA.K.HV080102M",
+     "ad": "HEMA 80 LT 3/4 TEKLİ KOLLU VALF (1P80)",
+     "marka": "Hema"
     }
    ]
   },
   "hidrolik-pompa": {
-   "toplamUrun": 251,
+   "toplamUrun": 283,
    "urunler": [
     {
-     "kod": "CASAPPA.PLP20.4",
-     "ad": "CASAPPA PLP20.4 DO (82-E2) DİŞLİ POMPA",
-     "marka": "Casappa",
-     "model": "PLP20.4"
-    },
-    {
      "kod": "HEMA.1PN.295",
-     "ad": "HEMA 1PN.250.CGSY / 295 - 8 LT/DK AKIŞ ÖNCELİKLİ POMPA",
-     "marka": "Hema",
-     "model": "1PN.250.CGSY"
-    },
-    {
-     "kod": "HMS.PDT.DPK.03",
-     "ad": "PDT-DK300510451 PDTDK 30-51 SAĞ POMPA",
-     "marka": "HMS",
-     "model": ""
+     "ad": "( 1PN.250.CGSY / 295 ) 8 LT/DK AKIŞ ÖNCELİKLİ POMPA",
+     "marka": "Hema"
     },
     {
      "kod": "HEMA.1PN.158",
-     "ad": "HEMA 1PN.040.ADR / 158 DİŞLİ POMPA",
-     "marka": "Hema",
-     "model": "1PN.040.ADR"
+     "ad": "( 1PN.040.ADR / 158 ) DİŞLİ POMPA",
+     "marka": "Hema"
     },
     {
-     "kod": "HEMA.1PN.320",
-     "ad": "HEMA 1PN.082.CGS19 / 320 VİTONLU 11,8 LT DİŞLİ POMPA",
-     "marka": "Hema",
-     "model": "1PN.082.CGS19"
+     "kod": "ESM.EDZA.430",
+     "ad": "( EDZA 430-M6 ) 30 X 30 DÜZ POMPA ADAPTÖRÜ 3/8",
+     "model": "3/8"
     },
     {
-     "kod": "HEMA.1PN.005",
-     "ad": "HEMA 1PN.281.CB13 / 005 - 40,4 LT/DK DİŞLİ POMPA",
-     "marka": "Hema",
-     "model": "1PN.281.CB13"
-    },
-    {
-     "kod": "HEMA.2P1.457",
-     "ad": "HEMA 2P1.3146.SCBP1 / 457 - 66,5 LT/DK DİŞLİ POMPA",
-     "marka": "Hema",
-     "model": "2P1.3146.SCBP1"
-    },
-    {
-     "kod": "HEMA.1PN.068",
-     "ad": "HEMA 1PN.040.CBT1 / 068 - 5,7 LT/DK DİŞLİ POMPA",
-     "marka": "Hema",
-     "model": "1PN.040.CBT1"
-    },
-    {
-     "kod": "HEMA.1PN.031",
-     "ad": "HEMA 1PN.082.CB12 / 031 - 11,8 LT/DK DİŞLİ POMPA",
-     "marka": "Hema",
-     "model": "1PN.082.CB12"
-    },
-    {
-     "kod": "HEMA.1PN.212",
-     "ad": "HEMA 1PN.192.CJT3 / 212 - 27,2 LT/DK DİŞLİ POMPA",
-     "marka": "Hema",
-     "model": "1PN.192.CJT3"
+     "kod": "ESM.EDZA.440",
+     "ad": "( EDZA 440-M8 ) 40 X 40 X M8 DÜZ POMPA ADAPTÖRÜ"
     },
     {
      "kod": "HMS.PEX.EGİK.05",
-     "ad": "PEX752055131 - 55 LT (SAĞ) EĞİK EKSENLİ PİSTONLU POMPA",
-     "marka": "HMS",
-     "model": ""
+     "ad": "( PEX752055131 ) 55 LT ( SAĞ ) EĞİK PİSTONLU POMPA"
     },
     {
-     "kod": "HEMA.MUH.015",
-     "ad": "HEMA TANDEM POMPA SETİ",
-     "marka": "Hema",
-     "model": ""
+     "kod": "HMS.PDT.DPK.03",
+     "ad": "( PDT-DK300510451 ) PDTDK 30-51 SAĞ POMPA"
     },
     {
-     "kod": "HEMA.1PN.064",
-     "ad": "HEMA 1PN.192.CB11 / 064 - 27,2 LT/DK DİŞLİ POMPA",
-     "marka": "Hema",
-     "model": "1PN.192.CB11"
+     "kod": "PZB.EĞİK.084",
+     "ad": "( EOS 84 ) EĞİK EKSENLİ PİSTONLU POMPA"
     },
     {
-     "kod": "HDT.16221050366",
-     "ad": "105 LT EKSENEL DİŞLİ POMPA",
-     "marka": "Hidroteknik",
-     "model": ""
+     "kod": "PZB.DÜZ.050",
+     "ad": "PZB ( P1-50 ) DÜZ PİSTONLU POMPA"
     },
     {
      "kod": "HDT.16300820369",
-     "ad": "82 LT DİŞLİ POMPA ISO ÇİFT DÖNÜŞ",
-     "marka": "Hidroteknik",
-     "model": ""
+     "ad": "82 LT DİŞLİ POMPA İSO ÇİFT DÖNÜŞ"
     },
     {
-     "kod": "HEMA.1PN.067",
-     "ad": "HEMA 1PN.040.ABT1 / 067 - 5,7 LT/DK DİŞLİ POMPA",
-     "marka": "Hema",
-     "model": "1PN.040.ABT1"
+     "kod": "HDT.16221050366",
+     "ad": "105 LT EKSENEL DİŞLİ POMPA"
     },
     {
-     "kod": "HEMA.1PN.004",
-     "ad": "HEMA 1PN.281.AB13 / 004 - 40,4 LT/DK DİŞLİ POMPA",
-     "marka": "Hema",
-     "model": "1PN.281.AB13"
+     "kod": "HR.PUMP.00C0.25X047-H",
+     "ad": "HİDROLİK DİŞLİ POMPA ( 00C0.25X047-H )",
+     "marka": "Hydropack"
     },
     {
-     "kod": "HEMA.0P1.101",
-     "ad": "HEMA 0P1.103S.ABP1 / 101 - 1,5 LT/DK DİŞLİ POMPA",
-     "marka": "Hema",
-     "model": "0P1.103S.ABP1"
+     "kod": "HR.PRB.PRB18/SS",
+     "ad": "( PRB 18/SS ) TEK ETKİLİ TEK BASAMAKLI EL POMPASI",
+     "marka": "Hydropack"
     },
     {
-     "kod": "HEMA.0P1.121",
-     "ad": "HEMA 0P1.106.CBP1 / 121 - 2,9 LT/DK DİŞLİ POMPA",
-     "marka": "Hema",
-     "model": "0P1.106.CBP1"
+     "kod": "HEMA.2P1.457",
+     "ad": "( 2P1.3146.SCBP1 / 457 ) 66,5 LT/DK DİŞLİ POMPA",
+     "marka": "Hema"
     },
     {
-     "kod": "HEMA.1PN.146",
-     "ad": "HEMA 1PN.082.AB12 / 146 - 11,8 LT/DK DİŞLİ POMPA",
-     "marka": "Hema",
-     "model": "1PN.082.AB12"
+     "kod": "ESM.DRA.351.2",
+     "ad": "( DRA 351 ) 51 MM 1 POMPA ADAPTÖRÜ"
     },
     {
-     "kod": "HEMA.1PN.180",
-     "ad": "HEMA 1PN.095.CB15 / 180 - 13,1 LT/DK DİŞLİ POMPA",
-     "marka": "Hema",
-     "model": "1PN.095.CB15"
+     "kod": "HMS.PEX.EGİK.09",
+     "ad": "( PEX752085131 ) 85 LT ( SAĞ ) EĞİK PİSTONLU POMPA"
+    },
+    {
+     "kod": "HMS.PEX.EGİK.10",
+     "ad": "( PEX752085132 ) 85 LT ( SOL ) EĞİK PİSTONLU POMPA"
+    },
+    {
+     "kod": "PZB.DÜZ.090",
+     "ad": "PZB ( P1-90 ) DÜZ PİSTONLU POMPA"
+    },
+    {
+     "kod": "PZB.DÜZ.037",
+     "ad": "PZB ( P1-37 ) DÜZ PİSTONLU POMPA"
+    },
+    {
+     "kod": "HDT.16300820169",
+     "ad": "82 LT DİŞLİ POMPA UNI-T1 ÇİFT DÖNÜŞLÜ"
+    },
+    {
+     "kod": "HDT.16301510399",
+     "ad": "K SERİSİ 51 LT DİŞLİ POMPA SOL/CCW"
+    },
+    {
+     "kod": "HR.PRB.TANK.05",
+     "ad": "( PRB ) EL POMPASI YAĞ TANKI 3 LT",
+     "marka": "Hydropack",
+     "model": "3 LT"
     }
    ]
   },
   "hidrolik-silindir": {
-   "toplamUrun": 382,
+   "toplamUrun": 374,
    "urunler": [
     {
      "kod": "CNC.04.01.063X75",
      "ad": "ARKA KAPAK BASİT TİP CNC-AK-63X75",
      "marka": "Hidroteknik",
-     "model": "CNC-AK-63X75"
-    },
-    {
-     "kod": "CNC.02.02.050K",
-     "ad": "PİSTON VİDALI CNC-PV-50K",
-     "marka": "Hidroteknik",
-     "model": "CNC-PV-50K"
-    },
-    {
-     "kod": "CNC.01.01.040X25K",
-     "ad": "DÖKÜM KEP 40X25K",
-     "marka": "Hidroteknik",
-     "model": ""
+     "model": "63X75"
     },
     {
      "kod": "CNC.04.01.050X60",
      "ad": "ARKA KAPAK BASİT TİP CNC-AK-50X60",
      "marka": "Hidroteknik",
-     "model": "CNC-AK-50X60"
-    },
-    {
-     "kod": "CNC.02.02.080K",
-     "ad": "PİSTON VİDALI CNC-PV-80K",
-     "marka": "Hidroteknik",
-     "model": "CNC-PV-80K"
-    },
-    {
-     "kod": "CNC.01.02.050X30K",
-     "ad": "ÇELİK KEP CNC-ÇB 50X30K",
-     "marka": "Hidroteknik",
-     "model": ""
+     "model": "50X60"
     },
     {
      "kod": "CNC.04.01.070X85",
      "ad": "ARKA KAPAK BASİT TİP CNC-AK-70X85",
      "marka": "Hidroteknik",
-     "model": "CNC-AK-70X85"
-    },
-    {
-     "kod": "CNC.01.02.090X60K",
-     "ad": "ÇELİK KEP CNC-ÇB 90X60K",
-     "marka": "Hidroteknik",
-     "model": ""
-    },
-    {
-     "kod": "CNC.02.02.040K",
-     "ad": "PİSTON VİDALI CNC-PV-40K",
-     "marka": "Hidroteknik",
-     "model": "CNC-PV-40K"
+     "model": "70X85"
     },
     {
      "kod": "CNC.04.01.080X95",
      "ad": "ARKA KAPAK BASİT TİP CNC-AK-80X95",
      "marka": "Hidroteknik",
-     "model": "CNC-AK-80X95"
+     "model": "80X95"
     },
     {
-     "kod": "CNC.01.02.080X50K",
-     "ad": "ÇELİK KEP CNC-ÇB 80X50K",
-     "marka": "Hidroteknik",
-     "model": ""
+     "kod": "CNC.02.02.050K",
+     "ad": "PİSTON VİDALI CNC-PV-50K",
+     "marka": "Hidroteknik"
     },
     {
-     "kod": "CNC.04.01.090X105",
-     "ad": "ARKA KAPAK BASİT TİP CNC-AK-90X105",
-     "marka": "Hidroteknik",
-     "model": "CNC-AK-90X105"
-    },
-    {
-     "kod": "CNC.02.02.090K",
-     "ad": "PİSTON VİDALI CNC-PV-90K",
-     "marka": "Hidroteknik",
-     "model": "CNC-PV-90K"
+     "kod": "CNC.02.02.080K",
+     "ad": "PİSTON VİDALI CNC-PV-80K",
+     "marka": "Hidroteknik"
     },
     {
      "kod": "CNC.02.02.100K",
      "ad": "PİSTON VİDALI CNC-PV-100K",
-     "marka": "Hidroteknik",
-     "model": "CNC-PV-100K"
+     "marka": "Hidroteknik"
     },
     {
      "kod": "CNC.02.03.070K",
      "ad": "PİSTON YATAKLAMALI CNC-PV-Y70K",
-     "marka": "Hidroteknik",
-     "model": "CNC-PV-Y70K"
+     "marka": "Hidroteknik"
     },
     {
-     "kod": "CNC.02.02.063K",
-     "ad": "PİSTON VİDALI CNC-PV-63K",
-     "marka": "Hidroteknik",
-     "model": "CNC-PV-63K"
+     "kod": "CNC.01.02.050X30K",
+     "ad": "ÇELİK KEP CNC-ÇB 50X30K",
+     "marka": "Hidroteknik"
     },
     {
-     "kod": "CNC.01.02.100X60K",
-     "ad": "ÇELİK KEP CNC-ÇB 100X60K",
-     "marka": "Hidroteknik",
-     "model": ""
+     "kod": "CNC.01.02.080X50K",
+     "ad": "ÇELİK KEP CNC-ÇB 80X50K",
+     "marka": "Hidroteknik"
     },
     {
-     "kod": "CNC.BTB.080.050",
-     "ad": "BOĞAZ TAKOZU BİLEZİKLİ TİP (KEÇELİ) 080 x 50",
-     "marka": "Hidroteknik",
-     "model": "080 x 50"
+     "kod": "CNC.01.02.090X60K",
+     "ad": "ÇELİK KEP CNC-ÇB 90X60K",
+     "marka": "Hidroteknik"
     },
     {
-     "kod": "CNC.B.070.085",
-     "ad": "BİLEZİK 070x85 (M84 x 2)",
-     "marka": "Hidroteknik",
-     "model": "070x85"
-    },
-    {
-     "kod": "CNC.01.02.110X60K",
-     "ad": "ÇELİK KEP CNC-ÇB 110X60K",
-     "marka": "Hidroteknik",
-     "model": ""
-    },
-    {
-     "kod": "CNC.01.02.050X35K",
-     "ad": "ÇELİK KEP CNC-ÇB 50X35K",
-     "marka": "Hidroteknik",
-     "model": ""
-    },
-    {
-     "kod": "CNC.B.080.095",
-     "ad": "BİLEZİK 080x95 (M94 x 2)",
-     "marka": "Hidroteknik",
-     "model": "080x95"
-    }
-   ]
-  },
-  "pnomatik-silindir": {
-   "toplamUrun": 420,
-   "urunler": [
-    {
-     "kod": "ARC.KDNT.080.160",
-     "ad": "KDNT ISO MANYETİK YASTIKLI PNÖMATİK SİLİNDİR 80X160",
-     "marka": "KDNT",
-     "model": "80X160"
-    },
-    {
-     "kod": "PEM.S.PAG.040.025",
-     "ad": "PEMAKS PAG 40 X 25 PNÖMATİK SİLİNDİR",
-     "marka": "Pemaks",
-     "model": "PAG"
-    },
-    {
-     "kod": "PEM.S.PK.050.090",
-     "ad": "PEMAKS PK 050 GA 0090 KOMPAKT DÖNMEZ MİLLİ MANYETİKLİ SİLİNDİR",
-     "marka": "Pemaks",
-     "model": "PK"
-    },
-    {
-     "kod": "EKO.SDA.12.100",
-     "ad": "SDA-S 12x100 SHORT STROK SİLİNDİR",
-     "marka": "",
-     "model": "SDA-S"
-    },
-    {
-     "kod": "EKO.SDA.040.015",
-     "ad": "SDA-S 40X15 SHORT STROK SİLİNDİR",
-     "marka": "",
-     "model": "SDA-S"
-    },
-    {
-     "kod": "EKO.DSN.25.50",
-     "ad": "DSN 25X50 MANYETİK YASTIKLI KALEM SİLİNDİR A.Y.",
-     "marka": "",
-     "model": "DSN"
-    },
-    {
-     "kod": "ARC.KDNT.032.125",
-     "ad": "KDNT ISO MANYETİK YASTIKLI PNÖMATİK SİLİNDİR 32X125",
-     "marka": "KDNT",
-     "model": "32X125"
-    },
-    {
-     "kod": "PEM.S.PAG.032.050",
-     "ad": "PEMAKS PAG 32 X 50 PNÖMATİK SİLİNDİR",
-     "marka": "Pemaks",
-     "model": "PAG"
-    },
-    {
-     "kod": "PEM.S.PM.16.020",
-     "ad": "PEMAKS PM-A 16 X 20 MANYETİK KALEM SİLİNDİR",
-     "marka": "Pemaks",
-     "model": "PM-A"
-    },
-    {
-     "kod": "PEM.S.PM.20.100",
-     "ad": "PEMAKS PM-A 20 X 100 MANYETİK KALEM SİLİNDİR",
-     "marka": "Pemaks",
-     "model": "PM-A"
-    },
-    {
-     "kod": "ARC.KDNT.040.100",
-     "ad": "KDNT ISO MANYETİK YASTIKLI PNÖMATİK SİLİNDİR 40X100",
-     "marka": "KDNT",
-     "model": "40X100"
-    },
-    {
-     "kod": "ARC.KDNT.063.350",
-     "ad": "KDNT ISO MANYETİK YASTIKLI PNÖMATİK SİLİNDİR 63X350",
-     "marka": "KDNT",
-     "model": "63X350"
-    },
-    {
-     "kod": "ARC.KDNT.080.100",
-     "ad": "KDNT ISO MANYETİK YASTIKLI PNÖMATİK SİLİNDİR 80X100",
-     "marka": "KDNT",
-     "model": "80X100"
-    },
-    {
-     "kod": "PEM.S.PM.25.050",
-     "ad": "PEMAKS PM-A 25 X 50 MANYETİK KALEM SİLİNDİR",
-     "marka": "Pemaks",
-     "model": "PM-A"
-    },
-    {
-     "kod": "ARC.KDNT.080.050",
-     "ad": "KDNT ISO MANYETİK YASTIKLI PNÖMATİK SİLİNDİR 80X50",
-     "marka": "KDNT",
-     "model": "80X50"
-    },
-    {
-     "kod": "PEM.S.PAG.050.160",
-     "ad": "PEMAKS PAG 50 X 160 PNÖMATİK SİLİNDİR",
-     "marka": "Pemaks",
-     "model": "PAG"
-    },
-    {
-     "kod": "PEM.S.PM.16.160",
-     "ad": "PEMAKS PM-A 16 X 160 MANYETİK KALEM SİLİNDİR",
-     "marka": "Pemaks",
-     "model": "PM-A"
-    },
-    {
-     "kod": "EKO.SDA.12.30",
-     "ad": "SDA 12x30 SHORT STROK SİLİNDİR",
-     "marka": "",
-     "model": "SDA"
-    },
-    {
-     "kod": "ARC.KDNT.063.400",
-     "ad": "KDNT ISO MANYETİK YASTIKLI PNÖMATİK SİLİNDİR 63X400",
-     "marka": "KDNT",
-     "model": "63X400"
-    },
-    {
-     "kod": "PEM.S.PK.032.010",
-     "ad": "PEMAKS PK 032 DA 010 KOMPAKT ÇİFT MİLLİ MANYETİKLİ SİLİNDİR",
-     "marka": "Pemaks",
-     "model": "PK"
-    },
-    {
-     "kod": "PEM.S.PM.20.050",
-     "ad": "PEMAKS PM-A 20 X 50 MANYETİK KALEM SİLİNDİR",
-     "marka": "Pemaks",
-     "model": "PM-A"
-    },
-    {
-     "kod": "PEM.S.PM.25.025",
-     "ad": "PEMAKS PM-A 25 X 25 MANYETİK KALEM SİLİNDİR",
-     "marka": "Pemaks",
-     "model": "PM-A"
+     "kod": "CNC.01.01.040X25K",
+     "ad": "DÖKÜM KEP 40X25K",
+     "marka": "Hidroteknik"
     }
    ]
   },
   "kuresel-vana": {
-   "toplamUrun": 95,
+   "toplamUrun": 162,
    "urunler": [
     {
-     "kod": "KS.00.04",
-     "ad": "MİNİ KÜRESEL VANA 1/4",
-     "marka": "",
-     "model": "1/4"
+     "kod": "SMS.KV.W1120.065",
+     "ad": "KOLLU WAFER KELEBEK VANA 2-1/2 ( KV.W1120.65 )",
+     "marka": "SMS Tork"
     },
     {
-     "kod": "KS.00.08",
-     "ad": "MİNİ KÜRESEL VANA 1/2",
-     "marka": "",
-     "model": "1/2"
+     "kod": "SMS.PP.1020.16",
+     "ad": "SMS TORK PİSTONLU VANA METAL 1",
+     "marka": "SMS Tork"
     },
     {
-     "kod": "KS.25.08",
-     "ad": "KÜRESEL VANA 1/2 - 16 BAR",
-     "marka": "",
-     "model": "1/2"
+     "kod": "FR.BV2G38N",
+     "ad": "FERRO 3/8 HİDROLİK İKİ YOLLU VANA (BV2G38N)",
+     "marka": "Ferro"
     },
     {
-     "kod": "KS.00.06",
-     "ad": "MİNİ KÜRESEL VANA 3/8",
-     "marka": "",
-     "model": "3/8"
-    },
-    {
-     "kod": "KS.25.16",
-     "ad": "KÜRESEL VANA 1 - 16 BAR",
-     "marka": "",
-     "model": ""
-    },
-    {
-     "kod": "EKO.Q22HD-25",
-     "ad": "1'' PİRİNÇ PİSTONLU VANA ISIYA DAYANIKLI TEFLON YATAKLI",
-     "marka": "",
-     "model": ""
-    },
-    {
-     "kod": "KS.25.12",
-     "ad": "KÜRESEL VANA 3/4 - 16 BAR",
-     "marka": "",
-     "model": "3/4"
-    },
-    {
-     "kod": "KS.25.20",
-     "ad": "KÜRESEL VANA 1.1/4 - 16 BAR",
-     "marka": "",
-     "model": "1/4"
-    },
-    {
-     "kod": "KS.25.24",
-     "ad": "KÜRESEL VANA 1.1/2 - 16 BAR",
-     "marka": "",
-     "model": "1/2"
-    },
-    {
-     "kod": "KS.25.32",
-     "ad": "KÜRESEL VANA 2 - 25 BAR",
-     "marka": "",
-     "model": ""
-    },
-    {
-     "kod": "KS.25.04",
-     "ad": "KÜRESEL VANA 1/4 - 16 BAR",
-     "marka": "",
-     "model": "1/4"
-    },
-    {
-     "kod": "KS.00.02",
-     "ad": "MİNİ KÜRESEL VANA 1/8",
-     "marka": "",
-     "model": "1/8"
-    },
-    {
-     "kod": "EKO.REK.KV.00.08",
-     "ad": "HAT TİPİ 2/2 KÜRESEL VANA 8 x 8",
-     "marka": "",
-     "model": "8 x 8"
-    },
-    {
-     "kod": "OLEOC.KV2-10G38",
-     "ad": "HİDROLİK İKİ YOLLU KÜRESEL VANA BSPP 3/8 DN10",
-     "marka": "Oleocontrol",
-     "model": "DN10"
-    },
-    {
-     "kod": "KS.25.40",
-     "ad": "KÜRESEL VANA 2.1/2 - 25 BAR",
-     "marka": "",
-     "model": "1/2"
-    },
-    {
-     "kod": "OLEOC.KV2-10G14",
-     "ad": "HİDROLİK İKİ YOLLU KÜRESEL VANA BSPP 1/4 DN10",
-     "marka": "Oleocontrol",
-     "model": "DN10"
-    },
-    {
-     "kod": "EKO.REK.KV.00.10",
-     "ad": "HAT TİPİ 2/2 KÜRESEL VANA 10 x 10",
-     "marka": "",
-     "model": "10 x 10"
-    },
-    {
-     "kod": "OLEOC.KV2-25G1",
-     "ad": "HİDROLİK İKİ YOLLU KÜRESEL VANA BSPP 1 DN25",
-     "marka": "Oleocontrol",
-     "model": "DN25"
+     "kod": "FR.BV2G114N",
+     "ad": "FERRO 1-1/4 HİDROLİK İKİ YOLLU VANA (BV2G114N)",
+     "marka": "Ferro"
     },
     {
      "kod": "DURA.BLV-N122BP015",
      "ad": "DURAVİS 2/2 YOLLU PİRİNÇ KÜRESEL VANA PN40 1/2",
      "marka": "Duravis",
-     "model": "2/2"
+     "model": "1/2"
     },
     {
-     "kod": "KS.00.12",
-     "ad": "MİNİ KÜRESEL VANA 3/4",
-     "marka": "",
-     "model": "3/4"
+     "kod": "DURA.121.16.030",
+     "ad": "DURAVİS KELEBEK VANA DN125",
+     "marka": "Duravis",
+     "model": "DN125"
     },
     {
-     "kod": "EKO.REK.KV.00.06",
-     "ad": "HAT TİPİ 2/2 KÜRESEL VANA 6 x 6",
-     "marka": "",
-     "model": "6 x 6"
+     "kod": "KS.00.04",
+     "ad": "MİNİ KÜRESEL VANA 1/4",
+     "model": "1/4"
+    },
+    {
+     "kod": "KS.25.08",
+     "ad": "KÜRESEL VANA 1/2 - 16 BAR",
+     "model": "16 BAR"
+    },
+    {
+     "kod": "OLEOC.KV2-10G38",
+     "ad": "HİDROLİK İKİ YOLLU KÜRESEL VANA BSPP 3/8 DN10",
+     "model": "DN10"
+    },
+    {
+     "kod": "OLEOC.KV2-25G1",
+     "ad": "HİDROLİK İKİ YOLLU KÜRESEL VANA BSPP 1 DN25",
+     "model": "DN25"
+    },
+    {
+     "kod": "MUH.MUH.100",
+     "ad": "1 1/4\" İNOX 304 2 PARÇA KÜRESEL VANA"
+    },
+    {
+     "kod": "MUH.MUH.161",
+     "ad": "DN50 WAFER KELEBEK VANA 304 KROM KLAPE EPDM"
+    },
+    {
+     "kod": "SMS.YEDEK.11",
+     "ad": "KOLLU KELEBEK VANA",
+     "marka": "SMS Tork"
+    },
+    {
+     "kod": "SMS.KV.W1120.040",
+     "ad": "KOLLU WAFER KELEBEK VANA 1-1/2 ( KV.W1120.40 )",
+     "marka": "SMS Tork"
+    },
+    {
+     "kod": "FR.BV2G34N",
+     "ad": "FERRO 3/4 HİDROLİK İKİ YOLLU VANA (BV2G34N)",
+     "marka": "Ferro"
+    },
+    {
+     "kod": "DURA.BLV-N122BP065",
+     "ad": "DURAVİS 2/2 YOLLU PİRİNÇ KÜRESEL VANA PN25 2 1/2",
+     "marka": "Duravis",
+     "model": "1/2"
+    },
+    {
+     "kod": "DURA.BLV-N122BP050",
+     "ad": "DURAVİS 2/2 YOLLU PİRİNÇ KÜRESEL VANA PN40 2",
+     "marka": "Duravis"
+    },
+    {
+     "kod": "MUH.MUH.143",
+     "ad": "DN80 WAFER KELEBEK VANA 304 KROM KLAPE EPDM"
+    },
+    {
+     "kod": "KS.00.06",
+     "ad": "MİNİ KÜRESEL VANA 3/8",
+     "model": "3/8"
     },
     {
      "kod": "OLEOC.KV2-25G114",
      "ad": "HİDROLİK İKİ YOLLU KÜRESEL VANA BSPP 1.1/4 DN25",
-     "marka": "Oleocontrol",
      "model": "DN25"
     }
    ]
@@ -1879,145 +947,8 @@
     }
    ]
   },
-  "hortum-kelepce": {
-   "toplamUrun": 244,
-   "urunler": [
-    {
-     "kod": "ERBİ.013019",
-     "ad": "ERBİ KELEPÇE 13 - 19 MM",
-     "marka": "Erbi",
-     "model": "13 - 19 MM"
-    },
-    {
-     "kod": "ERBİ.010016",
-     "ad": "ERBİ KELEPÇE 10 - 16 MM",
-     "marka": "Erbi",
-     "model": "10 - 16 MM"
-    },
-    {
-     "kod": "ERBİ.016023",
-     "ad": "ERBİ KELEPÇE 16 - 23 MM",
-     "marka": "Erbi",
-     "model": "16 - 23 MM"
-    },
-    {
-     "kod": "ÖZ.01.28",
-     "ad": "18 MM KAYAR KELEPÇE 29 - 31 MM",
-     "marka": "",
-     "model": "29 - 31 MM"
-    },
-    {
-     "kod": "ERBİ.022036",
-     "ad": "ERBİ KELEPÇE 22 - 36 MM",
-     "marka": "Erbi",
-     "model": "22 - 36 MM"
-    },
-    {
-     "kod": "LMC.CM00M03P1YG2016.0",
-     "ad": "16 MM ÇİFT VİDALI ALT TABLALI KELEPÇE",
-     "marka": "LMC",
-     "model": ""
-    },
-    {
-     "kod": "LMC.CM40M13P1YI2016.0",
-     "ad": "16 MM TEK VİDALI ALT TABLALI İKİZ KELEPÇE",
-     "marka": "LMC",
-     "model": ""
-    },
-    {
-     "kod": "ERBİ.020030",
-     "ad": "ERBİ KELEPÇE 20 - 30 MM",
-     "marka": "Erbi",
-     "model": "20 - 30 MM"
-    },
-    {
-     "kod": "ÖZ.01.05",
-     "ad": "25 MM KAYAR KELEPÇE 44 - 46 MM (1.1/2)",
-     "marka": "",
-     "model": "44 - 46 MM"
-    },
-    {
-     "kod": "LMC.CM00M03P1YG3020.0",
-     "ad": "20 MM ÇİFT VİDALI ALT TABLALI KELEPÇE",
-     "marka": "LMC",
-     "model": ""
-    },
-    {
-     "kod": "ÖZ.01.09",
-     "ad": "25 MM KAYAR KELEPÇE 62 - 67 MM",
-     "marka": "",
-     "model": "62 - 67 MM"
-    },
-    {
-     "kod": "LMC.CM40M13P1YI3020.0",
-     "ad": "20 MM TEK VİDALI ALT TABLALI İKİZ KELEPÇE",
-     "marka": "LMC",
-     "model": ""
-    },
-    {
-     "kod": "ERBİ.032051",
-     "ad": "ERBİ KELEPÇE 32 - 51 MM",
-     "marka": "Erbi",
-     "model": "32 - 51 MM"
-    },
-    {
-     "kod": "LMC.CM00M03P1YG1012.0",
-     "ad": "12 MM ÇİFT VİDALI ALT TABLALI KELEPÇE",
-     "marka": "LMC",
-     "model": ""
-    },
-    {
-     "kod": "ERBİ.041487",
-     "ad": "ERBİ KELEPÇE 8 - 13 MM",
-     "marka": "Erbi",
-     "model": "8 - 13 MM"
-    },
-    {
-     "kod": "LMC.CM40M13P1YI2018.0",
-     "ad": "18 MM TEK VİDALI ALT TABLALI İKİZ KELEPÇE",
-     "marka": "LMC",
-     "model": ""
-    },
-    {
-     "kod": "LMC.CM40M13P1YI1012.0",
-     "ad": "12 MM TEK VİDALI ALT TABLALI İKİZ KELEPÇE",
-     "marka": "LMC",
-     "model": ""
-    },
-    {
-     "kod": "LMC.CM00M03P1YG0010.0",
-     "ad": "10 MM TEK VİDALI ALT TABLALI KELEPÇE",
-     "marka": "LMC",
-     "model": ""
-    },
-    {
-     "kod": "ÖZ.01.21",
-     "ad": "18 MM KAYAR KELEPÇE 17 - 19 MM",
-     "marka": "",
-     "model": "17 - 19 MM"
-    },
-    {
-     "kod": "ÖZ.01.20",
-     "ad": "18 MM KAYAR KELEPÇE 15 - 17 MM",
-     "marka": "",
-     "model": "15 - 17 MM"
-    },
-    {
-     "kod": "ÖZ.01.26",
-     "ad": "18 MM KAYAR KELEPÇE 27 - 29 MM",
-     "marka": "",
-     "model": "27 - 29 MM"
-    },
-    {
-     "kod": "ÖZ.01.06",
-     "ad": "25 MM KAYAR KELEPÇE 47 - 51 MM",
-     "marka": "",
-     "model": "47 - 51 MM"
-    }
-   ]
-  },
   "hidrolik-kece-nutring": {
-   "toplamUrun": 5307,
+   "toplamUrun": 5297,
    "urunler": [
     {
      "kod": "KASTAS.K21-008/5 PU",
@@ -2210,6 +1141,401 @@
      "ad": "K14-020 A tipi V-ring",
      "marka": "Kastaş",
      "model": "20 mm"
+    }
+   ]
+  },
+  "hortum-kelepce": {
+   "toplamUrun": 247,
+   "urunler": [
+    {
+     "kod": "LMC.CM00M03P1YG2016.0",
+     "ad": "16 MM ÇİFT VİDALI ALT TABLALI KELEPÇE"
+    },
+    {
+     "kod": "LMC.CM40M13P1YI2016.0",
+     "ad": "16 MM TEK VİDALI ALT TABLALI İKİZ KELEPÇE"
+    },
+    {
+     "kod": "LMC.CM00M03P1YG3020.0",
+     "ad": "20 MM ÇİFT VİDALI ALT TABLALI KELEPÇE"
+    },
+    {
+     "kod": "ERBİ.013019",
+     "ad": "ERBİ KELEPÇE 13 - 19 MM",
+     "marka": "Erbi",
+     "model": "19 MM"
+    },
+    {
+     "kod": "ERBİ.010016",
+     "ad": "ERBİ KELEPÇE 10 - 16 MM",
+     "marka": "Erbi",
+     "model": "16 MM"
+    },
+    {
+     "kod": "ERBİ.016023",
+     "ad": "ERBİ KELEPÇE 16 - 23 MM",
+     "marka": "Erbi",
+     "model": "23 MM"
+    },
+    {
+     "kod": "ÖZ.01.28",
+     "ad": "18 MM KAYAR KELEPÇE 29 - 31 MM",
+     "model": "31 MM"
+    },
+    {
+     "kod": "ÖZ.01.05",
+     "ad": "25 MM KAYAR KELEPÇE 44 - 46 MM ( 1 1/2 )"
+    },
+    {
+     "kod": "ÖZ.01.09",
+     "ad": "25 MM KAYAR KELEPÇE 62 - 67 MM",
+     "model": "67 MM"
+    },
+    {
+     "kod": "HF.STOPFS1415",
+     "ad": "STOPFLEX - KELEPÇE SIKMA ARALIĞI 14-15"
+    },
+    {
+     "kod": "HF.STOPFS1617",
+     "ad": "STOPFLEX - KELEPÇE SIKMA ARALIĞI 16 - 17"
+    },
+    {
+     "kod": "MUH.MUH.164",
+     "ad": "3\" AĞIR YÜK KELEPÇE KAFALI TİP"
+    },
+    {
+     "kod": "LMC.CM40M13P1YI3020.0",
+     "ad": "20 MM TEK VİDALI ALT TABLALI İKİZ KELEPÇE"
+    },
+    {
+     "kod": "ÖZ.01.21",
+     "ad": "18 MM KAYAR KELEPÇE 17 - 19 MM",
+     "model": "19 MM"
+    },
+    {
+     "kod": "ERBİ.022036",
+     "ad": "ERBİ KELEPÇE 22 - 36 MM",
+     "marka": "Erbi",
+     "model": "36 MM"
+    },
+    {
+     "kod": "MUH.MUH.165",
+     "ad": "2\" AĞIR YÜK KELEPÇE KAFALI TİP"
+    }
+   ]
+  },
+  "pnomatik-silindir": {
+   "toplamUrun": 439,
+   "urunler": [
+    {
+     "kod": "PEM.S.PAG.040.025",
+     "ad": "PEMAKS PAG 40 X 25 PNÖMATİK SİLİNDİR",
+     "marka": "Pemaks"
+    },
+    {
+     "kod": "PEM.S.DMC.032.350",
+     "ad": "PEMAKS DMC-A ISO 32X350 MANYETİK YASTIKLI PNÖMATİK SİLİNDİR",
+     "marka": "Pemaks"
+    },
+    {
+     "kod": "PEM.S.DMC.32.520.R3",
+     "ad": "PEMAKS DMC-A ISO 32X520 R3 MANYETİK YASTIKLI SİLİNDİR",
+     "marka": "Pemaks"
+    },
+    {
+     "kod": "ARC.KDNT.080.160",
+     "ad": "KDNT ISO MANYETİK YASTIKLI PNÖMATİK SİLİNDİR 80X160",
+     "model": "80X160"
+    },
+    {
+     "kod": "ARC.KDNT.032.125",
+     "ad": "KDNT ISO MANYETİK YASTIKLI PNÖMATİK SİLİNDİR 32X125",
+     "model": "32X125"
+    },
+    {
+     "kod": "ARC.KDNT.040.100",
+     "ad": "KDNT ISO MANYETİK YASTIKLI PNÖMATİK SİLİNDİR 40X100",
+     "model": "40X100"
+    },
+    {
+     "kod": "EKO.CYL.ADN.25.40",
+     "ad": "ADN 25X40 KOMPAKT PNÖMATİK SİLİNDİR"
+    },
+    {
+     "kod": "EKO.CYL.ADN.25.25",
+     "ad": "ADN 25X25 KOMPAKT PNÖMATİK SİLİNDİR"
+    },
+    {
+     "kod": "EKO.GT.16",
+     "ad": "GT-16 TÜRBİNLİ PNÖMATİK VİBRATÖR"
+    },
+    {
+     "kod": "FMS.CETOP.100.050",
+     "ad": "FMS CETOP PNÖMATİK SİLİNDİR 100 X 050",
+     "model": "100 X 050"
+    },
+    {
+     "kod": "FR.PN25G14MN",
+     "ad": "FERRO PNÖMATİK ÇABUK EKLEME 1/4 - ERKEK UÇ",
+     "marka": "Ferro"
+    },
+    {
+     "kod": "MUH.MUH.21",
+     "ad": "PNÖMATİK SİLİNDİR"
+    },
+    {
+     "kod": "PEM.S.PAG.032.050",
+     "ad": "PEMAKS PAG 32 X 50 PNÖMATİK SİLİNDİR",
+     "marka": "Pemaks"
+    },
+    {
+     "kod": "ARC.KDNT.063.350",
+     "ad": "KDNT ISO MANYETİK YASTIKLI PNÖMATİK SİLİNDİR 63X350",
+     "model": "63X350"
+    },
+    {
+     "kod": "FR.PN25G14FN",
+     "ad": "FERRO PNÖMATİK ÇABUK EKLEME 1/4 - DİŞİ UÇ (PN25G14FN)",
+     "marka": "Ferro"
+    },
+    {
+     "kod": "EKO.CYL.ADN.32.10",
+     "ad": "ADN 32X10 KOMPAKT PNÖMATİK SİLİNDİR"
+    },
+    {
+     "kod": "EKO.CYL.ADN.32.75",
+     "ad": "ADN 32X75 KOMPAKT PNÖMATİK SİLİNDİR"
+    },
+    {
+     "kod": "MUH.MUH.36",
+     "ad": "PNÖMATİK BASINÇ YÜKSELTİCİ"
+    }
+   ]
+  },
+  "pnomatik-valf": {
+   "toplamUrun": 250,
+   "urunler": [
+    {
+     "kod": "EKO.4V210-08",
+     "ad": "1/4 5/2 TEK BOBİN EXPF VALF"
+    },
+    {
+     "kod": "EKO.3V210-08",
+     "ad": "1/4 3/2 TEK BOBİN VALF"
+    },
+    {
+     "kod": "EKO.FV320",
+     "ad": "1/4 3/2 YAYLI PEDAL VALF"
+    },
+    {
+     "kod": "PEM.VALF.PV1E-52-14V1",
+     "ad": "PEMAKS VALF TEK BOBİN 5/2-1/4 24 V DC",
+     "marka": "Pemaks"
+    },
+    {
+     "kod": "PEM.VALF.PV1E-32NO-14-V3",
+     "ad": "PV1 SERİSİ SOLENOİD VALF NA. 3/2-1/4 220V AC",
+     "marka": "Pemaks"
+    },
+    {
+     "kod": "SM.SME3214KK",
+     "ad": "SEMAKMATİK 3/2 - 1/4 KOL KUMANDA VALFİ",
+     "marka": "Semakmatik"
+    },
+    {
+     "kod": "SM.SME5214İÇB24M01",
+     "ad": "SEMAKMATİK 5/2 - 1/4 ÇİFT BOBİN VALF + 24 VDC BOBİN",
+     "marka": "Semakmatik"
+    },
+    {
+     "kod": "SMS.S109501010N",
+     "ad": "SMS TORK 1/4 X 3/2 SOLENOİD VALF (S1095)",
+     "marka": "SMS Tork"
+    },
+    {
+     "kod": "SMS.NM.02",
+     "ad": "SMS TORK NAMUR VALF 1/4 X 5/2 BOBİN-YAY",
+     "marka": "SMS Tork"
+    },
+    {
+     "kod": "MUH.MUH.186",
+     "ad": "VEMA (MY-32-1/8) MAKARALI VALF",
+     "marka": "Vema"
+    },
+    {
+     "kod": "MUH.034",
+     "ad": "VEMA (EYE-53-1/4-K) ÇİFT BOBİN VALF",
+     "marka": "Vema"
+    },
+    {
+     "kod": "FMS.MUH.01",
+     "ad": "FMS 1/4 X 5/2 PEDAL YAY VALF"
+    }
+   ]
+  },
+  "pnomatik-rakor": {
+   "toplamUrun": 341,
+   "urunler": [
+    {
+     "kod": "EKO.REK.PC.04.08",
+     "ad": "REKOR BAĞLANTI 1/4 x 8",
+     "model": "4 x 8"
+    },
+    {
+     "kod": "EKO.REK.PL.04.08",
+     "ad": "DÖNER DİRSEK BAĞLANTI 1/4 x 8",
+     "model": "4 x 8"
+    },
+    {
+     "kod": "EKO.REK.PE-0800",
+     "ad": "TE BAĞLANTI 8"
+    },
+    {
+     "kod": "PEM.REK.PRD.04.08",
+     "ad": "PEMAKS REKOR BAĞLANTI 1/4 x 8",
+     "marka": "Pemaks",
+     "model": "4 x 8"
+    },
+    {
+     "kod": "PEM.REK.PRL.04.010",
+     "ad": "PEMAKS DÖNER DİRSEK BAĞLANTI 1/4 x 10",
+     "marka": "Pemaks",
+     "model": "4 x 10"
+    },
+    {
+     "kod": "PEM.REK.PRD.08.08",
+     "ad": "PEMAKS REKOR BAĞLANTI 1/8 x 8",
+     "marka": "Pemaks",
+     "model": "8 x 8"
+    },
+    {
+     "kod": "FR.PN256HN",
+     "ad": "FERRO PNÖMATİK ÇABUK EKLEME 6 MM - HORTUM UÇ (PN256HN)",
+     "marka": "Ferro"
+    },
+    {
+     "kod": "FR.PN25G14MN",
+     "ad": "FERRO PNÖMATİK ÇABUK EKLEME 1/4 - ERKEK UÇ",
+     "marka": "Ferro"
+    },
+    {
+     "kod": "PC08-1/8",
+     "ad": "REKOR BAĞLANTI 1/8-8"
+    },
+    {
+     "kod": "PL08-1/4",
+     "ad": "DÖNER DİRSEK 1/4-8"
+    },
+    {
+     "kod": "SARI.MUH.PDD.0408",
+     "ad": "PLASTİK DÖNER DİRSEK BAĞLANTI 1/4 x 8 mm",
+     "model": "4 x 8"
+    },
+    {
+     "kod": "MUH.MUH.91",
+     "ad": "DÖNER DİRSEK BAĞLANTI"
+    },
+    {
+     "kod": "EKO.REK.BSLM.04.00",
+     "ad": "KISA TİP SİNTER SUSTURUCU 1/4",
+     "model": "1/4"
+    },
+    {
+     "kod": "PEM.REK.PRT-0800",
+     "ad": "PEMAKS TE BAĞLANTI 8",
+     "marka": "Pemaks"
+    },
+    {
+     "kod": "FR.PN258HN",
+     "ad": "FERRO PNÖMATİK ÇABUK EKLEME 8 MM - HORTUM UÇ (PN258HN)",
+     "marka": "Ferro"
+    },
+    {
+     "kod": "FR.PN25G12MCN",
+     "ad": "FERRO PNÖMATİK ÇABUK EKLEME 1/2 - ERKEK GÖVDE",
+     "marka": "Ferro"
+    },
+    {
+     "kod": "PL06-1/4",
+     "ad": "DÖNER DİRSEK 1/4-6"
+    },
+    {
+     "kod": "PC8-1/4",
+     "ad": "REKOR BAĞLANTI 1/4-8"
+    }
+   ]
+  },
+  "pnomatik-hortum": {
+   "toplamUrun": 73,
+   "urunler": [
+    {
+     "kod": "SEL.JAVA.08.155",
+     "ad": "JAVA 8 MM HAVA HORTUMU (155 GR)",
+     "marka": "Java"
+    },
+    {
+     "kod": "SEL.JAVA.10.230",
+     "ad": "JAVA 10 MM HAVA HORTUMU (230 GR)",
+     "marka": "Java"
+    },
+    {
+     "kod": "SEL.TFLN.05",
+     "ad": "TEFLON HORTUM BOĞUMLU 1/2",
+     "model": "1/2"
+    },
+    {
+     "kod": "EKO.PU.0805,5",
+     "ad": "POLİÜRETAN HORTUM 8X5,5",
+     "model": "8X5,5"
+    },
+    {
+     "kod": "EKO.PU.1006,5",
+     "ad": "POLİÜRETAN HORTUM 10X6,5",
+     "model": "10X6,5"
+    },
+    {
+     "kod": "EKO.PU.0604",
+     "ad": "POLİÜRETAN HORTUM 6X4",
+     "model": "6X4"
+    },
+    {
+     "kod": "KPL.PU.0805,5",
+     "ad": "SHPI 8X5,5 PU HAVA HORTUMU"
+    },
+    {
+     "kod": "KPL.PU.0604",
+     "ad": "SHPI 6X4 PU HAVA HORTUMU"
+    },
+    {
+     "kod": "KPL.PU.0402,5",
+     "ad": "SHPI 4X2,5 PU HAVA HORTUMU"
+    },
+    {
+     "kod": "PEM.HORTUM.PA.06",
+     "ad": "PEMAKS PA POLYAMİD HORTUM 6X4",
+     "marka": "Pemaks",
+     "model": "6X4"
+    },
+    {
+     "kod": "PEM.HORTUM.PA.08",
+     "ad": "PEMAKS PA POLYAMİD HORTUM 8X6",
+     "marka": "Pemaks",
+     "model": "8X6"
+    },
+    {
+     "kod": "HANSA.KOMP25-5.5G",
+     "ad": "HANSAFLEX 1 İNÇ KOMPRESÖR HAVA HORTUMU",
+     "marka": "HansaFlex"
+    },
+    {
+     "kod": "SEL.JAVA.08.156",
+     "ad": "JAVA 8 MM HAVA HORTUMU MAVİ (155 GR)",
+     "marka": "Java"
+    },
+    {
+     "kod": "EKO.PU.0402,5",
+     "ad": "POLİÜRETAN HORTUM 4X2,5",
+     "model": "4X2,5"
     }
    ]
   }
