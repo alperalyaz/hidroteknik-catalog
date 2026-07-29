@@ -77,6 +77,29 @@ export default async function KategoriSayfasi({
           </div>
         </section>
 
+        {Boolean(k.markalar?.length || k.standartlar?.length) && (
+          <section>
+            <h2>Stoktaki markalar ve standartlar</h2>
+            <div className="etiketler">
+              {k.markalar?.map((m) => (
+                <span key={m} className="etiket etiket-marka">
+                  {m}
+                </span>
+              ))}
+              {k.standartlar?.map((s) => (
+                <span key={s} className="etiket">
+                  {s}
+                </span>
+              ))}
+            </div>
+            <p className="tablo-not">
+              Listede olmayan bir marka soruyorsanız da arayın: {k.ad.toLocaleLowerCase('tr')}{' '}
+              grubunda ürünler standarda göre üretilir, aynı standardı taşıyan farklı markalar
+              birbirinin muadilidir.
+            </p>
+          </section>
+        )}
+
         <section>
           <h2>Stoktaki {k.ad.toLocaleLowerCase('tr')} çeşitlerinden örnekler</h2>
           <div className="tablo-kutu">
@@ -84,6 +107,8 @@ export default async function KategoriSayfasi({
               <thead>
                 <tr>
                   <th>Ürün</th>
+                  <th>Marka</th>
+                  <th>Model / ölçü</th>
                   <th>Stok kodu</th>
                 </tr>
               </thead>
@@ -91,6 +116,8 @@ export default async function KategoriSayfasi({
                 {liste.map((u) => (
                   <tr key={u.kod}>
                     <td>{urunAdiDuzelt(u.ad)}</td>
+                    <td>{u.marka || '—'}</td>
+                    <td className="model">{u.model || '—'}</td>
                     <td className="kod">{u.kod}</td>
                   </tr>
                 ))}
@@ -98,9 +125,10 @@ export default async function KategoriSayfasi({
             </table>
           </div>
           <p className="tablo-not">
-            Yukarıdaki liste {toplam.toLocaleString('tr-TR')} kalemlik {k.ad.toLocaleLowerCase('tr')}{' '}
-            stoğumuzdan bir örnektir. Aradığınız ölçü listede yoksa büyük olasılıkla stoğumuzda
-            vardır — lütfen sorunuz.
+            Liste, en çok hareket gören kalemlere göre sıralanmıştır ve{' '}
+            {toplam.toLocaleString('tr-TR')} kalemlik {k.ad.toLocaleLowerCase('tr')} stoğumuzun
+            tamamı değildir. Aradığınız ölçü listede yoksa büyük olasılıkla stoğumuzda vardır —
+            lütfen sorunuz.
           </p>
         </section>
 

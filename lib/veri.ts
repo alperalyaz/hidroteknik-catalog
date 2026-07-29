@@ -12,8 +12,12 @@ export type Kategori = {
   eslesme2?: string
   haric: string
   sss: Sss[]
+  /** Bu grupta stokta bulunan markalar. Marka araması yapan kullanıcı için. */
+  markalar?: string[]
+  /** Grubun uyduğu standartlar / tipler. */
+  standartlar?: string[]
 }
-export type Urun = { kod: string; ad: string }
+export type Urun = { kod: string; ad: string; marka?: string; model?: string }
 
 const urunler = urunlerJson.kategoriler as Record<
   string,

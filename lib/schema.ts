@@ -78,7 +78,10 @@ export function kategoriSchema(k: Kategori, urunler: Urun[], url: string) {
           name: u.ad,
           sku: u.kod,
           category: k.ad,
-          brand: { '@type': 'Brand', name: FIRMA.ad },
+          // Marka bilinen kalemlerde gerçek markayı beyan et: marka + model
+          // aramalarında (ör. "gates 2sc hortum") eşleşmeyi sağlayan alan budur.
+          brand: { '@type': 'Brand', name: u.marka || FIRMA.ad },
+          ...(u.model ? { mpn: u.model } : {}),
           offers: {
             '@type': 'Offer',
             // Fiyat müşteriye/miktara göre belirlendiği için sayı yayınlanmaz;
