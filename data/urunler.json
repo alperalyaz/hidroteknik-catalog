@@ -1743,7 +1743,7 @@
    ]
   },
   "o-ring-sizdirmazlik": {
-   "toplamUrun": 918,
+   "toplamUrun": 948,
    "urunler": [
     {
      "kod": "KASTAS.KO-0203517",
@@ -2013,6 +2013,203 @@
      "ad": "25 MM KAYAR KELEPÇE 47 - 51 MM",
      "marka": "",
      "model": "47 - 51 MM"
+    }
+   ]
+  },
+  "hidrolik-kece-nutring": {
+   "toplamUrun": 5307,
+   "urunler": [
+    {
+     "kod": "KASTAS.K21-008/5 PU",
+     "ad": "K21-008/5 PU nutring",
+     "marka": "Kastaş",
+     "model": "8 × 14 × 4"
+    },
+    {
+     "kod": "KASTAS.K69-035/6",
+     "ad": "K69-035/6",
+     "marka": "Kastaş",
+     "model": "35 × 30 × 5,4"
+    },
+    {
+     "kod": "KASTAS.K150-032",
+     "ad": "K150-032",
+     "marka": "Kastaş",
+     "model": "32 × 18 × 7,1/4,6"
+    },
+    {
+     "kod": "KASTAS.K06-040 PU",
+     "ad": "K06-040 PU",
+     "marka": "Kastaş",
+     "model": "40 × 48 × 7/5"
+    },
+    {
+     "kod": "KASTAS.K151-018",
+     "ad": "K151-018",
+     "marka": "Kastaş",
+     "model": "18 × 28 × 8"
+    },
+    {
+     "kod": "KASTAS.K22-030/1 PU",
+     "ad": "K22-030/1 PU",
+     "marka": "Kastaş",
+     "model": "30 × 40 × 6"
+    },
+    {
+     "kod": "KASTAS.K33-040 PU",
+     "ad": "K33-040 PU boğaz nutringi",
+     "marka": "Kastaş",
+     "model": "40 × 50 × 10"
+    },
+    {
+     "kod": "KASTAS.K68-040/1",
+     "ad": "K68-040/1",
+     "marka": "Kastaş",
+     "model": "40 × 44 × 9,5"
+    },
+    {
+     "kod": "KASTAS.K21-018/15",
+     "ad": "K21-018/15 nutring",
+     "marka": "Kastaş",
+     "model": "18 × 26 × 5,5"
+    },
+    {
+     "kod": "KASTAS.K84-063/1",
+     "ad": "K84-063/1",
+     "marka": "Kastaş",
+     "model": "63 × 57,5 × 4,5"
+    },
+    {
+     "kod": "KASTAS.K21-020/9 PU",
+     "ad": "K21-020/9 PU nutring",
+     "marka": "Kastaş",
+     "model": "20 × 25 × 3"
+    },
+    {
+     "kod": "KASTAS.K06-070",
+     "ad": "K06-070",
+     "marka": "Kastaş",
+     "model": "70 × 80 × 7/5"
+    },
+    {
+     "kod": "KASTAS.K27-036",
+     "ad": "K27-036",
+     "marka": "Kastaş",
+     "model": "36 × 44 × 7/5"
+    },
+    {
+     "kod": "KASTAS.K18 063-051",
+     "ad": "K18 063-051",
+     "marka": "Kastaş",
+     "model": "63 × 51 × 20,5"
+    },
+    {
+     "kod": "KASTAS.K21-040/11",
+     "ad": "K21-040/11 nutring",
+     "marka": "Kastaş",
+     "model": "40 × 50 × 8"
+    },
+    {
+     "kod": "KASTAS.K21-018",
+     "ad": "K21-018 nutring",
+     "marka": "Kastaş",
+     "model": "18 × 28 × 8"
+    },
+    {
+     "kod": "KASTAS.K51-020",
+     "ad": "K51-020",
+     "marka": "Kastaş",
+     "model": "20 × 30 × 10,4"
+    },
+    {
+     "kod": "KASTAS.K31-030/1",
+     "ad": "K31-030/1",
+     "marka": "Kastaş",
+     "model": "30 × 40 × 7,3"
+    },
+    {
+     "kod": "KASTAS.K68-050",
+     "ad": "K68-050",
+     "marka": "Kastaş",
+     "model": "50 × 55 × 15"
+    },
+    {
+     "kod": "KASTAS.K21-090 PU",
+     "ad": "K21-090 PU nutring",
+     "marka": "Kastaş",
+     "model": "90 × 110 × 12"
+    },
+    {
+     "kod": "KASTAS.K21-040/2 PU",
+     "ad": "K21-040/2 PU nutring",
+     "marka": "Kastaş",
+     "model": "40 × 50 × 10"
+    },
+    {
+     "kod": "KASTAS.K21-070 PU",
+     "ad": "K21-070 PU nutring",
+     "marka": "Kastaş",
+     "model": "70 × 90 × 12"
+    },
+    {
+     "kod": "KASTAS.K23-014/1",
+     "ad": "K23-014/1",
+     "marka": "Kastaş",
+     "model": "14 × 8 × 4,5"
+    },
+    {
+     "kod": "KASTAS.K21-030/9 PU",
+     "ad": "K21-030/9 PU nutring",
+     "marka": "Kastaş",
+     "model": "30 × 40 × 6"
+    },
+    {
+     "kod": "KASTAS.K33-050 PU",
+     "ad": "K33-050 PU boğaz nutringi",
+     "marka": "Kastaş",
+     "model": "50 × 60 × 10"
+    },
+    {
+     "kod": "KASTAS.K38-045 PU",
+     "ad": "K38-045 PU",
+     "marka": "Kastaş",
+     "model": "45 × 53 × 5,8"
+    },
+    {
+     "kod": "KASTAS.K01-080",
+     "ad": "K01-080",
+     "marka": "Kastaş",
+     "model": "80 × 95 × 22,5"
+    },
+    {
+     "kod": "KASTAS.KSB-4X25",
+     "ad": "KSB-4X25 fenolik yataklama",
+     "marka": "Kastaş",
+     "model": "4 × 25"
+    },
+    {
+     "kod": "KASTAS.KBT-1,5X5,6",
+     "ad": "KBT-1,5X5,6 bronz-teflon yataklama",
+     "marka": "Kastaş",
+     "model": "1,5 × 5,6"
+    },
+    {
+     "kod": "KASTAS.K19 075-060",
+     "ad": "K19 075-060 piston keçesi",
+     "marka": "Kastaş",
+     "model": "75 × 60 × 11"
+    },
+    {
+     "kod": "KASTAS.K94-060",
+     "ad": "K94-060 toz keçesi",
+     "marka": "Kastaş",
+     "model": "60 × 70 × 6,3/10"
+    },
+    {
+     "kod": "KASTAS.K14-020 A",
+     "ad": "K14-020 A tipi V-ring",
+     "marka": "Kastaş",
+     "model": "20 mm"
     }
    ]
   }

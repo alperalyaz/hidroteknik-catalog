@@ -6,7 +6,7 @@ import { KATEGORILER, kategoriUrunleri } from '@/lib/veri'
 export const metadata: Metadata = {
   title: 'Hidrolik ve Pnömatik Ürün Kataloğu',
   description:
-    '1984’ten beri endüstriyel hidrolik ve pnömatik malzeme tedarikçisi Hidroteknik’in ürün kataloğu: hidrolik hortum, rakor, silindir, pompa, valf, o-ring ve sızdırmazlık elemanları. Türkiye geneli sevkiyat.',
+    '1984’ten beri endüstriyel hidrolik ve pnömatik malzeme tedarikçisi Hidroteknik’in ürün kataloğu: hidrolik hortum, rakor, silindir, pompa, valf, keçe/nutring ve o-ring. Türkiye geneli sevkiyat.',
   alternates: { canonical: `${SITE_URL}/tr` },
 }
 

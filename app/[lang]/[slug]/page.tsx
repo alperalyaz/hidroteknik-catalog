@@ -100,6 +100,38 @@ export default async function KategoriSayfasi({
           </section>
         )}
 
+        {Boolean(k.profiller?.length) && (
+          <section>
+            <h2>Stoktaki profil kodları</h2>
+            <div className="tablo-kutu">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Profil</th>
+                    <th>Takıldığı yer</th>
+                    <th>Stoktaki ölçü</th>
+                    <th>Örnek kalem</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {k.profiller!.map((p) => (
+                    <tr key={p.kod}>
+                      <td>
+                        <b className="profil-kod">{p.kod}</b>
+                        {p.ad ? <span className="profil-ad">{p.ad}</span> : null}
+                      </td>
+                      <td>{p.yer}</td>
+                      <td>{p.adet.toLocaleString('tr-TR')} ölçü</td>
+                      <td className="model">{p.ornek}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            {k.profilNot ? <p className="tablo-not">{k.profilNot}</p> : null}
+          </section>
+        )}
+
         <section>
           <h2>Stoktaki {k.ad.toLocaleLowerCase('tr')} çeşitlerinden örnekler</h2>
           <div className="tablo-kutu">
