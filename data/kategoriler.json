@@ -122,5 +122,197 @@
       }
     ],
     "eslesme2": "S[İIi]L[İIi]ND[İIi]R"
+  },
+  {
+    "slug": "hidrolik-valf",
+    "ad": "Hidrolik ve Pnömatik Valf",
+    "h1": "Hidrolik ve Pnömatik Valfler",
+    "ozet": "Yön kontrol, basınç ayar, çek ve hız ayar valfleri. NG6/NG10 modüler valfler ve pnömatik seri dahil 750+ kalem.",
+    "giris": "Valf, hidrolik veya pnömatik devrede akışkanın nereye, ne kadar ve hangi basınçla gideceğini belirleyen elemandır. Devrenin \"karar veren\" parçasıdır: silindir kuvveti üretir, pompa akış sağlar, ama hareketin yönünü ve hızını valf tayin eder.\n\nÜç ana aile vardır. Yön kontrol valfleri akışın hangi hatta gideceğini seçer (4/2, 4/3 gibi konum-yol tanımlarıyla anılır). Basınç valfleri emniyet ve ayar görevi görür; emniyet valfi sistemin maksimum basıncını sınırlar. Akış valfleri ise hızı belirler. Modüler NG6 ve NG10 valfler bunları üst üste dizerek kompakt devre kurmayı sağlar.",
+    "eslesme": "VALF",
+    "eslesme2": "",
+    "haric": "[İIi]MALAT|REV[İIi]ZYON|DEĞ[İIi]Ş[İIi]M|TAM[İIi]R|MONTAJ|[İIi]ŞÇ[İIi]L[İIi]K|BAKIM",
+    "sss": [
+      {
+        "s": "Emniyet valfi ile basınç düşürme valfi aynı şey mi?",
+        "c": "Hayır. Emniyet valfi sistemin tamamını korur; ayarlanan basınç aşılınca fazla akışı tanka boşaltır. Basınç düşürme valfi ise bir kolun basıncını sistemin geri kalanından bağımsız olarak daha düşük bir değerde tutar. Biri koruma, diğeri ayar amaçlıdır."
+      },
+      {
+        "s": "4/2 ve 4/3 valf ne demek?",
+        "c": "İlk sayı bağlantı (yol) adedini, ikincisi konum sayısını gösterir. 4/3 valf dört bağlantılı ve üç konumludur; orta konumu sayesinde silindir yük altında durdurulabilir. 4/2 valfte orta konum yoktur, silindir sürekli bir yöne komut alır."
+      },
+      {
+        "s": "Pnömatik valf seçerken debiye mi bakmalıyım?",
+        "c": "Evet. Pnömatikte valfin geçirgenliği Cv veya Kv değeriyle verilir. Silindir hacmi ve istenen çevrim süresine göre yetersiz debili valf seçilirse silindir yavaş çalışır; valf çapını hattan büyük seçmek de gereksiz maliyettir."
+      }
+    ]
+  },
+  {
+    "slug": "hidrolik-pompa",
+    "ad": "Hidrolik Pompa",
+    "h1": "Hidrolik Pompa ve Güç Üniteleri",
+    "ozet": "Dişli, paletli ve eksenel pistonlu hidrolik pompalar; tandem setler ve güç ünitesi bileşenleri.",
+    "giris": "Hidrolik pompa basınç üretmez — akış üretir. Basınç, bu akışın karşılaştığı dirençten doğar. Bu ayrım pratikte önemlidir: bir sistemde basınç düşükse sorun çoğu zaman pompada değil, kaçakta veya emniyet valfi ayarındadır.\n\nEn yaygın tip dişli pompadır: basit, ucuz ve kirliliğe dayanıklıdır, sabit deplasmanlıdır. Eksenel pistonlu pompalar daha yüksek basınca çıkar ve değişken deplasmanlı olabildikleri için gereken kadar akış üretip enerji tasarrufu sağlar. Seçimde devir sayısı, deplasman (cc/dev) ve çalışma basıncı birlikte değerlendirilir; emiş hattının yetersizliği ise pompa ömrünü kısaltan en sık sebeptir.",
+    "eslesme": "POMPA",
+    "eslesme2": "",
+    "haric": "[İIi]MALAT|REV[İIi]ZYON|DEĞ[İIi]Ş[İIi]M|TAM[İIi]R|MONTAJ|[İIi]ŞÇ[İIi]L[İIi]K|BAKIM|KEÇE|CONTA",
+    "sss": [
+      {
+        "s": "Pompa debisi nasıl hesaplanır?",
+        "c": "Debi (L/dk) ≈ deplasman (cc/dev) × devir (dev/dk) ÷ 1000, hacimsel verimle çarpılır. Örneğin 20 cc/dev bir pompa 1450 dev/dk'da yaklaşık 29 L/dk verir. Gerçek değer verim ve basınca göre bir miktar düşer."
+      },
+      {
+        "s": "Pompa gürültülü çalışıyor, sebebi ne olabilir?",
+        "c": "En sık sebep kavitasyondur: emiş hattının dar olması, filtrenin tıkanması, yağ seviyesinin düşük veya yağın soğuk ve fazla viskoz olmasıdır. Emiş tarafındaki hava kaçağı da aynı sesi verir. Basınç tarafından önce daima emiş kontrol edilmelidir."
+      },
+      {
+        "s": "Dişli pompa mı pistonlu pompa mı?",
+        "c": "Sabit debi yeterliyse ve basınç orta seviyedeyse dişli pompa hem ekonomik hem dayanıklıdır. Yüksek basınç, değişken debi ihtiyacı veya enerji verimliliği önemliyse eksenel pistonlu pompa tercih edilir; ilk yatırım daha yüksektir."
+      }
+    ]
+  },
+  {
+    "slug": "hidrolik-dirsek",
+    "ad": "Hidrolik Dirsek",
+    "h1": "Hidrolik Dirsek Rakorlar",
+    "ozet": "90° ve 45° dirsek rakorlar; metrik, BSP, UNF/JIC ve ORFS diş tiplerinde 650+ kalem.",
+    "giris": "Dirsek rakor, hattın yön değiştirdiği noktalarda hortumu ya da boruyu keskin kıvrılmaktan kurtarır. Hortumun kendi bükülme yarıçapının altında zorlanması, hidrolikte hortum ömrünü kısaltan en yaygın montaj hatasıdır; doğru açıda bir dirsek bu sorunu tamamen ortadan kaldırır.\n\nEn yaygın tip 90° dirsektir; dar montajlarda 45° tercih edilir. Dirseğin iki ucu farklı diş standardında olabilir (örneğin bir uç metrik, diğer uç BSP) — bu \"geçiş\" tipleri farklı ekipmanları birbirine bağlarken işi çok kolaylaştırır. Döner (swivel) uçlu tiplerde ise montaj sırasında hortumu burmadan sıkma imkânı vardır.",
+    "eslesme": "D[İIi]RSEK",
+    "eslesme2": "",
+    "haric": "[İIi]MALAT|REV[İIi]ZYON|DEĞ[İIi]Ş[İIi]M|TAM[İIi]R|MONTAJ|[İIi]ŞÇ[İIi]L[İIi]K|BAKIM",
+    "sss": [
+      {
+        "s": "90° dirsek yerine hortumu bükersem ne olur?",
+        "c": "Hortum, üreticinin belirttiği minimum bükülme yarıçapının altında kıvrılırsa iç örgü zorlanır ve hortum çok daha erken patlar. Ayrıca kıvrım noktasında kesit daralacağı için basınç kaybı ve ısınma artar. Dirsek kullanmak hem güvenli hem ekonomiktir."
+      },
+      {
+        "s": "Döner (swivel) dirsek ne işe yarar?",
+        "c": "Sabit uçlu dirsekte rakoru sıkarken hortum da döner ve burulur; bu burulma hortum ömrünü kısaltır. Döner uçlu dirsekte somun döner, gövde sabit kalır — hortum burulmadan montaj yapılır."
+      },
+      {
+        "s": "Dirsek ucu farklı dişte olabilir mi?",
+        "c": "Evet, geçiş dirsekleri tam bu iş içindir. Bir ucu metrik diğer ucu BSP ya da JIC olan tipler yaygındır. Böylece farklı standartta üretilmiş makine ve hortumlar ara adaptör kullanmadan bağlanabilir."
+      }
+    ]
+  },
+  {
+    "slug": "nipel",
+    "ad": "Nipel ve Ara Bağlantı",
+    "h1": "Nipel, Ara Bağlantı ve Adaptörler",
+    "ozet": "Ara nipel, redüksiyon nipeli, uzatma ve geçiş adaptörleri; BSP, metrik ve UNF dişlerde 570+ kalem.",
+    "giris": "Nipel, iki dişi bağlantıyı birbirine ekleyen erkek–erkek dişli parçadır. Hidrolik ve pnömatik hatlarda çoğu zaman görünmez kahramandır: farklı standartlarda üretilmiş iki ekipmanı, hattı bozmadan birbirine bağlamayı sağlar.\n\nAra nipel iki ucu aynı ölçüde olan en basit tiptir. Redüksiyon nipelinde uçlar farklı ölçüdedir ve çap değiştirmeye yarar. Uzatma nipelleri ise sıkışık montajlarda bağlantıyı erişilebilir bir noktaya taşır. Nipel seçerken yalnızca diş ölçüsü değil, diş standardı da eşleşmelidir — aynı çapta BSP ve metrik dişler birbirine takılabilir ama sızdırmazlık vermez.",
+    "eslesme": "N[İIi]PEL",
+    "eslesme2": "",
+    "haric": "[İIi]MALAT|REV[İIi]ZYON|DEĞ[İIi]Ş[İIi]M|TAM[İIi]R|MONTAJ|[İIi]ŞÇ[İIi]L[İIi]K|BAKIM",
+    "sss": [
+      {
+        "s": "Redüksiyon nipeli hattı zayıflatır mı?",
+        "c": "Doğru seçildiğinde hayır. Ancak çap küçültmek akış hızını artırır; uzun bir hatta arka arkaya birkaç redüksiyon kullanılırsa basınç kaybı ve ısınma fark edilir hale gelir. Mümkünse çap değişimi tek noktada yapılmalıdır."
+      },
+      {
+        "s": "Nipeli sızdırmaması için teflon bant sarmalı mıyım?",
+        "c": "Konik dişlerde (BSPT, NPT) ince bir teflon veya sıvı conta uygundur. Paralel dişte (BSP) sızdırmazlık conta veya O-ring ile sağlanır; oraya bant sarmak çözüm değildir, dişi zorlar. Önce diş tipinin belirlenmesi gerekir."
+      },
+      {
+        "s": "Uzatma nipeli basınca dayanır mı?",
+        "c": "Katalog basıncı içinde kaldığı sürece evet. Dikkat edilecek nokta uzunluğun yarattığı kaldıraç etkisidir: titreşimli uygulamalarda uzun nipel bağlantı noktasına ek yük bindirir, mümkünse desteklenmelidir."
+      }
+    ]
+  },
+  {
+    "slug": "hortum-kelepce",
+    "ad": "Hortum Kelepçesi",
+    "h1": "Hortum Kelepçesi ve Bağlantı Elemanları",
+    "ozet": "Vidalı metal kelepçeler (ERBİ), sonsuz vida ve ağır hizmet tipleri; 8 mm'den 200 mm'ye kadar ölçülerde.",
+    "giris": "Kelepçe, hortumu rakor ya da boru üzerine sıkarak sızdırmazlığı sağlayan basit ama kritik parçadır. Basit görünmesi yanıltıcıdır: yanlış ölçü seçilen veya fazla sıkılan bir kelepçe, hortumu keserek tam da önlemesi gereken kaçağı yaratır.\n\nEn yaygın tip vidalı (sonsuz vida) metal kelepçedir; bant üzerindeki dişlere geçen bir vida ile kademesiz sıkma sağlar. Ölçüsü daima bir aralık olarak verilir — örneğin 20–30 mm — ve hortumun rakor üzerindeki dış çapı bu aralığın ortasına denk gelmelidir. Aralığın en ucunda çalışmak, kelepçenin ya yeterince sıkmamasına ya da bandın deforme olmasına yol açar.",
+    "eslesme": "KELEPÇE|KELEPCE",
+    "eslesme2": "",
+    "haric": "[İIi]MALAT|REV[İIi]ZYON|DEĞ[İIi]Ş[İIi]M|TAM[İIi]R|MONTAJ|[İIi]ŞÇ[İIi]L[İIi]K|BAKIM",
+    "sss": [
+      {
+        "s": "Kelepçe ölçüsü nasıl seçilir?",
+        "c": "Hortum rakora geçirildikten sonraki DIŞ çapı ölçülür ve bu değer kelepçenin aralığının ortasına gelecek şekilde seçim yapılır. Örneğin dış çap 25 mm ise 20–30 mm kelepçe uygundur; 25–40 mm sınırda kalır."
+      },
+      {
+        "s": "Kelepçeyi ne kadar sıkmalıyım?",
+        "c": "Sızdırmazlık sağlandıktan sonra sıkmayı bırakmak gerekir. Aşırı sıkma bandın hortum lastiğine gömülmesine ve zamanla kesmesine yol açar. Yüksek basınçlı hidrolik hatlarda kelepçe zaten yeterli değildir; preslenmiş rakor kullanılmalıdır."
+      },
+      {
+        "s": "Hidrolik hatta kelepçe kullanılır mı?",
+        "c": "Yüksek basınçlı hidrolik hatlarda hayır — orada hortum uçları preslenir. Kelepçe; düşük basınçlı emiş, dönüş, su, hava ve yakıt hatları için uygundur. Basınç sınırını aşan yerde kelepçe güvenli değildir."
+      }
+    ]
+  },
+  {
+    "slug": "kuresel-vana",
+    "ad": "Küresel ve Kelebek Vana",
+    "h1": "Küresel Vana, Kelebek Vana ve Kesme Elemanları",
+    "ozet": "Mini küresel vanalar, tam geçişli küresel vanalar ve kelebek vanalar; hidrolik ve akışkan hatları için.",
+    "giris": "Vana, hattı açıp kapatmaya yarayan kesme elemanıdır. Valften farkı budur: valf akışı yönlendirir ve ayarlar, vana ise çoğunlukla iki konumludur — açık ya da kapalı.\n\nKüresel vana, içindeki delikli küreyi çeyrek tur döndürerek çalışır; tam açıkken akışa neredeyse hiç direnç göstermez ve hızlı kapatma imkânı verir. Bu yüzden bakım ve emniyet hatlarında standarttır. Kelebek vana ise büyük çaplarda daha ekonomik ve hafiftir, ancak tam açıkta bile disk akış yolunda kaldığı için bir miktar basınç kaybı yaratır. Hidrolik hatlarda kullanılan vanalarda anma basıncının sistem basıncının üzerinde olduğu mutlaka doğrulanmalıdır.",
+    "eslesme": "VANA",
+    "eslesme2": "",
+    "haric": "[İIi]MALAT|REV[İIi]ZYON|DEĞ[İIi]Ş[İIi]M|TAM[İIi]R|MONTAJ|[İIi]ŞÇ[İIi]L[İIi]K|BAKIM|AKT[ÜU]AT[ÖO]R",
+    "sss": [
+      {
+        "s": "Küresel vana ile kelebek vana arasında nasıl seçim yaparım?",
+        "c": "Küçük ve orta çaplarda, tam sızdırmazlık ve düşük basınç kaybı isteniyorsa küresel vana uygundur. Büyük çaplarda (DN100 ve üzeri) kelebek vana hem daha hafif hem daha ekonomiktir; yer ve maliyet avantajı sağlar."
+      },
+      {
+        "s": "Vanayı yarı açık konumda kullanabilir miyim?",
+        "c": "Küresel vana kısma (throttling) için tasarlanmamıştır. Yarı açık konumda küre kenarı ve oturma yüzeyi hızla aşınır, vana zamanla sızdırır. Debi ayarı gerekiyorsa akış kontrol valfi kullanılmalıdır."
+      },
+      {
+        "s": "Hidrolikte hangi basınç sınıfını seçmeliyim?",
+        "c": "Vananın anma basıncı (PN) sistemin tepe basıncının üzerinde olmalıdır; sadece çalışma basıncına bakmak yetmez. Hidrolik devrelerde şok basınçları çalışma değerinin epey üstüne çıkabilir, bu yüzden pay bırakılır."
+      }
+    ]
+  },
+  {
+    "slug": "orfs-rakor",
+    "ad": "ORFS Rakor",
+    "h1": "ORFS Rakor (O-Ring Face Seal)",
+    "ozet": "ORFS düz, dirsek, te ve tapa rakorlar. Titreşimli mobil hidrolik uygulamaları için 230+ kalem.",
+    "giris": "ORFS (O-Ring Face Seal), sızdırmazlığı diş üzerinden değil, iki düz yüzey arasına sıkışan bir O-ring ile sağlayan bağlantı sistemidir. Bu ayrıntı, yüksek titreşimli uygulamalarda belirleyici olur: diş sızdırmazlığına dayanan bağlantılar titreşimle zamanla gevşerken, ORFS'te sızdırmazlığı yapan eleman dişten bağımsızdır.\n\nBu nedenle iş makineleri, tarım makineleri ve mobil hidrolikte ORFS yaygın standarttır. Montajda dikkat edilecek nokta O-ring'in yuvasına düzgün oturması ve yüzeylerin çapaksız olmasıdır; O-ring ezilir veya yuvadan kaçarsa bağlantı ilk basınçta sızdırır. Yedek O-ring bulundurmak, sahada zaman kazandırır.",
+    "eslesme": "ORFS",
+    "eslesme2": "",
+    "haric": "[İIi]MALAT|REV[İIi]ZYON|DEĞ[İIi]Ş[İIi]M|TAM[İIi]R|MONTAJ|[İIi]ŞÇ[İIi]L[İIi]K|BAKIM",
+    "sss": [
+      {
+        "s": "ORFS neden JIC'e göre daha güvenilir sayılıyor?",
+        "c": "JIC 37° konik yüzey teması ile sızdırır; titreşim ve tekrarlı montaj bu yüzeyi yorar. ORFS'te sızdırmazlık elastomer bir O-ring ile sağlandığı için yüzey toleranslarına ve titreşime karşı daha toleranslıdır. Bu yüzden mobil hidrolikte tercih edilir."
+      },
+      {
+        "s": "ORFS O-ring'i hangi malzemeden olmalı?",
+        "c": "Standart mineral esaslı hidrolik yağda NBR yeterlidir. Yüksek sıcaklık veya özel akışkan söz konusuysa FKM (Viton) seçilir. O-ring değişiminde ölçünün yanı sıra malzemenin de doğru olması gerekir."
+      },
+      {
+        "s": "ORFS bağlantı sızdırıyor, önce neye bakmalıyım?",
+        "c": "Neredeyse her zaman O-ring'e. Yuvadan kaçmış, ezilmiş, kesilmiş veya eksik olabilir. Somunu daha fazla sıkmak çözüm değildir; aşırı sıkma O-ring'i keser. Bağlantı sökülüp O-ring gözle kontrol edilmelidir."
+      }
+    ]
+  },
+  {
+    "slug": "hidrolik-tapa",
+    "ad": "Körtapa ve Tapa",
+    "h1": "Hidrolik Körtapa ve Tapalar",
+    "ozet": "BSP, metrik, UNF ve ORFS körtapalar; alyan ve dış altıgen başlı tipler, 220+ kalem.",
+    "giris": "Körtapa, kullanılmayan bir portu kapatan basit ama sistem güvenliği açısından kritik parçadır. Bir manifoldun boş çıkışı, test sonrası kapatılmayan bir port ya da yedek bağlantı noktası mutlaka basınca dayanıklı bir tapa ile kapatılmalıdır — geçici çözümler basınç altında fırlayarak tehlike yaratır.\n\nTapa seçiminde diş standardı ve sızdırmazlık yöntemi rakorlardaki mantıkla aynıdır: BSPT gibi konik dişlerde sızdırmazlığı dişin kendisi yapar, BSP gibi paralel dişlerde ise conta veya O-ring gerekir. Alyan (iç altıgen) başlı tipler yüzeyden taşmadığı için sıkışık montajlarda, dış altıgen başlılar ise anahtarla daha yüksek tork uygulanabildiği için büyük çaplarda tercih edilir.",
+    "eslesme": "TAPA",
+    "eslesme2": "",
+    "haric": "[İIi]MALAT|REV[İIi]ZYON|DEĞ[İIi]Ş[İIi]M|TAM[İIi]R|MONTAJ|[İIi]ŞÇ[İIi]L[İIi]K|BAKIM",
+    "sss": [
+      {
+        "s": "Körtapa ile normal tapa arasında fark var mı?",
+        "c": "Körtapa tamamen kapalıdır, portu kalıcı olarak kapatır. Delikli veya havalandırma tapaları ise tank ve gövdelerde basınç dengelemesi için kullanılır. İkisi karıştırılırsa ya sistem hava alamaz ya da açık kalmaması gereken bir port açık kalır."
+      },
+      {
+        "s": "Alyan başlı mı dış altıgen mi seçmeliyim?",
+        "c": "Sıkışık yerlerde ve yüzeyden taşma istenmeyen montajlarda alyan başlı uygundur. Büyük çaplarda ve yüksek sıkma torku gereken yerlerde dış altıgen başlı daha güvenlidir, anahtarla rahat çalışılır."
+      },
+      {
+        "s": "Tapa hangi basınca kadar dayanır?",
+        "c": "Tapanın anma basıncı bağlı olduğu rakor ailesinin sınıfıyla aynıdır. Bu yüzden hattın basınç sınıfına uygun tapa seçilmelidir; düşük sınıflı bir tapa yüksek basınçlı manifoldda emniyet zafiyeti yaratır."
+      }
+    ]
   }
 ]

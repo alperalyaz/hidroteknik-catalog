@@ -5,93 +5,698 @@
     "hidrolik-hortum": {
       "toplamUrun": 1491,
       "urunler": [
-        { "kod": "AD-0606-HE", "ad": "HORTUM EKİ 1/4" },
-        { "kod": "HF.PN06VB", "ad": "HORTUM EKİ 1/4" },
-        { "kod": "AD-1010-HE", "ad": "HORTUM EKİ 3/8" },
-        { "kod": "HF.PN10VB", "ad": "HORTUM EKİ 3/8" },
-        { "kod": "AD-1313-HE", "ad": "HORTUM EKİ 1/2" },
-        { "kod": "HF.PN13VB", "ad": "HORTUM EKİ 1/2" },
-        { "kod": "AD-1919-HE", "ad": "HORTUM EKİ 3/4" },
-        { "kod": "HF.PN20VB", "ad": "HORTUM EKİ 3/4" },
-        { "kod": "AD-2525-HE", "ad": "HORTUM EKİ 1" },
-        { "kod": "AD-5050-HE", "ad": "HORTUM EKİ 2" },
-        { "kod": "MUH.228", "ad": "1/2 HİDROLİK HORTUM" },
-        { "kod": "MUH.245", "ad": "1\" HİDROLİK HORTUM" },
-        { "kod": "MUH.243", "ad": "1'1/4 HİDROLİK HORTUM" }
+        {
+          "kod": "AD-0606-HE",
+          "ad": "HORTUM EKİ 1/4"
+        },
+        {
+          "kod": "HF.PN06VB",
+          "ad": "HORTUM EKİ 1/4"
+        },
+        {
+          "kod": "AD-1010-HE",
+          "ad": "HORTUM EKİ 3/8"
+        },
+        {
+          "kod": "HF.PN10VB",
+          "ad": "HORTUM EKİ 3/8"
+        },
+        {
+          "kod": "AD-1313-HE",
+          "ad": "HORTUM EKİ 1/2"
+        },
+        {
+          "kod": "HF.PN13VB",
+          "ad": "HORTUM EKİ 1/2"
+        },
+        {
+          "kod": "AD-1919-HE",
+          "ad": "HORTUM EKİ 3/4"
+        },
+        {
+          "kod": "HF.PN20VB",
+          "ad": "HORTUM EKİ 3/4"
+        },
+        {
+          "kod": "AD-2525-HE",
+          "ad": "HORTUM EKİ 1"
+        },
+        {
+          "kod": "AD-5050-HE",
+          "ad": "HORTUM EKİ 2"
+        },
+        {
+          "kod": "MUH.228",
+          "ad": "1/2 HİDROLİK HORTUM"
+        },
+        {
+          "kod": "MUH.245",
+          "ad": "1\" HİDROLİK HORTUM"
+        },
+        {
+          "kod": "MUH.243",
+          "ad": "1'1/4 HİDROLİK HORTUM"
+        }
       ]
     },
     "hidrolik-rakor": {
       "toplamUrun": 1466,
       "urunler": [
-        { "kod": "EKO.REK.MPC.00.54", "ad": "METAL REKOR M5 x 4" },
-        { "kod": "EKO.REK.MPC.00.56", "ad": "METAL REKOR M5 x 6" },
-        { "kod": "EKO.REK.MPC.02.04", "ad": "METAL REKOR 1/8 x 4" },
-        { "kod": "EKO.REK.MPC.02.06", "ad": "METAL REKOR 1/8 x 6" },
-        { "kod": "EKO.REK.MPC.02.08", "ad": "METAL REKOR 1/8 x 8" },
-        { "kod": "EKO.REK.MPC.04.04", "ad": "METAL REKOR 1/4 x 4" },
-        { "kod": "EKO.REK.MPC.04.06", "ad": "METAL REKOR 1/4 x 6" },
-        { "kod": "EKO.REK.MPC.04.08", "ad": "METAL REKOR 1/4 x 8" },
-        { "kod": "EKO.REK.MPC.06.06", "ad": "METAL REKOR 3/8 x 6" },
-        { "kod": "EKO.REK.MPC.06.08", "ad": "METAL REKOR 3/8 x 8" },
-        { "kod": "EKO.REK.MPC.08.08", "ad": "METAL REKOR 1/2 X 8" },
-        { "kod": "SARI.MUH.DR.08", "ad": "PİRİNÇ DÜZ REKOR 1/2" },
-        { "kod": "SARI.MUH.DR.12", "ad": "PİRİNÇ DÜZ REKOR 3/4" },
-        { "kod": "HF.HSR1/2", "ad": "BSP CİVATA RAKORU 1/2" },
-        { "kod": "AD-1332-CR", "ad": "BSP CİVATA RAKORU 1/4" }
+        {
+          "kod": "EKO.REK.MPC.00.54",
+          "ad": "METAL REKOR M5 x 4"
+        },
+        {
+          "kod": "EKO.REK.MPC.00.56",
+          "ad": "METAL REKOR M5 x 6"
+        },
+        {
+          "kod": "EKO.REK.MPC.02.04",
+          "ad": "METAL REKOR 1/8 x 4"
+        },
+        {
+          "kod": "EKO.REK.MPC.02.06",
+          "ad": "METAL REKOR 1/8 x 6"
+        },
+        {
+          "kod": "EKO.REK.MPC.02.08",
+          "ad": "METAL REKOR 1/8 x 8"
+        },
+        {
+          "kod": "EKO.REK.MPC.04.04",
+          "ad": "METAL REKOR 1/4 x 4"
+        },
+        {
+          "kod": "EKO.REK.MPC.04.06",
+          "ad": "METAL REKOR 1/4 x 6"
+        },
+        {
+          "kod": "EKO.REK.MPC.04.08",
+          "ad": "METAL REKOR 1/4 x 8"
+        },
+        {
+          "kod": "EKO.REK.MPC.06.06",
+          "ad": "METAL REKOR 3/8 x 6"
+        },
+        {
+          "kod": "EKO.REK.MPC.06.08",
+          "ad": "METAL REKOR 3/8 x 8"
+        },
+        {
+          "kod": "EKO.REK.MPC.08.08",
+          "ad": "METAL REKOR 1/2 X 8"
+        },
+        {
+          "kod": "SARI.MUH.DR.08",
+          "ad": "PİRİNÇ DÜZ REKOR 1/2"
+        },
+        {
+          "kod": "SARI.MUH.DR.12",
+          "ad": "PİRİNÇ DÜZ REKOR 3/4"
+        },
+        {
+          "kod": "HF.HSR1/2",
+          "ad": "BSP CİVATA RAKORU 1/2"
+        },
+        {
+          "kod": "AD-1332-CR",
+          "ad": "BSP CİVATA RAKORU 1/4"
+        }
       ]
     },
     "o-ring-sizdirmazlik": {
       "toplamUrun": 917,
       "urunler": [
-        { "kod": "KASTAS.KO-0400050", "ad": "O RİNG (40,00 x 05,00)" },
-        { "kod": "KASTAS.KO-0821436", "ad": "O RİNG (080 x 5)" },
-        { "kod": "KASTAS.KO-2000030", "ad": "O RİNG (200 x 03,00)" },
-        { "kod": "KASTAS.KO-2230030", "ad": "O RİNG (223 x 3)" },
-        { "kod": "KASTAS.KO-2400050", "ad": "O RİNG (240,00 x 05,00)" },
-        { "kod": "KASTAS.KO-250004", "ad": "O RİNG (250,00 x 4)" },
-        { "kod": "KASTAS.KO-2900500", "ad": "O RİNG (290 x 05,00)" },
-        { "kod": "KASTAS.KO-3000050", "ad": "O RİNG (300,00 x 05,00)" },
-        { "kod": "KASTAS.KO-3393057", "ad": "O RİNG (339,5 x 5,7)" },
-        { "kod": "MUH.206", "ad": "BOX O RİNG KİT NBR 1,78" },
-        { "kod": "MUH.192", "ad": "KEÇE TAKIMI" },
-        { "kod": "MUH.MUH.49", "ad": "DÖNER ŞAFT YAĞ KEÇESİ" },
-        { "kod": "KASTAS.KKO.NBR.SET.1,78", "ad": "1,78 MM NBR O-RİNG SETİ" },
-        { "kod": "KASTAS.KKO.NBR.SET.2,62", "ad": "2,62 MM NBR O-RİNG SETİ" },
-        { "kod": "KASTAS.KKO.NBR.SET.3,53", "ad": "3,53 MM NBR O-RİNG SETİ" }
+        {
+          "kod": "KASTAS.KO-0400050",
+          "ad": "O RİNG (40,00 x 05,00)"
+        },
+        {
+          "kod": "KASTAS.KO-0821436",
+          "ad": "O RİNG (080 x 5)"
+        },
+        {
+          "kod": "KASTAS.KO-2000030",
+          "ad": "O RİNG (200 x 03,00)"
+        },
+        {
+          "kod": "KASTAS.KO-2230030",
+          "ad": "O RİNG (223 x 3)"
+        },
+        {
+          "kod": "KASTAS.KO-2400050",
+          "ad": "O RİNG (240,00 x 05,00)"
+        },
+        {
+          "kod": "KASTAS.KO-250004",
+          "ad": "O RİNG (250,00 x 4)"
+        },
+        {
+          "kod": "KASTAS.KO-2900500",
+          "ad": "O RİNG (290 x 05,00)"
+        },
+        {
+          "kod": "KASTAS.KO-3000050",
+          "ad": "O RİNG (300,00 x 05,00)"
+        },
+        {
+          "kod": "KASTAS.KO-3393057",
+          "ad": "O RİNG (339,5 x 5,7)"
+        },
+        {
+          "kod": "MUH.206",
+          "ad": "BOX O RİNG KİT NBR 1,78"
+        },
+        {
+          "kod": "MUH.192",
+          "ad": "KEÇE TAKIMI"
+        },
+        {
+          "kod": "MUH.MUH.49",
+          "ad": "DÖNER ŞAFT YAĞ KEÇESİ"
+        },
+        {
+          "kod": "KASTAS.KKO.NBR.SET.1,78",
+          "ad": "1,78 MM NBR O-RİNG SETİ"
+        },
+        {
+          "kod": "KASTAS.KKO.NBR.SET.2,62",
+          "ad": "2,62 MM NBR O-RİNG SETİ"
+        },
+        {
+          "kod": "KASTAS.KKO.NBR.SET.3,53",
+          "ad": "3,53 MM NBR O-RİNG SETİ"
+        }
       ]
     },
     "hidrolik-silindir": {
       "toplamUrun": 143,
       "urunler": [
-        { "kod": "EKO.SDA.12.10", "ad": "SDA 12x10 SHORT STROK SİLİNDİR" },
-        { "kod": "EKO.SDA.12.30", "ad": "SDA 12x30 SHORT STROK SİLİNDİR" },
-        { "kod": "EKO.SDA.012.040", "ad": "SDA 12X40 SHORT STROK SİLİNDİR" },
-        { "kod": "EKO.SDA.20.15", "ad": "SDA 20x15 SHORT STROK SİLİNDİR" },
-        { "kod": "EKO.SDA.20.20", "ad": "SDA 20x20 SHORT STROK SİLİNDİR" },
-        { "kod": "EKO.SDA.040.015", "ad": "SDA-S 40X15 SHORT STROK SİLİNDİR" },
-        { "kod": "EKO.SDA.40.20.Ç.M.", "ad": "SDA 40X20 ÇİFT MİLLİ SİLİNDİR" },
-        { "kod": "PEM.S.DMC.040.700", "ad": "PEMAKS DMC-A ISO 40x700 SİLİNDİR" },
-        { "kod": "PEM.S.PAG.063.050.T", "ad": "PEMAKS PAG 63x50 TANDEM SİLİNDİR" },
-        { "kod": "PEM.S.PAG.080.050.T", "ad": "PEMAKS PAG 80x50 TANDEM SİLİNDİR" },
-        { "kod": "PEM.S.ZS.032.0430", "ad": "PEMAKS 32x430 ZS RODLESS SİLİNDİR" }
+        {
+          "kod": "EKO.SDA.12.10",
+          "ad": "SDA 12x10 SHORT STROK SİLİNDİR"
+        },
+        {
+          "kod": "EKO.SDA.12.30",
+          "ad": "SDA 12x30 SHORT STROK SİLİNDİR"
+        },
+        {
+          "kod": "EKO.SDA.012.040",
+          "ad": "SDA 12X40 SHORT STROK SİLİNDİR"
+        },
+        {
+          "kod": "EKO.SDA.20.15",
+          "ad": "SDA 20x15 SHORT STROK SİLİNDİR"
+        },
+        {
+          "kod": "EKO.SDA.20.20",
+          "ad": "SDA 20x20 SHORT STROK SİLİNDİR"
+        },
+        {
+          "kod": "EKO.SDA.040.015",
+          "ad": "SDA-S 40X15 SHORT STROK SİLİNDİR"
+        },
+        {
+          "kod": "EKO.SDA.40.20.Ç.M.",
+          "ad": "SDA 40X20 ÇİFT MİLLİ SİLİNDİR"
+        },
+        {
+          "kod": "PEM.S.DMC.040.700",
+          "ad": "PEMAKS DMC-A ISO 40x700 SİLİNDİR"
+        },
+        {
+          "kod": "PEM.S.PAG.063.050.T",
+          "ad": "PEMAKS PAG 63x50 TANDEM SİLİNDİR"
+        },
+        {
+          "kod": "PEM.S.PAG.080.050.T",
+          "ad": "PEMAKS PAG 80x50 TANDEM SİLİNDİR"
+        },
+        {
+          "kod": "PEM.S.ZS.032.0430",
+          "ad": "PEMAKS 32x430 ZS RODLESS SİLİNDİR"
+        }
       ]
     },
     "pnomatik-silindir": {
       "toplamUrun": 283,
       "urunler": [
-        { "kod": "PEM.S.PAG.032.025", "ad": "PEMAKS PAG 32 X 25 PNÖMATİK SİLİNDİR" },
-        { "kod": "PEM.S.PAG.032.050", "ad": "PEMAKS PAG 32 X 50 PNÖMATİK SİLİNDİR" },
-        { "kod": "PEM.S.PAG.032.080", "ad": "PEMAKS PAG 32 X 80 PNÖMATİK SİLİNDİR" },
-        { "kod": "PEM.S.PAG.040.025", "ad": "PEMAKS PAG 40 X 25 PNÖMATİK SİLİNDİR" },
-        { "kod": "PEM.S.PAG.040.040", "ad": "PEMAKS PAG 40 X 40 PNÖMATİK SİLİNDİR" },
-        { "kod": "PEM.S.PAG.040.050", "ad": "PEMAKS PAG 40 X 50 PNÖMATİK SİLİNDİR" },
-        { "kod": "PEM.S.PAG.040.070", "ad": "PEMAKS PAG 40 X 70 PNÖMATİK SİLİNDİR" },
-        { "kod": "PEM.S.PAG.040.080", "ad": "PEMAKS PAG 40 X 80 PNÖMATİK SİLİNDİR" },
-        { "kod": "PEM.S.PAG.050.015", "ad": "PEMAKS PAG 50 X 15 PNÖMATİK SİLİNDİR" },
-        { "kod": "PEM.S.PAG.050.025", "ad": "PEMAKS PAG 50 X 25 PNÖMATİK SİLİNDİR" },
-        { "kod": "PEM.S.PAG.050.030", "ad": "PEMAKS PAG 50 X 30 PNÖMATİK SİLİNDİR" },
-        { "kod": "PEM.S.PKA.040.030", "ad": "PEMAKS PKA 40X30 PNÖMATİK SİLİNDİR" },
-        { "kod": "PEM.S.PKE.032.025", "ad": "PEMAKS PKE 32x25 PNÖMATİK SİLİNDİR" }
+        {
+          "kod": "PEM.S.PAG.032.025",
+          "ad": "PEMAKS PAG 32 X 25 PNÖMATİK SİLİNDİR"
+        },
+        {
+          "kod": "PEM.S.PAG.032.050",
+          "ad": "PEMAKS PAG 32 X 50 PNÖMATİK SİLİNDİR"
+        },
+        {
+          "kod": "PEM.S.PAG.032.080",
+          "ad": "PEMAKS PAG 32 X 80 PNÖMATİK SİLİNDİR"
+        },
+        {
+          "kod": "PEM.S.PAG.040.025",
+          "ad": "PEMAKS PAG 40 X 25 PNÖMATİK SİLİNDİR"
+        },
+        {
+          "kod": "PEM.S.PAG.040.040",
+          "ad": "PEMAKS PAG 40 X 40 PNÖMATİK SİLİNDİR"
+        },
+        {
+          "kod": "PEM.S.PAG.040.050",
+          "ad": "PEMAKS PAG 40 X 50 PNÖMATİK SİLİNDİR"
+        },
+        {
+          "kod": "PEM.S.PAG.040.070",
+          "ad": "PEMAKS PAG 40 X 70 PNÖMATİK SİLİNDİR"
+        },
+        {
+          "kod": "PEM.S.PAG.040.080",
+          "ad": "PEMAKS PAG 40 X 80 PNÖMATİK SİLİNDİR"
+        },
+        {
+          "kod": "PEM.S.PAG.050.015",
+          "ad": "PEMAKS PAG 50 X 15 PNÖMATİK SİLİNDİR"
+        },
+        {
+          "kod": "PEM.S.PAG.050.025",
+          "ad": "PEMAKS PAG 50 X 25 PNÖMATİK SİLİNDİR"
+        },
+        {
+          "kod": "PEM.S.PAG.050.030",
+          "ad": "PEMAKS PAG 50 X 30 PNÖMATİK SİLİNDİR"
+        },
+        {
+          "kod": "PEM.S.PKA.040.030",
+          "ad": "PEMAKS PKA 40X30 PNÖMATİK SİLİNDİR"
+        },
+        {
+          "kod": "PEM.S.PKE.032.025",
+          "ad": "PEMAKS PKE 32x25 PNÖMATİK SİLİNDİR"
+        }
+      ]
+    },
+    "hidrolik-valf": {
+      "toplamUrun": 768,
+      "urunler": [
+        {
+          "kod": "MUH.216",
+          "ad": "KATRİC VALF"
+        },
+        {
+          "kod": "MUH.MUH.54",
+          "ad": "NG6 VALF PLEYT"
+        },
+        {
+          "kod": "HR.VALF.VAU 1",
+          "ad": "( VAU 1 ) ÇEKVALF"
+        },
+        {
+          "kod": "EKO.KLA-15",
+          "ad": "1/2 HIZ AYAR VALFİ"
+        },
+        {
+          "kod": "EKO.ASC-08",
+          "ad": "1/4 HIZ AYAR VALFİ"
+        },
+        {
+          "kod": "EKO.ASC-06",
+          "ad": "1/8 HIZ AYAR VALFİ"
+        },
+        {
+          "kod": "EKO.WT25Z-08",
+          "ad": "1/4 OSİLATÖR VALFİ"
+        },
+        {
+          "kod": "EKO.ST-02",
+          "ad": "1/4 VEYA VALFİ"
+        },
+        {
+          "kod": "HR.O-VU2P-1/2",
+          "ad": "V0670 VEYA VALFİ"
+        },
+        {
+          "kod": "EKO.3VJZF-20-IAS",
+          "ad": "3/4 3/2 POPET VALF"
+        },
+        {
+          "kod": "MUH.MUH.66",
+          "ad": "PNÖMATİK VALF"
+        }
+      ]
+    },
+    "hidrolik-pompa": {
+      "toplamUrun": 283,
+      "urunler": [
+        {
+          "kod": "MUH.201",
+          "ad": "HİDROLİK DİŞLİ POMPA"
+        },
+        {
+          "kod": "HDT.16400870369",
+          "ad": "81 LT DİŞLİ POMPA ISO"
+        },
+        {
+          "kod": "HDT.16221050366",
+          "ad": "105 LT EKSENEL DİŞLİ POMPA"
+        },
+        {
+          "kod": "HDT.16300820166",
+          "ad": "82 LT DİŞLİ POMPA UNI-T1"
+        },
+        {
+          "kod": "CASAPPA.PLP20.4",
+          "ad": "PLP20.4 DO (82-E2) DİŞLİ POMPA"
+        },
+        {
+          "kod": "HEMA.MUH.015",
+          "ad": "TANDEM POMPA SETİ"
+        },
+        {
+          "kod": "ESM.DK.2K.42.DÜZ",
+          "ad": "DK 42-2P DÜZ POMPA DİŞLİSİ"
+        },
+        {
+          "kod": "ESM.DK.0K.24",
+          "ad": "DK 24-0P1 KONİK POMPA DİŞLİSİ"
+        },
+        {
+          "kod": "HR.PUMP.2506.POMPAYATAK",
+          "ad": "HİDRO-AGRİ 2506 POMPA ÖN YATAK"
+        },
+        {
+          "kod": "OLEOCON.OHP-K",
+          "ad": "EL POMPASI TUTMA SAPI"
+        }
+      ]
+    },
+    "hidrolik-dirsek": {
+      "toplamUrun": 668,
+      "urunler": [
+        {
+          "kod": "EKO.REK.MPUL.00.04",
+          "ad": "METAL DİRSEK 4"
+        },
+        {
+          "kod": "EKO.REK.MPUL.00.06",
+          "ad": "METAL DİRSEK 6"
+        },
+        {
+          "kod": "EKO.REK.MPUL.00.08",
+          "ad": "METAL DİRSEK 8"
+        },
+        {
+          "kod": "AD-1313-WD",
+          "ad": "UNF DİRSEK 1/2"
+        },
+        {
+          "kod": "HF.W90HJ05",
+          "ad": "UNF DİRSEK 1/2"
+        },
+        {
+          "kod": "AD-1919-WD",
+          "ad": "UNF DİRSEK 3/4"
+        },
+        {
+          "kod": "HF.W90HJ08",
+          "ad": "UNF DİRSEK 3/4"
+        },
+        {
+          "kod": "AD-2222-WD",
+          "ad": "UNF DİRSEK 7/8"
+        },
+        {
+          "kod": "HF.W90HJ10",
+          "ad": "UNF DİRSEK 7/8"
+        },
+        {
+          "kod": "SARI.0606",
+          "ad": "SARI DİRSEK 1"
+        },
+        {
+          "kod": "SARI.0609",
+          "ad": "SARI DİRSEK 2"
+        },
+        {
+          "kod": "SARI.0611",
+          "ad": "SARI DİRSEK 3"
+        }
+      ]
+    },
+    "nipel": {
+      "toplamUrun": 578,
+      "urunler": [
+        {
+          "kod": "EKO.REK.MPUC.00.04",
+          "ad": "METAL NİPEL 4"
+        },
+        {
+          "kod": "EKO.REK.MPUC.00.06",
+          "ad": "METAL NİPEL 6"
+        },
+        {
+          "kod": "EKO.REK.MPUC.00.08",
+          "ad": "METAL NİPEL 8"
+        },
+        {
+          "kod": "EKO.REK.MPUC.00.10",
+          "ad": "METAL NİPEL 10"
+        },
+        {
+          "kod": "EKO.REK.MPUC.00.14",
+          "ad": "METAL NİPEL 14"
+        },
+        {
+          "kod": "EKO.REK.MPUC.00.16",
+          "ad": "METAL NİPEL 16"
+        },
+        {
+          "kod": "HF.GHB16",
+          "ad": "BSP ARA NİPELİ 1"
+        },
+        {
+          "kod": "AD-3333-RRN",
+          "ad": "BSP ARA NİPELİ 1"
+        },
+        {
+          "kod": "HF.GHB32",
+          "ad": "BSP ARA NİPELİ 2"
+        },
+        {
+          "kod": "AD-6060-RRN",
+          "ad": "BSP ARA NİPELİ 2"
+        },
+        {
+          "kod": "EKO.REK.PU-0400",
+          "ad": "NİPEL BAĞLANTI 4"
+        },
+        {
+          "kod": "MUH.215",
+          "ad": "NİPEL BAĞLANTI"
+        }
+      ]
+    },
+    "hortum-kelepce": {
+      "toplamUrun": 247,
+      "urunler": [
+        {
+          "kod": "ERBİ.041487",
+          "ad": "ERBİ KELEPÇE 8-13 MM"
+        },
+        {
+          "kod": "ERBİ.010016",
+          "ad": "ERBİ KELEPÇE 10-16 MM"
+        },
+        {
+          "kod": "ERBİ.013019",
+          "ad": "ERBİ KELEPÇE 13-19 MM"
+        },
+        {
+          "kod": "ERBİ.016023",
+          "ad": "ERBİ KELEPÇE 16-23 MM"
+        },
+        {
+          "kod": "ERBİ.018025",
+          "ad": "ERBİ KELEPÇE 18-25 MM"
+        },
+        {
+          "kod": "ERBİ.019026",
+          "ad": "ERBİ KELEPÇE 19-26 MM"
+        },
+        {
+          "kod": "ERBİ.020030",
+          "ad": "ERBİ KELEPÇE 20-30 MM"
+        },
+        {
+          "kod": "ERBİ.022036",
+          "ad": "ERBİ KELEPÇE 22-36 MM"
+        },
+        {
+          "kod": "ERBİ.025042",
+          "ad": "ERBİ KELEPÇE 25-42 MM"
+        },
+        {
+          "kod": "ERBİ.028048",
+          "ad": "ERBİ KELEPÇE 28-48 MM"
+        },
+        {
+          "kod": "ERBİ.032051",
+          "ad": "ERBİ KELEPÇE 32-51 MM"
+        }
+      ]
+    },
+    "kuresel-vana": {
+      "toplamUrun": 162,
+      "urunler": [
+        {
+          "kod": "KS.00.02",
+          "ad": "MİNİ KÜRESEL VANA 1/8"
+        },
+        {
+          "kod": "KS.00.04",
+          "ad": "MİNİ KÜRESEL VANA 1/4"
+        },
+        {
+          "kod": "KS.00.06",
+          "ad": "MİNİ KÜRESEL VANA 3/8"
+        },
+        {
+          "kod": "KS.00.08",
+          "ad": "MİNİ KÜRESEL VANA 1/2"
+        },
+        {
+          "kod": "KS.00.12",
+          "ad": "MİNİ KÜRESEL VANA 3/4"
+        },
+        {
+          "kod": "KS.25.16",
+          "ad": "KÜRESEL VANA 1 - 16 BAR"
+        },
+        {
+          "kod": "MUH.080",
+          "ad": "KÜRESEL VANA"
+        },
+        {
+          "kod": "OLEOCON.MNK38",
+          "ad": "HİDROLİK MİNİ VANA 3/8"
+        },
+        {
+          "kod": "MUH.242",
+          "ad": "KELEBEK VANA"
+        },
+        {
+          "kod": "SMS.YEDEK.11",
+          "ad": "KOLLU KELEBEK VANA"
+        },
+        {
+          "kod": "DURA.121.16.029",
+          "ad": "KELEBEK VANA DN50"
+        },
+        {
+          "kod": "MUH.MUH.98",
+          "ad": "DN65 PN16 GLOB VANA"
+        }
+      ]
+    },
+    "orfs-rakor": {
+      "toplamUrun": 233,
+      "urunler": [
+        {
+          "kod": "AD-1414-OREKT",
+          "ad": "ORFS ERKEK TAPA 9/16"
+        },
+        {
+          "kod": "HF.VERSCHLUSSHJOF04",
+          "ad": "ORFS ERKEK TAPA 9/16"
+        },
+        {
+          "kod": "AD-1717-OREKT",
+          "ad": "ORFS ERKEK TAPA 11/16"
+        },
+        {
+          "kod": "HF.VERSCHLUSSHJOF06",
+          "ad": "ORFS ERKEK TAPA 11/16"
+        },
+        {
+          "kod": "AD-2121-OREKT",
+          "ad": "ORFS ERKEK TAPA 13/16"
+        },
+        {
+          "kod": "HF.VERSCHLUSSHJOF08",
+          "ad": "ORFS ERKEK TAPA 13/16"
+        },
+        {
+          "kod": "HF.VERSCLUSSHJOF16",
+          "ad": "ORFS ERKEK TAPA 17/16"
+        },
+        {
+          "kod": "AD-2626-OREKT",
+          "ad": "ORFS ERKEK TAPA 1"
+        },
+        {
+          "kod": "HF.VERSCHLUSSHJOF10",
+          "ad": "ORFS ERKEK TAPA 1"
+        },
+        {
+          "kod": "AD-2525-OOT",
+          "ad": "ORFS ORTABACAK TE 1"
+        },
+        {
+          "kod": "HF.TAJF10HJOF",
+          "ad": "ORFS ORTABACAK TE 1"
+        }
+      ]
+    },
+    "hidrolik-tapa": {
+      "toplamUrun": 226,
+      "urunler": [
+        {
+          "kod": "AD-1828-EKT",
+          "ad": "BSP KÖRTAPA 1/8"
+        },
+        {
+          "kod": "HF.VERSCHLUSSHB02",
+          "ad": "BSP KÖRTAPA 1/8"
+        },
+        {
+          "kod": "AD-1419-EKT",
+          "ad": "BSP KÖRTAPA 1/4"
+        },
+        {
+          "kod": "HF.VERSCHLUSSHB04",
+          "ad": "BSP KÖRTAPA 1/4"
+        },
+        {
+          "kod": "AD-1214-EKT",
+          "ad": "BSP KÖRTAPA 1/2"
+        },
+        {
+          "kod": "HF.VERSCHLUSSHB08",
+          "ad": "BSP KÖRTAPA 1/2"
+        },
+        {
+          "kod": "AD-3414-EKT",
+          "ad": "BSP KÖRTAPA 3/4"
+        },
+        {
+          "kod": "AD-0111-EKT",
+          "ad": "BSP KÖRTAPA 1"
+        },
+        {
+          "kod": "HF.VERSCHLUSSHB16",
+          "ad": "BSP KÖRTAPA 1"
+        },
+        {
+          "kod": "AD-5070-EKT",
+          "ad": "BSP KÖRTAPA 2"
+        },
+        {
+          "kod": "HF.VERSCHLUSSHB32",
+          "ad": "BSP KÖRTAPA 2"
+        },
+        {
+          "kod": "MUH.163",
+          "ad": "ALYAN KÖRTAPA"
+        }
       ]
     }
   }

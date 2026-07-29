@@ -4,9 +4,9 @@ import { SITE_URL, FIRMA, ANA_SITE } from '@/lib/site'
 import { KATEGORILER, kategoriUrunleri } from '@/lib/veri'
 
 export const metadata: Metadata = {
-  title: 'Hidrolik ve Pnömatik Ürün Kataloğu — Denizli',
+  title: 'Hidrolik ve Pnömatik Ürün Kataloğu',
   description:
-    'Denizli merkezli hidrolik ve pnömatik malzeme tedarikçisi Hidroteknik’in ürün kataloğu: hidrolik hortum, rakor, silindir, o-ring ve sızdırmazlık elemanları.',
+    '1984’ten beri endüstriyel hidrolik ve pnömatik malzeme tedarikçisi Hidroteknik’in ürün kataloğu: hidrolik hortum, rakor, silindir, pompa, valf, o-ring ve sızdırmazlık elemanları. Türkiye geneli sevkiyat.',
   alternates: { canonical: `${SITE_URL}/tr` },
 }
 
@@ -20,12 +20,12 @@ export default async function KatalogAnaSayfa({ params }: { params: Promise<{ la
         <div className="sarmal">
           <h1>Hidrolik ve pnömatik ürün kataloğu</h1>
           <p className="ozet">
-            {FIRMA.kurulus}’ten beri Denizli’de endüstriyel hidrolik ve pnömatik malzeme tedarik
-            ediyoruz. Aşağıdaki ürün gruplarında toplam{' '}
-            {toplamKalem.toLocaleString('tr-TR')} kalem stoğumuz bulunuyor.
+            {FIRMA.kurulus}’ten beri endüstriyel hidrolik ve pnömatik malzeme tedarik ediyoruz.
+            Aşağıdaki ürün gruplarında toplam {toplamKalem.toLocaleString('tr-TR')} kalem stok;
+            Türkiye geneline sevkiyat ve ihracat.
           </p>
           <div className="rozetler">
-            <span className="rozet">Denizli merkez</span>
+            <span className="rozet">1984’ten beri</span>
             <span className="rozet">Hortum presleme yerinde</span>
             <span className="rozet pirinc">Aynı gün teklif</span>
           </div>

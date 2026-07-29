@@ -88,8 +88,8 @@ export default async function DilLayout({
             </div>
           </div>
           <p className="footer-alt">
-            {FIRMA.kurulus}’ten beri endüstriyel hidrolik ve pnömatik malzeme tedariki · Hizmet
-            bölgesi: {FIRMA.hizmetBolgesi.join(', ')}
+            {FIRMA.kurulus}’ten beri endüstriyel hidrolik ve pnömatik malzeme tedariki · Türkiye
+            geneli sevkiyat ve ihracat
           </p>
         </div>
       </footer>

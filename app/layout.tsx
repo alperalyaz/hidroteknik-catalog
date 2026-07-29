@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: `%s | ${FIRMA.ad}`,
   },
   description:
-    'Denizli merkezli endüstriyel hidrolik ve pnömatik malzeme tedarikçisi. Hidrolik hortum, rakor, silindir, o-ring ve sızdırmazlık elemanları.',
+    '1984’ten beri endüstriyel hidrolik ve pnömatik malzeme tedarikçisi. Hidrolik hortum, rakor, valf, pompa, silindir, o-ring ve sızdırmazlık elemanları. Türkiye geneli sevkiyat ve ihracat.',
   robots: { index: true, follow: true },
 }
 

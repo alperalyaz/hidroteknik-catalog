@@ -19,7 +19,7 @@ export async function generateMetadata({
   if (!k) return {}
   const url = `${SITE_URL}/${lang}/${slug}`
   return {
-    title: `${k.h1} — Denizli`,
+    title: k.h1,
     description: k.ozet,
     alternates: { canonical: url },
     openGraph: { title: k.h1, description: k.ozet, url, type: 'website', locale: 'tr_TR' },
@@ -62,7 +62,7 @@ export default async function KategoriSayfasi({
           <p className="ozet">{k.ozet}</p>
           <div className="rozetler">
             <span className="rozet">{toplam.toLocaleString('tr-TR')} kalem stokta</span>
-            <span className="rozet">Denizli merkez</span>
+            <span className="rozet">Türkiye geneli sevkiyat</span>
             <span className="rozet pirinc">Teklif üzerine satış</span>
           </div>
         </div>

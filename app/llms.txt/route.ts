@@ -14,10 +14,10 @@ export function GET() {
 
   const metin = `# ${FIRMA.ad} — Ürün Kataloğu
 
-> ${FIRMA.kurulus}'ten beri Denizli merkezli endüstriyel hidrolik ve pnömatik malzeme
-> tedarikçisi. Bu katalogda ${toplam.toLocaleString('tr-TR')} kalem ürün listelenmektedir:
-> hidrolik hortum, rakor, silindir, pnömatik silindir, o-ring ve sızdırmazlık elemanları.
-> Hizmet bölgesi: ${FIRMA.hizmetBolgesi.join(', ')}.
+> ${FIRMA.kurulus}'ten beri endüstriyel hidrolik ve pnömatik malzeme tedarikçisi.
+> Merkez: ${FIRMA.adres.ilce} / ${FIRMA.adres.il}, Türkiye. Türkiye geneli sevkiyat ve ihracat.
+> Bu katalogda ${toplam.toLocaleString('tr-TR')} kalem ürün listelenmektedir: hidrolik hortum,
+> rakor, valf, pompa, hidrolik ve pnömatik silindir, o-ring ve sızdırmazlık elemanları.
 
 ## İletişim
 
