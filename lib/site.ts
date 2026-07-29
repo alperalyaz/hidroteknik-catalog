@@ -1,0 +1,40 @@
+/**
+ * Firma ve site sabitleri — TEK doğruluk kaynağı.
+ * Künye verisi hidroteknik.com.tr/İletişim-1 sayfasından alınmıştır (29.07.2026).
+ * Ana sitedeki LocalBusiness şemasıyla BİREBİR aynı olmalı; tutarsız künye
+ * (NAP) arama motorlarında ve yapay zekâ cevaplarında güven kaybettirir.
+ */
+export const SITE_URL = 'https://catalog.hidroteknik.com.tr'
+export const ANA_SITE = 'https://www.hidroteknik.com.tr'
+
+export const FIRMA = {
+  ad: 'Hidroteknik A.Ş.',
+  resmiUnvan: 'Hidroteknik Fabrika Malzemeleri Ticaret ve Sanayi A.Ş.',
+  kurulus: '1984',
+  telefon: '+90 258 251 40 60',
+  telefonHam: '+902582514060',
+  eposta: 'info@hidroteknik.com.tr',
+  epostaSatis: 'all.satis@hidroteknik.com.tr',
+  adres: {
+    sokak: 'Sümer 2296 No:21 Alyaz İş Merkezi No:1',
+    ilce: 'Merkezefendi',
+    il: 'Denizli',
+    postaKodu: '20175',
+    ulke: 'TR',
+  },
+  konum: { lat: 37.793376, lng: 29.098947 },
+  saatler: { haftaIci: '08:00–18:00', cumartesi: '09:00–13:00' },
+  hizmetBolgesi: ['Denizli', 'Aydın', 'Uşak', 'Muğla', 'Afyonkarahisar'],
+  sosyal: [
+    'https://www.facebook.com/hidroteknik',
+    'https://www.instagram.com/ht.hidroteknik/',
+    'https://www.linkedin.com/company/42467431',
+    'https://www.youtube.com/channel/UCS97u6nNz_PQTBBxDYzjlLA',
+  ],
+  logo: 'https://files.cdn-files-a.com/uploads/5644137/400_6865986816fbc.png',
+} as const
+
+/** Desteklenen diller. Türkçe önce tamamlanır; en/ru sonra açılır (bkz. yol haritası). */
+export const DILLER = ['tr'] as const
+export type Dil = (typeof DILLER)[number]
+export const VARSAYILAN_DIL: Dil = 'tr'

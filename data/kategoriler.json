@@ -1,0 +1,126 @@
+[
+  {
+    "slug": "hidrolik-hortum",
+    "ad": "Hidrolik Hortum",
+    "h1": "Hidrolik Hortum ve Bağlantı Elemanları",
+    "ozet": "Denizli'de hidrolik hortum: 1SN, 2SN, 4SP, 4SH ve termoplastik tipler. Ölçüsüne göre presleme aynı gün. 1.500'den fazla kalem stokta.",
+    "giris": "Hidrolik hortum, sistemdeki basıncı kaybetmeden akışkanı taşıyan esnek bağlantı elemanıdır. Doğru hortum seçimi üç değere bağlıdır: çalışma basıncı, akışkan sıcaklığı ve iç çap. Bu üçünden biri yanlış seçildiğinde hortum ya erken yorulur ya da patlama riski taşır.\n\nHidroteknik, Denizli'deki deposunda 1SN ve 2SN tek/çift örgülü, 4SP ve 4SH çok katlı spiral ve termoplastik hortum tiplerini bulundurur. Hortum presleme işlemi kendi tesisimizde yapılır; standart ölçüler için genellikle aynı gün teslim edilir.",
+    "eslesme": "HORTUM",
+    "haric": "KELEPÇE|KELEPCE|MAKAS|VALF|KART[İIi]C[İIi]|PATLAMA|MAKARA|SPREY|[İIi]MALAT|REV[İIi]ZYON|DEĞ[İIi]Ş[İIi]M|TAM[İIi]R|MONTAJ|[İIi]ŞÇ[İIi]L[İIi]K|BAKIM",
+    "sss": [
+      {
+        "s": "1SN ve 2SN hortum arasındaki fark nedir?",
+        "c": "1SN tek katlı çelik tel örgülüdür ve orta basınç uygulamaları içindir. 2SN çift katlı örgüye sahiptir, aynı iç çapta yaklaşık iki kat çalışma basıncına dayanır. Aynı çapta 2SN'nin dış çapı ve bükülme yarıçapı daha büyüktür; dar montajlarda bu dikkate alınmalıdır."
+      },
+      {
+        "s": "Hidrolik hortum ölçüsü nasıl belirlenir?",
+        "c": "Ölçü, hortumun iç çapı üzerinden verilir (örneğin DN12, 1/2 inç). Debi ve iç çap birlikte akış hızını belirler; basınç hatlarında akış hızının genellikle 3-6 m/s aralığında tutulması istenir. İç çap küçük seçilirse basınç kaybı ve ısınma artar."
+      },
+      {
+        "s": "Hortum presleme aynı gün yapılıyor mu?",
+        "c": "Standart ölçü ve rakor kombinasyonlarında presleme genellikle aynı gün tamamlanır. Özel uzunluk, özel rakor veya stokta olmayan tip gerektiren işlerde süre değişir; net bilgi için satış ekibimizle görüşün."
+      },
+      {
+        "s": "Hidrolik hortumun ömrü ne kadardır?",
+        "c": "Hortum ömrü çalışma basıncı, sıcaklık, bükülme yarıçapı ve titreşime bağlıdır. Sürekli maksimum basınçta çalışan hatlarda periyodik kontrol önerilir. Dış kılıfta çatlak, kabarma veya tel görünmesi hortumun değişmesi gerektiğini gösterir."
+      }
+    ],
+    "eslesme2": ""
+  },
+  {
+    "slug": "hidrolik-rakor",
+    "ad": "Hidrolik Rakor",
+    "h1": "Hidrolik Rakor ve Bağlantı Elemanları",
+    "ozet": "Metrik, BSP/BSPT, ORFS ve JIC diş tiplerinde hidrolik rakor. Dirsek, nipel, tapa ve döner rakorlar dahil 1.400+ kalem.",
+    "giris": "Rakor, hidrolik hattı oluşturan parçaları birbirine sızdırmaz biçimde bağlayan elemandır. Sektördeki en sık hata, farklı diş standartlarının birbirine benzemesinden kaynaklanır: metrik, BSP, BSPT, ORFS ve JIC dişler gözle bakıldığında yakın görünür ama sızdırmazlık prensipleri farklıdır.\n\nBSP paralel diş sızdırmazlığı genelde conta veya kesik koni ile sağlarken, BSPT konik diştir ve dişin kendisi sızdırmazlık yapar. ORFS ise O-ring ile yüz sızdırmazlığı kullanır ve yüksek titreşimli sistemlerde tercih edilir. Yanlış eşleştirilen diş, ilk basınçta sızdırır veya dişi bozar.",
+    "eslesme": "RAKOR|REKOR",
+    "haric": "VALF|VANA|POMPA|DAĞITICI|DAGITICI|MAKAS|[İIi]MALAT|REV[İIi]ZYON|DEĞ[İIi]Ş[İIi]M|TAM[İIi]R|MONTAJ|[İIi]ŞÇ[İIi]L[İIi]K|BAKIM",
+    "sss": [
+      {
+        "s": "BSP ile BSPT arasındaki fark nedir?",
+        "c": "BSP paralel (düz) diştir; sızdırmazlık dişin kendisiyle değil, conta, O-ring veya kesik koni yüzeyi ile sağlanır. BSPT ise koniktir; diş sıkıldıkça kama etkisiyle sızdırmazlık oluşturur. İkisi aynı adımda olduğu için birbirine takılabilir, ancak bu birleşim güvenilir sızdırmazlık vermez."
+      },
+      {
+        "s": "ORFS rakor nerede kullanılır?",
+        "c": "ORFS (O-Ring Face Seal), düz yüzeyler arasına sıkışan bir O-ring ile sızdırmazlık sağlar. Titreşimin yüksek olduğu iş makinesi ve mobil hidrolik uygulamalarında, diş sızdırmazlığına göre daha güvenilir olduğu için tercih edilir."
+      },
+      {
+        "s": "Rakor ölçüsünü nasıl anlarım?",
+        "c": "Diş dış çapı kumpasla ölçülür ve diş adımı diş tarağı ile belirlenir. Yalnızca çap ölçmek yeterli değildir; aynı çapta farklı adımlarda dişler bulunur. Emin olunamayan durumlarda mevcut parçayı satış ekibimize göstermeniz en hızlı yoldur."
+      }
+    ],
+    "eslesme2": ""
+  },
+  {
+    "slug": "o-ring-sizdirmazlik",
+    "ad": "O-Ring ve Sızdırmazlık Elemanları",
+    "h1": "O-Ring, Keçe ve Sızdırmazlık Elemanları",
+    "ozet": "NBR, FKM (Viton), EPDM ve PTFE malzemelerde O-ring, keçe ve sızdırmazlık elemanları. Ölçü tablosuyla birlikte.",
+    "giris": "O-ring, iki yüzey arasında sıkışarak sızdırmazlık sağlayan en yaygın conta tipidir. Seçimde iki değer belirleyicidir: ölçü (iç çap × kesit çapı) ve malzeme.\n\nMalzeme seçimi akışkana ve sıcaklığa göre yapılır. NBR genel hidrolik yağlarda standart tercihtir ve yaklaşık -30 °C ile +100 °C arasında çalışır. FKM (Viton) yüksek sıcaklık ve agresif akışkanlarda kullanılır. EPDM su ve fren hidroliğinde uygundur ancak mineral yağla birlikte kullanılmaz — bu, sahada en sık yapılan malzeme hatasıdır.",
+    "eslesme": "O.?R[İIi]NG|KEÇE|KECE|V.?R[İIi]NG",
+    "haric": "POMPA|VALF|S[İIi]L[İIi]ND[İIi]R|TAKOZ|[İIi]MALAT|REV[İIi]ZYON|DEĞ[İIi]Ş[İIi]M|TAM[İIi]R|MONTAJ|[İIi]ŞÇ[İIi]L[İIi]K|BAKIM",
+    "sss": [
+      {
+        "s": "O-ring ölçüsü nasıl okunur?",
+        "c": "O-ring ölçüsü iç çap × kesit (kord) çapı olarak verilir. Örneğin 20×2,5 ifadesi 20 mm iç çap ve 2,5 mm kesit anlamına gelir. Ölçüm, gerilmemiş halde ve tercihen kumpasla yapılmalıdır; kullanılmış O-ring kalıcı deforme olabileceği için ölçüsü yanıltıcı olur."
+      },
+      {
+        "s": "NBR mi FKM mi seçmeliyim?",
+        "c": "Standart mineral esaslı hidrolik yağ ve normal çalışma sıcaklığında NBR yeterlidir ve daha ekonomiktir. Sıcaklığın sürekli 100 °C üzerinde olduğu, yakıt veya kimyasal temasının bulunduğu uygulamalarda FKM tercih edilir."
+      },
+      {
+        "s": "EPDM neden hidrolik yağda kullanılmaz?",
+        "c": "EPDM mineral yağ ile temas ettiğinde şişer ve sızdırmazlık özelliğini kaybeder. Su bazlı akışkanlarda ve fren hidroliğinde doğru seçimdir; mineral yağlı sistemlerde NBR veya FKM kullanılmalıdır."
+      }
+    ],
+    "eslesme2": ""
+  },
+  {
+    "slug": "hidrolik-silindir",
+    "ad": "Hidrolik Silindir",
+    "h1": "Hidrolik Silindir (Piston)",
+    "ozet": "Tek ve çift etkili hidrolik silindirler, tablalı ve yastıklı tipler. Kuvvet hesabı ve seçim rehberiyle.",
+    "giris": "Hidrolik silindir, basınçlı akışkanın enerjisini doğrusal harekete ve kuvvete çeviren elemandır. Ürettiği kuvvet basit bir ilişkiye dayanır: kuvvet, basınç ile piston alanının çarpımıdır.\n\nİtme yönünde piston tam alanı çalışır; çekme yönünde ise mil kesiti alandan düşer, bu nedenle aynı basınçta çekme kuvveti her zaman itme kuvvetinden düşüktür. Silindir seçerken yalnızca kuvvet değil, strok boyu, mil çapı ve burkulma (buckling) dayanımı da hesaba katılmalıdır; uzun stroklu silindirlerde belirleyici olan çoğu zaman burkulmadır.",
+    "eslesme": "S[İIi]L[İIi]ND[İIi]R",
+    "haric": "PNÖMAT|PNOMAT|\\bPNO\\b|POMPA|VALF|VANA|SENSÖR|SENSOR|MAKAS|KEÇE|KECE|CONTA|AYAK BAĞLANTISI|[İIi]MALAT|REV[İIi]ZYON|DEĞ[İIi]Ş[İIi]M|TAM[İIi]R|MONTAJ|[İIi]ŞÇ[İIi]L[İIi]K|BAKIM",
+    "sss": [
+      {
+        "s": "Hidrolik silindir kuvveti nasıl hesaplanır?",
+        "c": "Kuvvet = basınç × piston alanı. Örneğin 80 mm çaplı bir pistonun alanı yaklaşık 50,3 cm² olur; 200 bar basınçta itme kuvveti yaklaşık 100 kN (≈10 ton) çıkar. Çekme yönünde mil kesit alanı düşülerek hesaplanır."
+      },
+      {
+        "s": "Tek etkili ve çift etkili silindir farkı nedir?",
+        "c": "Tek etkili silindirde basınç yalnızca tek yönde uygulanır; dönüş yay veya yük ağırlığıyla sağlanır. Çift etkili silindirde her iki yönde de basınç uygulanabildiği için hem itme hem çekme kontrollüdür. Endüstriyel uygulamaların çoğunda çift etkili tip kullanılır."
+      },
+      {
+        "s": "Yastıklı silindir ne işe yarar?",
+        "c": "Yastıklama, pistonun strok sonuna gelirken yavaşlamasını sağlar. Bu sayede darbe ve gürültü azalır, silindirin ve bağlantı elemanlarının ömrü uzar. Yüksek hızlı veya ağır yüklü uygulamalarda önerilir."
+      }
+    ],
+    "eslesme2": ""
+  },
+  {
+    "slug": "pnomatik-silindir",
+    "ad": "Pnömatik Silindir",
+    "h1": "Pnömatik Silindir",
+    "ozet": "ISO 15552 ve ISO 6432 standardında pnömatik silindirler, manyetik pistonlu ve yastıklı tipler.",
+    "giris": "Pnömatik silindir, basınçlı havanın enerjisini doğrusal harekete çevirir. Hidrolik silindire göre daha hızlı ve daha temizdir, ancak havanın sıkışabilir olması nedeniyle konum hassasiyeti ve taşınabilen kuvvet daha düşüktür.\n\nTipik şebeke basıncı 6-8 bar olduğu için pnömatik silindirlerden elde edilen kuvvet, aynı çaptaki hidrolik silindirin çok altındadır. Bu nedenle yüksek kuvvet gereken yerlerde hidrolik, hızlı ve tekrarlı hafif hareketlerde pnömatik tercih edilir. Manyetik pistonlu tiplerde silindir gövdesine takılan sensörlerle uç konumları algılanabilir.",
+    "eslesme": "PNÖMAT|PNOMAT",
+    "haric": "VANA|VALF|MAKAS|HORTUM|KONTROL|AKTÜATÖR|AKTUATOR|SENSÖR|SENSOR|FLANŞ|[İIi]MALAT|REV[İIi]ZYON|DEĞ[İIi]Ş[İIi]M|TAM[İIi]R|MONTAJ|[İIi]ŞÇ[İIi]L[İIi]K|BAKIM",
+    "sss": [
+      {
+        "s": "Pnömatik silindir kaç bar basınçta çalışır?",
+        "c": "Endüstriyel şebeke basıncı genellikle 6-8 bar aralığındadır. Standart pnömatik silindirlerin çoğu 10 bar'a kadar dayanacak şekilde üretilir, ancak sürekli çalışma için üretici tarafından belirtilen anma basıncı esas alınmalıdır."
+      },
+      {
+        "s": "Hidrolik mi pnömatik mi seçmeliyim?",
+        "c": "Yüksek kuvvet, hassas konumlama ve yük altında durma gerekiyorsa hidrolik uygundur. Hızlı, tekrarlı ve nispeten düşük kuvvetli hareketlerde, temizlik gereken ortamlarda pnömatik daha ekonomik ve bakımı kolaydır."
+      },
+      {
+        "s": "Manyetik pistonlu silindir nedir?",
+        "c": "Piston üzerine yerleştirilen mıknatıs sayesinde, silindir gövdesine dışarıdan takılan reed veya elektronik sensörler pistonun konumunu algılar. Otomasyon hatlarında uç konum geri bildirimi için standart çözümdür."
+      }
+    ],
+    "eslesme2": "S[İIi]L[İIi]ND[İIi]R"
+  }
+]

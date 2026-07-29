@@ -1,0 +1,98 @@
+{
+  "uretim": "2026-07-29",
+  "kaynak": "Supabase stok_kartlari (aktif=true) — yönetici erişimiyle çekildi; hizmet kalemleri (imalat/revizyon/tamir) ve yanlış ürün tipleri elendi",
+  "kategoriler": {
+    "hidrolik-hortum": {
+      "toplamUrun": 1491,
+      "urunler": [
+        { "kod": "AD-0606-HE", "ad": "HORTUM EKİ 1/4" },
+        { "kod": "HF.PN06VB", "ad": "HORTUM EKİ 1/4" },
+        { "kod": "AD-1010-HE", "ad": "HORTUM EKİ 3/8" },
+        { "kod": "HF.PN10VB", "ad": "HORTUM EKİ 3/8" },
+        { "kod": "AD-1313-HE", "ad": "HORTUM EKİ 1/2" },
+        { "kod": "HF.PN13VB", "ad": "HORTUM EKİ 1/2" },
+        { "kod": "AD-1919-HE", "ad": "HORTUM EKİ 3/4" },
+        { "kod": "HF.PN20VB", "ad": "HORTUM EKİ 3/4" },
+        { "kod": "AD-2525-HE", "ad": "HORTUM EKİ 1" },
+        { "kod": "AD-5050-HE", "ad": "HORTUM EKİ 2" },
+        { "kod": "MUH.228", "ad": "1/2 HİDROLİK HORTUM" },
+        { "kod": "MUH.245", "ad": "1\" HİDROLİK HORTUM" },
+        { "kod": "MUH.243", "ad": "1'1/4 HİDROLİK HORTUM" }
+      ]
+    },
+    "hidrolik-rakor": {
+      "toplamUrun": 1466,
+      "urunler": [
+        { "kod": "EKO.REK.MPC.00.54", "ad": "METAL REKOR M5 x 4" },
+        { "kod": "EKO.REK.MPC.00.56", "ad": "METAL REKOR M5 x 6" },
+        { "kod": "EKO.REK.MPC.02.04", "ad": "METAL REKOR 1/8 x 4" },
+        { "kod": "EKO.REK.MPC.02.06", "ad": "METAL REKOR 1/8 x 6" },
+        { "kod": "EKO.REK.MPC.02.08", "ad": "METAL REKOR 1/8 x 8" },
+        { "kod": "EKO.REK.MPC.04.04", "ad": "METAL REKOR 1/4 x 4" },
+        { "kod": "EKO.REK.MPC.04.06", "ad": "METAL REKOR 1/4 x 6" },
+        { "kod": "EKO.REK.MPC.04.08", "ad": "METAL REKOR 1/4 x 8" },
+        { "kod": "EKO.REK.MPC.06.06", "ad": "METAL REKOR 3/8 x 6" },
+        { "kod": "EKO.REK.MPC.06.08", "ad": "METAL REKOR 3/8 x 8" },
+        { "kod": "EKO.REK.MPC.08.08", "ad": "METAL REKOR 1/2 X 8" },
+        { "kod": "SARI.MUH.DR.08", "ad": "PİRİNÇ DÜZ REKOR 1/2" },
+        { "kod": "SARI.MUH.DR.12", "ad": "PİRİNÇ DÜZ REKOR 3/4" },
+        { "kod": "HF.HSR1/2", "ad": "BSP CİVATA RAKORU 1/2" },
+        { "kod": "AD-1332-CR", "ad": "BSP CİVATA RAKORU 1/4" }
+      ]
+    },
+    "o-ring-sizdirmazlik": {
+      "toplamUrun": 917,
+      "urunler": [
+        { "kod": "KASTAS.KO-0400050", "ad": "O RİNG (40,00 x 05,00)" },
+        { "kod": "KASTAS.KO-0821436", "ad": "O RİNG (080 x 5)" },
+        { "kod": "KASTAS.KO-2000030", "ad": "O RİNG (200 x 03,00)" },
+        { "kod": "KASTAS.KO-2230030", "ad": "O RİNG (223 x 3)" },
+        { "kod": "KASTAS.KO-2400050", "ad": "O RİNG (240,00 x 05,00)" },
+        { "kod": "KASTAS.KO-250004", "ad": "O RİNG (250,00 x 4)" },
+        { "kod": "KASTAS.KO-2900500", "ad": "O RİNG (290 x 05,00)" },
+        { "kod": "KASTAS.KO-3000050", "ad": "O RİNG (300,00 x 05,00)" },
+        { "kod": "KASTAS.KO-3393057", "ad": "O RİNG (339,5 x 5,7)" },
+        { "kod": "MUH.206", "ad": "BOX O RİNG KİT NBR 1,78" },
+        { "kod": "MUH.192", "ad": "KEÇE TAKIMI" },
+        { "kod": "MUH.MUH.49", "ad": "DÖNER ŞAFT YAĞ KEÇESİ" },
+        { "kod": "KASTAS.KKO.NBR.SET.1,78", "ad": "1,78 MM NBR O-RİNG SETİ" },
+        { "kod": "KASTAS.KKO.NBR.SET.2,62", "ad": "2,62 MM NBR O-RİNG SETİ" },
+        { "kod": "KASTAS.KKO.NBR.SET.3,53", "ad": "3,53 MM NBR O-RİNG SETİ" }
+      ]
+    },
+    "hidrolik-silindir": {
+      "toplamUrun": 143,
+      "urunler": [
+        { "kod": "EKO.SDA.12.10", "ad": "SDA 12x10 SHORT STROK SİLİNDİR" },
+        { "kod": "EKO.SDA.12.30", "ad": "SDA 12x30 SHORT STROK SİLİNDİR" },
+        { "kod": "EKO.SDA.012.040", "ad": "SDA 12X40 SHORT STROK SİLİNDİR" },
+        { "kod": "EKO.SDA.20.15", "ad": "SDA 20x15 SHORT STROK SİLİNDİR" },
+        { "kod": "EKO.SDA.20.20", "ad": "SDA 20x20 SHORT STROK SİLİNDİR" },
+        { "kod": "EKO.SDA.040.015", "ad": "SDA-S 40X15 SHORT STROK SİLİNDİR" },
+        { "kod": "EKO.SDA.40.20.Ç.M.", "ad": "SDA 40X20 ÇİFT MİLLİ SİLİNDİR" },
+        { "kod": "PEM.S.DMC.040.700", "ad": "PEMAKS DMC-A ISO 40x700 SİLİNDİR" },
+        { "kod": "PEM.S.PAG.063.050.T", "ad": "PEMAKS PAG 63x50 TANDEM SİLİNDİR" },
+        { "kod": "PEM.S.PAG.080.050.T", "ad": "PEMAKS PAG 80x50 TANDEM SİLİNDİR" },
+        { "kod": "PEM.S.ZS.032.0430", "ad": "PEMAKS 32x430 ZS RODLESS SİLİNDİR" }
+      ]
+    },
+    "pnomatik-silindir": {
+      "toplamUrun": 283,
+      "urunler": [
+        { "kod": "PEM.S.PAG.032.025", "ad": "PEMAKS PAG 32 X 25 PNÖMATİK SİLİNDİR" },
+        { "kod": "PEM.S.PAG.032.050", "ad": "PEMAKS PAG 32 X 50 PNÖMATİK SİLİNDİR" },
+        { "kod": "PEM.S.PAG.032.080", "ad": "PEMAKS PAG 32 X 80 PNÖMATİK SİLİNDİR" },
+        { "kod": "PEM.S.PAG.040.025", "ad": "PEMAKS PAG 40 X 25 PNÖMATİK SİLİNDİR" },
+        { "kod": "PEM.S.PAG.040.040", "ad": "PEMAKS PAG 40 X 40 PNÖMATİK SİLİNDİR" },
+        { "kod": "PEM.S.PAG.040.050", "ad": "PEMAKS PAG 40 X 50 PNÖMATİK SİLİNDİR" },
+        { "kod": "PEM.S.PAG.040.070", "ad": "PEMAKS PAG 40 X 70 PNÖMATİK SİLİNDİR" },
+        { "kod": "PEM.S.PAG.040.080", "ad": "PEMAKS PAG 40 X 80 PNÖMATİK SİLİNDİR" },
+        { "kod": "PEM.S.PAG.050.015", "ad": "PEMAKS PAG 50 X 15 PNÖMATİK SİLİNDİR" },
+        { "kod": "PEM.S.PAG.050.025", "ad": "PEMAKS PAG 50 X 25 PNÖMATİK SİLİNDİR" },
+        { "kod": "PEM.S.PAG.050.030", "ad": "PEMAKS PAG 50 X 30 PNÖMATİK SİLİNDİR" },
+        { "kod": "PEM.S.PKA.040.030", "ad": "PEMAKS PKA 40X30 PNÖMATİK SİLİNDİR" },
+        { "kod": "PEM.S.PKE.032.025", "ad": "PEMAKS PKE 32x25 PNÖMATİK SİLİNDİR" }
+      ]
+    }
+  }
+}

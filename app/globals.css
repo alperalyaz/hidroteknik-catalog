@@ -1,0 +1,112 @@
+/*
+  Hidroteknik Katalog — tasarım sistemi
+  Hız SEO'nun parçasıdır: harici font YÜKLENMEZ (sistem yazı tipleri kullanılır),
+  harici script yoktur. Böylece LCP düşük, Core Web Vitals yüksek kalır.
+*/
+:root {
+  --lacivert: #1b4ba6;
+  --lacivert-koyu: #143a80;
+  --lacivert-soft: #eaf0fb;
+  --pirinc: #8f5d10;
+  --pirinc-soft: #f7efdd;
+  --murekkep: #101820;
+  --murekkep-2: #44525f;
+  --murekkep-3: #6e7c89;
+  --cizgi: #dbe2ea;
+  --zemin: #f5f7fa;
+  --yuzey: #ffffff;
+  --sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--zemin);
+  color: var(--murekkep);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; height: auto; }
+a { color: var(--lacivert); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--pirinc); outline-offset: 2px; }
+
+.sarmal { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+.metin { max-width: 68ch; }
+
+/* ── üst bar ── */
+.ustbar { background: var(--yuzey); border-bottom: 1px solid var(--cizgi); }
+.ustbar-ic { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; padding: 14px 0; }
+.marka { display: flex; align-items: baseline; gap: 10px; text-decoration: none; color: var(--murekkep); }
+.marka b { font-size: 1.18rem; letter-spacing: -0.02em; }
+.marka span { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--murekkep-3); }
+.ustbar-tel { margin-left: auto; font-family: var(--mono); font-size: 0.92rem; font-weight: 600; text-decoration: none; color: var(--lacivert); white-space: nowrap; }
+
+/* ── başlık alanı ── */
+.hero { background: var(--yuzey); border-bottom: 1px solid var(--cizgi); padding: 40px 0 34px; }
+.kirinti { font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.06em; color: var(--murekkep-3); margin: 0 0 12px; }
+.kirinti a { color: var(--murekkep-3); text-decoration: none; }
+.kirinti a:hover { color: var(--lacivert); text-decoration: underline; }
+h1 { font-size: clamp(1.75rem, 4vw, 2.6rem); line-height: 1.12; letter-spacing: -0.022em; margin: 0 0 12px; text-wrap: balance; }
+.ozet { font-size: 1.08rem; color: var(--murekkep-2); margin: 0; max-width: 62ch; }
+.rozetler { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.rozet { font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.04em; background: var(--lacivert-soft); color: var(--lacivert-koyu); border: 1px solid #cfdcf5; padding: 4px 10px; }
+.rozet.pirinc { background: var(--pirinc-soft); color: var(--pirinc); border-color: #e6d5b0; }
+
+/* ── bölümler ── */
+main { padding-bottom: 72px; }
+section { padding-top: 44px; }
+h2 { font-size: clamp(1.28rem, 2.4vw, 1.6rem); letter-spacing: -0.014em; margin: 0 0 14px; text-wrap: balance; }
+h3 { font-size: 1.02rem; margin: 24px 0 6px; }
+p { margin: 0 0 14px; }
+
+/* ── ürün tablosu ── */
+.tablo-kutu { overflow-x: auto; border: 1px solid var(--cizgi); background: var(--yuzey); }
+table { border-collapse: collapse; width: 100%; font-size: 0.92rem; min-width: 480px; }
+th { text-align: left; font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.09em; text-transform: uppercase; color: var(--murekkep-2); background: #eef2f7; padding: 11px 14px; border-bottom: 1.5px solid var(--cizgi); }
+td { padding: 10px 14px; border-bottom: 1px solid var(--cizgi); }
+tr:last-child td { border-bottom: none; }
+td.kod { font-family: var(--mono); font-size: 0.84rem; color: var(--murekkep-2); white-space: nowrap; }
+.tablo-not { font-size: 0.88rem; color: var(--murekkep-3); margin-top: 10px; }
+
+/* ── SSS ── */
+.sss { border-top: 1px solid var(--cizgi); }
+.sss details { border-bottom: 1px solid var(--cizgi); background: var(--yuzey); }
+.sss summary { cursor: pointer; padding: 15px 18px; font-weight: 650; list-style: none; display: flex; gap: 12px; align-items: flex-start; }
+.sss summary::-webkit-details-marker { display: none; }
+.sss summary::before { content: '+'; font-family: var(--mono); color: var(--pirinc); font-weight: 700; flex-shrink: 0; }
+.sss details[open] summary::before { content: '−'; }
+.sss .cevap { padding: 0 18px 16px 42px; color: var(--murekkep-2); margin: 0; }
+
+/* ── teklif kutusu ── */
+.teklif { background: var(--lacivert); color: #fff; padding: 26px 28px; margin-top: 44px; }
+.teklif h2 { margin: 0 0 8px; color: #fff; }
+.teklif p { color: #d6e2f7; margin: 0 0 18px; max-width: 56ch; }
+.teklif-butonlar { display: flex; flex-wrap: wrap; gap: 12px; }
+.btn { display: inline-block; padding: 12px 20px; font-weight: 650; text-decoration: none; border: 1.5px solid transparent; }
+.btn-birincil { background: #fff; color: var(--lacivert-koyu); }
+.btn-ikincil { border-color: #7ea3e0; color: #fff; }
+
+/* ── kategori kartları ── */
+.kartlar { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+.kart { display: block; background: var(--yuzey); border: 1px solid var(--cizgi); padding: 20px; text-decoration: none; color: inherit; transition: border-color 0.15s, transform 0.15s; }
+.kart:hover { border-color: var(--lacivert); transform: translateY(-2px); }
+.kart b { display: block; font-size: 1.06rem; margin-bottom: 6px; letter-spacing: -0.01em; }
+.kart span { font-size: 0.9rem; color: var(--murekkep-2); display: block; }
+.kart em { font-family: var(--mono); font-size: 0.72rem; color: var(--murekkep-3); font-style: normal; display: block; margin-top: 10px; }
+
+/* ── alt bilgi ── */
+footer { background: var(--murekkep); color: #aebbc7; padding: 36px 0 44px; font-size: 0.9rem; }
+footer a { color: #cddcf0; }
+.footer-ic { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 26px; }
+footer b { color: #fff; display: block; margin-bottom: 8px; font-size: 0.95rem; }
+footer ul { list-style: none; padding: 0; margin: 0; }
+footer li { margin: 4px 0; }
+.footer-alt { border-top: 1px solid #2a3742; margin-top: 28px; padding-top: 18px; font-size: 0.82rem; color: #7d8b98; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}

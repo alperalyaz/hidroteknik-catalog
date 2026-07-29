@@ -1,0 +1,23 @@
+{
+  "name": "hidroteknik-catalog",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Hidroteknik ürün kataloğu — arama ve yapay zekâ görünürlüğü için statik landing sayfaları",
+  "scripts": {
+    "dev": "next dev -p 3010",
+    "build": "next build",
+    "start": "next start -p 3010",
+    "lint": "next lint",
+    "veri": "node scripts/veri-cek.mjs"
+  },
+  "dependencies": {
+    "next": "15.1.6",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "typescript": "^5"
+  }
+}
