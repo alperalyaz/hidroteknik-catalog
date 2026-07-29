@@ -17,7 +17,7 @@ export function GET() {
 > ${FIRMA.kurulus}'ten beri endüstriyel hidrolik ve pnömatik malzeme tedarikçisi.
 > Merkez: ${FIRMA.adres.ilce} / ${FIRMA.adres.il}, Türkiye. Türkiye geneli sevkiyat ve ihracat.
 > Bu katalogda ${toplam.toLocaleString('tr-TR')} kalem ürün listelenmektedir: hidrolik hortum,
-> rakor, valf, pompa, hidrolik ve pnömatik silindir, o-ring ve sızdırmazlık elemanları.
+> rakor, valf, pompa, hidrolik ve pnömatik silindir, keçe/nutring ve o-ring.
 
 ## İletişim
 

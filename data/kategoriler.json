@@ -311,12 +311,12 @@
  },
  {
   "slug": "o-ring-sizdirmazlik",
-  "ad": "O-Ring ve Sızdırmazlık Elemanları",
-  "h1": "O-Ring, Keçe ve Sızdırmazlık Elemanları",
-  "ozet": "NBR, FKM (Viton), EPDM ve PTFE malzemelerde O-ring, keçe ve sızdırmazlık elemanları. Ölçü tablosuyla birlikte.",
-  "giris": "O-ring, iki yüzey arasında sıkışarak sızdırmazlık sağlayan en yaygın conta tipidir. Seçimde iki değer belirleyicidir: ölçü (iç çap × kesit çapı) ve malzeme.\n\nMalzeme seçimi akışkana ve sıcaklığa göre yapılır. NBR genel hidrolik yağlarda standart tercihtir ve yaklaşık -30 °C ile +100 °C arasında çalışır. FKM (Viton) yüksek sıcaklık ve agresif akışkanlarda kullanılır. EPDM su ve fren hidroliğinde uygundur ancak mineral yağla birlikte kullanılmaz — bu, sahada en sık yapılan malzeme hatasıdır.",
-  "eslesme": "O.?R[İIi]NG|KEÇE|KECE|V.?R[İIi]NG",
-  "haric": "POMPA|VALF|S[İIi]L[İIi]ND[İIi]R|TAKOZ|[İIi]MALAT|REV[İIi]ZYON|DEĞ[İIi]Ş[İIi]M|TAM[İIi]R|MONTAJ|[İIi]ŞÇ[İIi]L[İIi]K|BAKIM",
+  "ad": "O-Ring ve Conta",
+  "h1": "O-Ring Ölçüleri, Şerit O-Ring ve Conta",
+  "ozet": "NBR, FKM (Viton) ve EPDM malzemelerde metrik ve inç O-ring ölçüleri. Silindir keçesi, nutring ve sıyırıcı ayrı bir gruptur.",
+  "giris": "O-ring, iki yüzey arasında sıkışarak sızdırmazlık sağlayan en yaygın conta tipidir. Seçimde iki değer belirleyicidir: ölçü (iç çap × kesit çapı) ve malzeme.\n\nMalzeme seçimi akışkana ve sıcaklığa göre yapılır. NBR genel hidrolik yağlarda standart tercihtir ve yaklaşık -30 °C ile +100 °C arasında çalışır. FKM (Viton) yüksek sıcaklık ve agresif akışkanlarda kullanılır. EPDM su ve fren hidroliğinde uygundur ancak mineral yağla birlikte kullanılmaz — bu, sahada en sık yapılan malzeme hatasıdır.\n\nO-ring, sızdırmazlık takımının yalnızca bir parçasıdır. Hidrolik silindirlerde asıl işi yapan nutring, piston keçesi, sıyırıcı ve yataklama ayrı bir gruptur ve stoğumuzun çok daha büyük bölümünü oluşturur (5.307 kalem); onlar için «Hidrolik Keçe, Nutring ve Sıyırıcı» sayfasına bakın.",
+  "eslesme": "O.?R[İIi]NG",
+  "haric": "POMPA|VALF|S[İIi]L[İIi]ND[İIi]R|TAKOZ|[İIi]MALAT|REV[İIi]ZYON|DEĞ[İIi]Ş[İIi]M|TAM[İIi]R|MONTAJ|[İIi]ŞÇ[İIi]L[İIi]K|BAKIM|APARAT",
   "sss": [
    {
     "s": "O-ring ölçüsü nasıl okunur?",
@@ -338,8 +338,172 @@
   "standartlar": [
    "NBR",
    "FKM (viton)",
+   "EPDM",
    "Metrik ve inç ölçüler"
-  ]
+  ],
+  "eslesmeKod": "^KASTAS\\.(KO|KX|KSO)"
+ },
+ {
+  "slug": "hidrolik-kece-nutring",
+  "ad": "Hidrolik Keçe, Nutring ve Sıyırıcı",
+  "h1": "Hidrolik Keçe, Nutring ve Sıyırıcı — Kastaş Profil Kodlarıyla",
+  "ozet": "Mil ve piston keçesi, nutring, sıyırıcı, yataklama ve destek ringi. K21, K06, K22, K23, K33 ve diğer Kastaş profillerinde 5.300’ü aşkın ölçü stokta.",
+  "giris": "Bir hidrolik silindirin sızdırmazlığını tek bir parça sağlamaz. Mil tarafında nutring ve boğaz keçesi, piston tarafında piston keçesi, dışarıya karşı sıyırıcı (toz keçesi), yükü taşıyan yataklama ve yüksek basınçta keçeyi arkadan tutan destek ringi birlikte çalışır. Revizyonda genellikle takımın tamamı yenilenir; yalnız sızdıran parçayı değiştirmek çoğu zaman aynı arızayı kısa sürede geri getirir.\n\nKastaş'ta her profilin bir kodu vardır: K21, K06, K22, K23, K33 ve devamı. Sipariş için gereken iki bilgi profil kodu ve üç ölçüdür. Ölçü daima üç sayı halinde yazılır — örneğin K21-040/11 (40 × 50 × 8): iki çap ve yükseklik.\n\nÖlçü sırası parçanın nereye oturduğunu da söyler. Sayılar büyüyorsa (40 × 50) parça mil üzerine geçer, küçülüyorsa (63 × 51) piston üzerine oturur. Stoğumuzda bu ayrım kod bazında tutarlıdır: K21, K22, K06, K33, K68 ve K37 mil tarafı; K23, K18, K69 ve K17 piston tarafıdır.\n\nMalzeme kodun sonunda yazar. PU (poliüretan) aşınmaya en dayanıklı seçenektir ve mobil hidrolikte standart tercihtir; NBR mineral yağlı sistemlerde ekonomik çözümdür; FKM (Viton) yüksek sıcaklık ve agresif akışkanlar içindir. Aynı profilin PU ve NBR versiyonu çoğu zaman birlikte stoklanır — K21 ailesinin 1.223 ölçüsünün yarısı PU'dur.\n\nProfil kodunu bilmiyorsanız sorun değil: sökülen parçanın fotoğrafı ile mil çapı, yatak çapı ve yükseklik ölçüsü yeterlidir. Ölçüyü temizlenmiş ve gerilmemiş parça üzerinden, tercihen kumpasla alın; basınç altında kalmış bir keçe kalıcı deforme olabildiği için gözle tahmin yanıltır.",
+  "eslesmeKod": "^KASTAS\\.",
+  "haricKod": "^KASTAS\\.(KO|KX|KSO)",
+  "eslesme": "KEÇE|KECE|NUTR|SIYIRICI|YATAKLAMA|V.?R[İIi]NG",
+  "haric": "O.?R[İIi]NG|POMPA|VALF|S[İIi]L[İIi]ND[İIi]R|TAKOZ|[İIi]MALAT|REV[İIi]ZYON|DEĞ[İIi]Ş[İIi]M|TAM[İIi]R|MONTAJ|[İIi]ŞÇ[İIi]L[İIi]K|BAKIM|APARAT",
+  "sss": [
+   {
+    "s": "K21 nedir, nerede kullanılır?",
+    "c": "K21, Kastaş’ın nutring profil kodudur ve stoğumuzun en geniş sızdırmazlık ailesidir — 1.223 farklı ölçü tutuyoruz. Ölçüleri iç çaptan dış çapa doğru büyüdüğü için (ör. K21-040/11 · 40 × 50 × 8) mil üzerine geçer. PU, NBR ve FKM malzemelerde bulunur."
+   },
+   {
+    "s": "Keçe siparişi için hangi bilgileri vermeliyim?",
+    "c": "Profil kodu ve üç ölçü: iç çap, dış çap ve yükseklik. Kod biliniyorsa (ör. K06-040 PU) tek başına yeterlidir, ölçüyü kodun karşılığından biz buluruz. Kod yoksa üç ölçü ve parçanın fotoğrafı gönderin."
+   },
+   {
+    "s": "PU, NBR ve FKM’den hangisini seçmeliyim?",
+    "c": "PU (poliüretan) aşınmaya en dayanıklı olandır; yüksek basınç ve hareketli iş makinesi uygulamalarında standart tercihtir. NBR mineral yağlı normal sıcaklıktaki sistemlerde ekonomik ve yeterlidir. FKM (Viton) sürekli yüksek sıcaklık, yakıt veya kimyasal teması olan yerlerde kullanılır."
+   },
+   {
+    "s": "Profil kodunu bilmiyorum, keçeyi nasıl bulursunuz?",
+    "c": "Sökülen parçanın net bir fotoğrafı ile üç ölçüsünü gönderin. Profilin kesiti (nutring, U profil, sıyırıcı, yataklama) fotoğraftan ayırt edilir; ölçü de stoktaki karşılığını verir. Ölçüyü kullanılmış parçadan alırken deforme olmuş olabileceğini hesaba katın — mümkünse silindirin mil ve yatak çapını da ölçün."
+   },
+   {
+    "s": "Sadece sızdıran keçeyi değiştirsem olmaz mı?",
+    "c": "Olur ama çoğu zaman kısa ömürlü olur. Sızıntının sebebi genelde yataklamanın aşınıp mili merkezden kaçırması veya sıyırıcının toz geçirmesidir; bu durumda yeni keçe de aynı hızda yenilir. Silindir zaten söküldüğü için takımın tamamını yenilemek işçilik açısından da daha ucuza gelir."
+   }
+  ],
+  "eslesme2": "",
+  "markalar": [
+   "Kastaş"
+  ],
+  "standartlar": [
+   "PU (poliüretan)",
+   "NBR",
+   "FKM (viton)",
+   "Bronz-teflon / fenolik yataklama",
+   "Metrik ölçüler"
+  ],
+  "profiller": [
+   {
+    "kod": "K21",
+    "ad": "Nutring",
+    "yer": "Mil",
+    "adet": 1223,
+    "ornek": "K21-008/5 PU · 8 × 14 × 4"
+   },
+   {
+    "kod": "K22",
+    "yer": "Mil",
+    "adet": 399,
+    "ornek": "K22-030/1 PU · 30 × 40 × 6"
+   },
+   {
+    "kod": "K06",
+    "yer": "Mil",
+    "adet": 342,
+    "ornek": "K06-040 PU · 40 × 48 × 7/5"
+   },
+   {
+    "kod": "K23",
+    "yer": "Piston",
+    "adet": 328,
+    "ornek": "K23-014/1 · 14 × 8 × 4,5"
+   },
+   {
+    "kod": "K33",
+    "ad": "Boğaz nutringi",
+    "yer": "Mil",
+    "adet": 294,
+    "ornek": "K33-040 PU · 40 × 50 × 10"
+   },
+   {
+    "kod": "K68",
+    "yer": "Mil",
+    "adet": 198,
+    "ornek": "K68-040/1 · 40 × 44 × 9,5"
+   },
+   {
+    "kod": "K37",
+    "yer": "Mil",
+    "adet": 197,
+    "ornek": "K37-006 · 6 × 14 × 6,5"
+   },
+   {
+    "kod": "K18",
+    "yer": "Piston",
+    "adet": 166,
+    "ornek": "K18 063-051 · 63 × 51 × 20,5"
+   },
+   {
+    "kod": "K38",
+    "yer": "Mil",
+    "adet": 151,
+    "ornek": "K38-045 PU · 45 × 53 × 5,8"
+   },
+   {
+    "kod": "K69",
+    "yer": "Piston",
+    "adet": 150,
+    "ornek": "K69-035/6 · 35 × 30 × 5,4"
+   },
+   {
+    "kod": "K09",
+    "yer": "Mil",
+    "adet": 124,
+    "ornek": "K09-025 · 25 × 33 × 7/4"
+   },
+   {
+    "kod": "K27",
+    "yer": "Mil",
+    "adet": 113,
+    "ornek": "K27-036 · 36 × 44 × 7/5"
+   },
+   {
+    "kod": "K01",
+    "yer": "Mil",
+    "adet": 106,
+    "ornek": "K01-080 · 80 × 95 × 22,5"
+   },
+   {
+    "kod": "KBT / KPB / KSB",
+    "ad": "Yataklama (bronz-teflon, polyester, fenolik)",
+    "yer": "Mil ve piston",
+    "adet": 63,
+    "ornek": "KBT-2,5×20 · bronz-teflon"
+   },
+   {
+    "kod": "K14",
+    "ad": "V-ring (A / S / L tipi)",
+    "yer": "Mil",
+    "adet": 25,
+    "ornek": "K14-020 A · A tipi"
+   },
+   {
+    "kod": "K19",
+    "ad": "Piston keçesi",
+    "yer": "Piston",
+    "adet": 5,
+    "ornek": "K19 075-060 · 75 × 60 × 11"
+   },
+   {
+    "kod": "K707",
+    "ad": "Destek ringi",
+    "yer": "Keçe arkası",
+    "adet": 3,
+    "ornek": "K707 · 17,5 × 20 × 1,3"
+   },
+   {
+    "kod": "K94",
+    "ad": "Toz keçesi (sıyırıcı)",
+    "yer": "Mil",
+    "adet": 2,
+    "ornek": "K94-060 · 60 × 70 × 6,3/10"
+   }
+  ],
+  "profilNot": "«Takıldığı yer» sütunu ölçü sırasından okunur: iç çaptan dış çapa büyüyen ölçü mil tarafı, dış çaptan iç çapa küçülen ölçü piston tarafıdır. Tabloda en çok stok tuttuğumuz profiller vardır; Kastaş kataloğundaki diğer profilleri de temin ediyoruz."
  },
  {
   "slug": "hortum-kelepce",

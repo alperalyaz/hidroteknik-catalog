@@ -71,6 +71,8 @@ td { padding: 10px 14px; border-bottom: 1px solid var(--cizgi); }
 tr:last-child td { border-bottom: none; }
 td.kod { font-family: var(--mono); font-size: 0.84rem; color: var(--murekkep-2); white-space: nowrap; }
 .tablo-not { font-size: 0.88rem; color: var(--murekkep-3); margin-top: 10px; }
+.profil-kod { font-family: var(--mono); font-size: 0.88rem; }
+.profil-ad { display: block; font-size: 0.82rem; color: var(--murekkep-3); }
 
 /* ── SSS ── */
 .sss { border-top: 1px solid var(--cizgi); }

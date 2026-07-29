@@ -2,6 +2,19 @@ import kategorilerJson from '@/data/kategoriler.json'
 import urunlerJson from '@/data/urunler.json'
 
 export type Sss = { s: string; c: string }
+/**
+ * Profil ailesi satırı (ör. Kastaş K21). Sızdırmazlıkta müşteri ürün adını değil
+ * PROFİL KODUNU arar ("k21 40x50x8"), bu yüzden kodlar tabloyla yayımlanır.
+ */
+export type Profil = {
+  kod: string
+  /** Veriyle adlandırabildiğimiz profillerde ne olduğu; adı geçmiyorsa boş. */
+  ad?: string
+  /** 'mil' | 'piston' — ölçü sırasından türetilir (bkz. kategoriler.json notu). */
+  yer: string
+  adet: number
+  ornek: string
+}
 export type Kategori = {
   slug: string
   ad: string
@@ -16,6 +29,10 @@ export type Kategori = {
   markalar?: string[]
   /** Grubun uyduğu standartlar / tipler. */
   standartlar?: string[]
+  /** Profil/kod aileleri tablosu. Yalnız kodla aranan gruplarda doldurulur. */
+  profiller?: Profil[]
+  /** Profil tablosunun altına yazılacak açıklama. */
+  profilNot?: string
 }
 export type Urun = { kod: string; ad: string; marka?: string; model?: string }
 
