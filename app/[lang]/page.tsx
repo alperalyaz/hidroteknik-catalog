@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { SITE_URL, FIRMA, ANA_SITE, type Dil } from '@/lib/site'
+import { SITE_URL, FIRMA, ANA_SITE } from '@/lib/site'
 import { KATEGORILER, kategoriUrunleri } from '@/lib/veri'
 
 export const metadata: Metadata = {
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   alternates: { canonical: `${SITE_URL}/tr` },
 }
 
-export default async function KatalogAnaSayfa({ params }: { params: Promise<{ lang: Dil }> }) {
+export default async function KatalogAnaSayfa({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params
   const toplamKalem = KATEGORILER.reduce((a, k) => a + kategoriUrunleri(k.slug).toplam, 0)
 

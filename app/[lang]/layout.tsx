@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { DILLER, FIRMA, ANA_SITE, type Dil } from '@/lib/site'
+import { DILLER, FIRMA, ANA_SITE } from '@/lib/site'
 import { isletmeSchema, jsonLd } from '@/lib/schema'
 import { KATEGORILER } from '@/lib/veri'
 
@@ -12,7 +12,7 @@ export default async function DilLayout({
   params,
 }: {
   children: React.ReactNode
-  params: Promise<{ lang: Dil }>
+  params: Promise<{ lang: string }>
 }) {
   const { lang } = await params
 

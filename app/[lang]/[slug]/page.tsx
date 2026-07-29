@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { DILLER, SITE_URL, FIRMA, type Dil } from '@/lib/site'
+import { DILLER, SITE_URL, FIRMA } from '@/lib/site'
 import { KATEGORILER, kategoriBul, kategoriUrunleri, urunAdiDuzelt } from '@/lib/veri'
 import { kategoriSchema, sssSchema, kirintiSchema, jsonLd } from '@/lib/schema'
 
@@ -12,7 +12,7 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ lang: Dil; slug: string }>
+  params: Promise<{ lang: string; slug: string }>
 }): Promise<Metadata> {
   const { lang, slug } = await params
   const k = kategoriBul(slug)
@@ -29,7 +29,7 @@ export async function generateMetadata({
 export default async function KategoriSayfasi({
   params,
 }: {
-  params: Promise<{ lang: Dil; slug: string }>
+  params: Promise<{ lang: string; slug: string }>
 }) {
   const { lang, slug } = await params
   const k = kategoriBul(slug)
