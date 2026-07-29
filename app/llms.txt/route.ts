@@ -34,6 +34,10 @@ ${KATEGORILER.map(
     `- [${k.ad}](${SITE_URL}/${L}/${k.slug}) — ${kategoriUrunleri(k.slug).toplam.toLocaleString('tr-TR')} kalem. ${k.ozet}`
 ).join('\n')}
 
+## Yerel
+
+- [Denizli'de hidrolik malzeme ve yedek parça](${SITE_URL}/${L}/denizli-hidrolik)
+
 ## Diğer kaynaklar
 
 - [Kurumsal site](${ANA_SITE})

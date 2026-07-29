@@ -73,6 +73,9 @@ export default async function DilLayout({
               <b>Kurumsal</b>
               <ul>
                 <li>
+                  <Link href={`/${lang}/denizli-hidrolik`}>Denizli hidrolik</Link>
+                </li>
+                <li>
                   <a href={ANA_SITE}>hidroteknik.com.tr</a>
                 </li>
                 <li>
