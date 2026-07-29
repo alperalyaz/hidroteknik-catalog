@@ -148,12 +148,14 @@
     },
     {
      "kod": "OLEOC.QCA-25B-G1",
-     "ad": "HİDROLİK POPET TİP ÇABUK EKLEME RAKORU ERKEK 1"
+     "ad": "HİDROLİK POPET TİP ÇABUK EKLEME RAKORU ERKEK 1",
+     "marka": "Oleocontrol"
     },
     {
      "kod": "OLEOC.QCA-10A-G38",
      "ad": "HİDROLİK POPET TİP ÇABUK EKLEME RAKORU DİŞİ 3/8",
-     "model": "3/8"
+     "model": "3/8",
+     "marka": "Oleocontrol"
     },
     {
      "kod": "PC08-1/8",
@@ -207,12 +209,14 @@
     {
      "kod": "OLEOC.QCF-12A-G34",
      "ad": "HİDROLİK DÜZ ALIN ÇABUK EKLEME RAKORU DİŞİ 3/4",
-     "model": "3/4"
+     "model": "3/4",
+     "marka": "Oleocontrol"
     },
     {
      "kod": "OLEOC.QCA-10B-G38",
      "ad": "HİDROLİK POPET TİP ÇABUK EKLEME RAKORU ERKEK 3/8",
-     "model": "3/8"
+     "model": "3/8",
+     "marka": "Oleocontrol"
     }
    ]
   },
@@ -519,12 +523,14 @@
     {
      "kod": "OLEOC.TLV-06-G14",
      "ad": "HİDROLİK İKİZ KİLİT VALFİ 1/4",
-     "model": "1/4"
+     "model": "1/4",
+     "marka": "Oleocontrol"
     },
     {
      "kod": "OLEOC.OL-10 FCV G38",
      "ad": "HİDROLİK HIZ AYAR VALFİ ÇEKSİZ 3/8",
-     "model": "3/8"
+     "model": "3/8",
+     "marka": "Oleocontrol"
     },
     {
      "kod": "HEMA.HV040HPCO12",
@@ -555,19 +561,23 @@
     {
      "kod": "ESM.EDZA.430",
      "ad": "( EDZA 430-M6 ) 30 X 30 DÜZ POMPA ADAPTÖRÜ 3/8",
-     "model": "3/8"
+     "model": "3/8",
+     "marka": "Esmaksan"
     },
     {
      "kod": "ESM.EDZA.440",
-     "ad": "( EDZA 440-M8 ) 40 X 40 X M8 DÜZ POMPA ADAPTÖRÜ"
+     "ad": "( EDZA 440-M8 ) 40 X 40 X M8 DÜZ POMPA ADAPTÖRÜ",
+     "marka": "Esmaksan"
     },
     {
      "kod": "HMS.PEX.EGİK.05",
-     "ad": "( PEX752055131 ) 55 LT ( SAĞ ) EĞİK PİSTONLU POMPA"
+     "ad": "( PEX752055131 ) 55 LT ( SAĞ ) EĞİK PİSTONLU POMPA",
+     "marka": "Hidromas"
     },
     {
      "kod": "HMS.PDT.DPK.03",
-     "ad": "( PDT-DK300510451 ) PDTDK 30-51 SAĞ POMPA"
+     "ad": "( PDT-DK300510451 ) PDTDK 30-51 SAĞ POMPA",
+     "marka": "Hidromas"
     },
     {
      "kod": "PZB.EĞİK.084",
@@ -602,15 +612,18 @@
     },
     {
      "kod": "ESM.DRA.351.2",
-     "ad": "( DRA 351 ) 51 MM 1 POMPA ADAPTÖRÜ"
+     "ad": "( DRA 351 ) 51 MM 1 POMPA ADAPTÖRÜ",
+     "marka": "Esmaksan"
     },
     {
      "kod": "HMS.PEX.EGİK.09",
-     "ad": "( PEX752085131 ) 85 LT ( SAĞ ) EĞİK PİSTONLU POMPA"
+     "ad": "( PEX752085131 ) 85 LT ( SAĞ ) EĞİK PİSTONLU POMPA",
+     "marka": "Hidromas"
     },
     {
      "kod": "HMS.PEX.EGİK.10",
-     "ad": "( PEX752085132 ) 85 LT ( SOL ) EĞİK PİSTONLU POMPA"
+     "ad": "( PEX752085132 ) 85 LT ( SOL ) EĞİK PİSTONLU POMPA",
+     "marka": "Hidromas"
     },
     {
      "kod": "PZB.DÜZ.090",
@@ -753,12 +766,14 @@
     {
      "kod": "OLEOC.KV2-10G38",
      "ad": "HİDROLİK İKİ YOLLU KÜRESEL VANA BSPP 3/8 DN10",
-     "model": "DN10"
+     "model": "DN10",
+     "marka": "Oleocontrol"
     },
     {
      "kod": "OLEOC.KV2-25G1",
      "ad": "HİDROLİK İKİ YOLLU KÜRESEL VANA BSPP 1 DN25",
-     "model": "DN25"
+     "model": "DN25",
+     "marka": "Oleocontrol"
     },
     {
      "kod": "MUH.MUH.100",
@@ -806,7 +821,8 @@
     {
      "kod": "OLEOC.KV2-25G114",
      "ad": "HİDROLİK İKİ YOLLU KÜRESEL VANA BSPP 1.1/4 DN25",
-     "model": "DN25"
+     "model": "DN25",
+     "marka": "Oleocontrol"
     }
    ]
   },
@@ -1149,15 +1165,18 @@
    "urunler": [
     {
      "kod": "LMC.CM00M03P1YG2016.0",
-     "ad": "16 MM ÇİFT VİDALI ALT TABLALI KELEPÇE"
+     "ad": "16 MM ÇİFT VİDALI ALT TABLALI KELEPÇE",
+     "marka": "LMC"
     },
     {
      "kod": "LMC.CM40M13P1YI2016.0",
-     "ad": "16 MM TEK VİDALI ALT TABLALI İKİZ KELEPÇE"
+     "ad": "16 MM TEK VİDALI ALT TABLALI İKİZ KELEPÇE",
+     "marka": "LMC"
     },
     {
      "kod": "LMC.CM00M03P1YG3020.0",
-     "ad": "20 MM ÇİFT VİDALI ALT TABLALI KELEPÇE"
+     "ad": "20 MM ÇİFT VİDALI ALT TABLALI KELEPÇE",
+     "marka": "LMC"
     },
     {
      "kod": "ERBİ.013019",
@@ -1205,7 +1224,8 @@
     },
     {
      "kod": "LMC.CM40M13P1YI3020.0",
-     "ad": "20 MM TEK VİDALI ALT TABLALI İKİZ KELEPÇE"
+     "ad": "20 MM TEK VİDALI ALT TABLALI İKİZ KELEPÇE",
+     "marka": "LMC"
     },
     {
      "kod": "ÖZ.01.21",
@@ -1245,17 +1265,20 @@
     {
      "kod": "ARC.KDNT.080.160",
      "ad": "KDNT ISO MANYETİK YASTIKLI PNÖMATİK SİLİNDİR 80X160",
-     "model": "80X160"
+     "model": "80X160",
+     "marka": "Arıca"
     },
     {
      "kod": "ARC.KDNT.032.125",
      "ad": "KDNT ISO MANYETİK YASTIKLI PNÖMATİK SİLİNDİR 32X125",
-     "model": "32X125"
+     "model": "32X125",
+     "marka": "Arıca"
     },
     {
      "kod": "ARC.KDNT.040.100",
      "ad": "KDNT ISO MANYETİK YASTIKLI PNÖMATİK SİLİNDİR 40X100",
-     "model": "40X100"
+     "model": "40X100",
+     "marka": "Arıca"
     },
     {
      "kod": "EKO.CYL.ADN.25.40",
@@ -1291,7 +1314,8 @@
     {
      "kod": "ARC.KDNT.063.350",
      "ad": "KDNT ISO MANYETİK YASTIKLI PNÖMATİK SİLİNDİR 63X350",
-     "model": "63X350"
+     "model": "63X350",
+     "marka": "Arıca"
     },
     {
      "kod": "FR.PN25G14FN",
