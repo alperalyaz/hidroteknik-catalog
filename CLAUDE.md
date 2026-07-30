@@ -94,17 +94,24 @@ Değişiklikten sonra `npx tsc --noEmit` ve `npm run build` çalıştır. Build 
 sayfaları statik üretir; yeni bir sayfa eklendiyse ilgili HTML'in
 `.next/server/app/tr/` altında oluştuğu görülmelidir.
 
-Build sonrası şu üçü de kontrol edilmeye değer — üçü de sessizce bozulabilen şeyler:
+Sonra `npm run denetle` (`scripts/build-denetle.mjs`). Üç şeyi arar, üçü de
+sessizce bozulabilen şeylerdir; sorun bulursa çıkış kodu 1 döner:
 
 - **Kırık iç link.** Üretilen HTML'deki her `href="/..."` bir dosyaya karşılık
   gelmeli. 15.000'in üzerinde iç link var; elle bakılamaz.
 - **Tedarikçi adı sızıntısı.** Ürünleri aldığımız firmaların adı hiçbir sayfada
-  geçmemeli — yalnız ürünün üzerindeki marka yayımlanır. `adem karde` ve
-  `hidrotek` (sonunda `nik` olmadan) desenleri build çıktısında aranmalı.
-  Not: `hidrotek` araması `kademe` gibi kelimelere takılmasın diye kelime sınırı
-  kullanılmalı.
+  geçmemeli — yalnız ürünün üzerindeki marka yayımlanır.
 - **Yinelenen `<title>`.** Aynı başlık iki sayfada varsa biri diğerini yer.
-  Aynı `<h1>`ın üç dilde tekrarlaması normaldir (marka adları çevrilmez).
+  Aynı `<h1>`ın üç dilde tekrarlaması normaldir (marka adları çevrilmez), o
+  yüzden h1 denetlenmez.
+
+**Denetim ham HTML'de arama YAPMAZ, `<script>` bloklarını ayıklar.** Next.js
+sayfa sonuna `self.__next_f.push` ile akış yükünü gömüyor ve uzun dizeleri
+rastgele yerlerden bölüyor: `hidroteknik.com.tr` bir chunk sınırında
+`hidrotek` + `nik.com.tr` diye ikiye ayrılabiliyor ve ham metinde arayan bir
+denetçi bunu tedarikçi adı sızıntısı sanıyor. Bölünme her build'de yer
+değiştirdiği için alarm da kararsız. Yalan söyleyen denetçi görmezden gelinir —
+bu yüzden yalnız kullanıcıya görünen işaretleme taranır.
 
 ### Doğrulanamayan bilgi boş bırakılır
 
