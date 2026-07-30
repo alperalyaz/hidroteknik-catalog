@@ -1,6 +1,7 @@
 [
  {
   "slug": "hidrolik-hortum",
+  "grup": "hat",
   "ad": "Hydraulic Hose",
   "h1": "Hydraulic Hose and Fittings",
   "ozet": "Hydraulic hose: 1SN, 2SN, 2SC, 4SP, 4SH and R6 types. Gates, Alfagomma, HansaFlex and Vereks. On-site crimping, same-day service.",
@@ -34,6 +35,7 @@
  },
  {
   "slug": "sel-hortum",
+  "grup": "hat",
   "ad": "Sel Hose",
   "h1": "Sel Hose — Hydraulic and General-Purpose Hose Lines",
   "ozet": "Sel code family: Forcestream and Seltex hydraulic hose, Ultimate and Powerstream pressure lines; washing, spraying, fuel, and suction hoses. 235 items.",
@@ -66,6 +68,7 @@
  },
  {
   "slug": "hidrolik-rakor",
+  "grup": "hat",
   "ad": "Hydraulic Fittings",
   "h1": "Hydraulic Fittings and Connectors",
   "ozet": "Hydraulic fittings in metric, BSP/BSPT, ORFS, and JIC thread types. 1,400+ items including elbows, nipples, plugs, and swivel fittings.",
@@ -94,6 +97,7 @@
  },
  {
   "slug": "orfs-rakor",
+  "grup": "hat",
   "ad": "ORFS Fittings",
   "h1": "ORFS Fittings (O-Ring Face Seal)",
   "ozet": "ORFS straight, elbow, tee, and plug fittings. 230+ items for high-vibration mobile hydraulic applications.",
@@ -119,6 +123,7 @@
  },
  {
   "slug": "nipel",
+  "grup": "hat",
   "ad": "Nipples and Connectors",
   "h1": "Nipples, Connectors, and Adapters",
   "ozet": "Coupling nipples, reducing nipples, extension nipples, and transition adapters; 570+ items in BSP, metric, and UNF threads.",
@@ -146,6 +151,7 @@
  },
  {
   "slug": "hidrolik-tapa",
+  "grup": "hat",
   "ad": "Blanking Plugs and Plugs",
   "h1": "Hydraulic Blanking Plugs and Plugs",
   "ozet": "BSP, metric, UNF and ORFS blanking plugs; hex socket and hex head types, 220+ items.",
@@ -172,6 +178,7 @@
  },
  {
   "slug": "hidrolik-valf",
+  "grup": "guc",
   "ad": "Hydraulic Valve",
   "h1": "Hydraulic Valves: Directional Control, Pressure, Check and Flow Control Valves",
   "ozet": "Directional control, pressure control, check and flow control valves. NG6/NG10 modular valves, in-line load-holding and lock valves. Pneumatic valves are a separate category.",
@@ -198,6 +205,7 @@
  },
  {
   "slug": "solenoid-bobin",
+  "grup": "guc",
   "ad": "Solenoid Coils",
   "h1": "Solenoid Valve Coils: 12/24 V DC and 110/220 V AC Replacement Coils",
   "ozet": "Replacement coils for hydraulic and pneumatic solenoid valves: 12 and 24 V DC, 110 and 220 V AC; bore sizes from Ø9 to 31.6 mm, NG06 and NG10 valve coils.",
@@ -235,6 +243,7 @@
  },
  {
   "slug": "hidrolik-pompa",
+  "grup": "guc",
   "ad": "Hydraulic Pump",
   "h1": "Hydraulic Pumps and Power Units",
   "ozet": "Gear, vane and axial piston hydraulic pumps; tandem sets and power unit components.",
@@ -266,6 +275,7 @@
  },
  {
   "slug": "hidromotor",
+  "grup": "guc",
   "ad": "Hydraulic Motors",
   "h1": "Hydraulic Motors (Orbital): 36–395 cm³/rev Low-Speed High-Torque Motors",
   "ozet": "Orbital hydraulic motors from 36 to 395 cm³/rev displacement; low-speed high-torque motors for mixers, conveyors, cranes, agricultural and cleaning machinery.",
@@ -302,6 +312,7 @@
  },
  {
   "slug": "hidrolik-filtre",
+  "grup": "guc",
   "ad": "Hydraulic Filters",
   "h1": "Hydraulic Oil Filters: Suction, Return and Pressure Line Filters with Elements",
   "ozet": "Suction filters from 25 to 750 l/min, tank-top and in-line return filters, complete filter assemblies and replacement filter elements.",
@@ -342,6 +353,7 @@
  },
  {
   "slug": "hidrolik-sogutucu",
+  "grup": "guc",
   "ad": "Hydraulic Oil Coolers",
   "h1": "Hydraulic Oil Coolers: 80–220 l/min Fan-Cooled Oil-to-Air Heat Exchangers",
   "ozet": "Fan-cooled hydraulic oil coolers in 12 V, 24 V and 220 V; capacity from 80 to 220 l/min, body sizes from 240×240×45 to 720×700×63 mm.",
@@ -378,6 +390,7 @@
  },
  {
   "slug": "elektrik-motoru",
+  "grup": "guc",
   "ad": "Electric Motors",
   "h1": "Electric Motors for Hydraulic Power Units: 0.37–22 kW, 1500 rpm, B35 Flange",
   "ozet": "Three-phase and single-phase electric motors driving hydraulic power units: 0.37 kW to 22 kW, 1500 rpm (4-pole), 220 V and 380 V, foot-and-flange B35 frame.",
@@ -414,6 +427,7 @@
  },
  {
   "slug": "hidrolik-silindir",
+  "grup": "silindir",
   "ad": "Hydraulic Cylinder Manufacturing",
   "h1": "Hydraulic Cylinder Manufacturing, Overhaul and Spare Parts",
   "ozet": "Custom hydraulic cylinder manufacturing and overhaul, built to your dimensions. Rear covers, steel caps, pistons, gland bushings and wear rings are machined in-house.",
@@ -444,6 +458,7 @@
  },
  {
   "slug": "krom-mil-boru",
+  "grup": "silindir",
   "ad": "Chrome Rod and Honed Tube",
   "h1": "Chrome-Plated Rod, Induction-Hardened Rod, Honed Tube and Hydraulic Line Tube",
   "ozet": "Raw material for hydraulic cylinder manufacturing: Ø12–Ø180 chrome-plated and induction-hardened rod, honed tube from Ø40 to Ø350, hydraulic line tube from 5×1 to 42×4.",
@@ -480,6 +495,7 @@
  },
  {
   "slug": "rot-mafsali",
+  "grup": "silindir",
   "ad": "Rod Ends and Clevises",
   "h1": "Rod Ends: Threaded Clevis (PR) and Weld-On (S) Cylinder Mountings",
   "ozet": "Mounting components for hydraulic and pneumatic cylinders: PR20–PR110 threaded clevis rod ends, S series round (C) and rectangular (N) weld-on types.",
@@ -515,6 +531,7 @@
  },
  {
   "slug": "kuresel-vana",
+  "grup": "guc",
   "ad": "Ball and Butterfly Valve",
   "h1": "Ball Valves, Butterfly Valves and Shut-off Components",
   "ozet": "Mini ball valves, full-bore ball valves and butterfly valves; for hydraulic and fluid lines.",
@@ -541,6 +558,7 @@
  },
  {
   "slug": "manometre",
+  "grup": "guc",
   "ad": "Pressure Gauges",
   "h1": "Pressure Gauge Types: Glycerine-Filled, Dry, Diaphragm and Contact Gauges",
   "ozet": "Pressure gauges with Ø40, Ø63 and Ø100 mm dials, from 0-1 bar to 0-600 bar; bottom and rear connection, dry and glycerine-filled, plus mbar-range diaphragm types.",
@@ -584,6 +602,7 @@
  },
  {
   "slug": "o-ring-sizdirmazlik",
+  "grup": "silindir",
   "ad": "O-Rings and Gaskets",
   "h1": "O-Ring Sizes, O-Ring Cord and Gaskets",
   "ozet": "Metric and inch O-ring sizes in NBR, FKM (Viton), and EPDM materials. Cylinder seals, nutrings, and wipers are a separate category.",
@@ -611,6 +630,7 @@
  },
  {
   "slug": "hidrolik-kece-nutring",
+  "grup": "silindir",
   "ad": "Hydraulic Seals, Rod Seals and Wipers",
   "h1": "Hydraulic Seals, Rod Seals and Wipers — by Kastaş Profile Code",
   "ozet": "Rod and piston seals, rod seals, wipers, guide rings and back-up rings. Over 5,290 sizes in stock across K21, K06, K22, K23, K33 and other Kastaş profiles.",
@@ -740,6 +760,7 @@
  },
  {
   "slug": "tamir-takimi",
+  "grup": "silindir",
   "ad": "Seal Kits and Repair Kits",
   "h1": "Hydraulic Repair Kits: JCB Cylinder and Hema Pump Seal Sets",
   "ozet": "Complete seal sets for a given cylinder or pump in a single package: Kastaş JB-991 series JCB kits, Hema 1PN/1P1/2P1 pump kits and hydraulic motor repair kits.",
@@ -776,6 +797,7 @@
  },
  {
   "slug": "hortum-kelepce",
+  "grup": "hat",
   "ad": "Hose Clamps",
   "h1": "Hose Clamps and Connection Fittings",
   "ozet": "Screw-type metal clamps (Erbi), worm-drive and heavy-duty types; sizes from 8 mm to 200 mm.",
@@ -802,6 +824,7 @@
  },
  {
   "slug": "hortum-ucu-koruma",
+  "grup": "hat",
   "ad": "Hose Ends, Spiral Guard and Cable Trunking",
   "h1": "Hose End Fittings, Spiral Hose Guard, Fire Sleeve and Hose Trunking",
   "ozet": "Not the hose itself, but the parts that connect and protect it: 1/4\"–2\" hose ends, polyethylene spiral guard, silicone fire sleeve and hose trunking.",
@@ -838,6 +861,7 @@
  },
  {
   "slug": "pnomatik-silindir",
+  "grup": "pnomatik",
   "ad": "Pneumatic Cylinders",
   "h1": "Pneumatic Cylinders",
   "ozet": "Pneumatic cylinders to ISO 15552 and ISO 6432 standards, magnetic piston and cushioned types.",
@@ -865,6 +889,7 @@
  },
  {
   "slug": "pnomatik-valf",
+  "grup": "pnomatik",
   "ad": "Pneumatic Valves",
   "h1": "Pneumatic Directional Control Valves (5/2, 3/2, 5/3)",
   "ozet": "Solenoid, pedal, lever, and hand-operated pneumatic valves; 5/2, 3/2, and 5/3 types, valve manifolds. Pemaks and equivalents.",
@@ -892,6 +917,7 @@
  },
  {
   "slug": "sartlandirici",
+  "grup": "pnomatik",
   "ad": "Air Preparation (FRL) Units",
   "h1": "Pneumatic FRL Units: Filter-Regulators, Lubricators and Air Preparation Sets",
   "ozet": "Two-stage (FR) and three-stage (FRL) air preparation units in 1/8\"–1\" sizes, filter-regulators, lubricators, precision regulators, spare bowls and FRL oil.",
@@ -930,6 +956,7 @@
  },
  {
   "slug": "pnomatik-rakor",
+  "grup": "pnomatik",
   "ad": "Pneumatic Fittings",
   "h1": "Pneumatic Push-In Fittings and Connection Elements",
   "ozet": "Push-in fittings, swivel elbows, tee and nipple connections; silencers and speed-control elements. Pemaks and equivalents, 4–16 mm.",
@@ -956,6 +983,7 @@
  },
  {
   "slug": "pnomatik-hortum",
+  "grup": "pnomatik",
   "ad": "Pneumatic Hose",
   "h1": "Polyurethane, Polyamide, and PTFE Pneumatic Hose",
   "ozet": "Polyurethane (PU), polyamide (PA), and Teflon (PTFE) hose for compressed air lines. Sold by the meter, from 4x2.5 to 16x12.",

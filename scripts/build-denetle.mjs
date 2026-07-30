@@ -18,7 +18,7 @@
  * yalnız KULLANICIYA GÖRÜNEN HTML'de arıyoruz.
  */
 import { readdirSync, readFileSync, statSync } from 'node:fs'
-import { join } from 'node:path'
+import { join, sep } from 'node:path'
 
 const KOK = '.next/server/app'
 
@@ -58,6 +58,20 @@ function gorunenHtml(h) {
 
 const dosyalar = htmlDosyalari(KOK)
 const yollar = new Set(dosyalar.map((f) => '/' + f.slice(KOK.length + 1).replace(/\.html$/, '')))
+
+/**
+ * public/ altındaki statik varlıklar da geçerli hedeftir.
+ *
+ * Neden gerekli: React 19, fetchPriority="high" taşıyan bir <img>'i <head>'e
+ * <link rel="preload" href="/logo.png"> olarak kaldırıyor. Bu bir SAYFA linki
+ * değil ama denetçinin href taraması onu da görüyordu ve dosya .next/server/app
+ * altında bulunmadığı için "kırık link" diye bağırıyordu. Varlık gerçekte var;
+ * yalan söyleyen denetçi görmezden gelinir, o yüzden denetçi düzeltildi.
+ */
+for (const ad of readdirSync('public', { recursive: true })) {
+  const yol = join('public', String(ad))
+  if (statSync(yol).isFile()) yollar.add('/' + String(ad).split(sep).join('/'))
+}
 
 const kirik = new Map()
 const basliklar = new Map()

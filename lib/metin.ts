@@ -124,6 +124,31 @@ export type Metin = {
   parcaListeOzet: string
   parcaKodNotu: string
   parcaSilindirLink: string
+  // — Landing yeniden düzeni (aile başlıkları, sayaç şeridi, yaklaşım hücreleri) —
+  aileHat: string
+  aileGuc: string
+  aileSilindir: string
+  ailePnomatik: string
+  heroTeklifBtn: string
+  heroGruplarBtn: string
+  seritGrup: string
+  seritSilindir: string
+  seritProfil: string
+  seritMarka: string
+  notGruplar: string
+  notSilindir: string
+  notProfil: string
+  notRehber: string
+  notMarka: string
+  basYaklasim: string
+  yaklasim1Bas: string
+  yaklasim1Metin: string
+  yaklasim2Bas: string
+  yaklasim2Metin: string
+  yaklasim3Bas: string
+  yaklasim3Metin: string
+  yaklasim3Etiket: string
+  ftKunye: string
 }
 
 export const METIN: Record<Dil, Metin> = {
@@ -264,6 +289,33 @@ export const METIN: Record<Dil, Metin> = {
     parcaKodNotu:
       'Ölçüsünü bilmiyorsanız parçayı getirin, tezgâhta ölçeriz. Fiyat teklif üzerine verilir.',
     parcaSilindirLink: 'Hidrolik silindir imalatı ve revizyonu',
+    aileHat: 'Hat ve bağlantı',
+    aileGuc: 'Güç ve kontrol',
+    aileSilindir: 'Silindir ve sızdırmazlık',
+    ailePnomatik: 'Pnömatik',
+    heroTeklifBtn: 'Teklif isteyin',
+    heroGruplarBtn: 'Ürün gruplarına gidin',
+    seritGrup: 'Ürün grubu',
+    seritSilindir: 'Silindir yedek parçası',
+    seritProfil: 'Kastaş profil kodu',
+    seritMarka: 'Marka',
+    notGruplar: 'Kategoriler dört aileye ayrılmıştır: hat ve bağlantı, güç ve kontrol, silindir ve sızdırmazlık, pnömatik.',
+    notSilindir: 'Silindir onarımında değişen parçalar, ölçüleriyle listelenmiştir.',
+    notProfil: 'Kodu bilmiyorsanız ölçüden gidin: ölçü sırası parçanın mil tarafına mı piston tarafına mı ait olduğunu gösterir.',
+    notRehber: 'Seçim ve ölçü alma üzerine kısa rehberler.',
+    notMarka: 'Ürünün üzerinde yazan markalar.',
+    basYaklasim: 'Bu katalog nasıl hazırlanıyor',
+    yaklasim1Bas: 'Sayfalar kendi kalem listemizden üretilir',
+    yaklasim1Metin:
+      'Her ürün grubunun sayfasındaki örnekler, stok kayıtlarımızda bulunan kalemlerden seçilir. Fiyat ve güncel bulunurluk katalogda yer almaz.',
+    yaklasim2Bas: 'Tarif değil, ölçü yayımlarız',
+    yaklasim2Metin:
+      'Sayfalarda parçanın ölçüsü yazar; ölçü sırasından parçanın mil tarafına mı piston tarafına mı ait olduğu okunur.',
+    yaklasim3Bas: 'Doğrulayamadığımızı boş bırakırız',
+    yaklasim3Metin:
+      'Bir profil kodunun işlevini üretici kataloğundan doğrulayamadıysak alanı boş bırakır, nedenini sayfada yazarız.',
+    yaklasim3Etiket: 'İşlev alanı boş bırakılan profil kodu',
+    ftKunye: 'Ürün kataloğu · fiyat ve stok bilgisi içermez',
   },
   en: {
     urunKatalogu: 'Product Catalog',
@@ -402,6 +454,33 @@ export const METIN: Record<Dil, Metin> = {
     parcaKodNotu:
       'If you do not know the size, bring the part in and we will measure it. Prices are given on quotation.',
     parcaSilindirLink: 'Hydraulic cylinder manufacturing and rebuilds',
+    aileHat: 'Lines and fittings',
+    aileGuc: 'Power and control',
+    aileSilindir: 'Cylinders and sealing',
+    ailePnomatik: 'Pneumatics',
+    heroTeklifBtn: 'Request a quote',
+    heroGruplarBtn: 'Browse product groups',
+    seritGrup: 'Product groups',
+    seritSilindir: 'Cylinder spare parts',
+    seritProfil: 'Kastaş profile codes',
+    seritMarka: 'Brands',
+    notGruplar: 'The categories are split into four families: lines and fittings, power and control, cylinders and sealing, pneumatics.',
+    notSilindir: 'The parts replaced when a cylinder is overhauled, listed with their dimensions.',
+    notProfil: "If you don't know the code, work from the dimensions: their order shows whether the part belongs on the rod side or the piston side.",
+    notRehber: 'Short guides on selection and taking measurements.',
+    notMarka: 'The brands printed on the products themselves.',
+    basYaklasim: 'How this catalogue is put together',
+    yaklasim1Bas: 'Pages are generated from our own item list',
+    yaklasim1Metin:
+      'The examples on each product-group page are drawn from items in our stock records. Prices and current availability are not published in the catalogue.',
+    yaklasim2Bas: 'We publish dimensions, not descriptions',
+    yaklasim2Metin:
+      "Pages carry the part's dimensions; the order of those dimensions shows whether it belongs on the rod side or the piston side.",
+    yaklasim3Bas: 'What we cannot verify, we leave blank',
+    yaklasim3Metin:
+      "If we cannot confirm a profile code's function against the manufacturer's catalogue, we leave the field empty and say so on the page.",
+    yaklasim3Etiket: 'Profile codes with an empty function field',
+    ftKunye: 'Product catalogue · contains no prices or stock levels',
   },
   ru: {
     urunKatalogu: 'Каталог продукции',
@@ -540,5 +619,32 @@ export const METIN: Record<Dil, Metin> = {
     parcaKodNotu:
       'Если размер неизвестен — привезите деталь, мы обмерим её на станке. Цена по запросу.',
     parcaSilindirLink: 'Изготовление и ремонт гидроцилиндров',
+    aileHat: 'Магистрали и соединения',
+    aileGuc: 'Привод и управление',
+    aileSilindir: 'Цилиндры и уплотнения',
+    ailePnomatik: 'Пневматика',
+    heroTeklifBtn: 'Запросить предложение',
+    heroGruplarBtn: 'К товарным группам',
+    seritGrup: 'Товарные группы',
+    seritSilindir: 'Запчасти для гидроцилиндров',
+    seritProfil: 'Коды профилей Kastaş',
+    seritMarka: 'Бренды',
+    notGruplar: 'Категории разделены на четыре группы: магистрали и соединения, привод и управление, цилиндры и уплотнения, пневматика.',
+    notSilindir: 'Детали, заменяемые при ремонте гидроцилиндра, приведены с размерами.',
+    notProfil: 'Если код неизвестен, ориентируйтесь по размерам: их порядок показывает, относится деталь к стороне штока или поршня.',
+    notRehber: 'Краткие руководства по подбору и снятию размеров.',
+    notMarka: 'Бренды, нанесённые на саму продукцию.',
+    basYaklasim: 'Как составлен этот каталог',
+    yaklasim1Bas: 'Страницы формируются из нашего перечня позиций',
+    yaklasim1Metin:
+      'Примеры на странице каждой товарной группы взяты из позиций нашего складского учёта. Цены и текущее наличие в каталоге не публикуются.',
+    yaklasim2Bas: 'Мы публикуем размеры, а не описания',
+    yaklasim2Metin:
+      'На страницах указаны размеры детали; по их порядку видно, относится она к стороне штока или поршня.',
+    yaklasim3Bas: 'Чего не можем подтвердить — оставляем пустым',
+    yaklasim3Metin:
+      'Если назначение кода профиля не удаётся подтвердить по каталогу производителя, поле остаётся пустым, и на странице указано почему.',
+    yaklasim3Etiket: 'Коды профилей с незаполненным полем назначения',
+    ftKunye: 'Каталог продукции · не содержит цен и сведений о наличии',
   },
 }

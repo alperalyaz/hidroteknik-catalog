@@ -3,12 +3,34 @@
   Hız SEO'nun parçasıdır: harici font YÜKLENMEZ (sistem yazı tipleri kullanılır),
   harici script yoktur. Böylece LCP düşük, Core Web Vitals yüksek kalır.
 */
+/*
+  KURUMSAL PALET — tahmin değil ölçüm.
+
+  Lacivert #05396b logodan alındı: public/logo.png'nin opak piksellerinin %42'si
+  bu değer. Ana sitenin (hidroteknik.com.tr) CSS'inde de aynı kod geçiyor, yani
+  iki bağımsız kaynak doğruluyor. Önceki #1b4ba6 markanın rengi DEĞİLDİ.
+
+  Amber #ffbf00 markanın vurgu rengi (ana site CSS'inde en sık geçen vurgu), ama
+  KONTRAST ÖLÇÜLDÜ ve kullanımı kurala bağlandı:
+      beyaz üzerinde  1.65:1  → metin için KULLANILAMAZ
+      lacivert üzerinde 7.04:1 → orada mükemmel
+  Bu yüzden --amber YALNIZ lacivert zemin üzerinde kullanılır (buton, şerit,
+  footer vurgusu). Beyaz üzerinde amber ailesinden bir metin gerekiyorsa
+  --amber-metin (#8f6900, 5.01:1 AA) kullanılır. İkisini karıştırmak sayfayı
+  okunmaz yapar; ayrı değişken olmalarının tek sebebi bu.
+*/
 :root {
-  --lacivert: #1b4ba6;
-  --lacivert-koyu: #143a80;
-  --lacivert-soft: #eaf0fb;
-  --pirinc: #8f5d10;
-  --pirinc-soft: #f7efdd;
+  --lacivert: #05396b;          /* marka laciverti — beyaz üzerinde 11.64:1 */
+  --lacivert-koyu: #032a4f;     /* 14.50:1 */
+  --lacivert-acik: #0a4a86;     /*  8.99:1 — hover/ikincil */
+  --lacivert-soft: #e8eef5;     /* zemin tonu, metin için değil */
+  --amber: #ffbf00;             /* YALNIZ lacivert zemin üzerinde (7.04:1) */
+  --amber-metin: #8f6900;       /* beyaz üzerinde amber ailesi metin (5.01:1 AA) */
+  --amber-soft: #fdf3d6;
+  --dalga: #d1dee7;             /* logodaki dalga tonu */
+  /* Geriye dönük ad: mevcut kurallar --pirinc kullanıyor, marka amberine bağlandı. */
+  --pirinc: var(--amber-metin);
+  --pirinc-soft: var(--amber-soft);
   --murekkep: #101820;
   --murekkep-2: #44525f;
   --murekkep-3: #6e7c89;
@@ -38,11 +60,18 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--pirinc); outlin
 .metin { max-width: 68ch; }
 
 /* ── üst bar ── */
-.ustbar { background: var(--yuzey); border-bottom: 1px solid var(--cizgi); }
-.ustbar-ic { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; padding: 14px 0; }
-.marka { display: flex; align-items: baseline; gap: 10px; text-decoration: none; color: var(--murekkep); }
-.marka b { font-size: 1.18rem; letter-spacing: -0.02em; }
-.marka span { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--murekkep-3); }
+/* Üstte ince amber şerit: markanın vurgu rengini sayfaya metin okunabilirliğini
+   bozmadan sokan tek yer. Amber beyaz üzerinde metin olamaz (1.65:1) ama grafik
+   öğe olarak serbesttir. */
+.ustbar { background: var(--yuzey); border-bottom: 1px solid var(--cizgi); border-top: 3px solid var(--amber); }
+.ustbar-ic { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; padding: 12px 0; }
+.marka { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--murekkep); }
+.marka-logo { display: block; width: auto; height: 34px; }
+.marka span { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.1em; color: var(--murekkep-3); border-left: 1px solid var(--cizgi); padding-left: 12px; }
+@media (max-width: 560px) {
+  .marka-logo { height: 28px; }
+  .marka span { display: none; }   /* dar ekranda logo zaten markayı söylüyor */
+}
 .ustbar-sag { margin-left: auto; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
 .ustbar-tel { font-family: var(--mono); font-size: 0.92rem; font-weight: 600; text-decoration: none; color: var(--lacivert); white-space: nowrap; }
 .dil-degistirici { font-size: 0.82rem; color: var(--murekkep-3); white-space: nowrap; }
@@ -140,4 +169,112 @@ footer li { margin: 4px 0; }
 .kod-listesi code {
   font-size: .78rem; padding: .18rem .4rem; border-radius: 4px;
   background: #fff; border: 1px solid var(--cizgi, #e5e7eb); white-space: nowrap;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   LANDING VE FOOTER YENİDEN DÜZENİ
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* ── bölüm başlığı: başlık solda, sayaç sağda ────────────────────────────── */
+.bolum-bas {
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
+  gap: 6px 16px; margin: 0 0 12px; padding-bottom: 8px;
+  border-bottom: 2px solid var(--lacivert);
+}
+.bolum-bas h2 { margin: 0; }
+.bolum-sayac { font-family: var(--mono); font-size: 0.76rem; letter-spacing: 0.04em; color: var(--murekkep-3); font-variant-numeric: tabular-nums; }
+.bolum-not { font-size: 0.92rem; color: var(--murekkep-2); margin: 0 0 18px; max-width: 68ch; }
+
+/* ── hero eylem düğmeleri ────────────────────────────────────────────────── */
+.hero-eylem { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+
+/* ── sayaç şeridi: dört hücre, her biri sayfa içi bağlantı ───────────────
+   Kataloğun büyüklüğünü tek bakışta söyler. Sayılar VERİDEN gelir, kopyaya
+   gömülmez — 29. kategori eklendiği gün burası üç dilde birden yalan söylerdi. */
+.serit {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 26px 0 0; padding: 0; list-style: none;
+  background: var(--yuzey); border: 1px solid var(--cizgi);
+}
+.serit li + li { border-left: 1px solid var(--cizgi); }
+.serit a { display: block; padding: 16px 14px; text-decoration: none; color: inherit; }
+.serit a:hover .serit-etiket { text-decoration: underline; }
+.serit-deger {
+  display: block; font-family: var(--mono); font-weight: 700; line-height: 1;
+  font-size: clamp(1.5rem, 3.6vw, 2.1rem); color: var(--lacivert);
+  font-variant-numeric: tabular-nums;
+}
+.serit-etiket { display: block; margin-top: 7px; font-size: 0.8rem; line-height: 1.3; color: var(--murekkep-2); }
+@media (max-width: 620px) {
+  .serit { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .serit li:nth-child(3) { border-left: 0; }
+  .serit li:nth-child(n+3) { border-top: 1px solid var(--cizgi); }
+}
+
+/* ── kategori aileleri ───────────────────────────────────────────────────── */
+.aile + .aile { margin-top: 26px; }
+.aile > h3 {
+  margin: 0 0 10px; font-family: var(--mono); font-size: 0.72rem;
+  letter-spacing: 0.09em; color: var(--murekkep-3); font-weight: 600;
+}
+
+/* ── yaklaşım hücreleri ("Neden Hidroteknik" 3 paragrafının yerine) ──────
+   Paragraf yığını yerine başlıklı hücreler; üçüncüsünde sayı METNİN İÇİNDE
+   değil YANINDA durur. Sebep dilbilgisel: TR'de "18'inde" eki son ünlüye
+   bağlıdır, RU'da sayı ismin çekimini yönetir. Değer ayrı hücrede olunca
+   hiçbir dilde çekim kırılmaz — sayı veriden türetilse bile. */
+.yaklasim { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+.yaklasim-hucre { background: var(--yuzey); border: 1px solid var(--cizgi); border-top: 3px solid var(--amber); padding: 18px 20px; }
+.yaklasim-hucre h3 { margin: 0 0 8px; font-size: 1rem; letter-spacing: -0.01em; }
+.yaklasim-hucre p { margin: 0; font-size: 0.92rem; color: var(--murekkep-2); }
+.yaklasim-olcu { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--cizgi); }
+.yaklasim-olcu dt { font-family: var(--mono); font-size: 1.5rem; font-weight: 700; color: var(--lacivert); line-height: 1; font-variant-numeric: tabular-nums; }
+.yaklasim-olcu dd { margin: 6px 0 0; font-size: 0.8rem; color: var(--murekkep-3); }
+
+/* ── profil kodu çipleri ─────────────────────────────────────────────────── */
+.cipler { display: flex; flex-wrap: wrap; gap: 8px; }
+.cip {
+  display: block; padding: 8px 12px; text-decoration: none;
+  border: 1px solid var(--cizgi); background: var(--yuzey); color: inherit; min-width: 92px;
+}
+.cip:hover { border-color: var(--lacivert); }
+.cip b { display: block; font-family: var(--mono); font-size: 0.88rem; color: var(--lacivert); }
+.cip span { display: block; margin-top: 2px; font-size: 0.72rem; color: var(--murekkep-3); }
+
+/* ══ FOOTER — üç yatay bant ═════════════════════════════════════════════
+   ESKİ SORUN: 28 kategori tek <ul> olarak, 4 satırlık sütunlarla AYNI grid
+   satırının kardeşiydi. CSS grid'de satır yüksekliğini en uzun çocuk belirler;
+   auto-fit sütun SAYISINI ayarlar, satır YÜKSEKLİĞİNİ ayarlamaz. Bu yüzden
+   sütun genişliğiyle oynayan hiçbir çözüm işe yaramazdı.
+   ÇÖZÜM iki parçalı, ikisi de gerekli: (1) 28 kalem dört aileye bölündü,
+   (2) o blok kendi tam genişlikli bandına alındı. En uzun sütun 28 → 9 satır. */
+.footer-bant { border-bottom: 1px solid #2a3742; padding-bottom: 26px; margin-bottom: 26px; }
+.footer-gruplar { display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
+.footer-alt-bant { display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
+.footer-kunye {
+  display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center;
+  border-top: 1px solid #2a3742; margin-top: 26px; padding-top: 18px;
+  font-size: 0.82rem; color: #7d8b98;
+}
+.footer-logo { height: 30px; width: auto; opacity: 0.95; }
+footer h3 {
+  margin: 0 0 8px; font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.09em;
+  color: var(--amber); font-weight: 600;
+}
+
+/* Hero düğmeleri beyaz zemin üzerinde durur; .btn-birincil/.btn-ikincil ise
+   lacivert .teklif kutusu için tasarlanmıştı (beyaz üstüne beyaz olurdu). */
+.btn-hero { background: var(--lacivert); color: #fff; border-color: var(--lacivert); }
+.btn-hero:hover { background: var(--lacivert-acik); border-color: var(--lacivert-acik); }
+.btn-hero-ikincil { color: var(--lacivert); border-color: var(--lacivert); background: transparent; }
+.btn-hero-ikincil:hover { background: var(--lacivert-soft); }
+
+.footer-kunye-metin { display: flex; flex-direction: column; gap: 2px; }
+.footer-kunye-metin span:last-child { color: #5d6b78; }
+
+/* Dar ekranda telefon numarası kenara yapışıyordu; üst bar sarılınca sağ blok
+   kendi satırına insin. */
+@media (max-width: 430px) {
+  .ustbar-sag { margin-left: 0; width: 100%; justify-content: space-between; gap: 10px; }
+  .ustbar-tel { font-size: 0.86rem; }
 }

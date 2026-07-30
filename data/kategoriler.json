@@ -1,6 +1,7 @@
 [
  {
   "slug": "hidrolik-hortum",
+  "grup": "hat",
   "ad": "Hidrolik Hortum",
   "h1": "Hidrolik Hortum ve Bağlantı Elemanları",
   "ozet": "Hidrolik hortum: 1SN, 2SN, 2SC, 4SP, 4SH ve R6 tipleri. Gates, Alfagomma, HansaFlex ve Vereks. Presleme yerinde, aynı gün.",
@@ -43,6 +44,7 @@
  },
  {
   "slug": "sel-hortum",
+  "grup": "hat",
   "ad": "Sel Hortum",
   "h1": "Sel Hortum — Hidrolik ve Genel Amaçlı Hortum Hatları",
   "ozet": "Sel kod ailesi: Forcestream ve Seltex hidrolik hortum, Ultimate ve Powerstream basınçlı hatlar; yıkama, ilaçlama, akaryakıt ve emiş hortumları. 235 kalem.",
@@ -88,6 +90,7 @@
  },
  {
   "slug": "hidrolik-rakor",
+  "grup": "hat",
   "ad": "Hidrolik Rakor",
   "h1": "Hidrolik Rakor ve Bağlantı Elemanları",
   "ozet": "Metrik, BSP/BSPT, ORFS ve JIC diş tiplerinde hidrolik rakor. Dirsek, nipel, tapa ve döner rakorlar dahil 1.400+ kalem.",
@@ -123,6 +126,7 @@
  },
  {
   "slug": "orfs-rakor",
+  "grup": "hat",
   "ad": "ORFS Rakor",
   "h1": "ORFS Rakor (O-Ring Face Seal)",
   "ozet": "ORFS düz, dirsek, te ve tapa rakorlar. Titreşimli mobil hidrolik uygulamaları için 230+ kalem.",
@@ -153,6 +157,7 @@
  },
  {
   "slug": "nipel",
+  "grup": "hat",
   "ad": "Nipel ve Ara Bağlantı",
   "h1": "Nipel, Ara Bağlantı ve Adaptörler",
   "ozet": "Ara nipel, redüksiyon nipeli, uzatma ve geçiş adaptörleri; BSP, metrik ve UNF dişlerde 570+ kalem.",
@@ -186,6 +191,7 @@
  },
  {
   "slug": "hidrolik-tapa",
+  "grup": "hat",
   "ad": "Körtapa ve Tapa",
   "h1": "Hidrolik Körtapa ve Tapalar",
   "ozet": "BSP, metrik, UNF ve ORFS körtapalar; alyan ve dış altıgen başlı tipler, 220+ kalem.",
@@ -218,6 +224,7 @@
  },
  {
   "slug": "hidrolik-valf",
+  "grup": "guc",
   "ad": "Hidrolik Valf",
   "h1": "Hidrolik Valf: Yön Kontrol, Basınç, Çek ve Hız Ayar Valfleri",
   "ozet": "Yön kontrol, basınç ayar, çek ve hız ayar valfleri. NG6/NG10 modüler valfler, hat tipi yük tutma ve kilit valfleri. Pnömatik valfler ayrı bir gruptur.",
@@ -257,6 +264,7 @@
  },
  {
   "slug": "solenoid-bobin",
+  "grup": "guc",
   "ad": "Solenoid Bobin",
   "h1": "Solenoid Valf Bobini: 12/24 V DC ve 110/220 V AC Yedek Bobinler",
   "ozet": "Hidrolik ve pnömatik solenoid valfler için yedek bobinler: 12 ve 24 V DC, 110 ve 220 V AC; Ø9'dan 31,6 mm'ye iç çap ölçüleri, NG06 ve NG10 valf bobinleri.",
@@ -301,6 +309,7 @@
  },
  {
   "slug": "hidrolik-pompa",
+  "grup": "guc",
   "ad": "Hidrolik Pompa",
   "h1": "Hidrolik Pompa ve Güç Üniteleri",
   "ozet": "Dişli, paletli ve eksenel pistonlu hidrolik pompalar; tandem setler ve güç ünitesi bileşenleri.",
@@ -343,6 +352,7 @@
  },
  {
   "slug": "hidromotor",
+  "grup": "guc",
   "ad": "Hidromotor",
   "h1": "Hidromotor (Orbit Motor): 36–395 cm³/dev Yavaş Devirli Yüksek Torklu Motorlar",
   "ozet": "Orbit tipi hidromotorlar, 36 cm³'ten 395 cm³/dev deplasmana kadar; karıştırıcı, konveyör, vinç, tarım ve temizlik makinelerinde kullanılan yavaş devirli yüksek torklu motorlar.",
@@ -385,6 +395,7 @@
  },
  {
   "slug": "hidrolik-filtre",
+  "grup": "guc",
   "ad": "Hidrolik Filtre",
   "h1": "Hidrolik Yağ Filtresi: Emiş, Dönüş ve Basınç Hattı Filtreleri ile Filtre Elemanları",
   "ozet": "25'ten 750 LT/DK'ya emiş filtreleri, depo üstü ve hat tipi dönüş filtreleri, komple filtreler ve yedek filtre elemanları.",
@@ -433,6 +444,7 @@
  },
  {
   "slug": "hidrolik-sogutucu",
+  "grup": "guc",
   "ad": "Hidrolik Yağ Soğutucu",
   "h1": "Hidrolik Yağ Soğutucu: 80–220 LT/DK Fanlı Yağ-Hava Isı Değiştiriciler",
   "ozet": "12 V, 24 V ve 220 V fanlı hidrolik yağ soğutucular; 80'den 220 LT/DK'ya debi kapasitesi, 240×240×45'ten 720×700×63 mm'ye gövde ölçüleri.",
@@ -472,6 +484,7 @@
  },
  {
   "slug": "elektrik-motoru",
+  "grup": "guc",
   "ad": "Elektrik Motoru",
   "h1": "Hidrolik Güç Ünitesi Elektrik Motorları: 0,37–22 kW, 1500 d/d, B35 Flanşlı",
   "ozet": "Hidrolik güç ünitelerini süren trifaze ve monofaze elektrik motorları: 0,37 kW'tan 22 kW'a, 1500 d/d (4 kutup), 220 V ve 380 V, ayaklı-flanşlı B35 gövde.",
@@ -513,6 +526,7 @@
  },
  {
   "slug": "hidrolik-silindir",
+  "grup": "silindir",
   "ad": "Hidrolik Silindir İmalatı",
   "h1": "Hidrolik Silindir İmalatı, Revizyonu ve Yedek Parçaları",
   "ozet": "Ölçüye göre hidrolik silindir imalatı ve revizyonu. Arka kapak, çelik kep, piston, boğaz takozu ve bilezik kendi tezgâhlarımızda işlenir.",
@@ -549,6 +563,7 @@
  },
  {
   "slug": "krom-mil-boru",
+  "grup": "silindir",
   "ad": "Krom Mil ve Honlanmış Boru",
   "h1": "Krom Kaplı Mil, İndüksiyonlu Mil, Honlanmış Boru ve Hidrolik Tesisat Borusu",
   "ozet": "Hidrolik silindir imalatının hammaddesi: Ø12–Ø180 krom kaplı ve indüksiyonlu mil, Ø40'tan Ø350'ye honlanmış boru, 5×1'den 42×4'e hidrolik tesisat borusu.",
@@ -589,6 +604,7 @@
  },
  {
   "slug": "rot-mafsali",
+  "grup": "silindir",
   "ad": "Rot Mafsalı ve Silindir Bağlantısı",
   "h1": "Rot Mafsalı: U Vidalı (PR) ve Kaynaklı (S) Tip Silindir Mil Ucu Bağlantıları",
   "ozet": "Hidrolik ve pnömatik silindir bağlantı elemanları: PR20–PR110 U vidalı rot mafsalları, S serisi yuvarlak (C) ve dikdörtgen (N) gövdeli kaynaklı tipler.",
@@ -627,6 +643,7 @@
  },
  {
   "slug": "kuresel-vana",
+  "grup": "guc",
   "ad": "Küresel ve Kelebek Vana",
   "h1": "Küresel Vana, Kelebek Vana ve Kesme Elemanları",
   "ozet": "Mini küresel vanalar, tam geçişli küresel vanalar ve kelebek vanalar; hidrolik ve akışkan hatları için.",
@@ -661,6 +678,7 @@
  },
  {
   "slug": "manometre",
+  "grup": "guc",
   "ad": "Manometre ve Basınç Göstergesi",
   "h1": "Manometre Çeşitleri: Gliserinli, Kuru, Diyaframlı ve Kontaklı Basınç Göstergeleri",
   "ozet": "Ø40, Ø63 ve Ø100 mm kadran çaplarında 0-1 bar'dan 0-600 bar'a manometreler; alt ve arka bağlantılı, kuru ve gliserinli, mbar ölçekli diyaframlı tipler.",
@@ -709,6 +727,7 @@
  },
  {
   "slug": "o-ring-sizdirmazlik",
+  "grup": "silindir",
   "ad": "O-Ring ve Conta",
   "h1": "O-Ring Ölçüleri, Şerit O-Ring ve Conta",
   "ozet": "NBR, FKM (Viton) ve EPDM malzemelerde metrik ve inç O-ring ölçüleri. Silindir keçesi, nutring ve sıyırıcı ayrı bir gruptur.",
@@ -742,6 +761,7 @@
  },
  {
   "slug": "hidrolik-kece-nutring",
+  "grup": "silindir",
   "ad": "Hidrolik Keçe, Nutring ve Sıyırıcı",
   "h1": "Hidrolik Keçe, Nutring ve Sıyırıcı — Kastaş Profil Kodlarıyla",
   "ozet": "Mil ve piston keçesi, nutring, sıyırıcı, yataklama ve destek ringi. K21, K06, K22, K23, K33 ve diğer Kastaş profillerinde 5.290'ı aşkın ölçü stokta.",
@@ -914,6 +934,7 @@
  },
  {
   "slug": "tamir-takimi",
+  "grup": "silindir",
   "ad": "Tamir ve Keçe Takımları",
   "h1": "Hidrolik Tamir Takımı: JCB Silindir ve Hema Pompa Sızdırmazlık Setleri",
   "ozet": "Bir silindirin ya da pompanın tüm sızdırmazlık elemanını tek pakette veren hazır takımlar: Kastaş JB-991 serisi JCB setleri, Hema 1PN/1P1/2P1 pompa takımları ve hidromotor tamir takımları.",
@@ -958,6 +979,7 @@
  },
  {
   "slug": "hortum-kelepce",
+  "grup": "hat",
   "ad": "Hortum Kelepçesi",
   "h1": "Hortum Kelepçesi ve Bağlantı Elemanları",
   "ozet": "Vidalı metal kelepçeler (ERBİ), sonsuz vida ve ağır hizmet tipleri; 8 mm'den 200 mm'ye kadar ölçülerde.",
@@ -991,6 +1013,7 @@
  },
  {
   "slug": "hortum-ucu-koruma",
+  "grup": "hat",
   "ad": "Hortum Eki, Spiral Koruma ve Hortum Kanalı",
   "h1": "Hortum Eki, Spiral Hortum Koruması, Yanmaz Kılıf ve Hortum Kanalı",
   "ozet": "Hortumun kendisi değil, hortumu bağlayan ve dıştan koruyan parçalar: 1/4\"–2\" hortum ekleri, polietilen spiral koruma, silikon yanmaz kılıf ve hortum kanalları.",
@@ -1034,6 +1057,7 @@
  },
  {
   "slug": "pnomatik-silindir",
+  "grup": "pnomatik",
   "ad": "Pnömatik Silindir",
   "h1": "Pnömatik Silindir",
   "ozet": "ISO 15552 ve ISO 6432 standardında pnömatik silindirler, manyetik pistonlu ve yastıklı tipler.",
@@ -1068,6 +1092,7 @@
  },
  {
   "slug": "pnomatik-valf",
+  "grup": "pnomatik",
   "ad": "Pnömatik Valf",
   "h1": "Pnömatik Yön Kontrol Valfleri (5/2, 3/2, 5/3)",
   "ozet": "Solenoid, pedal, kol ve el kumandalı pnömatik valfler; 5/2, 3/2 ve 5/3 tipler, valf manifoldları. Pemaks ve muadili.",
@@ -1104,6 +1129,7 @@
  },
  {
   "slug": "sartlandirici",
+  "grup": "pnomatik",
   "ad": "Şartlandırıcı (Filtre-Regülatör-Yağlayıcı)",
   "h1": "Pnömatik Şartlandırıcı, Filtreli Regülatör ve Yağlayıcı — Hava Hazırlama Üniteleri",
   "ozet": "1/4\"–1\" ölçülerinde ikili (FR) ve üçlü (FRL) hava hazırlama üniteleri, filtreli regülatörler, yağlayıcılar, yedek kavanozlar ve şartlandırıcı yağı.",
@@ -1150,6 +1176,7 @@
  },
  {
   "slug": "pnomatik-rakor",
+  "grup": "pnomatik",
   "ad": "Pnömatik Rakor",
   "h1": "Pnömatik Takmatik Rakor ve Bağlantı Elemanları",
   "ozet": "Push-in rakor, döner dirsek, te ve nipel bağlantılar; susturucu ve hız ayar elemanları. Pemaks ve muadili, 4–16 mm.",
@@ -1182,6 +1209,7 @@
  },
  {
   "slug": "pnomatik-hortum",
+  "grup": "pnomatik",
   "ad": "Pnömatik Hortum",
   "h1": "Poliüretan, Polyamid ve PTFE Pnömatik Hortum",
   "ozet": "Basınçlı hava hatları için poliüretan (PU), polyamid (PA) ve teflon (PTFE) hortum. 4x2,5’ten 16x12’ye kadar metrede satış.",

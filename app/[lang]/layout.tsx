@@ -3,7 +3,9 @@ import Script from 'next/script'
 import { DILLER, DIL_ADI, FIRMA, ANA_SITE, HESAPLA_URL, type Dil } from '@/lib/site'
 import { METIN } from '@/lib/metin'
 import { isletmeSchema, jsonLd } from '@/lib/schema'
-import { kategorilerIcin } from '@/lib/veri'
+import { kategorilerIcin, AILELER } from '@/lib/veri'
+import { SILINDIR_PARCALARI, parcaAdi } from '@/lib/silindir-parca'
+import { REHBERLER } from '@/lib/rehber'
 
 export function generateStaticParams() {
   return DILLER.map((lang) => ({ lang }))
@@ -35,7 +37,21 @@ export default async function DilLayout({
         <header className="ustbar">
           <div className="sarmal ustbar-ic">
             <Link href={`/${lang}`} className="marka">
-              <b>HİDROTEKNİK</b>
+              {/*
+                Logo <img> olarak basılır, next/image ile DEĞİL: katalog tamamen
+                statik ve ölçü sabit (400×81). next/image burada optimizasyon
+                sunucusu gerektirir, statik çıktının tek amacı olan "sunucusuz
+                servis edilebilirlik"i bozardı. Boyutlar HTML'de verildiği için
+                yerleşim kayması (CLS) da olmaz.
+              */}
+              <img
+                className="marka-logo"
+                src="/logo.png"
+                width={400}
+                height={81}
+                alt={FIRMA.ad}
+                fetchPriority="high"
+              />
               <span>{m.urunKatalogu}</span>
             </Link>
             <div className="ustbar-sag">
@@ -62,19 +78,66 @@ export default async function DilLayout({
 
         <main>{children}</main>
 
+        {/*
+          FOOTER — üç yatay bant.
+
+          Eski hâlde 28 kategori tek <ul> olarak, 4 satırlık sütunlarla AYNI grid
+          satırının kardeşiydi. CSS grid'de satır yüksekliğini en uzun çocuk
+          belirler; auto-fit sütun SAYISINI ayarlar, satır YÜKSEKLİĞİNİ ayarlamaz.
+          Bu yüzden footer 28 satır boyunca uzuyor, diğer üç sütun tepede kalıp
+          altlarında koca boşluk bırakıyordu — sütun genişliğiyle oynayan hiçbir
+          çözüm bunu düzeltemezdi.
+
+          İki değişiklik birlikte gerekli: (1) 28 kalem dört aileye bölündü,
+          (2) o blok kendi tam genişlikli bandına alındı. En uzun sütun 9 satır.
+          Tek link bile kaldırılmadı — yalnız sunum değişti.
+        */}
         <footer>
           <div className="sarmal">
-            <div className="footer-ic">
+            <div className="footer-bant">
+              <div className="footer-gruplar">
+                {AILELER.map(({ grup, anahtar }) => {
+                  const uyeler = kategoriler.filter((k) => k.grup === grup)
+                  if (!uyeler.length) return null
+                  return (
+                    <div key={grup}>
+                      <h3>{m[anahtar]}</h3>
+                      <ul>
+                        {uyeler.map((k) => (
+                          <li key={k.slug}>
+                            <Link href={`/${lang}/${k.slug}`}>{k.ad}</Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+
+            <div className="footer-alt-bant">
               <div>
-                <b>{FIRMA.ad}</b>
-                <p style={{ margin: 0 }}>
-                  {FIRMA.adres.sokak}
-                  <br />
-                  {FIRMA.adres.postaKodu} {FIRMA.adres.ilce} / {FIRMA.adres.il}
-                </p>
+                <h3>{m.parcaListeBaslik}</h3>
+                <ul>
+                  {SILINDIR_PARCALARI.map((p) => (
+                    <li key={p.slug}>
+                      <Link href={`/${lang}/silindir-parca/${p.slug}`}>{parcaAdi(p, lang)}</Link>
+                    </li>
+                  ))}
+                </ul>
               </div>
               <div>
-                <b>{m.iletisim}</b>
+                <h3>{m.rehberlerBaslik}</h3>
+                <ul>
+                  {REHBERLER.map((r) => (
+                    <li key={r.slug}>
+                      <Link href={`/${lang}/rehber/${r.slug}`}>{r[lang].ad}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h3>{m.iletisim}</h3>
                 <ul>
                   <li>
                     <a href={`tel:${FIRMA.telefonHam}`}>{FIRMA.telefon}</a>
@@ -88,20 +151,13 @@ export default async function DilLayout({
                   <li>
                     {m.cumartesi} {FIRMA.saatler.cumartesi}
                   </li>
+                  <li>
+                    {FIRMA.adres.ilce} / {FIRMA.adres.il}
+                  </li>
                 </ul>
               </div>
               <div>
-                <b>{m.urunGruplari}</b>
-                <ul>
-                  {kategoriler.map((k) => (
-                    <li key={k.slug}>
-                      <Link href={`/${lang}/${k.slug}`}>{k.ad}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <b>{m.kurumsal}</b>
+                <h3>{m.kurumsal}</h3>
                 <ul>
                   {lang === 'tr' && (
                     <li>
@@ -120,7 +176,27 @@ export default async function DilLayout({
                 </ul>
               </div>
             </div>
-            <p className="footer-alt">{m.footerAlt(FIRMA.kurulus)}</p>
+
+            <div className="footer-kunye">
+              <img
+                className="footer-logo"
+                src="/logo-beyaz.png"
+                width={400}
+                height={81}
+                alt={FIRMA.ad}
+                loading="lazy"
+              />
+              {/*
+                İki metin AYRI satırda duruyor, aralarına "·" konmuyor. Denendi ve
+                bozuldu: flex sarma sırasında ayraç kendi span'ıyla birlikte alt
+                satırın BAŞINA düşüp yetim kalıyor, CSS bunu göremiyor (bir öğenin
+                satır başına düşüp düşmediği seçicilerle sorgulanamaz).
+              */}
+              <div className="footer-kunye-metin">
+                <span>{m.footerAlt(FIRMA.kurulus)}</span>
+                <span>{m.ftKunye}</span>
+              </div>
+            </div>
           </div>
         </footer>
 

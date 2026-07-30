@@ -18,8 +18,35 @@ export type Profil = {
   adet: number
   ornek: string
 }
+/**
+ * Kategori ailesi — 28 kategoriyi dörde böler.
+ *
+ * Tek bir taksonomi hem landing ızgarasında hem footer bandında kullanılır.
+ * Şablonda değil VERİDE durur: üç dil dosyasının üçünde de yazılıdır, böylece
+ * EN/RU sayfaları TR verisine join etmek zorunda kalmaz (join sessizce boş
+ * dönebilirdi ve ne tsc ne build ne denetle bunu yakalardı).
+ *
+ * Üçe değil dörde bölünmesinin sebebi ölçüm: hidrolik/pnömatik/sızdırmazlık
+ * bölmesi 20/5/3 veriyor ve hidrolik ailesi tek başına footer'ı yine uzatıyordu.
+ * Dörtlü bölme 8/9/6/5 veriyor.
+ */
+export type KategoriGrup = 'hat' | 'guc' | 'silindir' | 'pnomatik'
+
+/**
+ * Aile sırası ve arayüz etiketi anahtarı — landing ızgarası ile footer bandı
+ * AYNI listeyi kullansın diye tek yerde durur. İkisi ayrı yazılsaydı yeni bir
+ * aile eklendiğinde biri güncellenip diğeri unutulurdu.
+ */
+export const AILELER = [
+  { grup: 'hat', anahtar: 'aileHat' },
+  { grup: 'guc', anahtar: 'aileGuc' },
+  { grup: 'silindir', anahtar: 'aileSilindir' },
+  { grup: 'pnomatik', anahtar: 'ailePnomatik' },
+] as const satisfies ReadonlyArray<{ grup: KategoriGrup; anahtar: string }>
+
 export type Kategori = {
   slug: string
+  grup: KategoriGrup
   ad: string
   h1: string
   ozet: string
@@ -57,6 +84,7 @@ export type Urun = { kod: string; ad: string; marka?: string; model?: string }
 type ProfilCeviri = { kod: string; ad?: string; yer: string }
 type KategoriCeviri = {
   slug: string
+  grup: KategoriGrup
   ad: string
   h1: string
   ozet: string
