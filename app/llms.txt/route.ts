@@ -1,6 +1,7 @@
 import { SITE_URL, ANA_SITE, FIRMA, VARSAYILAN_DIL } from '@/lib/site'
 import { KATEGORILER, kategoriUrunleri } from '@/lib/veri'
 import { PROFILLER, profilSlug } from '@/lib/profil'
+import { MARKALAR } from '@/lib/marka'
 
 /**
  * llms.txt — yapay zekâ istemcilerine sitenin özetini ve haritasını veren
@@ -36,6 +37,12 @@ export function GET() {
 ${KATEGORILER.map(
   (k) =>
     `- [${k.ad}](${SITE_URL}/${L}/${k.slug}) — ${kategoriUrunleri(k.slug).toplam.toLocaleString('tr-TR')} kalem. ${k.ozet}`
+).join('\n')}
+
+## Markalar
+
+${MARKALAR.map(
+  (b) => `- [${b.ad}](${SITE_URL}/${L}/marka/${b.slug}) — ${b.adet.toLocaleString('tr-TR')} kalem. ${b.ozet.tr}`
 ).join('\n')}
 
 ## Kastaş sızdırmazlık profil kodları

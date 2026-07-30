@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next'
 import { DILLER, SITE_URL } from '@/lib/site'
 import { KATEGORILER } from '@/lib/veri'
 import { PROFILLER, profilSlug } from '@/lib/profil'
+import { MARKALAR } from '@/lib/marka'
 
 /**
  * Kategori dışı, elle yazılmış sayfalar. Yeni eklenince buraya da yazılmalı.
@@ -38,6 +39,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const p of PROFILLER) {
       girisler.push({
         url: `${SITE_URL}/${lang}/profil/${profilSlug(p.kod)}`,
+        lastModified: bugun,
+        changeFrequency: 'monthly',
+        priority: 0.7,
+      })
+    }
+    // Marka sayfaları: "marka + ürün cinsi" aramalarının karşılığı.
+    for (const marka of MARKALAR) {
+      girisler.push({
+        url: `${SITE_URL}/${lang}/marka/${marka.slug}`,
         lastModified: bugun,
         changeFrequency: 'monthly',
         priority: 0.7,

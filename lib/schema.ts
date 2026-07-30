@@ -154,6 +154,54 @@ export function profilSchema(
   }
 }
 
+/**
+ * Marka sayfası. Brand varlığını açıkça beyan eder ki "marka + ürün cinsi"
+ * aramalarında (ör. "gates hidrolik hortum") sayfa markayla ilişkilendirilsin.
+ */
+export function markaSchema(
+  marka: { ad: string; adet: number; ornekler: { kod: string; ad: string }[] },
+  url: string,
+  lang: string,
+  baslik: string,
+  katalogAdi: string
+) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    '@id': `${url}#sayfa`,
+    url,
+    name: baslik,
+    inLanguage: lang,
+    isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}/#site`, name: `${FIRMA.ad} ${katalogAdi}` },
+    about: { '@type': 'Brand', name: marka.ad },
+    provider: { '@id': ISLETME_ID },
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: marka.ornekler.length,
+      itemListElement: marka.ornekler.map((o, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        item: {
+          '@type': 'Product',
+          name: `${marka.ad} ${o.ad}`,
+          sku: o.kod,
+          brand: { '@type': 'Brand', name: marka.ad },
+          offers: {
+            '@type': 'Offer',
+            availability: 'https://schema.org/InStock',
+            priceSpecification: {
+              '@type': 'PriceSpecification',
+              priceCurrency: 'TRY',
+              valueAddedTaxIncluded: false,
+            },
+            seller: { '@id': ISLETME_ID },
+          },
+        },
+      })),
+    },
+  }
+}
+
 export function sssSchema(sss: { s: string; c: string }[], lang?: string) {
   return {
     '@context': 'https://schema.org',

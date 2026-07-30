@@ -5,6 +5,7 @@ import { DILLER, SITE_URL, FIRMA, sayiFormat, type Dil } from '@/lib/site'
 import { METIN } from '@/lib/metin'
 import { KATEGORILER, kategoriBul, kategorilerIcin, kategoriUrunleri, urunAdiDuzelt } from '@/lib/veri'
 import { profilBul, profilSlug } from '@/lib/profil'
+import { MARKALAR } from '@/lib/marka'
 import { kategoriSchema, sssSchema, kirintiSchema, jsonLd } from '@/lib/schema'
 
 const OG_LOCALE: Record<Dil, string> = { tr: 'tr_TR', en: 'en_US', ru: 'ru_RU' }
@@ -97,11 +98,24 @@ export default async function KategoriSayfasi({
           <section>
             <h2>{m.markalarStandartlarBaslik}</h2>
             <div className="etiketler">
-              {k.markalar?.map((marka) => (
-                <span key={marka} className="etiket etiket-marka">
-                  {marka}
-                </span>
-              ))}
+              {k.markalar?.map((marka) => {
+                // Kendi sayfası olan markalar link olur; sayfası olmayacak kadar
+                // az kalemi olanlar düz etiket kalır.
+                const sayfa = MARKALAR.find((x) => x.ad === marka)
+                return sayfa ? (
+                  <Link
+                    key={marka}
+                    href={`/${lang}/marka/${sayfa.slug}`}
+                    className="etiket etiket-marka"
+                  >
+                    {marka}
+                  </Link>
+                ) : (
+                  <span key={marka} className="etiket etiket-marka">
+                    {marka}
+                  </span>
+                )
+              })}
               {k.standartlar?.map((s) => (
                 <span key={s} className="etiket">
                   {s}

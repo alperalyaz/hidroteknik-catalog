@@ -76,6 +76,17 @@ export type Metin = {
   profilYerMil: string
   profilYerPiston: string
   profilYerIkisi: string
+  // — Marka sayfası (/[lang]/marka/[slug]) —
+  markaKirinti: string
+  markaSayfaBaslik: (ad: string) => string
+  markaRozetKalem: (adet: string) => string
+  /** n: ham sayı (çoğul eki için), gosterim: dile göre biçimlenmiş hâli. */
+  markaRozetGrup: (n: number, gosterim: string) => string
+  markaGruplarBaslik: (ad: string) => string
+  markaOrneklerBaslik: (ad: string) => string
+  markaProfilNotu: string
+  markaDigerBaslik: string
+  markaTumKatalog: string
 }
 
 export const METIN: Record<Dil, Metin> = {
@@ -162,6 +173,15 @@ export const METIN: Record<Dil, Metin> = {
     profilYerMil: 'Mil',
     profilYerPiston: 'Piston',
     profilYerIkisi: 'Mil ve piston',
+    markaKirinti: 'Markalar',
+    markaSayfaBaslik: (ad) => `${ad} — stoktaki ürünler ve ölçüler`,
+    markaRozetKalem: (adet) => `${adet} kalem stokta`,
+    markaRozetGrup: (_n, g) => `${g} ürün grubunda`,
+    markaGruplarBaslik: (ad) => `${ad} hangi gruplarda var?`,
+    markaOrneklerBaslik: (ad) => `Stoktan ${ad} örnekleri`,
+    markaProfilNotu: 'Her profilin stoktaki ölçü listesi kendi sayfasındadır.',
+    markaDigerBaslik: 'Diğer markalar',
+    markaTumKatalog: 'Tüm ürün grupları',
   },
   en: {
     urunKatalogu: 'Product Catalog',
@@ -246,6 +266,15 @@ export const METIN: Record<Dil, Metin> = {
     profilYerMil: 'rod',
     profilYerPiston: 'piston',
     profilYerIkisi: 'rod and piston',
+    markaKirinti: 'Brands',
+    markaSayfaBaslik: (ad) => `${ad} — products and sizes in stock`,
+    markaRozetKalem: (adet) => `${adet} items in stock`,
+    markaRozetGrup: (n, g) => (n === 1 ? `in ${g} product group` : `across ${g} product groups`),
+    markaGruplarBaslik: (ad) => `Which groups carry ${ad}?`,
+    markaOrneklerBaslik: (ad) => `${ad} examples from stock`,
+    markaProfilNotu: 'Each profile has its own page listing the sizes in stock.',
+    markaDigerBaslik: 'Other brands',
+    markaTumKatalog: 'All product groups',
   },
   ru: {
     urunKatalogu: 'Каталог продукции',
@@ -330,5 +359,14 @@ export const METIN: Record<Dil, Metin> = {
     profilYerMil: 'шток',
     profilYerPiston: 'поршень',
     profilYerIkisi: 'шток и поршень',
+    markaKirinti: 'Бренды',
+    markaSayfaBaslik: (ad) => `${ad} — товары и размеры в наличии`,
+    markaRozetKalem: (adet) => `${adet} позиций в наличии`,
+    markaRozetGrup: (n, g) => (n === 1 ? `в ${g} группе товаров` : `в ${g} группах товаров`),
+    markaGruplarBaslik: (ad) => `В каких группах есть ${ad}?`,
+    markaOrneklerBaslik: (ad) => `Примеры ${ad} со склада`,
+    markaProfilNotu: 'Список размеров каждого профиля — на его отдельной странице.',
+    markaDigerBaslik: 'Другие бренды',
+    markaTumKatalog: 'Все группы товаров',
   },
 }
