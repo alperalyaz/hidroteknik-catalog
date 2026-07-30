@@ -197,6 +197,43 @@
   ]
  },
  {
+  "slug": "solenoid-bobin",
+  "ad": "Solenoid Coils",
+  "h1": "Solenoid Valve Coils: 12/24 V DC and 110/220 V AC Replacement Coils",
+  "ozet": "Replacement coils for hydraulic and pneumatic solenoid valves: 12 and 24 V DC, 110 and 220 V AC; bore sizes from Ø9 to 31.6 mm, NG06 and NG10 valve coils.",
+  "giris": "A solenoid valve consists of two parts: the body that directs the oil or air, and the electromagnet — the coil — that moves the spool inside it. The coil is the part of the valve that talks to the electrical system, and it is the part that fails most often. That is why it is sold separately: the body may be sound while the coil has burnt out, or a machine may have been moved to a different supply voltage so that only the coil needs changing.\n\nOrdering a replacement coil calls for three pieces of information. First, voltage and current type: 12 V DC and 24 V DC on mobile machinery and PLC-controlled circuits, 110 V AC and 220 V AC in fixed industrial plant. Fitting a coil of the wrong voltage burns it out in seconds; putting 220 V on a 24 V coil is the most common and most expensive of these mistakes.\n\nSecond, the diameter and height of the bore that sits over the valve pin. Stock covers Ø9, Ø10, 13, 14.85, 16, 21.1, 23.2, 26.2 and 31.6 mm. This dimension is printed in the product name in millimetres and governs fit regardless of brand — coils of the same size from different makers will usually interchange. On modular hydraulic valves the size is quoted by valve size directly: NG06 (Cetop 3) valves take 23.2 mm class coils, NG10 (Cetop 5) valves take the 31.6 mm class.\n\nThird, power and protection rating. AC coils are rated in VA, DC coils in W (18 VA, 28 W and so on). Coils rated IP65 withstand dust and water jets; that rating should be insisted on outdoors and on machines that are washed down. Connector type should also be stated when ordering; some coils come with an LED connector fitted.\n\nThe two most common causes of a burnt coil are a spool jammed by dirt in the body, and a supply voltage that runs persistently high. When the spool sticks, the coil converts the load it cannot move into heat and the winding cooks. For that reason, when coils burn one after another the culprit is usually not the coil but a valve body that needs cleaning.",
+  "sss": [
+   {
+    "s": "How do I determine coil size?",
+    "c": "What matters is the diameter of the bore that fits over the valve pin, and the coil height; both appear in the product name in millimetres (14.85 mm or 23.2 mm, for instance). Remove the old coil and take those two measurements with calipers, and a compatible coil can be found regardless of brand."
+   },
+   {
+    "s": "What do NG06 and NG10 mean?",
+    "c": "NG06 and NG10 are mounting-interface standards for modular hydraulic valves (also known as Cetop 3 and Cetop 5). The coils for these valve sizes are standardised in turn: 23.2 mm class for NG06, 31.6 mm class for NG10. The information is printed on the valve label."
+   },
+   {
+    "s": "My coils keep burning out — why?",
+    "c": "When coils fail one after another the problem is usually in the valve body, not the coil. A spool jammed by dirt or by particles in the oil cannot move under the coil's magnetic field; the coil turns the load it cannot shift into heat and the winding cooks. Fitting a new coil without cleaning the body gives the same result. The second cause is a supply voltage persistently above the coil rating."
+   },
+   {
+    "s": "Can a 220 V coil replace a 24 V coil?",
+    "c": "No. Voltage and current type (DC/AC) must match the coil label exactly. A coil of the wrong voltage either will not pull in at all or burns out within seconds. Because the same body is produced with coils in several voltages, a coil fitting physically does not mean it fits electrically."
+   },
+   {
+    "s": "Why does the IP65 rating matter?",
+    "c": "IP65 means the coil is dust-tight and withstands water jets from any direction. That rating should be required on machines working outdoors and in food and textile plants that are washed down with pressurised water. Inside a dry enclosure, a lower rating is adequate."
+   }
+  ],
+  "standartlar": [
+   "12 V DC / 24 V DC",
+   "110 V AC / 220 V AC",
+   "Ø9 – 31.6 mm bore",
+   "NG06 (Cetop 3) and NG10 (Cetop 5)",
+   "IP65 protection",
+   "With and without connector"
+  ]
+ },
+ {
   "slug": "hidrolik-pompa",
   "ad": "Hydraulic Pump",
   "h1": "Hydraulic Pumps and Power Units",
@@ -225,6 +262,154 @@
    "Bent-axis piston",
    "Tandem",
    "ISO / SAE flange"
+  ]
+ },
+ {
+  "slug": "hidromotor",
+  "ad": "Hydraulic Motors",
+  "h1": "Hydraulic Motors (Orbital): 36–395 cm³/rev Low-Speed High-Torque Motors",
+  "ozet": "Orbital hydraulic motors from 36 to 395 cm³/rev displacement; low-speed high-torque motors for mixers, conveyors, cranes, agricultural and cleaning machinery.",
+  "giris": "A hydraulic motor does the opposite of a hydraulic pump: where the pump turns mechanical rotation into pressure, the motor turns pressure into mechanical rotation. A cylinder gives linear motion; a hydraulic motor gives continuous rotation — conveyor drums, mixer impellers, crane winches, sweeper brushes and agricultural drive shafts all turn on hydraulic motors.\n\nMost of the motors in stock are of the orbital (gerotor) type. In this design an inner gear tracks eccentrically inside an outer gear ring; because a large number of chambers fill and empty on each revolution, shaft speed is low and torque is high. That characteristic — direct drive — removes the need for a gearbox in most applications and saves considerable space.\n\nDisplacement sits at the centre of the selection: the volume of oil the motor swallows per revolution, in cm³/rev. The number in the product code is exactly that figure (HMR.100 = 100 cm³/rev). Speed follows from it: speed (rpm) ≈ flow (l/min) × 1000 ÷ displacement (cm³). So 40 l/min turns a 100 cm³/rev motor at roughly 400 rpm. If slower, stronger rotation is wanted at the same flow, choose a larger displacement; if speed is wanted, choose a smaller one.\n\nThe second determinant is torque, which comes from working pressure: torque ≈ pressure (bar) × displacement (cm³) ÷ 63. The third is the shaft and mounting geometry — plain, splined and keyed shafts, and flange hole patterns, decide whether the motor bolts onto the machine; this has to be specified alongside displacement when ordering.\n\nWhen building a hydraulic motor circuit, leaving the return line free to tank matters, because it lets the motor draw oil during the moments it keeps turning under its own inertia; otherwise the motor cavitates internally. For the pump that drives the motor see «Hydraulic Pumps», and for direction and speed control see «Hydraulic Valves».",
+  "sss": [
+   {
+    "s": "How is hydraulic motor speed calculated?",
+    "c": "Speed is flow divided by displacement: speed (rpm) ≈ flow (l/min) × 1000 ÷ displacement (cm³/rev). A pump delivering 40 l/min, for example, turns a 100 cm³/rev motor at roughly 400 rpm. Actual speed falls slightly below this figure because of internal leakage."
+   },
+   {
+    "s": "What does the number in the code mean?",
+    "c": "The number in codes such as HMR.100 or MR200 is the motor's displacement, the volume of oil it swallows per revolution (cm³/rev). This single figure sets both speed and torque: at the same flow, a large displacement turns more slowly but more powerfully, a small displacement faster but weaker."
+   },
+   {
+    "s": "Hydraulic motor or geared electric motor?",
+    "c": "Where hydraulic power is already available and space is tight, the hydraulic motor has the advantage: it delivers high torque directly, needs no gearbox, is protected from mechanical damage by the relief valve when overloaded, and its speed is infinitely variable. In fixed installations running at constant speed, an electric motor is more efficient."
+   },
+   {
+    "s": "Will a hydraulic motor run in both directions?",
+    "c": "Most orbital motors run both ways; a directional valve that swaps the inlet and outlet lines reverses rotation. On models with a drain line, however, that line must be connected freely to tank under all conditions. On special models built for one direction only, the direction marked on the label must be observed."
+   },
+   {
+    "s": "The motor has lost speed and power — what could it be?",
+    "c": "The most common cause is increased internal leakage: a worn gerotor set lets oil past from the pressure side to the return side, and torque and speed fall together. The second cause is reduced pump flow — in that case the other functions in the system slow down too. To tell them apart, measure pressure and flow in the line feeding the motor."
+   }
+  ],
+  "standartlar": [
+   "Orbital (gerotor) type",
+   "36 – 395 cm³/rev displacement",
+   "Plain, splined and keyed shafts",
+   "Bi-directional operation",
+   "Direct drive (no gearbox)"
+  ]
+ },
+ {
+  "slug": "hidrolik-filtre",
+  "ad": "Hydraulic Filters",
+  "h1": "Hydraulic Oil Filters: Suction, Return and Pressure Line Filters with Elements",
+  "ozet": "Suction filters from 25 to 750 l/min, tank-top and in-line return filters, complete filter assemblies and replacement filter elements.",
+  "giris": "The great majority of hydraulic faults come down to a single cause: dirt in the oil. Metal particles shed by wear, dust introduced during assembly and rubber crumbs from seals circulate through the micron-scale clearances of pump and valves. The filter is the only element that breaks this cycle, and although it is one of the cheapest parts in the system, neglecting it produces the most expensive damage.\n\nA filter occupies one of three positions in the circuit. The suction filter works at the pump inlet, submerged in the tank; it is a coarse filter and protects the pump from large particles. Its rating is given in l/min (25, 45, 65, 90, 125, 180, 225, 300, 500, 750) and must not be selected below the pump flow. Its dimensions are listed as length, diameter and thread (L:160 D:61 A:1, for instance), because it has to fit inside the tank.\n\nThe return filter comes into play as oil flows back to the tank. It is a fine filter, and since all the circulating oil passes through it, it does the real cleaning. Tank-top versions simplify mounting. The pressure line filter is used after the pump, immediately ahead of a sensitive valve that needs protecting; it gives the finest filtration, but its housing is built to withstand full system pressure.\n\nThe second axis of selection is pore size, given in microns and visible in the product code (C25 = 25 micron). A finer filter delivers cleaner oil but clogs sooner and causes more pressure drop. Typical values are 100–125 micron on suction and 10–25 micron on return.\n\nFilters are sold either as complete housings or as elements alone. Routine maintenance normally changes the element while the housing stays in place. A clogged suction filter creates a vacuum at the pump inlet, bubbles form in the oil and the pump cavitates — this is the most common reason for a pump that runs with a growling noise. Read this page together with the fault notes on the «Hydraulic Pumps» page.",
+  "sss": [
+   {
+    "s": "Which matters more, the suction filter or the return filter?",
+    "c": "They do different jobs. The suction filter protects the pump from large particles and is coarse by necessity — it cannot be fine, because a pressure drop at the pump inlet causes cavitation. The real cleaning is done by the return filter: all the oil circulating in the system passes through it on its way back to tank. A healthy circuit has both."
+   },
+   {
+    "s": "How is filter flow rating selected?",
+    "c": "The filter rating must not be below the pump flow. On the suction side this rule is especially strict: an undersized filter creates a vacuum at the pump inlet and leads to cavitation. On the return side, allow for the surge of flow produced as a cylinder retracts and choose one size up."
+   },
+   {
+    "s": "What does the micron value mean?",
+    "c": "It is the size of the smallest particle the filter will stop; it appears in the code as C25, meaning 25 micron. A smaller number means finer filtration. Typical values are 100–125 micron on suction and 10–25 micron on return. A filter finer than needed clogs quickly and opens its bypass valve, leaving the system running unfiltered."
+   },
+   {
+    "s": "How often should a filter be changed?",
+    "c": "Go by the contamination indicator rather than by elapsed time. Where an indicator is fitted, change the element when the needle enters the red zone. Without one, make the first change within the first 50 hours after commissioning — that element collects the assembly debris — and thereafter typically every 500 to 1000 hours. The filter must always be changed with the oil."
+   },
+   {
+    "s": "Should I buy a complete filter or just the element?",
+    "c": "If the housing is sound the element alone is enough, and that is what routine maintenance changes. A complete filter is bought for a new installation, for a cracked housing, or when moving to a different flow. When ordering an element, state both the housing type and the micron value — elements of the same size are produced in several pore ratings."
+   },
+   {
+    "s": "The pump growls — could the filter be involved?",
+    "c": "Very likely. A clogged suction filter creates a vacuum at the pump inlet; vapour bubbles form in the oil and collapse in the pressure zone. This phenomenon, cavitation, produces the characteristic growl and eats the pump from the inside. The first places to check are the suction filter and the oil level."
+   }
+  ],
+  "standartlar": [
+   "Suction filters 25 – 750 l/min",
+   "Return and tank-top filters",
+   "Pressure line filters",
+   "C25 (25 micron) elements",
+   "Complete housings and spare elements"
+  ]
+ },
+ {
+  "slug": "hidrolik-sogutucu",
+  "ad": "Hydraulic Oil Coolers",
+  "h1": "Hydraulic Oil Coolers: 80–220 l/min Fan-Cooled Oil-to-Air Heat Exchangers",
+  "ozet": "Fan-cooled hydraulic oil coolers in 12 V, 24 V and 220 V; capacity from 80 to 220 l/min, body sizes from 240×240×45 to 720×700×63 mm.",
+  "giris": "Part of the energy spent in a hydraulic system never comes out as work; it turns into heat. Some power is lost as heat at every throttling valve, in the oil returning through the relief valve, in the pump's internal leakage and in every friction along the line. On small systems the surface of the tank and the pipework is enough to shed that heat; as the system grows or the duty cycle tightens it is not, and the oil starts to warm.\n\nThinning oil brings trouble in a chain. As viscosity falls, internal leakage in pump and valves rises, the system slows and generates still more heat — a loop that feeds itself. The oil film thins, metal surfaces come closer together and wear accelerates. Seals harden at high temperature, lose elasticity and begin to leak. The oil itself oxidises; it darkens, turns acidic and leaves a varnish deposit. The practical threshold is around 60 °C: a system that runs continuously above that is asking for a cooler.\n\nThe coolers in stock are of the oil-to-air type: the oil passes through a matrix while a fan blows air across it to carry the heat away. Selection turns on three values. First, the flow to be cooled (80–220 l/min); the cooler's capacity is set by the flow passing through the line. Second, the fan voltage — 12 V and 24 V models run from the vehicle's own supply on mobile hydraulics, 220 V models from the mains in fixed installations. Third, the body size (from 240×240×45 to 720×700×63 mm); the space allotted to the cooler on the machine and the opening the fan draws air through are planned around it.\n\nA cooler is normally connected in the return line, just before the oil enters the tank. Because the matrix is not designed to withstand full system pressure it should not be connected directly into a pressure line; it is also sensible to use a bypass check valve to protect the matrix during cold starts. Capacity drops quickly once the air-side face becomes dusty — periodic cleaning is the cheapest way to recover it.",
+  "sss": [
+   {
+    "s": "Does my hydraulic system need a cooler?",
+    "c": "It does if the oil temperature stays continuously above 60 °C. Measure at the tank, after the system has run at full load for a while. A system that settles around 50 °C does not need one. Even where temperature is acceptable, a cooler noticeably extends oil and seal life on short-cycle, high-duty machines."
+   },
+   {
+    "s": "How is cooler capacity selected?",
+    "c": "Capacity is chosen from the flow that will pass through the cooler; items give it in l/min (80, 100, 120, 140, 160, 180, 220). For a return-line installation, allow for the peak instantaneous flow generated as a cylinder retracts. If capacity is too low the oil will not cool; there is no harm in oversizing beyond space and cost."
+   },
+   {
+    "s": "What is the difference between 12 V, 24 V and 220 V?",
+    "c": "Only the fan motor supply differs; the cooling matrix is the same. The 12 V and 24 V models are fed from the vehicle's own electrical system on mobile hydraulics — tractors, construction machinery, truck-mounted equipment. The 220 V models connect to the mains in fixed industrial plant. Choosing the wrong voltage is the most common reason for a return."
+   },
+   {
+    "s": "Where is the cooler connected?",
+    "c": "The standard position is the return line, with the oil passing through the cooler just before it enters the tank. Because the matrix housing is not designed for full system pressure it must not be connected directly into a pressure line. Fitting a parallel bypass check valve is sensible so that thick, cold oil does not strain the matrix on start-up."
+   },
+   {
+    "s": "There is a cooler fitted but the oil still overheats — why?",
+    "c": "Look first at the air side of the matrix: once a mixture of dust and oil coats the surface, capacity drops quickly, and cleaning resolves most cases. There is also no cooling if the fan is not turning or is blowing the wrong way. If those are sound, there is simply too much heat being generated — usually oil returning continuously over the relief valve, or an oversized pump."
+   }
+  ],
+  "standartlar": [
+   "Oil-to-air (fan-cooled) type",
+   "80 – 220 l/min capacity",
+   "12 V DC / 24 V DC / 220 V AC fan",
+   "240×240×45 – 720×700×63 mm body",
+   "Side-mount type"
+  ]
+ },
+ {
+  "slug": "elektrik-motoru",
+  "ad": "Electric Motors",
+  "h1": "Electric Motors for Hydraulic Power Units: 0.37–22 kW, 1500 rpm, B35 Flange",
+  "ozet": "Three-phase and single-phase electric motors driving hydraulic power units: 0.37 kW to 22 kW, 1500 rpm (4-pole), 220 V and 380 V, foot-and-flange B35 frame.",
+  "giris": "In a fixed hydraulic power unit the electric motor is the first link in the chain: it converts mains electricity into rotation, that rotation drives the pump, and the pump pressurises the oil. Selecting the motor correctly determines whether the unit works at all and how long it lasts.\n\nThe first value in the selection is power, calculated from what the pump will demand: power (kW) ≈ pressure (bar) × flow (l/min) ÷ 600 (with an allowance for overall efficiency). A system asking for 20 l/min at 100 bar needs roughly 3.3 kW; a 4 kW motor is chosen as the next step up. An undersized motor labours under load, draws current and trips the overload; oversizing does no harm but reduces efficiency at part load and adds cost.\n\nThe second value is speed. Hydraulic power units almost always use a 1500 rpm — that is, 4-pole — motor. Because pump flow is directly proportional to speed (flow ≈ displacement × speed), the motor speed must match the rated flow of the pump selected. A 3000 rpm motor draws twice the flow from the same pump, but the pump's suction capability and its service life may not suit that.\n\nThe third value is voltage and phase count. 380 V three-phase motors are the industry standard and are preferred in practice at every power above 1.5 kW. 220 V single-phase models are used in workshops and small units where no three-phase supply is available; at the same power they have a larger frame, cost more and have lower starting torque.\n\nThe fourth value is the mounting type, which governs installation. B35 means a frame with both feet and a flange: the motor sits on the chassis by its feet and bolts to the pump adaptor by its front flange. This is the standard choice for hydraulic power units, because the pump couples directly to the motor shaft and alignment has to be maintained. For pump and adaptor selection see the «Hydraulic Pumps» page.",
+  "sss": [
+   {
+    "s": "How many kW do I need?",
+    "c": "Motor power is calculated from what the pump will demand: power (kW) ≈ pressure (bar) × flow (l/min) ÷ 600. That formula includes an approximate allowance for efficiency. A system asking for 20 l/min at 100 bar needs roughly 3.3 kW, so the next standard size, 4 kW, is chosen. On systems running continuously at full load, going one size up is the safe option."
+   },
+   {
+    "s": "Why is 1500 rpm always used?",
+    "c": "Pump flow is directly proportional to speed, and the rated flows of hydraulic pumps are generally quoted at 1500 rpm. A 4-pole (1500 rpm) motor also runs more quietly than a 2-pole one and does not strain the pump's suction capability. High speed increases the risk of cavitation at the pump inlet."
+   },
+   {
+    "s": "What does B35 mean?",
+    "c": "B35 is the mounting designation for a motor that has both a footed and a flanged frame. The motor sits on the chassis by its feet and bolts to the pump adaptor by its front flange. It is the standard choice for hydraulic power units: because the pump couples to the motor shaft, misalignment has to be prevented by the flange."
+   },
+   {
+    "s": "220 V single-phase or 380 V three-phase?",
+    "c": "If three-phase is available on site, 380 V is preferred: at the same power it gives a smaller frame, higher starting torque and better efficiency. 220 V single-phase models are used only where there is no three-phase supply, and generally remain reasonable up to about 3 kW."
+   },
+   {
+    "s": "The motor overload keeps tripping — what could cause it?",
+    "c": "The most common cause is the system holding the motor at full load continuously: the pressure setting may be higher than needed, or the pump flow may be oversized for the motor. The second is cooling — if the rear fan cowl is blocked the windings overheat. The third is electrical: phase loss, low voltage, or an incorrectly set overload relay. Oil thickening in cold weather also raises the current on first start."
+   }
+  ],
+  "standartlar": [
+   "0.37 – 22 kW",
+   "1500 rpm (4-pole)",
+   "220 V single-phase / 380 V three-phase",
+   "B35 foot-and-flange frame",
+   "24 V DC power pack motors"
   ]
  },
  {
@@ -258,6 +443,77 @@
   ]
  },
  {
+  "slug": "krom-mil-boru",
+  "ad": "Chrome Rod and Honed Tube",
+  "h1": "Chrome-Plated Rod, Induction-Hardened Rod, Honed Tube and Hydraulic Line Tube",
+  "ozet": "Raw material for hydraulic cylinder manufacturing: Ø12–Ø180 chrome-plated and induction-hardened rod, honed tube from Ø40 to Ø350, hydraulic line tube from 5×1 to 42×4.",
+  "giris": "A hydraulic cylinder has three main parts: the barrel the piston travels inside, the rod that extends outward, and the seal set that keeps them tight. This page covers the raw material for the first two — the stock a workshop needs when it builds its own cylinders or refurbishes a worn one.\n\nChrome-plated rod is drawn steel bar with a hard chrome layer on the surface. The plating does two jobs: it reduces friction and wear, and it prevents corrosion. The wiper seal relies on the smoothness of that plating as it cleans dirt off the rod; once the plating is scored, the seal starts leaking within a short time. For this reason the rod must be protected from impact during handling and assembly. Induction-hardened rod has the steel beneath the plating hardened by induction; it stands up better to impact and side loading, which is why it is preferred in construction machinery and heavy-duty cylinders.\n\nHoned tube forms the cylinder barrel. Its bore is ground on a honing machine to a cross-hatched finish; this texture lets the piston slide smoothly and gives the oil film a surface to hold on to. The size is always given as inner diameter × outer diameter (80 × 95, for instance): the bore determines the force the cylinder produces, the wall thickness determines the pressure it can withstand. Plain drawn tube cannot substitute for honed tube — the roughness of the bore will cut the seal on the very first stroke.\n\nHydraulic line tube is used for the fixed runs from pump to valve and from valve to cylinder; unlike hose it does not whip with vibration and lasts considerably longer. Its size is given as outer diameter × wall thickness (16 × 2, for instance), and the fitting is selected directly from that outer diameter: a 16 × 2 tube takes a 16L or 16S compression fitting. The tube and the fitting series (L light, S heavy) must match — otherwise the cutting ring does not grip the tube correctly.\n\nRod and tube items are listed together with their weight per metre (15.40 kg/m for 50 mm chrome-plated rod, for example); shipping and costing are worked out from that figure. For cut-to-length and machining see the «Hydraulic Cylinder» page, and for line connections see «Hydraulic Fittings».",
+  "sss": [
+   {
+    "s": "What is the difference between chrome-plated rod and induction-hardened rod?",
+    "c": "Both have a hard chrome surface; the difference is in the steel underneath. In chrome-plated rod the steel is left in its drawn condition. In induction-hardened rod the near-surface zone is heated by induction current and quenched, creating a hardened case that stops the plating from collapsing under impact and side load. Induction-hardened rod is used in construction machinery, tipper and heavy-duty cylinders; chrome-plated rod is used in ordinary industrial cylinders."
+   },
+   {
+    "s": "How do I read a honed tube size?",
+    "c": "80 × 95 means an 80 mm bore and a 95 mm outside diameter; the wall thickness is half the difference, that is 7.5 mm. Cylinder force is calculated from the bore (force = pressure × piston area), while pressure rating comes from the wall thickness. Giving only the bore when ordering is not enough — the same bore exists in several wall thicknesses."
+   },
+   {
+    "s": "Which fitting size fits a hydraulic line tube?",
+    "c": "Compression fittings are selected by the tube's outer diameter. A 16 × 2 line tube needs a 16L (light series) or 16S (heavy series) fitting; the choice depends on working pressure. The L series suits roughly up to 160 bar, the S series higher pressures. Wall thickness must also suit the series: a heavy-series fitting can crush a thin-walled tube as it is tightened."
+   },
+   {
+    "s": "What length does the rod come in?",
+    "c": "Rod and tube are stocked as bar and cut to the length you need. The kg/m figure shown next to each item is the weight per metre and is used for both pricing and shipping. A 50 mm chrome-plated rod is 15.40 kg/m, so a 2-metre piece weighs roughly 31 kg."
+   },
+   {
+    "s": "Can a scored rod still be used?",
+    "c": "Not if the score runs lengthwise (along the axis) and is deep: the seal lip will continuously leak oil through that channel, and no amount of seal replacement will restore sealing. Shallow marks that cannot be felt with a fingernail cause no trouble. Where the chrome layer is flaking, the loose fragments will cut the seal; the rod must be replaced."
+   }
+  ],
+  "standartlar": [
+   "Chrome-plated rod Ø12–Ø180",
+   "Induction-hardened rod Ø12–Ø120",
+   "Honed tube bore Ø40–Ø350",
+   "Line tube 5×1 – 42×4",
+   "Supplied with kg/m weight"
+  ]
+ },
+ {
+  "slug": "rot-mafsali",
+  "ad": "Rod Ends and Clevises",
+  "h1": "Rod Ends: Threaded Clevis (PR) and Weld-On (S) Cylinder Mountings",
+  "ozet": "Mounting components for hydraulic and pneumatic cylinders: PR20–PR110 threaded clevis rod ends, S series round (C) and rectangular (N) weld-on types.",
+  "giris": "A hydraulic cylinder is never bolted rigidly to its load. As the cylinder works, the axis of the load shifts, the machine frame flexes, and the line between the rod end and the rear mounting is thrown out. In a rigid connection that misalignment goes straight into the rod as a side load — and the rod is then carrying a force the seal and the bearing were never meant to take.\n\nThe consequence is well known in the field: the seal begins to leak on one side, the rod bends slightly over time, the plating scores. The replacement seal leaks again a few months later, because the seal was never the cause. A rod end is used precisely to release that misalignment — to let the cylinder swing with the load.\n\nThere are two types. The threaded clevis type (PR series) screws onto the thread at the end of the rod; the load pin passes through the jaw. The weld-on type (S series) is welded to the machine frame and comes in two sub-types: C with a round body, N with a rectangular one. The choice depends on the shape of the surface being welded to and how tight the space is.\n\nThe size figure is the diameter of the pin bore: 20 mm on a PR20, 50 mm on an S 50 N. It is selected from the pin that carries the load, not from the cylinder's rod diameter — confusing the two is a frequent mistake. On the threaded type the thread size at the rod end must match as well.\n\nOnce fitted, greasing the pin should not be neglected; a rod end run dry quickly wears oval and develops play. As the play grows, the cylinder knocks on every reversal — that noise is the signal that the rod end is due for replacement. For the cylinder itself see «Hydraulic Cylinders», and for the seal group see «Hydraulic Seals, Nutrings and Wipers».",
+  "sss": [
+   {
+    "s": "Is a rod end really necessary?",
+    "c": "It is necessary in any application where there is the slightest axis misalignment between load and cylinder — which in practice means almost all of them. In a rigid connection, misalignment is carried into the rod as side load; the seal leaks on one side and the rod bends over time. Only where the load is guided and the axis is guaranteed, as in bench-type mountings, can a rigid connection be used."
+   },
+   {
+    "s": "Is rod end size chosen from the rod diameter?",
+    "c": "No. The size of a rod end is the diameter of its pin bore: 20 mm on a PR20, 50 mm on an S 50 N. It is determined by the pin carrying the load. Rod diameter matters only on the threaded type, and only so that the thread at the rod end matches."
+   },
+   {
+    "s": "What is the difference between threaded and weld-on types?",
+    "c": "The threaded type (PR series) screws onto the thread at the cylinder rod end and can be removed; it is preferred where the rod will be changed during maintenance. The weld-on type (S series) is welded to the machine frame and is generally used at the rear mounting of the cylinder. Most applications use both together: threaded at the rod end, weld-on at the rear."
+   },
+   {
+    "s": "What do C and N mean in the S series?",
+    "c": "They denote body shape. C is a round body, N a rectangular one. The pin bore does the same job in both; the choice depends on the shape of the surface to be welded and the space available at the mounting. A rectangular body gives a wider weld area on a flat surface."
+   },
+   {
+    "s": "The cylinder knocks on every reversal — what causes it?",
+    "c": "Usually play in the rod end pin. An ungreased rod end wears oval over time; when the cylinder reverses it travels freely through that clearance and strikes the pin. As the noise grows, so does the play, and the pin begins to wear as well. The remedy is to replace the rod end and grease it regularly."
+   }
+  ],
+  "standartlar": [
+   "PR20 – PR110 threaded clevis",
+   "S 20 C – S 80 C round weld-on",
+   "S 20 N – S 100 N rectangular weld-on",
+   "Sized by pin diameter"
+  ]
+ },
+ {
   "slug": "kuresel-vana",
   "ad": "Ball and Butterfly Valve",
   "h1": "Ball Valves, Butterfly Valves and Shut-off Components",
@@ -281,6 +537,49 @@
    "BSPP",
    "PN16 / PN25 / PN40",
    "DN10 – DN25"
+  ]
+ },
+ {
+  "slug": "manometre",
+  "ad": "Pressure Gauges",
+  "h1": "Pressure Gauge Types: Glycerine-Filled, Dry, Diaphragm and Contact Gauges",
+  "ozet": "Pressure gauges with Ø40, Ø63 and Ø100 mm dials, from 0-1 bar to 0-600 bar; bottom and rear connection, dry and glycerine-filled, plus mbar-range diaphragm types.",
+  "giris": "The pressure gauge is the simplest and most frequently consulted instrument in a hydraulic or pneumatic circuit. Almost every fault-finding exercise begins by reading a gauge: is the pump building pressure, is the relief valve opening early, is the line blocked — the answer shows up on the needle.\n\nFive values govern the selection. First, dial size: Ø40 for tight panels and machine mounting, Ø63 for general use, Ø100 where a power unit has to be read from a distance. Second, the measuring range. The rule is that normal working pressure should fall at about two thirds of the scale; a circuit running at 150 bar suits a 0-250 bar gauge. A 0-600 bar gauge will also show 150 bar, but the needle sits at the start of the scale, so resolution is poor and small changes go unnoticed.\n\nThird, connection orientation: bottom connection for piped installations and machine mounting, rear connection for gauges recessed into a panel face. Fourth, filling. A glycerine-filled gauge has a liquid-filled case; that liquid damps the needle so it does not jump with vibration, and it protects the movement from fatigue. On pump outlets, cylinder lines and mobile hydraulics — anywhere with pulsation — a filled gauge is all but mandatory. A dry gauge is adequate on vibration-free fixed lines and costs less.\n\nFifth, the type. A standard Bourdon-tube gauge measures in bar. At low pressure — ventilation, filter contamination, food and process lines — the millibar range is needed, and a diaphragm gauge is used instead. Vacuum gauges read the negative side. Contact gauges (NCNO) close an electrical contact when a set pressure is reached, so they can stop a pump or raise an alarm; they control as well as indicate.\n\nA gauge is rarely piped directly into the line — it usually goes through a gauge adaptor or reverse fitting, and those parts are listed in this group as well. Where pressure surges are severe, a throttle or a protective isolating valve is fitted upstream; without one, even a robust gauge loses its needle within a few months.",
+  "sss": [
+   {
+    "s": "What pressure range should I choose?",
+    "c": "Normal working pressure should fall at roughly two thirds of the scale. For a circuit running at 150 bar, 0-250 bar is the right choice. Too wide a scale costs reading resolution; too narrow a scale lets pressure surges drive the needle against the stop and damage the movement."
+   },
+   {
+    "s": "Why choose a glycerine-filled gauge?",
+    "c": "The glycerine in the case damps needle flutter caused by pressure pulsation. This both makes the gauge readable and slows wear in the geared movement. Filled gauges are used on pump outlets, cylinder lines and mobile hydraulics. On vibration-free fixed lines a dry gauge is sufficient."
+   },
+   {
+    "s": "Bottom or rear connection?",
+    "c": "Use bottom connection if the gauge screws straight into pipework or sits on the machine. Use rear connection if it is recessed into a panel face and read from the front. There is no difference in measurement, only in mounting orientation — and this is the single most common cause of ordering the wrong part."
+   },
+   {
+    "s": "When is a diaphragm gauge required?",
+    "c": "When the pressure to be measured is in millibars rather than bar, a standard Bourdon-tube gauge cannot resolve it. Diaphragm types are used on ventilation ducts, filter contamination measurement, and low-pressure process and food lines. They also prevent the Bourdon tube from clogging with viscous or particle-laden media."
+   },
+   {
+    "s": "What does a contact gauge do?",
+    "c": "A contact gauge (NCNO) closes an electrical contact when the set pressure is reached. That signal can stop a pump, sound an alarm or drive a valve. In simple systems it removes the need for a separate pressure switch, acting as indicator and threshold switch at once."
+   },
+   {
+    "s": "The needle no longer returns to zero — what happened?",
+    "c": "If pressure has been released but the needle stays above zero, the Bourdon tube has been permanently stretched, meaning the gauge has been over-pressurised. It will no longer read accurately and must not be used for setting pressures. To prevent a repeat, move to a wider scale or fit a throttle in the line."
+   }
+  ],
+  "standartlar": [
+   "Dial Ø40 / Ø63 / Ø100 mm",
+   "0-1 bar – 0-600 bar",
+   "mbar-range diaphragm types",
+   "Bottom and rear connection",
+   "Dry and glycerine-filled",
+   "Contact type (NCNO)",
+   "Vacuum scale",
+   "Accuracy class Cl.1.6"
   ]
  },
  {
@@ -440,6 +739,42 @@
   "profilNot": "The \"Fitting location\" column is read from the order of the dimensions: a size that increases from inner diameter to outer diameter is rod-side, one that decreases from outer diameter to inner diameter is piston-side. We checked this distinction against the Kastaş catalog and it held for every code in the table. The function column is also taken from the Kastaş catalog; it was left blank for codes where we could not find a match in the catalog. The table lists the profiles we stock the most of; we also source the other profiles in the Kastaş catalog."
  },
  {
+  "slug": "tamir-takimi",
+  "ad": "Seal Kits and Repair Kits",
+  "h1": "Hydraulic Repair Kits: JCB Cylinder and Hema Pump Seal Sets",
+  "ozet": "Complete seal sets for a given cylinder or pump in a single package: Kastaş JB-991 series JCB kits, Hema 1PN/1P1/2P1 pump kits and hydraulic motor repair kits.",
+  "giris": "Open up a leaking cylinder or pump and you are left holding a handful of sealing elements: piston seal, rod seal, wiper, guide rings, O-rings and back-up rings. Measuring and sourcing each of them one by one takes time and carries risk — if a single item is missing or comes in the wrong size, the machine has to come apart again.\n\nA repair kit removes that problem: every sealing element for a given cylinder or pump model arrives in one package, in the correct size and the correct material. The most expensive part of an overhaul is not the parts but the time the machine stands idle; using a kit shortens it.\n\nStock covers three families. The first is the Kastaş JB-991 series for construction machinery cylinders; the codes carry the original JCB number (JB-991/00110, for example) and are searched by that number directly. The second is the Hema 0P1, 1P1, 1PN, 2P1 and 3P1 series kits for pumps, matched by the series code on the pump label. The third is the MR, MH, MM and MT series kits for hydraulic motors. Seal kits for pneumatic cylinders are also carried.\n\nThe one critical piece of information when ordering a kit is the model and serial number. Two cylinders that look the same bore may use different seal profiles; it is model matching, not dimension matching, that counts. Where the label cannot be read, you have to work from the size and profile of the seals removed — in that case selecting items individually is safer than a kit; for profile codes see the «Hydraulic Seals, Nutrings and Wipers» page.\n\nTwo points must not be skipped during assembly. Seals should be lubricated with system oil before fitting, and an assembly sleeve used where they pass over sharp corners and threads — most early leaks come from a seal cut during installation. Second, the condition of the rod and bore surfaces should be checked while the seals are renewed; a new seal fitted to a scored rod will leak again before long.",
+  "sss": [
+   {
+    "s": "Should I buy a repair kit or select the seals individually?",
+    "c": "If the model of the cylinder or pump is known, a kit is always safer: every element arrives complete, in the correct profile and size. If the model is unknown, or the machine has previously been repaired with non-original parts, the kit may not fit; in that case measure the elements removed and select item by item."
+   },
+   {
+    "s": "How do I order a JCB repair kit?",
+    "c": "Search by the original JCB number; the items carry that number (JB-991/00110, for example). It is read from the label on the cylinder or from the machine's spare parts catalogue. If the number cannot be read, supply the cylinder's rod diameter, bore and stroke together with the machine model and year."
+   },
+   {
+    "s": "What does a kit contain?",
+    "c": "A cylinder kit typically contains the piston seal, rod seal, wiper, guide (wear) rings, O-rings and back-up rings. Pump kits contain the shaft seal, housing O-rings and, where applicable, wear plate gaskets. Springs, bearings and metal parts are not included and are ordered separately."
+   },
+   {
+    "s": "I fitted a new kit and it still leaks — why?",
+    "c": "There are two common causes. The first is assembly damage: the seal was cut as it passed over a thread or a sharp corner. Seals should be lubricated and fitted using an assembly sleeve. The second is surface condition: if the rod is scored lengthwise, or the chrome plating is flaking, no seal will hold and the rod must be renewed."
+   },
+   {
+    "s": "Can the seal material in a kit be changed?",
+    "c": "Standard kits are produced for mineral-based hydraulic oil at normal temperatures. If the system runs continuously hot, or uses a water-based fluid, the material has to be selected accordingly. In that case it is right to select the elements individually in a suitable material rather than take a ready-made kit."
+   }
+  ],
+  "standartlar": [
+   "JCB cylinder kits (JB-991 series)",
+   "Hema 0P1 / 1P1 / 1PN / 2P1 / 3P1 pump kits",
+   "MR / MH / MM / MT hydraulic motor kits",
+   "DP / DPA seal kits",
+   "Pneumatic cylinder seal kits"
+  ]
+ },
+ {
   "slug": "hortum-kelepce",
   "ad": "Hose Clamps",
   "h1": "Hose Clamps and Connection Fittings",
@@ -463,6 +798,42 @@
    "Worm-drive",
    "Sliding clamp",
    "Pipe clamp with base plate"
+  ]
+ },
+ {
+  "slug": "hortum-ucu-koruma",
+  "ad": "Hose Ends, Spiral Guard and Cable Trunking",
+  "h1": "Hose End Fittings, Spiral Hose Guard, Fire Sleeve and Hose Trunking",
+  "ozet": "Not the hose itself, but the parts that connect and protect it: 1/4\"–2\" hose ends, polyethylene spiral guard, silicone fire sleeve and hose trunking.",
+  "giris": "Most hydraulic hose failures start not in the middle of the hose but at its two ends and on its outer surface. At the end, a connection works loose or is tightened wrongly; on the outside, the hose rubs against a corner, against another hose or against the machine frame until the abrasion reaches the braid. This page gathers the parts aimed at those two points — for the hose itself see the «Hydraulic Hose» and «SEL Hose» pages.\n\nA hose end is the connecting part fitted to the end of the hose; its size is given in inches according to the hose bore (1/4\", 5/16\", 3/8\", 1/2\", 5/8\", 3/4\", 1\", 1.1/4\", 2\"). Choose the wrong size and the connection either will not seat at all or blows off under pressure; the bore size is read from the print on the hose.\n\nSpiral guard is a split plastic spiral wound around the hose. It does two jobs: it protects the hose from external abrasion and keeps hoses running side by side from chafing each other. It also limits, to a degree, the spray of oil if a hose bursts. The size is selected from the outer diameter of the hose being wrapped (23×27, for example: inner and outer diameter). Gathering a bundle of hoses in a single spiral is better than wrapping each one, both for tidiness and for service life.\n\nFire sleeve is a silicone-coated braided sleeve used where there is weld spatter, hot surfaces or a risk of flame; it insulates the hose from heat and sparks. On foundry, press and welding lines it multiplies hose life.\n\nHose trunking is the plastic channel used to carry hoses and cables tidily along a machine. It stops a free-hanging hose from chafing itself away under vibration.",
+  "sss": [
+   {
+    "s": "How is hose end size determined?",
+    "c": "A hose end is selected by the INNER diameter of the hose, given in inches. The bore is printed on the hose; where it cannot be read, it is measured from a cut end. Selecting by outer diameter is a common mistake — hoses of the same bore vary in outer diameter with the number of braid layers."
+   },
+   {
+    "s": "How is spiral guard size chosen?",
+    "c": "Spiral guard is selected by the OUTER diameter of the hose it will wrap; items give inner and outer diameter together, such as 23×27. If the inner diameter is smaller than the hose outer diameter, wrapping is a struggle and the guard strangles the hose; too large and it slides away from the point that needs protecting. For a bundle, measure the overall diameter of the bundle."
+   },
+   {
+    "s": "Is spiral guard really necessary?",
+    "c": "Not if the hose is stationary and touches nothing. But on moving booms, in bundles of hoses running side by side, and where hoses pass close to sharp corners, the outer cover abrades down to the braid — and once the braid shows, the hose is a burst waiting to happen. In those places spiral guard extends the replacement interval noticeably."
+   },
+   {
+    "s": "When is fire sleeve used?",
+    "c": "Wherever there is weld spatter, hot swarf or contact with hot surfaces. The silicone-coated braid insulates the hose cover from sparks and heat. On foundry, press and welding lines it extends hose life markedly, and it also reduces the risk of oil igniting if a hose fails."
+   },
+   {
+    "s": "Is a hose end the same thing as a fitting?",
+    "c": "No. A fitting connects two lines by thread or compression ring. A hose end is the part that goes onto the end of the hose and prepares it for that connection. The two are usually ordered together; for fittings see the «Hydraulic Fittings» page."
+   }
+  ],
+  "standartlar": [
+   "Hose ends 1/4\" – 2\"",
+   "Polyethylene spiral guard",
+   "Silicone fire sleeve",
+   "Hose trunking",
+   "Tee hose connectors"
   ]
  },
  {
@@ -517,6 +888,44 @@
    "3/2",
    "5/3 closed center",
    "24V DC / 220V AC coil"
+  ]
+ },
+ {
+  "slug": "sartlandirici",
+  "ad": "Air Preparation (FRL) Units",
+  "h1": "Pneumatic FRL Units: Filter-Regulators, Lubricators and Air Preparation Sets",
+  "ozet": "Two-stage (FR) and three-stage (FRL) air preparation units in 1/8\"–1\" sizes, filter-regulators, lubricators, precision regulators, spare bowls and FRL oil.",
+  "giris": "Air leaving a compressor carries three things: water, oil vapour and particles. Fed into a circuit untreated, they corrode valve spools, wear cylinder seals and clog silencers. The FRL group — filter, regulator, lubricator — sits at the inlet of a pneumatic circuit and deals with all three.\n\nThe unit has three stages. The filter passes the air through a cyclone chamber, collecting water droplets and coarse particles in the bottom of the bowl; the accumulated water is drained through a manual or automatic drain. The regulator reduces the variable line pressure to the fixed value the circuit needs and holds it there; the small gauge on top shows the setting. The lubricator adds a controlled mist of oil to the air, lubricating the internal surfaces of valves and cylinders.\n\nNot every circuit needs all three stages. The filter + regulator pair (FR) is the most common arrangement, and most modern cylinders are lubricated for life and run without a lubricator. A lubricator is added for older cylinders, high cycle rates and percussive hand tools. Once lubrication has been started it should not be stopped: the oil washes away the factory grease, and if lubrication ceases the component runs dry.\n\nSelection turns on two values. Port size (1/4\", 3/8\", 1/2\", 1\") is set by the flow in the line; a unit sized below the line acts as a restriction, causing a pressure drop and slowing the cylinders. Body type is chosen for the environment: a plastic bowl is economical but cracks where solvent vapours are present, so metal-bodied units are used in those conditions.\n\nAlongside complete units, this group also carries spare bowls, regulator gauges and FRL oil — including food-grade oil for food plants. For the rest of the circuit see the «Pneumatic Valves» and «Pneumatic Cylinders» pages.",
+  "sss": [
+   {
+    "s": "Should I buy a two-stage or a three-stage unit?",
+    "c": "The two-stage arrangement (filter + regulator) is today's standard choice; most modern pneumatic cylinders and valves are lubricated for life and need no oil. The three-stage arrangement (filter + regulator + lubricator) is needed for older cylinders, high-cycle machines and percussive hand tools."
+   },
+   {
+    "s": "Can lubrication be stopped once it has been started?",
+    "c": "It should not be. Oil carried in the air gradually washes away the permanent grease applied at the factory. If lubrication then ceases, the surfaces run dry and wear accelerates. Once a circuit has been run lubricated, it should stay lubricated for the rest of its life."
+   },
+   {
+    "s": "How is FRL size selected?",
+    "c": "Port size follows the line diameter and the air flow consumed. Undersizing the unit is the most common mistake: it behaves as a restriction, pressure drops, and the cylinders run slower than expected. When in doubt, going one size up is the safe choice."
+   },
+   {
+    "s": "Water keeps collecting in the filter bowl — is that normal?",
+    "c": "Yes, that is exactly what the filter is for — moisture in the compressed air condenses as it cools. What matters is draining it. Manual-drain bowls should be emptied at the start of each shift; where that is likely to be forgotten, choose an automatic-drain type. Once the bowl overfills, water passes into the circuit."
+   },
+   {
+    "s": "The regulator will not hold the set pressure — what should I check?",
+    "c": "Check the inlet pressure first: a regulator cannot produce an outlet pressure higher than its inlet, and needs at least 1 bar of difference. If the inlet is adequate, the diaphragm may be torn or the spring housing fouled. If the adjusting knob is not locked after setting, vibration will turn it and drift the pressure."
+   }
+  ],
+  "standartlar": [
+   "1/8\" – 1\" port sizes",
+   "Two-stage (FR) and three-stage (FRL) sets",
+   "Manual and automatic drain",
+   "Precision regulators 0.5–8 bar",
+   "Metal and plastic bodies",
+   "Festo and SMC type equivalents",
+   "FRL oil (food-grade available)"
   ]
  },
  {
