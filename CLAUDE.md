@@ -21,13 +21,29 @@ Bu kural, oturum başında verilen "şu dalda geliştir" yönergesini geçersiz 
 
 Next.js 15 (App Router) ile üretilen statik ürün kataloğu. Amaç arama motoru ve
 yapay zekâ görünürlüğü; sayfalar pazarlama içeriğidir, fiyat/stok göstermez.
+TR (varsayılan) / EN / RU üç dilde yayında, ~257 statik sayfa.
 
-- `data/kategoriler.json` — kategori tanımları: metinler, SSS, eşleşme regex'leri.
-  Sayfa içeriğinin tamamı buradan gelir.
-- `data/urunler.json` — Supabase'den alınmış **snapshot**. Kalem sayıları ve
+**Dört sayfa ailesi var, dördü de aynı desende: veri JSON'da, şablon tek dosyada.**
+
+| Aile | Veri | Şablon | Adet |
+|---|---|---|---|
+| Kategori | `data/kategoriler{,.en,.ru}.json` | `app/[lang]/[slug]/` | 28 × 3 |
+| Profil kodu | `data/profiller.json` | `app/[lang]/profil/[kod]/` | 33 × 3 |
+| Marka | `data/markalar.json` | `app/[lang]/marka/[slug]/` | 17 × 3 |
+| Teknik rehber | `data/rehberler.json` | `app/[lang]/rehber/[slug]/` | 4 × 3 |
+
+- `data/urunler.json` — Supabase'den alınmış **snapshot**: kalem sayıları ve
   sayfada gösterilen örnek ürünler. Build sırasında veritabanına bağlanılmaz.
-- `lib/veri.ts` — iki JSON'u tipleyip birleştirir.
-- `app/[lang]/[slug]/page.tsx` — tüm kategori sayfalarını üreten tek şablon.
+- `lib/veri.ts` · `lib/profil.ts` · `lib/marka.ts` · `lib/rehber.ts` — JSON'ları
+  tipler; kategori ve profil çevirileri ayrı dosyada, marka ve rehber çevirileri
+  kaydın içinde (az sayıda kayıt olduğu için senkron tutmak daha kolay).
+- `lib/metin.ts` — arayüz etiketleri (üç dil). Sayfa içeriği burada DEĞİL.
+- `app/sitemap.ts` ve `app/llms.txt/route.ts` — dört aileyi de kapsar; yeni bir
+  aile eklenirse ikisine de yazılmalı.
+
+Yeni sayfa ailesi eklerken sırayla: veri JSON → `lib/` tipi → `lib/metin.ts`
+etiketleri (3 dil) → `lib/schema.ts` JSON-LD üreticisi → rota → sitemap → llms.txt
+→ ana sayfadan iç link.
 
 ### Kategori eşleştirme
 
@@ -36,9 +52,33 @@ yapay zekâ görünürlüğü; sayfalar pazarlama içeriğidir, fiyat/stok göst
 şart — orada ürün adı `k21-040/11 ( 40 x 50 x 8 )` biçimindedir, ne olduğunu
 söyleyen kelime geçmez.
 
-Türkçe "İ" tuzağı: veride hem `SİLİNDİR` hem `SILINDIR` yazımı var. Eşleştirme
-daima regex (`~*` / `imatch`) ile ve `[İIi]` karakter sınıfıyla yapılır; düz
-`ILIKE` kullanılırsa ürünlerin yarısı sessizce kaybolur.
+**Türkçe i/ı tuzağı — iki yarısı var, ikisi de ısırır.**
+
+Birinci yarısı bilinen kısım: veride hem `SİLİNDİR` hem `SILINDIR` yazımı var, o
+yüzden eşleştirme düz `ILIKE` ile değil regex (`~*` / `imatch`) ile yapılır.
+
+İkinci yarısı regex'in kendisiyle ilgili: Postgres `~*` yalnız Unicode'un tanıdığı
+katlamayı yapar ve Türkçe'nin **I → ı katlaması Unicode'da yoktur**. Yani desendeki
+çıplak `I` küçük `ı` harfini görmez. Ölçüldü (30.07.2026):
+
+```
+TAKIM          →  45 kayıt
+TAK[İIiı]M     →  92 kayıt      ← iki katı
+TE BAĞLANTI    → pnömatik rakor 341 kalem
+TE BAĞLANT[İIiı] → 379 kalem    ← 38 kalem sessizce kayıptı
+```
+
+Bu yüzden her i-türevi harf **dört yazımı da** kapsayan `[İIiı]` sınıfıyla yazılır.
+`scripts/turkce-regex.mjs` bunu otomatik yapar ve etkisizdir (idempotent), o yüzden
+`veri-cek.mjs` sorgu anında da uygular. Elle regex yazarken sınıfı eksik bırakmak
+serbest — script düzeltir — ama dosyaya sert hâlini yazmak diff'i okunur tutar.
+
+### Muhtelif tezgâh kartları
+
+Adı tek bir cins ismi olan, ölçüsüz kayıtlar (`MUH.MUH.26` = "HORTUM") gerçek ürün
+değil; listede olmayan bir kalemi hızlı satmak için açılmış tezgâh kartları. 16 tane
+var ve biri aylık 362 hareketle örnek tablonun en üstüne çıkıyordu. `veri-cek.mjs`
+içindeki `GENEL_HARIC` bunları tüm kategorilerden düşer.
 
 ### Veri tazeleme
 
@@ -51,5 +91,29 @@ durur.
 ### Doğrulama
 
 Değişiklikten sonra `npx tsc --noEmit` ve `npm run build` çalıştır. Build tüm
-kategori sayfalarını statik üretir; yeni bir kategori eklendiyse ilgili HTML'in
+sayfaları statik üretir; yeni bir sayfa eklendiyse ilgili HTML'in
 `.next/server/app/tr/` altında oluştuğu görülmelidir.
+
+Build sonrası şu üçü de kontrol edilmeye değer — üçü de sessizce bozulabilen şeyler:
+
+- **Kırık iç link.** Üretilen HTML'deki her `href="/..."` bir dosyaya karşılık
+  gelmeli. 15.000'in üzerinde iç link var; elle bakılamaz.
+- **Tedarikçi adı sızıntısı.** Ürünleri aldığımız firmaların adı hiçbir sayfada
+  geçmemeli — yalnız ürünün üzerindeki marka yayımlanır. `adem karde` ve
+  `hidrotek` (sonunda `nik` olmadan) desenleri build çıktısında aranmalı.
+  Not: `hidrotek` araması `kademe` gibi kelimelere takılmasın diye kelime sınırı
+  kullanılmalı.
+- **Yinelenen `<title>`.** Aynı başlık iki sayfada varsa biri diğerini yer.
+  Aynı `<h1>`ın üç dilde tekrarlaması normaldir (marka adları çevrilmez).
+
+### Doğrulanamayan bilgi boş bırakılır
+
+Kastaş profil kodlarının işlevi (`ad` alanı) yalnız Kastaş kataloğundan
+doğrulanabilen kodlarda doludur; 33 profilin 18'inde boştur ve sayfada bunun neden
+boş olduğu yazar. Aynı disiplin marka metinlerinde de geçerli: markanın kurumsal
+geçmişi hakkında doğrulanamayan iddia yazılmaz, yalnız **bizde gerçekten stokta
+olan üründen** yola çıkılır.
+
+Buna karşılık veriden TÜRETİLEBİLEN bilgi türetilir: profilin mil mi piston mu
+tarafına takıldığı, ölçü sırasından okunur (iç→dış = mil, dış→iç = piston). Bu
+kural Kastaş kataloğuyla karşılaştırılıp doğrulandı.
