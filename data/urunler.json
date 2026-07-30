@@ -39,14 +39,12 @@
     {
      "kod": "AD-0808-HE",
      "ad": "HORTUM EKİ 5/16",
-     "model": "5/16",
-     "marka": "Adem Kardeşler"
+     "model": "5/16"
     },
     {
      "kod": "AD-1010-HE",
      "ad": "HORTUM EKİ 3/8",
-     "model": "3/8",
-     "marka": "Adem Kardeşler"
+     "model": "3/8"
     },
     {
      "kod": "MUH.246",
@@ -78,13 +76,11 @@
     {
      "kod": "AD-1313-HE",
      "ad": "HORTUM EKİ 1/2",
-     "marka": "Adem Kardeşler",
      "model": "1/2"
     },
     {
      "kod": "AD-0606-HE",
      "ad": "HORTUM EKİ 1/4",
-     "marka": "Adem Kardeşler",
      "model": "1/4"
     }
    ]
@@ -95,14 +91,12 @@
     {
      "kod": "AD-1324-MSD",
      "ad": "METRİK SOMUNLU DÜZ HORTUM RAKORU 1/2 M24X1,5 16S",
-     "model": "M24X1,5 16S",
-     "marka": "Adem Kardeşler"
+     "model": "M24X1,5 16S"
     },
     {
      "kod": "AD-1324-MS90",
      "ad": "METRİK SOMUNLU 90 HORTUM RAKORU 1/2 M24x1,5 16S",
-     "model": "M24x1,5 16S",
-     "marka": "Adem Kardeşler"
+     "model": "M24x1,5 16S"
     },
     {
      "kod": "HF.PN10AOL90",
@@ -164,8 +158,7 @@
     {
      "kod": "AD-1018-MSD",
      "ad": "METRİK SOMUNLU DÜZ HORTUM RAKORU 3/8 M18x1,5 12L",
-     "model": "M18x1,5 12L",
-     "marka": "Adem Kardeşler"
+     "model": "M18x1,5 12L"
     },
     {
      "kod": "HF.PN10HS08",
@@ -247,26 +240,22 @@
     {
      "kod": "AD-0614-OSD",
      "ad": "ORFS SOMUNLU DÜZ HORTUM RAKORU 1/4 9/16",
-     "model": "1/4 9/16",
-     "marka": "Adem Kardeşler"
+     "model": "1/4 9/16"
     },
     {
      "kod": "AD-0617-OSD",
      "ad": "ORFS SOMUNLU DÜZ HORTUM RAKORU 1/4 11/16",
-     "model": "1/4 11/16",
-     "marka": "Adem Kardeşler"
+     "model": "1/4 11/16"
     },
     {
      "kod": "AD-1017-OSD",
      "ad": "ORFS SOMUNLU DÜZ HORTUM RAKORU 3/8 11/16",
-     "model": "3/8 11/16",
-     "marka": "Adem Kardeşler"
+     "model": "3/8 11/16"
     },
     {
      "kod": "AD.1930.OE",
      "ad": "ORFS ERKEK HORTUM RAKORU 3/4 13/16",
-     "model": "3/4 13/16",
-     "marka": "Adem Kardeşler"
+     "model": "3/4 13/16"
     },
     {
      "kod": "MUH.173",
@@ -281,8 +270,7 @@
     {
      "kod": "AD-1930-OS90",
      "ad": "ORFS SOMUNLU 90 HORTUM RAKORU 3/4 13/16",
-     "model": "3/4 13/16",
-     "marka": "Adem Kardeşler"
+     "model": "3/4 13/16"
     }
    ]
   },
@@ -304,14 +292,12 @@
     {
      "kod": "AD-1314-RWN",
      "ad": "BSP-UNF NİPEL 1/4 9/16",
-     "model": "1/4 9/16",
-     "marka": "Adem Kardeşler"
+     "model": "1/4 9/16"
     },
     {
      "kod": "AD-1316-RMN",
      "ad": "BSP-METRİK PFX NİPEL 1/4 M16x1,5 10L",
-     "model": "M16x1,5 10L",
-     "marka": "Adem Kardeşler"
+     "model": "M16x1,5 10L"
     },
     {
      "kod": "EKO.REK.PU-0800",
@@ -368,8 +354,7 @@
     {
      "kod": "AD-2124-RMN",
      "ad": "BSP-METRİK PFX NİPEL 1/2 M24x1,5 16S",
-     "model": "M24x1,5 16S",
-     "marka": "Adem Kardeşler"
+     "model": "M24x1,5 16S"
     },
     {
      "kod": "EKO.REK.PU-1000",
@@ -424,20 +409,17 @@
     {
      "kod": "AD-1018-RAT",
      "ad": "BSP PFX ALYANBAŞLI KÖRTAPA 1/8",
-     "model": "1/8",
-     "marka": "Adem Kardeşler"
+     "model": "1/8"
     },
     {
      "kod": "AD-24-MEKT",
      "ad": "METRİK ERKEK TAPA M24x1,5 16S",
-     "model": "M24x1,5 16S",
-     "marka": "Adem Kardeşler"
+     "model": "M24x1,5 16S"
     },
     {
      "kod": "AD-3819-EKT",
      "ad": "BSP KÖRTAPA 3/8",
-     "model": "3/8",
-     "marka": "Adem Kardeşler"
+     "model": "3/8"
     },
     {
      "kod": "SARI.1002",
@@ -479,8 +461,7 @@
     {
      "kod": "AD-1319-RAT",
      "ad": "BSP PFX ALYANBAŞLI KÖRTAPA 1/4",
-     "model": "1/4",
-     "marka": "Adem Kardeşler"
+     "model": "1/4"
     },
     {
      "kod": "SARI.1003",
