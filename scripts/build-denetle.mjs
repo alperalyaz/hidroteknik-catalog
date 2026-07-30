@@ -21,9 +21,25 @@ import { readdirSync, readFileSync, statSync } from 'node:fs'
 import { join } from 'node:path'
 
 const KOK = '.next/server/app'
+
+/**
+ * TEDARİKÇİ ADLARI — hiçbiri hiçbir sayfada geçemez.
+ *
+ * Bunlar ürünü aldığımız toptancılar; MARKA DEĞİLLER ve adları ticari sırdır.
+ * Yalnız ürünün üzerindeki gerçek marka yayımlanır (HansaFlex, Kastaş, Pemaks…
+ * bunlar marka, listede yok). Ürün ADLARI ve KODLARI yayımlanabilir — ürün
+ * adlarında tedarikçi adı geçmiyor (ölçüldü: 6.973 + 3.480 + 3.756 kalemde 0).
+ *
+ * TEK İSTİSNA GDC: 1.086 kalemin HEPSİNİN kodu "GDC-" ile başlıyor, yani o
+ * kodlar tedarikçi adını kendi içinde taşıyor. Bu yüzden GDC kodları — ürün
+ * adları serbest olsa da — yayımlanamaz; desen burada onu da tutar.
+ */
 const YASAK = [
   { ad: 'Adem Kardeşler', re: /adem\s*karde/i },
   { ad: 'Hidrotek (tedarikçi)', re: /\bhidrotek\b(?!nik)/i },
+  { ad: 'Arıca', re: /\bar[ıi]ca\b/i },
+  { ad: 'Teksan', re: /\bteksan\b/i },
+  { ad: 'GDC', re: /\bgdc\b/i },
 ]
 
 function htmlDosyalari(dizin, biriken = []) {
