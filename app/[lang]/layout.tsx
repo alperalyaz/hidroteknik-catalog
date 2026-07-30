@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Script from 'next/script'
 import { DILLER, DIL_ADI, FIRMA, ANA_SITE, HESAPLA_URL, type Dil } from '@/lib/site'
 import { METIN } from '@/lib/metin'
 import { isletmeSchema, jsonLd } from '@/lib/schema'
@@ -122,6 +123,33 @@ export default async function DilLayout({
             <p className="footer-alt">{m.footerAlt(FIRMA.kurulus)}</p>
           </div>
         </footer>
+
+        {/*
+          Hidroteknik AI canlı destek widget'ı — sağ altta launcher açar, tıklanınca
+          chat.hidroteknik.com.tr/embed iframe'i gelir. Kataloğun tek harici betiği.
+
+          NEDEN next/script + lazyOnload (ham <script async> DEĞİL):
+          - lazyOnload betiği window 'load' olayından SONRA, tarayıcı boşa düştüğünde
+            (requestIdleCallback) enjekte eder. Katalog tamamen statik ve hafif; widget
+            asla LCP ile ya da sayfa render'ıyla bant genişliği için yarışmaz.
+          - Ham <script async> daha erken indirilirdi: React 19 <script async src> etiketini
+            "hoistable resource" sayıp <head>'e taşır, yani HTML ayrıştırılırken indirmeye
+            başlanır — <body> sonuna yazmış olmamız bunu değiştirmez. Kritik yoldan uzak
+            durmanın tek güvenilir yolu lazyOnload.
+          - Bedeli: betik yalnız hidrasyondan sonra çalışır, HTML'de <script> etiketi
+            olarak GÖRÜNMEZ (adres RSC yükünde taşınır, istemcide enjekte edilir).
+            JS kapalı tarayıcıda widget çıkmaz; sayfa içeriği zaten JS'siz tamdır.
+
+          ÇİFT YÜKLEME: üç kat koruma var. (1) Bu layout istemci-taraflı gezinmede
+          remount olmaz. (2) Olsa bile next/script aynı src'yi ScriptCache ile bir kez
+          enjekte eder. (3) widget.js kendi içinde window.__hidroteknikAiYuklendi bayrağı
+          taşır. Widget dili <html lang>'den okunur — o da hemen yukarıda ayarlanıyor.
+        */}
+        <Script
+          id="hidroteknik-ai-widget"
+          src="https://chat.hidroteknik.com.tr/widget.js"
+          strategy="lazyOnload"
+        />
       </body>
     </html>
   )
