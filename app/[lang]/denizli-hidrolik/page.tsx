@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { DILLER, SITE_URL, FIRMA, ANA_SITE } from '@/lib/site'
+import { SITE_URL, FIRMA, ANA_SITE } from '@/lib/site'
 import { KATEGORILER, kategoriUrunleri } from '@/lib/veri'
 import { sssSchema, kirintiSchema, jsonLd } from '@/lib/schema'
 
@@ -12,10 +12,15 @@ import { sssSchema, kirintiSchema, jsonLd } from '@/lib/schema'
  * tarafından "doorway page" sayılır ve cezalandırılır. Yeni bir şehir sayfası
  * açılacaksa, o şehre GERÇEKTEN özgü içerik yazılmalıdır; yazılamıyorsa sayfa
  * açılmamalıdır.
+ *
+ * ⚠ YALNIZ TR: Bu, "Denizli'de hidrolikçi" arayan Türkçe kullanıcı için yerel
+ * SEO sayfasıdır — İngilizce/Rusça arayan bir ihracat müşterisinin arama
+ * niyeti farklıdır (yerel değil, "Türkiye'den tedarik" arar). DILLER genelinde
+ * çoğaltmak yerine bilerek yalnız 'tr' için üretiliyor.
  */
 
 export function generateStaticParams() {
-  return DILLER.map((lang) => ({ lang }))
+  return [{ lang: 'tr' }]
 }
 
 const SSS = [
@@ -59,7 +64,7 @@ export default async function DenizliHidrolik({
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(sssSchema(SSS))} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(sssSchema(SSS, 'tr'))} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={jsonLd(

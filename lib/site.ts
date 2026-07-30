@@ -34,7 +34,26 @@ export const FIRMA = {
   logo: 'https://files.cdn-files-a.com/uploads/5644137/400_6865986816fbc.png',
 } as const
 
-/** Desteklenen diller. Türkçe önce tamamlanır; en/ru sonra açılır (bkz. yol haritası). */
-export const DILLER = ['tr'] as const
+/** Desteklenen diller. */
+export const DILLER = ['tr', 'en', 'ru'] as const
 export type Dil = (typeof DILLER)[number]
 export const VARSAYILAN_DIL: Dil = 'tr'
+
+/** Dil değiştirici ve <html lang> için görünen ad. */
+export const DIL_ADI: Record<Dil, string> = { tr: 'Türkçe', en: 'English', ru: 'Русский' }
+
+/**
+ * Hidrolik hesaplayıcının dile göre adresi. İngilizcesi ayrı alan adında yayında;
+ * Rusça sürüm yok, TR'ye düşer (araç sayısal olduğu için dil engeli düşük).
+ */
+export const HESAPLA_URL: Record<Dil, string> = {
+  tr: 'https://hesapla.hidroteknik.com.tr',
+  en: 'https://calculate.hidroteknik.com.tr',
+  ru: 'https://hesapla.hidroteknik.com.tr',
+}
+
+/** Sayı formatlama, dile göre binlik ayracı. */
+export function sayiFormat(n: number, lang: Dil): string {
+  const locale = { tr: 'tr-TR', en: 'en-US', ru: 'ru-RU' }[lang]
+  return n.toLocaleString(locale)
+}

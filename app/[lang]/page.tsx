@@ -1,48 +1,72 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { SITE_URL, FIRMA, ANA_SITE } from '@/lib/site'
-import { KATEGORILER, kategoriUrunleri } from '@/lib/veri'
+import { DILLER, SITE_URL, FIRMA, ANA_SITE, HESAPLA_URL, sayiFormat, type Dil } from '@/lib/site'
+import { METIN } from '@/lib/metin'
+import { kategorilerIcin, kategoriUrunleri } from '@/lib/veri'
 
-export const metadata: Metadata = {
-  title: 'Hidrolik ve Pnömatik Ürün Kataloğu',
-  description:
-    '1984’ten beri endüstriyel hidrolik ve pnömatik malzeme tedarikçisi Hidroteknik’in ürün kataloğu: hidrolik hortum, rakor, silindir, pompa, valf, keçe/nutring ve o-ring. Türkiye geneli sevkiyat.',
-  alternates: { canonical: `${SITE_URL}/tr` },
+const BASLIK: Record<Dil, string> = {
+  tr: 'Hidrolik ve Pnömatik Ürün Kataloğu',
+  en: 'Hydraulic & Pneumatic Product Catalog',
+  ru: 'Каталог гидравлической и пневматической продукции',
+}
+const ACIKLAMA: Record<Dil, string> = {
+  tr: '1984’ten beri endüstriyel hidrolik ve pnömatik malzeme tedarikçisi Hidroteknik’in ürün kataloğu: hidrolik hortum, rakor, silindir, pompa, valf, keçe/nutring ve o-ring. Türkiye geneli sevkiyat.',
+  en: "Hidroteknik's product catalog — industrial hydraulic and pneumatic parts supplier since 1984: hydraulic hose, fittings, cylinders, pumps, valves, seals/rod seals and O-rings. Worldwide shipping by air cargo.",
+  ru: 'Каталог продукции Hidroteknik — поставщика промышленных гидравлических и пневматических комплектующих с 1984 года: гидравлические рукава, фитинги, цилиндры, насосы, клапаны, уплотнения и O-ring. Доставка по всему миру авиакарго.',
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>
+}): Promise<Metadata> {
+  const { lang: langHam } = await params
+  const lang = langHam as Dil
+  const url = `${SITE_URL}/${lang}`
+  return {
+    title: BASLIK[lang],
+    description: ACIKLAMA[lang],
+    alternates: {
+      canonical: url,
+      languages: Object.fromEntries(DILLER.map((d) => [d, `${SITE_URL}/${d}`])),
+    },
+  }
 }
 
 export default async function KatalogAnaSayfa({ params }: { params: Promise<{ lang: string }> }) {
-  const { lang } = await params
-  const toplamKalem = KATEGORILER.reduce((a, k) => a + kategoriUrunleri(k.slug).toplam, 0)
+  const { lang: langHam } = await params
+  const lang = langHam as Dil
+  const m = METIN[lang]
+  const kategoriler = kategorilerIcin(lang)
+  const toplamKalem = kategoriler.reduce((a, k) => a + kategoriUrunleri(k.slug).toplam, 0)
 
   return (
     <>
       <div className="hero">
         <div className="sarmal">
-          <h1>Hidrolik ve pnömatik ürün kataloğu</h1>
-          <p className="ozet">
-            {FIRMA.kurulus}’ten beri endüstriyel hidrolik ve pnömatik malzeme tedarik ediyoruz.
-            Aşağıdaki ürün gruplarında toplam {toplamKalem.toLocaleString('tr-TR')} kalem stok;
-            Türkiye geneline sevkiyat ve ihracat.
-          </p>
+          <h1>{m.anaSayfaBaslik}</h1>
+          <p className="ozet">{m.anaSayfaOzet(FIRMA.kurulus, sayiFormat(toplamKalem, lang))}</p>
           <div className="rozetler">
-            <span className="rozet">1984’ten beri</span>
-            <span className="rozet">Hortum presleme yerinde</span>
-            <span className="rozet pirinc">Aynı gün teklif</span>
+            <span className="rozet">{m.rozetKurulus(FIRMA.kurulus)}</span>
+            <span className="rozet">{m.rozetPreslemeYerinde}</span>
+            <span className="rozet pirinc">{m.rozetAyniGunTeklif}</span>
           </div>
         </div>
       </div>
 
       <div className="sarmal">
         <section>
-          <h2>Ürün grupları</h2>
+          <h2>{m.urunGruplari}</h2>
           <div className="kartlar">
-            {KATEGORILER.map((k) => {
+            {kategoriler.map((k) => {
               const adet = kategoriUrunleri(k.slug).toplam
               return (
                 <Link key={k.slug} href={`/${lang}/${k.slug}`} className="kart">
                   <b>{k.ad}</b>
                   <span>{k.ozet.split('.')[0]}.</span>
-                  <em>{adet.toLocaleString('tr-TR')} kalem</em>
+                  <em>
+                    {sayiFormat(adet, lang)} {m.kalem}
+                  </em>
                 </Link>
               )
             })}
@@ -50,32 +74,17 @@ export default async function KatalogAnaSayfa({ params }: { params: Promise<{ la
         </section>
 
         <section>
-          <h2>Neden Hidroteknik?</h2>
+          <h2>{m.nedenBaslik}</h2>
           <div className="metin">
-            <p>
-              Endüstriyel hidrolikte doğru parçayı bulmak, çoğu zaman kataloğu taramaktan değil,
-              ölçüyü ve diş tipini doğru okumaktan geçer. Metrik, BSP, BSPT ve ORFS dişler gözle
-              birbirine benzer; yanlış eşleştirilen bağlantı ilk basınçta sızdırır.
-            </p>
-            <p>
-              Bu yüzden satış ekibimiz yalnızca stok kodu okumaz: elinizdeki parçanın fotoğrafından
-              veya ölçüsünden doğru muadili belirler. Hortum presleme işlemi kendi tesisimizde
-              yapıldığı için standart ölçülerde teslim genellikle aynı gün gerçekleşir.
-            </p>
-            <p>
-              Hidrolik hesaplamalarınız için{' '}
-              <a href="https://hesapla.hidroteknik.com.tr">ücretsiz hesaplayıcımızı</a> ve kurumsal
-              bilgiler için <a href={ANA_SITE}>hidroteknik.com.tr</a> adresini kullanabilirsiniz.
-            </p>
+            <p>{m.nedenP1}</p>
+            <p>{m.nedenP2}</p>
+            <p dangerouslySetInnerHTML={{ __html: m.nedenP3(ANA_SITE, HESAPLA_URL[lang]) }} />
           </div>
         </section>
 
         <div className="teklif">
-          <h2>Aradığınız ürünü bulamadınız mı?</h2>
-          <p>
-            Katalogda görünen kalemler stoğumuzun bir bölümüdür. İhtiyacınızı iletin; stokta yoksa
-            tedarik süresiyle birlikte bilgi verelim.
-          </p>
+          <h2>{m.bulamadinizBaslik}</h2>
+          <p>{m.bulamadinizMetin}</p>
           <div className="teklif-butonlar">
             <a className="btn btn-birincil" href={`tel:${FIRMA.telefonHam}`}>
               {FIRMA.telefon}

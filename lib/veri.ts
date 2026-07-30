@@ -1,5 +1,8 @@
 import kategorilerJson from '@/data/kategoriler.json'
+import kategorilerEnJson from '@/data/kategoriler.en.json'
+import kategorilerRuJson from '@/data/kategoriler.ru.json'
 import urunlerJson from '@/data/urunler.json'
+import type { Dil } from './site'
 
 export type Sss = { s: string; c: string }
 /**
@@ -44,15 +47,71 @@ export type Kategori = {
 }
 export type Urun = { kod: string; ad: string; marka?: string; model?: string }
 
+/**
+ * Çeviri dosyalarının (kategoriler.en.json / kategoriler.ru.json) şekli.
+ * Yalnız KULLANICIYA GÖRÜNEN alanları taşır — eşleştirme regex'leri (eslesme,
+ * haric, eslesmeKod...) TR verisine özgüdür, çeviriye girmez.
+ */
+type ProfilCeviri = { kod: string; ad?: string; yer: string }
+type KategoriCeviri = {
+  slug: string
+  ad: string
+  h1: string
+  ozet: string
+  giris: string
+  sss: Sss[]
+  standartlar?: string[]
+  profiller?: ProfilCeviri[]
+  profilNot?: string
+}
+
+const CEVIRILER: Record<Dil, KategoriCeviri[]> = {
+  tr: [],
+  en: kategorilerEnJson as KategoriCeviri[],
+  ru: kategorilerRuJson as KategoriCeviri[],
+}
+
 const urunler = urunlerJson.kategoriler as Record<
   string,
   { toplamUrun: number; urunler: Urun[] } | undefined
 >
 
+/** TR temel veri — dil-bağımsız alanlar (eşleştirme, markalar, profil kod/adet/örnek) buradan gelir. */
 export const KATEGORILER = kategorilerJson as Kategori[]
 
-export function kategoriBul(slug: string): Kategori | undefined {
-  return KATEGORILER.find((k) => k.slug === slug)
+/**
+ * Bir kategoriyi istenen dilde döndürür. Çeviri dosyasında slug bulunamazsa
+ * veya tr isteniyorsa TR içerik aynen döner — eksik çeviri sayfayı boş
+ * bırakmaz, sessizce TR'ye düşer.
+ */
+export function kategoriIcerik(k: Kategori, lang: Dil): Kategori {
+  if (lang === 'tr') return k
+  const c = CEVIRILER[lang].find((x) => x.slug === k.slug)
+  if (!c) return k
+  return {
+    ...k,
+    ad: c.ad ?? k.ad,
+    h1: c.h1 ?? k.h1,
+    ozet: c.ozet ?? k.ozet,
+    giris: c.giris ?? k.giris,
+    sss: c.sss ?? k.sss,
+    standartlar: c.standartlar ?? k.standartlar,
+    profiller: k.profiller?.map((p) => {
+      const pc = c.profiller?.find((x) => x.kod === p.kod)
+      return pc ? { ...p, ad: pc.ad ?? p.ad, yer: pc.yer ?? p.yer } : p
+    }),
+    profilNot: c.profilNot ?? k.profilNot,
+  }
+}
+
+export function kategoriBul(slug: string, lang: Dil = 'tr'): Kategori | undefined {
+  const k = KATEGORILER.find((k) => k.slug === slug)
+  return k ? kategoriIcerik(k, lang) : undefined
+}
+
+/** Nav/kart listeleri için tüm kategoriler, istenen dilde. */
+export function kategorilerIcin(lang: Dil): Kategori[] {
+  return lang === 'tr' ? KATEGORILER : KATEGORILER.map((k) => kategoriIcerik(k, lang))
 }
 
 /**

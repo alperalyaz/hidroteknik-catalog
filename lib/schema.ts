@@ -56,7 +56,7 @@ export function isletmeSchema() {
 }
 
 /** Kategori sayfası: ürün listesi. Fiyat YAYINLANMAZ (B2B, müşteriye göre değişir). */
-export function kategoriSchema(k: Kategori, urunler: Urun[], url: string) {
+export function kategoriSchema(k: Kategori, urunler: Urun[], url: string, lang: string, katalogAdi: string) {
   return {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
@@ -64,7 +64,8 @@ export function kategoriSchema(k: Kategori, urunler: Urun[], url: string) {
     url,
     name: k.h1,
     description: k.ozet,
-    isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}/#site`, name: `${FIRMA.ad} Ürün Kataloğu` },
+    inLanguage: lang,
+    isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}/#site`, name: `${FIRMA.ad} ${katalogAdi}` },
     about: { '@id': ISLETME_ID },
     provider: { '@id': ISLETME_ID },
     mainEntity: {
@@ -100,10 +101,11 @@ export function kategoriSchema(k: Kategori, urunler: Urun[], url: string) {
   }
 }
 
-export function sssSchema(sss: { s: string; c: string }[]) {
+export function sssSchema(sss: { s: string; c: string }[], lang?: string) {
   return {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
+    ...(lang ? { inLanguage: lang } : {}),
     mainEntity: sss.map((x) => ({
       '@type': 'Question',
       name: x.s,

@@ -18,6 +18,9 @@ export function GET() {
 > Merkez: ${FIRMA.adres.ilce} / ${FIRMA.adres.il}, Türkiye. Türkiye geneli sevkiyat ve ihracat.
 > Bu katalogda ${toplam.toLocaleString('tr-TR')} kalem ürün listelenmektedir: hidrolik hortum,
 > rakor, valf, pompa, hidrolik ve pnömatik silindir, keçe/nutring ve o-ring.
+> Katalog Türkçe (varsayılan), İngilizce ve Rusça dillerinde yayındadır.
+> This catalog is also available in English: ${SITE_URL}/en
+> Каталог также доступен на русском языке: ${SITE_URL}/ru
 
 ## İletişim
 

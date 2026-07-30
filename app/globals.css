@@ -43,7 +43,12 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--pirinc); outlin
 .marka { display: flex; align-items: baseline; gap: 10px; text-decoration: none; color: var(--murekkep); }
 .marka b { font-size: 1.18rem; letter-spacing: -0.02em; }
 .marka span { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--murekkep-3); }
-.ustbar-tel { margin-left: auto; font-family: var(--mono); font-size: 0.92rem; font-weight: 600; text-decoration: none; color: var(--lacivert); white-space: nowrap; }
+.ustbar-sag { margin-left: auto; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.ustbar-tel { font-family: var(--mono); font-size: 0.92rem; font-weight: 600; text-decoration: none; color: var(--lacivert); white-space: nowrap; }
+.dil-degistirici { font-size: 0.82rem; color: var(--murekkep-3); white-space: nowrap; }
+.dil-degistirici a { color: var(--murekkep-3); text-decoration: none; }
+.dil-degistirici a:hover { color: var(--lacivert); text-decoration: underline; }
+.dil-degistirici b { color: var(--murekkep); }
 
 /* ── başlık alanı ── */
 .hero { background: var(--yuzey); border-bottom: 1px solid var(--cizgi); padding: 40px 0 34px; }
