@@ -1,1 +1,574 @@
-[]
+[
+ {
+  "slug": "hidrolik-hortum",
+  "ad": "Hydraulic Hose",
+  "h1": "Hydraulic Hose and Fittings",
+  "ozet": "Hydraulic hose: 1SN, 2SN, 2SC, 4SP, 4SH and R6 types. Gates, Alfagomma, HansaFlex and Vereks. On-site crimping, same-day service.",
+  "giris": "Hydraulic hose is the flexible connecting element that carries fluid through the system without losing pressure. Selecting the right hose depends on three values: working pressure, fluid temperature, and inner diameter. Getting any one of these wrong leads to premature hose fatigue or a risk of rupture.\n\nHidroteknik stocks 1SN and 2SN single/double-wire-braided hose, 4SP and 4SH multi-spiral hose, and thermoplastic hose types at its warehouse in Denizli. Hose crimping is done in-house; standard sizes are generally delivered the same day.\n\nThe Forcestream, Seltex, and Ultimate lines, along with general-purpose hoses such as washing, spraying, and fuel applications, belong to the Sel code family and are listed in a separate group: see \"Sel Hose\".",
+  "sss": [
+   {
+    "s": "What is the difference between 1SN and 2SN hose?",
+    "c": "1SN has a single steel wire braid and is intended for medium-pressure applications. 2SN has a double wire braid and withstands roughly twice the working pressure at the same inner diameter. At the same size, 2SN has a larger outer diameter and bend radius; this should be taken into account in tight installations."
+   },
+   {
+    "s": "How is hydraulic hose size determined?",
+    "c": "Size is specified by the hose's inner diameter (for example DN12, 1/2 inch). Flow rate and inner diameter together determine flow velocity; pressure lines are generally kept in the 3-6 m/s range. If the inner diameter is chosen too small, pressure loss and heating increase."
+   },
+   {
+    "s": "Is hose crimping done the same day?",
+    "c": "For standard size and fitting combinations, crimping is generally completed the same day. Turnaround varies for jobs requiring custom lengths, special fittings, or out-of-stock types; contact our sales team for exact timing."
+   },
+   {
+    "s": "What is the service life of a hydraulic hose?",
+    "c": "Hose service life depends on working pressure, temperature, bend radius, and vibration. Periodic inspection is recommended for lines that run continuously at maximum pressure. Cracking, blistering, or exposed wire on the outer cover indicates the hose needs to be replaced."
+   }
+  ],
+  "standartlar": [
+   "SAE 100 R1AT / EN 853 1SN",
+   "SAE 100 R2AT / EN 853 2SN",
+   "EN 857 2SC",
+   "EN 856 4SP / 4SH",
+   "SAE 100 R6",
+   "DIN 20022"
+  ]
+ },
+ {
+  "slug": "sel-hortum",
+  "ad": "Sel Hose",
+  "h1": "Sel Hose — Hydraulic and General-Purpose Hose Lines",
+  "ozet": "Sel code family: Forcestream and Seltex hydraulic hose, Ultimate and Powerstream pressure lines; washing, spraying, fuel, and suction hoses. 235 items.",
+  "giris": "Sel is a code family that covers two distinct groups: high-pressure hydraulic hose lines (Forcestream, Seltex, Ultimate, Powerstream, TwinStream) and general-purpose industrial hoses (water, washing, spraying, fuel, suction, steam).\n\nFor hydraulic lines, selection depends on three values: pressure class (R1AT/R2AT, 1SN/2SN, 2SC, R9/R15), inner diameter, and temperature. Forcestream R1AT and R2AT are single/double-braided medium-pressure lines; Ultimate 1SN/2SN is an equivalent line in the same class; Powerstream and TwinStream (twin line) are for jobs that require higher pressure or special installation.\n\nFor general-purpose hoses, the intended use is the deciding factor rather than pressure class: washing lines call for flexibility, spraying (Odeon) for chemical resistance, fuel lines for a fuel-resistant inner lining, and suction lines for crush resistance. Items such as spiral wrap guards, PTFE sleeves, and hose end fittings are accessories for these lines, not the hose itself, and are kept as separate stock lines.\n\nIf you're looking for continuous-pressure hydraulic hose, see the Hydraulic Hose page, or the Pneumatic Hose page for air lines; the lines here are grouped separately because they belong to the Sel code family.",
+  "sss": [
+   {
+    "s": "What is the difference between Forcestream, Seltex, and Ultimate?",
+    "c": "All three are single/double-braided medium-pressure hydraulic hose lines and can be used interchangeably within the same pressure classes (R1AT/1SN, R2AT/2SN). The difference between them is the manufacturer line — the technical class is the same; whichever is in stock is shipped, and substitution causes no issue as long as size and pressure class match."
+   },
+   {
+    "s": "Why are Sel hoses on a separate page?",
+    "c": "Sel is a code family that groups both hydraulic pressure lines and general-purpose hoses — such as washing, spraying, and fuel — under the same code. Since this mixed structure would disrupt the scope of the hydraulic hose and pneumatic hose pages, it is listed on its own page."
+   },
+   {
+    "s": "What sizing information is needed for non-pressure hoses (water, spraying, washing)?",
+    "c": "Inner diameter (usually in inches: 3/8, 1/2, 3/4) and length are sufficient. For lines carrying chemicals (spraying, fuel), specify the substance being carried; the inner lining material varies accordingly."
+   },
+   {
+    "s": "What are spiral wrap guards and hose end fittings?",
+    "c": "A spiral wrap guard is a polyethylene wrap that covers the hose on the outside to protect it against abrasion and scuffing; it is not the hose itself. The hose end fitting is the hard plastic/metal coupling body fitted onto the hose end. Both are sold as separate stock items and can also be ordered together with the hose."
+   }
+  ],
+  "standartlar": [
+   "SAE 100 R1AT / EN 853 1SN",
+   "SAE 100 R2AT / EN 853 2SN",
+   "EN 857 2SC",
+   "SAE 100 R9 / R15",
+   "General-purpose (water, spraying, washing, fuel, suction)"
+  ]
+ },
+ {
+  "slug": "hidrolik-rakor",
+  "ad": "Hydraulic Fittings",
+  "h1": "Hydraulic Fittings and Connectors",
+  "ozet": "Hydraulic fittings in metric, BSP/BSPT, ORFS, and JIC thread types. 1,400+ items including elbows, nipples, plugs, and swivel fittings.",
+  "giris": "A fitting is the component that joins the parts of a hydraulic line together in a leak-tight manner. The most common mistake in the industry stems from how similar different thread standards look: metric, BSP, BSPT, ORFS, and JIC threads can look nearly identical to the eye, but their sealing principles differ.\n\nBSP is a parallel thread whose seal is typically made with a gasket or a cone seat, while BSPT is a tapered thread where the thread itself forms the seal. ORFS, on the other hand, uses face sealing via an O-ring and is preferred in high-vibration systems. A mismatched thread will leak under initial pressure or damage the threads.",
+  "sss": [
+   {
+    "s": "What is the difference between BSP and BSPT?",
+    "c": "BSP is a parallel (straight) thread; sealing is provided not by the thread itself but by a gasket, O-ring, or cone-seat face. BSPT, on the other hand, is tapered; as the thread is tightened, a wedging effect creates the seal. Since they share the same pitch, the two can be screwed together, but this combination does not provide a reliable seal."
+   },
+   {
+    "s": "Where are ORFS fittings used?",
+    "c": "ORFS (O-Ring Face Seal) provides sealing with an O-ring compressed between two flat faces. It is preferred in construction equipment and mobile hydraulic applications with high vibration, because it is more reliable than thread sealing."
+   },
+   {
+    "s": "How do I determine fitting size?",
+    "c": "Thread outer diameter is measured with calipers, and thread pitch is determined with a thread gauge. Measuring diameter alone is not enough — threads of the same diameter can have different pitches. When in doubt, the fastest way is to bring in the existing part and show it to our sales team."
+   }
+  ],
+  "standartlar": [
+   "DIN 2353 (L / S series)",
+   "BSP (ISO 228)",
+   "BSPT (ISO 7)",
+   "Metric",
+   "JIC 37°"
+  ]
+ },
+ {
+  "slug": "orfs-rakor",
+  "ad": "ORFS Fittings",
+  "h1": "ORFS Fittings (O-Ring Face Seal)",
+  "ozet": "ORFS straight, elbow, tee, and plug fittings. 230+ items for high-vibration mobile hydraulic applications.",
+  "giris": "ORFS (O-Ring Face Seal) is a connection system that achieves sealing not through the thread but with an O-ring compressed between two flat faces. This detail becomes decisive in high-vibration applications: connections relying on thread sealing tend to loosen over time under vibration, whereas in ORFS the sealing element is independent of the thread.\n\nFor this reason, ORFS is the common standard in construction equipment, agricultural machinery, and mobile hydraulics. During assembly, care should be taken that the O-ring seats properly in its groove and that the faces are free of burrs; if the O-ring is pinched or pushed out of its groove, the connection will leak under initial pressure. Keeping spare O-rings on hand saves time in the field.",
+  "sss": [
+   {
+    "s": "Why is ORFS considered more reliable than JIC?",
+    "c": "JIC 37° seals via conical surface contact; vibration and repeated assembly fatigue this surface over time. In ORFS, sealing is achieved with an elastomer O-ring, making it more tolerant of surface variation and vibration. This is why it is preferred in mobile hydraulics."
+   },
+   {
+    "s": "What material should the ORFS O-ring be made of?",
+    "c": "NBR is sufficient for standard mineral-based hydraulic oil. FKM (Viton) is chosen for high temperatures or special fluids. When replacing an O-ring, the material must be correct in addition to the size."
+   },
+   {
+    "s": "My ORFS connection is leaking — what should I check first?",
+    "c": "Almost always the O-ring. It may have popped out of its groove, been pinched, cut, or gone missing. Tightening the nut further is not the solution — over-tightening cuts the O-ring. The connection should be disassembled and the O-ring visually inspected."
+   }
+  ],
+  "standartlar": [
+   "ORFS (SAE J1453)",
+   "BSP – ORFS transition"
+  ]
+ },
+ {
+  "slug": "nipel",
+  "ad": "Nipples and Connectors",
+  "h1": "Nipples, Connectors, and Adapters",
+  "ozet": "Coupling nipples, reducing nipples, extension nipples, and transition adapters; 570+ items in BSP, metric, and UNF threads.",
+  "giris": "A nipple is a male-male threaded part that joins two threaded connections together. In hydraulic and pneumatic lines it is often the unsung hero: it lets two pieces of equipment made to different standards be connected to each other without disrupting the line.\n\nA coupling nipple is the simplest type, with both ends the same size. On a reducing nipple, the ends are different sizes, and it serves to change diameter. Extension nipples move a connection to an accessible point in tight installations. When selecting a nipple, not only the thread size but also the thread standard must match — BSP and metric threads of the same diameter can be screwed together, but they will not seal.",
+  "sss": [
+   {
+    "s": "Does a reducing nipple weaken the line?",
+    "c": "No, not when correctly selected. However, reducing the diameter increases flow velocity; if several reductions are used in succession along a long line, pressure loss and heating become noticeable. Where possible, the diameter change should be made at a single point."
+   },
+   {
+    "s": "Should I wrap the nipple with PTFE tape to prevent leaking?",
+    "c": "On tapered threads (BSPT, NPT), a thin layer of PTFE tape or liquid sealant is appropriate. On parallel threads (BSP), sealing is provided by a gasket or O-ring; wrapping tape there is not a solution and strains the thread. The thread type must be identified first."
+   },
+   {
+    "s": "Can an extension nipple withstand pressure?",
+    "c": "Yes, as long as it stays within the catalog pressure rating. The point to watch is the leverage effect created by its length: in vibrating applications, a long nipple puts extra load on the connection point and should be supported where possible."
+   }
+  ],
+  "standartlar": [
+   "DIN 2353 (L / S)",
+   "BSP (ISO 228)",
+   "UNF",
+   "Metric"
+  ]
+ },
+ {
+  "slug": "hidrolik-tapa",
+  "ad": "Blanking Plugs and Plugs",
+  "h1": "Hydraulic Blanking Plugs and Plugs",
+  "ozet": "BSP, metric, UNF and ORFS blanking plugs; hex socket and hex head types, 220+ items.",
+  "giris": "A blanking plug is a simple but safety-critical component that seals off an unused port. An empty manifold outlet, a port left open after testing, or a spare connection point must always be closed with a pressure-rated plug — improvised fixes can blow out under pressure and create a hazard.\n\nThread standard and sealing method follow the same logic as fittings when selecting a plug: on tapered threads such as BSPT, the thread itself provides the seal, while parallel threads such as BSP require a gasket or O-ring. Hex socket (internal hex) types don't protrude above the surface, making them suited to tight assemblies, while hex head (external hex) types allow higher torque with a wrench, making them preferred for larger diameters.",
+  "sss": [
+   {
+    "s": "Is there a difference between a blanking plug and a regular plug?",
+    "c": "A blanking plug is fully closed and permanently seals the port. Vented or breather plugs, by contrast, are used on tanks and housings for pressure equalization. Mixing the two up means either the system can't breathe, or a port that should stay sealed is left open."
+   },
+   {
+    "s": "Should I choose hex socket or hex head?",
+    "c": "Hex socket heads suit tight spaces and assemblies where nothing should protrude above the surface. For larger diameters and applications requiring higher tightening torque, hex head types are safer, since a wrench gives easier access."
+   },
+   {
+    "s": "What pressure rating does a plug withstand?",
+    "c": "A plug's rated pressure matches the class of the fitting family it belongs to. The plug must therefore be selected to match the pressure class of the line — a lower-rated plug on a high-pressure manifold creates a safety weak point."
+   }
+  ],
+  "standartlar": [
+   "BSP blanking plug",
+   "Metric blanking plug",
+   "Breather plug"
+  ]
+ },
+ {
+  "slug": "hidrolik-valf",
+  "ad": "Hydraulic Valve",
+  "h1": "Hydraulic Valves: Directional Control, Pressure, Check and Flow Control Valves",
+  "ozet": "Directional control, pressure control, check and flow control valves. NG6/NG10 modular valves, in-line load-holding and lock valves. Pneumatic valves are a separate category.",
+  "giris": "A valve is the component that determines where, how much, and at what pressure fluid flows in a hydraulic or pneumatic circuit. It's the \"decision-maker\" of the circuit: the cylinder produces force, the pump supplies flow, but the valve determines the direction and speed of motion.\n\nThere are three main families. Directional control valves select which line the flow goes to (referred to by port/position designations such as 4/2, 4/3). Pressure valves handle safety and regulation; the relief valve limits the system's maximum pressure. Flow control valves determine speed. Modular NG6 and NG10 valves allow these to be stacked together to build a compact circuit.",
+  "sss": [
+   {
+    "s": "Are a relief valve and a pressure-reducing valve the same thing?",
+    "c": "No. The relief valve protects the entire system; once the set pressure is exceeded, it diverts excess flow to the tank. A pressure-reducing valve, on the other hand, holds the pressure in one branch at a lower value independent of the rest of the system. One is for protection, the other for regulation."
+   },
+   {
+    "s": "What do 4/2 and 4/3 valve mean?",
+    "c": "The first number gives the number of ports, the second the number of positions. A 4/3 valve has four ports and three positions; its center position allows the cylinder to be stopped under load. A 4/2 valve has no center position — the cylinder is always commanded in one direction or the other."
+   },
+   {
+    "s": "Should I look at flow rate when selecting a pneumatic valve?",
+    "c": "Yes. In pneumatics, a valve's flow capacity is given by its Cv or Kv value. If a valve with insufficient flow capacity is chosen relative to the cylinder volume and desired cycle time, the cylinder will run slowly; choosing a valve larger than the line size is also an unnecessary cost."
+   }
+  ],
+  "standartlar": [
+   "NG6 / CETOP 3",
+   "In-line type",
+   "BSP connection"
+  ]
+ },
+ {
+  "slug": "hidrolik-pompa",
+  "ad": "Hydraulic Pump",
+  "h1": "Hydraulic Pumps and Power Units",
+  "ozet": "Gear, vane and axial piston hydraulic pumps; tandem sets and power unit components.",
+  "giris": "A hydraulic pump doesn't produce pressure — it produces flow. Pressure arises from the resistance this flow encounters. This distinction matters in practice: when pressure is low in a system, the problem is often not the pump but a leak or the relief valve setting.\n\nThe most common type is the gear pump: simple, inexpensive, and tolerant of contamination, with fixed displacement. Axial piston pumps reach higher pressures and, being capable of variable displacement, can produce only as much flow as needed, saving energy. Selection requires weighing speed (rpm), displacement (cc/rev) and working pressure together; an undersized suction line is the most common cause of shortened pump life.",
+  "sss": [
+   {
+    "s": "How is pump flow rate calculated?",
+    "c": "Flow rate (L/min) ≈ displacement (cc/rev) × speed (rpm) ÷ 1000, multiplied by volumetric efficiency. For example, a pump with 20 cc/rev displacement delivers approximately 29 L/min at 1450 rpm. The actual value drops somewhat depending on efficiency and pressure."
+   },
+   {
+    "s": "The pump is running noisily — what could be the cause?",
+    "c": "The most common cause is cavitation: a narrow suction line, a clogged filter, low oil level, or oil that is too cold and overly viscous. An air leak on the suction side produces the same sound. The suction side should always be checked before the pressure side."
+   },
+   {
+    "s": "Gear pump or piston pump?",
+    "c": "If fixed flow is sufficient and pressure is moderate, a gear pump is both economical and durable. If high pressure, variable flow, or energy efficiency matters, an axial piston pump is preferred; the initial investment is higher."
+   },
+   {
+    "s": "Is the PZB pump still available?",
+    "c": "When PZB joined the Interpump group, the brand name changed to Interpump; the product line and stock codes stayed the same. If you're searching under the old PZB label, you'll find the pump you're looking for under the Interpump brand."
+   }
+  ],
+  "standartlar": [
+   "Gear pump",
+   "Bent-axis piston",
+   "Tandem",
+   "ISO / SAE flange"
+  ]
+ },
+ {
+  "slug": "hidrolik-silindir",
+  "ad": "Hydraulic Cylinder Manufacturing",
+  "h1": "Hydraulic Cylinder Manufacturing, Overhaul and Spare Parts",
+  "ozet": "Custom hydraulic cylinder manufacturing and overhaul, built to your dimensions. Rear covers, steel caps, pistons, gland bushings and wear rings are machined in-house.",
+  "giris": "A hydraulic cylinder is the component that converts the energy of pressurized fluid into linear motion and force. The force it produces follows a simple relationship: force equals pressure times piston area. In the push direction the full piston area is active; in the pull direction the rod cross-section reduces the effective area, so the force obtained at the same pressure is smaller. When replacing a cylinder, it's necessary to look not only at the bore diameter but also at the rod diameter and mounting type.\n\nWe don't sell this product off the shelf — we manufacture it to your dimensions. Parts such as rear covers, cast and steel caps, threaded and bearing-mounted pistons, gland bushings and wear rings are machined in our own shop; this means we can also produce the equivalent of a non-standard length, a special mounting, or a cylinder that is no longer available.\n\nFor an overhaul, the cylinder is first disassembled and measured: rod wear, tube bore diameter and seal grooves are checked. Most failures don't require replacing the entire cylinder — they're resolved with a seal kit, a gland bushing, or a rod replacement. Bring in the cylinder you have; you don't need to know its dimensions.",
+  "sss": [
+   {
+    "s": "Do you have ready-made hydraulic cylinders in stock?",
+    "c": "We don't sell hydraulic cylinders from stock — we manufacture them to your dimensions. What we keep in stock are the parts used in manufacturing and overhaul: rear covers, steel and cast caps, pistons, gland bushings, wear rings. You give us the dimensions for the finished cylinder, and we produce it."
+   },
+   {
+    "s": "How long does hydraulic cylinder manufacturing take?",
+    "c": "For standard bore diameters and mounting types, lead time is short since the parts are in stock; for jobs requiring custom dimensions, extra-long length, or a different mounting type, the timeframe varies. An exact lead time is given once measurements are taken."
+   },
+   {
+    "s": "Should I have my cylinder repaired or have a new one made?",
+    "c": "If the tube bore and rod are sound, an overhaul is usually more economical: the seal kit, gland bushing, and if necessary the rod are renewed. If the tube has gone oval or the rod is deeply scored, new manufacturing is the better option. We'll tell you which makes sense once we've disassembled and measured it."
+   },
+   {
+    "s": "How is cylinder force calculated?",
+    "c": "Push force = pressure × piston area. For example, a 63 mm diameter piston at 160 bar produces approximately 5 tons of push force. In the pull direction, force decreases because the rod cross-section reduces the effective area; with a 36 mm rod on the same cylinder, it drops to approximately 3.4 tons. You can use calculate.hidroteknik.com.tr to run the calculation."
+   }
+  ],
+  "standartlar": [
+   "Custom manufacturing",
+   "Overhaul",
+   "Single- and double-acting"
+  ]
+ },
+ {
+  "slug": "kuresel-vana",
+  "ad": "Ball and Butterfly Valve",
+  "h1": "Ball Valves, Butterfly Valves and Shut-off Components",
+  "ozet": "Mini ball valves, full-bore ball valves and butterfly valves; for hydraulic and fluid lines.",
+  "giris": "A shut-off valve is the component used to open and close a line. This is what distinguishes it from a control valve: a control valve directs and regulates flow, while a shut-off valve is mostly two-position — open or closed.\n\nA ball valve operates by turning a bored ball inside it a quarter turn; when fully open, it offers almost no resistance to flow and allows fast shut-off. This is why it's standard on maintenance and safety lines. A butterfly valve, by contrast, is more economical and lighter in larger diameters, but since the disc remains in the flow path even when fully open, it creates some pressure loss. For valves used on hydraulic lines, it must always be confirmed that the rated pressure exceeds the system pressure.",
+  "sss": [
+   {
+    "s": "How do I choose between a ball valve and a butterfly valve?",
+    "c": "For small and medium diameters, where full sealing and low pressure loss are required, a ball valve is the right choice. For large diameters (DN100 and above), a butterfly valve is both lighter and more economical, offering an advantage in space and cost."
+   },
+   {
+    "s": "Can I use the valve in a half-open position?",
+    "c": "A ball valve is not designed for throttling. In a half-open position, the edge of the ball and the seat surface wear quickly, and the valve will eventually leak. If flow needs to be regulated, a flow control valve should be used instead."
+   },
+   {
+    "s": "Which pressure class should I choose for hydraulic applications?",
+    "c": "The valve's rated pressure (PN) must exceed the system's peak pressure — looking only at the working pressure is not enough. In hydraulic circuits, pressure spikes can rise well above the working value, so a safety margin should be allowed."
+   }
+  ],
+  "standartlar": [
+   "BSPP",
+   "PN16 / PN25 / PN40",
+   "DN10 – DN25"
+  ]
+ },
+ {
+  "slug": "o-ring-sizdirmazlik",
+  "ad": "O-Rings and Gaskets",
+  "h1": "O-Ring Sizes, O-Ring Cord and Gaskets",
+  "ozet": "Metric and inch O-ring sizes in NBR, FKM (Viton), and EPDM materials. Cylinder seals, nutrings, and wipers are a separate category.",
+  "giris": "The O-ring is the most common type of seal, sealing by being compressed between two mating surfaces. Two values determine the correct selection: size (inner diameter × cross-section diameter) and material.\n\nMaterial selection depends on the fluid and the operating temperature. NBR is the standard choice for general hydraulic oils and operates roughly between -30 °C and +100 °C. FKM (Viton) is used for high temperatures and aggressive fluids. EPDM is suitable for water and brake fluid but must never be used with mineral oil — this is the most common material mistake made in the field.\n\nThe O-ring is only one part of a complete sealing set. The nutrings, piston seals, wipers, and wear rings that do the main work in hydraulic cylinders form a separate category and make up a much larger share of our stock (5,297 items); see the «Hydraulic Seals, Nutrings and Wipers» page for those.",
+  "sss": [
+   {
+    "s": "How do I read an O-ring size?",
+    "c": "O-ring size is given as inner diameter × cross-section (cord) diameter. For example, 20×2.5 means a 20 mm inner diameter and a 2.5 mm cross-section. Measurement should be taken unstretched, preferably with calipers; a used O-ring may be permanently deformed, which makes its measured size misleading."
+   },
+   {
+    "s": "Should I choose NBR or FKM?",
+    "c": "For standard mineral-based hydraulic oil at normal operating temperatures, NBR is sufficient and more economical. FKM is preferred in applications where temperature is continuously above 100 °C, or where there is contact with fuel or chemicals."
+   },
+   {
+    "s": "Why is EPDM not used with hydraulic oil?",
+    "c": "EPDM swells on contact with mineral oil and loses its sealing properties. It is the correct choice for water-based fluids and brake fluid; mineral-oil systems should use NBR or FKM instead."
+   }
+  ],
+  "standartlar": [
+   "NBR",
+   "FKM (viton)",
+   "EPDM",
+   "Metric and inch sizes"
+  ]
+ },
+ {
+  "slug": "hidrolik-kece-nutring",
+  "ad": "Hydraulic Seals, Rod Seals and Wipers",
+  "h1": "Hydraulic Seals, Rod Seals and Wipers — by Kastaş Profile Code",
+  "ozet": "Rod and piston seals, rod seals, wipers, guide rings and back-up rings. Over 5,290 sizes in stock across K21, K06, K22, K23, K33 and other Kastaş profiles.",
+  "giris": "No single part seals a hydraulic cylinder on its own. On the rod side, the rod seal and gland seal; on the piston side, the piston seal; against the outside, the wiper (dust wiper); the load-bearing guide ring; and the back-up ring that supports the seal from behind at high pressure — all work together. During an overhaul the entire set is usually replaced; replacing only the leaking part often brings the same failure back within a short time.\n\nAt Kastaş, every profile has a code: K21, K06, K22, K23, K33 and so on. Ordering requires two pieces of information: the profile code and three dimensions. Dimensions are always written as three numbers — for example K21-040/11 (40 × 50 × 8): two diameters and a height.\n\nThe order of the dimensions also tells you where the part fits. If the numbers increase (40 × 50), the part goes onto the rod; if they decrease (63 × 51), it fits onto the piston. In our stock this distinction holds consistently by code: K21, K22, K06, K33, K68 and K37 are rod-side; K23, K18, K69 and K17 are piston-side.\n\nThe material is written at the end of the code. PU (polyurethane) is the most wear-resistant option and the standard choice in mobile hydraulics; NBR is an economical solution for mineral-oil systems; FKM (Viton) is for high temperatures and aggressive fluids. The same profile is often stocked in both PU and NBR versions — half of the 1,223 sizes in the K21 family are PU.\n\nIf you don't know the profile code, that's not a problem: a photo of the removed part along with the rod diameter, bore diameter and height is enough. Take the measurement from a cleaned, unstretched part, preferably with a caliper; a seal that has been under pressure can deform permanently, so a visual estimate can be misleading.",
+  "sss": [
+   {
+    "s": "What is K21 and where is it used?",
+    "c": "K21 is Kastaş's rod seal profile code and the largest sealing family in our stock — we carry 1,223 different sizes. Because its dimensions increase from the inner diameter to the outer diameter (e.g. K21-040/11 · 40 × 50 × 8), it fits onto the rod. It is available in PU, NBR and FKM."
+   },
+   {
+    "s": "What information do I need to provide to order a seal?",
+    "c": "The profile code and three dimensions: inner diameter, outer diameter and height. If you know the code (e.g. K06-040 PU), that alone is enough — we look up the matching dimensions from the code. If you don't have the code, send the three dimensions and a photo of the part."
+   },
+   {
+    "s": "Which should I choose: PU, NBR or FKM?",
+    "c": "PU (polyurethane) is the most wear-resistant; it is the standard choice for high-pressure applications and mobile machinery. NBR is economical and sufficient for mineral-oil systems at normal temperatures. FKM (Viton) is used where there is continuous high temperature, or contact with fuel or chemicals."
+   },
+   {
+    "s": "I don't know the profile code — how do you find the right seal?",
+    "c": "Send a clear photo of the removed part along with its three dimensions. The profile's cross-section (rod seal, U-profile, wiper, guide ring) can be identified from the photo, and the dimensions point us to the matching item in stock. When measuring a used part, keep in mind it may be deformed — if possible, also measure the cylinder's rod and bore diameter."
+   },
+   {
+    "s": "Can I just replace the leaking seal on its own?",
+    "c": "You can, but it often doesn't last long. The leak is usually caused by a worn guide ring letting the rod run off-center, or a wiper letting dust through; in that case the new seal wears out just as fast. Since the cylinder is already disassembled, replacing the entire set is also cheaper in terms of labor."
+   }
+  ],
+  "standartlar": [
+   "PU (polyurethane)",
+   "NBR",
+   "FKM (viton)",
+   "Bronze-PTFE / phenolic guide ring",
+   "Metric sizes"
+  ],
+  "profiller": [
+   {
+    "kod": "K21",
+    "ad": "Rod seal — piston gland seal",
+    "yer": "Rod"
+   },
+   {
+    "kod": "K22",
+    "yer": "Rod",
+    "ad": "Rod seal"
+   },
+   {
+    "kod": "K06",
+    "yer": "Rod",
+    "ad": "Wiper (dust wiper)"
+   },
+   {
+    "kod": "K23",
+    "yer": "Piston",
+    "ad": "Piston seal"
+   },
+   {
+    "kod": "K33",
+    "ad": "Gland seal (rod seal)",
+    "yer": "Rod"
+   },
+   {
+    "kod": "K68",
+    "yer": "Rod",
+    "ad": "Rod guide ring (guide ring)"
+   },
+   {
+    "kod": "K37",
+    "yer": "Rod",
+    "ad": "Rod seal"
+   },
+   {
+    "kod": "K18",
+    "yer": "Piston",
+    "ad": "Compact piston seal"
+   },
+   {
+    "kod": "K38",
+    "yer": "Rod",
+    "ad": "Rod seal"
+   },
+   {
+    "kod": "K69",
+    "yer": "Piston",
+    "ad": "Piston guide ring (guide ring)"
+   },
+   {
+    "kod": "K09",
+    "yer": "Rod",
+    "ad": "Wiper"
+   },
+   {
+    "kod": "K27",
+    "yer": "Rod",
+    "ad": "Double-lip wiper"
+   },
+   {
+    "kod": "K01",
+    "yer": "Rod",
+    "ad": "Rod sealing kit"
+   },
+   {
+    "kod": "KBT / KPB / KSB",
+    "ad": "Guide ring (bronze-PTFE, polyester, phenolic)",
+    "yer": "Rod and piston"
+   },
+   {
+    "kod": "K14",
+    "ad": "V-ring (A / S / L type)",
+    "yer": "Rod"
+   },
+   {
+    "kod": "K19",
+    "ad": "Double-acting compact piston seal",
+    "yer": "Piston"
+   },
+   {
+    "kod": "K707",
+    "ad": "Back-up ring",
+    "yer": "Behind the seal"
+   },
+   {
+    "kod": "K94",
+    "ad": "Wiper (dust wiper)",
+    "yer": "Rod"
+   }
+  ],
+  "profilNot": "The \"Fitting location\" column is read from the order of the dimensions: a size that increases from inner diameter to outer diameter is rod-side, one that decreases from outer diameter to inner diameter is piston-side. We checked this distinction against the Kastaş catalog and it held for every code in the table. The function column is also taken from the Kastaş catalog; it was left blank for codes where we could not find a match in the catalog. The table lists the profiles we stock the most of; we also source the other profiles in the Kastaş catalog."
+ },
+ {
+  "slug": "hortum-kelepce",
+  "ad": "Hose Clamps",
+  "h1": "Hose Clamps and Connection Fittings",
+  "ozet": "Screw-type metal clamps (Erbi), worm-drive and heavy-duty types; sizes from 8 mm to 200 mm.",
+  "giris": "A clamp is a simple but critical part that seals a hose by tightening it onto a fitting or pipe. Its simplicity is deceptive: a clamp of the wrong size, or one that has been over-tightened, can cut into the hose and create exactly the leak it was meant to prevent.\n\nThe most common type is the screw (worm-drive) metal clamp, which uses a screw engaging teeth cut into the band to provide stepless tightening. Its size is always given as a range — for example 20–30 mm — and the outer diameter of the hose over the fitting should fall in the middle of that range. Working at the extreme end of the range causes the clamp to either under-tighten or deform the band.",
+  "sss": [
+   {
+    "s": "How do I choose the correct clamp size?",
+    "c": "Measure the OUTER diameter of the hose after it has been fitted over the connector, and choose a clamp whose range places that value near the middle. For example, if the outer diameter is 25 mm, a 20–30 mm clamp is suitable; a 25–40 mm clamp would sit at the edge of its range."
+   },
+   {
+    "s": "How tight should I tighten the clamp?",
+    "c": "Stop tightening as soon as a seal is achieved. Over-tightening causes the band to dig into the hose rubber and eventually cut through it. On high-pressure hydraulic lines a clamp is not sufficient in any case — crimped (pressed) fittings must be used."
+   },
+   {
+    "s": "Are clamps used on hydraulic lines?",
+    "c": "Not on high-pressure hydraulic lines — there, hose ends are crimped instead. Clamps are suitable for low-pressure suction, return, water, air, and fuel lines. Beyond that pressure limit, a clamp is not safe."
+   }
+  ],
+  "standartlar": [
+   "Worm-drive",
+   "Sliding clamp",
+   "Pipe clamp with base plate"
+  ]
+ },
+ {
+  "slug": "pnomatik-silindir",
+  "ad": "Pneumatic Cylinders",
+  "h1": "Pneumatic Cylinders",
+  "ozet": "Pneumatic cylinders to ISO 15552 and ISO 6432 standards, magnetic piston and cushioned types.",
+  "giris": "A pneumatic cylinder converts the energy of compressed air into linear motion. It is faster and cleaner than a hydraulic cylinder, but because air is compressible, both positioning accuracy and the force it can transmit are lower.\n\nSince typical supply pressure is 6–8 bar, the force produced by a pneumatic cylinder is far below that of a hydraulic cylinder of the same bore. This is why hydraulic cylinders are preferred where high force is required, while pneumatic cylinders are chosen for fast, repetitive, light-duty movements. On magnetic piston types, sensors mounted on the cylinder body can detect the end-of-stroke positions.",
+  "sss": [
+   {
+    "s": "What pressure does a pneumatic cylinder operate at?",
+    "c": "Industrial supply pressure is typically in the 6–8 bar range. Most standard pneumatic cylinders are rated to withstand up to 10 bar, but for continuous operation the nominal pressure specified by the manufacturer should be used as the reference."
+   },
+   {
+    "s": "Should I choose hydraulic or pneumatic?",
+    "c": "Hydraulic is the right choice when high force, precise positioning, and holding position under load are required. For fast, repetitive, relatively low-force motion, and in environments where cleanliness matters, pneumatic systems are more economical and easier to maintain."
+   },
+   {
+    "s": "What is a magnetic piston cylinder?",
+    "c": "A magnet fitted to the piston allows reed or electronic sensors mounted externally on the cylinder body to detect the piston's position. It is the standard solution for end-of-stroke position feedback on automation lines."
+   }
+  ],
+  "standartlar": [
+   "ISO 15552",
+   "ISO 6431",
+   "Compact (SDA)",
+   "Pencil cylinder"
+  ]
+ },
+ {
+  "slug": "pnomatik-valf",
+  "ad": "Pneumatic Valves",
+  "h1": "Pneumatic Directional Control Valves (5/2, 3/2, 5/3)",
+  "ozet": "Solenoid, pedal, lever, and hand-operated pneumatic valves; 5/2, 3/2, and 5/3 types, valve manifolds. Pemaks and equivalents.",
+  "giris": "A pneumatic valve determines which path the air takes into the cylinder. Its designation consists of two numbers: the first is the number of ports (ways), the second is the number of positions. A 5/2 valve has five ports and two positions, and drives a double-acting cylinder forward and back. A 3/2 valve has three ports and two positions; it is used with single-acting cylinders and for shutting off air. 5/3 valves have a third, center position — in the closed-center type, the cylinder stays wherever it happens to be.\n\nThe type of actuation is the second choice to make: solenoid (coil-operated) valves are driven by an electrical signal and connect into automation systems, while pedal, lever, and hand-operated types are preferred for simple circuits operated directly by the operator. For solenoid valves, coil voltage (24V DC, 220V AC) must be specified when ordering; the valve body is the same, but the coil is not.\n\nOn lines using multiple valves, a manifold plate is used instead of connecting each valve individually: the air supply is shared, the installation is tidier, and maintenance becomes easier.",
+  "sss": [
+   {
+    "s": "What is the difference between a 5/2 and a 3/2 valve?",
+    "c": "A 5/2 valve has five ports and drives a double-acting cylinder in both directions: it feeds air to one side while opening the other side to exhaust. A 3/2 valve has three ports and is used with single-acting (spring-return) cylinders or to open and close a line. A double-acting cylinder cannot be driven with a 3/2 valve."
+   },
+   {
+    "s": "How is coil voltage selected?",
+    "c": "By the control circuit driving the valve. If controlled by PLC outputs, a 24V DC coil is typically used; if driven directly from mains power, 220V AC is used. The valve body stays the same and only the coil changes; the wrong voltage will burn out the coil. Always specify the voltage when ordering."
+   },
+   {
+    "s": "Is a silencer required on the valve exhaust?",
+    "c": "Not mandatory, but strongly recommended. Air discharging from the exhaust port produces sharp noise; a silencer noticeably reduces this. The adjustable type also lets you regulate cylinder speed by throttling the exhaust flow."
+   }
+  ],
+  "standartlar": [
+   "5/2",
+   "3/2",
+   "5/3 closed center",
+   "24V DC / 220V AC coil"
+  ]
+ },
+ {
+  "slug": "pnomatik-rakor",
+  "ad": "Pneumatic Fittings",
+  "h1": "Pneumatic Push-In Fittings and Connection Elements",
+  "ozet": "Push-in fittings, swivel elbows, tee and nipple connections; silencers and speed-control elements. Pemaks and equivalents, 4–16 mm.",
+  "giris": "In pneumatic connections, the hose is not clamped — it is pushed in: a stainless steel grab ring inside the push-in fitting grips the hose, while an O-ring provides the seal. To release it, the collar is pressed down. This means installation requires no tools, but the fitting size must match the OUTER diameter of the hose — an 8 mm fitting takes an 8x5.5 hose, not a 6x4.\n\nThis category includes straight fittings, 90° swivel elbows, tees, reducing nipples, and blanking plugs. Swivel types rotate freely on their axis after installation, preventing the hose from twisting; on moving apparatus this significantly extends service life. The threaded side is typically BSP (1/8, 1/4, 3/8, 1/2) or metric; the end that screws into the port has an O-ring or gasket.\n\nThis category also includes exhaust silencers, adjustable silencers, and automatic drain elements, which regulate the valve's exhaust noise and air flow speed.",
+  "sss": [
+   {
+    "s": "How do I choose the correct push-in fitting size?",
+    "c": "The hose side of the fitting is selected according to the hose's outer diameter (6, 8, 10, 12, 16 mm). The threaded side is determined by the connection on the machine; the most common are 1/8, 1/4, and 3/8 BSP. Simply specify both values together — for example, “1/4 thread, 8 hose.”"
+   },
+   {
+    "s": "What is the difference between a swivel elbow and a fixed elbow?",
+    "c": "On the swivel type, the body that the hose connects to rotates freely on its axis once screwed onto the thread. On moving apparatus, this means the hose does not twist with every movement, extending the service life of both the hose and the fitting. On fixed installations, there is no practical difference between the two."
+   },
+   {
+    "s": "My push-in fitting is leaking air, what should I do?",
+    "c": "The most common cause is a poorly cut hose end: an end cut at an angle or crushed will not seat properly against the O-ring. Cut the hose square with a clean blade and reinsert it. If the leak continues, the O-ring inside the fitting has worn out and the fitting must be replaced."
+   }
+  ],
+  "standartlar": [
+   "BSP 1/8–1/2",
+   "Metric",
+   "Push-in 4–16 mm"
+  ]
+ },
+ {
+  "slug": "pnomatik-hortum",
+  "ad": "Pneumatic Hose",
+  "h1": "Polyurethane, Polyamide, and PTFE Pneumatic Hose",
+  "ozet": "Polyurethane (PU), polyamide (PA), and Teflon (PTFE) hose for compressed air lines. Sold by the meter, from 4x2.5 to 16x12.",
+  "giris": "Pneumatic hose does not do the same job as hydraulic hose: pressure is far lower (typically 6–10 bar), but the line moves frequently and has to bend through tight spaces. For this reason, a flexible plastic body is used instead of steel braiding, and size is given as outer diameter x inner diameter — 8x5.5 means an 8 mm outer diameter and a 5.5 mm inner diameter. Since push-in fittings are selected by outer diameter, it is important not to confuse the two numbers.\n\nPolyurethane (PU) is the most common: it is soft, bends to a small radius, and resists crushing on moving apparatus. Polyamide (PA) is stiffer and withstands higher temperatures; it is preferred for fixed installation lines and in-machine routing. PTFE (Teflon) hose is used where chemical resistance and a wide temperature range are required.\n\nIt is sold by the meter and cut to the desired length. Transparent spiral and braided air hose types are also included in this category.\n\nJava-brand air hose and Teflon sockets belong to the Sel code family and are listed as a separate category: see «Sel Hose».",
+  "sss": [
+   {
+    "s": "What is the difference between polyurethane and polyamide hose?",
+    "c": "Polyurethane is soft and bends to a small radius; it is used on moving apparatus that opens and closes repeatedly. Polyamide is stiffer and more durable, and withstands higher temperatures; it is preferred for fixed in-machine installations. At the same size, polyamide withstands higher pressure, while polyurethane better resists crushing and repeated flexing."
+   },
+   {
+    "s": "What does 8x5.5 hose mean, and which fitting should I buy?",
+    "c": "The first number is the outer diameter, the second is the inner diameter. Push-in fittings are selected by outer diameter, so for an 8x5.5 hose you need an 8 mm fitting. The thread on the other end of the fitting (1/8, 1/4, 3/8) is determined by the connection on your machine."
+   },
+   {
+    "s": "Is the hose sold by the meter?",
+    "c": "Yes, it is sold by the meter and cut to the desired length. It can also be supplied as a full roll. Color options (blue, black, natural) depend on stock availability."
+   }
+  ],
+  "standartlar": [
+   "PU (polyurethane)",
+   "PA (polyamide)",
+   "PTFE (Teflon)"
+  ]
+ }
+]
