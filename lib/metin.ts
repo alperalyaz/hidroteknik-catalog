@@ -94,6 +94,18 @@ export type Metin = {
   rehberDigerBaslik: string
   rehberSssBaslik: string
   rehberlerBaslik: string
+  // — Üretici kod listesi (kategori sayfasında bölüm) —
+  kodBaslik: (marka: string) => string
+  kodGiris: (marka: string, desen: string, ornek: string) => string
+  kodSeriBaslik: (marka: string, seri: string) => string
+  kodStokNotu: (adet: string) => string
+  kodTamMatris: (cap: string, strok: string) => string
+  kodSeyrekMatris: (adet: string) => string
+  kodTipBaslik: string
+  kodCapBaslik: string
+  kodStrokBaslik: string
+  kodListeBaslik: (adet: string) => string
+  kodAltNot: string
 }
 
 export const METIN: Record<Dil, Metin> = {
@@ -195,6 +207,21 @@ export const METIN: Record<Dil, Metin> = {
     rehberDigerBaslik: 'Diğer teknik rehberler',
     rehberSssBaslik: 'Sık sorulan sorular',
     rehberlerBaslik: 'Teknik rehberler',
+    kodBaslik: (marka) => `${marka} üretici katalog kodları`,
+    kodGiris: (marka, desen, ornek) =>
+      `${marka} ürünleri sahada bizim stok kodumuzla değil, üreticinin katalog koduyla aranır. Kod şu düzendedir: ${desen} — örneğin ${ornek}. Aşağıdaki seriler stoğumuzda gerçekten bulunan serilerdir; listelenen her ölçü temin edilebilir.`,
+    kodSeriBaslik: (marka, seri) => `${marka} ${seri} serisi`,
+    kodStokNotu: (adet) => `Bu seride ${adet} kalem stok kartımız var.`,
+    kodTamMatris: (cap, strok) =>
+      `${cap} çapın her biri ${strok} strok kademesinde üretilir; aşağıdaki listede kombinasyonların tamamı vardır.`,
+    kodSeyrekMatris: (adet) =>
+      `Bu seride her çap her tipte ve her strokta üretilmez. Aşağıdaki ${adet} kod, gerçekten var olan ölçülerdir.`,
+    kodTipBaslik: 'Tip kodları',
+    kodCapBaslik: 'Çaplar (mm)',
+    kodStrokBaslik: 'Stroklar (mm)',
+    kodListeBaslik: (adet) => `${adet} kod`,
+    kodAltNot:
+      'Listedeki kodlar üreticinin katalog kodudur. Stokta olmayan ölçüler için temin süresini sorunuz — seri stoğumuzda olduğu için tedarik hızlıdır. Fiyat, teklif üzerine verilir.',
   },
   en: {
     urunKatalogu: 'Product Catalog',
@@ -294,6 +321,21 @@ export const METIN: Record<Dil, Metin> = {
     rehberDigerBaslik: 'Other technical guides',
     rehberSssBaslik: 'Frequently asked questions',
     rehberlerBaslik: 'Technical guides',
+    kodBaslik: (marka) => `${marka} manufacturer part numbers`,
+    kodGiris: (marka, desen, ornek) =>
+      `${marka} products are searched for in the field by the manufacturer's part number, not by our stock code. The code follows this pattern: ${desen} — for example ${ornek}. The series below are ones we genuinely hold in stock; every size listed can be supplied.`,
+    kodSeriBaslik: (marka, seri) => `${marka} ${seri} series`,
+    kodStokNotu: (adet) => `We hold ${adet} stock items in this series.`,
+    kodTamMatris: (cap, strok) =>
+      `Each of the ${cap} bores is produced in ${strok} stroke steps; the list below contains every combination.`,
+    kodSeyrekMatris: (adet) =>
+      `In this series not every bore is produced in every type and stroke. The ${adet} codes below are the sizes that actually exist.`,
+    kodTipBaslik: 'Type codes',
+    kodCapBaslik: 'Bores (mm)',
+    kodStrokBaslik: 'Strokes (mm)',
+    kodListeBaslik: (adet) => `${adet} codes`,
+    kodAltNot:
+      "The codes listed are the manufacturer's own part numbers. For sizes not held in stock, ask for the lead time — supply is quick because we carry the series. Prices are given on quotation.",
   },
   ru: {
     urunKatalogu: 'Каталог продукции',
@@ -393,5 +435,20 @@ export const METIN: Record<Dil, Metin> = {
     rehberDigerBaslik: 'Другие технические руководства',
     rehberSssBaslik: 'Часто задаваемые вопросы',
     rehberlerBaslik: 'Технические руководства',
+    kodBaslik: (marka) => `Каталожные коды производителя ${marka}`,
+    kodGiris: (marka, desen, ornek) =>
+      `Продукцию ${marka} на практике ищут не по нашему складскому коду, а по каталожному коду производителя. Код построен так: ${desen} — например, ${ornek}. Перечисленные ниже серии мы действительно держим на складе; любой указанный размер может быть поставлен.`,
+    kodSeriBaslik: (marka, seri) => `${marka}, серия ${seri}`,
+    kodStokNotu: (adet) => `По этой серии у нас ${adet} складских позиций.`,
+    kodTamMatris: (cap, strok) =>
+      `Каждый из ${cap} диаметров выпускается в ${strok} ступенях хода; в списке ниже приведены все комбинации.`,
+    kodSeyrekMatris: (adet) =>
+      `В этой серии не каждый диаметр выпускается в каждом типе и ходе. Приведённые ниже ${adet} кодов — реально существующие размеры.`,
+    kodTipBaslik: 'Коды типов',
+    kodCapBaslik: 'Диаметры (мм)',
+    kodStrokBaslik: 'Ходы (мм)',
+    kodListeBaslik: (adet) => `${adet} кодов`,
+    kodAltNot:
+      'Приведённые коды — каталожные номера самого производителя. По размерам, которых нет на складе, уточняйте срок поставки: серия у нас есть, поэтому поставка быстрая. Цена — по запросу.',
   },
 }

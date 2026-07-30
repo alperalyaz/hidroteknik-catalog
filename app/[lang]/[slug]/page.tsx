@@ -6,6 +6,7 @@ import { METIN } from '@/lib/metin'
 import { KATEGORILER, kategoriBul, kategorilerIcin, kategoriUrunleri, urunAdiDuzelt } from '@/lib/veri'
 import { profilBul, profilSlug } from '@/lib/profil'
 import { MARKALAR } from '@/lib/marka'
+import { kodGruplariIcin } from '@/lib/uretici-kod'
 import { kategoriSchema, sssSchema, kirintiSchema, jsonLd } from '@/lib/schema'
 
 const OG_LOCALE: Record<Dil, string> = { tr: 'tr_TR', en: 'en_US', ru: 'ru_RU' }
@@ -52,6 +53,8 @@ export default async function KategoriSayfasi({
   // Türkçe "İ" harfi tuzağı yüzünden küçük harfe çevirirken locale açıkça 'tr' verilmeli;
   // diğer dillerde varsayılan yeterli.
   const adKucuk = k.ad.toLocaleLowerCase(lang === 'tr' ? 'tr' : undefined)
+  // Bu kategoride yayımlanacak üretici katalog kodları (varsa).
+  const kodGruplari = kodGruplariIcin(slug)
 
   return (
     <>
@@ -197,6 +200,58 @@ export default async function KategoriSayfasi({
           </div>
           <p className="tablo-not">{m.ornekAltNot(sayiFormat(toplam, lang), adKucuk)}</p>
         </section>
+
+        {kodGruplari.map((g) => (
+          <section key={g.markaSlug}>
+            <h2>{m.kodBaslik(g.marka)}</h2>
+            <div className="metin">
+              <p>{m.kodGiris(g.marka, g.kodDeseni, g.kodOrnek)}</p>
+            </div>
+            {g.seriler.map((s) => (
+              <div key={s.seri} className="kod-seri">
+                <h3>{m.kodSeriBaslik(g.marka, s.seri)}</h3>
+                <div className="metin">
+                  <p>
+                    {s.aciklama[lang]} {m.kodStokNotu(sayiFormat(s.stokAdet, lang))}{' '}
+                    {s.tamMatris
+                      ? m.kodTamMatris(
+                          sayiFormat(s.caplar.length, lang),
+                          sayiFormat(s.stroklar.length, lang)
+                        )
+                      : m.kodSeyrekMatris(sayiFormat(s.kodlar.length, lang))}
+                  </p>
+                </div>
+                <div className="tablo-kutu">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th>{m.kodTipBaslik}</th>
+                        <td>
+                          {s.tipler.map((t) => `${t.kod} — ${t[lang]}`).join(' · ')}
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>{m.kodCapBaslik}</th>
+                        <td className="model">{s.caplar.join(', ')}</td>
+                      </tr>
+                      <tr>
+                        <th>{m.kodStrokBaslik}</th>
+                        <td className="model">{s.stroklar.join(', ')}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p className="tablo-not">{m.kodListeBaslik(sayiFormat(s.kodlar.length, lang))}</p>
+                <div className="kod-listesi">
+                  {s.kodlar.map((kod) => (
+                    <code key={kod}>{kod}</code>
+                  ))}
+                </div>
+              </div>
+            ))}
+            <p className="tablo-not">{m.kodAltNot}</p>
+          </section>
+        ))}
 
         <section>
           <h2>{m.sssBaslik}</h2>

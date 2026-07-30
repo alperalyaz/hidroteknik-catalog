@@ -124,3 +124,20 @@ footer li { margin: 4px 0; }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
 }
+
+/* ── Üretici kod listesi ───────────────────────────────────────────────────────
+   Yüzlerce kod tablo satırı olarak basılırsa sayfa okunmaz hâle gelir; kodlar
+   akışkan bir ızgarada, tek tek seçilebilir şekilde dizilir. */
+.kod-seri { margin-top: 1.75rem; }
+.kod-seri h3 { font-size: 1.05rem; margin-bottom: .4rem; }
+.kod-seri th { text-align: left; white-space: nowrap; width: 1%; padding-right: 1rem; }
+.kod-listesi {
+  display: flex; flex-wrap: wrap; gap: .35rem;
+  max-height: 22rem; overflow-y: auto;
+  padding: .7rem; border: 1px solid var(--cizgi, #e5e7eb); border-radius: 8px;
+  background: var(--yumusak, #f9fafb);
+}
+.kod-listesi code {
+  font-size: .78rem; padding: .18rem .4rem; border-radius: 4px;
+  background: #fff; border: 1px solid var(--cizgi, #e5e7eb); white-space: nowrap;
+}
