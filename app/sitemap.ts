@@ -3,6 +3,7 @@ import { DILLER, SITE_URL } from '@/lib/site'
 import { KATEGORILER } from '@/lib/veri'
 import { PROFILLER, profilSlug } from '@/lib/profil'
 import { MARKALAR } from '@/lib/marka'
+import { REHBERLER } from '@/lib/rehber'
 
 /**
  * Kategori dışı, elle yazılmış sayfalar. Yeni eklenince buraya da yazılmalı.
@@ -51,6 +52,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: bugun,
         changeFrequency: 'monthly',
         priority: 0.7,
+      })
+    }
+    // Teknik rehberler: satın alma niyetinin bir adım öncesindeki aramalar.
+    for (const r of REHBERLER) {
+      girisler.push({
+        url: `${SITE_URL}/${lang}/rehber/${r.slug}`,
+        lastModified: bugun,
+        changeFrequency: 'monthly',
+        priority: 0.6,
       })
     }
   }

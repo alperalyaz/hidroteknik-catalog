@@ -2,6 +2,7 @@ import { SITE_URL, ANA_SITE, FIRMA, VARSAYILAN_DIL } from '@/lib/site'
 import { KATEGORILER, kategoriUrunleri } from '@/lib/veri'
 import { PROFILLER, profilSlug } from '@/lib/profil'
 import { MARKALAR } from '@/lib/marka'
+import { REHBERLER } from '@/lib/rehber'
 
 /**
  * llms.txt — yapay zekâ istemcilerine sitenin özetini ve haritasını veren
@@ -54,6 +55,10 @@ ${PROFILLER.map(
   (p) =>
     `- [Kastaş ${p.kod}](${SITE_URL}/${L}/profil/${profilSlug(p.kod)}) — ${p.adet.toLocaleString('tr-TR')} ölçü, ${p.yer.toLowerCase()} tarafı${p.ad ? `. ${p.ad}` : ' (işlev doğrulanamadı)'}`
 ).join('\n')}
+
+## Teknik rehberler
+
+${REHBERLER.map((r) => `- [${r.tr.h1}](${SITE_URL}/${L}/rehber/${r.slug}) — ${r.tr.ozet}`).join('\n')}
 
 ## Yerel
 

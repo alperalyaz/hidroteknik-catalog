@@ -1,0 +1,434 @@
+[
+ {
+  "slug": "rakor-dis-tipleri",
+  "kategoriler": [
+   "hidrolik-rakor",
+   "orfs-rakor",
+   "nipel",
+   "hidrolik-tapa"
+  ],
+  "tr": {
+   "ad": "Rakor diş tipleri",
+   "h1": "Hidrolik Rakor Diş Tipleri: BSP, BSPT, Metrik, JIC ve ORFS Nasıl Ayırt Edilir?",
+   "ozet": "Metrik, BSP, BSPT, JIC ve ORFS dişler gözle birbirine benzer ama birbirinin yerine kullanılmaz. Kumpas ve diş tarağıyla beş dakikada nasıl ayırt edileceği.",
+   "giris": "Hidrolikte en sık yapılan hata yanlış ürün seçmek değil, doğru göründüğü için yanlış dişi takmaktır. Metrik, BSP, BSPT, JIC ve ORFS dişler çıplak gözle birbirine benzer; ikisi elle birkaç tur döner, sonra sıkışır ve montaj yapılmış gibi görünür. Sistem basınçlandığında ise bağlantı ya sızdırır ya da fırlar.\n\nAyırt etmek için üç şey ölçülür: dişin dış çapı, diş adımı ve sızdırmazlığın nerede yapıldığı. İlk ikisi kumpas ve diş tarağıyla, üçüncüsü gözle anlaşılır.\n\nSızdırmazlık noktası en hızlı ayrımı verir. Paralel dişli bağlantılar (BSP, metrik, ORFS) dişten sızdırmaz — sızdırmazlık ya dişin dibindeki o-ring ile ya da konik yüzeyle sağlanır; diş yalnızca sıkma işini yapar. Konik dişli bağlantılar (BSPT, NPT) ise sızdırmazlığı dişin kendisinde yapar; bu yüzden diş boyunca çap değişir ve somun sıkıldıkça daha da sıkışır. Konik dişte bant veya sıvı conta gerekir, paralel dişte gerekmez — paralel dişe bant sarmak sızdırmazlığı düzeltmez, yalnızca sökmeyi zorlaştırır.\n\nBSP ve metrik ayrımı diş adımından yapılır. BSP dişin adımı inç başına diş sayısıyla verilir (1/4\" BSP = 19 diş/inç), metrik dişin adımı milimetre cinsindendir (M18 × 1,5). Diş tarağı bu iki ölçeği ayırır. Kaba bir kontrol olarak BSP dişlerin tepesi metrik dişlere göre daha yuvarlaktır, ama tek başına buna güvenilmemelidir.\n\nJIC ve ORFS ayrımı konik yüzeyle yapılır. JIC bağlantı 37° konik yüzeyle sızdırmazlık sağlar; metal metale oturur ve o-ring yoktur. ORFS ise düz alınlıdır ve alın yüzeyindeki bir kanalda duran o-ring ile sızdırmaz. İkisi aynı diş ölçüsünde olsa bile birbirinin yerine takılamaz: JIC'in konisi ORFS'in düz alnına oturmaz.\n\nBSP dişte ayrıca iki ölçü karıştırılır: dişin adı ile dış çapı aynı değildir. 1/4\" BSP dişin dış çapı 13,16 mm'dir, 1/4 inç yani 6,35 mm değil. Ölçtüğünüz çapı doğrudan diş adı sanmak, sipariş hatalarının önemli bir bölümünü oluşturur.\n\nEmin olamadığınız durumda en güvenli yol, eldeki parçayı ölçüp fotoğrafıyla birlikte göndermektir: diş dış çapı, diş adımı ve alın yüzeyinin fotoğrafı doğru muadili belirlemeye yeter.",
+   "sss": [
+    {
+     "s": "BSP ile BSPT arasındaki fark nedir?",
+     "c": "İkisi de aynı diş profilini ve adımını kullanır; fark koniklikte. BSP paraleldir — diş boyunca çap sabittir ve sızdırmazlık o-ring veya konik yüzeyle sağlanır. BSPT koniktir — çap diş boyunca daralır ve sızdırmazlık dişin kendisinde yapılır, bu yüzden bant veya sıvı conta gerektirir. BSPT erkek bir dişi BSP dişi bir gövdeye takmak mümkündür ama bağlantı güvenli değildir."
+    },
+    {
+     "s": "Metrik mi BSP mi olduğunu nasıl anlarım?",
+     "c": "Diş adımına bakın. Metrik dişin adımı milimetre cinsindendir (M18 × 1,5 = 1,5 mm adım), BSP'ninki inç başına diş sayısıyla verilir (19, 14, 11 diş/inç). Diş tarağı bu ikisini kesin olarak ayırır. Diş tarağı yoksa 25 mm'lik bir mesafedeki diş sayısını saymak da yaklaşık sonuç verir."
+    },
+    {
+     "s": "Paralel dişe teflon bant sarmalı mıyım?",
+     "c": "Hayır. Paralel dişte (BSP, metrik, ORFS) sızdırmazlığı diş değil, o-ring veya konik oturma yüzeyi sağlar. Bant sarmak kaçağı gidermez; yalnızca somunu doğru torka sıkmayı engeller ve sökerken zorluk çıkarır. Paralel dişten kaçak varsa o-ring veya oturma yüzeyi kontrol edilmelidir."
+    },
+    {
+     "s": "JIC ile ORFS aynı ölçüde birbirinin yerine geçer mi?",
+     "c": "Geçmez. JIC 37° konik yüzeyle metal metale sızdırmazlık yapar, ORFS ise alın yüzeyindeki o-ring ile. Diş ölçüleri örtüşse bile oturma geometrileri farklıdır; JIC konisi ORFS'in düz alnına oturmaz ve bağlantı kaçırır. Geçiş gerekiyorsa JIC-ORFS adaptörü kullanılmalıdır."
+    },
+    {
+     "s": "1/4\" BSP dişin dış çapı neden 6,35 mm değil?",
+     "c": "BSP ölçüsündeki inç değeri dişin dış çapını değil, tarihsel olarak o bağlantının kullanıldığı borunun anma iç çapını belirtir. 1/4\" BSP dişin gerçek dış çapı yaklaşık 13,16 mm'dir. Ölçtüğünüz çapı doğrudan diş adı sanmak sık yapılan bir hatadır."
+    },
+    {
+     "s": "Diş tipini ölçemiyorum, ne göndermeliyim?",
+     "c": "Parçanın yan ve alın yüzeyinden iki fotoğraf ile kumpasla alınmış diş dış çapı yeterlidir. Alın fotoğrafı o-ring kanalı olup olmadığını (ORFS mi, JIC mi) gösterir; yan fotoğraf dişin paralel mi konik mi olduğunu gösterir. Bu üçüyle doğru muadil belirlenebilir."
+    }
+   ]
+  },
+  "en": {
+   "ad": "Fitting thread types",
+   "h1": "Hydraulic Fitting Threads: How to Tell BSP, BSPT, Metric, JIC and ORFS Apart",
+   "ozet": "Metric, BSP, BSPT, JIC and ORFS threads look alike but are not interchangeable. How to identify them in five minutes with calipers and a thread gauge.",
+   "giris": "The most common mistake in hydraulics is not choosing the wrong product but fitting the wrong thread because it looked right. Metric, BSP, BSPT, JIC and ORFS threads resemble each other to the naked eye; two of them will turn together by hand for a few turns, then bind, and the joint looks made up. When the system is pressurised, the connection either weeps or blows off.\n\nThree things are measured to tell them apart: the thread's outside diameter, its pitch, and where the sealing takes place. The first two need calipers and a thread gauge; the third can be seen by eye.\n\nThe sealing point gives the quickest distinction. Parallel-thread connections (BSP, metric, ORFS) do not seal on the thread — sealing is done either by an O-ring at the root of the thread or by a coned face; the thread only does the clamping. Tapered connections (BSPT, NPT) seal on the thread itself, which is why the diameter changes along its length and why it tightens further the harder it is turned. A tapered thread needs tape or liquid sealant; a parallel one does not — wrapping tape on a parallel thread does not fix a leak, it only makes disassembly harder.\n\nBSP and metric are separated by pitch. BSP pitch is given as threads per inch (1/4\" BSP = 19 TPI); metric pitch is given in millimetres (M18 × 1.5). A thread gauge distinguishes the two scales. As a rough check, BSP thread crests are more rounded than metric ones, but that alone should not be relied on.\n\nJIC and ORFS are separated by the sealing face. A JIC connection seals on a 37° cone, metal to metal, with no O-ring. ORFS has a flat face and seals with an O-ring sitting in a groove in that face. Even at the same thread size the two cannot be substituted: a JIC cone will not seat on an ORFS flat face.\n\nOne more confusion with BSP: the name of the thread is not its outside diameter. A 1/4\" BSP thread measures about 13.16 mm across, not 1/4 inch (6.35 mm). Taking the measured diameter for the thread designation accounts for a significant share of ordering errors.\n\nWhen in doubt, the safest route is to measure the part in hand and send a photograph with it: the thread outside diameter, the pitch and a photo of the sealing face are enough to identify the correct equivalent.",
+   "sss": [
+    {
+     "s": "What is the difference between BSP and BSPT?",
+     "c": "Both use the same thread form and pitch; the difference is the taper. BSP is parallel — the diameter is constant along the thread and sealing is by O-ring or coned face. BSPT is tapered — the diameter narrows along the thread and sealing happens on the thread itself, which is why it needs tape or liquid sealant. A male BSPT can be screwed into a female BSP port, but the joint is not safe."
+    },
+    {
+     "s": "How do I tell metric from BSP?",
+     "c": "Look at the pitch. Metric pitch is in millimetres (M18 × 1.5 means a 1.5 mm pitch), BSP pitch is in threads per inch (19, 14, 11 TPI). A thread gauge separates the two definitively. Without one, counting the threads over a 25 mm length gives a usable approximation."
+    },
+    {
+     "s": "Should I wrap PTFE tape on a parallel thread?",
+     "c": "No. On a parallel thread (BSP, metric, ORFS) the seal is made by an O-ring or a coned seating face, not by the thread. Tape does not cure a leak; it only prevents the nut being tightened to the correct torque and makes disassembly difficult. If a parallel thread leaks, check the O-ring or the seating face."
+    },
+    {
+     "s": "Are JIC and ORFS interchangeable at the same size?",
+     "c": "They are not. JIC seals metal to metal on a 37° cone; ORFS seals with an O-ring in its flat face. Even where the thread sizes overlap, the seating geometries differ; a JIC cone will not seat on an ORFS flat face and the joint will leak. If a transition is needed, use a JIC-to-ORFS adaptor."
+    },
+    {
+     "s": "Why is a 1/4\" BSP thread not 6.35 mm across?",
+     "c": "The inch figure in a BSP designation does not give the thread's outside diameter; historically it refers to the nominal bore of the pipe the connection was used with. The actual outside diameter of a 1/4\" BSP thread is about 13.16 mm. Taking the measured diameter for the thread designation is a frequent mistake."
+    },
+    {
+     "s": "I cannot measure the thread — what should I send?",
+     "c": "Two photographs, one from the side and one of the sealing face, together with the thread outside diameter taken with calipers. The face photo shows whether there is an O-ring groove (ORFS or JIC); the side photo shows whether the thread is parallel or tapered. Those three are enough to identify the correct equivalent."
+    }
+   ]
+  },
+  "ru": {
+   "ad": "Типы резьб фитингов",
+   "h1": "Резьбы гидравлических фитингов: как отличить BSP, BSPT, метрическую, JIC и ORFS",
+   "ozet": "Метрическая, BSP, BSPT, JIC и ORFS резьбы внешне похожи, но невзаимозаменяемы. Как различить их за пять минут штангенциркулем и резьбомером.",
+   "giris": "Самая частая ошибка в гидравлике — не выбор не того изделия, а установка не той резьбы, потому что она выглядела подходящей. Метрическая, BSP, BSPT, JIC и ORFS резьбы на глаз похожи друг на друга; две из них проворачиваются от руки несколько оборотов, затем заклинивают, и соединение выглядит собранным. Под давлением такое соединение либо подтекает, либо срывается.\n\nДля различения измеряют три вещи: наружный диаметр резьбы, её шаг и место уплотнения. Первые две требуют штангенциркуля и резьбомера, третья видна на глаз.\n\nБыстрее всего различие даёт место уплотнения. Цилиндрические резьбовые соединения (BSP, метрическая, ORFS) не уплотняются по резьбе — уплотнение обеспечивается либо кольцом у основания резьбы, либо конической поверхностью; резьба лишь стягивает. Конические соединения (BSPT, NPT) уплотняются самой резьбой, поэтому диаметр меняется по длине и соединение затягивается тем сильнее, чем дальше его заворачивают. Конической резьбе нужна лента или жидкий герметик, цилиндрической — нет: намотка ленты на цилиндрическую резьбу течь не устраняет, а лишь затрудняет разборку.\n\nBSP и метрическую резьбу различают по шагу. Шаг BSP задаётся числом ниток на дюйм (1/4\" BSP = 19 ниток/дюйм), шаг метрической — в миллиметрах (M18 × 1,5). Резьбомер надёжно разделяет эти две шкалы. Как грубая проверка: вершины ниток BSP более скруглены, чем у метрической, но полагаться только на это не следует.\n\nJIC и ORFS различают по уплотнительной поверхности. Соединение JIC уплотняется по конусу 37° металл по металлу, без кольца. У ORFS торец плоский, а уплотнение обеспечивается кольцом, лежащим в канавке этого торца. Даже при одинаковом размере резьбы заменять их друг другом нельзя: конус JIC не садится на плоский торец ORFS.\n\nЕщё одна путаница с BSP: название резьбы — это не её наружный диаметр. Резьба 1/4\" BSP имеет наружный диаметр около 13,16 мм, а не 1/4 дюйма (6,35 мм). Принимать измеренный диаметр за обозначение резьбы — причина заметной доли ошибок в заказах.\n\nПри сомнениях самый надёжный путь — измерить деталь и прислать её фотографию: наружного диаметра резьбы, шага и снимка уплотнительного торца достаточно, чтобы подобрать правильный аналог.",
+   "sss": [
+    {
+     "s": "Чем BSP отличается от BSPT?",
+     "c": "У обеих одинаковый профиль и шаг; различие — в конусности. BSP цилиндрическая: диаметр постоянен по длине резьбы, а уплотнение обеспечивается кольцом или конической поверхностью. BSPT коническая: диаметр сужается по длине, и уплотнение происходит на самой резьбе, поэтому нужна лента или жидкий герметик. Наружную BSPT можно ввернуть в гнездо BSP, но такое соединение небезопасно."
+    },
+    {
+     "s": "Как отличить метрическую резьбу от BSP?",
+     "c": "Смотрите на шаг. Шаг метрической резьбы задаётся в миллиметрах (M18 × 1,5 — шаг 1,5 мм), шаг BSP — числом ниток на дюйм (19, 14, 11). Резьбомер разделяет их однозначно. Без резьбомера подсчёт ниток на длине 25 мм даёт приемлемое приближение."
+    },
+    {
+     "s": "Нужно ли наматывать ФУМ-ленту на цилиндрическую резьбу?",
+     "c": "Нет. На цилиндрической резьбе (BSP, метрическая, ORFS) уплотнение обеспечивает кольцо или коническая посадочная поверхность, а не резьба. Лента течь не устраняет; она лишь мешает затянуть гайку нужным моментом и затрудняет разборку. Если течёт цилиндрическое соединение, проверяйте кольцо или посадочную поверхность."
+    },
+    {
+     "s": "Взаимозаменяемы ли JIC и ORFS одного размера?",
+     "c": "Нет. JIC уплотняется металл по металлу по конусу 37°, ORFS — кольцом в плоском торце. Даже при совпадении размеров резьбы геометрия посадки различна; конус JIC не садится на плоский торец ORFS, и соединение будет течь. Если нужен переход, применяйте переходник JIC–ORFS."
+    },
+    {
+     "s": "Почему наружный диаметр резьбы 1/4\" BSP не равен 6,35 мм?",
+     "c": "Дюймовое значение в обозначении BSP задаёт не наружный диаметр резьбы, а исторически — номинальный внутренний диаметр трубы, с которой применялось это соединение. Фактический наружный диаметр резьбы 1/4\" BSP составляет около 13,16 мм. Принимать измеренный диаметр за обозначение резьбы — частая ошибка."
+    },
+    {
+     "s": "Я не могу измерить резьбу — что прислать?",
+     "c": "Две фотографии — сбоку и с торца — вместе с наружным диаметром резьбы, снятым штангенциркулем. Снимок торца показывает, есть ли канавка под кольцо (ORFS или JIC); снимок сбоку показывает, цилиндрическая резьба или коническая. Этих трёх данных достаточно для подбора правильного аналога."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "hidrolik-hortum-secimi",
+  "kategoriler": [
+   "hidrolik-hortum",
+   "sel-hortum",
+   "hortum-ucu-koruma",
+   "hortum-kelepce"
+  ],
+  "tr": {
+   "ad": "Hortum seçimi",
+   "h1": "Hidrolik Hortum Seçimi: 1SN, 2SN, 2SC, 4SP ve 4SH Sınıfları Ne Anlama Gelir?",
+   "ozet": "Hortum sınıfı, iç çap ve boy nasıl belirlenir; örgü sayısı basınç dayanımını nasıl değiştirir ve kıvrılma yarıçapı neden ömrü belirler.",
+   "giris": "Hidrolik hortum siparişi üç bilgiyle verilir: iç çap, takviye sınıfı ve boy. Üçünden biri eksikse hortum yapılamaz; yanlışsa hortum ya çalışmaz ya da erken patlar.\n\nİç çap inç cinsinden verilir (1/4\", 3/8\", 1/2\", 5/8\", 3/4\", 1\") ve hortumun üzerindeki baskıdan okunur. Bu ölçü hortumun geçireceği debiyi belirler. Dar seçilen hortum akışı kısar, yağı ısıtır ve sistemi yavaşlatır; gereğinden geniş hortum ise gereksiz yer kaplar ve kıvrılması zorlaşır.\n\nTakviye sınıfı basınç dayanımını verir ve kod harfleriyle okunur. R harfiyle başlayan sınıflandırma örgülü hortumları anlatır: R1 ve 1SN tek çelik örgülü, R2 ve 2SN çift çelik örgülüdür. SC ekli sınıflar (2SC gibi) çift örgülüdür ama dış çapı daha kompakttır — aynı basıncı daha küçük yer kaplayarak taşır, bu yüzden dar montajlarda tercih edilir. 4SP ve 4SH ise dört sarımlı (spiral) hortumlardır; en yüksek basınç sınıfıdır ve iş makinesi, pres ve ağır hizmet uygulamalarında kullanılır. R6 tek örgülü ve alçak basınçlıdır; dönüş hattı gibi basınç taşımayan yerlere uygundur.\n\nÖrgü sayısı arttıkça hortum sertleşir. Bu, kıvrılma yarıçapını doğrudan etkiler: 4SH bir hortumu 2SN kadar dar kıvırmak mümkün değildir. Katalogdaki minimum kıvrılma yarıçapı değerinin altına inen her montaj, hortumun iç örgüsünü zorlar ve ömrünü kısaltır. Sahada patlayan hortumların önemli bir kısmı basınçtan değil, keskin kıvrımdan ölür.\n\nBoy ölçüsü rakor merkezinden rakor merkezine alınır ve hortum basınç altında kısaldığı için biraz payla verilir. Kural olarak yaklaşık %2–4 uzunluk payı bırakılır. Hortum montajda gergin bırakılırsa basınçlandığında rakoru çeker; çok gevşek bırakılırsa titreşimle sürtünür.\n\nSon olarak hortumun sınıfı ile soketin sınıfı eşleşmelidir: 2SN hortuma 1SN soket preslenirse tutmaz. Presleme kendi tesisimizde yapılır ve standart ölçülerde hazır hortum çoğunlukla aynı gün teslim edilir.",
+   "sss": [
+    {
+     "s": "2SN ile 2SC arasındaki fark nedir?",
+     "c": "İkisi de çift çelik örgülüdür ve benzer basınç sınıfındadır. Fark dış çaptadır: 2SC daha ince kılıflı ve kompakt yapılıdır, bu yüzden dar montajlarda daha kolay yerleşir ve biraz daha küçük yarıçapta kıvrılabilir. Aynı iç çapta 2SC seçmek, yer sıkıntısı olan makinelerde montajı belirgin biçimde kolaylaştırır."
+    },
+    {
+     "s": "Hortum iç çapını nereden okurum?",
+     "c": "İç çap hortumun dış kılıfındaki baskıda yazar; genellikle hem inç hem DN olarak verilir (1/2\" DN12 gibi). Baskı silinmişse hortum kesilip iç çap kumpasla ölçülür. Dış çaptan gitmek yanıltıcıdır — aynı iç çaplı hortumların dış çapı örgü sayısına ve sınıfına göre değişir."
+    },
+    {
+     "s": "4SH hortum her yerde 2SN yerine kullanılabilir mi?",
+     "c": "Basınç açısından evet, ama pratikte çoğu zaman uygun değildir. 4SH dört sarımlıdır, çok daha serttir ve minimum kıvrılma yarıçapı belirgin biçimde büyüktür. 2SN için tasarlanmış bir güzergâha 4SH takmak, hortumu kabul edilebilir yarıçapın altında kıvırmaya zorlar ve ömrü kısaltır. Ayrıca gereksiz maliyet ve ağırlık getirir."
+    },
+    {
+     "s": "Hortum boyu nasıl ölçülür?",
+     "c": "Boy, rakor merkezinden rakor merkezine ölçülür. Hortum basınç altında bir miktar kısaldığı için yaklaşık %2–4 pay bırakılır. Gergin monte edilen hortum basınçlandığında rakoru çeker ve bağlantıyı zorlar; aşırı uzun bırakılan hortum ise sarkıp çevresine sürtünerek aşınır."
+    },
+    {
+     "s": "Hortum ne zaman değiştirilmeli?",
+     "c": "Dış kılıfta örgü görünüyorsa, hortum kabarmışsa, rakor dibinden kaçak varsa veya hortum sertleşip esnekliğini kaybettiyse hemen değiştirilmelidir. Görünür bir arıza olmasa bile ağır çalışan sistemlerde periyodik değişim yapılır; patlayan bir hortumun maliyeti hortumun kendisi değil, duran makinedir."
+    },
+    {
+     "s": "R6 hortum basınç hattında kullanılabilir mi?",
+     "c": "Kullanılmamalıdır. R6 tek örgülüdür ve düşük basınç sınıfındadır; tank dönüşü, drenaj ve benzeri basınçsız hatlar için uygundur. Basınç hattına takılan R6 hortum, sistem tam basınca çıktığında kısa sürede patlar."
+    }
+   ]
+  },
+  "en": {
+   "ad": "Hose selection",
+   "h1": "Hydraulic Hose Selection: What 1SN, 2SN, 2SC, 4SP and 4SH Mean",
+   "ozet": "How to determine hose class, bore and length; how braid count changes pressure rating, and why bend radius decides service life.",
+   "giris": "A hydraulic hose is ordered with three pieces of information: bore, reinforcement class and length. If one of them is missing the hose cannot be made up; if one is wrong, the hose either will not work or bursts early.\n\nThe bore is given in inches (1/4\", 3/8\", 1/2\", 5/8\", 3/4\", 1\") and is read from the print on the hose. It determines the flow the hose will pass. An undersized hose throttles the flow, heats the oil and slows the system; an oversized one takes up unnecessary space and is harder to route.\n\nThe reinforcement class gives the pressure rating and is read from the code letters. Classes beginning with R describe braided hose: R1 and 1SN have a single steel braid, R2 and 2SN have two. Classes with an SC suffix (2SC, for instance) are also double-braid but with a more compact outer diameter — they carry the same pressure in less space, which is why they are preferred in tight installations. 4SP and 4SH are four-spiral hoses; they are the highest pressure class and are used on construction machinery, presses and heavy-duty applications. R6 is single-braid and low pressure, suitable for lines that carry no pressure such as return.\n\nThe more layers of reinforcement, the stiffer the hose. This directly affects bend radius: a 4SH hose cannot be bent as tightly as a 2SN. Any installation that goes below the minimum bend radius in the catalogue strains the inner reinforcement and shortens hose life. A significant share of hoses that fail in the field die not from pressure but from a sharp bend.\n\nLength is measured centre of fitting to centre of fitting, with a small allowance because hose shortens under pressure. As a rule, allow about 2–4% extra length. A hose installed taut pulls on the fitting once pressurised; one left too slack chafes against its surroundings with vibration.\n\nFinally, the hose class and the socket class must match: crimping a 1SN socket onto 2SN hose will not hold. Crimping is done on our own premises, and made-up hoses in standard sizes are usually delivered the same day.",
+   "sss": [
+    {
+     "s": "What is the difference between 2SN and 2SC?",
+     "c": "Both are double steel braid and in a similar pressure class. The difference is the outside diameter: 2SC has a thinner cover and a more compact construction, so it routes more easily in tight installations and bends to a slightly smaller radius. At the same bore, choosing 2SC makes assembly noticeably easier on machines where space is short."
+    },
+    {
+     "s": "Where do I read the hose bore?",
+     "c": "The bore is printed on the hose cover, usually in both inches and DN (1/2\" DN12, for example). If the print has worn away, cut the hose and measure the bore with calipers. Going by outside diameter is misleading — hoses of the same bore vary in outside diameter with braid count and class."
+    },
+    {
+     "s": "Can 4SH replace 2SN anywhere?",
+     "c": "In terms of pressure yes, but in practice it often is not suitable. 4SH is four-spiral, considerably stiffer, and its minimum bend radius is markedly larger. Fitting 4SH to a route designed for 2SN forces the hose below its acceptable radius and shortens its life. It also adds unnecessary cost and weight."
+    },
+    {
+     "s": "How is hose length measured?",
+     "c": "Length is measured from the centre of one fitting to the centre of the other. Because hose shortens somewhat under pressure, allow about 2–4% extra. A hose fitted taut pulls on the fitting when pressurised and strains the joint; one left far too long sags and abrades against its surroundings."
+    },
+    {
+     "s": "When should a hose be replaced?",
+     "c": "Replace immediately if the braid shows through the cover, if the hose has ballooned, if there is a leak at the base of the fitting, or if the hose has hardened and lost flexibility. Even without visible damage, hard-working systems are put on a replacement interval; the cost of a burst hose is not the hose but the machine standing idle."
+    },
+    {
+     "s": "Can R6 hose be used on a pressure line?",
+     "c": "It should not be. R6 is single-braid and low pressure; it suits tank return, drain and similar unpressurised lines. Fitted to a pressure line, R6 hose bursts within a short time once the system reaches full pressure."
+    }
+   ]
+  },
+  "ru": {
+   "ad": "Выбор рукава",
+   "h1": "Выбор гидравлического рукава: что означают 1SN, 2SN, 2SC, 4SP и 4SH",
+   "ozet": "Как определить класс рукава, внутренний диаметр и длину; как число оплёток влияет на давление и почему радиус изгиба определяет срок службы.",
+   "giris": "Гидравлический рукав заказывают по трём данным: внутренний диаметр, класс армирования и длина. Если одного из них нет, рукав изготовить нельзя; если одно указано неверно, рукав либо не будет работать, либо лопнет преждевременно.\n\nВнутренний диаметр указывается в дюймах (1/4\", 3/8\", 1/2\", 5/8\", 3/4\", 1\") и читается по маркировке на рукаве. Он определяет пропускаемый расход. Заниженный рукав дросселирует поток, греет масло и замедляет систему; завышенный занимает лишнее место и хуже прокладывается.\n\nКласс армирования задаёт давление и читается по буквам кода. Классы, начинающиеся с R, описывают оплёточные рукава: R1 и 1SN имеют одну стальную оплётку, R2 и 2SN — две. Классы с суффиксом SC (например, 2SC) также двухоплёточные, но с более компактным наружным диаметром — они несут то же давление, занимая меньше места, поэтому их предпочитают в стеснённых монтажах. 4SP и 4SH — четырёхнавивочные рукава; это высший класс давления, применяемый на спецтехнике, прессах и в тяжёлых условиях. R6 — однооплёточный и низконапорный, подходит для линий без давления, например сливных.\n\nЧем больше слоёв армирования, тем жёстче рукав. Это напрямую влияет на радиус изгиба: рукав 4SH нельзя согнуть так же круто, как 2SN. Любой монтаж ниже минимального радиуса изгиба из каталога нагружает внутреннее армирование и сокращает срок службы. Значительная доля рукавов, отказывающих в эксплуатации, гибнет не от давления, а от резкого перегиба.\n\nДлина измеряется от центра одного фитинга до центра другого, с небольшим припуском, поскольку под давлением рукав укорачивается. Как правило, добавляют около 2–4% длины. Натянутый при монтаже рукав под давлением тянет фитинг; чрезмерно длинный провисает и перетирается о окружающие детали.\n\nНаконец, класс рукава и класс муфты должны совпадать: муфта 1SN, обжатая на рукаве 2SN, держать не будет. Обжим выполняется на нашем участке, и готовые рукава стандартных размеров обычно отгружаются в тот же день.",
+   "sss": [
+    {
+     "s": "Чем 2SN отличается от 2SC?",
+     "c": "Оба имеют две стальные оплётки и близкий класс давления. Различие в наружном диаметре: у 2SC тоньше оболочка и более компактная конструкция, поэтому он легче прокладывается в стеснённых местах и гнётся с чуть меньшим радиусом. При одинаковом внутреннем диаметре выбор 2SC заметно упрощает монтаж на машинах, где мало места."
+    },
+    {
+     "s": "Где посмотреть внутренний диаметр рукава?",
+     "c": "Внутренний диаметр напечатан на оболочке рукава, обычно и в дюймах, и в DN (например, 1/2\" DN12). Если маркировка стёрта, рукав разрезают и измеряют внутренний диаметр штангенциркулем. Ориентироваться на наружный диаметр нельзя — у рукавов с одинаковым внутренним диаметром наружный меняется в зависимости от числа оплёток и класса."
+    },
+    {
+     "s": "Можно ли везде заменить 2SN на 4SH?",
+     "c": "По давлению — да, но на практике часто нельзя. 4SH четырёхнавивочный, заметно жёстче, и его минимальный радиус изгиба существенно больше. Установка 4SH на трассу, рассчитанную под 2SN, вынуждает гнуть рукав ниже допустимого радиуса и сокращает срок службы. Кроме того, это лишние затраты и вес."
+    },
+    {
+     "s": "Как измеряется длина рукава?",
+     "c": "Длина измеряется от центра одного фитинга до центра другого. Поскольку под давлением рукав несколько укорачивается, добавляют примерно 2–4%. Натянутый рукав под давлением тянет фитинг и нагружает соединение; излишне длинный провисает и перетирается о соседние детали."
+    },
+    {
+     "s": "Когда рукав нужно менять?",
+     "c": "Менять немедленно, если сквозь оболочку видна оплётка, если рукав вздулся, если есть течь у основания фитинга или если рукав затвердел и потерял гибкость. Даже без видимых повреждений в тяжело работающих системах вводят периодическую замену: стоимость лопнувшего рукава — это не сам рукав, а простой машины."
+    },
+    {
+     "s": "Можно ли ставить рукав R6 на напорную линию?",
+     "c": "Не следует. R6 однооплёточный и низконапорный; он подходит для слива в бак, дренажа и подобных линий без давления. Установленный на напорную линию рукав R6 лопается вскоре после выхода системы на полное давление."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "silindir-hesabi",
+  "kategoriler": [
+   "hidrolik-silindir",
+   "krom-mil-boru",
+   "hidrolik-pompa",
+   "elektrik-motoru"
+  ],
+  "tr": {
+   "ad": "Silindir hesabı",
+   "h1": "Hidrolik Silindir Hesabı: Kuvvet, Hız ve Debi Nasıl Bulunur?",
+   "ozet": "Piston çapı, mil çapı ve basınçtan itme ve çekme kuvvetinin, debiden hızın, ikisinden pompa ve motor gücünün hesaplanması.",
+   "giris": "Bir hidrolik silindirin ne kadar kuvvet vereceği, ne kadar hızlı hareket edeceği ve bunun için ne kadar pompa gerektiği üç basit formülle bulunur. Üçü de aynı iki ölçüye dayanır: piston (gövde iç) çapı ve mil çapı.\n\nKuvvet, basınç ile alanın çarpımıdır. İtmede (silindir dışarı çıkarken) yağ pistonun tam yüzeyine basar, dolayısıyla alan piston çapından hesaplanır: F = P × π × D² / 4. Pratik birimlerle: kuvvet (kgf) ≈ basınç (bar) × piston alanı (cm²). 80 mm piston çaplı bir silindirin alanı 50,3 cm²'dir; 150 bar'da yaklaşık 7.540 kgf, yani 7,5 ton itme kuvveti verir.\n\nÇekmede (silindir içeri girerken) milin kapladığı alan devre dışı kalır. Bu yüzden çekme kuvveti daima itme kuvvetinden küçüktür: alan, piston alanından mil alanı çıkarılarak bulunur. 80 mm piston ve 45 mm milli bir silindirde çekme alanı 50,3 − 15,9 = 34,4 cm²'dir; aynı 150 bar'da çekme kuvveti yaklaşık 5.160 kgf olur. Yükün silindiri çekerken mi iterken mi zorladığı, bu yüzden tasarımda belirleyicidir.\n\nHız debiden çıkar: v = Q / A. Pratik birimlerle: hız (cm/s) ≈ debi (lt/dk) × 16,67 / alan (cm²). 80 mm silindire 20 lt/dk verildiğinde itme hızı yaklaşık 6,6 cm/s olur. Aynı debide çekme hızı daha yüksektir, çünkü doldurulacak hacim daha küçüktür — çift etkili silindirlerde geri dönüşün ileri gidişten hızlı olmasının sebebi budur.\n\nPompa debisi, istenen hızdan geriye doğru hesaplanır: gereken debi (lt/dk) = alan (cm²) × hız (cm/s) / 16,67. Motor gücü ise basınç ve debiden gelir: güç (kW) ≈ basınç (bar) × debi (lt/dk) / 600. Bu formül toplam verim payını yaklaşık olarak içerir; çıkan değerin bir üst standart motor kademesi seçilir.\n\nSon olarak burkulma kontrolü ihmal edilmemelidir. Uzun stroklu ve ince milli silindirler, itme yönünde yeterli kuvveti verse bile mil burkulabilir. Strok arttıkça mil çapı da büyütülmelidir; katalogdaki mil çapı–strok tabloları bu sınırı verir.",
+   "sss": [
+    {
+     "s": "İtme ve çekme kuvveti neden farklı?",
+     "c": "İtmede yağ pistonun tam yüzeyine basar. Çekmede ise milin kapladığı alan kadar yüzey kaybolur, çünkü mil o hacmi zaten doldurmaktadır. Etkin alan küçüldüğü için aynı basınçta çekme kuvveti daha düşük olur. Fark mil çapı büyüdükçe artar."
+    },
+    {
+     "s": "Silindir hızını nasıl artırırım?",
+     "c": "Hız debiyle doğru orantılıdır, bu yüzden ilk yol pompa debisini artırmaktır. İkinci yol daha küçük çaplı silindir kullanmaktır — ama bu kuvveti de düşürür. Kuvvetten ödün vermeden hız isteniyorsa daha büyük debili bir pompa ve buna uygun bir motor gerekir; hat ve valf ölçüleri de yeni debiyi taşıyacak şekilde büyütülmelidir."
+    },
+    {
+     "s": "Kaç bar basınç seçmeliyim?",
+     "c": "Basıncı yükseltmek, aynı kuvveti daha küçük silindirle almayı sağlar; bu yer ve maliyet kazandırır. Ancak yüksek basınç hortum, rakor ve keçe sınıfını da yükseltir ve iç kaçakları artırır. Sanayi uygulamalarında 150–210 bar tipik bir aralıktır; mobil hidrolikte daha yüksek değerler kullanılır."
+    },
+    {
+     "s": "Mil çapını neye göre seçerim?",
+     "c": "İki kısıt vardır. Birincisi çekme kuvveti: mil kalınlaştıkça çekme alanı ve dolayısıyla çekme kuvveti azalır. İkincisi burkulma: uzun stroklu silindirlerde ince mil, itme yönünde eğilebilir. Uzun stroklu uygulamalarda mil çapı burkulma tablosuna göre büyütülür, kuvvet hesabına göre değil."
+    },
+    {
+     "s": "Silindir tam kuvveti vermiyorsa sebebi ne olabilir?",
+     "c": "Önce manometreyle sistem basıncını ölçün: emniyet valfi düşük ayarlıysa ya da erken açıyorsa basınç hiç yükselmez. Basınç doğruysa silindirin içindeki piston keçesi kaçırıyor olabilir — yağ pistonun bir tarafından diğerine geçtiğinde kuvvet düşer ama silindir yine hareket eder. Bu, çoğu zaman keçe takımı değişimi gerektirir."
+    },
+    {
+     "s": "Piston çapını nasıl ölçerim?",
+     "c": "Piston çapı, silindir gövdesinin iç çapıdır ve honlanmış borunun iç ölçüsüne eşittir. Silindir sökülü değilse gövde dış çapından ve et kalınlığından hesaplanabilir; etiketi okunabiliyorsa etikette yazar. Ölçü genellikle 40, 50, 63, 70, 80, 90, 100 mm gibi standart kademelerdedir."
+    }
+   ]
+  },
+  "en": {
+   "ad": "Cylinder calculations",
+   "h1": "Hydraulic Cylinder Calculations: Force, Speed and Flow",
+   "ozet": "Working out push and pull force from bore, rod diameter and pressure; speed from flow; and pump and motor power from both.",
+   "giris": "How much force a hydraulic cylinder will give, how fast it will move, and how much pump is needed to do it are found with three simple formulas. All three rest on the same two dimensions: the bore (barrel inside diameter) and the rod diameter.\n\nForce is pressure multiplied by area. On extension, oil acts on the full face of the piston, so the area comes from the bore: F = P × π × D² / 4. In practical units: force (kgf) ≈ pressure (bar) × piston area (cm²). A cylinder with an 80 mm bore has an area of 50.3 cm²; at 150 bar it gives about 7,540 kgf, that is 7.5 tonnes of push.\n\nOn retraction, the area taken up by the rod is out of play. Pull force is therefore always lower than push force: the area is the piston area minus the rod area. On a cylinder with an 80 mm bore and a 45 mm rod, the annulus area is 50.3 − 15.9 = 34.4 cm²; at the same 150 bar, pull force is about 5,160 kgf. Whether the load works against the cylinder on the push or the pull stroke is therefore decisive in design.\n\nSpeed comes from flow: v = Q / A. In practical units: speed (cm/s) ≈ flow (l/min) × 16.67 / area (cm²). Feeding 20 l/min into an 80 mm cylinder gives an extension speed of about 6.6 cm/s. At the same flow, retraction is faster because there is less volume to fill — that is why a double-acting cylinder returns faster than it extends.\n\nPump flow is worked backwards from the speed wanted: required flow (l/min) = area (cm²) × speed (cm/s) / 16.67. Motor power then comes from pressure and flow: power (kW) ≈ pressure (bar) × flow (l/min) / 600. That formula includes an approximate allowance for overall efficiency; the next standard motor size above the result is chosen.\n\nFinally, do not skip the buckling check. Cylinders with a long stroke and a slender rod can buckle in the push direction even when the force calculation is satisfied. As stroke grows, rod diameter has to grow with it; the rod diameter–stroke tables in the catalogue give this limit.",
+   "sss": [
+    {
+     "s": "Why are push and pull force different?",
+     "c": "On extension, oil acts on the full face of the piston. On retraction, the area occupied by the rod is lost, because the rod already fills that volume. With a smaller effective area, pull force at the same pressure is lower. The difference grows as rod diameter increases."
+    },
+    {
+     "s": "How do I make the cylinder faster?",
+     "c": "Speed is directly proportional to flow, so the first route is to increase pump flow. The second is a smaller bore cylinder — but that reduces force as well. If speed is wanted without giving up force, a higher-flow pump and a matching motor are needed, and the line and valve sizes must be increased to carry the new flow."
+    },
+    {
+     "s": "What pressure should I design for?",
+     "c": "Raising pressure lets the same force be produced by a smaller cylinder, saving space and cost. But higher pressure also raises the class of hose, fittings and seals required, and increases internal leakage. In industrial applications 150–210 bar is a typical range; mobile hydraulics uses higher figures."
+    },
+    {
+     "s": "How do I choose the rod diameter?",
+     "c": "There are two constraints. The first is pull force: a thicker rod reduces the annulus area and therefore the pull force. The second is buckling: on long-stroke cylinders a slender rod can bend in the push direction. In long-stroke applications, rod diameter is sized from the buckling table, not from the force calculation."
+    },
+    {
+     "s": "The cylinder is not giving full force — what could it be?",
+     "c": "First measure system pressure with a gauge: if the relief valve is set low or opens early, pressure never builds. If pressure is correct, the piston seal inside the cylinder may be passing — when oil crosses from one side of the piston to the other, force drops but the cylinder still moves. This usually calls for a seal kit replacement."
+    },
+    {
+     "s": "How do I measure the bore?",
+     "c": "The bore is the inside diameter of the cylinder barrel and equals the inside dimension of the honed tube. If the cylinder is not stripped, it can be worked out from the barrel outside diameter and wall thickness; where the label is legible, it is printed there. The size is normally a standard step such as 40, 50, 63, 70, 80, 90 or 100 mm."
+    }
+   ]
+  },
+  "ru": {
+   "ad": "Расчёт цилиндра",
+   "h1": "Расчёт гидроцилиндра: усилие, скорость и расход",
+   "ozet": "Расчёт усилия на выдвижение и втягивание по диаметру поршня, штока и давлению; скорости — по расходу; мощности насоса и двигателя — по обоим.",
+   "giris": "Какое усилие даст гидроцилиндр, с какой скоростью он будет двигаться и какой для этого нужен насос — всё это находится по трём простым формулам. Все три опираются на два размера: диаметр поршня (внутренний диаметр гильзы) и диаметр штока.\n\nУсилие — это давление, умноженное на площадь. При выдвижении масло давит на всю поверхность поршня, поэтому площадь считается по диаметру поршня: F = P × π × D² / 4. В практических единицах: усилие (кгс) ≈ давление (бар) × площадь поршня (см²). У цилиндра с диаметром поршня 80 мм площадь составляет 50,3 см²; при 150 бар он даёт около 7 540 кгс, то есть 7,5 тонны на выдвижение.\n\nПри втягивании площадь, занятая штоком, выключается из работы. Поэтому усилие втягивания всегда меньше усилия выдвижения: площадь равна площади поршня минус площадь штока. У цилиндра с поршнем 80 мм и штоком 45 мм кольцевая площадь равна 50,3 − 15,9 = 34,4 см²; при тех же 150 бар усилие втягивания составит около 5 160 кгс. Поэтому при проектировании принципиально, нагружает ли груз цилиндр на выдвижении или на втягивании.\n\nСкорость выводится из расхода: v = Q / A. В практических единицах: скорость (см/с) ≈ расход (л/мин) × 16,67 / площадь (см²). При подаче 20 л/мин в цилиндр 80 мм скорость выдвижения составит около 6,6 см/с. При том же расходе втягивание быстрее, поскольку заполняемый объём меньше — именно поэтому цилиндр двустороннего действия возвращается быстрее, чем выдвигается.\n\nПодача насоса считается обратным ходом от нужной скорости: требуемый расход (л/мин) = площадь (см²) × скорость (см/с) / 16,67. Мощность двигателя затем находится по давлению и расходу: мощность (кВт) ≈ давление (бар) × расход (л/мин) / 600. Эта формула приближённо учитывает общий КПД; берётся ближайший больший стандартный типоразмер двигателя.\n\nНаконец, не пропускайте проверку на продольный изгиб. Цилиндры с большим ходом и тонким штоком могут потерять устойчивость на выдвижении, даже если расчёт усилия удовлетворён. С ростом хода должен расти и диаметр штока; таблицы «диаметр штока — ход» в каталоге задают этот предел.",
+   "sss": [
+    {
+     "s": "Почему усилия выдвижения и втягивания различаются?",
+     "c": "При выдвижении масло действует на всю поверхность поршня. При втягивании теряется площадь, занятая штоком, поскольку шток уже заполняет этот объём. При меньшей эффективной площади усилие втягивания при том же давлении ниже. Разница растёт с увеличением диаметра штока."
+    },
+    {
+     "s": "Как увеличить скорость цилиндра?",
+     "c": "Скорость прямо пропорциональна расходу, поэтому первый путь — увеличить подачу насоса. Второй — взять цилиндр меньшего диаметра, но это снижает и усилие. Если нужна скорость без потери усилия, потребуются насос большей подачи и соответствующий двигатель, а размеры линий и клапанов нужно увеличить под новый расход."
+    },
+    {
+     "s": "На какое давление рассчитывать?",
+     "c": "Повышение давления позволяет получить то же усилие цилиндром меньшего размера, экономя место и деньги. Но более высокое давление поднимает и требуемый класс рукавов, фитингов и уплотнений и увеличивает внутренние утечки. В промышленных применениях типичен диапазон 150–210 бар; в мобильной гидравлике используют более высокие значения."
+    },
+    {
+     "s": "Как выбрать диаметр штока?",
+     "c": "Ограничений два. Первое — усилие втягивания: чем толще шток, тем меньше кольцевая площадь и, соответственно, усилие втягивания. Второе — продольный изгиб: у цилиндров с большим ходом тонкий шток может согнуться при выдвижении. В применениях с большим ходом диаметр штока подбирают по таблице устойчивости, а не по расчёту усилия."
+    },
+    {
+     "s": "Цилиндр не даёт полного усилия — в чём причина?",
+     "c": "Сначала измерьте давление в системе манометром: если предохранительный клапан настроен низко или открывается рано, давление вообще не поднимется. Если давление в норме, возможно, пропускает поршневое уплотнение внутри цилиндра — когда масло переходит с одной стороны поршня на другую, усилие падает, но цилиндр всё равно движется. Обычно это требует замены ремкомплекта."
+    },
+    {
+     "s": "Как измерить диаметр поршня?",
+     "c": "Диаметр поршня — это внутренний диаметр гильзы, он равен внутреннему размеру хонингованной трубы. Если цилиндр не разобран, его можно вычислить по наружному диаметру гильзы и толщине стенки; при читаемом шильдике он указан там. Размер обычно соответствует стандартному ряду: 40, 50, 63, 70, 80, 90, 100 мм."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "silindir-kacagi",
+  "kategoriler": [
+   "hidrolik-kece-nutring",
+   "tamir-takimi",
+   "krom-mil-boru",
+   "rot-mafsali"
+  ],
+  "tr": {
+   "ad": "Silindir kaçağı",
+   "h1": "Hidrolik Silindir Neden Kaçırıyor? Keçe Arızasının Yedi Sebebi",
+   "ozet": "Değişen keçe neden birkaç ay sonra yine kaçırıyor: mil çiziği, eksen kaçıklığı, montaj hasarı, yanlış malzeme, aşırı sıcaklık ve kirli yağ.",
+   "giris": "Kaçıran bir silindirde ilk refleks keçe değiştirmektir ve çoğu zaman işe yarar. Ama keçe birkaç ay sonra yine kaçırıyorsa sorun keçede değildir — keçe yalnızca başka bir arızanın habercisidir. Sahada tekrarlayan kaçakların sebepleri şu yedi başlıkta toplanır.\n\nBirincisi mil yüzeyidir. Eksen yönünde derin bir çizik, keçe dudağının altından sürekli yağ geçiren bir kanal oluşturur; hiçbir keçe bunu kapatamaz. Krom kaplamanın pul pul kalktığı milde ise kopan parçalar yeni keçeyi ilk çalıştırmada keser. Tırnakla hissedilmeyen yüzeysel izler sorun değildir; hissediliyorsa mil yenilenmelidir.\n\nİkincisi eksen kaçıklığıdır. Silindir yükle aynı eksende değilse mil yandan zorlanır; keçe tek taraftan bastırılır, o taraftan aşınır ve önce oradan kaçırır. Kaçağın milin bir yüzünde yoğunlaşması bu arızanın tipik işaretidir. Çözüm keçe değil, rot mafsalıdır — silindirin yükle birlikte açı yapmasına izin verilmelidir.\n\nÜçüncüsü montaj hasarıdır. Keçe, mil ucundaki dişten veya kapak köşesinden geçirilirken kesilir; hasar gözle görünmeyecek kadar küçük olabilir ama kaçak hemen başlar. Keçeler yağlanarak ve montaj kılavuzuyla takılmalı, keskin köşeler bantla kapatılmalıdır.\n\nDördüncüsü yataklama aşınmasıdır. Kılavuz bilezikleri (K68, K69 gibi) mili merkezde tutar. Aşındıklarında mil boşluk kazanır ve her harekette keçeye yandan yüklenir. Keçe değişirken yataklamanın da kontrol edilmesi, tekrarlayan kaçakları önlemenin en etkili adımıdır.\n\nBeşincisi malzeme seçimidir. Standart NBR keçe yaklaşık 100 °C'ye kadar çalışır. Sürekli daha sıcak çalışan sistemlerde keçe sertleşir, elastikliğini kaybeder ve dudak baskısı düşer. Bu durumda FKM (viton) malzemeye geçilmelidir. Su bazlı akışkan kullanılıyorsa malzeme buna göre ayrıca seçilir.\n\nAltıncısı sıcaklıktır ve beşinciyle birlikte gider: yağ sürekli 60 °C üzerindeyse hem keçe hem yağ hızla yaşlanır. Burada çözüm keçe değil, soğutucudur.\n\nYedincisi kirli yağdır. Yağdaki metal zerreleri mil yüzeyini zımpara gibi çizer ve keçe dudağını yer. Filtresi tıkalı ya da baypasta çalışan bir sistemde keçe ömrü kısalır. Kaçak tekrarlıyorsa filtre ve yağ durumu da kontrol edilmelidir.",
+   "sss": [
+    {
+     "s": "Keçeyi değiştirdim, yine kaçırıyor. Neden?",
+     "c": "Sebep büyük olasılıkla keçenin kendisi değil. En sık iki neden vardır: milde eksen yönünde bir çizik ve montaj sırasında kesilmiş keçe. Üçüncü sık neden aşınmış yataklama bileziğidir — mil merkezde durmadığı için yeni keçe de kısa sürede tek taraftan yenir. Keçe değişirken mil yüzeyi ve yataklama mutlaka kontrol edilmelidir."
+    },
+    {
+     "s": "Kaçak milin hep aynı tarafından geliyor, ne anlama gelir?",
+     "c": "Bu, eksen kaçıklığının tipik işaretidir. Silindir yükle aynı doğrultuda çalışmıyorsa mil yandan zorlanır, keçe tek taraftan bastırılır ve o taraf aşınır. Çözüm daha iyi bir keçe değil, silindirin açı yapmasına izin veren rot mafsalı ve bağlantı geometrisinin düzeltilmesidir."
+    },
+    {
+     "s": "Milde ne kadar çizik kabul edilebilir?",
+     "c": "Pratik ölçü tırnaktır: tırnağınızı mil boyunca gezdirdiğinizde takılan her iz, keçe dudağının altından yağ geçirecek kadar derindir ve mil yenilenmelidir. Tırnağın takılmadığı yüzeysel izler sorun çıkarmaz. Çevresel (mil ekseninin dikinde) izler, boyuna izlere göre çok daha az zararlıdır."
+    },
+    {
+     "s": "NBR yerine ne zaman FKM keçe kullanmalıyım?",
+     "c": "Yağ sıcaklığı sürekli 100 °C üzerindeyse, sistemde yakıt veya kimyasal teması varsa FKM (viton) gerekir. NBR bu koşullarda sertleşir ve dudak baskısı düşer. Buna karşılık su bazlı akışkanlarda ne NBR ne FKM en iyi seçimdir; malzeme akışkana göre ayrıca belirlenmelidir."
+    },
+    {
+     "s": "Keçe takımı mı almalıyım yoksa tek keçe mi?",
+     "c": "Silindir zaten sökülmüşse takım almak neredeyse her zaman doğrudur: iş gücünün tamamı zaten harcanmıştır ve eskimiş diğer elemanları yerinde bırakmak, birkaç ay sonra aynı işi tekrar yapmak demektir. Tek keçe değişimi yalnızca silindiri sökmeden erişilebilen dış keçelerde mantıklıdır."
+    },
+    {
+     "s": "Silindir dıştan kaçırmıyor ama gücü düşük, sebebi ne?",
+     "c": "Bu iç kaçaktır: piston keçesi yağı pistonun bir tarafından diğerine geçiriyordur. Dışarı yağ çıkmaz, ama silindir yükü kaldıramaz veya yük altında yavaşça geri kaçar. Ayırt etmek için silindir tam açık konumda tutulup basınç uygulanır; mil yavaşça geri geliyorsa piston keçesi kaçırıyordur."
+    },
+    {
+     "s": "Silindir yükü havada tutamıyor, keçe mi suçlu?",
+     "c": "Her zaman değil. Yük yavaşça iniyorsa iki olasılık vardır: piston keçesi kaçırıyordur ya da devredeki valf iç kaçak yapıyordur. Ayırt etmek için silindirin hatları kapatılır; yük yine iniyorsa suçlu silindirin içindedir, durursa arıza valftedir. Emniyet gerektiren uygulamalarda ayrıca yük tutma valfi kullanılmalıdır."
+    }
+   ]
+  },
+  "en": {
+   "ad": "Cylinder leaks",
+   "h1": "Why Is My Hydraulic Cylinder Leaking? Seven Causes of Seal Failure",
+   "ozet": "Why a replaced seal leaks again months later: rod scoring, misalignment, assembly damage, wrong material, excessive temperature and dirty oil.",
+   "giris": "The first reflex with a leaking cylinder is to change the seal, and most of the time it works. But if the seal leaks again a few months later, the problem is not the seal — the seal is only the symptom of another fault. Repeat leaks in the field come down to these seven causes.\n\nThe first is the rod surface. A deep score running along the axis forms a channel that continuously passes oil under the seal lip; no seal can close it. Where chrome plating is flaking, the fragments cut the new seal on its first stroke. Shallow marks that cannot be felt with a fingernail are harmless; if they can be felt, the rod must be renewed.\n\nThe second is misalignment. If the cylinder is not on the same axis as the load, the rod takes a side load; the seal is pressed harder on one side, wears there and starts leaking from that side first. A leak concentrated on one face of the rod is the classic sign. The remedy is not a seal but a rod end — the cylinder has to be allowed to swing with the load.\n\nThe third is assembly damage. The seal is cut as it passes the thread at the rod end or the corner of the gland; the damage can be too small to see, but the leak starts immediately. Seals should be lubricated and fitted with an assembly sleeve, and sharp corners taped over.\n\nThe fourth is worn bearings. The guide rings (K68, K69 and the like) hold the rod centred. As they wear, the rod develops play and loads the seal sideways on every stroke. Checking the wear rings while the seals are changed is the single most effective step against repeat leaks.\n\nThe fifth is material choice. A standard NBR seal works up to roughly 100 °C. In systems that run hotter continuously the seal hardens, loses elasticity and its lip pressure falls. FKM (Viton) should be used instead. If a water-based fluid is in use, the material has to be selected separately for it.\n\nThe sixth is temperature, and it goes with the fifth: if the oil sits above 60 °C continuously, both seal and oil age quickly. Here the answer is not a seal but a cooler.\n\nThe seventh is dirty oil. Metal particles in the oil score the rod surface like abrasive and eat the seal lip. In a system whose filter is clogged or running in bypass, seal life is short. If leaks keep recurring, the filter and the condition of the oil should be checked too.",
+   "sss": [
+    {
+     "s": "I replaced the seal and it still leaks. Why?",
+     "c": "The cause is most likely not the seal itself. The two most common reasons are a score running along the rod and a seal cut during assembly. A third common cause is a worn guide ring — with the rod off centre, the new seal is quickly worn on one side as well. Rod surface and wear rings must always be checked when seals are changed."
+    },
+    {
+     "s": "The leak always comes from the same side of the rod — what does that mean?",
+     "c": "That is the classic sign of misalignment. If the cylinder does not work in line with the load, the rod takes a side load, the seal is pressed harder on one side and wears there. The remedy is not a better seal but a rod end that lets the cylinder swing, together with a correction of the mounting geometry."
+    },
+    {
+     "s": "How much scoring on a rod is acceptable?",
+     "c": "The practical test is your fingernail: any mark your nail catches on as you run it along the rod is deep enough to pass oil under the seal lip, and the rod should be renewed. Shallow marks the nail does not catch are harmless. Circumferential marks (across the rod axis) are far less damaging than longitudinal ones."
+    },
+    {
+     "s": "When should I use FKM instead of NBR?",
+     "c": "FKM (Viton) is needed where oil temperature is continuously above 100 °C, or where there is contact with fuel or chemicals. NBR hardens under those conditions and its lip pressure falls. Conversely, for water-based fluids neither NBR nor FKM is automatically the best choice; the material has to be selected for the fluid."
+    },
+    {
+     "s": "Should I buy a seal kit or a single seal?",
+     "c": "If the cylinder is already stripped, a kit is almost always right: the labour has already been spent, and leaving the other aged elements in place means doing the same job again a few months later. Replacing a single seal only makes sense for external seals that can be reached without stripping the cylinder."
+    },
+    {
+     "s": "The cylinder does not leak externally but is weak — why?",
+     "c": "That is internal leakage: the piston seal is passing oil from one side of the piston to the other. No oil comes out, but the cylinder cannot lift the load, or drifts back slowly under load. To confirm, hold the cylinder fully extended and apply pressure; if the rod creeps back, the piston seal is passing."
+    },
+    {
+     "s": "The cylinder will not hold a load in the air — is the seal to blame?",
+     "c": "Not always. If the load descends slowly there are two possibilities: the piston seal is passing, or a valve in the circuit is leaking internally. To tell them apart, close off the cylinder's lines; if the load still descends the fault is inside the cylinder, if it stops the fault is in the valve. Applications that require safety should also use a load-holding valve."
+    }
+   ]
+  },
+  "ru": {
+   "ad": "Течь цилиндра",
+   "h1": "Почему течёт гидроцилиндр? Семь причин отказа уплотнений",
+   "ozet": "Почему заменённое уплотнение снова течёт через несколько месяцев: задиры штока, перекос, повреждение при монтаже, неверный материал, перегрев и грязное масло.",
+   "giris": "Первая реакция на текущий цилиндр — заменить уплотнение, и чаще всего это помогает. Но если через несколько месяцев течь возвращается, дело не в уплотнении — оно лишь признак другой неисправности. Повторяющиеся течи на практике сводятся к семи причинам.\n\nПервая — поверхность штока. Глубокая продольная царапина образует канал, по которому масло постоянно проходит под кромкой уплотнения; закрыть его не сможет ни одно уплотнение. Если хромовое покрытие отслаивается, его частицы режут новое уплотнение на первом же ходе. Поверхностные следы, не ощутимые ногтем, безвредны; если ноготь цепляется — шток подлежит замене.\n\nВторая — перекос. Если цилиндр не соосен нагрузке, шток получает боковую нагрузку; уплотнение сильнее прижимается с одной стороны, там изнашивается и оттуда начинает течь. Течь, сосредоточенная на одной стороне штока, — классический признак. Средство — не уплотнение, а шарнирная головка: цилиндру нужно позволить поворачиваться вместе с нагрузкой.\n\nТретья — повреждение при монтаже. Уплотнение режется при проходе через резьбу на конце штока или кромку крышки; повреждение может быть незаметным глазу, но течь начинается сразу. Уплотнения нужно смазывать и устанавливать через монтажную втулку, а острые кромки заклеивать лентой.\n\nЧетвёртая — износ направляющих. Направляющие кольца (K68, K69 и подобные) удерживают шток по центру. При их износе шток получает люфт и на каждом ходе нагружает уплотнение сбоку. Проверка направляющих при замене уплотнений — самый действенный шаг против повторных течей.\n\nПятая — выбор материала. Стандартное уплотнение NBR работает примерно до 100 °C. В системах, постоянно работающих горячее, оно твердеет, теряет эластичность, и давление кромки падает. В этом случае переходят на FKM (витон). При использовании рабочей жидкости на водной основе материал подбирается отдельно.\n\nШестая — температура, и она идёт рука об руку с пятой: если масло постоянно выше 60 °C, быстро стареют и уплотнение, и само масло. Здесь решение — не уплотнение, а охладитель.\n\nСедьмая — грязное масло. Металлические частицы в масле царапают поверхность штока как абразив и съедают кромку уплотнения. В системе с забитым или работающим в байпасе фильтром срок службы уплотнений короток. Если течи повторяются, следует проверить и фильтр, и состояние масла.",
+   "sss": [
+    {
+     "s": "Я заменил уплотнение, а оно снова течёт. Почему?",
+     "c": "Причина, скорее всего, не в самом уплотнении. Две самые частые: продольная царапина на штоке и уплотнение, порезанное при монтаже. Третья частая причина — изношенное направляющее кольцо: шток стоит не по центру, и новое уплотнение тоже быстро изнашивается с одной стороны. При замене уплотнений обязательно проверяют поверхность штока и направляющие."
+    },
+    {
+     "s": "Течь всегда идёт с одной и той же стороны штока — о чём это говорит?",
+     "c": "Это классический признак перекоса. Если цилиндр работает не в одну линию с нагрузкой, шток получает боковую нагрузку, уплотнение сильнее прижимается с одной стороны и там изнашивается. Средство — не лучшее уплотнение, а шарнирная головка, позволяющая цилиндру поворачиваться, и исправление геометрии крепления."
+    },
+    {
+     "s": "Какие задиры на штоке допустимы?",
+     "c": "Практический критерий — ноготь: любой след, за который ноготь цепляется при движении вдоль штока, достаточно глубок, чтобы пропускать масло под кромкой уплотнения, и шток следует заменить. Поверхностные следы, за которые ноготь не цепляется, безвредны. Кольцевые следы (поперёк оси штока) гораздо менее опасны, чем продольные."
+    },
+    {
+     "s": "Когда вместо NBR применять FKM?",
+     "c": "FKM (витон) нужен там, где температура масла постоянно выше 100 °C или есть контакт с топливом либо химикатами. NBR в таких условиях твердеет, и давление кромки падает. И наоборот, для жидкостей на водной основе ни NBR, ни FKM не являются автоматически лучшим выбором; материал подбирают под жидкость."
+    },
+    {
+     "s": "Брать ремкомплект или одно уплотнение?",
+     "c": "Если цилиндр уже разобран, ремкомплект почти всегда правильнее: трудозатраты уже понесены, а оставить остальные состарившиеся элементы на месте — значит через несколько месяцев делать ту же работу заново. Замена одного уплотнения оправданна только для наружных уплотнений, доступных без разборки цилиндра."
+    },
+    {
+     "s": "Цилиндр не течёт наружу, но слабый — почему?",
+     "c": "Это внутренняя утечка: поршневое уплотнение пропускает масло с одной стороны поршня на другую. Наружу масло не выходит, но цилиндр не поднимает груз или медленно проседает под нагрузкой. Для проверки удерживают цилиндр в полностью выдвинутом положении и подают давление; если шток медленно уходит назад, пропускает поршневое уплотнение."
+    },
+    {
+     "s": "Цилиндр не держит груз на весу — виновато ли уплотнение?",
+     "c": "Не всегда. Если груз медленно опускается, возможны два варианта: пропускает поршневое уплотнение либо клапан в контуре имеет внутреннюю утечку. Чтобы их различить, перекрывают линии цилиндра; если груз всё равно опускается — неисправность внутри цилиндра, если останавливается — в клапане. В применениях, требующих безопасности, дополнительно ставят клапан удержания нагрузки."
+    }
+   ]
+  }
+ }
+]

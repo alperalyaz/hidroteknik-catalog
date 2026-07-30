@@ -87,6 +87,13 @@ export type Metin = {
   markaProfilNotu: string
   markaDigerBaslik: string
   markaTumKatalog: string
+  // — Teknik rehber sayfası (/[lang]/rehber/[slug]) —
+  rehberKirinti: string
+  rehberRozet: string
+  rehberIlgiliBaslik: string
+  rehberDigerBaslik: string
+  rehberSssBaslik: string
+  rehberlerBaslik: string
 }
 
 export const METIN: Record<Dil, Metin> = {
@@ -182,6 +189,12 @@ export const METIN: Record<Dil, Metin> = {
     markaProfilNotu: 'Her profilin stoktaki ölçü listesi kendi sayfasındadır.',
     markaDigerBaslik: 'Diğer markalar',
     markaTumKatalog: 'Tüm ürün grupları',
+    rehberKirinti: 'Teknik rehber',
+    rehberRozet: 'Teknik rehber',
+    rehberIlgiliBaslik: 'İlgili ürün grupları',
+    rehberDigerBaslik: 'Diğer teknik rehberler',
+    rehberSssBaslik: 'Sık sorulan sorular',
+    rehberlerBaslik: 'Teknik rehberler',
   },
   en: {
     urunKatalogu: 'Product Catalog',
@@ -275,6 +288,12 @@ export const METIN: Record<Dil, Metin> = {
     markaProfilNotu: 'Each profile has its own page listing the sizes in stock.',
     markaDigerBaslik: 'Other brands',
     markaTumKatalog: 'All product groups',
+    rehberKirinti: 'Technical guides',
+    rehberRozet: 'Technical guide',
+    rehberIlgiliBaslik: 'Related product groups',
+    rehberDigerBaslik: 'Other technical guides',
+    rehberSssBaslik: 'Frequently asked questions',
+    rehberlerBaslik: 'Technical guides',
   },
   ru: {
     urunKatalogu: 'Каталог продукции',
@@ -368,5 +387,11 @@ export const METIN: Record<Dil, Metin> = {
     markaProfilNotu: 'Список размеров каждого профиля — на его отдельной странице.',
     markaDigerBaslik: 'Другие бренды',
     markaTumKatalog: 'Все группы товаров',
+    rehberKirinti: 'Технические руководства',
+    rehberRozet: 'Техническое руководство',
+    rehberIlgiliBaslik: 'Связанные группы товаров',
+    rehberDigerBaslik: 'Другие технические руководства',
+    rehberSssBaslik: 'Часто задаваемые вопросы',
+    rehberlerBaslik: 'Технические руководства',
   },
 }

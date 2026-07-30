@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { DILLER, SITE_URL, FIRMA, ANA_SITE, HESAPLA_URL, sayiFormat, type Dil } from '@/lib/site'
 import { METIN } from '@/lib/metin'
 import { kategorilerIcin, kategoriUrunleri } from '@/lib/veri'
+import { REHBERLER } from '@/lib/rehber'
+import { MARKALAR } from '@/lib/marka'
 
 const BASLIK: Record<Dil, string> = {
   tr: 'Hidrolik ve Pnömatik Ürün Kataloğu',
@@ -70,6 +72,30 @@ export default async function KatalogAnaSayfa({ params }: { params: Promise<{ la
                 </Link>
               )
             })}
+          </div>
+        </section>
+
+        <section>
+          <h2>{m.rehberlerBaslik}</h2>
+          <div className="kartlar">
+            {REHBERLER.map((r) => (
+              <Link key={r.slug} href={`/${lang}/rehber/${r.slug}`} className="kart">
+                <b>{r[lang].ad}</b>
+                <span>{r[lang].ozet}</span>
+                <em>{m.rehberRozet}</em>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <h2>{m.markaKirinti}</h2>
+          <div className="etiketler">
+            {MARKALAR.map((b) => (
+              <Link key={b.slug} href={`/${lang}/marka/${b.slug}`} className="etiket etiket-marka">
+                {b.ad}
+              </Link>
+            ))}
           </div>
         </section>
 

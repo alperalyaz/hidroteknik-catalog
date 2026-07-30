@@ -202,6 +202,31 @@ export function markaSchema(
   }
 }
 
+/**
+ * Teknik rehber sayfası. CollectionPage değil Article — sayfa ürün listesi
+ * değil, açıklayıcı metin. Yazar olarak işletme beyan edilir.
+ */
+export function rehberSchema(
+  i: { ad: string; h1: string; ozet: string },
+  url: string,
+  lang: string,
+  katalogAdi: string
+) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'TechArticle',
+    '@id': `${url}#makale`,
+    url,
+    headline: i.h1,
+    name: i.ad,
+    description: i.ozet,
+    inLanguage: lang,
+    isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}/#site`, name: `${FIRMA.ad} ${katalogAdi}` },
+    author: { '@id': ISLETME_ID },
+    publisher: { '@id': ISLETME_ID },
+  }
+}
+
 export function sssSchema(sss: { s: string; c: string }[], lang?: string) {
   return {
     '@context': 'https://schema.org',
