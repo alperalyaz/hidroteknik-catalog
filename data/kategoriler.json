@@ -3,8 +3,8 @@
   "slug": "hidrolik-hortum",
   "ad": "Hidrolik Hortum",
   "h1": "Hidrolik Hortum ve Bağlantı Elemanları",
-  "ozet": "Hidrolik hortum: 1SN, 2SN, 2SC, 4SP, 4SH ve R6 tipleri. Gates, Alfagomma, Forcestream, Seltex ve Ultimate. Presleme yerinde, aynı gün.",
-  "giris": "Hidrolik hortum, sistemdeki basıncı kaybetmeden akışkanı taşıyan esnek bağlantı elemanıdır. Doğru hortum seçimi üç değere bağlıdır: çalışma basıncı, akışkan sıcaklığı ve iç çap. Bu üçünden biri yanlış seçildiğinde hortum ya erken yorulur ya da patlama riski taşır.\n\nHidroteknik, Denizli'deki deposunda 1SN ve 2SN tek/çift örgülü, 4SP ve 4SH çok katlı spiral ve termoplastik hortum tiplerini bulundurur. Hortum presleme işlemi kendi tesisimizde yapılır; standart ölçüler için genellikle aynı gün teslim edilir.",
+  "ozet": "Hidrolik hortum: 1SN, 2SN, 2SC, 4SP, 4SH ve R6 tipleri. Gates, Alfagomma, HansaFlex ve Vereks. Presleme yerinde, aynı gün.",
+  "giris": "Hidrolik hortum, sistemdeki basıncı kaybetmeden akışkanı taşıyan esnek bağlantı elemanıdır. Doğru hortum seçimi üç değere bağlıdır: çalışma basıncı, akışkan sıcaklığı ve iç çap. Bu üçünden biri yanlış seçildiğinde hortum ya erken yorulur ya da patlama riski taşır.\n\nHidroteknik, Denizli'deki deposunda 1SN ve 2SN tek/çift örgülü, 4SP ve 4SH çok katlı spiral ve termoplastik hortum tiplerini bulundurur. Hortum presleme işlemi kendi tesisimizde yapılır; standart ölçüler için genellikle aynı gün teslim edilir.\n\nForcestream, Seltex ve Ultimate hatları ile yıkama, ilaçlama, akaryakıt gibi genel amaçlı hortumlar Sel/Hidrotek kod ailesindendir ve ayrı bir grupta listelenir: bkz. «Sel Hortum».",
   "eslesme": "HORTUM",
   "haric": "RAKOR|REKOR|N[İIi]PEL|TAPA|SOKET|KELEPÇE|KELEPCE|MAKAS|VALF|KART[İIi]C[İIi]|PATLAMA|MAKARA|SPREY|POL[İIi][ÜU]R[AE]TAN|POLYAM[İIi]D|HAVA HORTUMU|TEFLON|PTFE|[İIi]MALAT|REV[İIi]ZYON|DEĞ[İIi]Ş[İIi]M|TAM[İIi]R|MONTAJ|[İIi]ŞÇ[İIi]L[İIi]K|BAKIM",
   "sss": [
@@ -28,11 +28,8 @@
   "eslesme2": "",
   "markalar": [
    "Alfagomma",
-   "Forcestream",
    "Gates",
    "HansaFlex",
-   "Seltex",
-   "Ultimate",
    "Vereks"
   ],
   "standartlar": [
@@ -42,6 +39,53 @@
    "EN 856 4SP / 4SH",
    "SAE 100 R6",
    "DIN 20022"
+  ],
+  "haricKod": "^SEL\\."
+ },
+ {
+  "slug": "sel-hortum",
+  "ad": "Sel Hortum",
+  "h1": "Sel Hortum — Hidrolik ve Genel Amaçlı Hortum Hatları",
+  "ozet": "Sel/Hidrotek kod ailesi: Forcestream ve Seltex hidrolik hortum, Ultimate ve Powerstream basınçlı hatlar; yıkama, ilaçlama, akaryakıt ve emiş hortumları. 235 kalem.",
+  "giris": "Sel, Hidrotek Hortum'un kendi kod ailesidir ve iki farklı grubu bir arada taşır: yüksek basınçlı hidrolik hortum hatları (Forcestream, Seltex, Ultimate, Powerstream, TwinStream) ve genel amaçlı endüstriyel hortumlar (su, yıkama, ilaçlama, akaryakıt, emiş, buhar).\n\nHidrolik hatlarda seçim üç değere bağlıdır: basınç sınıfı (R1AT/R2AT, 1SN/2SN, 2SC, R9/R15), iç çap ve sıcaklık. Forcestream R1AT ve R2AT tek/çift örgülü orta basınç hatlarıdır; Ultimate 1SN/2SN aynı sınıfta muadil hattır; Powerstream ve TwinStream (ikiz hat) daha yüksek basınç veya özel montaj gerektiren işler içindir.\n\nGenel amaçlı hortumlarda basınç sınıfı yerine kullanım alanı belirleyicidir: yıkama hatlarında esneklik, ilaçlamada (Odeon) kimyasal dayanım, akaryakıt hattında yakıta dayanıklı iç kaplama, emiş hatlarında çökme direnci aranır. Spiral koruma, teflon soket ve hortum ucu (kuka) gibi kalemler bu hatların aksesuarlarıdır, hortumun kendisi değildir; ayrı stok satırı olarak tutulur.\n\nSürekli basınçlı hidrolik hortum arıyorsanız Hidrolik Hortum sayfasına, hava hattı için Pnömatik Hortum sayfasına da bakabilirsiniz; buradaki hatlar Sel/Hidrotek kod ailesi olduğu için ayrı gruplanmıştır.",
+  "eslesme": "",
+  "haric": "",
+  "eslesmeKod": "^SEL\\.",
+  "sss": [
+   {
+    "s": "Forcestream, Seltex ve Ultimate arasındaki fark nedir?",
+    "c": "Üçü de tek/çift örgülü orta basınç hidrolik hortum hattıdır ve aynı basınç sınıflarında (R1AT/1SN, R2AT/2SN) muadil olarak kullanılabilir. Aralarındaki fark üretici hattıdır, teknik sınıf aynıdır; stokta hangisi varsa o gönderilir, ölçü ve basınç sınıfı eşleşiyorsa değişim sorun çıkarmaz."
+   },
+   {
+    "s": "Sel hortumları neden ayrı bir sayfada?",
+    "c": "Sel, Hidrotek Hortum'un kendi kod ailesidir ve hem hidrolik basınç hattını hem yıkama/ilaçlama/akaryakıt gibi genel amaçlı hortumları aynı kod altında toplar. Bu karışık yapı hidrolik hortum ve pnömatik hortum sayfalarının kapsamını bozacağı için ayrı sayfada listelenir."
+   },
+   {
+    "s": "Basınçlı olmayan hortumlarda (su, ilaçlama, yıkama) hangi ölçü bilgisi gerekir?",
+    "c": "İç çap (genellikle inç: 3/8, 1/2, 3/4) ve uzunluk yeterlidir. Kimyasal taşıyan hatlarda (ilaçlama, akaryakıt) taşınan maddeyi belirtin; iç kaplama malzemesi buna göre değişir."
+   },
+   {
+    "s": "Spiral koruma ve hortum ucu (kuka) nedir?",
+    "c": "Spiral koruma, hortumu aşınmaya ve çizilmeye karşı dıştan saran polietilen sargıdır; hortumun kendisi değildir. Kuka ise hortum ucuna geçen sert plastik/metal rakor gövdesidir. İkisi de ayrı stok kalemi olarak satılır, hortumla birlikte de sipariş edilebilir."
+   }
+  ],
+  "eslesme2": "",
+  "markalar": [
+   "Bosphorus",
+   "Forcestream",
+   "Odeon",
+   "Powerstream",
+   "Sel",
+   "Seltex",
+   "TwinStream",
+   "Ultimate"
+  ],
+  "standartlar": [
+   "SAE 100 R1AT / EN 853 1SN",
+   "SAE 100 R2AT / EN 853 2SN",
+   "EN 857 2SC",
+   "SAE 100 R9 / R15",
+   "Genel amaçlı (su, ilaçlama, yıkama, akaryakıt, emiş)"
   ]
  },
  {
@@ -68,7 +112,9 @@
   ],
   "eslesme2": "",
   "markalar": [
+   "Adem Kardeşler",
    "Ferro",
+   "HansaFlex",
    "Oleocontrol"
   ],
   "standartlar": [
@@ -102,7 +148,10 @@
     "c": "Neredeyse her zaman O-ring'e. Yuvadan kaçmış, ezilmiş, kesilmiş veya eksik olabilir. Somunu daha fazla sıkmak çözüm değildir; aşırı sıkma O-ring'i keser. Bağlantı sökülüp O-ring gözle kontrol edilmelidir."
    }
   ],
-  "markalar": [],
+  "markalar": [
+   "Adem Kardeşler",
+   "HansaFlex"
+  ],
   "standartlar": [
    "ORFS (SAE J1453)",
    "BSP – ORFS geçiş"
@@ -132,6 +181,8 @@
    }
   ],
   "markalar": [
+   "Adem Kardeşler",
+   "HansaFlex",
    "Pemaks"
   ],
   "standartlar": [
@@ -165,6 +216,8 @@
    }
   ],
   "markalar": [
+   "Adem Kardeşler",
+   "HansaFlex",
    "Mintor"
   ],
   "standartlar": [
@@ -234,6 +287,10 @@
    {
     "s": "Dişli pompa mı pistonlu pompa mı?",
     "c": "Sabit debi yeterliyse ve basınç orta seviyedeyse dişli pompa hem ekonomik hem dayanıklıdır. Yüksek basınç, değişken debi ihtiyacı veya enerji verimliliği önemliyse eksenel pistonlu pompa tercih edilir; ilk yatırım daha yüksektir."
+   },
+   {
+    "s": "PZB pompa hâlâ satılıyor mu?",
+    "c": "PZB, Interpump çatısı altına katılınca marka adı Interpump olarak değişti; ürün hattı ve stok kodları aynı. Eski PZB etiketiyle aradığınız pompayı Interpump marka altında bulabilirsiniz."
    }
   ],
   "markalar": [
@@ -242,7 +299,8 @@
    "Hema",
    "Hidromas",
    "Hidroteknik",
-   "Hydropack"
+   "Hydropack",
+   "Interpump"
   ],
   "standartlar": [
    "Dişli pompa",
@@ -555,6 +613,7 @@
   ],
   "markalar": [
    "Erbi",
+   "HansaFlex",
    "LMC"
   ],
   "standartlar": [
@@ -672,7 +731,7 @@
   "ad": "Pnömatik Hortum",
   "h1": "Poliüretan, Polyamid ve PTFE Pnömatik Hortum",
   "ozet": "Basınçlı hava hatları için poliüretan (PU), polyamid (PA) ve teflon (PTFE) hortum. 4x2,5’ten 16x12’ye kadar metrede satış.",
-  "giris": "Pnömatik hortum, hidrolik hortumla aynı işi yapmaz: basınç çok daha düşüktür (tipik olarak 6–10 bar), buna karşılık hat sık hareket eder ve dar yerlerden kıvrılarak geçer. Bu yüzden çelik örgü değil, esnek plastik gövde kullanılır ve ölçü dış çap x iç çap olarak verilir — 8x5,5 ifadesi 8 mm dış, 5,5 mm iç çap demektir. Takmatik (push-in) rakorlar dış çapa göre seçildiği için bu iki sayıyı karıştırmamak gerekir.\n\nPoliüretan (PU) en yaygın olanıdır: yumuşaktır, küçük yarıçapta kıvrılır, hareketli aparatlarda ezilmeye dayanır. Polyamid (PA) daha serttir ve daha yüksek sıcaklığa çıkar; sabit tesisat hatlarında ve makine içi döşemede tercih edilir. PTFE (teflon) hortum ise kimyasal dayanımı ve sıcaklık aralığı gerektiren yerlerde kullanılır.\n\nMetre ile satılır; istenen boyda kesilir. Şeffaf spiral ve örgülü hava hortumu tipleri de aynı grupta bulunur.",
+  "giris": "Pnömatik hortum, hidrolik hortumla aynı işi yapmaz: basınç çok daha düşüktür (tipik olarak 6–10 bar), buna karşılık hat sık hareket eder ve dar yerlerden kıvrılarak geçer. Bu yüzden çelik örgü değil, esnek plastik gövde kullanılır ve ölçü dış çap x iç çap olarak verilir — 8x5,5 ifadesi 8 mm dış, 5,5 mm iç çap demektir. Takmatik (push-in) rakorlar dış çapa göre seçildiği için bu iki sayıyı karıştırmamak gerekir.\n\nPoliüretan (PU) en yaygın olanıdır: yumuşaktır, küçük yarıçapta kıvrılır, hareketli aparatlarda ezilmeye dayanır. Polyamid (PA) daha serttir ve daha yüksek sıcaklığa çıkar; sabit tesisat hatlarında ve makine içi döşemede tercih edilir. PTFE (teflon) hortum ise kimyasal dayanımı ve sıcaklık aralığı gerektiren yerlerde kullanılır.\n\nMetre ile satılır; istenen boyda kesilir. Şeffaf spiral ve örgülü hava hortumu tipleri de aynı grupta bulunur.\n\nJava marka hava hortumu ve teflon soket Sel/Hidrotek kod ailesindendir ve ayrı bir grupta listelenir: bkz. «Sel Hortum».",
   "eslesme": "POL[İIi][ÜU]R[AE]TAN|POLYAM[İIi]D|TEFLON HORTUM|PTFE|HAVA HORTUMU",
   "haric": "RAKOR|REKOR|SOKET|KELEP",
   "sss": [
@@ -691,14 +750,13 @@
   ],
   "markalar": [
    "HansaFlex",
-   "Java",
-   "Pemaks",
-   "Seltex"
+   "Pemaks"
   ],
   "standartlar": [
    "PU (poliüretan)",
    "PA (polyamid)",
    "PTFE (teflon)"
-  ]
+  ],
+  "haricKod": "^SEL\\."
  }
 ]

@@ -4,22 +4,8 @@
  "siralama": "aylık tüketim (sa_aylik_tuketim) — en çok hareket gören üstte",
  "kategoriler": {
   "hidrolik-hortum": {
-   "toplamUrun": 349,
+   "toplamUrun": 192,
    "urunler": [
-    {
-     "kod": "SEL.YIKAMA.01805",
-     "ad": "SEL YIKAMA HORTUMU 5/16 R2"
-    },
-    {
-     "kod": "SEL.R6.08",
-     "ad": "SELTEX R6 ( 1/2 ) HİDROLİK HORTUM",
-     "marka": "Seltex"
-    },
-    {
-     "kod": "SEL.FR2.SC.07",
-     "ad": "FORCESTREAM R2AT /2 SC ( 5/16 ) HİDROLİK HORTUM",
-     "marka": "Forcestream"
-    },
     {
      "kod": "HANSA.KP208",
      "ad": "HansaFlex 2SC 5/16 hidrolik hortum",
@@ -53,20 +39,18 @@
     {
      "kod": "AD-0808-HE",
      "ad": "HORTUM EKİ 5/16",
-     "model": "5/16"
+     "model": "5/16",
+     "marka": "Adem Kardeşler"
     },
     {
      "kod": "AD-1010-HE",
      "ad": "HORTUM EKİ 3/8",
-     "model": "3/8"
+     "model": "3/8",
+     "marka": "Adem Kardeşler"
     },
     {
      "kod": "MUH.246",
      "ad": "5/8 HİDROLİK HORTUM"
-    },
-    {
-     "kod": "SEL.YIKAMA.MAVİ",
-     "ad": "SEL YIKAMA 5/16 CAR WASH MAVİ HORTUM"
     },
     {
      "kod": "HANSA.KP225",
@@ -90,6 +74,18 @@
     {
      "kod": "EKO.TCP6X6",
      "ad": "6X6 HORTUM KANALI"
+    },
+    {
+     "kod": "AD-1313-HE",
+     "ad": "HORTUM EKİ 1/2",
+     "marka": "Adem Kardeşler",
+     "model": "1/2"
+    },
+    {
+     "kod": "AD-0606-HE",
+     "ad": "HORTUM EKİ 1/4",
+     "marka": "Adem Kardeşler",
+     "model": "1/4"
     }
    ]
   },
@@ -99,22 +95,26 @@
     {
      "kod": "AD-1324-MSD",
      "ad": "METRİK SOMUNLU DÜZ HORTUM RAKORU 1/2 M24X1,5 16S",
-     "model": "M24X1,5 16S"
+     "model": "M24X1,5 16S",
+     "marka": "Adem Kardeşler"
     },
     {
      "kod": "AD-1324-MS90",
      "ad": "METRİK SOMUNLU 90 HORTUM RAKORU 1/2 M24x1,5 16S",
-     "model": "M24x1,5 16S"
+     "model": "M24x1,5 16S",
+     "marka": "Adem Kardeşler"
     },
     {
      "kod": "HF.PN10AOL90",
      "ad": "METRİK SOMUNLU 90 HORTUM RAKORU 3/8 M18x1,5 12L",
-     "model": "M18x1,5 12L"
+     "model": "M18x1,5 12L",
+     "marka": "HansaFlex"
     },
     {
      "kod": "HF.PN08AOL",
      "ad": "METRİK SOMUNLU DÜZ HORTUM RAKORU 5/16 M16x1,5 10L",
-     "model": "M16x1,5 10L"
+     "model": "M16x1,5 10L",
+     "marka": "HansaFlex"
     },
     {
      "kod": "EKO.REK.PC.04.08",
@@ -164,17 +164,20 @@
     {
      "kod": "AD-1018-MSD",
      "ad": "METRİK SOMUNLU DÜZ HORTUM RAKORU 3/8 M18x1,5 12L",
-     "model": "M18x1,5 12L"
+     "model": "M18x1,5 12L",
+     "marka": "Adem Kardeşler"
     },
     {
      "kod": "HF.PN10HS08",
      "ad": "METRİK ERKEK HORTUM RAKORU 3/8 M20x1,5 12S",
-     "model": "M20x1,5 12S"
+     "model": "M20x1,5 12S",
+     "marka": "HansaFlex"
     },
     {
      "kod": "HF.PN08AOL90",
      "ad": "METRİK SOMUNLU 90 HORTUM RAKORU 5/16 M16x1,5 10L",
-     "model": "M16x1,5 10L"
+     "model": "M16x1,5 10L",
+     "marka": "HansaFlex"
     },
     {
      "kod": "EKO.REK.PC.04.10",
@@ -226,37 +229,44 @@
     {
      "kod": "HF.PN13AJF",
      "ad": "ORFS SOMUNLU DÜZ HORTUM RAKORU 1/2 13/16",
-     "model": "1/2 13/16"
+     "model": "1/2 13/16",
+     "marka": "HansaFlex"
     },
     {
      "kod": "HF.PN20AJF",
      "ad": "ORFS SOMUNLU DÜZ HORTUM RAKORU 3/4 13/16",
-     "model": "3/4 13/16"
+     "model": "3/4 13/16",
+     "marka": "HansaFlex"
     },
     {
      "kod": "HF.PN25AJF",
      "ad": "ORFS SOMUNLU DÜZ HORTUM RAKORU 1 17/16",
-     "model": "17/16"
+     "model": "17/16",
+     "marka": "HansaFlex"
     },
     {
      "kod": "AD-0614-OSD",
      "ad": "ORFS SOMUNLU DÜZ HORTUM RAKORU 1/4 9/16",
-     "model": "1/4 9/16"
+     "model": "1/4 9/16",
+     "marka": "Adem Kardeşler"
     },
     {
      "kod": "AD-0617-OSD",
      "ad": "ORFS SOMUNLU DÜZ HORTUM RAKORU 1/4 11/16",
-     "model": "1/4 11/16"
+     "model": "1/4 11/16",
+     "marka": "Adem Kardeşler"
     },
     {
      "kod": "AD-1017-OSD",
      "ad": "ORFS SOMUNLU DÜZ HORTUM RAKORU 3/8 11/16",
-     "model": "3/8 11/16"
+     "model": "3/8 11/16",
+     "marka": "Adem Kardeşler"
     },
     {
      "kod": "AD.1930.OE",
      "ad": "ORFS ERKEK HORTUM RAKORU 3/4 13/16",
-     "model": "3/4 13/16"
+     "model": "3/4 13/16",
+     "marka": "Adem Kardeşler"
     },
     {
      "kod": "MUH.173",
@@ -265,12 +275,14 @@
     {
      "kod": "HF.GEHRED06HJOF",
      "ad": "BSP - ORFS PFX NİPEL 3/8 11/16",
-     "model": "3/8 11/16"
+     "model": "3/8 11/16",
+     "marka": "HansaFlex"
     },
     {
      "kod": "AD-1930-OS90",
      "ad": "ORFS SOMUNLU 90 HORTUM RAKORU 3/4 13/16",
-     "model": "3/4 13/16"
+     "model": "3/4 13/16",
+     "marka": "Adem Kardeşler"
     }
    ]
   },
@@ -280,22 +292,26 @@
     {
      "kod": "HF.XVRNW20HL1/2ED",
      "ad": "BSP-METRİK PFX NİPEL 1/2 M30x2 22L",
-     "model": "M30x2 22L"
+     "model": "M30x2 22L",
+     "marka": "HansaFlex"
     },
     {
      "kod": "HF.XVRNW08HLED",
      "ad": "BSP-METRİK PFX NİPEL 1/4 M16x1,5 10L",
-     "model": "M16x1,5 10L"
+     "model": "M16x1,5 10L",
+     "marka": "HansaFlex"
     },
     {
      "kod": "AD-1314-RWN",
      "ad": "BSP-UNF NİPEL 1/4 9/16",
-     "model": "1/4 9/16"
+     "model": "1/4 9/16",
+     "marka": "Adem Kardeşler"
     },
     {
      "kod": "AD-1316-RMN",
      "ad": "BSP-METRİK PFX NİPEL 1/4 M16x1,5 10L",
-     "model": "M16x1,5 10L"
+     "model": "M16x1,5 10L",
+     "marka": "Adem Kardeşler"
     },
     {
      "kod": "EKO.REK.PU-0800",
@@ -336,12 +352,14 @@
     {
      "kod": "HF.XVRNW08HL3/8ED",
      "ad": "BSP-METRİK PFX NİPEL 3/8 M16x1,5 10L",
-     "model": "M16x1,5 10L"
+     "model": "M16x1,5 10L",
+     "marka": "HansaFlex"
     },
     {
      "kod": "HF.XVNW08HL",
      "ad": "METRİK ARA NİPEL M16x1,5 10L",
-     "model": "M16x1,5 10L"
+     "model": "M16x1,5 10L",
+     "marka": "HansaFlex"
     },
     {
      "kod": "PU-6",
@@ -350,7 +368,8 @@
     {
      "kod": "AD-2124-RMN",
      "ad": "BSP-METRİK PFX NİPEL 1/2 M24x1,5 16S",
-     "model": "M24x1,5 16S"
+     "model": "M24x1,5 16S",
+     "marka": "Adem Kardeşler"
     },
     {
      "kod": "EKO.REK.PU-1000",
@@ -394,26 +413,31 @@
     {
      "kod": "HF.VHR90-3/8ED",
      "ad": "BSP PFX ALYANBAŞLI KÖRTAPA 3/8",
-     "model": "3/8"
+     "model": "3/8",
+     "marka": "HansaFlex"
     },
     {
      "kod": "HF.VLMNW10",
-     "ad": "METRİK SOMUNLU TAPA M18x1,5 12L 22 ANAHTAR"
+     "ad": "METRİK SOMUNLU TAPA M18x1,5 12L 22 ANAHTAR",
+     "marka": "HansaFlex"
     },
     {
      "kod": "AD-1018-RAT",
      "ad": "BSP PFX ALYANBAŞLI KÖRTAPA 1/8",
-     "model": "1/8"
+     "model": "1/8",
+     "marka": "Adem Kardeşler"
     },
     {
      "kod": "AD-24-MEKT",
      "ad": "METRİK ERKEK TAPA M24x1,5 16S",
-     "model": "M24x1,5 16S"
+     "model": "M24x1,5 16S",
+     "marka": "Adem Kardeşler"
     },
     {
      "kod": "AD-3819-EKT",
      "ad": "BSP KÖRTAPA 3/8",
-     "model": "3/8"
+     "model": "3/8",
+     "marka": "Adem Kardeşler"
     },
     {
      "kod": "SARI.1002",
@@ -449,12 +473,14 @@
     {
      "kod": "HF.VERSCHLUSSAJF12",
      "ad": "ORFS SOMUNLU TAPA 13/16",
-     "model": "13/16"
+     "model": "13/16",
+     "marka": "HansaFlex"
     },
     {
      "kod": "AD-1319-RAT",
      "ad": "BSP PFX ALYANBAŞLI KÖRTAPA 1/4",
-     "model": "1/4"
+     "model": "1/4",
+     "marka": "Adem Kardeşler"
     },
     {
      "kod": "SARI.1003",
@@ -581,11 +607,13 @@
     },
     {
      "kod": "PZB.EĞİK.084",
-     "ad": "( EOS 84 ) EĞİK EKSENLİ PİSTONLU POMPA"
+     "ad": "( EOS 84 ) EĞİK EKSENLİ PİSTONLU POMPA",
+     "marka": "Interpump"
     },
     {
      "kod": "PZB.DÜZ.050",
-     "ad": "PZB ( P1-50 ) DÜZ PİSTONLU POMPA"
+     "ad": "PZB ( P1-50 ) DÜZ PİSTONLU POMPA",
+     "marka": "Interpump"
     },
     {
      "kod": "HDT.16300820369",
@@ -627,11 +655,13 @@
     },
     {
      "kod": "PZB.DÜZ.090",
-     "ad": "PZB ( P1-90 ) DÜZ PİSTONLU POMPA"
+     "ad": "PZB ( P1-90 ) DÜZ PİSTONLU POMPA",
+     "marka": "Interpump"
     },
     {
      "kod": "PZB.DÜZ.037",
-     "ad": "PZB ( P1-37 ) DÜZ PİSTONLU POMPA"
+     "ad": "PZB ( P1-37 ) DÜZ PİSTONLU POMPA",
+     "marka": "Interpump"
     },
     {
      "kod": "HDT.16300820169",
@@ -1212,11 +1242,13 @@
     },
     {
      "kod": "HF.STOPFS1415",
-     "ad": "STOPFLEX - KELEPÇE SIKMA ARALIĞI 14-15"
+     "ad": "STOPFLEX - KELEPÇE SIKMA ARALIĞI 14-15",
+     "marka": "HansaFlex"
     },
     {
      "kod": "HF.STOPFS1617",
-     "ad": "STOPFLEX - KELEPÇE SIKMA ARALIĞI 16 - 17"
+     "ad": "STOPFLEX - KELEPÇE SIKMA ARALIĞI 16 - 17",
+     "marka": "HansaFlex"
     },
     {
      "kod": "MUH.MUH.164",
@@ -1490,23 +1522,8 @@
    ]
   },
   "pnomatik-hortum": {
-   "toplamUrun": 73,
+   "toplamUrun": 35,
    "urunler": [
-    {
-     "kod": "SEL.JAVA.08.155",
-     "ad": "JAVA 8 MM HAVA HORTUMU (155 GR)",
-     "marka": "Java"
-    },
-    {
-     "kod": "SEL.JAVA.10.230",
-     "ad": "JAVA 10 MM HAVA HORTUMU (230 GR)",
-     "marka": "Java"
-    },
-    {
-     "kod": "SEL.TFLN.05",
-     "ad": "TEFLON HORTUM BOĞUMLU 1/2",
-     "model": "1/2"
-    },
     {
      "kod": "EKO.PU.0805,5",
      "ad": "POLİÜRETAN HORTUM 8X5,5",
@@ -1552,14 +1569,140 @@
      "marka": "HansaFlex"
     },
     {
-     "kod": "SEL.JAVA.08.156",
-     "ad": "JAVA 8 MM HAVA HORTUMU MAVİ (155 GR)",
-     "marka": "Java"
-    },
-    {
      "kod": "EKO.PU.0402,5",
      "ad": "POLİÜRETAN HORTUM 4X2,5",
      "model": "4X2,5"
+    }
+   ]
+  },
+  "sel-hortum": {
+   "toplamUrun": 235,
+   "urunler": [
+    {
+     "kod": "SEL.YIKAMA.01805",
+     "ad": "SEL YIKAMA HORTUMU 5/16 R2",
+     "marka": "Sel"
+    },
+    {
+     "kod": "SEL.R6.08",
+     "ad": "SELTEX R6 ( 1/2 ) HİDROLİK HORTUM",
+     "marka": "Seltex"
+    },
+    {
+     "kod": "SEL.FR2.SC.07",
+     "ad": "FORCESTREAM R2AT /2 SC ( 5/16 ) HİDROLİK HORTUM",
+     "marka": "Forcestream"
+    },
+    {
+     "kod": "SEL.FR1.08",
+     "ad": "FORCESTREAM R1AT /1 SN ( 1/2 ) HİDROLİK HORTUM",
+     "marka": "Forcestream"
+    },
+    {
+     "kod": "SEL.FR2.SC.04",
+     "ad": "FORCESTREAM R2 SC ( 1/4 ) HİDROLİK HORTUM",
+     "marka": "Forcestream"
+    },
+    {
+     "kod": "SEL.U1.12",
+     "ad": "ULTIMATE 1SN ( 3/4 ) HİDROLİK HORTUM",
+     "marka": "Ultimate"
+    },
+    {
+     "kod": "SEL.U1.16",
+     "ad": "ULTIMATE 1SN ( 1 ) HİDROLİK HORTUM",
+     "marka": "Ultimate"
+    },
+    {
+     "kod": "SEL.U2.08",
+     "ad": "ULTIMATE 2 SN ( 1/2 ) HİDROLİK HORTUM",
+     "marka": "Ultimate"
+    },
+    {
+     "kod": "SEL.4SP.8",
+     "ad": "SEL R9 SP HİDROLİK HORTUM 1/2 POWERSTREAM",
+     "marka": "Powerstream"
+    },
+    {
+     "kod": "SEL.4SH.10",
+     "ad": "SEL R9 SP HİDROLİK HORTUM 5/8",
+     "marka": "Sel",
+     "model": "5/8"
+    },
+    {
+     "kod": "SEL.İKİZ.R2SC",
+     "ad": "TWINSTREAM R2 SC İKİZ ( 1/2 ) HİDROLİK HORTUM",
+     "marka": "TwinStream"
+    },
+    {
+     "kod": "SEL.X-6000",
+     "ad": "SEL R15 6000PSI HİDROLİK HORTUM 1.1/4 X-6000",
+     "marka": "Sel"
+    },
+    {
+     "kod": "SEL.B.51",
+     "ad": "BOSPHORUS ( 2-51 ) MM ŞAFFAF SPRİAL HORTUM",
+     "marka": "Bosphorus"
+    },
+    {
+     "kod": "SEL.B.25",
+     "ad": "BOSPHORUS ( 1-25 ) MM ŞAFFAF SPRİAL HORTUM",
+     "marka": "Bosphorus"
+    },
+    {
+     "kod": "SEL.EGE6.19",
+     "ad": "SEL EGE 6 SU HORTUMU 3/4",
+     "marka": "Sel",
+     "model": "3/4"
+    },
+    {
+     "kod": "SEL.SICAK.SU.12.7",
+     "ad": "SEL SICAK SU LONG HORTUMU 1/2",
+     "marka": "Sel",
+     "model": "1/2"
+    },
+    {
+     "kod": "SEL.O.06",
+     "ad": "ODEON ( 3/8 ) MAVİ İLAÇLAMA HORTUMU 90 BAR",
+     "marka": "Odeon"
+    },
+    {
+     "kod": "SEL.FUEL.10",
+     "ad": "SEL AKARYAKIT HORTUMU 3/8",
+     "marka": "Sel",
+     "model": "3/8"
+    },
+    {
+     "kod": "SEL.AKDENİZ.4",
+     "ad": "SEL AKDENİZ EMİŞ HORTUMU 2\"",
+     "marka": "Sel",
+     "model": "2\""
+    },
+    {
+     "kod": "SEL.YIKAMA.MAVİ",
+     "ad": "SEL YIKAMA 5/16 CAR WASH MAVİ HORTUM",
+     "marka": "Sel"
+    },
+    {
+     "kod": "SEL.BUHAR.12",
+     "ad": "BUHAR ( 3/4 ) GEYSER-2A",
+     "marka": "Sel"
+    },
+    {
+     "kod": "SEL.SP.030",
+     "ad": "SPİRAL KORUMA ( 30*35 ) ( POLİETİLEN )",
+     "marka": "Sel"
+    },
+    {
+     "kod": "SEL.KUKA.12",
+     "ad": "TB KUKA-250 3/4 ( DIŞ ÇAP: 31,6 )",
+     "marka": "Sel"
+    },
+    {
+     "kod": "SEL.TFLN.07",
+     "ad": "TEFLON SOKET 3/4",
+     "marka": "Sel",
+     "model": "3/4"
     }
    ]
   }
