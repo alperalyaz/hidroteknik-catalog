@@ -33,6 +33,7 @@
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { sertlestir } from './turkce-regex.mjs'
 
 const KOK = join(dirname(fileURLToPath(import.meta.url)), '..')
 const URL_BASE = process.env.SUPABASE_URL || 'https://ujmtoruicnmgoarwzhwp.supabase.co'
@@ -43,6 +44,20 @@ if (!ANAHTAR) {
 }
 
 const ONERI_LIMIT = 25 // konsolda önerilecek "listede yok ama çok satıyor" kalem sayısı
+
+/**
+ * "Muhtelif" tezgâh kartları — adı tek bir cins ismi olan, ölçüsü/modeli
+ * olmayan kayıtlar (MUH.MUH.26 "HORTUM", MUH.MUH.40 "REKOR" gibi). Listede
+ * olmayan bir kalemi hızlıca satmak için açılmışlar; gerçek ürün değiller.
+ * Sayıyı şişiriyor ve örnek tabloda "Hortum" diye bir satır olarak görünüyorlar.
+ * Ölçüldü (30.07.2026): 16 kart, biri aylık 362 hareketle en üstte çıkıyordu.
+ */
+const GENEL_HARIC = [
+  '^ *(HORTUM|RAKOR|REKOR|N[İIiı]PEL|TAPA|VALF|POMPA|VANA|KELEPÇE|KEÇE|CONTA',
+  '|S[İIiı]L[İIiı]ND[İIiı]R|NUTR[İIiı]NG|SOKET|ADAPT[ÖO]R|MANOMETRE|BOB[İIiı]N',
+  '|F[İIiı]LTRE|SOĞUTUCU|H[İIiı]DROMOTOR|ELEKTR[İIiı]K MOTORU',
+  '|TAM[İIiı]R TAK[İIiı]M[İIiı]|KEÇE TAK[İIiı]M[İIiı]|KROM M[İIiı]L)( *\\(.{0,20}\\))? *$',
+].join('')
 
 /** PostgREST değer kaçışı: regex'te virgül/parantez var, tırnak içine alınmalı. */
 const tirnak = (v) => `"${String(v).replace(/"/g, '\\"')}"`
@@ -56,16 +71,21 @@ async function sorgula(params) {
   return { satirlar: await r.json(), toplam }
 }
 
-/** Kategorinin filtre dizesi: (ad VEYA kod eşleşmesi) EKSİ (ad VEYA kod hariçleri). */
+/**
+ * Kategorinin filtre dizesi: (ad VEYA kod eşleşmesi) EKSİ (ad VEYA kod hariçleri).
+ * Tüm regex'ler sorgu anında sertleştirilir (Türkçe ı tuzağı). Fonksiyon
+ * etkisiz olduğu için dosyadaki regex zaten sertse hiçbir şey değişmez.
+ */
 function filtre(k) {
   const p = ['aktif=is.true']
   const esle = []
-  if (k.eslesme) esle.push(`urun_ismi.imatch.${tirnak(k.eslesme)}`)
-  if (k.eslesmeKod) esle.push(`kodu.imatch.${tirnak(k.eslesmeKod)}`)
+  if (k.eslesme) esle.push(`urun_ismi.imatch.${tirnak(sertlestir(k.eslesme))}`)
+  if (k.eslesmeKod) esle.push(`kodu.imatch.${tirnak(sertlestir(k.eslesmeKod))}`)
   if (!esle.length) throw new Error(`${k.slug}: eslesme veya eslesmeKod gerekli`)
   p.push(`or=(${esle.join(',')})`) // tek koşulda da geçerli sözdizim
-  if (k.haric) p.push(`urun_ismi=not.imatch.${tirnak(k.haric)}`)
-  if (k.haricKod) p.push(`kodu=not.imatch.${tirnak(k.haricKod)}`)
+  const haric = k.haric ? `${sertlestir(k.haric)}|${GENEL_HARIC}` : GENEL_HARIC
+  p.push(`urun_ismi=not.imatch.${tirnak(haric)}`)
+  if (k.haricKod) p.push(`kodu=not.imatch.${tirnak(sertlestir(k.haricKod))}`)
   return p.join('&')
 }
 

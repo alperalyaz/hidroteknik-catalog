@@ -1,10 +1,10 @@
 {
- "uretim": "2026-07-29",
+ "uretim": "2026-07-30",
  "kaynak": "Mikro ERP → Supabase stok_kartlari (aktif kartlar)",
  "siralama": "aylık tüketim (sa_aylik_tuketim) — en çok hareket gören üstte",
  "kategoriler": {
   "hidrolik-hortum": {
-   "toplamUrun": 192,
+   "toplamUrun": 133,
    "urunler": [
     {
      "kod": "HANSA.KP208",
@@ -85,8 +85,139 @@
     }
    ]
   },
+  "sel-hortum": {
+   "toplamUrun": 235,
+   "urunler": [
+    {
+     "kod": "SEL.YIKAMA.01805",
+     "ad": "SEL YIKAMA HORTUMU 5/16 R2",
+     "marka": "Sel"
+    },
+    {
+     "kod": "SEL.R6.08",
+     "ad": "SELTEX R6 ( 1/2 ) HİDROLİK HORTUM",
+     "marka": "Seltex"
+    },
+    {
+     "kod": "SEL.FR2.SC.07",
+     "ad": "FORCESTREAM R2AT /2 SC ( 5/16 ) HİDROLİK HORTUM",
+     "marka": "Forcestream"
+    },
+    {
+     "kod": "SEL.FR1.08",
+     "ad": "FORCESTREAM R1AT /1 SN ( 1/2 ) HİDROLİK HORTUM",
+     "marka": "Forcestream"
+    },
+    {
+     "kod": "SEL.FR2.SC.04",
+     "ad": "FORCESTREAM R2 SC ( 1/4 ) HİDROLİK HORTUM",
+     "marka": "Forcestream"
+    },
+    {
+     "kod": "SEL.U1.12",
+     "ad": "ULTIMATE 1SN ( 3/4 ) HİDROLİK HORTUM",
+     "marka": "Ultimate"
+    },
+    {
+     "kod": "SEL.U1.16",
+     "ad": "ULTIMATE 1SN ( 1 ) HİDROLİK HORTUM",
+     "marka": "Ultimate"
+    },
+    {
+     "kod": "SEL.U2.08",
+     "ad": "ULTIMATE 2 SN ( 1/2 ) HİDROLİK HORTUM",
+     "marka": "Ultimate"
+    },
+    {
+     "kod": "SEL.4SP.8",
+     "ad": "SEL R9 SP HİDROLİK HORTUM 1/2 POWERSTREAM",
+     "marka": "Powerstream"
+    },
+    {
+     "kod": "SEL.4SH.10",
+     "ad": "SEL R9 SP HİDROLİK HORTUM 5/8",
+     "marka": "Sel",
+     "model": "5/8"
+    },
+    {
+     "kod": "SEL.İKİZ.R2SC",
+     "ad": "TWINSTREAM R2 SC İKİZ ( 1/2 ) HİDROLİK HORTUM",
+     "marka": "TwinStream"
+    },
+    {
+     "kod": "SEL.X-6000",
+     "ad": "SEL R15 6000PSI HİDROLİK HORTUM 1.1/4 X-6000",
+     "marka": "Sel"
+    },
+    {
+     "kod": "SEL.B.51",
+     "ad": "BOSPHORUS ( 2-51 ) MM ŞAFFAF SPRİAL HORTUM",
+     "marka": "Bosphorus"
+    },
+    {
+     "kod": "SEL.B.25",
+     "ad": "BOSPHORUS ( 1-25 ) MM ŞAFFAF SPRİAL HORTUM",
+     "marka": "Bosphorus"
+    },
+    {
+     "kod": "SEL.EGE6.19",
+     "ad": "SEL EGE 6 SU HORTUMU 3/4",
+     "marka": "Sel",
+     "model": "3/4"
+    },
+    {
+     "kod": "SEL.SICAK.SU.12.7",
+     "ad": "SEL SICAK SU LONG HORTUMU 1/2",
+     "marka": "Sel",
+     "model": "1/2"
+    },
+    {
+     "kod": "SEL.O.06",
+     "ad": "ODEON ( 3/8 ) MAVİ İLAÇLAMA HORTUMU 90 BAR",
+     "marka": "Odeon"
+    },
+    {
+     "kod": "SEL.FUEL.10",
+     "ad": "SEL AKARYAKIT HORTUMU 3/8",
+     "marka": "Sel",
+     "model": "3/8"
+    },
+    {
+     "kod": "SEL.AKDENİZ.4",
+     "ad": "SEL AKDENİZ EMİŞ HORTUMU 2\"",
+     "marka": "Sel",
+     "model": "2\""
+    },
+    {
+     "kod": "SEL.YIKAMA.MAVİ",
+     "ad": "SEL YIKAMA 5/16 CAR WASH MAVİ HORTUM",
+     "marka": "Sel"
+    },
+    {
+     "kod": "SEL.BUHAR.12",
+     "ad": "BUHAR ( 3/4 ) GEYSER-2A",
+     "marka": "Sel"
+    },
+    {
+     "kod": "SEL.SP.030",
+     "ad": "SPİRAL KORUMA ( 30*35 ) ( POLİETİLEN )",
+     "marka": "Sel"
+    },
+    {
+     "kod": "SEL.KUKA.12",
+     "ad": "TB KUKA-250 3/4 ( DIŞ ÇAP: 31,6 )",
+     "marka": "Sel"
+    },
+    {
+     "kod": "SEL.TFLN.07",
+     "ad": "TEFLON SOKET 3/4",
+     "marka": "Sel",
+     "model": "3/4"
+    }
+   ]
+  },
   "hidrolik-rakor": {
-   "toplamUrun": 1466,
+   "toplamUrun": 1464,
    "urunler": [
     {
      "kod": "AD-1324-MSD",
@@ -485,7 +616,7 @@
    ]
   },
   "hidrolik-valf": {
-   "toplamUrun": 508,
+   "toplamUrun": 507,
    "urunler": [
     {
      "kod": "OLEOSTAR.01.171",
@@ -552,8 +683,156 @@
     }
    ]
   },
+  "solenoid-bobin": {
+   "toplamUrun": 75,
+   "urunler": [
+    {
+     "kod": "EKO.BOB09.SOCMINILED",
+     "ad": "Ø9 mm Bobin + Ledli Soket",
+     "model": "Ø9 mm"
+    },
+    {
+     "kod": "EKO.BOB10.SOCMINILED",
+     "ad": "Ø10 mm Bobin + Ledli Soket",
+     "model": "Ø10 mm"
+    },
+    {
+     "kod": "EKO.BOB16",
+     "ad": "16 mm Bobin",
+     "model": "16 mm"
+    },
+    {
+     "kod": "MRT 2008",
+     "ad": "Ø13 mm Bobin 12 V DC",
+     "model": "Ø13 · 12 V DC"
+    },
+    {
+     "kod": "MRT.2008.24VDC",
+     "ad": "Ø13 mm Bobin 24 V DC 28 W",
+     "model": "Ø13 · 24 V DC"
+    },
+    {
+     "kod": "MRT.2008.220VAC",
+     "ad": "Ø13 mm Bobin 220 V AC",
+     "model": "Ø13 · 220 V AC"
+    },
+    {
+     "kod": "HR.K.YEDEK.013",
+     "ad": "Bobin Ø13 mm 24 V DC",
+     "model": "Ø13 · 24 V DC",
+     "marka": "Hydropack"
+    },
+    {
+     "kod": "HR.K.YEDEK.012",
+     "ad": "Bobin Ø13 mm 220 V AC",
+     "model": "Ø13 · 220 V AC",
+     "marka": "Hydropack"
+    },
+    {
+     "kod": "DURA.BOB.01",
+     "ad": "Standart Bobin 24 V DC (14,85 mm)",
+     "model": "14,85 · 24 V DC",
+     "marka": "Duravis"
+    },
+    {
+     "kod": "DURA.BOB.02",
+     "ad": "Standart Bobin 24 V AC (14,85 mm, IP65 18 VA)",
+     "model": "14,85 · 24 V AC",
+     "marka": "Duravis"
+    },
+    {
+     "kod": "DURA.BOB.04",
+     "ad": "Standart Bobin 12 V DC (14,85 mm)",
+     "model": "14,85 · 12 V DC",
+     "marka": "Duravis"
+    },
+    {
+     "kod": "DURA.BOB.05",
+     "ad": "Standart Bobin 110 V AC (14,85 mm)",
+     "model": "14,85 · 110 V AC",
+     "marka": "Duravis"
+    },
+    {
+     "kod": "DURA.BOB.06",
+     "ad": "Standart Bobin 230 V AC (14,85 mm, IP65 18 VA)",
+     "model": "14,85 · 230 V AC",
+     "marka": "Duravis"
+    },
+    {
+     "kod": "SMS.C40.024.DC",
+     "ad": "Standart Tork Bobini 24 V DC",
+     "model": "24 V DC",
+     "marka": "SMS Tork"
+    },
+    {
+     "kod": "SMS.C40.024.AC",
+     "ad": "Standart Tork Bobini 24 V AC",
+     "model": "24 V AC",
+     "marka": "SMS Tork"
+    },
+    {
+     "kod": "SMS.C40.110.AC",
+     "ad": "Standart Tork Bobini 110 V AC",
+     "model": "110 V AC",
+     "marka": "SMS Tork"
+    },
+    {
+     "kod": "SMS.C40.220.AC",
+     "ad": "Standart Tork Bobini 220 V AC",
+     "model": "220 V AC",
+     "marka": "SMS Tork"
+    },
+    {
+     "kod": "OXİM.16.01",
+     "ad": "NG06 Bobin 12 V DC (C04C) 23,2 mm",
+     "model": "NG06 · 12 V DC",
+     "marka": "Oxim"
+    },
+    {
+     "kod": "OXİM.16.02",
+     "ad": "NG06 Bobin 24 V DC (C04C) 23,2 mm",
+     "model": "NG06 · 24 V DC",
+     "marka": "Oxim"
+    },
+    {
+     "kod": "OXİM.16.04",
+     "ad": "NG06 Bobin 220 V AC (G01C) 21,1 mm",
+     "model": "NG06 · 220 V AC",
+     "marka": "Oxim"
+    },
+    {
+     "kod": "OXİM.16.04.01",
+     "ad": "NG06 Bobin 220 V AC (C04C) 23,2 mm",
+     "model": "NG06 · 220 V AC",
+     "marka": "Oxim"
+    },
+    {
+     "kod": "OXİM.17.01",
+     "ad": "NG10 Bobin 24 V DC (C05C) 31,60 mm",
+     "model": "NG10 · 24 V DC",
+     "marka": "Oxim"
+    },
+    {
+     "kod": "OXİM.17.02",
+     "ad": "NG10 Bobin 220 V AC (J02C) 26,2 mm",
+     "model": "NG10 · 220 V AC",
+     "marka": "Oxim"
+    },
+    {
+     "kod": "FMS.BV.0324",
+     "ad": "1/4\" 24 V DC Üçlü Damper Bobini",
+     "model": "1/4\" · 24 V DC",
+     "marka": "FMS"
+    },
+    {
+     "kod": "EKO.PVD.BOB.12DC",
+     "ad": "PVD Yedek Bobin 12 V DC",
+     "model": "12 V DC"
+    }
+   ]
+  },
   "hidrolik-pompa": {
-   "toplamUrun": 283,
+   "toplamUrun": 277,
    "urunler": [
     {
      "kod": "HEMA.1PN.295",
@@ -660,6 +939,584 @@
     }
    ]
   },
+  "hidromotor": {
+   "toplamUrun": 55,
+   "urunler": [
+    {
+     "kod": "HEMA.HMR.036",
+     "ad": "HMR.36.A.4 Hidromotor",
+     "model": "36 cm³/dev",
+     "marka": "Hema"
+    },
+    {
+     "kod": "HEMA.HMR.050",
+     "ad": "HMR.50.A.2 Hidromotor",
+     "model": "50 cm³/dev",
+     "marka": "Hema"
+    },
+    {
+     "kod": "HEMA.HMR.063",
+     "ad": "HMR.63.A.2 Hidromotor",
+     "model": "63 cm³/dev",
+     "marka": "Hema"
+    },
+    {
+     "kod": "HEMA.HMR.080",
+     "ad": "HMR.80.A.2 Hidromotor",
+     "model": "80 cm³/dev",
+     "marka": "Hema"
+    },
+    {
+     "kod": "HEMA.HMR.100",
+     "ad": "HMR.100.A.2 Hidromotor",
+     "model": "100 cm³/dev",
+     "marka": "Hema"
+    },
+    {
+     "kod": "HEMA.HMR.125",
+     "ad": "HMR.125.A.2 Hidromotor",
+     "model": "125 cm³/dev",
+     "marka": "Hema"
+    },
+    {
+     "kod": "HEMA.HMR.160",
+     "ad": "HMR.160.A.2 Hidromotor",
+     "model": "160 cm³/dev",
+     "marka": "Hema"
+    },
+    {
+     "kod": "HEMA.HMR.200",
+     "ad": "HMR.200.A.2 Hidromotor",
+     "model": "200 cm³/dev",
+     "marka": "Hema"
+    },
+    {
+     "kod": "HEMA.HMR.250",
+     "ad": "HMR.250.A.2 Hidromotor",
+     "model": "250 cm³/dev",
+     "marka": "Hema"
+    },
+    {
+     "kod": "HEMA.HMR.305",
+     "ad": "HMR.305.A.2 Hidromotor",
+     "model": "305 cm³/dev",
+     "marka": "Hema"
+    },
+    {
+     "kod": "HEMA.HMR.370",
+     "ad": "HMR.370.A.2 Hidromotor",
+     "model": "370 cm³/dev",
+     "marka": "Hema"
+    },
+    {
+     "kod": "HEMA.HMR.395",
+     "ad": "HMR.395.A.2 Hidromotor",
+     "model": "395 cm³/dev",
+     "marka": "Hema"
+    },
+    {
+     "kod": "HEMA.HMS.305.B.S",
+     "ad": "HMS.305.B.S Hidromotor",
+     "model": "305 cm³/dev",
+     "marka": "Hema"
+    },
+    {
+     "kod": "HEMA.HMS.315.B.S",
+     "ad": "HMS.315.B.S Hidromotor",
+     "model": "315 cm³/dev",
+     "marka": "Hema"
+    },
+    {
+     "kod": "HR.MOTOR.MM.008",
+     "ad": "MM8C Hidromotor",
+     "model": "MM serisi",
+     "marka": "Hydropack"
+    },
+    {
+     "kod": "HR.MOTOR.MR.100C",
+     "ad": "MR 100C Hidromotor",
+     "model": "MR serisi",
+     "marka": "Hydropack"
+    },
+    {
+     "kod": "HR.MOTOR.MR.160C",
+     "ad": "MR 160C Hidromotor",
+     "model": "MR serisi",
+     "marka": "Hydropack"
+    },
+    {
+     "kod": "HR.MOTOR.MR.200",
+     "ad": "MR200 Hidromotor",
+     "model": "MR serisi",
+     "marka": "Hydropack"
+    },
+    {
+     "kod": "HR.MOTOR.MH.200",
+     "ad": "MH200 Hidromotor",
+     "model": "MH serisi",
+     "marka": "Hydropack"
+    },
+    {
+     "kod": "HR.MOTOR.MH.250",
+     "ad": "MH250 Hidromotor",
+     "model": "MH serisi",
+     "marka": "Hydropack"
+    },
+    {
+     "kod": "HR.MOTOR.MH.315",
+     "ad": "MH315C Hidromotor",
+     "model": "MH serisi",
+     "marka": "Hydropack"
+    },
+    {
+     "kod": "HR.MOTOR.MH.400",
+     "ad": "MH400C Hidromotor",
+     "model": "MH serisi",
+     "marka": "Hydropack"
+    },
+    {
+     "kod": "HR.MOTOR.MH.400.SH",
+     "ad": "MH 400 SH 6 Frezeli Hidromotor",
+     "model": "MH serisi",
+     "marka": "Hydropack"
+    },
+    {
+     "kod": "HR.MOTOR.MH.500",
+     "ad": "MH500C Hidromotor",
+     "model": "MH serisi",
+     "marka": "Hydropack"
+    },
+    {
+     "kod": "HR.MOTOR.MS.315",
+     "ad": "MS315 Hidromotor",
+     "model": "MS serisi",
+     "marka": "Hydropack"
+    }
+   ]
+  },
+  "hidrolik-filtre": {
+   "toplamUrun": 31,
+   "urunler": [
+    {
+     "kod": "ESM.EF.025",
+     "ad": "Emiş Filtresi 25 LT/DK (L:114 D:61 A:1\")",
+     "model": "25 LT/DK",
+     "marka": "Esmaksan"
+    },
+    {
+     "kod": "ESM.EF.045",
+     "ad": "Emiş Filtresi 45 LT/DK (L:160 D:61 A:1\")",
+     "model": "45 LT/DK",
+     "marka": "Esmaksan"
+    },
+    {
+     "kod": "ESM.EF.065",
+     "ad": "Emiş Filtresi 65 LT/DK (L:131 D:82 A:1.1/2\")",
+     "model": "65 LT/DK",
+     "marka": "Esmaksan"
+    },
+    {
+     "kod": "ESM.EF.090",
+     "ad": "Emiş Filtresi 90 LT/DK (L:174 D:82 A:1.1/2\")",
+     "model": "90 LT/DK",
+     "marka": "Esmaksan"
+    },
+    {
+     "kod": "ESM.EF.125",
+     "ad": "Emiş Filtresi 125 LT/DK (L:219 D:82 A:1.1/2\")",
+     "model": "125 LT/DK",
+     "marka": "Esmaksan"
+    },
+    {
+     "kod": "ESM.EF.180",
+     "ad": "Emiş Filtresi 180 LT/DK (L:259 D:82 A:1.1/2\")",
+     "model": "180 LT/DK",
+     "marka": "Esmaksan"
+    },
+    {
+     "kod": "ESM.EF.225",
+     "ad": "Emiş Filtresi 225 LT/DK (L:172 D:130 A:2\")",
+     "model": "225 LT/DK",
+     "marka": "Esmaksan"
+    },
+    {
+     "kod": "ESM.EF.300",
+     "ad": "Emiş Filtresi 300 LT/DK (L:208 D:130 A:2\")",
+     "model": "300 LT/DK",
+     "marka": "Esmaksan"
+    },
+    {
+     "kod": "ESM.EF.500",
+     "ad": "Emiş Filtresi 500 LT/DK (L:263 D:130 A:2\")",
+     "model": "500 LT/DK",
+     "marka": "Esmaksan"
+    },
+    {
+     "kod": "ESM.EF.750",
+     "ad": "Emiş Filtresi 750 LT/DK (L:263 D:180 A:2.1/2\")",
+     "model": "750 LT/DK",
+     "marka": "Esmaksan"
+    },
+    {
+     "kod": "HF620.30.155-AS025",
+     "ad": "1.1/4\" Dönüş Filtresi Komple",
+     "model": "1.1/4\"",
+     "marka": "Ikron"
+    },
+    {
+     "kod": "HEK02-20.122-FG025",
+     "ad": "Dönüş Filtre Elemanı (Metal)",
+     "model": "eleman",
+     "marka": "Ikron"
+    },
+    {
+     "kod": "MUH.MUH.57",
+     "ad": "HF502-20-122-AS-RP02 Depo Üstü G3/4\" Geri Dönüş Filtresi",
+     "model": "G3/4\"",
+     "marka": "Ikron"
+    },
+    {
+     "kod": "OMT.FILTRE.KOMPLE.091",
+     "ad": "Dönüş Filtresi 091 C25 NA — 1/2\" 40 LT/DK",
+     "model": "40 LT/DK",
+     "marka": "OMT"
+    },
+    {
+     "kod": "OMT.FILTRE.KOMPLE.111",
+     "ad": "Dönüş Filtresi 111 C25 NA — 3/4\" 81 LT/DK",
+     "model": "81 LT/DK",
+     "marka": "OMT"
+    },
+    {
+     "kod": "OMT.FILTRE.KOMPLE.112",
+     "ad": "Dönüş Filtresi 112 C25 NA — 1\" 100 LT/DK",
+     "model": "100 LT/DK",
+     "marka": "OMT"
+    },
+    {
+     "kod": "OMT.FILTRE.KOMPLE.171",
+     "ad": "Dönüş Filtresi 171 C25 NA — 1.1/4\" 214 LT/DK",
+     "model": "214 LT/DK",
+     "marka": "OMT"
+    },
+    {
+     "kod": "OMT.FILTRE.KOMPLE.222",
+     "ad": "Dönüş Filtresi 222 C25 NA — 1.1/2\" 350 LT/DK",
+     "model": "350 LT/DK",
+     "marka": "OMT"
+    },
+    {
+     "kod": "OMT.FILTRE.KOMPLE.224",
+     "ad": "Dönüş Filtresi 224 C25 NA — 2\" 500 LT/DK",
+     "model": "500 LT/DK",
+     "marka": "OMT"
+    },
+    {
+     "kod": "OMT.FILTRE.ELEMAN.091",
+     "ad": "CR091C25R Filtre Elemanı",
+     "model": "C25",
+     "marka": "OMT"
+    },
+    {
+     "kod": "OMT.FILTRE.ELEMAN.171",
+     "ad": "CR171C25R Filtre Elemanı",
+     "model": "C25",
+     "marka": "OMT"
+    },
+    {
+     "kod": "OMT.FILTRE.ELEMAN.222",
+     "ad": "CR222C25R Filtre Elemanı",
+     "model": "C25",
+     "marka": "OMT"
+    },
+    {
+     "kod": "FMS.11K25R34",
+     "ad": "11-K25 R3/4\" Dönüş Filtresi 80 LT",
+     "model": "80 LT",
+     "marka": "FMS"
+    },
+    {
+     "kod": "FMS.11K25R1",
+     "ad": "11-K25 R1\" Dönüş Filtresi 100 LT",
+     "model": "100 LT",
+     "marka": "FMS"
+    },
+    {
+     "kod": "FMS.17K25R114",
+     "ad": "17-K25 R1.1/4\" Dönüş Filtresi 215 LT",
+     "model": "215 LT",
+     "marka": "FMS"
+    },
+    {
+     "kod": "HYD.21-25",
+     "ad": "HYD21-25 1\" Dönüş Filtresi 110 LT",
+     "model": "110 LT"
+    }
+   ]
+  },
+  "hidrolik-sogutucu": {
+   "toplamUrun": 23,
+   "urunler": [
+    {
+     "kod": "COOLER.G-0005-2015-12",
+     "ad": "2015 Hidrolik Soğutucu Yan Tip 240x240x45 — 80 LT/DK, 12 V",
+     "model": "80 LT/DK · 12 V"
+    },
+    {
+     "kod": "COOLER.G-0005-2015-24",
+     "ad": "2015 Hidrolik Soğutucu Yan Tip 240x240x45 — 80 LT/DK, 24 V",
+     "model": "80 LT/DK · 24 V"
+    },
+    {
+     "kod": "COOLER.G-0005-2015-220",
+     "ad": "2015 Hidrolik Soğutucu Yan Tip 240x240x45 — 80 LT/DK, 220 V",
+     "model": "80 LT/DK · 220 V"
+    },
+    {
+     "kod": "COOLER.G-0010-2020-12",
+     "ad": "2020 Hidrolik Soğutucu Yan Tip 240x240x63 — 100 LT/DK, 12 V",
+     "model": "100 LT/DK · 12 V"
+    },
+    {
+     "kod": "COOLER.G-0010-2020-24",
+     "ad": "2020 Hidrolik Soğutucu Yan Tip 240x240x45 — 100 LT/DK, 24 V",
+     "model": "100 LT/DK · 24 V"
+    },
+    {
+     "kod": "COOLER.G-0010-2020-220",
+     "ad": "2020 Hidrolik Soğutucu Yan Tip 240x240x45 — 100 LT/DK, 220 V",
+     "model": "100 LT/DK · 220 V"
+    },
+    {
+     "kod": "COOLER.G-0020-2024-12",
+     "ad": "2024 Hidrolik Soğutucu Yan Tip 300x300x63 — 120 LT/DK, 12 V",
+     "model": "120 LT/DK · 12 V"
+    },
+    {
+     "kod": "COOLER.G-0020-2024-24",
+     "ad": "2024 Hidrolik Soğutucu Yan Tip 300x300x63 — 120 LT/DK, 24 V",
+     "model": "120 LT/DK · 24 V"
+    },
+    {
+     "kod": "COOLER.G-0020-2024-220",
+     "ad": "2024 Hidrolik Soğutucu Yan Tip 300x300x63 — 120 LT/DK, 220 V",
+     "model": "120 LT/DK · 220 V"
+    },
+    {
+     "kod": "COOLER.G-0030-2030-12",
+     "ad": "2030 Hidrolik Soğutucu Yan Tip 350x350x63 — 140 LT/DK, 12 V",
+     "model": "140 LT/DK · 12 V"
+    },
+    {
+     "kod": "COOLER.G-0030-2030-24",
+     "ad": "2030 Hidrolik Soğutucu Yan Tip 350x350x63 — 140 LT/DK, 24 V",
+     "model": "140 LT/DK · 24 V"
+    },
+    {
+     "kod": "COOLER.G-0030-2030-220",
+     "ad": "2030 Hidrolik Soğutucu Yan Tip 350x350x63 — 140 LT/DK, 220 V",
+     "model": "140 LT/DK · 220 V"
+    },
+    {
+     "kod": "COOLER.G-0040-2040-12",
+     "ad": "2040 Hidrolik Soğutucu Yan Tip 450x450x63 — 160 LT/DK, 12 V",
+     "model": "160 LT/DK · 12 V"
+    },
+    {
+     "kod": "COOLER.G-0040-2040-24",
+     "ad": "2040 Hidrolik Soğutucu Yan Tip 450x450x63 — 160 LT/DK, 24 V",
+     "model": "160 LT/DK · 24 V"
+    },
+    {
+     "kod": "COOLER.G-0040-2040-220",
+     "ad": "2040 Hidrolik Soğutucu Yan Tip 450x450x63 — 160 LT/DK, 220 V",
+     "model": "160 LT/DK · 220 V"
+    },
+    {
+     "kod": "COOLER.G-0050-2050-12",
+     "ad": "2050 Hidrolik Soğutucu Yan Tip 520x550x63 — 180 LT/DK, 12 V",
+     "model": "180 LT/DK · 12 V"
+    },
+    {
+     "kod": "COOLER.G-0050-2050-24",
+     "ad": "2050 Hidrolik Soğutucu Yan Tip 520x550x63 — 180 LT/DK, 24 V",
+     "model": "180 LT/DK · 24 V"
+    },
+    {
+     "kod": "COOLER.G-0050-2050-220",
+     "ad": "2050 Hidrolik Soğutucu Yan Tip 520x550x63 — 180 LT/DK, 220 V",
+     "model": "180 LT/DK · 220 V"
+    },
+    {
+     "kod": "COOLER.G-0060-2075-12",
+     "ad": "2075 Hidrolik Soğutucu Yan Tip 720x700x63 — 220 LT/DK, 12 V",
+     "model": "220 LT/DK · 12 V"
+    },
+    {
+     "kod": "COOLER.G-0060-2075-24",
+     "ad": "2075 Hidrolik Soğutucu Yan Tip 720x700x63 — 220 LT/DK, 24 V",
+     "model": "220 LT/DK · 24 V"
+    },
+    {
+     "kod": "COOLER.G-0060-2075-220",
+     "ad": "2075 Hidrolik Soğutucu Yan Tip 720x700x63 — 220 LT/DK, 220 V",
+     "model": "220 LT/DK · 220 V"
+    },
+    {
+     "kod": "EKO.AH0608T.024",
+     "ad": "Fanlı Soğutucu 24 V DC — 60 LT/DK",
+     "model": "60 LT/DK · 24 V"
+    },
+    {
+     "kod": "EKO.AH0608T.220",
+     "ad": "Fanlı Soğutucu 220 V AC — 60 LT/DK",
+     "model": "60 LT/DK · 220 V"
+    }
+   ]
+  },
+  "elektrik-motoru": {
+   "toplamUrun": 23,
+   "urunler": [
+    {
+     "kod": "GM.380.00,37",
+     "ad": "0,37 kW 1500 d/d 380 V AC — AGM2EL 71 M 4B (B35)",
+     "model": "0,37 kW · 380 V",
+     "marka": "Gamak"
+    },
+    {
+     "kod": "GM.380.00,55",
+     "ad": "0,55 kW 1500 d/d 380 V AC — AGM2EL 80 M 4A (B35)",
+     "model": "0,55 kW · 380 V",
+     "marka": "Gamak"
+    },
+    {
+     "kod": "GM.380.00,75",
+     "ad": "0,75 kW 1500 d/d 380 V AC — AGM3EL 80 4B (B35)",
+     "model": "0,75 kW · 380 V",
+     "marka": "Gamak"
+    },
+    {
+     "kod": "GM.380.01,10",
+     "ad": "1,1 kW 1500 d/d 380 V AC — AGM3EL 90 S 4 (B35)",
+     "model": "1,1 kW · 380 V",
+     "marka": "Gamak"
+    },
+    {
+     "kod": "GM.380.01,50",
+     "ad": "1,5 kW 1500 d/d 380 V AC — AGM3EL 90 H 4B (B35)",
+     "model": "1,5 kW · 380 V",
+     "marka": "Gamak"
+    },
+    {
+     "kod": "GM.380.02,20",
+     "ad": "2,2 kW 1500 d/d 380 V AC — AGM3EL 100 L 4A (B35)",
+     "model": "2,2 kW · 380 V",
+     "marka": "Gamak"
+    },
+    {
+     "kod": "GM.380.03,00",
+     "ad": "3 kW 1500 d/d 380 V AC — AGM3EL 100 L 4B (B35)",
+     "model": "3 kW · 380 V",
+     "marka": "Gamak"
+    },
+    {
+     "kod": "GM.380.04,00",
+     "ad": "4 kW 1500 d/d 380 V AC Elektrik Motoru",
+     "model": "4 kW · 380 V",
+     "marka": "Gamak"
+    },
+    {
+     "kod": "GM.380.05,50",
+     "ad": "5,5 kW 1500 d/d 380 V AC Elektrik Motoru",
+     "model": "5,5 kW · 380 V",
+     "marka": "Gamak"
+    },
+    {
+     "kod": "GM.380.07,50",
+     "ad": "7,5 kW 1500 d/d 380 V AC Elektrik Motoru",
+     "model": "7,5 kW · 380 V",
+     "marka": "Gamak"
+    },
+    {
+     "kod": "GM.380.11,00",
+     "ad": "11 kW 1500 d/d 380 V AC Elektrik Motoru",
+     "model": "11 kW · 380 V",
+     "marka": "Gamak"
+    },
+    {
+     "kod": "GM.380.15,00",
+     "ad": "15 kW 1500 d/d 380 V AC — AGM3EL 160 L 4B (B35)",
+     "model": "15 kW · 380 V",
+     "marka": "Gamak"
+    },
+    {
+     "kod": "GM.380.18,50",
+     "ad": "18,5 kW 1500 d/d 380 V AC — AGM3EL 180 M 4A (B35)",
+     "model": "18,5 kW · 380 V",
+     "marka": "Gamak"
+    },
+    {
+     "kod": "GM.380.22,00",
+     "ad": "22 kW 1500 d/d 380 V AC — AGM3EL 180 L 4B (B35)",
+     "model": "22 kW · 380 V",
+     "marka": "Gamak"
+    },
+    {
+     "kod": "GM.220.00.37",
+     "ad": "0,37 kW 1500 d/d 220 V AC — MK21D 80 M 4A (B35)",
+     "model": "0,37 kW · 220 V",
+     "marka": "Gamak"
+    },
+    {
+     "kod": "GM.220.00.55",
+     "ad": "0,55 kW 1500 d/d 220 V AC — MK21D 80 M 4B (B35)",
+     "model": "0,55 kW · 220 V",
+     "marka": "Gamak"
+    },
+    {
+     "kod": "GM.220.00.75",
+     "ad": "0,75 kW 1500 d/d 220 V AC — MK21D 80 M 4C (B35)",
+     "model": "0,75 kW · 220 V",
+     "marka": "Gamak"
+    },
+    {
+     "kod": "GM.220.01.10",
+     "ad": "1,1 kW 1500 d/d 220 V AC — MK21D 90 S 4C (B35)",
+     "model": "1,1 kW · 220 V",
+     "marka": "Gamak"
+    },
+    {
+     "kod": "GM.220.01.50",
+     "ad": "1,5 kW 1500 d/d 220 V AC — MK21D 90 L 4D (B35)",
+     "model": "1,5 kW · 220 V",
+     "marka": "Gamak"
+    },
+    {
+     "kod": "GM.220.02.20",
+     "ad": "2,2 kW 1500 d/d 220 V AC — MK21D 100 L 4B (B35)",
+     "model": "2,2 kW · 220 V",
+     "marka": "Gamak"
+    },
+    {
+     "kod": "GM.220.03.00",
+     "ad": "3 kW 1500 d/d 220 V AC — MK21D 100 L 4C (B35)",
+     "model": "3 kW · 220 V",
+     "marka": "Gamak"
+    },
+    {
+     "kod": "HR.HPP.DC24V-0.8",
+     "ad": "Powerpack Elektrik Motoru 0,8 kW 24 V DC",
+     "model": "0,8 kW · 24 V DC",
+     "marka": "Hydropack"
+    },
+    {
+     "kod": "HR.HPP.DC24-2.2",
+     "ad": "Powerpack Elektrik Motoru 2,2 kW 24 V DC",
+     "model": "2,2 kW · 24 V DC",
+     "marka": "Hydropack"
+    }
+   ]
+  },
   "hidrolik-silindir": {
    "toplamUrun": 374,
    "urunler": [
@@ -726,6 +1583,271 @@
      "kod": "CNC.01.01.040X25K",
      "ad": "DÖKÜM KEP 40X25K",
      "marka": "Hidroteknik"
+    }
+   ]
+  },
+  "krom-mil-boru": {
+   "toplamUrun": 183,
+   "urunler": [
+    {
+     "kod": "A.TB.162",
+     "ad": "16 x 2 Tesisat Borusu",
+     "model": "16 × 2"
+    },
+    {
+     "kod": "A.TB.061",
+     "ad": "6 x 1 Tesisat Borusu",
+     "model": "6 × 1"
+    },
+    {
+     "kod": "A.TB.202",
+     "ad": "20 x 2 Tesisat Borusu",
+     "model": "20 × 2"
+    },
+    {
+     "kod": "A.TB.121,5",
+     "ad": "12 x 1,5 Tesisat Borusu",
+     "model": "12 × 1,5"
+    },
+    {
+     "kod": "A.TB.122",
+     "ad": "12 x 2 Tesisat Borusu",
+     "model": "12 × 2"
+    },
+    {
+     "kod": "A.TB.101,5",
+     "ad": "10 x 1,5 Tesisat Borusu",
+     "model": "10 × 1,5"
+    },
+    {
+     "kod": "A.TB.080",
+     "ad": "8 x 1 Tesisat Borusu",
+     "model": "8 × 1"
+    },
+    {
+     "kod": "A.TB.050",
+     "ad": "5 x 1 Tesisat Borusu",
+     "model": "5 × 1"
+    },
+    {
+     "kod": "A.TB.252,5",
+     "ad": "25 x 2,5 Tesisat Borusu",
+     "model": "25 × 2,5"
+    },
+    {
+     "kod": "A.KM.025",
+     "ad": "25 mm Krom Kaplı Mil (3,93 kg/mt)",
+     "model": "Ø25"
+    },
+    {
+     "kod": "A.KM.030",
+     "ad": "30 mm Krom Kaplı Mil (5,65 kg/mt)",
+     "model": "Ø30"
+    },
+    {
+     "kod": "A.KM.035",
+     "ad": "35 mm Krom Kaplı Mil (7,55 kg/mt)",
+     "model": "Ø35"
+    },
+    {
+     "kod": "A.KM.040",
+     "ad": "40 mm Krom Kaplı Mil (9,86 kg/mt)",
+     "model": "Ø40"
+    },
+    {
+     "kod": "A.KM.045",
+     "ad": "45 mm Krom Kaplı Mil (12,72 kg/mt)",
+     "model": "Ø45"
+    },
+    {
+     "kod": "A.KM.050",
+     "ad": "50 mm Krom Kaplı Mil (15,40 kg/mt)",
+     "model": "Ø50"
+    },
+    {
+     "kod": "A.İM.030",
+     "ad": "30 mm İndüksiyonlu Mil (5,65 kg/mt)",
+     "model": "Ø30"
+    },
+    {
+     "kod": "A.İM.035",
+     "ad": "35 mm İndüksiyonlu Mil (7,70 kg/mt)",
+     "model": "Ø35"
+    },
+    {
+     "kod": "A.İM.045",
+     "ad": "45 mm İndüksiyonlu Mil (12,72 kg/mt)",
+     "model": "Ø45"
+    },
+    {
+     "kod": "A.İM.050",
+     "ad": "50 mm İndüksiyonlu Mil (16,22 kg/mt)",
+     "model": "Ø50"
+    },
+    {
+     "kod": "A.HB.040050",
+     "ad": "40 x 50 Honlanmış Boru (5,65 kg/mt)",
+     "model": "40 × 50"
+    },
+    {
+     "kod": "A.HB.050060",
+     "ad": "50 x 60 Honlanmış Boru (6,91 kg/mt)",
+     "model": "50 × 60"
+    },
+    {
+     "kod": "A.HB.050065",
+     "ad": "50 x 65 Honlanmış Boru (10,84 kg/mt)",
+     "model": "50 × 65"
+    },
+    {
+     "kod": "A.HB.065080",
+     "ad": "65 x 80 Honlanmış Boru (13,67 kg/mt)",
+     "model": "65 × 80"
+    },
+    {
+     "kod": "A.HB.070085",
+     "ad": "70 x 85 Honlanmış Boru (14,61 kg/mt)",
+     "model": "70 × 85"
+    },
+    {
+     "kod": "A.HB.080095",
+     "ad": "80 x 95 Honlanmış Boru (16,49 kg/mt)",
+     "model": "80 × 95"
+    }
+   ]
+  },
+  "rot-mafsali": {
+   "toplamUrun": 35,
+   "urunler": [
+    {
+     "kod": "EN.PRU020",
+     "ad": "PR20 U Vidalı Tip Rot Mafsalı",
+     "model": "Ø20 pim"
+    },
+    {
+     "kod": "EN.PRU025",
+     "ad": "PR25 U Vidalı Tip Rot Mafsalı",
+     "model": "Ø25 pim"
+    },
+    {
+     "kod": "EN.PRU030",
+     "ad": "PR30 U Vidalı Tip Rot Mafsalı",
+     "model": "Ø30 pim"
+    },
+    {
+     "kod": "EN.PRU035",
+     "ad": "PR35 U Vidalı Tip Rot Mafsalı",
+     "model": "Ø35 pim"
+    },
+    {
+     "kod": "EN.PRU040",
+     "ad": "PR40 U Vidalı Tip Rot Mafsalı",
+     "model": "Ø40 pim"
+    },
+    {
+     "kod": "EN.PRU045",
+     "ad": "PR45 U Vidalı Tip Rot Mafsalı",
+     "model": "Ø45 pim"
+    },
+    {
+     "kod": "EN.PRU050",
+     "ad": "PR50 U Vidalı Tip Rot Mafsalı",
+     "model": "Ø50 pim"
+    },
+    {
+     "kod": "EN.PRU060",
+     "ad": "PR60 U Vidalı Tip Rot Mafsalı",
+     "model": "Ø60 pim"
+    },
+    {
+     "kod": "EN.PRU070",
+     "ad": "PR70 U Vidalı Tip Rot Mafsalı",
+     "model": "Ø70 pim"
+    },
+    {
+     "kod": "EN.PRU080",
+     "ad": "PR80 U Vidalı Tip Rot Mafsalı",
+     "model": "Ø80 pim"
+    },
+    {
+     "kod": "EN.PRU090",
+     "ad": "PR90 U Vidalı Tip Rot Mafsalı",
+     "model": "Ø90 pim"
+    },
+    {
+     "kod": "EN.PRU100",
+     "ad": "PR100 U Vidalı Tip Rot Mafsalı",
+     "model": "Ø100 pim"
+    },
+    {
+     "kod": "EN.PRU110",
+     "ad": "PR110 U Vidalı Tip Rot Mafsalı",
+     "model": "Ø110 pim"
+    },
+    {
+     "kod": "EN.SC020",
+     "ad": "S 20 C Yuvarlak Tip Kaynaklı Rot Mafsalı",
+     "model": "Ø20 pim"
+    },
+    {
+     "kod": "EN.SC025",
+     "ad": "S 25 C Yuvarlak Tip Kaynaklı Rot Mafsalı",
+     "model": "Ø25 pim"
+    },
+    {
+     "kod": "EN.SC030",
+     "ad": "S 30 C Yuvarlak Tip Kaynaklı Rot Mafsalı",
+     "model": "Ø30 pim"
+    },
+    {
+     "kod": "EN.SC035",
+     "ad": "S 35 C Yuvarlak Tip Kaynaklı Rot Mafsalı",
+     "model": "Ø35 pim"
+    },
+    {
+     "kod": "EN.SC040",
+     "ad": "S 40 C Yuvarlak Tip Kaynaklı Rot Mafsalı",
+     "model": "Ø40 pim"
+    },
+    {
+     "kod": "EN.SC045",
+     "ad": "S 45 C Yuvarlak Tip Kaynaklı Rot Mafsalı",
+     "model": "Ø45 pim"
+    },
+    {
+     "kod": "EN.SC050",
+     "ad": "S 50 C Yuvarlak Tip Kaynaklı Rot Mafsalı",
+     "model": "Ø50 pim"
+    },
+    {
+     "kod": "EN.SN020",
+     "ad": "S 20 N Dikdörtgen Kaynaklı Rot Mafsalı",
+     "model": "Ø20 pim"
+    },
+    {
+     "kod": "EN.SN025",
+     "ad": "S 25 N Dikdörtgen Kaynaklı Rot Mafsalı",
+     "model": "Ø25 pim"
+    },
+    {
+     "kod": "EN.SN030",
+     "ad": "S 30 N Dikdörtgen Kaynaklı Rot Mafsalı",
+     "model": "Ø30 pim"
+    },
+    {
+     "kod": "EN.SN035",
+     "ad": "S 35 N Dikdörtgen Kaynaklı Rot Mafsalı",
+     "model": "Ø35 pim"
+    },
+    {
+     "kod": "EN.SN040",
+     "ad": "S 40 N Dikdörtgen Kaynaklı Rot Mafsalı",
+     "model": "Ø40 pim"
+    },
+    {
+     "kod": "EN.SN050",
+     "ad": "S 50 N Dikdörtgen Kaynaklı Rot Mafsalı",
+     "model": "Ø50 pim"
     }
    ]
   },
@@ -834,6 +1956,159 @@
      "ad": "HİDROLİK İKİ YOLLU KÜRESEL VANA BSPP 1.1/4 DN25",
      "model": "DN25",
      "marka": "Oleocontrol"
+    }
+   ]
+  },
+  "manometre": {
+   "toplamUrun": 147,
+   "urunler": [
+    {
+     "kod": "PAK.0401000216",
+     "ad": "Ø40 mm 0-315 bar Arka Bağlantılı Kuru Manometre",
+     "model": "Ø40 · 0-315 bar",
+     "marka": "Pakkens"
+    },
+    {
+     "kod": "PAK.0631001116",
+     "ad": "Ø63 mm 0-315 bar Alt Bağlantılı Gliserinli Manometre",
+     "model": "Ø63 · 0-315 bar",
+     "marka": "Pakkens"
+    },
+    {
+     "kod": "PAK.0631000107",
+     "ad": "Ø63 mm 0-10 bar Alt Bağlantılı Kuru Manometre",
+     "model": "Ø63 · 0-10 bar",
+     "marka": "Pakkens"
+    },
+    {
+     "kod": "PAK.0631001108",
+     "ad": "Ø63 mm 0-16 bar Alt Bağlantılı Gliserinli Manometre",
+     "model": "Ø63 · 0-16 bar",
+     "marka": "Pakkens"
+    },
+    {
+     "kod": "PAK.0631001109",
+     "ad": "Ø63 mm 0-25 bar Alt Bağlantılı Gliserinli Manometre",
+     "model": "Ø63 · 0-25 bar",
+     "marka": "Pakkens"
+    },
+    {
+     "kod": "PAK.0631001111",
+     "ad": "Ø63 mm 0-60 bar Alt Bağlantılı Gliserinli Manometre",
+     "model": "Ø63 · 0-60 bar",
+     "marka": "Pakkens"
+    },
+    {
+     "kod": "PAK.0631001112",
+     "ad": "Ø63 mm 0-100 bar Alt Bağlantılı Gliserinli Manometre",
+     "model": "Ø63 · 0-100 bar",
+     "marka": "Pakkens"
+    },
+    {
+     "kod": "PAK.0631001114",
+     "ad": "Ø63 mm 0-250 bar Alt Bağlantılı Gliserinli Manometre",
+     "model": "Ø63 · 0-250 bar",
+     "marka": "Pakkens"
+    },
+    {
+     "kod": "PAK.0631001117",
+     "ad": "Ø63 mm 0-400 bar Alt Bağlantılı Gliserinli Manometre",
+     "model": "Ø63 · 0-400 bar",
+     "marka": "Pakkens"
+    },
+    {
+     "kod": "PAK.0631001118",
+     "ad": "Ø63 mm 0-600 bar Alt Bağlantılı Gliserinli Manometre",
+     "model": "Ø63 · 0-600 bar",
+     "marka": "Pakkens"
+    },
+    {
+     "kod": "PAK.0631001208",
+     "ad": "Ø63 mm 0-16 bar Arka Bağlantılı Gliserinli Manometre",
+     "model": "Ø63 · 0-16 bar",
+     "marka": "Pakkens"
+    },
+    {
+     "kod": "PAK.0631001214",
+     "ad": "Ø63 mm 0-250 bar Arka Bağlantılı Gliserinli Manometre",
+     "model": "Ø63 · 0-250 bar",
+     "marka": "Pakkens"
+    },
+    {
+     "kod": "PAK.0631001217",
+     "ad": "Ø63 mm 0-400 bar Arka Bağlantılı Gliserinli Manometre",
+     "model": "Ø63 · 0-400 bar",
+     "marka": "Pakkens"
+    },
+    {
+     "kod": "PAK.1001000109",
+     "ad": "Ø100 mm 0-25 bar Alt Bağlantılı Kuru Manometre",
+     "model": "Ø100 · 0-25 bar",
+     "marka": "Pakkens"
+    },
+    {
+     "kod": "PAK.1001001107",
+     "ad": "Ø100 mm 0-10 bar Alt Bağlantılı Gliserinli Manometre",
+     "model": "Ø100 · 0-10 bar",
+     "marka": "Pakkens"
+    },
+    {
+     "kod": "PAK.1001001205",
+     "ad": "Ø100 mm 0-4 bar Arka Bağlantılı Gliserinli Manometre",
+     "model": "Ø100 · 0-4 bar",
+     "marka": "Pakkens"
+    },
+    {
+     "kod": "PAK.1001107114CA",
+     "ad": "Ø100 mm 0-250 bar Alt Bağlantılı NCNO Kontaklı Manometre Cl.1,0",
+     "model": "Ø100 · kontaklı",
+     "marka": "Pakkens"
+    },
+    {
+     "kod": "PAK.0631300111",
+     "ad": "Ø63 mm 0-60 mbar Alt Bağlantılı Diyaframlı Manometre",
+     "model": "Ø63 · 0-60 mbar",
+     "marka": "Pakkens"
+    },
+    {
+     "kod": "PAK.0631300112",
+     "ad": "Ø63 mm 0-100 mbar Alt Bağlantılı Diyaframlı Manometre Cl.1,6 G1/4\"",
+     "model": "Ø63 · 0-100 mbar",
+     "marka": "Pakkens"
+    },
+    {
+     "kod": "PAK.1002301111",
+     "ad": "Ø100 mm -60/0 mbar Alt Bağlantılı Gliserinli Diyaframlı Vakum Manometresi",
+     "model": "Ø100 · vakum",
+     "marka": "Pakkens"
+    },
+    {
+     "kod": "PAK.1002301114",
+     "ad": "Ø100 mm -250/0 mbar Alt Bağlantılı Gliserinli Diyaframlı Vakum Manometresi",
+     "model": "Ø100 · vakum",
+     "marka": "Pakkens"
+    },
+    {
+     "kod": "PAK.1002301117",
+     "ad": "Ø100 mm -400/0 mbar Alt Bağlantılı Gliserinli Diyaframlı Vakum Manometresi",
+     "model": "Ø100 · vakum",
+     "marka": "Pakkens"
+    },
+    {
+     "kod": "PAK.040100020310",
+     "ad": "Ø40 mm Kirlilik Manometresi",
+     "model": "Ø40 · kirlilik",
+     "marka": "Pakkens"
+    },
+    {
+     "kod": "AD-1312-MTR-L",
+     "ad": "Manometre Ters Rekoru R1/4-19 M18x1,5 12L",
+     "model": "12L"
+    },
+    {
+     "kod": "AD-1310-MER-L",
+     "ad": "Manometre Erkek Rakoru 1/4 M16x1,5 10L",
+     "model": "10L"
     }
    ]
   },
@@ -975,7 +2250,7 @@
    ]
   },
   "hidrolik-kece-nutring": {
-   "toplamUrun": 5297,
+   "toplamUrun": 5295,
    "urunler": [
     {
      "kod": "KASTAS.K21-008/5 PU",
@@ -1171,8 +2446,172 @@
     }
    ]
   },
+  "tamir-takimi": {
+   "toplamUrun": 27,
+   "urunler": [
+    {
+     "kod": "KASTAS.KK-650",
+     "ad": "JB-991/00110 JCB Tamir Takımı",
+     "model": "JB-991/00110",
+     "marka": "Kastaş"
+    },
+    {
+     "kod": "KASTAS.KK-651",
+     "ad": "JB-991/00103 JCB Tamir Takımı",
+     "model": "JB-991/00103",
+     "marka": "Kastaş"
+    },
+    {
+     "kod": "KASTAS.KK-653",
+     "ad": "JB-991/00145 JCB Tamir Takımı",
+     "model": "JB-991/00145",
+     "marka": "Kastaş"
+    },
+    {
+     "kod": "KASTAS.KK-654",
+     "ad": "JB-991/00148 JCB Tamir Takımı",
+     "model": "JB-991/00148",
+     "marka": "Kastaş"
+    },
+    {
+     "kod": "KASTAS.KK-655",
+     "ad": "JB-991/10142 JCB Tamir Takımı",
+     "model": "JB-991/10142",
+     "marka": "Kastaş"
+    },
+    {
+     "kod": "KASTAS.KK-656",
+     "ad": "JB-991/10151 JCB Tamir Takımı",
+     "model": "JB-991/10151",
+     "marka": "Kastaş"
+    },
+    {
+     "kod": "KASTAS.KK-658",
+     "ad": "JB-991/00095 JCB Tamir Takımı",
+     "model": "JB-991/00095",
+     "marka": "Kastaş"
+    },
+    {
+     "kod": "KASTAS.KK-659",
+     "ad": "JB-991/00100 JCB Tamir Takımı",
+     "model": "JB-991/00100",
+     "marka": "Kastaş"
+    },
+    {
+     "kod": "KASTAS.KK-660",
+     "ad": "JB-991/00102 JCB Tamir Takımı",
+     "model": "JB-991/00102",
+     "marka": "Kastaş"
+    },
+    {
+     "kod": "KASTAS.KK-661",
+     "ad": "JB-991/00157 JCB Tamir Takımı",
+     "model": "JB-991/00157",
+     "marka": "Kastaş"
+    },
+    {
+     "kod": "KASTAS.KK-663",
+     "ad": "JB-991/00018 JCB Tamir Takımı",
+     "model": "JB-991/00018",
+     "marka": "Kastaş"
+    },
+    {
+     "kod": "KASTAS.KK-664",
+     "ad": "JB-991/00098P JCB Tamir Takımı",
+     "model": "JB-991/00098P",
+     "marka": "Kastaş"
+    },
+    {
+     "kod": "HEMA.MUH.010",
+     "ad": "0P1.050.050 — 0P1 Serisi Tamir Takımı",
+     "model": "0P1 serisi",
+     "marka": "Hema"
+    },
+    {
+     "kod": "HEMA.MUH.011",
+     "ad": "1P1.100.451 — 1P1 Serisi Tamir Takımı",
+     "model": "1P1 serisi",
+     "marka": "Hema"
+    },
+    {
+     "kod": "HEMA.MUH.012",
+     "ad": "1PN.100.092 — 1PN Serisi Tamir Takımı",
+     "model": "1PN serisi",
+     "marka": "Hema"
+    },
+    {
+     "kod": "HEMA.MUH.013",
+     "ad": "2P1.3000.250 — 2P1 Serisi Tamir Takımı",
+     "model": "2P1 serisi",
+     "marka": "Hema"
+    },
+    {
+     "kod": "HEMA.MUH.014",
+     "ad": "3P1.4000.250 — 3P1 Serisi Tamir Takımı",
+     "model": "3P1 serisi",
+     "marka": "Hema"
+    },
+    {
+     "kod": "HEMA.HMRA.2SK",
+     "ad": "HMRA.2SK Hidromotor Tamir Takımı",
+     "model": "HMRA.2SK",
+     "marka": "Hema"
+    },
+    {
+     "kod": "HEMA.HMRA.3SK",
+     "ad": "HMRA.3SK Hidromotor Tamir Takımı",
+     "model": "HMRA.3SK",
+     "marka": "Hema"
+    },
+    {
+     "kod": "HR.MOTOR.MR.TT",
+     "ad": "MR Hidromotor Tamir Takımı",
+     "model": "MR serisi",
+     "marka": "Hydropack"
+    },
+    {
+     "kod": "HR.MOTOR.MH.TT",
+     "ad": "MH Hidromotor Tamir Takımı",
+     "model": "MH serisi",
+     "marka": "Hydropack"
+    },
+    {
+     "kod": "HR.MOTOR.MM.TT",
+     "ad": "MM Hidromotor Tamir Takımı",
+     "model": "MM serisi",
+     "marka": "Hydropack"
+    },
+    {
+     "kod": "HR.MOTOR.MT.TT",
+     "ad": "MT Hidromotor Tamir Takımı",
+     "model": "MT serisi",
+     "marka": "Hydropack"
+    },
+    {
+     "kod": "HMS.SIZDIRMAZLIK.01",
+     "ad": "PS36005002 — DP 30 Sızdırmazlık Takımı",
+     "model": "DP 30"
+    },
+    {
+     "kod": "HMS.SIZDIRMAZLIK.02",
+     "ad": "PS36005003 — DP 40 Sızdırmazlık Takımı",
+     "model": "DP 40"
+    },
+    {
+     "kod": "HMS.SIZDIRMAZLIK.04",
+     "ad": "PS36005008 — DPA 40 Sızdırmazlık Takımı",
+     "model": "DPA 40"
+    },
+    {
+     "kod": "PEM.S.KS.A.100",
+     "ad": "KS-A 100 Keçe Takımı (pnömatik silindir)",
+     "model": "KS-A 100",
+     "marka": "Pemaks"
+    }
+   ]
+  },
   "hortum-kelepce": {
-   "toplamUrun": 247,
+   "toplamUrun": 246,
    "urunler": [
     {
      "kod": "LMC.CM00M03P1YG2016.0",
@@ -1257,8 +2696,181 @@
     }
    ]
   },
+  "hortum-ucu-koruma": {
+   "toplamUrun": 60,
+   "urunler": [
+    {
+     "kod": "AD-0606-HE",
+     "ad": "Hortum Eki 1/4\"",
+     "model": "1/4\""
+    },
+    {
+     "kod": "AD-0808-HE",
+     "ad": "Hortum Eki 5/16\"",
+     "model": "5/16\""
+    },
+    {
+     "kod": "AD-1010-HE",
+     "ad": "Hortum Eki 3/8\"",
+     "model": "3/8\""
+    },
+    {
+     "kod": "AD-1313-HE",
+     "ad": "Hortum Eki 1/2\"",
+     "model": "1/2\""
+    },
+    {
+     "kod": "AD-1616-HE",
+     "ad": "Hortum Eki 5/8\"",
+     "model": "5/8\""
+    },
+    {
+     "kod": "AD-1919-HE",
+     "ad": "Hortum Eki 3/4\"",
+     "model": "3/4\""
+    },
+    {
+     "kod": "AD-2525-HE",
+     "ad": "Hortum Eki 1\"",
+     "model": "1\""
+    },
+    {
+     "kod": "AD-3232-HE",
+     "ad": "Hortum Eki 1.1/4\"",
+     "model": "1.1/4\""
+    },
+    {
+     "kod": "AD-5050-HE",
+     "ad": "Hortum Eki 2\"",
+     "model": "2\""
+    },
+    {
+     "kod": "MUH.183",
+     "ad": "Yıkama Hortum Eki 5/16\" (Ekonomik)",
+     "model": "5/16\""
+    },
+    {
+     "kod": "HF.PN08VB",
+     "ad": "Hortum Eki 5/16\"",
+     "model": "5/16\"",
+     "marka": "HansaFlex"
+    },
+    {
+     "kod": "HF.PN10VB",
+     "ad": "Hortum Eki 3/8\"",
+     "model": "3/8\"",
+     "marka": "HansaFlex"
+    },
+    {
+     "kod": "HF.PN25VB",
+     "ad": "Hortum Eki 1\"",
+     "model": "1\"",
+     "marka": "HansaFlex"
+    },
+    {
+     "kod": "HANSA.SSKC13",
+     "ad": "Spiral Koruma 13x",
+     "model": "13x",
+     "marka": "HansaFlex"
+    },
+    {
+     "kod": "HANSA.SSKC16",
+     "ad": "Spiral Koruma 16x",
+     "model": "16x",
+     "marka": "HansaFlex"
+    },
+    {
+     "kod": "HANSA.SSKC23",
+     "ad": "Spiral Koruma 23x27",
+     "model": "23x27",
+     "marka": "HansaFlex"
+    },
+    {
+     "kod": "HANSA.SSKC30",
+     "ad": "Spiral Koruma 30x",
+     "model": "30x",
+     "marka": "HansaFlex"
+    },
+    {
+     "kod": "HANSA.SSKC40",
+     "ad": "Spiral Koruma 40x",
+     "model": "40x",
+     "marka": "HansaFlex"
+    },
+    {
+     "kod": "HF.FBSB 019",
+     "ad": "19 mm Silikon Turuncu Yanmaz Kılıf",
+     "model": "Ø19",
+     "marka": "HansaFlex"
+    },
+    {
+     "kod": "HF.FBSB 025",
+     "ad": "25 mm Silikon Turuncu Yanmaz Kılıf",
+     "model": "Ø25",
+     "marka": "HansaFlex"
+    },
+    {
+     "kod": "HF.FBSB 032",
+     "ad": "32 mm Silikon Turuncu Yanmaz Kılıf",
+     "model": "Ø32",
+     "marka": "HansaFlex"
+    },
+    {
+     "kod": "VR.YK-025",
+     "ad": "Yanmaz Kılıf 25 mm",
+     "model": "Ø25",
+     "marka": "Vereks"
+    },
+    {
+     "kod": "VR.YK-035",
+     "ad": "Yanmaz Kılıf 35 mm",
+     "model": "Ø35",
+     "marka": "Vereks"
+    },
+    {
+     "kod": "EKO.TCP6X6",
+     "ad": "6x6 Hortum Kanalı",
+     "model": "6×6"
+    },
+    {
+     "kod": "EKO.TCP8X6",
+     "ad": "8x6 Hortum Kanalı",
+     "model": "8×6"
+    },
+    {
+     "kod": "EKO.TCP10X6",
+     "ad": "10x6 Hortum Kanalı",
+     "model": "10×6"
+    },
+    {
+     "kod": "EKO.TCP12X6",
+     "ad": "12x6 Hortum Kanalı",
+     "model": "12×6"
+    },
+    {
+     "kod": "SARI.1501",
+     "ad": "Hortum Ekleri 6 mm",
+     "model": "6 mm"
+    },
+    {
+     "kod": "SARI.1502",
+     "ad": "Hortum Ekleri 8 mm",
+     "model": "8 mm"
+    },
+    {
+     "kod": "SARI.1503",
+     "ad": "Hortum Ekleri 10 mm",
+     "model": "10 mm"
+    },
+    {
+     "kod": "SARI.1403",
+     "ad": "Hortum Te Üçlü 10 mm",
+     "model": "10 mm"
+    }
+   ]
+  },
   "pnomatik-silindir": {
-   "toplamUrun": 439,
+   "toplamUrun": 414,
    "urunler": [
     {
      "kod": "PEM.S.PAG.040.025",
@@ -1350,7 +2962,7 @@
    ]
   },
   "pnomatik-valf": {
-   "toplamUrun": 250,
+   "toplamUrun": 249,
    "urunler": [
     {
      "kod": "EKO.4V210-08",
@@ -1410,8 +3022,158 @@
     }
    ]
   },
+  "sartlandirici": {
+   "toplamUrun": 115,
+   "urunler": [
+    {
+     "kod": "EKO.AR-2000",
+     "ad": "1/4\" Regülatör + Manometre (AR2000)",
+     "model": "1/4\""
+    },
+    {
+     "kod": "EKO.AFC-2000",
+     "ad": "1/4\" İkili Şartlandırıcı",
+     "model": "1/4\" FR"
+    },
+    {
+     "kod": "EKO.AFR-2000",
+     "ad": "1/4\" Filtreli Regülatör",
+     "model": "1/4\""
+    },
+    {
+     "kod": "EKO.AL-2000",
+     "ad": "1/4\" Yağlayıcı",
+     "model": "1/4\""
+    },
+    {
+     "kod": "EKO.BFC-4000",
+     "ad": "1/2\" İkili Şartlandırıcı",
+     "model": "1/2\" FR"
+    },
+    {
+     "kod": "EKO.BFR-4000",
+     "ad": "1/2\" Filtreli Regülatör",
+     "model": "1/2\""
+    },
+    {
+     "kod": "EKO.BR-4000",
+     "ad": "1/2\" Regülatör + Manometre",
+     "model": "1/2\""
+    },
+    {
+     "kod": "EKO.BL-4000",
+     "ad": "1/2\" Yağlayıcı",
+     "model": "1/2\""
+    },
+    {
+     "kod": "EKO.OFR MAXİ 1\"",
+     "ad": "1\" Filtreli Regülatör (OFR Maxi)",
+     "model": "1\""
+    },
+    {
+     "kod": "EKO.OU MAXİ 1\"",
+     "ad": "1\" Şartlandırıcı (OU Maxi)",
+     "model": "1\""
+    },
+    {
+     "kod": "EKO.REK.OU.MINI.1/4",
+     "ad": "1/4\" Şartlandırıcı 16 bar",
+     "model": "1/4\" · 16 bar"
+    },
+    {
+     "kod": "EKO.REK.OU.MINI.3/8",
+     "ad": "3/8\" Şartlandırıcı 16 bar",
+     "model": "3/8\" · 16 bar"
+    },
+    {
+     "kod": "EKO.REK.OU.MIDI.1/2",
+     "ad": "1/2\" Şartlandırıcı 16 bar",
+     "model": "1/2\" · 16 bar"
+    },
+    {
+     "kod": "EKO.IR2000-02",
+     "ad": "1/4\" 0,5-2 bar Hassas Regülatör",
+     "model": "1/4\" hassas"
+    },
+    {
+     "kod": "EKO.IR2020-02",
+     "ad": "1/4\" 0,5-8 bar Hassas Regülatör",
+     "model": "1/4\" hassas"
+    },
+    {
+     "kod": "PEM.HH.FRL-S1-14-M",
+     "ad": "1/4\" Hava Hazırlama Ünitesi, Manuel Tahliyeli (FRL)",
+     "model": "1/4\" FRL",
+     "marka": "Pemaks"
+    },
+    {
+     "kod": "PEM.HH.FRL-S2-12-A",
+     "ad": "1/2\" Hava Hazırlama Ünitesi, Otomatik Tahliyeli (FRL)",
+     "model": "1/2\" FRL",
+     "marka": "Pemaks"
+    },
+    {
+     "kod": "PEM.HH.PS2FR-S4-1",
+     "ad": "PS Serisi 1\" Metal Gövde Filtreli Regülatör, Manuel Tahliyeli",
+     "model": "1\"",
+     "marka": "Pemaks"
+    },
+    {
+     "kod": "PEM.HH.PS1HR-14-8",
+     "ad": "Hassas Regülatör 1/4\" 8 bar",
+     "model": "1/4\" hassas",
+     "marka": "Pemaks"
+    },
+    {
+     "kod": "PEM.HH.L-S2-12",
+     "ad": "1/2\" Yağlayıcı",
+     "model": "1/2\"",
+     "marka": "Pemaks"
+    },
+    {
+     "kod": "MUH.224",
+     "ad": "Regülatör MD1-R000-1/4",
+     "model": "1/4\"",
+     "marka": "Camozzi"
+    },
+    {
+     "kod": "MUH.225",
+     "ad": "Regülatör Manometresi M043-P16",
+     "model": "M043-P16",
+     "marka": "Camozzi"
+    },
+    {
+     "kod": "SM.SMŞ2Lİ12M1850",
+     "ad": "1/2\" İkili Şartlandırıcı",
+     "model": "1/2\" FR",
+     "marka": "Semakmatik"
+    },
+    {
+     "kod": "SM.SMŞREG14M1800",
+     "ad": "1/4\" Regülatör, Metal Gövde, Manometresiz",
+     "model": "1/4\"",
+     "marka": "Semakmatik"
+    },
+    {
+     "kod": "MUH.011",
+     "ad": "R/FL-1/2 İkili Şartlandırıcı",
+     "model": "1/2\" FR",
+     "marka": "Vema"
+    },
+    {
+     "kod": "YAĞ.010.001.HT",
+     "ad": "Şartlandırıcı Yağı (1 litre)",
+     "model": "1 L"
+    },
+    {
+     "kod": "MUH.221",
+     "ad": "Gıdaya Uygun Şartlandırıcı Yağı",
+     "model": "gıda tipi"
+    }
+   ]
+  },
   "pnomatik-rakor": {
-   "toplamUrun": 341,
+   "toplamUrun": 379,
    "urunler": [
     {
      "kod": "EKO.REK.PC.04.08",
@@ -1553,137 +3315,6 @@
      "kod": "EKO.PU.0402,5",
      "ad": "POLİÜRETAN HORTUM 4X2,5",
      "model": "4X2,5"
-    }
-   ]
-  },
-  "sel-hortum": {
-   "toplamUrun": 235,
-   "urunler": [
-    {
-     "kod": "SEL.YIKAMA.01805",
-     "ad": "SEL YIKAMA HORTUMU 5/16 R2",
-     "marka": "Sel"
-    },
-    {
-     "kod": "SEL.R6.08",
-     "ad": "SELTEX R6 ( 1/2 ) HİDROLİK HORTUM",
-     "marka": "Seltex"
-    },
-    {
-     "kod": "SEL.FR2.SC.07",
-     "ad": "FORCESTREAM R2AT /2 SC ( 5/16 ) HİDROLİK HORTUM",
-     "marka": "Forcestream"
-    },
-    {
-     "kod": "SEL.FR1.08",
-     "ad": "FORCESTREAM R1AT /1 SN ( 1/2 ) HİDROLİK HORTUM",
-     "marka": "Forcestream"
-    },
-    {
-     "kod": "SEL.FR2.SC.04",
-     "ad": "FORCESTREAM R2 SC ( 1/4 ) HİDROLİK HORTUM",
-     "marka": "Forcestream"
-    },
-    {
-     "kod": "SEL.U1.12",
-     "ad": "ULTIMATE 1SN ( 3/4 ) HİDROLİK HORTUM",
-     "marka": "Ultimate"
-    },
-    {
-     "kod": "SEL.U1.16",
-     "ad": "ULTIMATE 1SN ( 1 ) HİDROLİK HORTUM",
-     "marka": "Ultimate"
-    },
-    {
-     "kod": "SEL.U2.08",
-     "ad": "ULTIMATE 2 SN ( 1/2 ) HİDROLİK HORTUM",
-     "marka": "Ultimate"
-    },
-    {
-     "kod": "SEL.4SP.8",
-     "ad": "SEL R9 SP HİDROLİK HORTUM 1/2 POWERSTREAM",
-     "marka": "Powerstream"
-    },
-    {
-     "kod": "SEL.4SH.10",
-     "ad": "SEL R9 SP HİDROLİK HORTUM 5/8",
-     "marka": "Sel",
-     "model": "5/8"
-    },
-    {
-     "kod": "SEL.İKİZ.R2SC",
-     "ad": "TWINSTREAM R2 SC İKİZ ( 1/2 ) HİDROLİK HORTUM",
-     "marka": "TwinStream"
-    },
-    {
-     "kod": "SEL.X-6000",
-     "ad": "SEL R15 6000PSI HİDROLİK HORTUM 1.1/4 X-6000",
-     "marka": "Sel"
-    },
-    {
-     "kod": "SEL.B.51",
-     "ad": "BOSPHORUS ( 2-51 ) MM ŞAFFAF SPRİAL HORTUM",
-     "marka": "Bosphorus"
-    },
-    {
-     "kod": "SEL.B.25",
-     "ad": "BOSPHORUS ( 1-25 ) MM ŞAFFAF SPRİAL HORTUM",
-     "marka": "Bosphorus"
-    },
-    {
-     "kod": "SEL.EGE6.19",
-     "ad": "SEL EGE 6 SU HORTUMU 3/4",
-     "marka": "Sel",
-     "model": "3/4"
-    },
-    {
-     "kod": "SEL.SICAK.SU.12.7",
-     "ad": "SEL SICAK SU LONG HORTUMU 1/2",
-     "marka": "Sel",
-     "model": "1/2"
-    },
-    {
-     "kod": "SEL.O.06",
-     "ad": "ODEON ( 3/8 ) MAVİ İLAÇLAMA HORTUMU 90 BAR",
-     "marka": "Odeon"
-    },
-    {
-     "kod": "SEL.FUEL.10",
-     "ad": "SEL AKARYAKIT HORTUMU 3/8",
-     "marka": "Sel",
-     "model": "3/8"
-    },
-    {
-     "kod": "SEL.AKDENİZ.4",
-     "ad": "SEL AKDENİZ EMİŞ HORTUMU 2\"",
-     "marka": "Sel",
-     "model": "2\""
-    },
-    {
-     "kod": "SEL.YIKAMA.MAVİ",
-     "ad": "SEL YIKAMA 5/16 CAR WASH MAVİ HORTUM",
-     "marka": "Sel"
-    },
-    {
-     "kod": "SEL.BUHAR.12",
-     "ad": "BUHAR ( 3/4 ) GEYSER-2A",
-     "marka": "Sel"
-    },
-    {
-     "kod": "SEL.SP.030",
-     "ad": "SPİRAL KORUMA ( 30*35 ) ( POLİETİLEN )",
-     "marka": "Sel"
-    },
-    {
-     "kod": "SEL.KUKA.12",
-     "ad": "TB KUKA-250 3/4 ( DIŞ ÇAP: 31,6 )",
-     "marka": "Sel"
-    },
-    {
-     "kod": "SEL.TFLN.07",
-     "ad": "TEFLON SOKET 3/4",
-     "marka": "Sel",
-     "model": "3/4"
     }
    ]
   }

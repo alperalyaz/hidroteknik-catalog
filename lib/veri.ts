@@ -24,9 +24,11 @@ export type Kategori = {
   h1: string
   ozet: string
   giris: string
-  /** Ürün ADINDA aranan regex. Kodla eşleşen gruplarda boş olabilir. */
+  /**
+   * Ürün ADINDA aranan regex. Kodla eşleşen gruplarda boş olabilir.
+   * Türkçe i/ı için daima [İIiı] sınıfı kullanılır — bkz. scripts/turkce-regex.mjs.
+   */
   eslesme: string
-  eslesme2?: string
   haric: string
   /**
    * Stok KODUNDA aranan regex. Ürün adı ne olduğunu söylemediğinde tek
