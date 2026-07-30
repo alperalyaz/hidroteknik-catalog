@@ -126,7 +126,20 @@ export default async function DilLayout({
 
         {/*
           Hidroteknik AI canlı destek widget'ı — sağ altta launcher açar, tıklanınca
-          chat.hidroteknik.com.tr/embed iframe'i gelir. Kataloğun tek harici betiği.
+          /embed iframe'i gelir. Kataloğun tek harici betiği.
+
+          ADRES NEDEN tawkto-one.vercel.app (chat.hidroteknik.com.tr DEĞİL):
+          chat.hidroteknik.com.tr diye bir kayıt YOK — DNS'te NXDOMAIN döner (ölçüldü
+          30.07.2026). Katalog o adrese baktığı sürece widget hiç yüklenmiyordu; istek
+          daha DNS aşamasında ölüyordu, konsolda tek satır hata bile bırakmadan.
+          Ana site (hidroteknik.com.tr) da widget'ı bu vercel.app adresinden yüklüyor
+          ve orada çalışıyor — yani doğru adres budur.
+
+          İleride chat.hidroteknik.com.tr gerçekten tanımlanırsa (Vercel'de özel alan
+          adı + DNS CNAME) burası tek satırda oraya çevrilir. O zamana kadar var olmayan
+          bir adrese işaret etmek widget'ı sessizce ölü tutuyor.
+        */}
+        {/*
 
           NEDEN next/script + lazyOnload (ham <script async> DEĞİL):
           - lazyOnload betiği window 'load' olayından SONRA, tarayıcı boşa düştüğünde
@@ -147,7 +160,7 @@ export default async function DilLayout({
         */}
         <Script
           id="hidroteknik-ai-widget"
-          src="https://chat.hidroteknik.com.tr/widget.js"
+          src="https://tawkto-one.vercel.app/widget.js"
           strategy="lazyOnload"
         />
       </body>
