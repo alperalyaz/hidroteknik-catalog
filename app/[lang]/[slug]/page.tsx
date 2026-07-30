@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import { DILLER, SITE_URL, FIRMA, sayiFormat, type Dil } from '@/lib/site'
 import { METIN } from '@/lib/metin'
 import { KATEGORILER, kategoriBul, kategorilerIcin, kategoriUrunleri, urunAdiDuzelt } from '@/lib/veri'
+import { profilBul, profilSlug } from '@/lib/profil'
 import { kategoriSchema, sssSchema, kirintiSchema, jsonLd } from '@/lib/schema'
 
 const OG_LOCALE: Record<Dil, string> = { tr: 'tr_TR', en: 'en_US', ru: 'ru_RU' }
@@ -125,10 +126,20 @@ export default async function KategoriSayfasi({
                   </tr>
                 </thead>
                 <tbody>
-                  {k.profiller!.map((p) => (
+                  {k.profiller!.map((p) => {
+                    // Kendi sayfası olan profiller link olur; olmayanlar düz metin
+                    // kalır (KBT/KPB/KSB gibi birleşik satırlarda sayfa yoktur).
+                    const sayfa = profilBul(p.kod)
+                    return (
                     <tr key={p.kod}>
                       <td>
-                        <b className="profil-kod">{p.kod}</b>
+                        {sayfa ? (
+                          <Link href={`/${lang}/profil/${profilSlug(p.kod)}`} className="profil-kod">
+                            {p.kod}
+                          </Link>
+                        ) : (
+                          <b className="profil-kod">{p.kod}</b>
+                        )}
                         {p.ad ? <span className="profil-ad">{p.ad}</span> : null}
                       </td>
                       <td>{p.yer}</td>
@@ -137,7 +148,8 @@ export default async function KategoriSayfasi({
                       </td>
                       <td className="model">{p.ornek}</td>
                     </tr>
-                  ))}
+                    )
+                  })}
                 </tbody>
               </table>
             </div>

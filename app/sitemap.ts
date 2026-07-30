@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next'
 import { DILLER, SITE_URL } from '@/lib/site'
 import { KATEGORILER } from '@/lib/veri'
+import { PROFILLER, profilSlug } from '@/lib/profil'
 
 /**
  * Kategori dışı, elle yazılmış sayfalar. Yeni eklenince buraya da yazılmalı.
@@ -30,6 +31,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: bugun,
         changeFrequency: 'weekly',
         priority: 0.8,
+      })
+    }
+    // Profil kodu sayfaları: kategori sayfalarından daha dar ama daha yüksek
+    // niyetli aramaları karşılar («k21 40x50x8»), o yüzden ihmal edilmez.
+    for (const p of PROFILLER) {
+      girisler.push({
+        url: `${SITE_URL}/${lang}/profil/${profilSlug(p.kod)}`,
+        lastModified: bugun,
+        changeFrequency: 'monthly',
+        priority: 0.7,
       })
     }
   }

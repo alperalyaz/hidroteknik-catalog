@@ -1,5 +1,6 @@
 import { SITE_URL, ANA_SITE, FIRMA, VARSAYILAN_DIL } from '@/lib/site'
 import { KATEGORILER, kategoriUrunleri } from '@/lib/veri'
+import { PROFILLER, profilSlug } from '@/lib/profil'
 
 /**
  * llms.txt — yapay zekâ istemcilerine sitenin özetini ve haritasını veren
@@ -35,6 +36,16 @@ export function GET() {
 ${KATEGORILER.map(
   (k) =>
     `- [${k.ad}](${SITE_URL}/${L}/${k.slug}) — ${kategoriUrunleri(k.slug).toplam.toLocaleString('tr-TR')} kalem. ${k.ozet}`
+).join('\n')}
+
+## Kastaş sızdırmazlık profil kodları
+
+Sızdırmazlıkta arama ürün adıyla değil profil kodu ve ölçüyle yapılır ("K21 40x50x8").
+Her profilin stoktaki ölçüleri kendi sayfasındadır.
+
+${PROFILLER.map(
+  (p) =>
+    `- [Kastaş ${p.kod}](${SITE_URL}/${L}/profil/${profilSlug(p.kod)}) — ${p.adet.toLocaleString('tr-TR')} ölçü, ${p.yer.toLowerCase()} tarafı${p.ad ? `. ${p.ad}` : ' (işlev doğrulanamadı)'}`
 ).join('\n')}
 
 ## Yerel

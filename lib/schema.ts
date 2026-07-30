@@ -101,6 +101,59 @@ export function kategoriSchema(k: Kategori, urunler: Urun[], url: string, lang: 
   }
 }
 
+/**
+ * Profil kodu sayfası. Kategori şemasından farkı: her satır bir ÜRÜN DEĞİL, bir
+ * ölçüdür — ItemList içinde Product olarak beyan edilir ki "k21 40x50x8" gibi
+ * ölçü aramalarında sayfa somut bir kaleme bağlanabilsin.
+ */
+export function profilSchema(
+  p: { kod: string; ad: string; adet: number; olculer: { kod: string; olcu: string }[] },
+  url: string,
+  lang: string,
+  baslik: string,
+  ozet: string,
+  katalogAdi: string
+) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    '@id': `${url}#sayfa`,
+    url,
+    name: baslik,
+    description: ozet,
+    inLanguage: lang,
+    isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}/#site`, name: `${FIRMA.ad} ${katalogAdi}` },
+    about: { '@id': ISLETME_ID },
+    provider: { '@id': ISLETME_ID },
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: p.olculer.length,
+      itemListElement: p.olculer.map((o, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        item: {
+          '@type': 'Product',
+          name: o.olcu ? `Kastaş ${o.kod} — ${o.olcu} mm` : `Kastaş ${o.kod}`,
+          sku: `KASTAS.${o.kod}`,
+          ...(o.olcu ? { size: o.olcu } : {}),
+          ...(p.ad ? { category: p.ad } : {}),
+          brand: { '@type': 'Brand', name: 'Kastaş' },
+          offers: {
+            '@type': 'Offer',
+            availability: 'https://schema.org/InStock',
+            priceSpecification: {
+              '@type': 'PriceSpecification',
+              priceCurrency: 'TRY',
+              valueAddedTaxIncluded: false,
+            },
+            seller: { '@id': ISLETME_ID },
+          },
+        },
+      })),
+    },
+  }
+}
+
 export function sssSchema(sss: { s: string; c: string }[], lang?: string) {
   return {
     '@context': 'https://schema.org',

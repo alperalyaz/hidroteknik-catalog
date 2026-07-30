@@ -52,6 +52,30 @@ export type Metin = {
   teklifEposta: string
   teklifKonu: (ad: string) => string
   digerGruplarBaslik: string
+  // — Profil kodu sayfası (/[lang]/profil/[kod]) —
+  profilKirinti: string
+  profilSayfaH1: (kod: string) => string
+  profilSayfaBaslik: (kod: string) => string
+  profilSayfaOzet: (kod: string, adet: string, yer: string) => string
+  profilRozetOlcu: (adet: string) => string
+  profilRozetYer: (yer: string) => string
+  profilRozetPu: string
+  profilIslevBilinmiyor: string
+  profilNasilOkunurBaslik: string
+  profilNasilOkunur: string
+  profilCapAraligi: (min: string, max: string) => string
+  profilOlcuTabloBaslik: (kod: string) => string
+  profilTabloKod: string
+  profilTabloOlcuBasligi: string
+  profilTabloMalzeme: string
+  profilListeNotTam: (adet: string) => string
+  profilListeNotKismi: (gosterilen: string, adet: string) => string
+  profilOlcuYok: string
+  profilDigerBaslik: string
+  profilKategoriDon: string
+  profilYerMil: string
+  profilYerPiston: string
+  profilYerIkisi: string
 }
 
 export const METIN: Record<Dil, Metin> = {
@@ -111,6 +135,33 @@ export const METIN: Record<Dil, Metin> = {
     teklifEposta: 'E-posta ile teklif iste',
     teklifKonu: (ad) => `${ad} teklif talebi`,
     digerGruplarBaslik: 'Diğer ürün grupları',
+    profilKirinti: 'Profil kodları',
+    profilSayfaH1: (kod) => `Kastaş ${kod} Keçe Ölçüleri`,
+    profilSayfaBaslik: (kod) => `Kastaş ${kod} — stoktaki ölçüler ve muadil arama`,
+    profilSayfaOzet: (kod, adet, yer) =>
+      `Kastaş ${kod} profilinde ${adet} ölçü stokta. ${yer} tarafına takılır. Aradığınız ölçü listede yoksa da sorun — Kastaş kataloğundaki diğer ölçüleri temin ediyoruz.`,
+    profilRozetOlcu: (adet) => `${adet} ölçü stokta`,
+    profilRozetYer: (yer) => `${yer} tarafı`,
+    profilRozetPu: 'Poliüretan (PU) seçeneği var',
+    profilIslevBilinmiyor:
+      'Bu profilin işlevi Kastaş kataloğundan doğrulanamadı, o yüzden boş bırakıldı. Takıldığı yer aşağıdaki ölçü sırasından okunmuştur.',
+    profilNasilOkunurBaslik: 'Ölçü nasıl okunur?',
+    profilNasilOkunur:
+      'Sızdırmazlık elemanının ölçüsü üç sayıyla verilir. Mil tarafına takılan elemanlarda sıra iç çap × dış çap × yükseklik, piston tarafına takılanlarda dış çap × iç çap × yükseklik biçimindedir — yani sayı sırası elemanın nereye oturduğunu da söyler. 7/5 gibi bölmeli üçüncü sayı, çift dudaklı sıyırıcılarda iki dudağın yüksekliğidir.',
+    profilCapAraligi: (min, max) => `Stoktaki ölçüler Ø${min} ile Ø${max} arasındadır.`,
+    profilOlcuTabloBaslik: (kod) => `${kod} ölçü listesi`,
+    profilTabloKod: 'Stok kodu',
+    profilTabloOlcuBasligi: 'Ölçü (mm)',
+    profilTabloMalzeme: 'Malzeme',
+    profilListeNotTam: (adet) => `Bu profildeki ${adet} ölçünün tamamı listelenmiştir.`,
+    profilListeNotKismi: (gosterilen, adet) =>
+      `Bu profilde toplam ${adet} ölçü stokta; en çok hareket gören ${gosterilen} tanesi listelenmiştir. Aradığınız ölçü listede yoksa sorun — büyük olasılıkla stokta ya da kısa sürede temin edilebilir.`,
+    profilOlcuYok: 'Bu profil ölçüyle değil, mil çapı ve tip harfiyle anılır.',
+    profilDigerBaslik: 'Diğer profil kodları',
+    profilKategoriDon: 'Tüm keçe, nutring ve sıyırıcılar',
+    profilYerMil: 'Mil',
+    profilYerPiston: 'Piston',
+    profilYerIkisi: 'Mil ve piston',
   },
   en: {
     urunKatalogu: 'Product Catalog',
@@ -168,6 +219,33 @@ export const METIN: Record<Dil, Metin> = {
     teklifEposta: 'Request a quote by email',
     teklifKonu: (ad) => `Quote request: ${ad}`,
     digerGruplarBaslik: 'Other product groups',
+    profilKirinti: 'Profile codes',
+    profilSayfaH1: (kod) => `Kastaş ${kod} Seal Sizes`,
+    profilSayfaBaslik: (kod) => `Kastaş ${kod} — sizes in stock and cross-reference`,
+    profilSayfaOzet: (kod, adet, yer) =>
+      `${adet} sizes of the Kastaş ${kod} profile are in stock. It fits on the ${yer} side. If the size you need is not listed, ask anyway — we supply the other sizes in the Kastaş catalogue.`,
+    profilRozetOlcu: (adet) => `${adet} sizes in stock`,
+    profilRozetYer: (yer) => `${yer} side`,
+    profilRozetPu: 'Polyurethane (PU) option available',
+    profilIslevBilinmiyor:
+      'The function of this profile could not be verified against the Kastaş catalogue, so it has been left blank. The mounting side below is read from the order of the dimensions.',
+    profilNasilOkunurBaslik: 'How to read the size',
+    profilNasilOkunur:
+      'A seal size is given as three numbers. On elements fitted to the rod the order is inner diameter × outer diameter × height; on elements fitted to the piston it is outer diameter × inner diameter × height — so the order of the numbers itself tells you where the element sits. A divided third number such as 7/5 gives the heights of the two lips on double-lip wipers.',
+    profilCapAraligi: (min, max) => `Sizes in stock range from Ø${min} to Ø${max}.`,
+    profilOlcuTabloBaslik: (kod) => `${kod} size list`,
+    profilTabloKod: 'Stock code',
+    profilTabloOlcuBasligi: 'Size (mm)',
+    profilTabloMalzeme: 'Material',
+    profilListeNotTam: (adet) => `All ${adet} sizes in this profile are listed.`,
+    profilListeNotKismi: (gosterilen, adet) =>
+      `${adet} sizes of this profile are in stock in total; the ${gosterilen} most frequently supplied are listed. If the size you need is not shown, ask — it is most likely in stock or available at short notice.`,
+    profilOlcuYok: 'This profile is identified by rod diameter and type letter rather than by a size triplet.',
+    profilDigerBaslik: 'Other profile codes',
+    profilKategoriDon: 'All seals, nutrings and wipers',
+    profilYerMil: 'rod',
+    profilYerPiston: 'piston',
+    profilYerIkisi: 'rod and piston',
   },
   ru: {
     urunKatalogu: 'Каталог продукции',
@@ -225,5 +303,32 @@ export const METIN: Record<Dil, Metin> = {
     teklifEposta: 'Запросить предложение по e-mail',
     teklifKonu: (ad) => `Запрос предложения: ${ad}`,
     digerGruplarBaslik: 'Другие группы товаров',
+    profilKirinti: 'Коды профилей',
+    profilSayfaH1: (kod) => `Размеры уплотнений Kastaş ${kod}`,
+    profilSayfaBaslik: (kod) => `Kastaş ${kod} — размеры в наличии и подбор аналогов`,
+    profilSayfaOzet: (kod, adet, yer) =>
+      `В наличии ${adet} размеров профиля Kastaş ${kod}. Устанавливается со стороны: ${yer}. Если нужного размера нет в списке, всё равно спросите — мы поставляем и остальные размеры из каталога Kastaş.`,
+    profilRozetOlcu: (adet) => `${adet} размеров в наличии`,
+    profilRozetYer: (yer) => `сторона: ${yer}`,
+    profilRozetPu: 'Есть вариант из полиуретана (PU)',
+    profilIslevBilinmiyor:
+      'Назначение этого профиля не удалось подтвердить по каталогу Kastaş, поэтому поле оставлено пустым. Сторона установки ниже определена по порядку размеров.',
+    profilNasilOkunurBaslik: 'Как читается размер',
+    profilNasilOkunur:
+      'Размер уплотнения задаётся тремя числами. У элементов, устанавливаемых на шток, порядок такой: внутренний диаметр × наружный диаметр × высота; у элементов на поршень — наружный диаметр × внутренний диаметр × высота. То есть сам порядок чисел говорит, куда садится элемент. Третье число с дробью, например 7/5, у двухкромочных грязесъёмников означает высоты двух кромок.',
+    profilCapAraligi: (min, max) => `Размеры в наличии — от Ø${min} до Ø${max}.`,
+    profilOlcuTabloBaslik: (kod) => `Список размеров ${kod}`,
+    profilTabloKod: 'Складской код',
+    profilTabloOlcuBasligi: 'Размер (мм)',
+    profilTabloMalzeme: 'Материал',
+    profilListeNotTam: (adet) => `Перечислены все ${adet} размеров этого профиля.`,
+    profilListeNotKismi: (gosterilen, adet) =>
+      `Всего в наличии ${adet} размеров этого профиля; перечислены ${gosterilen} наиболее востребованных. Если нужного размера нет в списке, спросите — скорее всего он есть на складе или доступен в короткий срок.`,
+    profilOlcuYok: 'Этот профиль обозначается диаметром штока и буквой типа, а не тройкой размеров.',
+    profilDigerBaslik: 'Другие коды профилей',
+    profilKategoriDon: 'Все уплотнения, нутринги и грязесъёмники',
+    profilYerMil: 'шток',
+    profilYerPiston: 'поршень',
+    profilYerIkisi: 'шток и поршень',
   },
 }
