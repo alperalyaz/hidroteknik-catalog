@@ -23,7 +23,7 @@ Next.js 15 (App Router) ile üretilen statik ürün kataloğu. Amaç arama motor
 yapay zekâ görünürlüğü; sayfalar pazarlama içeriğidir, fiyat/stok göstermez.
 TR (varsayılan) / EN / RU üç dilde yayında, ~257 statik sayfa.
 
-**Dört sayfa ailesi var, dördü de aynı desende: veri JSON'da, şablon tek dosyada.**
+**Beş sayfa ailesi var, beşi de aynı desende: veri JSON'da, şablon tek dosyada.**
 
 | Aile | Veri | Şablon | Adet |
 |---|---|---|---|
@@ -31,6 +31,7 @@ TR (varsayılan) / EN / RU üç dilde yayında, ~257 statik sayfa.
 | Profil kodu | `data/profiller.json` | `app/[lang]/profil/[kod]/` | 33 × 3 |
 | Marka | `data/markalar.json` | `app/[lang]/marka/[slug]/` | 17 × 3 |
 | Teknik rehber | `data/rehberler.json` | `app/[lang]/rehber/[slug]/` | 4 × 3 |
+| Silindir parça | `data/silindir-parcalari.json` | `app/[lang]/silindir-parca/[slug]/` | 8 × 3 |
 
 - `data/urunler.json` — Supabase'den alınmış **snapshot**: kalem sayıları ve
   sayfada gösterilen örnek ürünler. Build sırasında veritabanına bağlanılmaz.
@@ -112,6 +113,23 @@ rastgele yerlerden bölüyor: `hidroteknik.com.tr` bir chunk sınırında
 denetçi bunu tedarikçi adı sızıntısı sanıyor. Bölünme her build'de yer
 değiştirdiği için alarm da kararsız. Yalan söyleyen denetçi görmezden gelinir —
 bu yüzden yalnız kullanıcıya görünen işaretleme taranır.
+
+### Tedarikçi adı hiçbir yerde geçmez
+
+Ürünü aldığımız toptancılar **marka değildir** ve adları ticari sırdır: Adem Kardeşler,
+Arıca, Teksan, GDC, Hidrotek (bu sonuncusu "Hidroteknik" değil, ayrı bir firma).
+Yalnız ürünün ÜZERİNDEKİ marka yayımlanır — HansaFlex, Kastaş, Pemaks vb. gerçek
+markadır, serbesttir.
+
+Ürün **adları ve kodları serbesttir**; adlarda tedarikçi adı geçmiyor (ölçüldü
+30.07.2026: Arıca 6.973, Teksan 3.480, Adem Kardeşler 3.756 kalemde 0 geçiş).
+
+**Tek istisna GDC:** 1.086 kalemin HEPSİNİN kodu `GDC-` ile başlıyor, yani kodun
+kendisi tedarikçiyi ele veriyor. GDC'de adlar yayımlanır, kodlar yayımlanmaz —
+`silindir-parcalari.json` bu yüzden ölçü taşır, kod taşımaz.
+
+`scripts/build-denetle.mjs` beşini de arar. Desenler sınır koşullu yazılır: `arıca`
+sınırsız yazılsaydı "ayrıca" 18 sayfada yanlış alarm verirdi.
 
 ### Doğrulanamayan bilgi boş bırakılır
 

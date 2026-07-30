@@ -4,6 +4,7 @@ import { KATEGORILER } from '@/lib/veri'
 import { PROFILLER, profilSlug } from '@/lib/profil'
 import { MARKALAR } from '@/lib/marka'
 import { REHBERLER } from '@/lib/rehber'
+import { SILINDIR_PARCALARI } from '@/lib/silindir-parca'
 
 /**
  * Kategori dışı, elle yazılmış sayfalar. Yeni eklenince buraya da yazılmalı.
@@ -61,6 +62,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: bugun,
         changeFrequency: 'monthly',
         priority: 0.6,
+      })
+    }
+    // Silindir yedek parçaları: ölçüyle aranan kalemler («boğaz kepi 100x50»).
+    for (const parca of SILINDIR_PARCALARI) {
+      girisler.push({
+        url: `${SITE_URL}/${lang}/silindir-parca/${parca.slug}`,
+        lastModified: bugun,
+        changeFrequency: 'monthly',
+        priority: 0.7,
       })
     }
   }

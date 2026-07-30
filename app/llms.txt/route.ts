@@ -3,6 +3,7 @@ import { KATEGORILER, kategoriUrunleri } from '@/lib/veri'
 import { PROFILLER, profilSlug } from '@/lib/profil'
 import { MARKALAR } from '@/lib/marka'
 import { REHBERLER } from '@/lib/rehber'
+import { SILINDIR_PARCALARI } from '@/lib/silindir-parca'
 
 /**
  * llms.txt — yapay zekâ istemcilerine sitenin özetini ve haritasını veren
@@ -54,6 +55,17 @@ Her profilin stoktaki ölçüleri kendi sayfasındadır.
 ${PROFILLER.map(
   (p) =>
     `- [Kastaş ${p.kod}](${SITE_URL}/${L}/profil/${profilSlug(p.kod)}) — ${p.adet.toLocaleString('tr-TR')} ölçü, ${p.yer.toLowerCase()} tarafı${p.ad ? `. ${p.ad}` : ' (işlev doğrulanamadı)'}`
+).join('\n')}
+
+## Hidrolik silindir yedek parçaları
+
+İmalat ve revizyonda kullanılan parçalar. Ölçüler gövde çapı × mil çapı (boğaz kepi,
+uzatma kepi, piston, çakma kep) ya da gövde çapı × dış çap (arka kapak, rot kepi
+somunu, lift hamut) olarak yazılır. Her ölçünün eşleşen keçe/conta seti vardır.
+
+${SILINDIR_PARCALARI.map(
+  (x) =>
+    `- [Hidrolik Silindir ${x.tr}](${SITE_URL}/${L}/silindir-parca/${x.slug}) — ${x.adet} ölçü, Ø${x.capMin}–${x.capMax} mm`
 ).join('\n')}
 
 ## Teknik rehberler

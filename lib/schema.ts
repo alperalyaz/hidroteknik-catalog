@@ -227,6 +227,42 @@ export function rehberSchema(
   }
 }
 
+/**
+ * Silindir yedek parça sayfası — ProductGroup.
+ *
+ * Product yerine ProductGroup: sayfa tek bir kalemi değil, ölçüye göre değişen bir
+ * VARYANT AİLESİNİ anlatıyor (Ø32–250 arası 183 boğaz kepi ölçüsü gibi). Ayırt edici
+ * eksen `variesBy` ile bildirilir. Fiyat/stok alanı YOK — katalog fiyat göstermiyor,
+ * uydurma offer yazmak yapılandırılmış veriyi yalancı yapardı.
+ */
+export function parcaSchema(
+  i: { ad: string; h1: string; ozet: string; eksen: 'capMil' | 'capDis'; olculer: string[] },
+  url: string,
+  lang: string,
+  katalogAdi: string
+) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ProductGroup',
+    '@id': `${url}#urungrubu`,
+    url,
+    name: i.h1,
+    description: i.ozet,
+    inLanguage: lang,
+    category: i.ad,
+    productGroupID: url.split('/').pop(),
+    variesBy: i.eksen === 'capMil' ? ['width', 'depth'] : ['width'],
+    hasVariant: i.olculer.map((o) => ({
+      '@type': 'Product',
+      name: `${i.ad} ${o}`,
+      sku: o,
+    })),
+    isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}/#site`, name: `${FIRMA.ad} ${katalogAdi}` },
+    brand: { '@id': ISLETME_ID },
+    manufacturer: { '@id': ISLETME_ID },
+  }
+}
+
 export function sssSchema(sss: { s: string; c: string }[], lang?: string) {
   return {
     '@context': 'https://schema.org',

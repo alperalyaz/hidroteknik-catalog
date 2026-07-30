@@ -106,6 +106,24 @@ export type Metin = {
   kodStrokBaslik: string
   kodListeBaslik: (adet: string) => string
   kodAltNot: string
+  // — Silindir yedek parça sayfası (/[lang]/silindir-parca/[slug]) —
+  parcaKirinti: string
+  parcaH1: (ad: string) => string
+  parcaOzet: (ad: string, adet: string, capMin: string, capMax: string) => string
+  parcaRozetOlcu: (adet: string) => string
+  parcaRozetCap: (min: string, max: string) => string
+  parcaOlcuBaslik: string
+  parcaTabloCap: string
+  parcaTabloMil: string
+  parcaTabloDis: string
+  parcaEksenNotu: (eksen: 'capMil' | 'capDis') => string
+  parcaContaBaslik: string
+  parcaContaMetin: string
+  parcaDigerBaslik: string
+  parcaListeBaslik: string
+  parcaListeOzet: string
+  parcaKodNotu: string
+  parcaSilindirLink: string
 }
 
 export const METIN: Record<Dil, Metin> = {
@@ -222,6 +240,30 @@ export const METIN: Record<Dil, Metin> = {
     kodListeBaslik: (adet) => `${adet} kod`,
     kodAltNot:
       'Listedeki kodlar üreticinin katalog kodudur. Stokta olmayan ölçüler için temin süresini sorunuz — seri stoğumuzda olduğu için tedarik hızlıdır. Fiyat, teklif üzerine verilir.',
+    parcaKirinti: 'Silindir yedek parça',
+    parcaH1: (ad) => `Hidrolik Silindir ${ad}`,
+    parcaOzet: (ad, adet, capMin, capMax) =>
+      `Hidrolik silindir ${ad.toLocaleLowerCase('tr')}, Ø${capMin}–${capMax} mm gövde çapı aralığında ${adet} ölçüde. İmalat ve revizyonda kullanılır.`,
+    parcaRozetOlcu: (adet) => `${adet} ölçü`,
+    parcaRozetCap: (min, max) => `Ø${min}–${max} mm`,
+    parcaOlcuBaslik: 'Ölçü listesi',
+    parcaTabloCap: 'Gövde çapı (mm)',
+    parcaTabloMil: 'Mil çapı (mm)',
+    parcaTabloDis: 'Dış çap (mm)',
+    parcaEksenNotu: (eksen) =>
+      eksen === 'capMil'
+        ? 'Ölçüler gövde çapı × mil çapı olarak yazılır: 100x50, Ø100 mm gövdede Ø50 mm mil demektir.'
+        : 'Ölçüler gövde çapı × dış çap olarak yazılır: 100x115, Ø100 mm gövdeye oturan Ø115 mm dış çaplı parça demektir.',
+    parcaContaBaslik: 'Keçe ve conta seti',
+    parcaContaMetin:
+      'Listedeki her ölçünün eşleşen keçe/conta seti vardır. Revizyonda parçanın kendisi sağlamsa çoğu zaman yalnız set değişir; ölçüyü verirseniz uygun seti çıkarırız.',
+    parcaDigerBaslik: 'Diğer silindir parçaları',
+    parcaListeBaslik: 'Hidrolik Silindir Yedek Parçaları',
+    parcaListeOzet:
+      'Silindir imalatı ve revizyonunda kullanılan parçalar, ölçü listeleriyle.',
+    parcaKodNotu:
+      'Ölçüsünü bilmiyorsanız parçayı getirin, tezgâhta ölçeriz. Fiyat teklif üzerine verilir.',
+    parcaSilindirLink: 'Hidrolik silindir imalatı ve revizyonu',
   },
   en: {
     urunKatalogu: 'Product Catalog',
@@ -336,6 +378,30 @@ export const METIN: Record<Dil, Metin> = {
     kodListeBaslik: (adet) => `${adet} codes`,
     kodAltNot:
       "The codes listed are the manufacturer's own part numbers. For sizes not held in stock, ask for the lead time — supply is quick because we carry the series. Prices are given on quotation.",
+    parcaKirinti: 'Cylinder spare parts',
+    parcaH1: (ad) => `Hydraulic Cylinder ${ad}`,
+    parcaOzet: (ad, adet, capMin, capMax) =>
+      `Hydraulic cylinder ${ad.toLowerCase()}, in ${adet} sizes across a Ø${capMin}–${capMax} mm bore range. Used in manufacturing and rebuilds.`,
+    parcaRozetOlcu: (adet) => `${adet} sizes`,
+    parcaRozetCap: (min, max) => `Ø${min}–${max} mm`,
+    parcaOlcuBaslik: 'Size list',
+    parcaTabloCap: 'Bore (mm)',
+    parcaTabloMil: 'Rod dia. (mm)',
+    parcaTabloDis: 'Outer dia. (mm)',
+    parcaEksenNotu: (eksen) =>
+      eksen === 'capMil'
+        ? 'Sizes are written as bore × rod diameter: 100x50 means a Ø50 mm rod in a Ø100 mm bore.'
+        : 'Sizes are written as bore × outer diameter: 100x115 means a part of Ø115 mm outer diameter seating on a Ø100 mm bore.',
+    parcaContaBaslik: 'Seal and gasket set',
+    parcaContaMetin:
+      'Every size on the list has a matching seal/gasket set. In a rebuild, if the part itself is sound, usually only the set is replaced — give us the size and we will pull the right one.',
+    parcaDigerBaslik: 'Other cylinder parts',
+    parcaListeBaslik: 'Hydraulic Cylinder Spare Parts',
+    parcaListeOzet:
+      'Parts used in cylinder manufacturing and rebuilds, with their size lists.',
+    parcaKodNotu:
+      'If you do not know the size, bring the part in and we will measure it. Prices are given on quotation.',
+    parcaSilindirLink: 'Hydraulic cylinder manufacturing and rebuilds',
   },
   ru: {
     urunKatalogu: 'Каталог продукции',
@@ -450,5 +516,29 @@ export const METIN: Record<Dil, Metin> = {
     kodListeBaslik: (adet) => `${adet} кодов`,
     kodAltNot:
       'Приведённые коды — каталожные номера самого производителя. По размерам, которых нет на складе, уточняйте срок поставки: серия у нас есть, поэтому поставка быстрая. Цена — по запросу.',
+    parcaKirinti: 'Запчасти для цилиндров',
+    parcaH1: (ad) => `${ad} гидроцилиндра`,
+    parcaOzet: (ad, adet, capMin, capMax) =>
+      `${ad} гидроцилиндра — ${adet} типоразмеров в диапазоне диаметров Ø${capMin}–${capMax} мм. Применяется при изготовлении и ремонте.`,
+    parcaRozetOlcu: (adet) => `${adet} типоразмеров`,
+    parcaRozetCap: (min, max) => `Ø${min}–${max} мм`,
+    parcaOlcuBaslik: 'Список типоразмеров',
+    parcaTabloCap: 'Диаметр корпуса (мм)',
+    parcaTabloMil: 'Диаметр штока (мм)',
+    parcaTabloDis: 'Наружный диаметр (мм)',
+    parcaEksenNotu: (eksen) =>
+      eksen === 'capMil'
+        ? 'Размеры указываются как диаметр корпуса × диаметр штока: 100x50 — шток Ø50 мм в корпусе Ø100 мм.'
+        : 'Размеры указываются как диаметр корпуса × наружный диаметр: 100x115 — деталь наружным диаметром Ø115 мм на корпус Ø100 мм.',
+    parcaContaBaslik: 'Комплект манжет и уплотнений',
+    parcaContaMetin:
+      'Для каждого размера из списка есть соответствующий комплект манжет/уплотнений. При ремонте, если сама деталь цела, обычно меняют только комплект — сообщите размер, и мы подберём нужный.',
+    parcaDigerBaslik: 'Другие детали цилиндра',
+    parcaListeBaslik: 'Запасные части гидроцилиндров',
+    parcaListeOzet:
+      'Детали, применяемые при изготовлении и ремонте цилиндров, со списками типоразмеров.',
+    parcaKodNotu:
+      'Если размер неизвестен — привезите деталь, мы обмерим её на станке. Цена по запросу.',
+    parcaSilindirLink: 'Изготовление и ремонт гидроцилиндров',
   },
 }

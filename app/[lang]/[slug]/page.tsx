@@ -7,6 +7,7 @@ import { KATEGORILER, kategoriBul, kategorilerIcin, kategoriUrunleri, urunAdiDuz
 import { profilBul, profilSlug } from '@/lib/profil'
 import { MARKALAR } from '@/lib/marka'
 import { kodGruplariIcin } from '@/lib/uretici-kod'
+import { SILINDIR_PARCALARI, parcaAdi } from '@/lib/silindir-parca'
 import { kategoriSchema, sssSchema, kirintiSchema, jsonLd } from '@/lib/schema'
 
 const OG_LOCALE: Record<Dil, string> = { tr: 'tr_TR', en: 'en_US', ru: 'ru_RU' }
@@ -55,6 +56,9 @@ export default async function KategoriSayfasi({
   const adKucuk = k.ad.toLocaleLowerCase(lang === 'tr' ? 'tr' : undefined)
   // Bu kategoride yayımlanacak üretici katalog kodları (varsa).
   const kodGruplari = kodGruplariIcin(slug)
+  // Silindir yedek parça sayfaları yalnız silindir imalatı kategorisine bağlanır;
+  // parçalar orada işlendiği için iç link oradan doğal, başka kategoriden değil.
+  const parcalar = slug === 'hidrolik-silindir' ? SILINDIR_PARCALARI : []
 
   return (
     <>
@@ -252,6 +256,30 @@ export default async function KategoriSayfasi({
             <p className="tablo-not">{m.kodAltNot}</p>
           </section>
         ))}
+
+        {parcalar.length > 0 && (
+          <section>
+            <h2>{m.parcaListeBaslik}</h2>
+            <div className="metin">
+              <p>{m.parcaListeOzet}</p>
+            </div>
+            <div className="kartlar">
+              {parcalar.map((p) => (
+                <Link
+                  key={p.slug}
+                  href={`/${lang}/silindir-parca/${p.slug}`}
+                  className="kart"
+                >
+                  <b>{parcaAdi(p, lang)}</b>
+                  <span>{p.aciklama[lang].split('.')[0]}.</span>
+                  <em>
+                    {m.parcaRozetOlcu(sayiFormat(p.adet, lang))} · Ø{p.capMin}–{p.capMax}
+                  </em>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
 
         <section>
           <h2>{m.sssBaslik}</h2>
