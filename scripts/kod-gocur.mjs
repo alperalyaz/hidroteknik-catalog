@@ -8,12 +8,16 @@
  * Ayraç virgül ya da noktalı virgül olabilir; tırnaklı alanlar desteklenir.
  *
  * ── NEDEN AYRI BİR ARAÇ ───────────────────────────────────────────────────
- * Kodlar iki ayrı yerde yaşıyor ve ikisi FARKLI davranıyor:
+ * Kodlar ÜÇ ayrı yerde yaşıyor ve üçü FARKLI davranıyor:
  *
  *   1. data/urunler.json → örnek ürün satırlarının `kod` alanı.
  *      Düz değer. Eşlemede varsa değişir, yoksa olduğu gibi kalır.
  *
- *   2. data/kategoriler.json → `eslesmeKod` / `haricKod` REGEX'leri.
+ *   2. data/markalar.json → `ornekler[].kod` (düz değer, çevrilebilir) ve
+ *      `adet` (kalem sayısı). `adet` kod ÖNEKİYLE ölçülmüştür — çevrilemez,
+ *      yeni öneklerle yeniden saymak gerekir. Kodlar çevrilir, adet raporlanır.
+ *
+ *   3. data/kategoriler.json → `eslesmeKod` / `haricKod` REGEX'leri.
  *      Bunlar tek tek kod değil DESEN tutar (`^KASTAS\.`, `^CNC\.`). Bir
  *      eşleme tablosu bunları çeviremez: yeni kodların hangi önekle
  *      başlayacağını ancak insan bilir. Araç bu yüzden onları DEĞİŞTİRMEZ,
@@ -103,7 +107,30 @@ if (bulunamayan.length) {
   }
 }
 
-// ── 2) kategoriler.json: kod DESENLERİ — değiştirilmez, raporlanır ───────
+// ── 2) markalar.json: örnek kodlar ───────────────────────────────────────
+// Marka sayfaları da kod önekiyle çalışıyor (KASTAS., PEM., GATES.): hem
+// `ornekler[].kod` hem de `adet` (kalem sayısı) o öneklerle ÖLÇÜLMÜŞ. Kodlar
+// çevrilebilir; `adet` çevrilemez — yeni öneklerle yeniden saymak gerekir.
+const m = JSON.parse(readFileSync('data/markalar.json', 'utf8'))
+const markaDegisen = []
+const markaKalan = []
+
+for (const marka of m) {
+  for (const o of marka.ornekler) {
+    if (esleme.has(o.kod)) {
+      markaDegisen.push({ marka: marka.ad, eski: o.kod, yeni: esleme.get(o.kod) })
+      o.kod = esleme.get(o.kod)
+    } else {
+      markaKalan.push({ marka: marka.ad, kod: o.kod })
+    }
+  }
+}
+
+console.log(`\nmarka örnek kodu — değişen: ${markaDegisen.length} · eşlemede olmayan: ${markaKalan.length}`)
+for (const d of markaDegisen.slice(0, 8)) console.log(`   ${d.marka.padEnd(12)} ${d.eski.padEnd(22)} → ${d.yeni}`)
+if (markaDegisen.length > 8) console.log(`   … ${markaDegisen.length - 8} satır daha`)
+
+// ── 3) kategoriler.json: kod DESENLERİ — değiştirilmez, raporlanır ───────
 const k = JSON.parse(readFileSync('data/kategoriler.json', 'utf8'))
 const desenli = k.filter((c) => c.eslesmeKod || c.haricKod)
 
@@ -118,11 +145,24 @@ console.log('\nBu kategoriler yeni kod düzeninde hiçbir şey tutmazsa SIFIR ü
 console.log('sessizce yayına çıkar. Göçten sonra `npm run veri` ile sayıları')
 console.log('tazeleyip her birinin toplamının 0 olmadığını doğrulayın.')
 
+console.log(`\n${'═'.repeat(70)}`)
+console.log(`ELLE BAKILMASI GEREKEN: ${m.length} marka sayfasının kalem sayısı`)
+console.log('markalar.json içindeki `adet` değerleri kod önekiyle ÖLÇÜLMÜŞTÜR;')
+console.log('bu araç onları çeviremez, yeni öneklerle yeniden saymak gerekir.')
+console.log(`${'═'.repeat(70)}`)
+for (const marka of m) {
+  const onek = marka.ornekler[0]?.kod?.split('.')[0] || '?'
+  console.log(`   ${marka.ad.padEnd(14)} adet=${String(marka.adet).padStart(5)}   şu anki önek: ${onek}.`)
+}
+
 // ── yaz ───────────────────────────────────────────────────────────────────
 if (UYGULA) {
   writeFileSync('data/urunler.json', JSON.stringify(u, null, 1) + '\n')
+  writeFileSync('data/markalar.json', JSON.stringify(m, null, 1) + '\n')
   console.log(`\n✅ data/urunler.json yazıldı (${degisen.length} kod değişti)`)
-  console.log('⚠ Kategori kod desenleri DEĞİŞTİRİLMEDİ — yukarıdaki listeyi elden geçirin.')
+  console.log(`✅ data/markalar.json yazıldı (${markaDegisen.length} kod değişti)`)
+  console.log('⚠ Kategori kod desenleri ve marka `adet` değerleri DEĞİŞTİRİLMEDİ.')
+  console.log('  Yukarıdaki iki listeyi elden geçirin, sonra `npm run veri` çalıştırın.')
   process.exit(desenli.length ? 2 : 0)
 } else {
   console.log('\nKURU ÇALIŞTIRMA — hiçbir dosya yazılmadı. Uygulamak için --uygula ekleyin.')
