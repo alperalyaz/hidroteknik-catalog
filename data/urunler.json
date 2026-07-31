@@ -1,10 +1,10 @@
 {
- "uretim": "2026-07-30",
+ "uretim": "2026-07-31",
  "kaynak": "Mikro ERP → Supabase stok_kartlari (aktif kartlar)",
  "siralama": "aylık tüketim (sa_aylik_tuketim) — en çok hareket gören üstte",
  "kategoriler": {
   "hidrolik-hortum": {
-   "toplamUrun": 133,
+   "toplamUrun": 298,
    "urunler": [
     {
      "kod": "HANSA.KP208",
@@ -2646,7 +2646,7 @@
    ]
   },
   "hortum-ucu-koruma": {
-   "toplamUrun": 60,
+   "toplamUrun": 81,
    "urunler": [
     {
      "kod": "AD-0606-HE",
@@ -3221,7 +3221,7 @@
    ]
   },
   "pnomatik-hortum": {
-   "toplamUrun": 35,
+   "toplamUrun": 73,
    "urunler": [
     {
      "kod": "EKO.PU.0805,5",

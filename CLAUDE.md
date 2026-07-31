@@ -123,6 +123,22 @@ değil; listede olmayan bir kalemi hızlı satmak için açılmış tezgâh kart
 var ve biri aylık 362 hareketle örnek tablonun en üstüne çıkıyordu. `veri-cek.mjs`
 içindeki `GENEL_HARIC` bunları tüm kategorilerden düşer.
 
+### Filtre değişirse sayı bayatlar
+
+`toplamUrun` bir SNAPSHOT'tır; sayfada "133 kalem stok" diye görünür. Bir
+kategorinin `eslesme`/`haric`/`eslesmeKod`/`haricKod` alanlarından biri
+değiştirildiğinde bu sayı OTOMATİK güncellenmez ve sayfa yanlış sayıyla yayına
+çıkar. Ne tsc, ne build, ne `npm run denetle` bunu görür — denetim sayının
+doğruluğunu değil sayfanın tutarlılığını sınar.
+
+Ölçüldü (31.07.2026): SEL kod bağımlılığı kaldırıldıktan sonra dört kategori
+canlıda yanlış sayı gösteriyordu — hidrolik-hortum 133 diyordu, gerçek 298;
+pnomatik-hortum 35 diyordu, gerçek 73.
+
+**Kural: kategori filtresine dokunduysan `npm run veri` çalıştır.** Servis
+anahtarın yoksa en azından değişen kategorilerin sayısını Supabase'den ölçüp
+`toplamUrun` alanlarını elle güncelle.
+
 ### Veri tazeleme
 
 `npm run veri` (`scripts/veri-cek.mjs`) `SUPABASE_SERVICE_ROLE_KEY` ister; anon
