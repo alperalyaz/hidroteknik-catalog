@@ -34,8 +34,7 @@
    "Powerstream",
    "Seltex",
    "TwinStream",
-   "Ultimate",
-   "Vereks"
+   "Ultimate"
   ],
   "standartlar": [
    "SAE 100 R1AT / EN 853 1SN",
@@ -76,7 +75,8 @@
   "markalar": [
    "Bosphorus",
    "Odeon",
-   "Sel"
+   "Sel",
+   "Vereks"
   ],
   "standartlar": [
    "SAE 100 R1AT / EN 853 1SN",
@@ -250,8 +250,7 @@
    "Hydropack",
    "Hystar",
    "Oleocontrol",
-   "Oleostar",
-   "SMS Tork"
+   "Oleostar"
   ],
   "standartlar": [
    "NG6 / CETOP 3",
@@ -327,8 +326,8 @@
     "c": "Sabit debi yeterliyse ve basınç orta seviyedeyse dişli pompa hem ekonomik hem dayanıklıdır. Yüksek basınç, değişken debi ihtiyacı veya enerji verimliliği önemliyse eksenel pistonlu pompa tercih edilir; ilk yatırım daha yüksektir."
    },
    {
-    "s": "PZB pompa hâlâ satılıyor mu?",
-    "c": "PZB, Interpump çatısı altına katılınca marka adı Interpump olarak değişti; ürün hattı ve stok kodları aynı. Eski PZB etiketiyle aradığınız pompayı Interpump marka altında bulabilirsiniz."
+    "s": "PZB pompa stokta var mı?",
+    "c": "Evet. PZB düz pistonlu (P1) ve eğik eksenli (EOS) pompa hattı stokta bulunur. Elinizdeki pompanın etiketindeki kodu iletirseniz karşılığını çıkarırız."
    }
   ],
   "markalar": [
@@ -338,7 +337,7 @@
    "Hidromas",
    "Hidroteknik",
    "Hydropack",
-   "Interpump"
+   "PZB"
   ],
   "standartlar": [
    "Dişli pompa",
@@ -1074,7 +1073,7 @@
    }
   ],
   "markalar": [
-   "Ferro",
+   "FMS",
    "KDNT",
    "Pemaks"
   ],
@@ -1109,10 +1108,11 @@
    }
   ],
   "markalar": [
+   "FMS",
    "Hidroteknik",
    "Pemaks",
-   "Semakmatik",
    "SMS Tork",
+   "Semakmatik",
    "Vema"
   ],
   "standartlar": [

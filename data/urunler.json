@@ -817,12 +817,12 @@
     {
      "kod": "PZB.EĞİK.084",
      "ad": "( EOS 84 ) EĞİK EKSENLİ PİSTONLU POMPA",
-     "marka": "Interpump"
+     "marka": "PZB"
     },
     {
      "kod": "PZB.DÜZ.050",
      "ad": "PZB ( P1-50 ) DÜZ PİSTONLU POMPA",
-     "marka": "Interpump"
+     "marka": "PZB"
     },
     {
      "kod": "HDT.16300820369",
@@ -865,12 +865,12 @@
     {
      "kod": "PZB.DÜZ.090",
      "ad": "PZB ( P1-90 ) DÜZ PİSTONLU POMPA",
-     "marka": "Interpump"
+     "marka": "PZB"
     },
     {
      "kod": "PZB.DÜZ.037",
      "ad": "PZB ( P1-37 ) DÜZ PİSTONLU POMPA",
-     "marka": "Interpump"
+     "marka": "PZB"
     },
     {
      "kod": "HDT.16300820169",
@@ -2860,7 +2860,8 @@
     {
      "kod": "FMS.CETOP.100.050",
      "ad": "FMS CETOP PNÖMATİK SİLİNDİR 100 X 050",
-     "model": "100 X 050"
+     "model": "100 X 050",
+     "marka": "FMS"
     },
     {
      "kod": "MUH.MUH.21",
@@ -2974,7 +2975,8 @@
     },
     {
      "kod": "FMS.MUH.01",
-     "ad": "FMS 1/4 X 5/2 PEDAL YAY VALF"
+     "ad": "FMS 1/4 X 5/2 PEDAL YAY VALF",
+     "marka": "FMS"
     }
    ]
   },
