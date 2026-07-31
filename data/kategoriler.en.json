@@ -36,10 +36,10 @@
  {
   "slug": "sel-hortum",
   "grup": "hat",
-  "ad": "Sel Hose",
-  "h1": "Sel Hose — Hydraulic and General-Purpose Hose Lines",
-  "ozet": "Sel code family: Forcestream and Seltex hydraulic hose, Ultimate and Powerstream pressure lines; washing, spraying, fuel, and suction hoses. 235 items.",
-  "giris": "Sel is a code family that covers two distinct groups: high-pressure hydraulic hose lines (Forcestream, Seltex, Ultimate, Powerstream, TwinStream) and general-purpose industrial hoses (water, washing, spraying, fuel, suction, steam).\n\nFor hydraulic lines, selection depends on three values: pressure class (R1AT/R2AT, 1SN/2SN, 2SC, R9/R15), inner diameter, and temperature. Forcestream R1AT and R2AT are single/double-braided medium-pressure lines; Ultimate 1SN/2SN is an equivalent line in the same class; Powerstream and TwinStream (twin line) are for jobs that require higher pressure or special installation.\n\nFor general-purpose hoses, the intended use is the deciding factor rather than pressure class: washing lines call for flexibility, spraying (Odeon) for chemical resistance, fuel lines for a fuel-resistant inner lining, and suction lines for crush resistance. Items such as spiral wrap guards, PTFE sleeves, and hose end fittings are accessories for these lines, not the hose itself, and are kept as separate stock lines.\n\nIf you're looking for continuous-pressure hydraulic hose, see the Hydraulic Hose page, or the Pneumatic Hose page for air lines; the lines here are grouped separately because they belong to the Sel code family.",
+  "ad": "Industrial Hose",
+  "h1": "Industrial and Special-Purpose Hose",
+  "ozet": "Water, hot water, suction, fuel, spraying and washdown hose; transparent spiral-reinforced suction lines.",
+  "giris": "This group covers the hoses outside the hydraulic circuit. A hydraulic hose is chosen by pressure; here what matters is the fluid carried and the temperature. Fuel hose needs an inner tube that resists the fuel, hot-water hose a temperature limit, spraying hose chemical resistance.\n\nTransparent spiral-reinforced hose is used on suction lines: the rigid helix stops the hose collapsing on itself under vacuum. Being transparent lets you see what is passing through, which is why it is preferred in food, agriculture and waste transfer.\n\nIf you are looking for hydraulic hose, that is a separate group — working pressure, braid layers and coupling type are listed there.",
   "sss": [
    {
     "s": "What is the difference between Forcestream, Seltex, and Ultimate?",
@@ -64,6 +64,11 @@
    "EN 857 2SC",
    "SAE 100 R9 / R15",
    "General-purpose (water, spraying, washing, fuel, suction)"
+  ],
+  "markalar": [
+   "Bosphorus",
+   "Odeon",
+   "Sel"
   ]
  },
  {

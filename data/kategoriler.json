@@ -8,7 +8,6 @@
   "giris": "Hidrolik hortum, sistemdeki basıncı kaybetmeden akışkanı taşıyan esnek bağlantı elemanıdır. Doğru hortum seçimi üç değere bağlıdır: çalışma basıncı, akışkan sıcaklığı ve iç çap. Bu üçünden biri yanlış seçildiğinde hortum ya erken yorulur ya da patlama riski taşır.\n\nHidroteknik, Denizli'deki deposunda 1SN ve 2SN tek/çift örgülü, 4SP ve 4SH çok katlı spiral ve termoplastik hortum tiplerini bulundurur. Hortum presleme işlemi kendi tesisimizde yapılır; standart ölçüler için genellikle aynı gün teslim edilir.\n\nForcestream, Seltex ve Ultimate hatları ile yıkama, ilaçlama, akaryakıt gibi genel amaçlı hortumlar Sel kod ailesindendir ve ayrı bir grupta listelenir: bkz. «Sel Hortum».",
   "eslesme": "HORTUM",
   "haric": "RAKOR|REKOR|N[İIiı]PEL|TAPA|SOKET|KELEPÇE|KELEPCE|MAKAS|VALF|KART[İIiı]C[İIiı]|PATLAMA|MAKARA|SPREY|POL[İIiı][ÜU]R[AE]TAN|POLYAM[İIiı]D|HAVA HORTUMU|TEFLON|PTFE|[İIiı]MALAT|REV[İIiı]ZYON|DEĞ[İIiı]Ş[İIiı]M|TAM[İIiı]R|MONTAJ|[İIiı]ŞÇ[İIiı]L[İIiı]K|BAK[İIiı]M|ÇABUK EKLEME|\\mEK[İIiı]\\M|EKLER[İIiı]|KANAL|TE [ÜU]ÇL[ÜU]|KUKA|K[İIiı]L[İIiı]F|MANŞON|MAŞON",
-  "haricKod": "^SEL\\.",
   "sss": [
    {
     "s": "1SN ve 2SN hortum arasındaki fark nedir?",
@@ -29,8 +28,13 @@
   ],
   "markalar": [
    "Alfagomma",
+   "Forcestream",
    "Gates",
    "HansaFlex",
+   "Powerstream",
+   "Seltex",
+   "TwinStream",
+   "Ultimate",
    "Vereks"
   ],
   "standartlar": [
@@ -45,13 +49,12 @@
  {
   "slug": "sel-hortum",
   "grup": "hat",
-  "ad": "Sel Hortum",
-  "h1": "Sel Hortum — Hidrolik ve Genel Amaçlı Hortum Hatları",
-  "ozet": "Sel kod ailesi: Forcestream ve Seltex hidrolik hortum, Ultimate ve Powerstream basınçlı hatlar; yıkama, ilaçlama, akaryakıt ve emiş hortumları. 235 kalem.",
-  "giris": "Sel, iki farklı grubu bir arada taşıyan kod ailesidir: yüksek basınçlı hidrolik hortum hatları (Forcestream, Seltex, Ultimate, Powerstream, TwinStream) ve genel amaçlı endüstriyel hortumlar (su, yıkama, ilaçlama, akaryakıt, emiş, buhar).\n\nHidrolik hatlarda seçim üç değere bağlıdır: basınç sınıfı (R1AT/R2AT, 1SN/2SN, 2SC, R9/R15), iç çap ve sıcaklık. Forcestream R1AT ve R2AT tek/çift örgülü orta basınç hatlarıdır; Ultimate 1SN/2SN aynı sınıfta muadil hattır; Powerstream ve TwinStream (ikiz hat) daha yüksek basınç veya özel montaj gerektiren işler içindir.\n\nGenel amaçlı hortumlarda basınç sınıfı yerine kullanım alanı belirleyicidir: yıkama hatlarında esneklik, ilaçlamada (Odeon) kimyasal dayanım, akaryakıt hattında yakıta dayanıklı iç kaplama, emiş hatlarında çökme direnci aranır. Spiral koruma, teflon soket ve hortum ucu (kuka) gibi kalemler bu hatların aksesuarlarıdır, hortumun kendisi değildir; ayrı stok satırı olarak tutulur.\n\nSürekli basınçlı hidrolik hortum arıyorsanız Hidrolik Hortum sayfasına, hava hattı için Pnömatik Hortum sayfasına da bakabilirsiniz; buradaki hatlar Sel kod ailesi olduğu için ayrı gruplanmıştır.",
-  "eslesme": "",
-  "haric": "",
-  "eslesmeKod": "^SEL\\.",
+  "ad": "Endüstriyel Hortum",
+  "h1": "Endüstriyel ve Özel Amaçlı Hortum",
+  "ozet": "Su, sıcak su, emiş, akaryakıt, ilaçlama ve yıkama hortumları; şeffaf spiral takviyeli emiş hatları.",
+  "giris": "Bu grup hidrolik hattın dışında kalan hortumları toplar. Hidrolik hortum basınca göre seçilir; buradaki hortumlarda belirleyici olan taşınan akışkan ve sıcaklıktır. Akaryakıt hortumunda iç lastiğin yakıta dayanması, sıcak su hortumunda sıcaklık sınırı, ilaçlama hortumunda kimyasal direnç öne çıkar.\n\nŞeffaf spiral takviyeli hortumlar emiş hatlarında kullanılır: sert spiral, vakum altında hortumun kendi üzerine çökmesini önler. Şeffaf olması hattın içinden ne geçtiğini görmeye yarar; gıda, tarım ve atık transferinde tercih edilir.\n\nHidrolik hortum arıyorsanız o ayrı bir gruptur — çalışma basıncı, örgü katı ve bağlantı tipi orada listelenir.",
+  "eslesme": "(?=.*HORTUM)(?=.*(SU HORTUMU|S[İIiı]CAK SU|EM[İIiı]Ş|BUHAR|GEYSER|AKARYAKIT|FUEL|[İIiı]LAÇLAMA|YIKAMA|CAR WASH|ŞAFFAF|ŞEFFAF|SEFFAF|BAHÇE|TAR[İIiı]M))",
+  "haric": "H[İIiı]DROL[İIiı]K HORTUM|SP[İIiı]RAL KORUMA|SOKET|RAKOR|N[İIiı]PEL|BAŞL[İIiı]Ğ[İIiı]|D[İIiı]YAFRAM|ŞALTER|VALF|YEDEK|[İIiı]MALAT|REV[İIiı]ZYON|TAM[İIiı]R|MONTAJ|[İIiı]ŞÇ[İIiı]L[İIiı]K|BAK[İIiı]M",
   "sss": [
    {
     "s": "Forcestream, Seltex ve Ultimate arasındaki fark nedir?",
@@ -72,13 +75,8 @@
   ],
   "markalar": [
    "Bosphorus",
-   "Forcestream",
    "Odeon",
-   "Powerstream",
-   "Sel",
-   "Seltex",
-   "TwinStream",
-   "Ultimate"
+   "Sel"
   ],
   "standartlar": [
    "SAE 100 R1AT / EN 853 1SN",
@@ -1020,7 +1018,6 @@
   "giris": "Bir hidrolik hortum arızasının çoğu hortumun ortasında değil, iki ucunda ve dış yüzeyinde başlar. Uçta bağlantı gevşer ya da yanlış sıkılır; dış yüzeyde ise hortum bir köşeye, başka bir hortuma veya makine gövdesine sürterek örgüsüne kadar aşınır. Bu sayfa o iki noktayı hedefleyen parçaları toplar — hortumun kendisi için «Hidrolik Hortum» ve «SEL Hortum» sayfalarına bakın.\n\nHortum eki, hortum ucuna geçirilen bağlantı parçasıdır; ölçüsü hortum iç çapına göre inç cinsinden verilir (1/4\", 5/16\", 3/8\", 1/2\", 5/8\", 3/4\", 1\", 1.1/4\", 2\"). Yanlış ölçü seçildiğinde bağlantı ya hiç oturmaz ya da basınç altında fırlar; iç çap ölçüsü hortumun üzerindeki baskıdan okunur.\n\nSpiral koruma, hortumun etrafına sarılan yarık plastik spiraldir. İki iş yapar: hortumu dış aşınmadan korur ve yan yana giden hortumların birbirini yemesini engeller. Ayrıca hortum patladığında yağın etrafa püskürmesini bir ölçüde kısıtlar. Ölçüsü sarılacak hortumun dış çapına göre seçilir (23×27 gibi: iç ve dış çap). Bir hortum demetini tek spiralle toplamak, hem düzen hem ömür açısından tekil sarımdan iyidir.\n\nYanmaz kılıf, kaynak sıçrağı, sıcak yüzey ve alev riskinin olduğu yerlerde kullanılan silikon kaplı örgü kılıftır; hortumu ısı ve kıvılcımdan yalıtır. Döküm, pres ve kaynak hatlarında hortum ömrünü kat kat uzatır.\n\nHortum kanalı ise hortum ve kabloları makine üzerinde toplu ve düzenli taşımak için kullanılan plastik kanaldır. Serbest bırakılan hortumun titreşimle sürtünüp aşınmasını önler.",
   "eslesme": "\\mHORTUM EK[İIiı]\\M|HORTUM EKLER[İIiı]|HORTUM KANAL[İIiı]|HORTUM TE [ÜU]ÇL[ÜU]|SP[İIiı]RAL KORUMA|YANMAZ K[İIiı]L[İIiı]F|S[İIiı]L[İIiı]KON.*K[İIiı]L[İIiı]F|KUKA",
   "haric": "[İIiı]MALAT|REV[İIiı]ZYON|TAM[İIiı]R|MONTAJ|[İIiı]ŞÇ[İIiı]L[İIiı]K|BAK[İIiı]M|S[İIiı]L[İIiı]N",
-  "haricKod": "^SEL\\.",
   "sss": [
    {
     "s": "Hortum eki ölçüsü nasıl belirlenir?",
@@ -1216,7 +1213,6 @@
   "giris": "Pnömatik hortum, hidrolik hortumla aynı işi yapmaz: basınç çok daha düşüktür (tipik olarak 6–10 bar), buna karşılık hat sık hareket eder ve dar yerlerden kıvrılarak geçer. Bu yüzden çelik örgü değil, esnek plastik gövde kullanılır ve ölçü dış çap x iç çap olarak verilir — 8x5,5 ifadesi 8 mm dış, 5,5 mm iç çap demektir. Takmatik (push-in) rakorlar dış çapa göre seçildiği için bu iki sayıyı karıştırmamak gerekir.\n\nPoliüretan (PU) en yaygın olanıdır: yumuşaktır, küçük yarıçapta kıvrılır, hareketli aparatlarda ezilmeye dayanır. Polyamid (PA) daha serttir ve daha yüksek sıcaklığa çıkar; sabit tesisat hatlarında ve makine içi döşemede tercih edilir. PTFE (teflon) hortum ise kimyasal dayanımı ve sıcaklık aralığı gerektiren yerlerde kullanılır.\n\nMetre ile satılır; istenen boyda kesilir. Şeffaf spiral ve örgülü hava hortumu tipleri de aynı grupta bulunur.\n\nJava marka hava hortumu ve teflon soket Sel kod ailesindendir ve ayrı bir grupta listelenir: bkz. «Sel Hortum».",
   "eslesme": "POL[İIiı][ÜU]R[AE]TAN|POLYAM[İIiı]D|TEFLON HORTUM|PTFE|HAVA HORTUMU",
   "haric": "RAKOR|REKOR|SOKET|KELEP",
-  "haricKod": "^SEL\\.",
   "sss": [
    {
     "s": "Poliüretan ile polyamid hortum arasındaki fark nedir?",

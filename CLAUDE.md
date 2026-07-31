@@ -74,6 +74,48 @@ Bu yüzden her i-türevi harf **dört yazımı da** kapsayan `[İIiı]` sınıf�
 `veri-cek.mjs` sorgu anında da uygular. Elle regex yazarken sınıfı eksik bırakmak
 serbest — script düzeltir — ama dosyaya sert hâlini yazmak diff'i okunur tutar.
 
+### Kategori kod desenine dayanmamalı
+
+Kategoriler ürün ADINDAN tanınır. Stok kodu önekine dayanan bir kategori iki
+şekilde yalan söyler ve ikisini de hiçbir otomatik kontrol görmez.
+
+Birincisi ürünü yanlış yere koyar. `hidrolik-hortum` bir zamanlar `haricKod:
+^SEL\.` taşıyordu; SEL kodlu 84 kalem gerçekten hidrolik hortum olduğu hâlde
+hidrolik hortum sayfasında görünmüyordu, çünkü eleme ada değil koda bakıyordu.
+`sel-hortum` da yalnız `eslesmeKod: ^SEL\.` idi — yani ürün grubu değil kod
+önekiydi; içinde hidrolik hortumun yanında yıkama, buhar ve emiş hortumu vardı.
+
+İkincisi kod değişiminde sessizce patlar: desen hiçbir şeyi tutmaz, kategori
+SIFIR ürünle yayına çıkar. tsc geçer, build geçer, link denetimi geçer.
+
+Dört kategori koda MECBUR ve bunlar bilinçli istisnadır — sızdırmazlıkta ürün
+adı `k21-040/11 ( 40 x 50 x 8 )` biçimindedir, ne olduğunu söyleyen kelime
+geçmez: `hidrolik-silindir` (`^CNC\.`), `krom-mil-boru` (`^A\.`),
+`o-ring-sizdirmazlik` ve `hidrolik-kece-nutring` (`^KASTAS\.`).
+`scripts/kod-gocur.mjs` her koşumda bu dördünü ekrana basar.
+
+### Kod göçü
+
+Stok kodları değiştiğinde `npm run kod-gocur -- eski-yeni.csv` kuru çalıştırma
+yapar, `--uygula` ile yazar. Örnek satırların `kod` alanlarını çevirir; kategori
+kod DESENLERİNİ çevirmez, yalnız raporlar — bir eşleme tablosu yeni kodların
+hangi önekle başlayacağını bilemez, o karar insanındır.
+
+### Örnek satır denetimi
+
+`npm run denetle` iki şey çalıştırır; ikincisi `scripts/ornek-denetle.mjs`, her
+örnek ürün satırını KENDİ kategorisinin filtresine karşı sınar. Satır kategorinin
+`haric` desenine takılıyorsa ya da hiçbir eşleşmeye uymuyorsa oraya ait değildir.
+Ölçüldü (31.07.2026): hidrolik hortum sayfasındaki 16 satırın 9'u hortum değildi
+— hortum eki, hortum te'si, hortum kanalı ve iki tezgâh kartı.
+
+**Denetçideki Türkçe tuzağı, ı tuzağının üçüncü yüzü.** Desenler Postgres için
+yazılı ve kelime sınırı olarak `\m`/`\M` kullanıyor. Bunları JS'te `\b` ile
+çevirmek YANLIŞ: JS'te `\b`, `\w` yani `[A-Za-z0-9_]` üzerinden tanımlıdır ve
+Türkçe İ/Ş/Ğ/Ü/Ö/Ç harflerini kelime harfi saymaz. "HORTUM EKİ 5/16" satırında
+`\bEKİ\b` tutmaz (İ ile boşluk arasında JS'e göre sınır yoktur) ama "EKİPMAN"da
+yanlış alarm verir. Doğrusu Unicode bakışıdır: `(?<![\p{L}\p{N}_])`.
+
 ### Muhtelif tezgâh kartları
 
 Adı tek bir cins ismi olan, ölçüsüz kayıtlar (`MUH.MUH.26` = "HORTUM") gerçek ürün
