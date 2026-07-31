@@ -76,7 +76,7 @@
   "grup": "hat",
   "ad": "Hydraulic Fittings",
   "h1": "Hydraulic Fittings and Connectors",
-  "ozet": "Hydraulic fittings in metric, BSP/BSPT, ORFS, and JIC thread types. 1,400+ items including elbows, nipples, plugs, and swivel fittings.",
+  "ozet": "Hydraulic fittings in metric, BSP/BSPT and ORFS thread types. Over 1,400 items including elbows, nipples, plugs and swivel fittings.",
   "giris": "A fitting is the component that joins the parts of a hydraulic line together in a leak-tight manner. The most common mistake in the industry stems from how similar different thread standards look: metric, BSP, BSPT, ORFS, and JIC threads can look nearly identical to the eye, but their sealing principles differ.\n\nBSP is a parallel thread whose seal is typically made with a gasket or a cone seat, while BSPT is a tapered thread where the thread itself forms the seal. ORFS, on the other hand, uses face sealing via an O-ring and is preferred in high-vibration systems. A mismatched thread will leak under initial pressure or damage the threads.",
   "sss": [
    {
@@ -96,8 +96,7 @@
    "DIN 2353 (L / S series)",
    "BSP (ISO 228)",
    "BSPT (ISO 7)",
-   "Metric",
-   "JIC 37°"
+   "Metric"
   ]
  },
  {
@@ -251,7 +250,7 @@
   "grup": "guc",
   "ad": "Hydraulic Pump",
   "h1": "Hydraulic Pumps and Power Units",
-  "ozet": "Gear, vane and axial piston hydraulic pumps; tandem sets and power unit components.",
+  "ozet": "Gear and axial piston hydraulic pumps; tandem sets and power unit components.",
   "giris": "A hydraulic pump doesn't produce pressure — it produces flow. Pressure arises from the resistance this flow encounters. This distinction matters in practice: when pressure is low in a system, the problem is often not the pump but a leak or the relief valve setting.\n\nThe most common type is the gear pump: simple, inexpensive, and tolerant of contamination, with fixed displacement. Axial piston pumps reach higher pressures and, being capable of variable displacement, can produce only as much flow as needed, saving energy. Selection requires weighing speed (rpm), displacement (cc/rev) and working pressure together; an undersized suction line is the most common cause of shortened pump life.",
   "sss": [
    {
@@ -282,8 +281,8 @@
   "slug": "hidromotor",
   "grup": "guc",
   "ad": "Hydraulic Motors",
-  "h1": "Hydraulic Motors (Orbital): 36–395 cm³/rev Low-Speed High-Torque Motors",
-  "ozet": "Orbital hydraulic motors from 36 to 395 cm³/rev displacement; low-speed high-torque motors for mixers, conveyors, cranes, agricultural and cleaning machinery.",
+  "h1": "Hydraulic Motors (Orbital): Low-Speed High-Torque Motors",
+  "ozet": "Orbital hydraulic motors; low-speed high-torque motors for mixers, conveyors, cranes, agricultural and cleaning machinery.",
   "giris": "A hydraulic motor does the opposite of a hydraulic pump: where the pump turns mechanical rotation into pressure, the motor turns pressure into mechanical rotation. A cylinder gives linear motion; a hydraulic motor gives continuous rotation — conveyor drums, mixer impellers, crane winches, sweeper brushes and agricultural drive shafts all turn on hydraulic motors.\n\nMost of the motors in stock are of the orbital (gerotor) type. In this design an inner gear tracks eccentrically inside an outer gear ring; because a large number of chambers fill and empty on each revolution, shaft speed is low and torque is high. That characteristic — direct drive — removes the need for a gearbox in most applications and saves considerable space.\n\nDisplacement sits at the centre of the selection: the volume of oil the motor swallows per revolution, in cm³/rev. The number in the product code is exactly that figure (HMR.100 = 100 cm³/rev). Speed follows from it: speed (rpm) ≈ flow (l/min) × 1000 ÷ displacement (cm³). So 40 l/min turns a 100 cm³/rev motor at roughly 400 rpm. If slower, stronger rotation is wanted at the same flow, choose a larger displacement; if speed is wanted, choose a smaller one.\n\nThe second determinant is torque, which comes from working pressure: torque ≈ pressure (bar) × displacement (cm³) ÷ 63. The third is the shaft and mounting geometry — plain, splined and keyed shafts, and flange hole patterns, decide whether the motor bolts onto the machine; this has to be specified alongside displacement when ordering.\n\nWhen building a hydraulic motor circuit, leaving the return line free to tank matters, because it lets the motor draw oil during the moments it keeps turning under its own inertia; otherwise the motor cavitates internally. For the pump that drives the motor see «Hydraulic Pumps», and for direction and speed control see «Hydraulic Valves».",
   "sss": [
    {
@@ -319,7 +318,7 @@
   "slug": "hidrolik-filtre",
   "grup": "guc",
   "ad": "Hydraulic Filters",
-  "h1": "Hydraulic Oil Filters: Suction, Return and Pressure Line Filters with Elements",
+  "h1": "Hydraulic Oil Filters: Suction and Return Filters with Elements",
   "ozet": "Suction filters from 25 to 750 l/min, tank-top and in-line return filters, complete filter assemblies and replacement filter elements.",
   "giris": "The great majority of hydraulic faults come down to a single cause: dirt in the oil. Metal particles shed by wear, dust introduced during assembly and rubber crumbs from seals circulate through the micron-scale clearances of pump and valves. The filter is the only element that breaks this cycle, and although it is one of the cheapest parts in the system, neglecting it produces the most expensive damage.\n\nA filter occupies one of three positions in the circuit. The suction filter works at the pump inlet, submerged in the tank; it is a coarse filter and protects the pump from large particles. Its rating is given in l/min (25, 45, 65, 90, 125, 180, 225, 300, 500, 750) and must not be selected below the pump flow. Its dimensions are listed as length, diameter and thread (L:160 D:61 A:1, for instance), because it has to fit inside the tank.\n\nThe return filter comes into play as oil flows back to the tank. It is a fine filter, and since all the circulating oil passes through it, it does the real cleaning. Tank-top versions simplify mounting. The pressure line filter is used after the pump, immediately ahead of a sensitive valve that needs protecting; it gives the finest filtration, but its housing is built to withstand full system pressure.\n\nThe second axis of selection is pore size, given in microns and visible in the product code (C25 = 25 micron). A finer filter delivers cleaner oil but clogs sooner and causes more pressure drop. Typical values are 100–125 micron on suction and 10–25 micron on return.\n\nFilters are sold either as complete housings or as elements alone. Routine maintenance normally changes the element while the housing stays in place. A clogged suction filter creates a vacuum at the pump inlet, bubbles form in the oil and the pump cavitates — this is the most common reason for a pump that runs with a growling noise. Read this page together with the fault notes on the «Hydraulic Pumps» page.",
   "sss": [
@@ -360,8 +359,8 @@
   "slug": "hidrolik-sogutucu",
   "grup": "guc",
   "ad": "Hydraulic Oil Coolers",
-  "h1": "Hydraulic Oil Coolers: 80–220 l/min Fan-Cooled Oil-to-Air Heat Exchangers",
-  "ozet": "Fan-cooled hydraulic oil coolers in 12 V, 24 V and 220 V; capacity from 80 to 220 l/min, body sizes from 240×240×45 to 720×700×63 mm.",
+  "h1": "Hydraulic Oil Coolers: 60–220 l/min Fan-Cooled Oil-to-Air Heat Exchangers",
+  "ozet": "Fan-cooled hydraulic oil coolers in 12 V, 24 V and 220 V; flow capacity from 60 to 220 l/min, body sizes from 240×240×45 to 720×700×63 mm.",
   "giris": "Part of the energy spent in a hydraulic system never comes out as work; it turns into heat. Some power is lost as heat at every throttling valve, in the oil returning through the relief valve, in the pump's internal leakage and in every friction along the line. On small systems the surface of the tank and the pipework is enough to shed that heat; as the system grows or the duty cycle tightens it is not, and the oil starts to warm.\n\nThinning oil brings trouble in a chain. As viscosity falls, internal leakage in pump and valves rises, the system slows and generates still more heat — a loop that feeds itself. The oil film thins, metal surfaces come closer together and wear accelerates. Seals harden at high temperature, lose elasticity and begin to leak. The oil itself oxidises; it darkens, turns acidic and leaves a varnish deposit. The practical threshold is around 60 °C: a system that runs continuously above that is asking for a cooler.\n\nThe coolers in stock are of the oil-to-air type: the oil passes through a matrix while a fan blows air across it to carry the heat away. Selection turns on three values. First, the flow to be cooled (80–220 l/min); the cooler's capacity is set by the flow passing through the line. Second, the fan voltage — 12 V and 24 V models run from the vehicle's own supply on mobile hydraulics, 220 V models from the mains in fixed installations. Third, the body size (from 240×240×45 to 720×700×63 mm); the space allotted to the cooler on the machine and the opening the fan draws air through are planned around it.\n\nA cooler is normally connected in the return line, just before the oil enters the tank. Because the matrix is not designed to withstand full system pressure it should not be connected directly into a pressure line; it is also sensible to use a bypass check valve to protect the matrix during cold starts. Capacity drops quickly once the air-side face becomes dusty — periodic cleaning is the cheapest way to recover it.",
   "sss": [
    {
@@ -387,7 +386,7 @@
   ],
   "standartlar": [
    "Oil-to-air (fan-cooled) type",
-   "80 – 220 l/min capacity",
+   "60 – 220 l/min capacity",
    "12 V DC / 24 V DC / 220 V AC fan",
    "240×240×45 – 720×700×63 mm body",
    "Side-mount type"
@@ -466,7 +465,7 @@
   "grup": "silindir",
   "ad": "Chrome Rod and Honed Tube",
   "h1": "Chrome-Plated Rod, Induction-Hardened Rod, Honed Tube and Hydraulic Line Tube",
-  "ozet": "Raw material for hydraulic cylinder manufacturing: Ø12–Ø180 chrome-plated and induction-hardened rod, honed tube from Ø40 to Ø350, hydraulic line tube from 5×1 to 42×4.",
+  "ozet": "Raw material for hydraulic cylinder manufacturing: Ø10–Ø220 chrome-plated and Ø8–Ø155 induction-hardened rod, honed tube from Ø40 to Ø350, hydraulic tubing from 5×1 to 42×4.",
   "giris": "A hydraulic cylinder has three main parts: the barrel the piston travels inside, the rod that extends outward, and the seal set that keeps them tight. This page covers the raw material for the first two — the stock a workshop needs when it builds its own cylinders or refurbishes a worn one.\n\nChrome-plated rod is drawn steel bar with a hard chrome layer on the surface. The plating does two jobs: it reduces friction and wear, and it prevents corrosion. The wiper seal relies on the smoothness of that plating as it cleans dirt off the rod; once the plating is scored, the seal starts leaking within a short time. For this reason the rod must be protected from impact during handling and assembly. Induction-hardened rod has the steel beneath the plating hardened by induction; it stands up better to impact and side loading, which is why it is preferred in construction machinery and heavy-duty cylinders.\n\nHoned tube forms the cylinder barrel. Its bore is ground on a honing machine to a cross-hatched finish; this texture lets the piston slide smoothly and gives the oil film a surface to hold on to. The size is always given as inner diameter × outer diameter (80 × 95, for instance): the bore determines the force the cylinder produces, the wall thickness determines the pressure it can withstand. Plain drawn tube cannot substitute for honed tube — the roughness of the bore will cut the seal on the very first stroke.\n\nHydraulic line tube is used for the fixed runs from pump to valve and from valve to cylinder; unlike hose it does not whip with vibration and lasts considerably longer. Its size is given as outer diameter × wall thickness (16 × 2, for instance), and the fitting is selected directly from that outer diameter: a 16 × 2 tube takes a 16L or 16S compression fitting. The tube and the fitting series (L light, S heavy) must match — otherwise the cutting ring does not grip the tube correctly.\n\nRod and tube items are listed together with their weight per metre (15.40 kg/m for 50 mm chrome-plated rod, for example); shipping and costing are worked out from that figure. For cut-to-length and machining see the «Hydraulic Cylinder» page, and for line connections see «Hydraulic Fittings».",
   "sss": [
    {
@@ -491,8 +490,8 @@
    }
   ],
   "standartlar": [
-   "Chrome-plated rod Ø12–Ø180",
-   "Induction-hardened rod Ø12–Ø120",
+   "Chrome-plated rod Ø10–Ø220",
+   "Induction-hardened rod Ø8–Ø155",
    "Honed tube bore Ø40–Ø350",
    "Line tube 5×1 – 42×4",
    "Supplied with kg/m weight"
@@ -610,7 +609,7 @@
   "grup": "silindir",
   "ad": "O-Rings and Gaskets",
   "h1": "O-Ring Sizes, O-Ring Cord and Gaskets",
-  "ozet": "Metric and inch O-ring sizes in NBR, FKM (Viton), and EPDM materials. Cylinder seals, nutrings, and wipers are a separate category.",
+  "ozet": "O-rings in NBR and FKM (Viton) in metric and inch sizes. Cylinder seals, rod seals and wipers are a separate group.",
   "giris": "The O-ring is the most common type of seal, sealing by being compressed between two mating surfaces. Two values determine the correct selection: size (inner diameter × cross-section diameter) and material.\n\nMaterial selection depends on the fluid and the operating temperature. NBR is the standard choice for general hydraulic oils and operates roughly between -30 °C and +100 °C. FKM (Viton) is used for high temperatures and aggressive fluids. EPDM is suitable for water and brake fluid but must never be used with mineral oil — this is the most common material mistake made in the field.\n\nThe O-ring is only one part of a complete sealing set. The nutrings, piston seals, wipers, and wear rings that do the main work in hydraulic cylinders form a separate category and make up a much larger share of our stock (5,297 items); see the «Hydraulic Seals, Nutrings and Wipers» page for those.",
   "sss": [
    {
@@ -629,7 +628,6 @@
   "standartlar": [
    "NBR",
    "FKM (viton)",
-   "EPDM",
    "Metric and inch sizes"
   ]
  },

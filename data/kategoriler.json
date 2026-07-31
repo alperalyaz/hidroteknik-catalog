@@ -91,7 +91,7 @@
   "grup": "hat",
   "ad": "Hidrolik Rakor",
   "h1": "Hidrolik Rakor ve Bağlantı Elemanları",
-  "ozet": "Metrik, BSP/BSPT, ORFS ve JIC diş tiplerinde hidrolik rakor. Dirsek, nipel, tapa ve döner rakorlar dahil 1.400+ kalem.",
+  "ozet": "Metrik, BSP/BSPT ve ORFS diş tiplerinde hidrolik rakor. Dirsek, nipel, tapa ve döner rakorlar dahil 1.400+ kalem.",
   "giris": "Rakor, hidrolik hattı oluşturan parçaları birbirine sızdırmaz biçimde bağlayan elemandır. Sektördeki en sık hata, farklı diş standartlarının birbirine benzemesinden kaynaklanır: metrik, BSP, BSPT, ORFS ve JIC dişler gözle bakıldığında yakın görünür ama sızdırmazlık prensipleri farklıdır.\n\nBSP paralel diş sızdırmazlığı genelde conta veya kesik koni ile sağlarken, BSPT konik diştir ve dişin kendisi sızdırmazlık yapar. ORFS ise O-ring ile yüz sızdırmazlığı kullanır ve yüksek titreşimli sistemlerde tercih edilir. Yanlış eşleştirilen diş, ilk basınçta sızdırır veya dişi bozar.",
   "eslesme": "RAKOR|REKOR",
   "haric": "VALF|VANA|POMPA|DAĞ[İIiı]T[İIiı]C[İIiı]|DAG[İIiı]T[İIiı]C[İIiı]|MAKAS|[İIiı]MALAT|REV[İIiı]ZYON|DEĞ[İIiı]Ş[İIiı]M|TAM[İIiı]R|MONTAJ|[İIiı]ŞÇ[İIiı]L[İIiı]K|BAK[İIiı]M",
@@ -118,8 +118,7 @@
    "DIN 2353 (L / S serisi)",
    "BSP (ISO 228)",
    "BSPT (ISO 7)",
-   "Metrik",
-   "JIC 37°"
+   "Metrik"
   ]
  },
  {
@@ -310,7 +309,7 @@
   "grup": "guc",
   "ad": "Hidrolik Pompa",
   "h1": "Hidrolik Pompa ve Güç Üniteleri",
-  "ozet": "Dişli, paletli ve eksenel pistonlu hidrolik pompalar; tandem setler ve güç ünitesi bileşenleri.",
+  "ozet": "Dişli ve eksenel pistonlu hidrolik pompalar; tandem setler ve güç ünitesi bileşenleri.",
   "giris": "Hidrolik pompa basınç üretmez — akış üretir. Basınç, bu akışın karşılaştığı dirençten doğar. Bu ayrım pratikte önemlidir: bir sistemde basınç düşükse sorun çoğu zaman pompada değil, kaçakta veya emniyet valfi ayarındadır.\n\nEn yaygın tip dişli pompadır: basit, ucuz ve kirliliğe dayanıklıdır, sabit deplasmanlıdır. Eksenel pistonlu pompalar daha yüksek basınca çıkar ve değişken deplasmanlı olabildikleri için gereken kadar akış üretip enerji tasarrufu sağlar. Seçimde devir sayısı, deplasman (cc/dev) ve çalışma basıncı birlikte değerlendirilir; emiş hattının yetersizliği ise pompa ömrünü kısaltan en sık sebeptir.",
   "eslesme": "POMPA",
   "haric": "[İIiı]MALAT|REV[İIiı]ZYON|DEĞ[İIiı]Ş[İIiı]M|TAM[İIiı]R|MONTAJ|[İIiı]ŞÇ[İIiı]L[İIiı]K|BAK[İIiı]M|KEÇE|CONTA|TANK|KAPL[İIiı]N|F[İIiı]LTRE|PLAST[İIiı]Ğ[İIiı]",
@@ -352,8 +351,8 @@
   "slug": "hidromotor",
   "grup": "guc",
   "ad": "Hidromotor",
-  "h1": "Hidromotor (Orbit Motor): 36–395 cm³/dev Yavaş Devirli Yüksek Torklu Motorlar",
-  "ozet": "Orbit tipi hidromotorlar, 36 cm³'ten 395 cm³/dev deplasmana kadar; karıştırıcı, konveyör, vinç, tarım ve temizlik makinelerinde kullanılan yavaş devirli yüksek torklu motorlar.",
+  "h1": "Hidromotor (Orbit Motor): Yavaş Devirli Yüksek Torklu Hidrolik Motorlar",
+  "ozet": "Orbit tipi hidromotorlar; karıştırıcı, konveyör, vinç, tarım ve temizlik makinelerinde kullanılan yavaş devirli yüksek torklu motorlar.",
   "giris": "Hidromotor, hidrolik pompanın tersini yapar: pompa mekanik dönmeyi basınca çevirirken hidromotor basıncı mekanik dönmeye çevirir. Bir silindir doğrusal hareket verir, hidromotor ise sürekli dönme verir — konveyör tamburu, karıştırıcı pervanesi, vinç tamburu, süpürge fırçası ve tarım makinesi milleri hep hidromotorla döner.\n\nStoktaki motorların büyük bölümü orbit (gerotor) tiptir. Bu tasarımda içteki dişli çark, dıştaki dişli halka içinde eksantrik olarak yürür; her turda çok sayıda hücre dolup boşaldığı için mil devri düşük, tork yüksek olur. Doğrudan tahrik anlamına gelen bu özellik, çoğu uygulamada redüktör ihtiyacını ortadan kaldırır ve yerden büyük kazanç sağlar.\n\nSeçimin merkezinde deplasman vardır: motorun bir turda yuttuğu yağ hacmi, cm³/dev cinsinden. Ürün kodundaki sayı doğrudan bu değerdir (HMR.100 = 100 cm³/dev). Devir bu değerden hesaplanır: devir (d/dk) ≈ debi (lt/dk) × 1000 ÷ deplasman (cm³). Yani 40 lt/dk debi, 100 cm³/dev motoru yaklaşık 400 d/dk döndürür. Aynı debiyle daha yavaş ve daha güçlü dönme isteniyorsa deplasmanı büyük motor seçilir; hız isteniyorsa küçük motor.\n\nİkinci belirleyici torktur ve çalışma basıncından gelir: tork ≈ basınç (bar) × deplasman (cm³) ÷ 63. Üçüncüsü mil ve bağlantı geometrisidir — düz mil, frezeli mil, kamalı mil ve flanş deliği ölçüleri motorun makineye oturmasını belirler; sipariş sırasında deplasman kadar bunun da verilmesi gerekir.\n\nHidromotor devresi kurarken dönüş hattının tanka serbest bırakılması, motorun ataletle dönmeye devam ettiği anlarda emiş yapabilmesi için önemlidir; aksi halde motor kendi içinde kavitasyona girer. Motoru süren pompa için «Hidrolik Pompa», yön ve hız kontrolü için «Hidrolik Valf» sayfalarına bakın.",
   "eslesme": "H[İIiı]DROMOTOR|H[İIiı]DROL[İIiı]K MOTOR|ORB[İIiı]T MOTOR",
   "haric": "[İIiı]MALAT|REV[İIiı]ZYON|TAM[İIiı]R|MONTAJ|[İIiı]ŞÇ[İIiı]L[İIiı]K|BAK[İIiı]M|KEÇE|TAK[İIiı]M|S[İIiı]L[İIiı]N",
@@ -395,7 +394,7 @@
   "slug": "hidrolik-filtre",
   "grup": "guc",
   "ad": "Hidrolik Filtre",
-  "h1": "Hidrolik Yağ Filtresi: Emiş, Dönüş ve Basınç Hattı Filtreleri ile Filtre Elemanları",
+  "h1": "Hidrolik Yağ Filtresi: Emiş ve Dönüş Filtreleri ile Filtre Elemanları",
   "ozet": "25'ten 750 LT/DK'ya emiş filtreleri, depo üstü ve hat tipi dönüş filtreleri, komple filtreler ve yedek filtre elemanları.",
   "giris": "Hidrolik sistemde arızaların büyük çoğunluğu tek bir sebebe dayanır: yağdaki kir. Aşınmadan kopan metal zerreleri, montajda giren toz ve keçeden ufalanan kauçuk, pompa ile valfin mikron mertebesindeki boşluklarında dolaşır. Filtre bu döngüyü kesen tek elemandır ve sistemdeki en ucuz parçalardan biri olmasına rağmen ihmal edildiğinde en pahalı hasarı verir.\n\nFiltre devrede üç konumda bulunur. Emiş filtresi pompanın girişinde, tankın içine dalmış halde çalışır; kaba filtredir ve pompayı büyük parçalardan korur. Debisi lt/dk olarak verilir (25, 45, 65, 90, 125, 180, 225, 300, 500, 750 gibi) ve pompa debisinden küçük seçilemez. Ölçüleri boy, çap ve diş olarak listelenir (L:160 D:61 A:1 gibi), çünkü tank içine sığması gerekir.\n\nDönüş filtresi, yağ tanka geri dönerken devreye girer. İnce filtredir ve sistemde dolaşan yağın tamamını temizlediği için asıl temizlik işini o yapar. Depo üstüne oturan tipleri montajı kolaylaştırır. Basınç hattı filtresi ise pompadan sonra, korunması gereken hassas bir valften hemen önce kullanılır; en ince filtreleme buradadır ama gövdesi tam sistem basıncına dayanacak şekilde imal edilir.\n\nSeçimin ikinci ekseni gözenek inceliğidir; mikron cinsinden verilir ve ürün kodunda görünür (C25 = 25 mikron gibi). İnce filtre daha temiz yağ verir ama daha çabuk tıkanır ve daha çok basınç düşümü yaratır. Emişte 100–125 mikron, dönüşte 10–25 mikron tipik değerlerdir.\n\nFiltreler komple gövde olarak ya da yalnız eleman olarak satılır. Periyodik bakımda değişen genellikle elemandır; gövde yerinde kalır. Tıkanmış bir emiş filtresi pompa girişinde vakum yaratır, yağ içinde kabarcık oluşur ve pompa kavitasyona girer — bu, hırıltılı sesle çalışan bir pompanın en yaygın sebebidir. «Hidrolik Pompa» sayfasındaki arıza notlarıyla birlikte okunmalıdır.",
   "eslesme": "EM[İIiı]Ş F[İIiı]LTRE|D[ÖO]N[ÜU]Ş F[İIiı]LTRE|GER[İIiı] D[ÖO]N.*F[İIiı]LTRE|F[İIiı]LTRE ELEMAN|BAS[İIiı]NÇ F[İIiı]LTRE|HAT F[İIiı]LTRE|YAĞ F[İIiı]LTRE|TANK F[İIiı]LTRE|H[İIiı]DROL[İIiı]K F[İIiı]LTRE|DEPO [ÜU]ST[ÜU]|F[İIiı]LTRE ÇEKVALF",
@@ -444,8 +443,8 @@
   "slug": "hidrolik-sogutucu",
   "grup": "guc",
   "ad": "Hidrolik Yağ Soğutucu",
-  "h1": "Hidrolik Yağ Soğutucu: 80–220 LT/DK Fanlı Yağ-Hava Isı Değiştiriciler",
-  "ozet": "12 V, 24 V ve 220 V fanlı hidrolik yağ soğutucular; 80'den 220 LT/DK'ya debi kapasitesi, 240×240×45'ten 720×700×63 mm'ye gövde ölçüleri.",
+  "h1": "Hidrolik Yağ Soğutucu: 60–220 LT/DK Fanlı Yağ-Hava Isı Değiştiriciler",
+  "ozet": "12 V, 24 V ve 220 V fanlı hidrolik yağ soğutucular; 60'tan 220 LT/DK'ya debi kapasitesi, 240×240×45'ten 720×700×63 mm'ye gövde ölçüleri.",
   "giris": "Hidrolik sistemde harcanan enerjinin bir kısmı iş olarak çıkmaz, ısıya dönüşür. Kısma valflerinde, emniyet valfinden dönen yağda, pompanın iç kaçaklarında ve hattaki her sürtünmede bir miktar güç ısı olur. Küçük sistemlerde tank ve boru yüzeyi bu ısıyı atmaya yeter; sistem büyüdükçe ya da çevrim sıklaştıkça yetmez ve yağ ısınmaya başlar.\n\nIsınan yağın incelmesi zincirleme sorun çıkarır. Viskozite düştükçe pompa ve valflerdeki iç kaçak artar, sistem yavaşlar ve daha çok ısı üretir — kendini besleyen bir döngüdür. Yağ filmi inceldiği için metal yüzeyler birbirine yaklaşır ve aşınma hızlanır. Keçeler yüksek sıcaklıkta sertleşir, elastikliğini kaybeder ve kaçırmaya başlar. Yağın kendisi de oksitlenir; koyulaşır, asitlenir ve vernik tabakası bırakır. Pratik eşik yaklaşık 60 °C'dir: sürekli bunun üzerinde çalışan bir sistem soğutucu istiyor demektir.\n\nStoktaki soğutucular yağ-hava tipidir: yağ, bir petek içinden geçerken fanın üflediği hava ısıyı alır. Seçim üç değere bakar. Birincisi soğutulacak debidir (80–220 lt/dk); soğutucunun kapasitesi hattan geçen debiye göre belirlenir. İkincisi fan gerilimidir — 12 V ve 24 V modeller mobil hidrolikte, aracın kendi elektriğiyle çalışır; 220 V modeller sabit tesiste şebekeden beslenir. Üçüncüsü gövde ölçüsüdür (240×240×45'ten 720×700×63 mm'ye); makinede soğutucuya ayrılan yer ve fanın hava alacağı açıklık buna göre planlanır.\n\nSoğutucu genellikle dönüş hattına, tanka girmeden hemen önce bağlanır. Petek gövdesi tam sistem basıncına dayanacak şekilde tasarlanmadığı için basınç hattına doğrudan bağlanmamalıdır; ayrıca soğuk çalıştırmada peteği korumak için bir baypas çekvalfi kullanılması yerinde olur. Fanın hava aldığı yüzey tozlandığında kapasite hızla düşer — periyodik temizlik, kapasiteyi geri kazanmanın en ucuz yoludur.",
   "eslesme": "SOĞUTUCU|COOLER|[İIiı]S[İIiı] DEĞ[İIiı]Ş",
   "haric": "[İIiı]MALAT|REV[İIiı]ZYON|TAM[İIiı]R|MONTAJ|[İIiı]ŞÇ[İIiı]L[İIiı]K|BAK[İIiı]M|S[İIiı]L[İIiı]N",
@@ -474,7 +473,7 @@
   "markalar": [],
   "standartlar": [
    "Yağ-hava (fanlı) tip",
-   "80 – 220 LT/DK kapasite",
+   "60 – 220 LT/DK kapasite",
    "12 V DC / 24 V DC / 220 V AC fan",
    "240×240×45 – 720×700×63 mm gövde",
    "Yan tip montaj"
@@ -564,7 +563,7 @@
   "grup": "silindir",
   "ad": "Krom Mil ve Honlanmış Boru",
   "h1": "Krom Kaplı Mil, İndüksiyonlu Mil, Honlanmış Boru ve Hidrolik Tesisat Borusu",
-  "ozet": "Hidrolik silindir imalatının hammaddesi: Ø12–Ø180 krom kaplı ve indüksiyonlu mil, Ø40'tan Ø350'ye honlanmış boru, 5×1'den 42×4'e hidrolik tesisat borusu.",
+  "ozet": "Hidrolik silindir imalatının hammaddesi: Ø10–Ø220 krom kaplı, Ø8–Ø155 indüksiyonlu mil, Ø40'tan Ø350'ye honlanmış boru, 5×1'den 42×4'e hidrolik tesisat borusu.",
   "giris": "Hidrolik silindirin üç ana parçası vardır: içinde pistonun hareket ettiği gövde borusu, dışarı çıkan mil ve bunları sızdırmaz tutan keçe takımı. Bu sayfa ilk ikisinin hammaddesini kapsar — silindiri kendi tezgâhında yapan ya da eskimiş bir silindiri yenileyen atölyenin aradığı malzeme.\n\nKrom kaplı mil, üzerine sert krom kaplanmış çekilmiş çelik çubuktur. Kaplama iki iş görür: sürtünmeyi ve aşınmayı azaltır, korozyonu önler. Sıyırıcı keçe milin üzerinden kiri temizlerken kaplamanın pürüzsüzlüğüne güvenir; kaplama çizildiğinde keçe kısa sürede kaçırmaya başlar. Bu yüzden mil, taşıma ve montaj sırasında darbeden korunmalıdır. İndüksiyonlu mil ise kaplamanın altındaki çeliğin indüksiyonla sertleştirilmiş halidir; darbeye ve yandan yüke daha dayanıklı olduğu için iş makinesi ve ağır hizmet silindirlerinde tercih edilir.\n\nHonlanmış boru silindirin gövdesidir. İç yüzeyi honlama tezgâhında çapraz izli olarak taşlanır; bu doku hem pistonun düzgün kaymasını hem de yağ filminin yüzeyde tutunmasını sağlar. Ölçüsü daima iç çap × dış çap biçiminde verilir (80 × 95 gibi): iç çap silindirin üreteceği kuvveti, et kalınlığı ise dayanabileceği basıncı belirler. Ham çekilmiş boru honlanmış boru yerine kullanılamaz — iç yüzey pürüzü keçeyi ilk çalıştırmada kesip atar.\n\nTesisat borusu, pompadan valfe ve valften silindire giden sabit hatlarda kullanılır; hortumun aksine titreşimle salınmaz ve çok daha uzun ömürlüdür. Ölçüsü dış çap × et kalınlığı olarak verilir (16 × 2 gibi) ve rakor seçimi doğrudan bu dış çaptan yapılır: 16 × 2 boruya 16L ya da 16S kesme halkalı rakor gider. Boru ile rakor serisinin (L hafif, S ağır) uyuşması şarttır, aksi halde kesme halkası boruyu doğru kavramaz.\n\nMil ve boru kalemleri metre ağırlığıyla birlikte listelenir (50 mm krom kaplı mil için 15,40 kg/mt gibi); nakliye ve maliyet hesabı bu değerden yapılır. Boy kesme ve işleme için «Hidrolik Silindir» sayfasına, hat bağlantıları için «Hidrolik Rakor» sayfasına bakın.",
   "eslesme": "[İIiı]ND[ÜU]KS[İIiı]YON|ROD BORU|KROM M[İIiı]L|KROM KAPL[İIiı] M[İIiı]L|HONLU|HONLANM[İIiı]Ş|ÇEK[İIiı]LM[İIiı]Ş BORU|TES[İIiı]SAT BORUSU",
   "haric": "[İIiı]MALAT|REV[İIiı]ZYON|TAM[İIiı]R|MONTAJ|[İIiı]ŞÇ[İIiı]L[İIiı]K|BAK[İIiı]M|S[İIiı]L[İIiı]N|KELEPÇE|RAKOR",
@@ -593,8 +592,8 @@
   ],
   "markalar": [],
   "standartlar": [
-   "Krom kaplı mil Ø12–Ø180",
-   "İndüksiyonlu mil Ø12–Ø120",
+   "Krom kaplı mil Ø10–Ø220",
+   "İndüksiyonlu mil Ø8–Ø155",
    "Honlanmış boru iç çap Ø40–Ø350",
    "Tesisat borusu 5×1 – 42×4",
    "kg/mt ağırlık bilgisiyle"
@@ -728,7 +727,7 @@
   "grup": "silindir",
   "ad": "O-Ring ve Conta",
   "h1": "O-Ring Ölçüleri, Şerit O-Ring ve Conta",
-  "ozet": "NBR, FKM (Viton) ve EPDM malzemelerde metrik ve inç O-ring ölçüleri. Silindir keçesi, nutring ve sıyırıcı ayrı bir gruptur.",
+  "ozet": "NBR ve FKM (Viton) malzemelerde metrik ve inç O-ring ölçüleri. Silindir keçesi, nutring ve sıyırıcı ayrı bir gruptur.",
   "giris": "O-ring, iki yüzey arasında sıkışarak sızdırmazlık sağlayan en yaygın conta tipidir. Seçimde iki değer belirleyicidir: ölçü (iç çap × kesit çapı) ve malzeme.\n\nMalzeme seçimi akışkana ve sıcaklığa göre yapılır. NBR genel hidrolik yağlarda standart tercihtir ve yaklaşık -30 °C ile +100 °C arasında çalışır. FKM (Viton) yüksek sıcaklık ve agresif akışkanlarda kullanılır. EPDM su ve fren hidroliğinde uygundur ancak mineral yağla birlikte kullanılmaz — bu, sahada en sık yapılan malzeme hatasıdır.\n\nO-ring, sızdırmazlık takımının yalnızca bir parçasıdır. Hidrolik silindirlerde asıl işi yapan nutring, piston keçesi, sıyırıcı ve yataklama ayrı bir gruptur ve stoğumuzun çok daha büyük bölümünü oluşturur (5.297 kalem); onlar için «Hidrolik Keçe, Nutring ve Sıyırıcı» sayfasına bakın.",
   "eslesme": "O.?R[İIiı]NG",
   "haric": "POMPA|VALF|S[İIiı]L[İIiı]ND[İIiı]R|TAKOZ|[İIiı]MALAT|REV[İIiı]ZYON|DEĞ[İIiı]Ş[İIiı]M|TAM[İIiı]R|MONTAJ|[İIiı]ŞÇ[İIiı]L[İIiı]K|BAK[İIiı]M|APARAT",
@@ -753,7 +752,6 @@
   "standartlar": [
    "NBR",
    "FKM (viton)",
-   "EPDM",
    "Metrik ve inç ölçüler"
   ]
  },
