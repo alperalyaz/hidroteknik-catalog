@@ -3,17 +3,45 @@
   "slug": "kastas",
   "ad": "Kastaş",
   "adet": 6208,
-  "kategoriler": ["hidrolik-kece-nutring", "o-ring-sizdirmazlik", "tamir-takimi"],
+  "kategoriler": [
+   "hidrolik-kece-nutring",
+   "o-ring-sizdirmazlik",
+   "tamir-takimi"
+  ],
   "profilLink": true,
   "ornekler": [
-   { "kod": "KASTAS.K21-040/11", "ad": "K21-040/11 · 40 × 50 × 8" },
-   { "kod": "KASTAS.K22-030/1 PU", "ad": "K22-030/1 PU · 30 × 40 × 6" },
-   { "kod": "KASTAS.K06-040 PU", "ad": "K06-040 PU · 40 × 48 × 7/5" },
-   { "kod": "KASTAS.K23-014/1", "ad": "K23-014/1 · 14 × 8 × 4,5" },
-   { "kod": "KASTAS.K33-040 PU", "ad": "K33-040 PU · 40 × 50 × 10" },
-   { "kod": "KASTAS.K68-040/1", "ad": "K68-040/1 · 40 × 44 × 9,5" },
-   { "kod": "KASTAS.K69-035/6", "ad": "K69-035/6 · 35 × 30 × 5,4" },
-   { "kod": "KASTAS.KK-650", "ad": "JB-991/00110 JCB tamir takımı" }
+   {
+    "kod": "KASTAS.K21-040/11",
+    "ad": "K21-040/11 · 40 × 50 × 8"
+   },
+   {
+    "kod": "KASTAS.K22-030/1 PU",
+    "ad": "K22-030/1 PU · 30 × 40 × 6"
+   },
+   {
+    "kod": "KASTAS.K06-040 PU",
+    "ad": "K06-040 PU · 40 × 48 × 7/5"
+   },
+   {
+    "kod": "KASTAS.K23-014/1",
+    "ad": "K23-014/1 · 14 × 8 × 4,5"
+   },
+   {
+    "kod": "KASTAS.K33-040 PU",
+    "ad": "K33-040 PU · 40 × 50 × 10"
+   },
+   {
+    "kod": "KASTAS.K68-040/1",
+    "ad": "K68-040/1 · 40 × 44 × 9,5"
+   },
+   {
+    "kod": "KASTAS.K69-035/6",
+    "ad": "K69-035/6 · 35 × 30 × 5,4"
+   },
+   {
+    "kod": "KASTAS.KK-650",
+    "ad": "JB-991/00110 JCB tamir takımı"
+   }
   ],
   "ozet": {
    "tr": "Stoğumuzdaki en geniş marka: 6.208 kalem sızdırmazlık elemanı — nutring, mil ve piston keçesi, sıyırıcı, yataklama, o-ring ve hazır tamir takımı.",
@@ -21,8 +49,7 @@
    "ru": "Самый широкий бренд на нашем складе: 6 208 позиций уплотнений — нутринги, штоковые и поршневые уплотнения, грязесъёмники, направляющие кольца, кольца круглого сечения и готовые ремкомплекты."
   },
   "giris": {
-   "tr": "Kastaş, katalogdaki en büyük tek marka: aktif stoğumuzun yaklaşık üçte biri bu markaya ait. Sızdırmazlık grubunun tamamını kapsar — hidrolik silindirin mil tarafındaki nutring ve keçeler, piston tarafındaki keçe ve yataklamalar, sıyırıcılar, o-ringler ve JCB iş makinesi silindirleri için hazır tamir takımları.\n\nKastaş ürünleri ürün adıyla değil profil koduyla aranır. «K21», «K22», «K06» gibi kodlar profili, arkasındaki sayı ise ölçüyü verir: K21-040/11, 40 × 50 × 8 mm ölçüsündeki bir K21 profilidir. Stokta 33 farklı profil ailesi bulunuyor ve her birinin ölçü listesi kendi sayfasında. NBR standart malzemedir; kodun sonundaki PU eki poliüretan, FKM eki viton varyantı belirtir.\n\nAradığınız ölçü listede görünmüyorsa yine de sorun: burada yalnız en çok hareket gören ölçüler yayımlanıyor, Kastaş kataloğundaki diğer ölçüleri de temin ediyoruz."
-   ,
+   "tr": "Kastaş, katalogdaki en büyük tek marka: aktif stoğumuzun yaklaşık üçte biri bu markaya ait. Sızdırmazlık grubunun tamamını kapsar — hidrolik silindirin mil tarafındaki nutring ve keçeler, piston tarafındaki keçe ve yataklamalar, sıyırıcılar, o-ringler ve JCB iş makinesi silindirleri için hazır tamir takımları.\n\nKastaş ürünleri ürün adıyla değil profil koduyla aranır. «K21», «K22», «K06» gibi kodlar profili, arkasındaki sayı ise ölçüyü verir: K21-040/11, 40 × 50 × 8 mm ölçüsündeki bir K21 profilidir. Stokta 33 farklı profil ailesi bulunuyor ve her birinin ölçü listesi kendi sayfasında. NBR standart malzemedir; kodun sonundaki PU eki poliüretan, FKM eki viton varyantı belirtir.\n\nAradığınız ölçü listede görünmüyorsa yine de sorun: burada yalnız en çok hareket gören ölçüler yayımlanıyor, Kastaş kataloğundaki diğer ölçüleri de temin ediyoruz.",
    "en": "Kastaş is the single largest brand in the catalogue: roughly a third of our active stock belongs to it. It covers the whole sealing group — nutrings and seals on the rod side of a hydraulic cylinder, seals and wear rings on the piston side, wipers, O-rings, and ready-made repair kits for JCB construction machinery cylinders.\n\nKastaş products are searched by profile code rather than by product name. Codes such as «K21», «K22» and «K06» give the profile, and the number after them gives the size: K21-040/11 is a K21 profile in 40 × 50 × 8 mm. We hold 33 different profile families in stock, each with its own size list on its own page. NBR is the standard material; a PU suffix on the code indicates polyurethane, FKM indicates the Viton variant.\n\nIf the size you need is not shown, ask anyway: only the most frequently supplied sizes are published here, and we supply the other sizes in the Kastaş catalogue as well.",
    "ru": "Kastaş — крупнейший отдельный бренд в каталоге: на него приходится примерно треть нашего активного склада. Он охватывает всю группу уплотнений — нутринги и манжеты со стороны штока гидроцилиндра, уплотнения и направляющие кольца со стороны поршня, грязесъёмники, кольца круглого сечения и готовые ремкомплекты для цилиндров спецтехники JCB.\n\nПродукцию Kastaş ищут не по названию, а по коду профиля. Коды вида «K21», «K22», «K06» задают профиль, а число после них — размер: K21-040/11 — это профиль K21 размером 40 × 50 × 8 мм. На складе 33 семейства профилей, у каждого свой список размеров на отдельной странице. NBR — стандартный материал; суффикс PU в коде означает полиуретан, FKM — вариант из витона.\n\nЕсли нужного размера нет в списке, всё равно спросите: здесь публикуются только наиболее востребованные размеры, остальные размеры из каталога Kastaş мы также поставляем."
   }
@@ -31,16 +58,49 @@
   "slug": "hansaflex",
   "ad": "HansaFlex",
   "adet": 1455,
-  "kategoriler": ["hidrolik-hortum", "hidrolik-rakor", "orfs-rakor", "nipel", "hidrolik-tapa", "hortum-kelepce", "hortum-ucu-koruma", "pnomatik-hortum"],
+  "kategoriler": [
+   "hidrolik-hortum",
+   "hidrolik-rakor",
+   "orfs-rakor",
+   "nipel",
+   "hidrolik-tapa",
+   "hortum-kelepce",
+   "hortum-ucu-koruma",
+   "pnomatik-hortum"
+  ],
   "ornekler": [
-   { "kod": "HF.PHN213", "ad": "Soket, soymasız kabuk 2SN 1/2 DN12" },
-   { "kod": "HF.R1(PHD113)", "ad": "Soket, soymalı kabuk 1SN 1/2 DN12" },
-   { "kod": "HF.PHN206", "ad": "Soket, soymasız kabuk 2SN 1/4 DN06" },
-   { "kod": "HF.SRD16", "ad": "Çelik yüksük 16" },
-   { "kod": "HF.UEMNW10L", "ad": "Boru somunu M18x1,5 12L" },
-   { "kod": "HF.PN13AJF", "ad": "ORFS somunlu düz hortum rakoru 1/2 13/16" },
-   { "kod": "HANSA.SSKC23", "ad": "Spiral koruma 23x27" },
-   { "kod": "HF.FBSB 025", "ad": "25 mm silikon turuncu yanmaz kılıf" }
+   {
+    "kod": "HF.PHN213",
+    "ad": "Soket, soymasız kabuk 2SN 1/2 DN12"
+   },
+   {
+    "kod": "HF.R1(PHD113)",
+    "ad": "Soket, soymalı kabuk 1SN 1/2 DN12"
+   },
+   {
+    "kod": "HF.PHN206",
+    "ad": "Soket, soymasız kabuk 2SN 1/4 DN06"
+   },
+   {
+    "kod": "HF.SRD16",
+    "ad": "Çelik yüksük 16"
+   },
+   {
+    "kod": "HF.UEMNW10L",
+    "ad": "Boru somunu M18x1,5 12L"
+   },
+   {
+    "kod": "HF.PN13AJF",
+    "ad": "ORFS somunlu düz hortum rakoru 1/2 13/16"
+   },
+   {
+    "kod": "HANSA.SSKC23",
+    "ad": "Spiral koruma 23x27"
+   },
+   {
+    "kod": "HF.FBSB 025",
+    "ad": "25 mm silikon turuncu yanmaz kılıf"
+   }
   ],
   "ozet": {
    "tr": "Hortum bağlantı sistemi: 1.455 kalem soket, yüksük, rakor, boru somunu, ORFS bağlantı, spiral koruma ve yanmaz kılıf.",
@@ -48,8 +108,7 @@
    "ru": "Полная система соединения рукавов: 1 455 позиций — муфты, обжимные кольца, фитинги, трубные гайки, соединения ORFS, спиральная защита и огнестойкие чехлы."
   },
   "giris": {
-   "tr": "HansaFlex, stoğumuzda hortum hattının uç kısmını oluşturan sistemi kapsar: hortumun ucuna geçen soketler ve yüksükler, presleme sonrası bağlantıyı kuran rakorlar, boru somunları, ORFS bağlantı elemanları ve hortumu dıştan koruyan spiral ile yanmaz kılıf.\n\nSoketler soymalı ve soymasız kabuk olarak iki grupta bulunur ve hortum sınıfına göre seçilir: 1SN tek örgülü, 2SN ve 2SC çift örgülü hortumlar içindir. Sipariş sırasında hem hortum sınıfı hem de DN ölçüsü verilmelidir (2SN 1/2 DN12 gibi) — bu ikisi eşleşmezse presleme tutmaz.\n\nHortum presleme işlemi kendi tesisimizde yapılır; standart ölçülerde hazır hortum çoğunlukla aynı gün teslim edilir."
-   ,
+   "tr": "HansaFlex, stoğumuzda hortum hattının uç kısmını oluşturan sistemi kapsar: hortumun ucuna geçen soketler ve yüksükler, presleme sonrası bağlantıyı kuran rakorlar, boru somunları, ORFS bağlantı elemanları ve hortumu dıştan koruyan spiral ile yanmaz kılıf.\n\nSoketler soymalı ve soymasız kabuk olarak iki grupta bulunur ve hortum sınıfına göre seçilir: 1SN tek örgülü, 2SN ve 2SC çift örgülü hortumlar içindir. Sipariş sırasında hem hortum sınıfı hem de DN ölçüsü verilmelidir (2SN 1/2 DN12 gibi) — bu ikisi eşleşmezse presleme tutmaz.\n\nHortum presleme işlemi kendi tesisimizde yapılır; standart ölçülerde hazır hortum çoğunlukla aynı gün teslim edilir.",
    "en": "In our stock HansaFlex covers the system at the end of the hose line: the sockets and ferrules that fit over the hose end, the fittings that make the connection after crimping, tube nuts, ORFS connection components, and the spiral guard and fire sleeve that protect the hose from the outside.\n\nSockets come in two groups, skive and non-skive, and are selected by hose class: 1SN for single-braid, 2SN and 2SC for double-braid hoses. Both the hose class and the DN size must be given when ordering (2SN 1/2 DN12, for example) — if the two do not match, the crimp will not hold.\n\nHose crimping is done on our own premises; made-up hoses in standard sizes are usually delivered the same day.",
    "ru": "В нашем складе HansaFlex охватывает систему на конце рукавной линии: муфты и обжимные кольца, надеваемые на конец рукава, фитинги, образующие соединение после обжима, трубные гайки, элементы соединения ORFS, а также спиральную защиту и огнестойкий чехол, защищающие рукав снаружи.\n\nМуфты бывают двух групп — со снятием и без снятия оболочки — и подбираются по классу рукава: 1SN для однооплёточных, 2SN и 2SC для двухоплёточных. При заказе нужно указывать и класс рукава, и размер DN (например, 2SN 1/2 DN12): если они не совпадают, обжим не будет держать.\n\nОбжим рукавов выполняется на нашем собственном участке; готовые рукава стандартных размеров обычно отгружаются в тот же день."
   }
@@ -58,16 +117,48 @@
   "slug": "pemaks",
   "ad": "Pemaks",
   "adet": 878,
-  "kategoriler": ["pnomatik-rakor", "pnomatik-silindir", "pnomatik-valf", "sartlandirici", "pnomatik-hortum", "nipel", "tamir-takimi"],
+  "kategoriler": [
+   "pnomatik-rakor",
+   "pnomatik-silindir",
+   "pnomatik-valf",
+   "sartlandirici",
+   "pnomatik-hortum",
+   "nipel",
+   "tamir-takimi"
+  ],
   "ornekler": [
-   { "kod": "PEM.REK.PRD.04.08", "ad": "Rekor bağlantı 1/4 x 8" },
-   { "kod": "PEM.REK.PRL.04.010", "ad": "Döner dirsek bağlantı 1/4 x 10" },
-   { "kod": "PEM.REK.PRN-0600", "ad": "Nipel bağlantı 6" },
-   { "kod": "PEM.REK.PRT-0800", "ad": "Te bağlantı 8" },
-   { "kod": "PEM.S.DMC.050.100", "ad": "DMC-A ISO 50X100 manyetik yastıklı pnömatik silindir" },
-   { "kod": "PEM.HH.FRL-S1-14-M", "ad": "1/4\" hava hazırlama ünitesi, manuel tahliyeli" },
-   { "kod": "PEM.VALF.PV1E-52-14V1", "ad": "PV1 serisi 5/2-1/4 tek bobin valf, 24 V DC" },
-   { "kod": "PEM.S.KS.A.100", "ad": "KS-A 100 keçe takımı" }
+   {
+    "kod": "PEM.REK.PRD.04.08",
+    "ad": "Rekor bağlantı 1/4 x 8"
+   },
+   {
+    "kod": "PEM.REK.PRL.04.010",
+    "ad": "Döner dirsek bağlantı 1/4 x 10"
+   },
+   {
+    "kod": "PEM.REK.PRN-0600",
+    "ad": "Nipel bağlantı 6"
+   },
+   {
+    "kod": "PEM.REK.PRT-0800",
+    "ad": "Te bağlantı 8"
+   },
+   {
+    "kod": "PEM.S.DMC.050.100",
+    "ad": "DMC-A ISO 50X100 manyetik yastıklı pnömatik silindir"
+   },
+   {
+    "kod": "PEM.HH.FRL-S1-14-M",
+    "ad": "1/4\" hava hazırlama ünitesi, manuel tahliyeli"
+   },
+   {
+    "kod": "PEM.VALF.PV1E-52-14V1",
+    "ad": "PV1 serisi 5/2-1/4 tek bobin valf, 24 V DC"
+   },
+   {
+    "kod": "PEM.S.KS.A.100",
+    "ad": "KS-A 100 keçe takımı"
+   }
   ],
   "ozet": {
    "tr": "Pnömatik devrenin tamamı tek markadan: 878 kalem çabuk bağlantı rakoru, ISO silindir, solenoid ve kol kumandalı valf, şartlandırıcı.",
@@ -75,8 +166,7 @@
    "ru": "Полный пневматический контур от одного бренда: 878 позиций — цанговые фитинги, цилиндры ISO, электромагнитные и рычажные клапаны, блоки подготовки воздуха."
   },
   "giris": {
-   "tr": "Pemaks, pnömatik devrenin girişinden çıkışına kadar her parçasını kapsayan en geniş pnömatik markamızdır. Şartlandırıcı ile hava hazırlanır, valfle yönlendirilir, rakorla dağıtılır ve silindirle işe çevrilir — dördü de aynı markadan temin edilebilir.\n\nEn hareketli grup çabuk bağlantı rakorlarıdır. Ölçü daima diş × hortum dış çapı olarak verilir: 1/4 x 8, 1/4\" dişe ve 8 mm hortuma bağlanan bir rekordur. Düz, döner dirsek, te ve nipel gövde tipleri bulunur; döner dirsek tipi montajdan sonra da yön ayarına izin verdiği için dar yerlerde tercih edilir.\n\nSilindir tarafında DMC-A ve SPC serileri ISO ölçülerinde, manyetik pistonlu ve yastıklıdır — ISO standardında olduğu için başka markaların silindirleriyle ölçü uyumu vardır."
-   ,
+   "tr": "Pemaks, pnömatik devrenin girişinden çıkışına kadar her parçasını kapsayan en geniş pnömatik markamızdır. Şartlandırıcı ile hava hazırlanır, valfle yönlendirilir, rakorla dağıtılır ve silindirle işe çevrilir — dördü de aynı markadan temin edilebilir.\n\nEn hareketli grup çabuk bağlantı rakorlarıdır. Ölçü daima diş × hortum dış çapı olarak verilir: 1/4 x 8, 1/4\" dişe ve 8 mm hortuma bağlanan bir rekordur. Düz, döner dirsek, te ve nipel gövde tipleri bulunur; döner dirsek tipi montajdan sonra da yön ayarına izin verdiği için dar yerlerde tercih edilir.\n\nSilindir tarafında DMC-A ve SPC serileri ISO ölçülerinde, manyetik pistonlu ve yastıklıdır — ISO standardında olduğu için başka markaların silindirleriyle ölçü uyumu vardır.",
    "en": "Pemaks is our widest pneumatic brand, covering every part of the circuit from inlet to outlet. The FRL unit prepares the air, the valve directs it, the fittings distribute it and the cylinder turns it into work — all four can be sourced from the same brand.\n\nThe fastest-moving group is push-in fittings. The size is always given as thread × hose outer diameter: 1/4 x 8 is a fitting that takes a 1/4\" thread and 8 mm hose. Straight, swivel elbow, tee and nipple bodies are stocked; the swivel elbow is preferred in tight spaces because it still allows the direction to be adjusted after assembly.\n\nOn the cylinder side, the DMC-A and SPC series come in ISO sizes with magnetic pistons and cushioning — being to ISO standard, they are dimensionally interchangeable with other makes.",
    "ru": "Pemaks — наш самый широкий пневматический бренд, охватывающий каждую часть контура от входа до выхода. Блок подготовки готовит воздух, клапан направляет его, фитинги распределяют, а цилиндр превращает в работу — все четыре можно взять у одного бренда.\n\nСамая востребованная группа — цанговые фитинги. Размер всегда даётся как резьба × наружный диаметр рукава: 1/4 x 8 — фитинг под резьбу 1/4\" и рукав 8 мм. В наличии прямые, поворотные угловые, тройниковые и ниппельные корпуса; поворотный угловой предпочитают в стеснённых местах, так как он позволяет менять направление и после монтажа.\n\nСо стороны цилиндров серии DMC-A и SPC выполнены в размерах ISO, с магнитным поршнем и демпфированием — благодаря стандарту ISO они размерно совместимы с цилиндрами других марок."
   }
@@ -85,13 +175,30 @@
   "slug": "oleostar",
   "ad": "Oleostar",
   "adet": 286,
-  "kategoriler": ["hidrolik-valf"],
+  "kategoriler": [
+   "hidrolik-valf"
+  ],
   "ornekler": [
-   { "kod": "OLEOSTAR.01.171", "ad": "VDSRL 10-12 · 1/2 hat tipi basınç sıralama valfi" },
-   { "kod": "OLEOSTAR.01.149", "ad": "VOSL/SC/CC 38 · 3/8 hat tipi tekli yük tutma valfi" },
-   { "kod": "OLEOSTAR.001.219", "ad": "001.219.OXO · 3/4 tekli yük tutma valfi" },
-   { "kod": "OLEOSTAR.01.001", "ad": "VMP 03 · 3/4 16 UNF direkt uyarılı basınç ayar kartuşu" },
-   { "kod": "OLEOSTAR.01.005", "ad": "VMP/B/L 02-14 · 1/4 direkt uyarılı hat tipi emniyet valfi" }
+   {
+    "kod": "OLEOSTAR.01.171",
+    "ad": "VDSRL 10-12 · 1/2 hat tipi basınç sıralama valfi"
+   },
+   {
+    "kod": "OLEOSTAR.01.149",
+    "ad": "VOSL/SC/CC 38 · 3/8 hat tipi tekli yük tutma valfi"
+   },
+   {
+    "kod": "OLEOSTAR.001.219",
+    "ad": "001.219.OXO · 3/4 tekli yük tutma valfi"
+   },
+   {
+    "kod": "OLEOSTAR.01.001",
+    "ad": "VMP 03 · 3/4 16 UNF direkt uyarılı basınç ayar kartuşu"
+   },
+   {
+    "kod": "OLEOSTAR.01.005",
+    "ad": "VMP/B/L 02-14 · 1/4 direkt uyarılı hat tipi emniyet valfi"
+   }
   ],
   "ozet": {
    "tr": "Hat tipi ve kartuş hidrolik valfler: 286 kalem yük tutma, emniyet, basınç ayar ve basınç sıralama valfi.",
@@ -99,8 +206,7 @@
    "ru": "Линейные и картриджные гидроклапаны: 286 позиций — клапаны удержания нагрузки, предохранительные, редукционные и клапаны последовательности."
   },
   "giris": {
-   "tr": "Oleostar grubu, hidrolik devrede basıncı ve yükü kontrol eden valflerden oluşur. Stoğun büyük kısmı iki işe ayrılır: yükü havada tutmak ve basıncı sınırlamak.\n\nYük tutma valfi (over-center), yükün kendi ağırlığıyla kaçmasını önler — vinç bomu, damper ve platform gibi düşme riski olan her uygulamada zorunludur. Hortum patlasa bile yük yerinde kalır. Emniyet valfi ise sistemin üst basıncını belirler ve fazlasını tanka boşaltır; pompanın ve devrenin sigortasıdır.\n\nValfler hat tipi (boru hattına doğrudan bağlanan) ve kartuş tipi (blok içine vidalanan) olarak iki gövdede bulunur. Kartuş tipin diş ölçüsü kodda verilir (3/4 16 UNF, M22x1,5 gibi) ve bloktaki yuvayla birebir eşleşmelidir."
-   ,
+   "tr": "Oleostar grubu, hidrolik devrede basıncı ve yükü kontrol eden valflerden oluşur. Stoğun büyük kısmı iki işe ayrılır: yükü havada tutmak ve basıncı sınırlamak.\n\nYük tutma valfi (over-center), yükün kendi ağırlığıyla kaçmasını önler — vinç bomu, damper ve platform gibi düşme riski olan her uygulamada zorunludur. Hortum patlasa bile yük yerinde kalır. Emniyet valfi ise sistemin üst basıncını belirler ve fazlasını tanka boşaltır; pompanın ve devrenin sigortasıdır.\n\nValfler hat tipi (boru hattına doğrudan bağlanan) ve kartuş tipi (blok içine vidalanan) olarak iki gövdede bulunur. Kartuş tipin diş ölçüsü kodda verilir (3/4 16 UNF, M22x1,5 gibi) ve bloktaki yuvayla birebir eşleşmelidir.",
    "en": "The Oleostar group consists of the valves that control pressure and load in a hydraulic circuit. Most of the stock divides into two jobs: holding a load in the air, and limiting pressure.\n\nA load-holding (over-centre) valve stops a load from running away under its own weight — it is mandatory in every application with a risk of falling, such as crane booms, tippers and platforms. The load stays put even if a hose bursts. A relief valve sets the system's upper pressure and dumps the excess to tank; it is the fuse of the pump and the circuit.\n\nThe valves come in two body styles: line-mounted (connected directly into pipework) and cartridge (screwed into a manifold block). The thread size of the cartridge type is given in the code (3/4 16 UNF, M22x1.5 and so on) and must match the cavity in the block exactly.",
    "ru": "Группа Oleostar состоит из клапанов, управляющих давлением и нагрузкой в гидравлическом контуре. Основная часть склада делится на две задачи: удержание груза на весу и ограничение давления.\n\nКлапан удержания нагрузки (тормозной) не даёт грузу уходить под собственным весом — он обязателен в любом применении с риском падения: стрелы кранов, самосвалы, платформы. Груз остаётся на месте даже при разрыве рукава. Предохранительный клапан задаёт верхнее давление системы и сбрасывает излишек в бак; это предохранитель насоса и контура.\n\nКлапаны выпускаются в двух исполнениях корпуса: линейном (подключается прямо в трубопровод) и картриджном (ввинчивается в блок). Размер резьбы картриджного типа указан в коде (3/4 16 UNF, M22x1,5 и т. д.) и должен точно соответствовать гнезду в блоке."
   }
@@ -109,15 +215,42 @@
   "slug": "ferro",
   "ad": "Ferro",
   "adet": 277,
-  "kategoriler": ["pnomatik-rakor", "hidrolik-rakor", "hidrolik-valf", "kuresel-vana", "hidrolik-filtre"],
+  "kategoriler": [
+   "pnomatik-rakor",
+   "hidrolik-rakor",
+   "hidrolik-valf",
+   "kuresel-vana",
+   "hidrolik-filtre"
+  ],
   "ornekler": [
-   { "kod": "FR.PN256HN", "ad": "Pnömatik çabuk ekleme 6 mm, hortum uç" },
-   { "kod": "FR.PN25G14MN", "ad": "Pnömatik çabuk ekleme 1/4, erkek uç" },
-   { "kod": "FR.QCBPCG12MN", "ad": "Hidrolik otomatik rekor 1/2, erkek (kapaklı)" },
-   { "kod": "FR.TCM162G14N", "ad": "Test rekoru M16 x 2 – 1/4 BSP" },
-   { "kod": "FR.FCCG38N", "ad": "Hız ayar valfi 3/8, çekli" },
-   { "kod": "FR.DCG38N", "ad": "İkiz kilit valfi 3/8" },
-   { "kod": "FR.11K25R1", "ad": "11-K25 R1 dönüş filtresi 100 LT" }
+   {
+    "kod": "FR.PN256HN",
+    "ad": "Pnömatik çabuk ekleme 6 mm, hortum uç"
+   },
+   {
+    "kod": "FR.PN25G14MN",
+    "ad": "Pnömatik çabuk ekleme 1/4, erkek uç"
+   },
+   {
+    "kod": "FR.QCBPCG12MN",
+    "ad": "Hidrolik otomatik rekor 1/2, erkek (kapaklı)"
+   },
+   {
+    "kod": "FR.TCM162G14N",
+    "ad": "Test rekoru M16 x 2 – 1/4 BSP"
+   },
+   {
+    "kod": "FR.FCCG38N",
+    "ad": "Hız ayar valfi 3/8, çekli"
+   },
+   {
+    "kod": "FR.DCG38N",
+    "ad": "İkiz kilit valfi 3/8"
+   },
+   {
+    "kod": "FR.BV2G12N",
+    "ad": "Hidrolik iki yollu küresel vana 1/2"
+   }
   ],
   "ozet": {
    "tr": "Çabuk bağlantı rekorları ve hat elemanları: 277 kalem pnömatik/hidrolik otomatik rekor, test rekoru, hız ayar ve ikiz kilit valfi.",
@@ -125,8 +258,7 @@
    "ru": "Быстроразъёмные соединения и линейные элементы: 277 позиций — пневматические и гидравлические БРС, точки замера, дроссели и гидрозамки."
   },
   "giris": {
-   "tr": "Ferro grubunun ağırlığı çabuk bağlantı rekorlarıdır: alet veya ekipmanı basınç altındaki bir hatta takıp çıkarmayı saniyeler meselesi yapan elemanlar. Pnömatik tarafta hava aleti ve tabanca bağlantılarında, hidrolik tarafta iş makinesi ataşmanlarında kullanılır.\n\nRekorlar daima çift olarak çalışır: bir tarafta gövde (dişi), diğer tarafta uç (erkek). Sipariş verirken hangisinin gerektiği açıkça belirtilmelidir — «1/4 çabuk ekleme» tek başına iki farklı parçayı işaret eder. Hidrolik rekorlarda kapaklı tip, sökük durumda içeri toz girmesini önler.\n\nTest rekoru ayrı bir işe yarar: hatta kalıcı olarak durur ve manometreyi sistem çalışırken, yağ boşaltmadan bağlamayı sağlar. Arıza aramada basınç ölçmenin en temiz yoludur."
-   ,
+   "tr": "Ferro grubunun ağırlığı çabuk bağlantı rekorlarıdır: alet veya ekipmanı basınç altındaki bir hatta takıp çıkarmayı saniyeler meselesi yapan elemanlar. Pnömatik tarafta hava aleti ve tabanca bağlantılarında, hidrolik tarafta iş makinesi ataşmanlarında kullanılır.\n\nRekorlar daima çift olarak çalışır: bir tarafta gövde (dişi), diğer tarafta uç (erkek). Sipariş verirken hangisinin gerektiği açıkça belirtilmelidir — «1/4 çabuk ekleme» tek başına iki farklı parçayı işaret eder. Hidrolik rekorlarda kapaklı tip, sökük durumda içeri toz girmesini önler.\n\nTest rekoru ayrı bir işe yarar: hatta kalıcı olarak durur ve manometreyi sistem çalışırken, yağ boşaltmadan bağlamayı sağlar. Arıza aramada basınç ölçmenin en temiz yoludur.",
    "en": "The bulk of the Ferro group is quick-release couplings: the components that make connecting or disconnecting a tool or attachment on a pressurised line a matter of seconds. On the pneumatic side they are used for air tools and blow guns, on the hydraulic side for machine attachments.\n\nCouplings always work as a pair: a body (female) on one side and a plug (male) on the other. Which one is needed must be stated explicitly when ordering — «1/4 quick coupling» on its own points to two different parts. On hydraulic couplings, the capped type keeps dirt out while disconnected.\n\nA test point serves a different purpose: it stays permanently in the line and lets a gauge be connected while the system is running, without draining oil. It is the cleanest way to measure pressure during fault-finding.",
    "ru": "Основу группы Ferro составляют быстроразъёмные соединения — элементы, превращающие подключение и отключение инструмента или навесного оборудования на линии под давлением в дело нескольких секунд. С пневматической стороны они используются для пневмоинструмента и продувочных пистолетов, с гидравлической — для навесного оборудования машин.\n\nБРС всегда работают в паре: с одной стороны корпус (розетка), с другой — наконечник (штекер). При заказе нужно явно указывать, что именно требуется: «БРС 1/4» само по себе указывает на две разные детали. У гидравлических БРС исполнение с колпачком защищает от попадания грязи в разъединённом состоянии.\n\nТочка замера служит другой цели: она постоянно стоит в линии и позволяет подключить манометр на работающей системе, не сливая масло. Это самый чистый способ измерить давление при поиске неисправности."
   }
@@ -135,15 +267,41 @@
   "slug": "sms-tork",
   "ad": "SMS Tork",
   "adet": 230,
-  "kategoriler": ["hidrolik-valf", "solenoid-bobin", "kuresel-vana", "pnomatik-valf"],
+  "kategoriler": [
+   "hidrolik-valf",
+   "solenoid-bobin",
+   "kuresel-vana",
+   "pnomatik-valf"
+  ],
   "ornekler": [
-   { "kod": "SMS.S1010.08", "ad": "Solenoid valf N.K. 1/2 (S1010.03.145)" },
-   { "kod": "SMS.S1010.04", "ad": "Solenoid valf N.K. 1/4 (S1010.01.018)" },
-   { "kod": "SMS.S1011.08", "ad": "Solenoid valf N.A. 1/2 (S1011.03.145)" },
-   { "kod": "SMS.PL101005P", "ad": "Patlaç valf 1\" 2/2 yollu" },
-   { "kod": "SMS.C40.024.AC", "ad": "Standart tork bobini 24 V AC" },
-   { "kod": "SMS.C40.220.AC", "ad": "Standart tork bobini 220 V AC" },
-   { "kod": "SMS.YEDEK.D.04", "ad": "NBR genel maksat diyaframı 3/8-1\"" }
+   {
+    "kod": "SMS.S1010.08",
+    "ad": "Solenoid valf N.K. 1/2 (S1010.03.145)"
+   },
+   {
+    "kod": "SMS.S1010.04",
+    "ad": "Solenoid valf N.K. 1/4 (S1010.01.018)"
+   },
+   {
+    "kod": "SMS.S1011.08",
+    "ad": "Solenoid valf N.A. 1/2 (S1011.03.145)"
+   },
+   {
+    "kod": "SMS.PL101005P",
+    "ad": "Patlaç valf 1\" 2/2 yollu"
+   },
+   {
+    "kod": "SMS.C40.024.AC",
+    "ad": "Standart tork bobini 24 V AC"
+   },
+   {
+    "kod": "SMS.C40.220.AC",
+    "ad": "Standart tork bobini 220 V AC"
+   },
+   {
+    "kod": "SMS.YEDEK.D.04",
+    "ad": "NBR genel maksat diyaframı 3/8-1\""
+   }
   ],
   "ozet": {
    "tr": "Genel maksat solenoid valfler ve yedek bobinleri: 230 kalem N.K./N.A. solenoid valf, patlaç valf, bobin ve yedek diyafram.",
@@ -151,8 +309,7 @@
    "ru": "Электромагнитные клапаны общего назначения и запасные катушки: 230 позиций — клапаны НЗ/НО, импульсные клапаны, катушки и запасные мембраны."
   },
   "giris": {
-   "tr": "SMS Tork grubu, akışkanı elektrikle açıp kapatan genel maksat solenoid valflerden oluşur. Su, hava, yağ ve buhar hatlarında kullanılır; seçim akışkana, sıcaklığa ve diş ölçüsüne göre yapılır.\n\nValfin normal konumu iki harfle belirtilir ve karıştırılmamalıdır: N.K. (normalde kapalı) bobin enerjilenmediğinde kapalıdır, enerji gelince açılır — güvenlik gerektiren hatların varsayılan tercihidir, elektrik kesildiğinde hat kapanır. N.A. (normalde açık) bunun tersidir.\n\nBobin valften ayrı satılır ve valfin en sık değişen parçasıdır. 24 V AC, 110 V AC ve 220 V AC seçenekleri stokta; gövde sağlamken yalnız bobin değiştirilebilir. Yedek diyaframlar da bu grupta bulunur — diyafram yırtıldığında valf sürekli sızdırır ve tüm valfi değiştirmeye gerek kalmaz."
-   ,
+   "tr": "SMS Tork grubu, akışkanı elektrikle açıp kapatan genel maksat solenoid valflerden oluşur. Su, hava, yağ ve buhar hatlarında kullanılır; seçim akışkana, sıcaklığa ve diş ölçüsüne göre yapılır.\n\nValfin normal konumu iki harfle belirtilir ve karıştırılmamalıdır: N.K. (normalde kapalı) bobin enerjilenmediğinde kapalıdır, enerji gelince açılır — güvenlik gerektiren hatların varsayılan tercihidir, elektrik kesildiğinde hat kapanır. N.A. (normalde açık) bunun tersidir.\n\nBobin valften ayrı satılır ve valfin en sık değişen parçasıdır. 24 V AC, 110 V AC ve 220 V AC seçenekleri stokta; gövde sağlamken yalnız bobin değiştirilebilir. Yedek diyaframlar da bu grupta bulunur — diyafram yırtıldığında valf sürekli sızdırır ve tüm valfi değiştirmeye gerek kalmaz.",
    "en": "The SMS Tork group consists of general-purpose solenoid valves that open and close a fluid path electrically. They are used on water, air, oil and steam lines; selection is by fluid, temperature and port size.\n\nThe valve's rest position is given by two letters and must not be confused: NC (normally closed) is closed when the coil is de-energised and opens when energised — this is the default choice for lines that need to fail safe, since the line closes on power loss. NO (normally open) is the reverse.\n\nThe coil is sold separately and is the most frequently replaced part of the valve. 24 V AC, 110 V AC and 220 V AC options are in stock; where the body is sound, only the coil need be changed. Spare diaphragms are also in this group — when a diaphragm tears the valve leaks continuously, and replacing it avoids replacing the whole valve.",
    "ru": "Группа SMS Tork состоит из электромагнитных клапанов общего назначения, которые открывают и закрывают поток электрическим сигналом. Они применяются на линиях воды, воздуха, масла и пара; выбор ведётся по среде, температуре и присоединительному размеру.\n\nИсходное положение клапана обозначается двумя буквами, и их нельзя путать: НЗ (нормально закрытый) закрыт при обесточенной катушке и открывается при подаче питания — это выбор по умолчанию для линий, требующих безопасного отказа, так как при пропадании питания линия закрывается. НО (нормально открытый) работает наоборот.\n\nКатушка продаётся отдельно и является самой часто заменяемой деталью клапана. В наличии варианты 24 В AC, 110 В AC и 220 В AC; при исправном корпусе достаточно заменить только катушку. Запасные мембраны также входят в эту группу — при разрыве мембраны клапан постоянно пропускает, и её замена избавляет от замены всего клапана."
   }
@@ -161,14 +318,34 @@
   "slug": "pakkens",
   "ad": "Pakkens",
   "adet": 212,
-  "kategoriler": ["manometre"],
+  "kategoriler": [
+   "manometre"
+  ],
   "ornekler": [
-   { "kod": "PAK.0401000216", "ad": "Ø40 mm 0-315 bar arka bağlantılı kuru manometre" },
-   { "kod": "PAK.0631001116", "ad": "Ø63 mm 0-315 bar alt bağlantılı gliserinli manometre" },
-   { "kod": "PAK.1001001205", "ad": "Ø100 mm 0-4 bar arka bağlantılı gliserinli manometre" },
-   { "kod": "PAK.0631300112", "ad": "Ø63 mm 0-100 mbar diyaframlı manometre Cl.1,6" },
-   { "kod": "PAK.1001107114CA", "ad": "Ø100 mm 0-250 bar NCNO kontaklı manometre" },
-   { "kod": "PAK.1002301114", "ad": "Ø100 mm -250/0 mbar gliserinli diyaframlı vakum manometresi" }
+   {
+    "kod": "PAK.0401000216",
+    "ad": "Ø40 mm 0-315 bar arka bağlantılı kuru manometre"
+   },
+   {
+    "kod": "PAK.0631001116",
+    "ad": "Ø63 mm 0-315 bar alt bağlantılı gliserinli manometre"
+   },
+   {
+    "kod": "PAK.1001001205",
+    "ad": "Ø100 mm 0-4 bar arka bağlantılı gliserinli manometre"
+   },
+   {
+    "kod": "PAK.0631300112",
+    "ad": "Ø63 mm 0-100 mbar diyaframlı manometre Cl.1,6"
+   },
+   {
+    "kod": "PAK.1001107114CA",
+    "ad": "Ø100 mm 0-250 bar NCNO kontaklı manometre"
+   },
+   {
+    "kod": "PAK.1002301114",
+    "ad": "Ø100 mm -250/0 mbar gliserinli diyaframlı vakum manometresi"
+   }
   ],
   "ozet": {
    "tr": "Basınç ölçümünün tamamı: 212 kalem manometre — Ø40/63/100 kadran, 0-1 bar'dan 0-600 bar'a, kuru, gliserinli, diyaframlı, vakum ve kontaklı tipler.",
@@ -176,8 +353,7 @@
    "ru": "Полный ассортимент измерения давления: 212 манометров — циферблаты Ø40/63/100, от 0-1 бар до 0-600 бар, сухие, глицериновые, мембранные, вакуумные и электроконтактные."
   },
   "giris": {
-   "tr": "Pakkens, manometre grubumuzun tamamına yakınını oluşturur. Üç kadran çapı (Ø40, Ø63, Ø100), alt ve arka bağlantı, kuru ve gliserinli gövde kombinasyonlarıyla hemen her hidrolik ve pnömatik uygulamayı karşılar.\n\nStandart burdon borulu tiplerin yanında iki özel grup bulunur. Diyaframlı manometreler bar değil mbar mertebesini ölçer; havalandırma, filtre kirliliği ve alçak basınçlı proses hatlarında kullanılır. Kontaklı (NCNO) tipler ayarlanan basınca gelindiğinde elektriksel kontak vererek pompayı durdurabilir ya da alarm verebilir.\n\nGliserinli gövde, titreşimli hatlarda ibrenin zıplamasını söndürür ve mekanizmayı korur; pompa çıkışı ve mobil hidrolikte pratikte zorunludur."
-   ,
+   "tr": "Pakkens, manometre grubumuzun tamamına yakınını oluşturur. Üç kadran çapı (Ø40, Ø63, Ø100), alt ve arka bağlantı, kuru ve gliserinli gövde kombinasyonlarıyla hemen her hidrolik ve pnömatik uygulamayı karşılar.\n\nStandart burdon borulu tiplerin yanında iki özel grup bulunur. Diyaframlı manometreler bar değil mbar mertebesini ölçer; havalandırma, filtre kirliliği ve alçak basınçlı proses hatlarında kullanılır. Kontaklı (NCNO) tipler ayarlanan basınca gelindiğinde elektriksel kontak vererek pompayı durdurabilir ya da alarm verebilir.\n\nGliserinli gövde, titreşimli hatlarda ibrenin zıplamasını söndürür ve mekanizmayı korur; pompa çıkışı ve mobil hidrolikte pratikte zorunludur.",
    "en": "Pakkens accounts for almost the whole of our pressure gauge group. With three dial sizes (Ø40, Ø63, Ø100) and combinations of bottom and rear connection, dry and glycerine-filled cases, it covers nearly every hydraulic and pneumatic application.\n\nAlongside the standard Bourdon-tube types there are two special groups. Diaphragm gauges measure in millibars rather than bar and are used on ventilation, filter contamination and low-pressure process lines. Contact (NCNO) types close an electrical contact when a set pressure is reached, so they can stop a pump or raise an alarm.\n\nA glycerine-filled case damps needle flutter on pulsating lines and protects the movement; on pump outlets and in mobile hydraulics it is effectively mandatory.",
    "ru": "На Pakkens приходится почти вся наша группа манометров. Три диаметра циферблата (Ø40, Ø63, Ø100) в сочетании с нижним и задним присоединением, сухим и глицериновым корпусом закрывают практически любое гидравлическое и пневматическое применение.\n\nПомимо стандартных приборов с трубкой Бурдона есть две особые группы. Мембранные манометры измеряют в миллибарах, а не в барах, и применяются на линиях вентиляции, контроля загрязнённости фильтров и низконапорных технологических линиях. Электроконтактные (NCNO) при достижении заданного давления замыкают контакт и могут остановить насос или подать сигнал тревоги.\n\nГлицериновый корпус гасит колебания стрелки на пульсирующих линиях и защищает механизм; на выходе насоса и в мобильной гидравлике он практически обязателен."
   }
@@ -186,16 +362,46 @@
   "slug": "hydropack",
   "ad": "Hydropack",
   "adet": 207,
-  "kategoriler": ["hidrolik-valf", "hidrolik-pompa", "hidromotor", "solenoid-bobin", "tamir-takimi"],
+  "kategoriler": [
+   "hidrolik-valf",
+   "hidrolik-pompa",
+   "hidromotor",
+   "solenoid-bobin",
+   "tamir-takimi"
+  ],
   "ornekler": [
-   { "kod": "HR.K.2Z050", "ad": "2Z50 1/2 50 LT ikili monoblok kumanda (hassas geçiş)" },
-   { "kod": "HR.K.YEDEK.016", "ad": "P80 kumanda sapı M10" },
-   { "kod": "HR.K.YEDEK.004", "ad": "P40 kerovir valfi" },
-   { "kod": "HR.VALF.VBPDE 3/8 A", "ad": "VBPDE 3/8 A ikiz kilit valfi" },
-   { "kod": "HR.MOTOR.MR.200", "ad": "MR200 hidromotor" },
-   { "kod": "HR.MOTOR.MH.400.SH", "ad": "MH 400 SH 6 frezeli hidromotor" },
-   { "kod": "HR.SP-ID-6029", "ad": "4 konumlu çift yön kontrollü joystick" },
-   { "kod": "HR.HPP.DC24-2.2", "ad": "Powerpack elektrik motoru 2,2 kW 24 V DC" }
+   {
+    "kod": "HR.K.2Z050",
+    "ad": "2Z50 1/2 50 LT ikili monoblok kumanda (hassas geçiş)"
+   },
+   {
+    "kod": "HR.K.YEDEK.016",
+    "ad": "P80 kumanda sapı M10"
+   },
+   {
+    "kod": "HR.K.YEDEK.004",
+    "ad": "P40 kerovir valfi"
+   },
+   {
+    "kod": "HR.VALF.VBPDE 3/8 A",
+    "ad": "VBPDE 3/8 A ikiz kilit valfi"
+   },
+   {
+    "kod": "HR.MOTOR.MR.200",
+    "ad": "MR200 hidromotor"
+   },
+   {
+    "kod": "HR.MOTOR.MH.400.SH",
+    "ad": "MH 400 SH 6 frezeli hidromotor"
+   },
+   {
+    "kod": "HR.SP-ID-6029",
+    "ad": "4 konumlu çift yön kontrollü joystick"
+   },
+   {
+    "kod": "HR.HPP.DC24-2.2",
+    "ad": "Powerpack elektrik motoru 2,2 kW 24 V DC"
+   }
   ],
   "ozet": {
    "tr": "Mobil hidroliğin kumanda tarafı: 207 kalem monoblok kol kumanda, joystick, hidromotor, kumanda yedek parçası ve powerpack elemanı.",
@@ -203,8 +409,7 @@
    "ru": "Управляющая сторона мобильной гидравлики: 207 позиций — моноблочные рычажные распределители, джойстики, гидромоторы, запчасти управления и элементы маслостанций."
   },
   "giris": {
-   "tr": "Hydropack grubu ağırlıklı olarak mobil hidroliğe yöneliktir: traktör, kamyon üstü ekipman ve iş makinesi üzerindeki kol kumandalı devreler.\n\nMonoblok kumandalar birden fazla fonksiyonu tek gövdede toplar — 2Z50 gibi kodlarda baştaki sayı kol adedini, sondaki sayı lt/dk debisini verir. Kol sapı, kol kapağı ve yay kapağı gibi yedek parçalar ayrı satılır; kumandanın tamamını değiştirmeden aşınan parçayı yenilemek mümkündür.\n\nHidromotor tarafında MR, MH, MS ve MM serileri bulunur. Kerovir (carry-over) valfi, aynı pompadan beslenen ikinci bir devreye yağın aktarılmasını sağlar ve çok fonksiyonlu araçlarda sık kullanılır."
-   ,
+   "tr": "Hydropack grubu ağırlıklı olarak mobil hidroliğe yöneliktir: traktör, kamyon üstü ekipman ve iş makinesi üzerindeki kol kumandalı devreler.\n\nMonoblok kumandalar birden fazla fonksiyonu tek gövdede toplar — 2Z50 gibi kodlarda baştaki sayı kol adedini, sondaki sayı lt/dk debisini verir. Kol sapı, kol kapağı ve yay kapağı gibi yedek parçalar ayrı satılır; kumandanın tamamını değiştirmeden aşınan parçayı yenilemek mümkündür.\n\nHidromotor tarafında MR, MH, MS ve MM serileri bulunur. Kerovir (carry-over) valfi, aynı pompadan beslenen ikinci bir devreye yağın aktarılmasını sağlar ve çok fonksiyonlu araçlarda sık kullanılır.",
    "en": "The Hydropack group is aimed mainly at mobile hydraulics: the lever-controlled circuits on tractors, truck-mounted equipment and construction machinery.\n\nMonoblock control valves gather several functions into one body — in codes such as 2Z50, the leading figure gives the number of levers and the trailing figure the flow in l/min. Spares such as lever handles, lever caps and spring caps are sold separately, so a worn part can be renewed without replacing the whole control valve.\n\nOn the motor side, the MR, MH, MS and MM series are stocked. A carry-over valve passes oil on to a second circuit fed from the same pump and is common on multi-function vehicles.",
    "ru": "Группа Hydropack ориентирована прежде всего на мобильную гидравлику: контуры с рычажным управлением на тракторах, оборудовании на шасси грузовиков и спецтехнике.\n\nМоноблочные распределители объединяют несколько функций в одном корпусе — в кодах вида 2Z50 первая цифра даёт число рычагов, последняя — расход в л/мин. Запчасти вроде рукояток рычагов, крышек рычагов и пружинных крышек продаются отдельно, поэтому изношенную деталь можно заменить, не меняя распределитель целиком.\n\nСо стороны моторов в наличии серии MR, MH, MS и MM. Клапан carry-over передаёт масло во второй контур, питаемый от того же насоса, и часто применяется на многофункциональных машинах."
   }
@@ -213,14 +418,37 @@
   "slug": "hema",
   "ad": "Hema",
   "adet": 196,
-  "kategoriler": ["hidrolik-pompa", "hidromotor", "hidrolik-valf", "tamir-takimi"],
+  "kategoriler": [
+   "hidrolik-pompa",
+   "hidromotor",
+   "hidrolik-valf",
+   "tamir-takimi"
+  ],
   "ornekler": [
-   { "kod": "HEMA.HMR.100", "ad": "HMR.100.A.2 hidromotor · 100 cm³/dev" },
-   { "kod": "HEMA.HMR.200", "ad": "HMR.200.A.2 hidromotor · 200 cm³/dev" },
-   { "kod": "HEMA.1PN.295", "ad": "1PN.250.CGSY / 295 · 8 lt/dk akış öncelikli pompa" },
-   { "kod": "HEMA.1PN.158", "ad": "1PN.040.ADR / 158 · dişli pompa" },
-   { "kod": "HEMA.HV040HPCO12", "ad": "HV040 carry-over valfi 1/2" },
-   { "kod": "HEMA.MUH.012", "ad": "1PN.100.092 · 1PN serisi tamir takımı" }
+   {
+    "kod": "HEMA.HMR.100",
+    "ad": "HMR.100.A.2 hidromotor · 100 cm³/dev"
+   },
+   {
+    "kod": "HEMA.HMR.200",
+    "ad": "HMR.200.A.2 hidromotor · 200 cm³/dev"
+   },
+   {
+    "kod": "HEMA.1PN.295",
+    "ad": "1PN.250.CGSY / 295 · 8 lt/dk akış öncelikli pompa"
+   },
+   {
+    "kod": "HEMA.1PN.158",
+    "ad": "1PN.040.ADR / 158 · dişli pompa"
+   },
+   {
+    "kod": "HEMA.HV040HPCO12",
+    "ad": "HV040 carry-over valfi 1/2"
+   },
+   {
+    "kod": "HEMA.MUH.012",
+    "ad": "1PN.100.092 · 1PN serisi tamir takımı"
+   }
   ],
   "ozet": {
    "tr": "Dişli pompa, hidromotor ve valf: 196 kalem 1PN/1P1/2P1 serisi pompa, HMR serisi orbit motor ve seri tamir takımları.",
@@ -228,8 +456,7 @@
    "ru": "Шестерённые насосы, гидромоторы и клапаны: 196 позиций — насосы серий 1PN/1P1/2P1, орбитальные моторы серии HMR и серийные ремкомплекты."
   },
   "giris": {
-   "tr": "Hema grubu hidrolik gücün üretildiği ve harcandığı iki uçta durur: dişli pompalar basıncı üretir, orbit hidromotorlar onu dönme hareketine çevirir.\n\nPompalarda 1PN, 1P1, 2P1 ve 3P1 serileri bulunur; kod içindeki sayı deplasmanı ve debiyi verir. Akış öncelikli modeller, aynı pompadan iki devre beslendiğinde birine öncelik tanır — direksiyon gibi kritik fonksiyonlarda kullanılır.\n\nHMR serisi hidromotorlar 36 cm³/dev'den 395 cm³/dev'e kadar deplasmanlarda stoktadır. Her iki grup için de seri bazlı hazır tamir takımları vardır: pompanın etiketindeki seri koduyla eşleştirilir ve sızdırmazlık elemanlarının tamamını tek pakette verir."
-   ,
+   "tr": "Hema grubu hidrolik gücün üretildiği ve harcandığı iki uçta durur: dişli pompalar basıncı üretir, orbit hidromotorlar onu dönme hareketine çevirir.\n\nPompalarda 1PN, 1P1, 2P1 ve 3P1 serileri bulunur; kod içindeki sayı deplasmanı ve debiyi verir. Akış öncelikli modeller, aynı pompadan iki devre beslendiğinde birine öncelik tanır — direksiyon gibi kritik fonksiyonlarda kullanılır.\n\nHMR serisi hidromotorlar 36 cm³/dev'den 395 cm³/dev'e kadar deplasmanlarda stoktadır. Her iki grup için de seri bazlı hazır tamir takımları vardır: pompanın etiketindeki seri koduyla eşleştirilir ve sızdırmazlık elemanlarının tamamını tek pakette verir.",
    "en": "The Hema group sits at the two ends where hydraulic power is produced and consumed: gear pumps create the pressure, orbital hydraulic motors turn it back into rotation.\n\nThe pumps come in the 1PN, 1P1, 2P1 and 3P1 series; the number in the code gives displacement and flow. Priority-flow models give one circuit precedence when two are fed from the same pump — they are used for critical functions such as steering.\n\nHMR series hydraulic motors are stocked in displacements from 36 cm³/rev to 395 cm³/rev. Ready-made repair kits exist for both groups on a series basis: matched by the series code on the pump label, they supply all the sealing elements in one package.",
    "ru": "Группа Hema стоит на двух концах, где гидравлическая мощность создаётся и потребляется: шестерённые насосы создают давление, орбитальные гидромоторы превращают его обратно во вращение.\n\nНасосы представлены сериями 1PN, 1P1, 2P1 и 3P1; число в коде задаёт рабочий объём и подачу. Модели с приоритетом потока отдают предпочтение одному контуру, когда от одного насоса питаются два, — они применяются для критичных функций, например рулевого управления.\n\nГидромоторы серии HMR есть на складе с рабочим объёмом от 36 см³/об до 395 см³/об. Для обеих групп существуют готовые ремкомплекты по сериям: подбираются по коду серии на шильдике насоса и содержат все уплотнительные элементы в одной упаковке."
   }
@@ -238,14 +465,35 @@
   "slug": "esmaksan",
   "ad": "Esmaksan",
   "adet": 185,
-  "kategoriler": ["hidrolik-filtre", "hidrolik-pompa"],
+  "kategoriler": [
+   "hidrolik-filtre",
+   "hidrolik-pompa"
+  ],
   "ornekler": [
-   { "kod": "ESM.EF.045", "ad": "Emiş filtresi 45 LT/DK (L:160 D:61 A:1\")" },
-   { "kod": "ESM.EF.500", "ad": "Emiş filtresi 500 LT/DK (L:263 D:130 A:2\")" },
-   { "kod": "ESM.SGD127", "ad": "SGD127 · 127 mm sıcaklık ve seviye göstergesi" },
-   { "kod": "ESM.SGD076", "ad": "SGD 76 · 76 mm sıcaklık ve seviye göstergesi (mini)" },
-   { "kod": "ESM.DKBVK", "ad": "Büyük depo kapağı, 1 vidalı kromajlı" },
-   { "kod": "ESM.EDZA.430", "ad": "EDZA 430-M6 · 30 x 30 düz pompa adaptörü 3/8" }
+   {
+    "kod": "ESM.EF.045",
+    "ad": "Emiş filtresi 45 LT/DK (L:160 D:61 A:1\")"
+   },
+   {
+    "kod": "ESM.EF.500",
+    "ad": "Emiş filtresi 500 LT/DK (L:263 D:130 A:2\")"
+   },
+   {
+    "kod": "ESM.SGD127",
+    "ad": "SGD127 · 127 mm sıcaklık ve seviye göstergesi"
+   },
+   {
+    "kod": "ESM.SGD076",
+    "ad": "SGD 76 · 76 mm sıcaklık ve seviye göstergesi (mini)"
+   },
+   {
+    "kod": "ESM.DKBVK",
+    "ad": "Büyük depo kapağı, 1 vidalı kromajlı"
+   },
+   {
+    "kod": "ESM.EDZA.430",
+    "ad": "EDZA 430-M6 · 30 x 30 düz pompa adaptörü 3/8"
+   }
   ],
   "ozet": {
    "tr": "Hidrolik güç ünitesinin tank tarafı: 185 kalem emiş filtresi, sıcaklık-seviye göstergesi, depo kapağı, pompa adaptörü ve kaplin.",
@@ -253,8 +501,7 @@
    "ru": "Баковая сторона гидростанции: 185 позиций — всасывающие фильтры, указатели уровня и температуры, заливные крышки, переходники насосов и муфты."
   },
   "giris": {
-   "tr": "Esmaksan grubu, hidrolik güç ünitesinin pompa ve tank çevresini tamamlayan parçalardan oluşur. Bir ünite kurarken pompa ve motor kadar bu parçalar da gereklidir.\n\nEmiş filtreleri 25 lt/dk'dan 750 lt/dk'ya kadar debilerde stoktadır ve tank içine daldığı için boy, çap ve diş ölçüsüyle birlikte listelenir (L:160 D:61 A:1 gibi) — yer hesabı bu üç ölçüden yapılır.\n\nSıcaklık ve seviye göstergesi tankın yan yüzeyine takılır ve yağ seviyesiyle sıcaklığını tek bakışta gösterir; sıcaklığın 60 °C üzerine çıktığı görülüyorsa soğutucu gerekiyor demektir. Pompa adaptörü ve kaplin, elektrik motoruyla pompayı eksende tutarak birleştirir."
-   ,
+   "tr": "Esmaksan grubu, hidrolik güç ünitesinin pompa ve tank çevresini tamamlayan parçalardan oluşur. Bir ünite kurarken pompa ve motor kadar bu parçalar da gereklidir.\n\nEmiş filtreleri 25 lt/dk'dan 750 lt/dk'ya kadar debilerde stoktadır ve tank içine daldığı için boy, çap ve diş ölçüsüyle birlikte listelenir (L:160 D:61 A:1 gibi) — yer hesabı bu üç ölçüden yapılır.\n\nSıcaklık ve seviye göstergesi tankın yan yüzeyine takılır ve yağ seviyesiyle sıcaklığını tek bakışta gösterir; sıcaklığın 60 °C üzerine çıktığı görülüyorsa soğutucu gerekiyor demektir. Pompa adaptörü ve kaplin, elektrik motoruyla pompayı eksende tutarak birleştirir.",
    "en": "The Esmaksan group covers the parts that complete the pump and tank area of a hydraulic power unit. When building a unit, these are as necessary as the pump and the motor.\n\nSuction filters are stocked in ratings from 25 l/min to 750 l/min and, because they sit inside the tank, are listed with their length, diameter and thread (L:160 D:61 A:1, for example) — the space calculation is made from those three dimensions.\n\nA level and temperature gauge fits to the side of the tank and shows oil level and temperature at a glance; if the temperature is seen to rise above 60 °C, a cooler is needed. The pump adaptor and coupling join the electric motor to the pump while holding them in alignment.",
    "ru": "Группа Esmaksan охватывает детали, дополняющие насосно-баковую часть гидростанции. При сборке станции они нужны не меньше, чем сам насос и двигатель.\n\nВсасывающие фильтры есть на складе с пропускной способностью от 25 л/мин до 750 л/мин и, поскольку они погружаются в бак, указываются вместе с длиной, диаметром и резьбой (например, L:160 D:61 A:1) — расчёт места ведётся по этим трём размерам.\n\nУказатель уровня и температуры устанавливается на боковую стенку бака и показывает уровень масла и температуру одним взглядом; если температура поднимается выше 60 °C, нужен охладитель. Переходник насоса и муфта соединяют электродвигатель с насосом, удерживая их соосно."
   }
@@ -263,14 +510,35 @@
   "slug": "oxim",
   "ad": "Oxim",
   "adet": 92,
-  "kategoriler": ["hidrolik-valf", "solenoid-bobin"],
+  "kategoriler": [
+   "hidrolik-valf",
+   "solenoid-bobin"
+  ],
   "ornekler": [
-   { "kod": "OXİM.03.01", "ad": "4WE6D60/EG12N9K4Z5LS · NG06 4/2 tek bobin, kapalı merkez 12 V DC" },
-   { "kod": "OXİM.05.02", "ad": "4WE6E60/EG24N9K4Z5LS · NG06 4/3 kapalı merkez çift bobin 24 V DC" },
-   { "kod": "OXİM.07.02", "ad": "4WE6J60/EG24N9K4Z5LS · NG06 4/3 ABT çift bobin 24 V DC" },
-   { "kod": "OXİM.14.02", "ad": "4WE10G30/EG24N9K4Z5LS · NG10 4/3 AM çift bobin 24 V DC" },
-   { "kod": "OXİM.16.02", "ad": "NG06 bobin 24 V DC (C04C) 23,2 mm" },
-   { "kod": "OXİM.17.01", "ad": "NG10 bobin 24 V DC (C05C) 31,60 mm" }
+   {
+    "kod": "OXİM.03.01",
+    "ad": "4WE6D60/EG12N9K4Z5LS · NG06 4/2 tek bobin, kapalı merkez 12 V DC"
+   },
+   {
+    "kod": "OXİM.05.02",
+    "ad": "4WE6E60/EG24N9K4Z5LS · NG06 4/3 kapalı merkez çift bobin 24 V DC"
+   },
+   {
+    "kod": "OXİM.07.02",
+    "ad": "4WE6J60/EG24N9K4Z5LS · NG06 4/3 ABT çift bobin 24 V DC"
+   },
+   {
+    "kod": "OXİM.14.02",
+    "ad": "4WE10G30/EG24N9K4Z5LS · NG10 4/3 AM çift bobin 24 V DC"
+   },
+   {
+    "kod": "OXİM.16.02",
+    "ad": "NG06 bobin 24 V DC (C04C) 23,2 mm"
+   },
+   {
+    "kod": "OXİM.17.01",
+    "ad": "NG10 bobin 24 V DC (C05C) 31,60 mm"
+   }
   ],
   "ozet": {
    "tr": "Modüler hidrolik valfler: 92 kalem NG06 (Cetop 3) ve NG10 (Cetop 5) solenoid valf ve yedek bobinleri.",
@@ -278,8 +546,7 @@
    "ru": "Модульные гидрораспределители: 92 позиции — электромагнитные распределители NG06 (Cetop 3) и NG10 (Cetop 5) и запасные катушки к ним."
   },
   "giris": {
-   "tr": "Oxim grubu modüler (Cetop) hidrolik yön valflerinden oluşur. Bu valfler bir bloğun üzerine standart bağlantı yüzeyiyle oturur; NG06 ve NG10 boyutları uluslararası standarttır, bu yüzden başka markaların valfleriyle yer değiştirebilir.\n\n4WE6 ile başlayan kodlar NG06, 4WE10 ile başlayanlar NG10 boyutunu belirtir. Kodun içindeki harf makara tipini verir: D tek bobinli iki konumlu, E kapalı merkezli üç konumlu, J ve H farklı merkez konumlarıdır. Merkez konumu, valf enerjisizken silindirin ne yapacağını belirler — kapalı merkezde yük yerinde kalır, açık merkezde serbest bırakılır.\n\nBobinler ayrı satılır ve valfin en sık değişen parçasıdır: NG06 için 23,2 mm, NG10 için 31,6 mm sınıfındadır."
-   ,
+   "tr": "Oxim grubu modüler (Cetop) hidrolik yön valflerinden oluşur. Bu valfler bir bloğun üzerine standart bağlantı yüzeyiyle oturur; NG06 ve NG10 boyutları uluslararası standarttır, bu yüzden başka markaların valfleriyle yer değiştirebilir.\n\n4WE6 ile başlayan kodlar NG06, 4WE10 ile başlayanlar NG10 boyutunu belirtir. Kodun içindeki harf makara tipini verir: D tek bobinli iki konumlu, E kapalı merkezli üç konumlu, J ve H farklı merkez konumlarıdır. Merkez konumu, valf enerjisizken silindirin ne yapacağını belirler — kapalı merkezde yük yerinde kalır, açık merkezde serbest bırakılır.\n\nBobinler ayrı satılır ve valfin en sık değişen parçasıdır: NG06 için 23,2 mm, NG10 için 31,6 mm sınıfındadır.",
    "en": "The Oxim group consists of modular (Cetop) hydraulic directional valves. These valves mount on a manifold with a standard interface; the NG06 and NG10 sizes are international standards, so they interchange with valves from other makes.\n\nCodes beginning 4WE6 denote NG06, those beginning 4WE10 denote NG10. The letter within the code gives the spool type: D is a two-position single-solenoid, E a three-position closed centre, J and H are different centre configurations. The centre position determines what the cylinder does when the valve is de-energised — with a closed centre the load stays put, with an open centre it is released.\n\nCoils are sold separately and are the most frequently replaced part of the valve: the 23.2 mm class for NG06, the 31.6 mm class for NG10.",
    "ru": "Группа Oxim состоит из модульных (Cetop) гидрораспределителей. Эти распределители устанавливаются на блок со стандартной присоединительной плоскостью; типоразмеры NG06 и NG10 являются международными стандартами, поэтому взаимозаменяемы с распределителями других марок.\n\nКоды, начинающиеся с 4WE6, обозначают NG06, начинающиеся с 4WE10 — NG10. Буква внутри кода задаёт тип золотника: D — двухпозиционный с одной катушкой, E — трёхпозиционный с закрытым центром, J и H — иные исполнения центра. Положение центра определяет, что делает цилиндр при обесточенном распределителе: при закрытом центре груз остаётся на месте, при открытом — освобождается.\n\nКатушки продаются отдельно и являются самой часто заменяемой деталью: класс 23,2 мм для NG06 и 31,6 мм для NG10."
   }
@@ -288,14 +555,35 @@
   "slug": "duravis",
   "ad": "Duravis",
   "adet": 80,
-  "kategoriler": ["solenoid-bobin", "kuresel-vana"],
+  "kategoriler": [
+   "solenoid-bobin",
+   "kuresel-vana"
+  ],
   "ornekler": [
-   { "kod": "DURA.100.08.150", "ad": "NC genel maksat solenoid G1/2 – 15 mm" },
-   { "kod": "DURA.101.04.018", "ad": "NO genel maksat solenoid G1/4 – 1,8 mm" },
-   { "kod": "DURA.MUH.007", "ad": "1/4 viton buhar solenoidi N.K." },
-   { "kod": "DURA.BLV-N122BP015", "ad": "2/2 yollu pirinç küresel vana PN40 1/2" },
-   { "kod": "DURA.121.16.029", "ad": "Kelebek vana DN50" },
-   { "kod": "DURA.BOB.02", "ad": "Standart bobin 24 V AC (14,85 mm, IP65 18 VA)" }
+   {
+    "kod": "DURA.100.08.150",
+    "ad": "NC genel maksat solenoid G1/2 – 15 mm"
+   },
+   {
+    "kod": "DURA.101.04.018",
+    "ad": "NO genel maksat solenoid G1/4 – 1,8 mm"
+   },
+   {
+    "kod": "DURA.MUH.007",
+    "ad": "1/4 viton buhar solenoidi N.K."
+   },
+   {
+    "kod": "DURA.BLV-N122BP015",
+    "ad": "2/2 yollu pirinç küresel vana PN40 1/2"
+   },
+   {
+    "kod": "DURA.121.16.029",
+    "ad": "Kelebek vana DN50"
+   },
+   {
+    "kod": "DURA.BOB.02",
+    "ad": "Standart bobin 24 V AC (14,85 mm, IP65 18 VA)"
+   }
   ],
   "ozet": {
    "tr": "Genel maksat solenoid valfler, küresel ve kelebek vanalar: 80 kalem N.K./N.A. solenoid, viton buhar solenoidi ve yedek bobin.",
@@ -303,8 +591,7 @@
    "ru": "Электромагнитные клапаны общего назначения, шаровые и дисковые затворы: 80 позиций — соленоиды НЗ/НО, паровые соленоиды из витона и запасные катушки."
   },
   "giris": {
-   "tr": "Duravis grubu, akışkanı elektrikle veya elle kesen elemanlardan oluşur: genel maksat solenoid valfler, pirinç küresel vanalar ve kelebek vanalar.\n\nSolenoid valfler N.K. (normalde kapalı) ve N.A. (normalde açık) olarak iki konumda bulunur. Kodun sonundaki milimetre değeri orifis çapıdır ve valfin geçireceği debiyi belirler — diş ölçüsü aynı olsa bile orifis farklı olabilir, bu yüzden ikisi birlikte verilmelidir.\n\nBuhar hatları için viton (FKM) contalı özel modeller bulunur; standart NBR contalı valf buhar sıcaklığında kısa sürede sertleşip kaçırır. Bobinler ayrı satılır ve 12/24 V DC ile 110/230 V AC seçenekleri stoktadır."
-   ,
+   "tr": "Duravis grubu, akışkanı elektrikle veya elle kesen elemanlardan oluşur: genel maksat solenoid valfler, pirinç küresel vanalar ve kelebek vanalar.\n\nSolenoid valfler N.K. (normalde kapalı) ve N.A. (normalde açık) olarak iki konumda bulunur. Kodun sonundaki milimetre değeri orifis çapıdır ve valfin geçireceği debiyi belirler — diş ölçüsü aynı olsa bile orifis farklı olabilir, bu yüzden ikisi birlikte verilmelidir.\n\nBuhar hatları için viton (FKM) contalı özel modeller bulunur; standart NBR contalı valf buhar sıcaklığında kısa sürede sertleşip kaçırır. Bobinler ayrı satılır ve 12/24 V DC ile 110/230 V AC seçenekleri stoktadır.",
    "en": "The Duravis group consists of components that shut off a fluid electrically or by hand: general-purpose solenoid valves, brass ball valves and butterfly valves.\n\nSolenoid valves come in two rest positions, NC (normally closed) and NO (normally open). The millimetre figure at the end of the code is the orifice diameter and determines the flow the valve will pass — the orifice can differ even when the port size is the same, so both must be given.\n\nSpecial models with Viton (FKM) seals are available for steam lines; a valve with standard NBR seals hardens and starts leaking within a short time at steam temperature. Coils are sold separately, in 12/24 V DC and 110/230 V AC.",
    "ru": "Группа Duravis состоит из элементов, перекрывающих поток электрически или вручную: электромагнитные клапаны общего назначения, латунные шаровые краны и дисковые затворы.\n\nЭлектромагнитные клапаны выпускаются в двух исходных положениях: НЗ (нормально закрытый) и НО (нормально открытый). Число в миллиметрах в конце кода — это диаметр отверстия, определяющий пропускаемый расход; отверстие может отличаться даже при одинаковом присоединительном размере, поэтому указывать нужно оба параметра.\n\nДля паровых линий есть специальные модели с уплотнениями из витона (FKM); клапан со стандартными уплотнениями NBR при температуре пара быстро твердеет и начинает пропускать. Катушки продаются отдельно, в наличии 12/24 В DC и 110/230 В AC."
   }
@@ -313,14 +600,34 @@
   "slug": "akon",
   "ad": "Akon",
   "adet": 57,
-  "kategoriler": ["hidrolik-valf"],
+  "kategoriler": [
+   "hidrolik-valf"
+  ],
   "ornekler": [
-   { "kod": "AKON.AMV502", "ad": "AMV502 3/8-1/2 · 50 lt/dk 2 kollu mono kumanda" },
-   { "kod": "AKON.AMV503", "ad": "AMV503 3/8-1/2 · 50 lt/dk 3 kollu mono kumanda" },
-   { "kod": "AKON.AMV503.SPC01", "ad": "AMV503 üçlü kumanda, iki göz elektrikli · 50 lt/dk" },
-   { "kod": "AKON.MUH.35", "ad": "AMV50 carry-over valfi" },
-   { "kod": "AKON.MUH.43", "ad": "AMV70 K-kol kapağı komple" },
-   { "kod": "AKON.MUH.29", "ad": "Kumanda sapı M10" }
+   {
+    "kod": "AKON.AMV502",
+    "ad": "AMV502 3/8-1/2 · 50 lt/dk 2 kollu mono kumanda"
+   },
+   {
+    "kod": "AKON.AMV503",
+    "ad": "AMV503 3/8-1/2 · 50 lt/dk 3 kollu mono kumanda"
+   },
+   {
+    "kod": "AKON.AMV503.SPC01",
+    "ad": "AMV503 üçlü kumanda, iki göz elektrikli · 50 lt/dk"
+   },
+   {
+    "kod": "AKON.MUH.35",
+    "ad": "AMV50 carry-over valfi"
+   },
+   {
+    "kod": "AKON.MUH.43",
+    "ad": "AMV70 K-kol kapağı komple"
+   },
+   {
+    "kod": "AKON.MUH.29",
+    "ad": "Kumanda sapı M10"
+   }
   ],
   "ozet": {
    "tr": "Monoblok kol kumandalar ve yedek parçaları: 57 kalem AMV50/AMV70 serisi çok kollu kumanda, carry-over valfi, kol kapağı ve sap.",
@@ -328,8 +635,7 @@
    "ru": "Моноблочные рычажные распределители и запчасти к ним: 57 позиций — многорычажные распределители серий AMV50/AMV70, клапаны carry-over, крышки рычагов и рукоятки."
   },
   "giris": {
-   "tr": "Akon grubu, mobil hidrolikte kolla kumanda edilen monoblok yön valflerinden oluşur. AMV50 ve AMV70 serileri iki, üç ve daha çok kollu gövdelerde bulunur; her kol bağımsız bir fonksiyonu (kaldırma, damper, ataşman) sürer.\n\nKod içindeki son rakam kol sayısını, ayrı verilen değer lt/dk debiyi belirtir: AMV503, 50 lt/dk debili üç kollu bir kumandadır. Bazı modellerde bir veya iki göz elektrikli kumandalıdır — kabin içinden düğmeyle sürülmesi gereken fonksiyonlar için kullanılır.\n\nKol sapı, kol kapağı ve yay kapağı gibi aşınan parçalar ayrı satılır; kumandanın tamamını değiştirmeye gerek kalmadan yenilenebilir. Carry-over valfi, yağı aynı pompadan beslenen ikinci bir devreye aktarır."
-   ,
+   "tr": "Akon grubu, mobil hidrolikte kolla kumanda edilen monoblok yön valflerinden oluşur. AMV50 ve AMV70 serileri iki, üç ve daha çok kollu gövdelerde bulunur; her kol bağımsız bir fonksiyonu (kaldırma, damper, ataşman) sürer.\n\nKod içindeki son rakam kol sayısını, ayrı verilen değer lt/dk debiyi belirtir: AMV503, 50 lt/dk debili üç kollu bir kumandadır. Bazı modellerde bir veya iki göz elektrikli kumandalıdır — kabin içinden düğmeyle sürülmesi gereken fonksiyonlar için kullanılır.\n\nKol sapı, kol kapağı ve yay kapağı gibi aşınan parçalar ayrı satılır; kumandanın tamamını değiştirmeye gerek kalmadan yenilenebilir. Carry-over valfi, yağı aynı pompadan beslenen ikinci bir devreye aktarır.",
    "en": "The Akon group consists of monoblock directional valves operated by lever in mobile hydraulics. The AMV50 and AMV70 series come in two-, three- and multi-lever bodies; each lever drives an independent function (lifting, tipping, attachment).\n\nThe last figure in the code gives the number of levers, and the separately quoted value the flow in l/min: an AMV503 is a three-lever control rated 50 l/min. On some models one or two sections are electrically operated — used for functions that must be driven by a switch from inside the cab.\n\nWearing parts such as lever handles, lever caps and spring caps are sold separately, so they can be renewed without replacing the whole control valve. A carry-over valve passes oil on to a second circuit fed from the same pump.",
    "ru": "Группа Akon состоит из моноблочных распределителей с рычажным управлением для мобильной гидравлики. Серии AMV50 и AMV70 выпускаются в корпусах на два, три и более рычагов; каждый рычаг управляет независимой функцией (подъём, опрокидывание, навесное оборудование).\n\nПоследняя цифра в коде задаёт число рычагов, а отдельно указываемое значение — расход в л/мин: AMV503 — это трёхрычажный распределитель на 50 л/мин. У некоторых моделей одна или две секции электрические — они применяются для функций, которыми нужно управлять кнопкой из кабины.\n\nИзнашиваемые детали — рукоятки, крышки рычагов, пружинные крышки — продаются отдельно, поэтому их можно заменить, не меняя распределитель целиком. Клапан carry-over передаёт масло во второй контур, питаемый от того же насоса."
   }
@@ -338,14 +644,35 @@
   "slug": "semakmatik",
   "ad": "Semakmatik",
   "adet": 29,
-  "kategoriler": ["pnomatik-valf", "sartlandirici"],
+  "kategoriler": [
+   "pnomatik-valf",
+   "sartlandirici"
+  ],
   "ornekler": [
-   { "kod": "SM.SME3214KK", "ad": "3/2 – 1/4 kol kumanda valfi" },
-   { "kod": "SM.SME5214KK", "ad": "5/2 – 1/4 kol kumanda valfi" },
-   { "kod": "SM.SME5214İÇB24M01", "ad": "5/2 – 1/4 çift bobin valf + 24 V DC bobin" },
-   { "kod": "SM.SMŞ2Lİ12M1850", "ad": "1/2 ikili şartlandırıcı" },
-   { "kod": "SM.SMŞFR012M1850", "ad": "1/2 filtreli regülatör" },
-   { "kod": "SM.SMŞREG12M1800", "ad": "1/2 regülatör" }
+   {
+    "kod": "SM.SME3214KK",
+    "ad": "3/2 – 1/4 kol kumanda valfi"
+   },
+   {
+    "kod": "SM.SME5214KK",
+    "ad": "5/2 – 1/4 kol kumanda valfi"
+   },
+   {
+    "kod": "SM.SME5214İÇB24M01",
+    "ad": "5/2 – 1/4 çift bobin valf + 24 V DC bobin"
+   },
+   {
+    "kod": "SM.SMŞ2Lİ12M1850",
+    "ad": "1/2 ikili şartlandırıcı"
+   },
+   {
+    "kod": "SM.SMŞFR012M1850",
+    "ad": "1/2 filtreli regülatör"
+   },
+   {
+    "kod": "SM.SMŞREG12M1800",
+    "ad": "1/2 regülatör"
+   }
   ],
   "ozet": {
    "tr": "Pnömatik yön valfleri ve hava hazırlama: 29 kalem 3/2 ve 5/2 kol kumandalı ile bobinli valf, şartlandırıcı ve regülatör.",
@@ -353,8 +680,7 @@
    "ru": "Пневматические распределители и подготовка воздуха: 29 позиций — распределители 3/2 и 5/2 с рычажным и электромагнитным управлением, блоки подготовки и регуляторы."
   },
   "giris": {
-   "tr": "Semakmatik grubu pnömatik devrenin iki temel parçasını kapsar: havayı yönlendiren yön valfleri ve havayı hazırlayan şartlandırıcı elemanları.\n\nValf kodundaki iki sayı yol ve konum sayısını verir. 3/2 üç yollu iki konumlu demektir ve tek etkili silindiri sürer; 5/2 beş yollu iki konumlu demektir ve çift etkili silindir için kullanılır. Kumanda tipi ayrıca belirtilir: kol kumandalı modeller elle, bobinli modeller elektrikle sürülür.\n\nŞartlandırıcı tarafında ikili (filtre + regülatör) setler ve tekil regülatörler bulunur; metal ve plastik gövde seçenekleri stoktadır."
-   ,
+   "tr": "Semakmatik grubu pnömatik devrenin iki temel parçasını kapsar: havayı yönlendiren yön valfleri ve havayı hazırlayan şartlandırıcı elemanları.\n\nValf kodundaki iki sayı yol ve konum sayısını verir. 3/2 üç yollu iki konumlu demektir ve tek etkili silindiri sürer; 5/2 beş yollu iki konumlu demektir ve çift etkili silindir için kullanılır. Kumanda tipi ayrıca belirtilir: kol kumandalı modeller elle, bobinli modeller elektrikle sürülür.\n\nŞartlandırıcı tarafında ikili (filtre + regülatör) setler ve tekil regülatörler bulunur; metal ve plastik gövde seçenekleri stoktadır.",
    "en": "The Semakmatik group covers two fundamental parts of a pneumatic circuit: the directional valves that route the air, and the FRL components that prepare it.\n\nThe two numbers in a valve code give the number of ports and positions. 3/2 means three ports and two positions and drives a single-acting cylinder; 5/2 means five ports and two positions and is used for a double-acting cylinder. The actuation type is stated separately: lever models are operated by hand, solenoid models electrically.\n\nOn the air preparation side there are two-stage (filter + regulator) sets and standalone regulators, in both metal and plastic bodies.",
    "ru": "Группа Semakmatik охватывает две основные части пневматического контура: распределители, направляющие воздух, и элементы подготовки воздуха.\n\nДва числа в коде распределителя задают количество линий и позиций. 3/2 означает три линии и две позиции и управляет цилиндром одностороннего действия; 5/2 — пять линий и две позиции, применяется для цилиндра двустороннего действия. Тип управления указывается отдельно: рычажные модели приводятся вручную, электромагнитные — электрически.\n\nСо стороны подготовки воздуха имеются двухступенчатые блоки (фильтр + регулятор) и отдельные регуляторы в металлическом и пластиковом корпусе."
   }
@@ -363,13 +689,30 @@
   "slug": "gamak",
   "ad": "Gamak",
   "adet": 28,
-  "kategoriler": ["elektrik-motoru"],
+  "kategoriler": [
+   "elektrik-motoru"
+  ],
   "ornekler": [
-   { "kod": "GM.380.00,75", "ad": "0,75 kW 1500 d/d 380 V AC · AGM3EL 80 4b (B35)" },
-   { "kod": "GM.380.02,20", "ad": "2,2 kW 1500 d/d 380 V AC · AGM3EL 100 L 4a (B35)" },
-   { "kod": "GM.380.07,50", "ad": "7,5 kW 1500 d/d 380 V AC elektrik motoru" },
-   { "kod": "GM.380.22,00", "ad": "22 kW 1500 d/d 380 V AC · AGM3EL 180 L 4b (B35)" },
-   { "kod": "GM.220.01.50", "ad": "1,5 kW 1500 d/d 220 V AC · MK21D 90 L 4D (B35)" }
+   {
+    "kod": "GM.380.00,75",
+    "ad": "0,75 kW 1500 d/d 380 V AC · AGM3EL 80 4b (B35)"
+   },
+   {
+    "kod": "GM.380.02,20",
+    "ad": "2,2 kW 1500 d/d 380 V AC · AGM3EL 100 L 4a (B35)"
+   },
+   {
+    "kod": "GM.380.07,50",
+    "ad": "7,5 kW 1500 d/d 380 V AC elektrik motoru"
+   },
+   {
+    "kod": "GM.380.22,00",
+    "ad": "22 kW 1500 d/d 380 V AC · AGM3EL 180 L 4b (B35)"
+   },
+   {
+    "kod": "GM.220.01.50",
+    "ad": "1,5 kW 1500 d/d 220 V AC · MK21D 90 L 4D (B35)"
+   }
   ],
   "ozet": {
    "tr": "Hidrolik güç ünitesi motorları: 28 kalem 0,37–22 kW, 1500 d/d, 220 V monofaze ve 380 V trifaze, B35 ayaklı-flanşlı.",
@@ -377,8 +720,7 @@
    "ru": "Двигатели для гидростанций: 28 позиций — 0,37–22 кВт, 1500 об/мин, 220 В однофазные и 380 В трёхфазные, лапово-фланцевое исполнение B35."
   },
   "giris": {
-   "tr": "Gamak grubu hidrolik güç ünitelerini süren elektrik motorlarından oluşur. Stoğun tamamı 1500 d/d (4 kutuplu) ve B35 gövdelidir — yani hem ayaklı hem flanşlı, pompa adaptörüne doğrudan cıvatalanabilir.\n\n380 V trifaze modeller 0,37 kW'tan 22 kW'a kadar; 220 V monofaze modeller 0,37 kW'tan 3 kW'a kadar bulunur. Trifaze şebekesi olan tesiste 380 V tercih edilir: aynı güçte daha küçük gövde, daha yüksek kalkış torku ve daha iyi verim verir.\n\nMotor gücü pompadan hesaplanır: güç (kW) ≈ basınç (bar) × debi (lt/dk) ÷ 600. Çıkan değerin bir üst standart kademesi seçilir."
-   ,
+   "tr": "Gamak grubu hidrolik güç ünitelerini süren elektrik motorlarından oluşur. Stoğun tamamı 1500 d/d (4 kutuplu) ve B35 gövdelidir — yani hem ayaklı hem flanşlı, pompa adaptörüne doğrudan cıvatalanabilir.\n\n380 V trifaze modeller 0,37 kW'tan 22 kW'a kadar; 220 V monofaze modeller 0,37 kW'tan 3 kW'a kadar bulunur. Trifaze şebekesi olan tesiste 380 V tercih edilir: aynı güçte daha küçük gövde, daha yüksek kalkış torku ve daha iyi verim verir.\n\nMotor gücü pompadan hesaplanır: güç (kW) ≈ basınç (bar) × debi (lt/dk) ÷ 600. Çıkan değerin bir üst standart kademesi seçilir.",
    "en": "The Gamak group consists of the electric motors that drive hydraulic power units. All of the stock is 1500 rpm (4-pole) with a B35 frame — that is, both footed and flanged, so it bolts directly to the pump adaptor.\n\n380 V three-phase models run from 0.37 kW to 22 kW; 220 V single-phase models from 0.37 kW to 3 kW. Where a three-phase supply is available, 380 V is preferred: at the same power it gives a smaller frame, higher starting torque and better efficiency.\n\nMotor power is calculated from the pump: power (kW) ≈ pressure (bar) × flow (l/min) ÷ 600. The next standard size above the result is chosen.",
    "ru": "Группа Gamak состоит из электродвигателей, приводящих гидростанции. Весь склад — это 1500 об/мин (4 полюса) в исполнении B35, то есть и на лапах, и с фланцем, что позволяет крепить двигатель прямо к переходнику насоса.\n\nТрёхфазные модели 380 В — от 0,37 кВт до 22 кВт; однофазные 220 В — от 0,37 кВт до 3 кВт. При наличии трёхфазной сети предпочтительны 380 В: при равной мощности это меньший габарит, больший пусковой момент и лучший КПД.\n\nМощность двигателя считается от насоса: мощность (кВт) ≈ давление (бар) × расход (л/мин) ÷ 600. Берётся ближайший больший стандартный типоразмер."
   }
@@ -387,14 +729,34 @@
   "slug": "gates",
   "ad": "Gates",
   "adet": 28,
-  "kategoriler": ["hidrolik-hortum"],
+  "kategoriler": [
+   "hidrolik-hortum"
+  ],
   "ornekler": [
-   { "kod": "GATES.4657-9923", "ad": "8PRO 2SC 1/2 hidrolik hortum" },
-   { "kod": "GATES.4657-9922", "ad": "6PRO2TX 3/8 hidrolik hortum" },
-   { "kod": "GATES.MXT.06", "ad": "6MXT 3/8 2SC hidrolik hortum" },
-   { "kod": "GATES.MXT.10", "ad": "10MXT 5/8 2SC hidrolik hortum" },
-   { "kod": "GATES.R6.8GTH", "ad": "R6 1/2 hidrolik hortum" },
-   { "kod": "GATES.4XH12", "ad": "4XH R9 3/4 4SH hidrolik hortum" }
+   {
+    "kod": "GATES.4657-9923",
+    "ad": "8PRO 2SC 1/2 hidrolik hortum"
+   },
+   {
+    "kod": "GATES.4657-9922",
+    "ad": "6PRO2TX 3/8 hidrolik hortum"
+   },
+   {
+    "kod": "GATES.MXT.06",
+    "ad": "6MXT 3/8 2SC hidrolik hortum"
+   },
+   {
+    "kod": "GATES.MXT.10",
+    "ad": "10MXT 5/8 2SC hidrolik hortum"
+   },
+   {
+    "kod": "GATES.R6.8GTH",
+    "ad": "R6 1/2 hidrolik hortum"
+   },
+   {
+    "kod": "GATES.4XH12",
+    "ad": "4XH R9 3/4 4SH hidrolik hortum"
+   }
   ],
   "ozet": {
    "tr": "Yüksek basınç hidrolik hortum: 28 kalem MXT ve PRO serisi 2SC çift örgülü, R6 tek örgülü ve 4SH dört sarımlı hortum.",
@@ -402,8 +764,7 @@
    "ru": "Рукава высокого давления: 28 позиций — двухоплёточные 2SC серий MXT и PRO, однооплёточные R6 и четырёхнавивочные 4SH."
   },
   "giris": {
-   "tr": "Gates grubu hidrolik hortumun yüksek basınç ucunu kapsar. Stoktaki hortumlar takviye yapısına göre üç sınıfa ayrılır ve seçim doğrudan çalışma basıncına göre yapılır.\n\n2SC çift örgülü hortumlar (MXT ve PRO serileri) genel hidrolik uygulamaların çoğunu karşılar ve kompakt dış çaplarıyla dar yerlerde kolay kıvrılır. R6 tek örgülüdür ve dönüş hattı gibi alçak basınçlı hatlarda kullanılır. 4SH dört sarımlı hortumlar en yüksek basınç sınıfıdır; iş makinesi ve pres hatlarında tercih edilir.\n\nHortum sipariş ederken iç çap (inç), takviye sınıfı ve boy birlikte verilmelidir. Presleme kendi tesisimizde yapılır; hortumun sınıfıyla soketin sınıfı eşleşmezse presleme tutmaz."
-   ,
+   "tr": "Gates grubu hidrolik hortumun yüksek basınç ucunu kapsar. Stoktaki hortumlar takviye yapısına göre üç sınıfa ayrılır ve seçim doğrudan çalışma basıncına göre yapılır.\n\n2SC çift örgülü hortumlar (MXT ve PRO serileri) genel hidrolik uygulamaların çoğunu karşılar ve kompakt dış çaplarıyla dar yerlerde kolay kıvrılır. R6 tek örgülüdür ve dönüş hattı gibi alçak basınçlı hatlarda kullanılır. 4SH dört sarımlı hortumlar en yüksek basınç sınıfıdır; iş makinesi ve pres hatlarında tercih edilir.\n\nHortum sipariş ederken iç çap (inç), takviye sınıfı ve boy birlikte verilmelidir. Presleme kendi tesisimizde yapılır; hortumun sınıfıyla soketin sınıfı eşleşmezse presleme tutmaz.",
    "en": "The Gates group covers the high-pressure end of hydraulic hose. The hoses in stock fall into three classes by reinforcement, and selection follows directly from working pressure.\n\n2SC double-braid hoses (the MXT and PRO series) cover most general hydraulic applications and bend easily in tight spaces thanks to their compact outer diameter. R6 is single-braid and is used on low-pressure lines such as return. 4SH four-spiral hoses are the highest pressure class and are preferred on construction machinery and press lines.\n\nWhen ordering hose, give the bore (in inches), the reinforcement class and the length together. Crimping is done on our own premises; if the hose class and the socket class do not match, the crimp will not hold.",
    "ru": "Группа Gates охватывает верхний диапазон давления гидравлических рукавов. Рукава на складе делятся на три класса по типу армирования, и выбор напрямую следует из рабочего давления.\n\nДвухоплёточные рукава 2SC (серии MXT и PRO) закрывают большинство общих гидравлических применений и благодаря компактному наружному диаметру легко гнутся в стеснённых местах. R6 — однооплёточный, применяется на линиях низкого давления, например на сливе. Четырёхнавивочные рукава 4SH относятся к высшему классу давления и предпочтительны на спецтехнике и прессовых линиях.\n\nПри заказе рукава указывайте внутренний диаметр (в дюймах), класс армирования и длину вместе. Обжим выполняется на нашем участке; если класс рукава и класс муфты не совпадают, обжим не будет держать."
   }
@@ -412,15 +773,41 @@
   "slug": "fms",
   "ad": "FMS",
   "adet": 25,
-  "kategoriler": ["hidrolik-filtre", "pnomatik-valf", "solenoid-bobin", "pnomatik-silindir"],
+  "kategoriler": [
+   "hidrolik-filtre",
+   "pnomatik-valf",
+   "solenoid-bobin",
+   "pnomatik-silindir"
+  ],
   "ornekler": [
-   { "kod": "FMS.11K25R1", "ad": "11-K25 R1\" dönüş filtresi 100 LT" },
-   { "kod": "FMS.17K25R114", "ad": "17-K25 R1.1/4\" dönüş filtresi 215 LT" },
-   { "kod": "FMS.11K25", "ad": "11-K25 filtre elemanı" },
-   { "kod": "FMS.MUH.09", "ad": "1/4 – 3/2 makara yay valf" },
-   { "kod": "FMS.2600", "ad": "M16-1,5 dorse fren kesici valf" },
-   { "kod": "FMS.BV.0324", "ad": "1/4 24 V DC üçlü damper bobini" },
-   { "kod": "FMS.CETOP.100.050", "ad": "Cetop pnömatik silindir 100 x 050" }
+   {
+    "kod": "FMS.11K25R1",
+    "ad": "11-K25 R1\" dönüş filtresi 100 LT"
+   },
+   {
+    "kod": "FMS.17K25R114",
+    "ad": "17-K25 R1.1/4\" dönüş filtresi 215 LT"
+   },
+   {
+    "kod": "FMS.11K25",
+    "ad": "11-K25 filtre elemanı"
+   },
+   {
+    "kod": "FMS.MUH.09",
+    "ad": "1/4 – 3/2 makara yay valf"
+   },
+   {
+    "kod": "FMS.2600",
+    "ad": "M16-1,5 dorse fren kesici valf"
+   },
+   {
+    "kod": "FMS.BV.0324",
+    "ad": "1/4 24 V DC üçlü damper bobini"
+   },
+   {
+    "kod": "FMS.CETOP.100.050",
+    "ad": "Cetop pnömatik silindir 100 x 050"
+   }
   ],
   "ozet": {
    "tr": "Dönüş filtreleri ve devre elemanları: 25 kalem 11-K25/17-K25 serisi filtre ve eleman, damper bobini, fren kesici ve makara valf.",
@@ -428,8 +815,7 @@
    "ru": "Сливные фильтры и элементы контура: 25 позиций — фильтры и элементы серий 11-K25/17-K25, катушки для самосвалов, отсечные тормозные и роликовые клапаны."
   },
   "giris": {
-   "tr": "FMS grubunun ağırlığı hidrolik dönüş filtreleridir. 11-K25 ve 17-K25 serileri, diş ölçüsü ve debi kapasitesiyle listelenir: 11-K25 R1 kodu 1\" dişli ve 100 lt/dk kapasiteli bir dönüş filtresidir. Filtre elemanları ayrı satılır; periyodik bakımda değişen genellikle eleman olur, gövde yerinde kalır.\n\nGrubun ikinci yarısı damper ve dorse hidroliğine yöneliktir: damper bobinleri, fren kesici valfler ve makara yay valfleri. Bunlar kamyon üstü ekipmanda ve römork hidroliğinde kullanılır.\n\nDönüş filtresi seçerken silindirin geri dönüşünde oluşan ani debi artışı hesaba katılmalı, filtre bir kademe büyük seçilmelidir."
-   ,
+   "tr": "FMS grubunun ağırlığı hidrolik dönüş filtreleridir. 11-K25 ve 17-K25 serileri, diş ölçüsü ve debi kapasitesiyle listelenir: 11-K25 R1 kodu 1\" dişli ve 100 lt/dk kapasiteli bir dönüş filtresidir. Filtre elemanları ayrı satılır; periyodik bakımda değişen genellikle eleman olur, gövde yerinde kalır.\n\nGrubun ikinci yarısı damper ve dorse hidroliğine yöneliktir: damper bobinleri, fren kesici valfler ve makara yay valfleri. Bunlar kamyon üstü ekipmanda ve römork hidroliğinde kullanılır.\n\nDönüş filtresi seçerken silindirin geri dönüşünde oluşan ani debi artışı hesaba katılmalı, filtre bir kademe büyük seçilmelidir.",
    "en": "The bulk of the FMS group is hydraulic return filters. The 11-K25 and 17-K25 series are listed by port size and flow capacity: the code 11-K25 R1 is a return filter with a 1\" port rated 100 l/min. Filter elements are sold separately; routine maintenance normally changes the element while the housing stays in place.\n\nThe other half of the group is aimed at tipper and trailer hydraulics: tipper coils, brake shut-off valves and roller valves. These are used on truck-mounted equipment and trailer hydraulics.\n\nWhen selecting a return filter, allow for the surge of flow produced as a cylinder retracts and choose one size up.",
    "ru": "Основу группы FMS составляют гидравлические сливные фильтры. Серии 11-K25 и 17-K25 указываются по присоединительному размеру и пропускной способности: код 11-K25 R1 — это сливной фильтр с присоединением 1\" на 100 л/мин. Фильтроэлементы продаются отдельно; при плановом обслуживании обычно меняется элемент, а корпус остаётся на месте.\n\nВторая половина группы ориентирована на гидравлику самосвалов и прицепов: катушки для самосвалов, отсечные тормозные клапаны и роликовые клапаны. Они применяются на оборудовании, монтируемом на шасси грузовиков, и в гидравлике прицепов.\n\nПри выборе сливного фильтра нужно учесть всплеск расхода при втягивании цилиндра и взять фильтр на размер больше."
   }
