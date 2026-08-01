@@ -3,10 +3,11 @@
  *
  *   node scripts/build-denetle.mjs
  *
- * Üç şeyi arar; üçü de sessizce bozulabilen, elle fark edilmeyen şeylerdir:
+ * Dört şeyi arar; dördü de sessizce bozulabilen, elle fark edilmeyen şeylerdir:
  *   1. Kırık iç link   — 15.000'in üzerinde href var, elle bakılamaz
  *   2. Tedarikçi adı sızıntısı — yalnız ürünün üzerindeki marka yayımlanır
  *   3. Yinelenen <title> — aynı başlık iki sayfada varsa biri diğerini yer
+ *   4. İç stok kodu sızıntısı — yalnız ÜRETİCİNİN kodu yayımlanır, bizimki asla
  *
  * ⚠ RSC YÜKÜ AYIKLANIR (önemli): Next.js sayfanın sonuna `self.__next_f.push`
  * çağrılarıyla akış yükünü gömer ve uzun dizeleri RASTGELE yerlerden böler.
@@ -16,6 +17,11 @@
  * Bölünme build'den build'e yer değiştirdiği için alarm da kararsızdır.
  * Yalan söyleyen denetçi görmezden gelinir; o yüzden yükü ayıklıyoruz ve
  * yalnız KULLANICIYA GÖRÜNEN HTML'de arıyoruz.
+ *
+ * TEK İSTİSNA 4. denetim: iç stok kodu HAM html'de aranır. Orada tehlike ters
+ * yönde — kod sayfada görünmediği hâlde RSC yükünde durabiliyor (React `key`
+ * bunu yapıyordu). Kodlar kısa ve tirelidir, chunk sınırında bölünse bile
+ * yanlış alarm değil EKSİK alarm üretir; yani ham arama burada güvenli taraftır.
  */
 import { readdirSync, readFileSync, statSync } from 'node:fs'
 import { join, sep } from 'node:path'
@@ -76,7 +82,26 @@ for (const ad of readdirSync('public', { recursive: true })) {
 const kirik = new Map()
 const basliklar = new Map()
 const sizinti = []
+const icKod = []
 let toplamLink = 0
+
+/**
+ * İÇ STOK KODU SIZINTISI.
+ *
+ * Sayfalar üreticinin katalog kodunu yayımlar (HD106), bizim stok kodumuzu
+ * (HF.H.HD106) ASLA. Kodlarımız sık değişiyor ve dışarıda karşılığı yok; bir
+ * kez sızarsa arama motoru ölü bir değeri indeksliyor.
+ *
+ * Sessizce geri gelebilen bir hatadır: sütunu kaldırmak yetmez, React `key`
+ * olarak verilen kod da RSC akış yüküne ["$","tr","HF.H.HD106",…] diye yazılır
+ * ve sayfada görünmediği hâlde kaynakta durur. O yüzden burada GÖRÜNEN değil
+ * HAM html taranır — tam tersi mantık, tedarikçi adı denetiminde geçerli olanın.
+ */
+const icKodlar = new Set()
+for (const kat of Object.values(JSON.parse(readFileSync('data/urunler.json', 'utf8')).kategoriler))
+  for (const u of kat.urunler) if (u.kod?.trim()) icKodlar.add(u.kod.trim())
+for (const marka of JSON.parse(readFileSync('data/markalar.json', 'utf8')))
+  for (const o of marka.ornekler || []) if (o.kod?.trim()) icKodlar.add(o.kod.trim())
 
 for (const f of dosyalar) {
   const yol = '/' + f.slice(KOK.length + 1).replace(/\.html$/, '')
@@ -98,6 +123,8 @@ for (const f of dosyalar) {
     if (m) sizinti.push({ yol, ad, eslesen: m[0] })
   }
 
+  for (const kod of icKodlar) if (ham.includes(kod)) icKod.push({ yol, kod })
+
   const t = (ham.match(/<title>(.*?)<\/title>/s) || [])[1]
   if (t) {
     if (!basliklar.has(t)) basliklar.set(t, [])
@@ -116,7 +143,9 @@ console.log(`tedarikçi sızıntısı: ${sizinti.length}`)
 for (const s of sizinti.slice(0, 10)) console.log(`   ✗ ${s.yol} — ${s.ad} ("${s.eslesen}")`)
 console.log(`yinelenen <title>  : ${yinelenen.length}`)
 for (const [t, v] of yinelenen.slice(0, 10)) console.log(`   ✗ "${t.slice(0, 60)}" → ${v.join(', ')}`)
+console.log(`iç stok kodu (${icKodlar.size} kod arandı): ${icKod.length}`)
+for (const s of icKod.slice(0, 10)) console.log(`   ✗ ${s.yol} — ${s.kod}`)
 
-const hata = kirik.size + sizinti.length + yinelenen.length
+const hata = kirik.size + sizinti.length + yinelenen.length + icKod.length
 console.log(hata === 0 ? '\n✅ temiz' : `\n⛔ ${hata} sorun`)
 process.exit(hata === 0 ? 0 : 1)

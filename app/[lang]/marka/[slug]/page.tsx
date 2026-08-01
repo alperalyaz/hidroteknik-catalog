@@ -6,6 +6,7 @@ import { METIN } from '@/lib/metin'
 import { MARKALAR, markaBul } from '@/lib/marka'
 import { kategoriBul, kategoriUrunleri } from '@/lib/veri'
 import { PROFILLER, profilSlug } from '@/lib/profil'
+import { satirUreticiKodu } from '@/lib/uretici-kod'
 import { markaSchema, kirintiSchema, jsonLd } from '@/lib/schema'
 
 const OG_LOCALE: Record<Dil, string> = { tr: 'tr_TR', en: 'en_US', ru: 'ru_RU' }
@@ -127,6 +128,7 @@ export default async function MarkaSayfasi({
               <thead>
                 <tr>
                   <th>{m.tabloUrun}</th>
+                  <th>{m.tabloUreticiKodu}</th>
                 </tr>
               </thead>
               <tbody>
@@ -134,6 +136,7 @@ export default async function MarkaSayfasi({
                 {marka.ornekler.map((o, i) => (
                   <tr key={i}>
                     <td>{o.ad}</td>
+                    <td className="kod">{satirUreticiKodu(o.kod) || '—'}</td>
                   </tr>
                 ))}
               </tbody>

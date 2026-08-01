@@ -94,6 +94,58 @@ geçmez: `hidrolik-silindir` (`^CNC\.`), `krom-mil-boru` (`^A\.`),
 `o-ring-sizdirmazlik` ve `hidrolik-kece-nutring` (`^KASTAS\.`).
 `scripts/kod-gocur.mjs` her koşumda bu dördünü ekrana basar.
 
+### Yayımlanan kod ÜRETİCİNİNDİR, bizimki değil
+
+Stok kodumuz iki parçadır: **bizim önekimiz + üreticinin katalog kodu.**
+
+```
+HF.H.HD106        →  HansaFlex  HD106
+HF.PN10AOL90      →  HansaFlex  PN10AOL90
+PAK.0401000108    →  Pakkens    0401000108
+KASTAS.K21-040/11 →  Kastaş     K21-040/11
+```
+
+Önek bizim: sık değişir (2026'nın yalnız temmuz ayında üç göç), dışarıda
+karşılığı yoktur, kimse `SEL.FR2.SC.04` aramaz. **Yayımlanmaz.** Kalan kısım
+üreticinindir: kalıcıdır, üreticinin kendi kataloğunda geçer, gerçekten aranır.
+**Yayımlanır** — sayfada "Üretici kodu" sütunu ve JSON-LD'de `mpn` olarak.
+
+Doğrulandı (01.08.2026), HansaFlex bu kodları kendi mağazasında birebir ürün
+kimliği olarak kullanıyor: `shop.hansa-flex.us/…/p/HD106`, `/p/KP208`,
+`/p/PN10AOL`, `/p/PN10AOL90`. Pakkens `0401000108` üçüncü taraf satıcılarda
+aynen listeleniyor.
+
+Çıkarımı `satirUreticiKodu` (`lib/uretici-kod.ts`) yapar. **Her önek uygun
+değildir, üç sebeple:**
+
+- **Tedarikçi gruplaması.** `AR.` altında markasız 52 + KDNT 4 + Oxim 4 kalem
+  var; kalan kısım tedarikçinin sıra numarasıdır, kimsenin katalog kodu değil.
+  Tek markaya oturan önekler (`HF`→HansaFlex 40/40, `HE`→Hema 33/33) veride
+  net ayrışır.
+- **Bizim ölçü kodumuz.** `GM.380.00,37` "380 V, 0,37 kW" demektir; Gamak'ın
+  gerçek kodu (`AGM2EL 71 M 4B`) ürün ADINDA durur.
+- **Bizim ölçü ekimiz.** `HARF.SAYI` kalıbı (68 kod) hep bizimdir:
+  `ESM.DK.ÇD.14` = "DK 14 çelik dişlisi". `GATES.MXT.06` de buraya düşer —
+  Gates'in kodu `6MXT`, `MXT.06` bizim yeniden dizmemiz. Üretici kodu ölçüyü
+  nokta ile ayırmaz, içine gömer (`HD106`).
+
+Kapsam: 15.261 kaydın 9.891'i (%65) üretici kodu veriyor; sayfada görünen 686
+örnek satırın 300'ü (%44). Kalanların hücresi boş kalır — uydurmaktansa boş
+bırakılır (bkz. "Doğrulanamayan bilgi boş bırakılır").
+
+Yeni önek eklerken ölçüt tek: **kodun kalan kısmını üreticinin kendi yayınında
+bulabiliyor musunuz?** Bulamıyorsanız eklemeyin.
+
+`scripts/uretici-kod-denetle.mjs` (npm run denetle'nin üçüncü adımı) 28 elle
+doğrulanmış örneği sınar ve yayımlanan hiçbir kodda tedarikçi adı geçmediğini
+kontrol eder.
+
+**İç kod sızıntısının görünmez yolu: React `key`.** `<tr key={u.kod}>` yazmak
+kodu RSC akış yüküne `["$","tr","HF.H.HD106",…]` diye yazar; sütunu kaldırsanız
+bile sayfa kaynağında kalır ve arama motoru görür. Örnek tablolarda anahtar
+olarak dizin kullanılır. `build-denetle.mjs` bunu artık HAM html'de arar (diğer
+üç denetimin tersine — orada RSC yükü ayıklanır, burada tam da o yük taranır).
+
 ### Kod göçü
 
 Stok kodları değiştiğinde `npm run kod-gocur -- eski-yeni.csv` kuru çalıştırma
@@ -101,9 +153,13 @@ yapar, `--uygula` ile yazar. Örnek satırların `kod` alanlarını çevirir; ka
 kod DESENLERİNİ çevirmez, yalnız raporlar — bir eşleme tablosu yeni kodların
 hangi önekle başlayacağını bilemez, o karar insanındır.
 
+Göç artık sayfa içeriğini büyük ölçüde ETKİLEMEZ: yayımlanan kod üreticinin
+kodudur ve önek değişse de o kısım aynı kalır (`HANSA.HD106` → `HF.H.HD106`,
+ikisinde de `HD106`). Göçün asıl riski hâlâ kategori kod desenleridir.
+
 ### Örnek satır denetimi
 
-`npm run denetle` iki şey çalıştırır; ikincisi `scripts/ornek-denetle.mjs`, her
+`npm run denetle` üç şey çalıştırır; ikincisi `scripts/ornek-denetle.mjs`, her
 örnek ürün satırını KENDİ kategorisinin filtresine karşı sınar. Satır kategorinin
 `haric` desenine takılıyorsa ya da hiçbir eşleşmeye uymuyorsa oraya ait değildir.
 Ölçüldü (31.07.2026): hidrolik hortum sayfasındaki 16 satırın 9'u hortum değildi

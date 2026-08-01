@@ -1,5 +1,6 @@
 import { FIRMA, SITE_URL, ANA_SITE } from './site'
 import type { Kategori, Urun } from './veri'
+import { satirUreticiKodu } from './uretici-kod'
 
 /**
  * JSON-LD üreticileri.
@@ -78,13 +79,18 @@ export function kategoriSchema(k: Kategori, urunler: Urun[], url: string, lang: 
           '@type': 'Product',
           name: u.ad,
           // sku YOK: Hidroteknik stok kodu iç bir referanstır, kimse onu aramaz
-          // ve sık değişir. Aranan şey ürünün adı, markası ve ölçüsüdür; sku
-          // yayımlamak yapılandırılmış veriyi kısa ömürlü bir değere bağlardı.
+          // ve sık değişir. Yapılandırılmış veriyi kısa ömürlü bir değere
+          // bağlamamak için yayımlanmaz.
           category: k.ad,
           // Marka bilinen kalemlerde gerçek markayı beyan et: marka + model
           // aramalarında (ör. "gates 2sc hortum") eşleşmeyi sağlayan alan budur.
           brand: { '@type': 'Brand', name: u.marka || FIRMA.ad },
-          ...(u.model ? { mpn: u.model } : {}),
+          // mpn = ÜRETİCİNİN parça numarası. Eskiden buraya `model` yazılıyordu
+          // ama model bir ÖLÇÜDÜR ("M18x1,5 12L"), parça numarası değil; ölçünün
+          // doğru yeri `size`. Gerçek mpn stok kodunun önekinden arındırılmış
+          // hâlidir: HF.H.HD106 → HD106 (HansaFlex'in kendi katalog kodu).
+          ...(satirUreticiKodu(u.kod) ? { mpn: satirUreticiKodu(u.kod)! } : {}),
+          ...(u.model ? { size: u.model } : {}),
           offers: {
             '@type': 'Offer',
             // Fiyat müşteriye/miktara göre belirlendiği için sayı yayınlanmaz;
@@ -137,8 +143,9 @@ export function profilSchema(
           '@type': 'Product',
           name: o.olcu ? `Kastaş ${o.kod} — ${o.olcu} mm` : `Kastaş ${o.kod}`,
           // Önek atılır: "KASTAS." Hidroteknik'in iç öneki, "K21-040/11" ise
-          // Kastaş'ın kendi katalog kodu — aranan ve kalıcı olan bu.
-          sku: o.kod,
+          // Kastaş'ın kendi katalog kodu — aranan ve kalıcı olan bu. Üreticinin
+          // parça numarası olduğu için doğru alan `mpn`, `sku` değil.
+          mpn: o.kod,
           ...(o.olcu ? { size: o.olcu } : {}),
           ...(p.ad ? { category: p.ad } : {}),
           brand: { '@type': 'Brand', name: 'Kastaş' },
@@ -189,6 +196,8 @@ export function markaSchema(
           '@type': 'Product',
           name: `${marka.ad} ${o.ad}`,
           // sku YOK — bkz. kategoriSchema'daki gerekçe (iç kod, sık değişir).
+          // mpn ise üreticinin kendi kodudur; çıkarılabildiği kadarıyla yayımlanır.
+          ...(satirUreticiKodu(o.kod) ? { mpn: satirUreticiKodu(o.kod)! } : {}),
           brand: { '@type': 'Brand', name: marka.ad },
           offers: {
             '@type': 'Offer',

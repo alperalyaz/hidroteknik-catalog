@@ -9,7 +9,7 @@
     "start": "next start -p 3010",
     "lint": "next lint",
     "veri": "node scripts/veri-cek.mjs",
-    "denetle": "node scripts/build-denetle.mjs && node scripts/ornek-denetle.mjs",
+    "denetle": "node scripts/build-denetle.mjs && node scripts/ornek-denetle.mjs && node scripts/uretici-kod-denetle.mjs",
     "ornek-denetle": "node scripts/ornek-denetle.mjs",
     "kod-gocur": "node scripts/kod-gocur.mjs"
   },

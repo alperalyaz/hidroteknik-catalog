@@ -6,7 +6,7 @@ import { METIN } from '@/lib/metin'
 import { KATEGORILER, kategoriBul, kategorilerIcin, kategoriUrunleri, urunAdiDuzelt } from '@/lib/veri'
 import { profilBul, profilSlug } from '@/lib/profil'
 import { MARKALAR } from '@/lib/marka'
-import { kodGruplariIcin } from '@/lib/uretici-kod'
+import { kodGruplariIcin, satirUreticiKodu } from '@/lib/uretici-kod'
 import { SILINDIR_PARCALARI, parcaAdi } from '@/lib/silindir-parca'
 import { kategoriSchema, sssSchema, kirintiSchema, jsonLd } from '@/lib/schema'
 
@@ -187,6 +187,7 @@ export default async function KategoriSayfasi({
                   <th>{m.tabloUrun}</th>
                   <th>{m.tabloMarka}</th>
                   <th>{m.tabloModel}</th>
+                  <th>{m.tabloUreticiKodu}</th>
                 </tr>
               </thead>
               <tbody>
@@ -198,6 +199,7 @@ export default async function KategoriSayfasi({
                     <td>{urunAdiDuzelt(u.ad)}</td>
                     <td>{u.marka || '—'}</td>
                     <td className="model">{u.model || '—'}</td>
+                    <td className="kod">{satirUreticiKodu(u.kod) || '—'}</td>
                   </tr>
                 ))}
               </tbody>
