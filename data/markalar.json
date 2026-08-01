@@ -94,7 +94,7 @@
     "ad": "ORFS somunlu düz hortum rakoru 1/2 13/16"
    },
    {
-    "kod": "HANSA.SSKC23",
+    "kod": "HF.H.SSKC23",
     "ad": "Spiral koruma 23x27"
    },
    {
@@ -128,23 +128,23 @@
   ],
   "ornekler": [
    {
-    "kod": "PEM.REK.PRD.04.08",
+    "kod": "PEM.RAK.PRD.04.08",
     "ad": "Rekor bağlantı 1/4 x 8"
    },
    {
-    "kod": "PEM.REK.PRL.04.010",
+    "kod": "PEM.RAK.PRL.04.010",
     "ad": "Döner dirsek bağlantı 1/4 x 10"
    },
    {
-    "kod": "PEM.REK.PRN-0600",
+    "kod": "PEM.RAK.PRN.00.06",
     "ad": "Nipel bağlantı 6"
    },
    {
-    "kod": "PEM.REK.PRT-0800",
+    "kod": "PEM.RAK.PRT-0800",
     "ad": "Te bağlantı 8"
    },
    {
-    "kod": "PEM.S.DMC.050.100",
+    "kod": "PEM.S.DMC-050-SYA-0100",
     "ad": "DMC-A ISO 50X100 manyetik yastıklı pnömatik silindir"
    },
    {
@@ -156,7 +156,7 @@
     "ad": "PV1 serisi 5/2-1/4 tek bobin valf, 24 V DC"
    },
    {
-    "kod": "PEM.S.KS.A.100",
+    "kod": "PEM.S.MUH.04",
     "ad": "KS-A 100 keçe takımı"
    }
   ],
@@ -180,23 +180,23 @@
   ],
   "ornekler": [
    {
-    "kod": "OLEOSTAR.01.171",
+    "kod": "HK.WAL.VDSRL-10-12",
     "ad": "VDSRL 10-12 · 1/2 hat tipi basınç sıralama valfi"
    },
    {
-    "kod": "OLEOSTAR.01.149",
+    "kod": "HK.WAL.VOSL-SC-CC-38",
     "ad": "VOSL/SC/CC 38 · 3/8 hat tipi tekli yük tutma valfi"
    },
    {
-    "kod": "OLEOSTAR.001.219",
+    "kod": "HA.001.219.OXO",
     "ad": "001.219.OXO · 3/4 tekli yük tutma valfi"
    },
    {
-    "kod": "OLEOSTAR.01.001",
+    "kod": "HK.WAL.VMP-3",
     "ad": "VMP 03 · 3/4 16 UNF direkt uyarılı basınç ayar kartuşu"
    },
    {
-    "kod": "OLEOSTAR.01.005",
+    "kod": "HK.WAL.VMP-B-L-02-14",
     "ad": "VMP/B/L 02-14 · 1/4 direkt uyarılı hat tipi emniyet valfi"
    }
   ],
@@ -383,10 +383,6 @@
     "ad": "P40 kerovir valfi"
    },
    {
-    "kod": "HR.VALF.VBPDE 3/8 A",
-    "ad": "VBPDE 3/8 A ikiz kilit valfi"
-   },
-   {
     "kod": "HR.MOTOR.MR.200",
     "ad": "MR200 hidromotor"
    },
@@ -426,27 +422,27 @@
   ],
   "ornekler": [
    {
-    "kod": "HEMA.HMR.100",
+    "kod": "HE.HMR.100",
     "ad": "HMR.100.A.2 hidromotor · 100 cm³/dev"
    },
    {
-    "kod": "HEMA.HMR.200",
+    "kod": "HE.HMR.200",
     "ad": "HMR.200.A.2 hidromotor · 200 cm³/dev"
    },
    {
-    "kod": "HEMA.1PN.295",
+    "kod": "HE.1PN.250.CGSY",
     "ad": "1PN.250.CGSY / 295 · 8 lt/dk akış öncelikli pompa"
    },
    {
-    "kod": "HEMA.1PN.158",
+    "kod": "HE.1PN.040.ADR",
     "ad": "1PN.040.ADR / 158 · dişli pompa"
    },
    {
-    "kod": "HEMA.HV040HPCO12",
+    "kod": "HE.HV040HPCO12",
     "ad": "HV040 carry-over valfi 1/2"
    },
    {
-    "kod": "HEMA.MUH.012",
+    "kod": "HE.TT.1PN",
     "ad": "1PN.100.092 · 1PN serisi tamir takımı"
    }
   ],
@@ -487,7 +483,7 @@
     "ad": "SGD 76 · 76 mm sıcaklık ve seviye göstergesi (mini)"
    },
    {
-    "kod": "ESM.DKBVK",
+    "kod": "ESM.MUH.12",
     "ad": "Büyük depo kapağı, 1 vidalı kromajlı"
    },
    {
@@ -516,27 +512,27 @@
   ],
   "ornekler": [
    {
-    "kod": "OXİM.03.01",
+    "kod": "AR.4WE6D60-EG12N9K4Z5LS",
     "ad": "4WE6D60/EG12N9K4Z5LS · NG06 4/2 tek bobin, kapalı merkez 12 V DC"
    },
    {
-    "kod": "OXİM.05.02",
+    "kod": "AR.4WE6E60-EG24N9K4Z5LS",
     "ad": "4WE6E60/EG24N9K4Z5LS · NG06 4/3 kapalı merkez çift bobin 24 V DC"
    },
    {
-    "kod": "OXİM.07.02",
+    "kod": "AR.4WE6J60-EG24N9K4Z5LS",
     "ad": "4WE6J60/EG24N9K4Z5LS · NG06 4/3 ABT çift bobin 24 V DC"
    },
    {
-    "kod": "OXİM.14.02",
+    "kod": "AR.4WE10G30-EG24N9K4Z5LS",
     "ad": "4WE10G30/EG24N9K4Z5LS · NG10 4/3 AM çift bobin 24 V DC"
    },
    {
-    "kod": "OXİM.16.02",
+    "kod": "BOB.23,2.DC.024",
     "ad": "NG06 bobin 24 V DC (C04C) 23,2 mm"
    },
    {
-    "kod": "OXİM.17.01",
+    "kod": "BOB.31,6.DC.024",
     "ad": "NG10 bobin 24 V DC (C05C) 31,60 mm"
    }
   ],
@@ -561,27 +557,27 @@
   ],
   "ornekler": [
    {
-    "kod": "DURA.100.08.150",
+    "kod": "US.100.08.150",
     "ad": "NC genel maksat solenoid G1/2 – 15 mm"
    },
    {
-    "kod": "DURA.101.04.018",
+    "kod": "US.101.04.018",
     "ad": "NO genel maksat solenoid G1/4 – 1,8 mm"
    },
    {
-    "kod": "DURA.MUH.007",
+    "kod": "US.MUH.007",
     "ad": "1/4 viton buhar solenoidi N.K."
    },
    {
-    "kod": "DURA.BLV-N122BP015",
+    "kod": "US.BLV-N122BP015",
     "ad": "2/2 yollu pirinç küresel vana PN40 1/2"
    },
    {
-    "kod": "DURA.121.16.029",
+    "kod": "US.121.16.029",
     "ad": "Kelebek vana DN50"
    },
    {
-    "kod": "DURA.BOB.02",
+    "kod": "US.BOB.02",
     "ad": "Standart bobin 24 V AC (14,85 mm, IP65 18 VA)"
    }
   ],
@@ -605,27 +601,27 @@
   ],
   "ornekler": [
    {
-    "kod": "AKON.AMV502",
+    "kod": "AK.AMV502",
     "ad": "AMV502 3/8-1/2 · 50 lt/dk 2 kollu mono kumanda"
    },
    {
-    "kod": "AKON.AMV503",
+    "kod": "AK.AMV503",
     "ad": "AMV503 3/8-1/2 · 50 lt/dk 3 kollu mono kumanda"
    },
    {
-    "kod": "AKON.AMV503.SPC01",
+    "kod": "AK.Y.044",
     "ad": "AMV503 üçlü kumanda, iki göz elektrikli · 50 lt/dk"
    },
    {
-    "kod": "AKON.MUH.35",
+    "kod": "AK.Y.035",
     "ad": "AMV50 carry-over valfi"
    },
    {
-    "kod": "AKON.MUH.43",
+    "kod": "AK.Y.043",
     "ad": "AMV70 K-kol kapağı komple"
    },
    {
-    "kod": "AKON.MUH.29",
+    "kod": "AK.Y.029",
     "ad": "Kumanda sapı M10"
    }
   ],
@@ -781,23 +777,23 @@
   ],
   "ornekler": [
    {
-    "kod": "FMS.11K25R1",
+    "kod": "FM.002",
     "ad": "11-K25 R1\" dönüş filtresi 100 LT"
    },
    {
-    "kod": "FMS.17K25R114",
+    "kod": "FM.005",
     "ad": "17-K25 R1.1/4\" dönüş filtresi 215 LT"
    },
    {
-    "kod": "FMS.11K25",
+    "kod": "FM.001",
     "ad": "11-K25 filtre elemanı"
    },
    {
-    "kod": "FMS.MUH.09",
+    "kod": "FM.017",
     "ad": "1/4 – 3/2 makara yay valf"
    },
    {
-    "kod": "FMS.2600",
+    "kod": "FM.019",
     "ad": "M16-1,5 dorse fren kesici valf"
    },
    {
@@ -805,7 +801,7 @@
     "ad": "1/4 24 V DC üçlü damper bobini"
    },
    {
-    "kod": "FMS.CETOP.100.050",
+    "kod": "FM.020",
     "ad": "Cetop pnömatik silindir 100 x 050"
    }
   ],
