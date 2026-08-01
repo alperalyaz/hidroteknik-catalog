@@ -36,6 +36,7 @@ import { fileURLToPath } from 'node:url'
 import { sertlestir } from './turkce-regex.mjs'
 
 const KOK = join(dirname(fileURLToPath(import.meta.url)), '..')
+const ZORLA = process.argv.includes('--zorla')
 const URL_BASE = process.env.SUPABASE_URL || 'https://ujmtoruicnmgoarwzhwp.supabase.co'
 const ANAHTAR = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_ANON_KEY
 if (!ANAHTAR) {
@@ -120,6 +121,26 @@ for (const k of kategoriler) {
   if (toplam === 0 && onceki?.toplamUrun) {
     console.error(`\n⛔ ${k.slug}: sorgu 0 döndü ama dosyada ${onceki.toplamUrun} yazıyor.`)
     console.error('   Yetki (RLS) veya eşleşme regex\'i bozuk. Dosya YAZILMADI.')
+    process.exit(1)
+  }
+  // İkinci emniyet: sayı ANİDEN ŞİŞTİYSE de dur. Sıfırlanmak kadar tehlikeli
+  // olan ters durum budur ve gözle fark edilmez — sayfa "1.240 kalem" der,
+  // kimse yanlış olduğunu anlamaz.
+  //
+  // Somut senaryo (01.08.2026): stok kodları değiştirildi ve yeni kodlar
+  // eskilerin ÜZERİNE YAZILMIYOR. Senkron yarım kalırsa Supabase'de hem
+  // A.KM.010 hem TA.KM.010 durur; aynı ürün iki kez sayılır ve katalog iki
+  // katı rakamla yayına çıkar.
+  //
+  // Eşik cömert (2 kat + 20 kalem tolerans): gerçek büyümeler (bir kategoriye
+  // yeni ürün ailesi girmesi) engellenmesin, ama mükerrer kayıt kaçmasın.
+  // Bilerek büyük bir sıçrama varsa --zorla ile geçilir.
+  if (onceki?.toplamUrun && toplam > onceki.toplamUrun * 2 + 20 && !ZORLA) {
+    console.error(`\n⛔ ${k.slug}: ${onceki.toplamUrun} → ${toplam} (${(toplam / onceki.toplamUrun).toFixed(1)}× artış)`)
+    console.error('   Mükerrer stok kaydı olabilir (eski + yeni kod bir arada).')
+    console.error('   Önce şunu doğrulayın: aynı ürün iki farklı kodla duruyor mu?')
+    console.error('   Artış gerçekse: node scripts/veri-cek.mjs --zorla')
+    console.error('   Dosya YAZILMADI.')
     process.exit(1)
   }
 
