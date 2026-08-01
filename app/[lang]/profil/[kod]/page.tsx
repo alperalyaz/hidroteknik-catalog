@@ -3,18 +3,11 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { DILLER, SITE_URL, FIRMA, sayiFormat, type Dil } from '@/lib/site'
 import { METIN, type Metin } from '@/lib/metin'
-import { PROFILLER, profilBul, profilSlug, type ProfilKodu } from '@/lib/profil'
+import { PROFILLER, profilBul, profilSlug, yerMetni, type ProfilKodu } from '@/lib/profil'
 import { profilSchema, kirintiSchema, jsonLd } from '@/lib/schema'
 
 const KECE_SLUG = 'hidrolik-kece-nutring'
 const OG_LOCALE: Record<Dil, string> = { tr: 'tr_TR', en: 'en_US', ru: 'ru_RU' }
-
-/** Veri 'Mil' | 'Piston' | 'Mil ve piston' tutar; gösterim dile çevrilir. */
-function yerMetni(yer: string, m: Metin): string {
-  if (yer === 'Piston') return m.profilYerPiston
-  if (yer === 'Mil ve piston') return m.profilYerIkisi
-  return m.profilYerMil
-}
 
 /** Sayı gösterimi: veride ondalık ayracı nokta, TR/RU'da virgül beklenir. */
 function capMetni(n: number, lang: Dil): string {
@@ -112,7 +105,7 @@ export default async function ProfilSayfasi({
       <div className="sarmal">
         <section>
           <div className="metin">
-            {p.ad ? <p>{p.ad}.</p> : <p>{m.profilIslevBilinmiyor}</p>}
+            {p.ad[lang] ? <p>{p.ad[lang]}.</p> : <p>{m.profilIslevBilinmiyor}</p>}
             {p.capMin != null && p.capMax != null && (
               <p>{m.profilCapAraligi(capMetni(p.capMin, lang), capMetni(p.capMax, lang))}</p>
             )}
@@ -183,7 +176,7 @@ export default async function ProfilSayfasi({
             {digerleri.map((d) => (
               <Link key={d.kod} href={`/${lang}/profil/${profilSlug(d.kod)}`} className="kart">
                 <b>Kastaş {d.kod}</b>
-                <span>{d.ad || yerMetni(d.yer, m)}</span>
+                <span>{d.ad[lang] || yerMetni(d.yer, m)}</span>
                 <em>{m.profilRozetOlcu(sayiFormat(d.adet, lang))}</em>
               </Link>
             ))}

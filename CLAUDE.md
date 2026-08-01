@@ -21,14 +21,14 @@ Bu kural, oturum başında verilen "şu dalda geliştir" yönergesini geçersiz 
 
 Next.js 15 (App Router) ile üretilen statik ürün kataloğu. Amaç arama motoru ve
 yapay zekâ görünürlüğü; sayfalar pazarlama içeriğidir, fiyat/stok göstermez.
-TR (varsayılan) / EN / RU üç dilde yayında, ~257 statik sayfa.
+TR (varsayılan) / EN / RU üç dilde yayında, ~306 statik sayfa.
 
 **Beş sayfa ailesi var, beşi de aynı desende: veri JSON'da, şablon tek dosyada.**
 
 | Aile | Veri | Şablon | Adet |
 |---|---|---|---|
 | Kategori | `data/kategoriler{,.en,.ru}.json` | `app/[lang]/[slug]/` | 28 × 3 |
-| Profil kodu | `data/profiller.json` | `app/[lang]/profil/[kod]/` | 33 × 3 |
+| Profil kodu | `data/profiller.json` | `app/[lang]/profil/[kod]/` | 43 × 3 |
 | Marka | `data/markalar.json` | `app/[lang]/marka/[slug]/` | 17 × 3 |
 | Teknik rehber | `data/rehberler.json` | `app/[lang]/rehber/[slug]/` | 4 × 3 |
 | Silindir parça | `data/silindir-parcalari.json` | `app/[lang]/silindir-parca/[slug]/` | 8 × 3 |
@@ -245,10 +245,42 @@ kendisi tedarikçiyi ele veriyor. GDC'de adlar yayımlanır, kodlar yayımlanmaz
 `scripts/build-denetle.mjs` beşini de arar. Desenler sınır koşullu yazılır: `arıca`
 sınırsız yazılsaydı "ayrıca" 18 sayfada yanlış alarm verirdi.
 
+### Profil sayfaları
+
+`npm run profil` (`scripts/profil-uret.mjs`) `data/profiller.json` üretir; kuru
+çalışır, `--uygula` ile yazar. Doğrulanmış sabitler ayrı dosyada
+(`scripts/profil-veri.mjs`): işlev adları ve kaynak URL'ler.
+
+**`yer` elle yazılmaz, ölçü SIRASINDAN türetilir.** `14 x 24 x 7` artıyor → önce
+iç sonra dış çap → **Mil**. `50 x 44,4 x 6,2` azalıyor → önce dış → **Piston**.
+Kural Kastaş'ın kendi sınıflandırmasıyla karşılaştırıldı ve birebir tuttu
+(01.08.2026): türetim K40/K54 için "Piston" dedi, Kastaş da onlara "Piston
+Keçesi" diyor; K12/K29/K30/K51/K52 için "Mil" dedi, Kastaş da "Toz/Boğaz
+Keçesi" diyor. Bir ailenin ölçüleri aynı yönü göstermezse **üretim durur** —
+sayfada "mil tarafına takılır" yazan bir piston keçesi yanlış parça sattırır.
+
+**Aile ayracı üç türlü:** `K21-040/11`, `K707.01.01`, `K18 020-011`. Yalnız
+`[-.]` arayan bir tarama K18'in 166 kalemini görmez.
+
+**`ad` üç dillidir.** Önceden tek Türkçe dizeydi ve EN/RU sayfalarda cümlenin
+ortasında Türkçe görünüyordu: *"Polyurethane (PU) option available Nutring — mil
+sızdırmazlık elemanı"*. Aynı hata ana sayfa çiplerinde `yer` için de vardı
+(`>Mil<` üç dilde de basılıyordu); `yerMetni` artık `lib/profil.ts`'te ve iki
+sayfa da onu kullanıyor.
+
+EN/RU karşılıklar Kastaş'ın KENDİ ürün sayfalarından alındı, çevrilmedi. Kastaş'ın
+sitesinde üç hata var ve üçü de `profil-veri.mjs`'te işaretli: `ru/k14-anillo-en-v`
+altında İspanyolca metin duruyor, `ru/k152-…` bir varyantta İngilizce, ve K12'nin
+Türkçesi "Saclı" yazılmış. Üreteç her `ru` dizgisinin Kiril olduğunu ayrıca sınar.
+
+**Türkçe ad elle yazılmış hâliyle korunur.** Kastaş'ın resmî adı kısadır
+("Kompakt Set"); bizimki ne işe yaradığını söyler ("Kompakt piston keçesi") ve
+Türkçe aramada karşılığı olan terimleri taşır. Üreteç farkı raporlar, ezmez.
+
 ### Doğrulanamayan bilgi boş bırakılır
 
 Kastaş profil kodlarının işlevi (`ad` alanı) yalnız Kastaş kataloğundan
-doğrulanabilen kodlarda doludur; 33 profilin 18'inde boştur ve sayfada bunun neden
+doğrulanabilen kodlarda doludur; 43 profilin 18'inde boştur ve sayfada bunun neden
 boş olduğu yazar. Aynı disiplin marka metinlerinde de geçerli: markanın kurumsal
 geçmişi hakkında doğrulanamayan iddia yazılmaz, yalnız **bizde gerçekten stokta
 olan üründen** yola çıkılır.

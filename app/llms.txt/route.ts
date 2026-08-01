@@ -54,7 +54,7 @@ Her profilin stoktaki ölçüleri kendi sayfasındadır.
 
 ${PROFILLER.map(
   (p) =>
-    `- [Kastaş ${p.kod}](${SITE_URL}/${L}/profil/${profilSlug(p.kod)}) — ${p.adet.toLocaleString('tr-TR')} ölçü, ${p.yer.toLowerCase()} tarafı${p.ad ? `. ${p.ad}` : ' (işlev doğrulanamadı)'}`
+    `- [Kastaş ${p.kod}](${SITE_URL}/${L}/profil/${profilSlug(p.kod)}) — ${p.adet.toLocaleString('tr-TR')} ölçü, ${p.yer.toLowerCase()} tarafı${p.ad.tr ? `. ${p.ad.tr}` : ' (işlev doğrulanamadı)'}`
 ).join('\n')}
 
 ## Hidrolik silindir yedek parçaları

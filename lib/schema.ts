@@ -115,7 +115,13 @@ export function kategoriSchema(k: Kategori, urunler: Urun[], url: string, lang: 
  * ölçü aramalarında sayfa somut bir kaleme bağlanabilsin.
  */
 export function profilSchema(
-  p: { kod: string; ad: string; adet: number; olculer: { kod: string; olcu: string }[] },
+  p: {
+    kod: string
+    /** Üç dilli; JSON-LD sayfanın diliyle aynı dilde olmalı. */
+    ad: Record<string, string>
+    adet: number
+    olculer: { kod: string; olcu: string }[]
+  },
   url: string,
   lang: string,
   baslik: string,
@@ -147,7 +153,7 @@ export function profilSchema(
           // parça numarası olduğu için doğru alan `mpn`, `sku` değil.
           mpn: o.kod,
           ...(o.olcu ? { size: o.olcu } : {}),
-          ...(p.ad ? { category: p.ad } : {}),
+          ...(p.ad[lang] ? { category: p.ad[lang] } : {}),
           brand: { '@type': 'Brand', name: 'Kastaş' },
           offers: {
             '@type': 'Offer',

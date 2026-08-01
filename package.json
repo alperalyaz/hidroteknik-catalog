@@ -11,7 +11,8 @@
     "veri": "node scripts/veri-cek.mjs",
     "denetle": "node scripts/build-denetle.mjs && node scripts/ornek-denetle.mjs && node scripts/uretici-kod-denetle.mjs",
     "ornek-denetle": "node scripts/ornek-denetle.mjs",
-    "kod-gocur": "node scripts/kod-gocur.mjs"
+    "kod-gocur": "node scripts/kod-gocur.mjs",
+    "profil": "node scripts/profil-uret.mjs"
   },
   "dependencies": {
     "next": "^15.5.22",

@@ -5,7 +5,7 @@ import { METIN } from '@/lib/metin'
 import { kategorilerIcin, kategoriUrunleri, AILELER } from '@/lib/veri'
 import { REHBERLER } from '@/lib/rehber'
 import { MARKALAR } from '@/lib/marka'
-import { PROFILLER, profilSlug } from '@/lib/profil'
+import { PROFILLER, profilSlug, yerMetni } from '@/lib/profil'
 import { SILINDIR_PARCALARI, parcaAdi } from '@/lib/silindir-parca'
 
 const BASLIK: Record<Dil, string> = {
@@ -47,7 +47,7 @@ export default async function KatalogAnaSayfa({ params }: { params: Promise<{ la
   // Sayaç şeridindeki her sayı VERİDEN türetilir, kopyaya gömülmez: 29. kategori
   // eklendiği gün sabit yazılmış bir sayı üç dilde birden yalan söylerdi ve
   // `npm run denetle` bunu göremezdi.
-  const bosProfil = PROFILLER.filter((p) => !p.ad).length
+  const bosProfil = PROFILLER.filter((p) => !p.ad[lang]).length
 
   const SAYAC = [
     { hedef: 'urun-gruplari', deger: kategoriler.length, etiket: m.seritGrup },
@@ -146,8 +146,14 @@ export default async function KatalogAnaSayfa({ params }: { params: Promise<{ la
                 <b>{p.kod}</b>
                 {/* İkinci satır: işlev doğrulanmışsa o yazılır, değilse ölçüden
                     TÜRETİLEN taraf (mil/piston). İkisi de yoksa satır hiç basılmaz —
-                    boş bir satır bırakmak çipi bozardı. */}
-                {p.ad ? <span>{p.ad}</span> : p.yer ? <span>{p.yer}</span> : null}
+                    boş bir satır bırakmak çipi bozardı.
+                    `yer` veride Türkçe tutulur ('Mil'/'Piston'); ham basılırsa
+                    İngilizce ve Rusça çipe Türkçe sızar, o yüzden çevrilir. */}
+                {p.ad[lang] ? (
+                  <span>{p.ad[lang]}</span>
+                ) : p.yer ? (
+                  <span>{yerMetni(p.yer, m)}</span>
+                ) : null}
               </Link>
             ))}
           </div>
