@@ -77,7 +77,9 @@ export function kategoriSchema(k: Kategori, urunler: Urun[], url: string, lang: 
         item: {
           '@type': 'Product',
           name: u.ad,
-          sku: u.kod,
+          // sku YOK: Hidroteknik stok kodu iç bir referanstır, kimse onu aramaz
+          // ve sık değişir. Aranan şey ürünün adı, markası ve ölçüsüdür; sku
+          // yayımlamak yapılandırılmış veriyi kısa ömürlü bir değere bağlardı.
           category: k.ad,
           // Marka bilinen kalemlerde gerçek markayı beyan et: marka + model
           // aramalarında (ör. "gates 2sc hortum") eşleşmeyi sağlayan alan budur.
@@ -134,7 +136,9 @@ export function profilSchema(
         item: {
           '@type': 'Product',
           name: o.olcu ? `Kastaş ${o.kod} — ${o.olcu} mm` : `Kastaş ${o.kod}`,
-          sku: `KASTAS.${o.kod}`,
+          // Önek atılır: "KASTAS." Hidroteknik'in iç öneki, "K21-040/11" ise
+          // Kastaş'ın kendi katalog kodu — aranan ve kalıcı olan bu.
+          sku: o.kod,
           ...(o.olcu ? { size: o.olcu } : {}),
           ...(p.ad ? { category: p.ad } : {}),
           brand: { '@type': 'Brand', name: 'Kastaş' },
@@ -184,7 +188,7 @@ export function markaSchema(
         item: {
           '@type': 'Product',
           name: `${marka.ad} ${o.ad}`,
-          sku: o.kod,
+          // sku YOK — bkz. kategoriSchema'daki gerekçe (iç kod, sık değişir).
           brand: { '@type': 'Brand', name: marka.ad },
           offers: {
             '@type': 'Offer',

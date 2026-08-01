@@ -187,16 +187,17 @@ export default async function KategoriSayfasi({
                   <th>{m.tabloUrun}</th>
                   <th>{m.tabloMarka}</th>
                   <th>{m.tabloModel}</th>
-                  <th>{m.tabloStokKodu}</th>
                 </tr>
               </thead>
               <tbody>
-                {liste.map((u) => (
-                  <tr key={u.kod}>
+                {/* key olarak stok kodu KULLANILMAZ: React key'i RSC akış yüküne
+                    aynen yazılıyor, yani sayfada göstermesek bile kaynakta kalıyordu.
+                    İç kod yayımlanmadığına göre orada da bulunmamalı. */}
+                {liste.map((u, i) => (
+                  <tr key={i}>
                     <td>{urunAdiDuzelt(u.ad)}</td>
                     <td>{u.marka || '—'}</td>
                     <td className="model">{u.model || '—'}</td>
-                    <td className="kod">{u.kod}</td>
                   </tr>
                 ))}
               </tbody>

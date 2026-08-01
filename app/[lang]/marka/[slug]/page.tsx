@@ -127,14 +127,13 @@ export default async function MarkaSayfasi({
               <thead>
                 <tr>
                   <th>{m.tabloUrun}</th>
-                  <th>{m.tabloStokKodu}</th>
                 </tr>
               </thead>
               <tbody>
-                {marka.ornekler.map((o) => (
-                  <tr key={o.kod}>
+                {/* key olarak stok kodu kullanılmaz — bkz. kategori şablonu. */}
+                {marka.ornekler.map((o, i) => (
+                  <tr key={i}>
                     <td>{o.ad}</td>
-                    <td className="kod">{o.kod}</td>
                   </tr>
                 ))}
               </tbody>

@@ -44,7 +44,6 @@ export type Metin = {
   tabloUrun: string
   tabloMarka: string
   tabloModel: string
-  tabloStokKodu: string
   ornekAltNot: (toplam: string, adKucuk: string) => string
   sssBaslik: string
   teklifBaslik: (ad: string) => string
@@ -198,7 +197,6 @@ export const METIN: Record<Dil, Metin> = {
     tabloUrun: 'Ürün',
     tabloMarka: 'Marka',
     tabloModel: 'Model / ölçü',
-    tabloStokKodu: 'Stok kodu',
     ornekAltNot: (toplam, adKucuk) =>
       `Liste, en çok hareket gören kalemlere göre sıralanmıştır ve ${toplam} kalemlik ${adKucuk} stoğumuzun tamamı değildir. Aradığınız ölçü listede yoksa büyük olasılıkla stoğumuzda vardır — lütfen sorunuz.`,
     sssBaslik: 'Sık sorulan sorular',
@@ -363,7 +361,6 @@ export const METIN: Record<Dil, Metin> = {
     tabloUrun: 'Product',
     tabloMarka: 'Brand',
     tabloModel: 'Model / size',
-    tabloStokKodu: 'Item code',
     ornekAltNot: (toplam, adKucuk) =>
       `This list is sorted by our highest-moving items and isn't the whole of our ${toplam}-item ${adKucuk} stock. If the size you need isn't listed, we very likely have it — just ask.`,
     sssBaslik: 'Frequently asked questions',
@@ -528,7 +525,6 @@ export const METIN: Record<Dil, Metin> = {
     tabloUrun: 'Товар',
     tabloMarka: 'Бренд',
     tabloModel: 'Модель / размер',
-    tabloStokKodu: 'Артикул',
     ornekAltNot: (toplam, adKucuk) =>
       `Список отсортирован по наиболее ходовым позициям и не отражает весь наш ассортимент «${adKucuk}» — ${toplam} позиций. Если нужного размера нет в списке, он, скорее всего, есть на складе — просто спросите.`,
     sssBaslik: 'Часто задаваемые вопросы',
