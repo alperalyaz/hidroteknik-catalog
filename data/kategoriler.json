@@ -7,7 +7,7 @@
   "ozet": "Hidrolik hortum: 1SN, 2SN, 2SC, 4SP, 4SH ve R6 tipleri. Gates, Alfagomma, HansaFlex ve Vereks. Presleme yerinde, aynı gün.",
   "giris": "Hidrolik hortum, sistemdeki basıncı kaybetmeden akışkanı taşıyan esnek bağlantı elemanıdır. Doğru hortum seçimi üç değere bağlıdır: çalışma basıncı, akışkan sıcaklığı ve iç çap. Bu üçünden biri yanlış seçildiğinde hortum ya erken yorulur ya da patlama riski taşır.\n\nHidroteknik, Denizli'deki deposunda 1SN ve 2SN tek/çift örgülü, 4SP ve 4SH çok katlı spiral ve termoplastik hortum tiplerini bulundurur. Hortum presleme işlemi kendi tesisimizde yapılır; standart ölçüler için genellikle aynı gün teslim edilir.\n\nForcestream, Seltex ve Ultimate hatları ile yıkama, ilaçlama, akaryakıt gibi genel amaçlı hortumlar Sel kod ailesindendir ve ayrı bir grupta listelenir: bkz. «Sel Hortum».",
   "eslesme": "HORTUM",
-  "haric": "RAKOR|REKOR|N[İIiı]PEL|TAPA|SOKET|KELEPÇE|KELEPCE|MAKAS|VALF|KART[İIiı]C[İIiı]|PATLAMA|MAKARA|SPREY|POL[İIiı][ÜU]R[AE]TAN|POLYAM[İIiı]D|HAVA HORTUMU|TEFLON|PTFE|[İIiı]MALAT|REV[İIiı]ZYON|DEĞ[İIiı]Ş[İIiı]M|TAM[İIiı]R|MONTAJ|[İIiı]ŞÇ[İIiı]L[İIiı]K|BAK[İIiı]M|ÇABUK EKLEME|\\mEK[İIiı]\\M|EKLER[İIiı]|KANAL|TE [ÜU]ÇL[ÜU]|KUKA|K[İIiı]L[İIiı]F|MANŞON|MAŞON",
+  "haric": "RAKOR|REKOR|N[İIiı]PEL|TAPA|SOKET|KELEPÇE|KELEPCE|MAKAS|VALF|KART[İIiı]C[İIiı]|PATLAMA|MAKARA|SPREY|POL[İIiı][ÜU]R[AE]TAN|POLYAM[İIiı]D|HAVA HORTUMU|TEFLON|PTFE|[İIiı]MALAT|REV[İIiı]ZYON|DEĞ[İIiı]Ş[İIiı]M|TAM[İIiı]R|MONTAJ|[İIiı]ŞÇ[İIiı]L[İIiı]K|BAK[İIiı]M|ÇABUK EKLEME|\\mEK[İIiı]\\M|EKLER[İIiı]|KANAL|TE [ÜU]ÇL[ÜU]|KUKA|K[İIiı]L[İIiı]F|MANŞON|MAŞON|SU HORTUMU|S[İIiı]CAK SU|EM[İIiı]Ş|AKARYAK[İIiı]T|[İIiı]LAÇLAMA|Y[İIiı]KAMA|CAR WASH|ŞAFFAF|ŞEFFAF|SEFFAF|BUHAR|VANA|DAĞ[İIiı]T[İIiı]C[İIiı]|G[ÖO]VDE|PRES [İIiı]ŞLEM|PU HORTUM|PVC|POL[İIiı]ET[İIiı]LEN|HAVA TABANCA",
   "sss": [
    {
     "s": "1SN ve 2SN hortum arasındaki fark nedir?",
@@ -52,8 +52,8 @@
   "h1": "Endüstriyel ve Özel Amaçlı Hortum",
   "ozet": "Su, sıcak su, emiş, akaryakıt, ilaçlama ve yıkama hortumları; şeffaf spiral takviyeli emiş hatları.",
   "giris": "Bu grup hidrolik hattın dışında kalan hortumları toplar. Hidrolik hortum basınca göre seçilir; buradaki hortumlarda belirleyici olan taşınan akışkan ve sıcaklıktır. Akaryakıt hortumunda iç lastiğin yakıta dayanması, sıcak su hortumunda sıcaklık sınırı, ilaçlama hortumunda kimyasal direnç öne çıkar.\n\nŞeffaf spiral takviyeli hortumlar emiş hatlarında kullanılır: sert spiral, vakum altında hortumun kendi üzerine çökmesini önler. Şeffaf olması hattın içinden ne geçtiğini görmeye yarar; gıda, tarım ve atık transferinde tercih edilir.\n\nHidrolik hortum arıyorsanız o ayrı bir gruptur — çalışma basıncı, örgü katı ve bağlantı tipi orada listelenir.",
-  "eslesme": "(?=.*HORTUM)(?=.*(SU HORTUMU|S[İIiı]CAK SU|EM[İIiı]Ş|BUHAR|GEYSER|AKARYAKIT|FUEL|[İIiı]LAÇLAMA|YIKAMA|CAR WASH|ŞAFFAF|ŞEFFAF|SEFFAF|BAHÇE|TAR[İIiı]M))",
-  "haric": "H[İIiı]DROL[İIiı]K HORTUM|SP[İIiı]RAL KORUMA|SOKET|RAKOR|N[İIiı]PEL|BAŞL[İIiı]Ğ[İIiı]|D[İIiı]YAFRAM|ŞALTER|VALF|YEDEK|[İIiı]MALAT|REV[İIiı]ZYON|TAM[İIiı]R|MONTAJ|[İIiı]ŞÇ[İIiı]L[İIiı]K|BAK[İIiı]M",
+  "eslesme": "SU HORTUMU|S[İIiı]CAK SU|EM[İIiı]Ş HORTUMU|BUHAR HORTUMU|AKARYAK[İIiı]T HORTUMU|[İIiı]LAÇLAMA HORTUMU|Y[İIiı]KAMA HORTUMU|CAR WASH|ŞAFFAF SPR[İIiı]AL HORTUM|ŞEFFAF SP[İIiı]RAL HORTUM|SEFFAF SPR[İIiı]AL HORTUM|PVC TEKNO HORTUM|BAHÇE HORTUMU|TAR[İIiı]M HORTUMU|GEYSER",
+  "haric": "H[İIiı]DROL[İIiı]K HORTUM|SP[İIiı]RAL KORUMA|SOKET|RAKOR|N[İIiı]PEL|BAŞL[İIiı]Ğ[İIiı]|D[İIiı]YAFRAM|ŞALTER|VALF|YEDEK|[İIiı]MALAT|REV[İIiı]ZYON|TAM[İIiı]R|MONTAJ|[İIiı]ŞÇ[İIiı]L[İIiı]K|BAK[İIiı]M|\\mEK[İIiı]\\M|EKLER[İIiı]",
   "sss": [
    {
     "s": "Forcestream, Seltex ve Ultimate arasındaki fark nedir?",
@@ -94,7 +94,7 @@
   "ozet": "Metrik, BSP/BSPT ve ORFS diş tiplerinde hidrolik rakor. Dirsek, nipel, tapa ve döner rakorlar dahil 1.400+ kalem.",
   "giris": "Rakor, hidrolik hattı oluşturan parçaları birbirine sızdırmaz biçimde bağlayan elemandır. Sektördeki en sık hata, farklı diş standartlarının birbirine benzemesinden kaynaklanır: metrik, BSP, BSPT, ORFS ve JIC dişler gözle bakıldığında yakın görünür ama sızdırmazlık prensipleri farklıdır.\n\nBSP paralel diş sızdırmazlığı genelde conta veya kesik koni ile sağlarken, BSPT konik diştir ve dişin kendisi sızdırmazlık yapar. ORFS ise O-ring ile yüz sızdırmazlığı kullanır ve yüksek titreşimli sistemlerde tercih edilir. Yanlış eşleştirilen diş, ilk basınçta sızdırır veya dişi bozar.",
   "eslesme": "RAKOR|REKOR",
-  "haric": "VALF|VANA|POMPA|DAĞ[İIiı]T[İIiı]C[İIiı]|DAG[İIiı]T[İIiı]C[İIiı]|MAKAS|[İIiı]MALAT|REV[İIiı]ZYON|DEĞ[İIiı]Ş[İIiı]M|TAM[İIiı]R|MONTAJ|[İIiı]ŞÇ[İIiı]L[İIiı]K|BAK[İIiı]M",
+  "haric": "VALF|VANA|POMPA|DAĞ[İIiı]T[İIiı]C[İIiı]|DAG[İIiı]T[İIiı]C[İIiı]|MAKAS|[İIiı]MALAT|REV[İIiı]ZYON|DEĞ[İIiı]Ş[İIiı]M|TAM[İIiı]R|MONTAJ|[İIiı]ŞÇ[İIiı]L[İIiı]K|BAK[İIiı]M|REKOR BAĞLANT[İIiı]",
   "sss": [
    {
     "s": "BSP ile BSPT arasındaki fark nedir?",
@@ -1209,7 +1209,7 @@
   "h1": "Poliüretan, Polyamid ve PTFE Pnömatik Hortum",
   "ozet": "Basınçlı hava hatları için poliüretan (PU), polyamid (PA) ve teflon (PTFE) hortum. 4x2,5’ten 16x12’ye kadar metrede satış.",
   "giris": "Pnömatik hortum, hidrolik hortumla aynı işi yapmaz: basınç çok daha düşüktür (tipik olarak 6–10 bar), buna karşılık hat sık hareket eder ve dar yerlerden kıvrılarak geçer. Bu yüzden çelik örgü değil, esnek plastik gövde kullanılır ve ölçü dış çap x iç çap olarak verilir — 8x5,5 ifadesi 8 mm dış, 5,5 mm iç çap demektir. Takmatik (push-in) rakorlar dış çapa göre seçildiği için bu iki sayıyı karıştırmamak gerekir.\n\nPoliüretan (PU) en yaygın olanıdır: yumuşaktır, küçük yarıçapta kıvrılır, hareketli aparatlarda ezilmeye dayanır. Polyamid (PA) daha serttir ve daha yüksek sıcaklığa çıkar; sabit tesisat hatlarında ve makine içi döşemede tercih edilir. PTFE (teflon) hortum ise kimyasal dayanımı ve sıcaklık aralığı gerektiren yerlerde kullanılır.\n\nMetre ile satılır; istenen boyda kesilir. Şeffaf spiral ve örgülü hava hortumu tipleri de aynı grupta bulunur.\n\nJava marka hava hortumu ve teflon soket Sel kod ailesindendir ve ayrı bir grupta listelenir: bkz. «Sel Hortum».",
-  "eslesme": "POL[İIiı][ÜU]R[AE]TAN|POLYAM[İIiı]D|TEFLON HORTUM|PTFE|HAVA HORTUMU",
+  "eslesme": "POL[İIiı][ÜU]R[AE]TAN|POLYAM[İIiı]D|TEFLON HORTUM|PTFE|HAVA HORTUMU|PU HORTUM|POL[İIiı]ET[İIiı]LEN HORTUM|HAVA TABANCA",
   "haric": "RAKOR|REKOR|SOKET|KELEP",
   "sss": [
    {

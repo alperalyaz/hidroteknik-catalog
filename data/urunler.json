@@ -1,10 +1,10 @@
 {
- "uretim": "2026-07-31",
+ "uretim": "2026-08-01",
  "kaynak": "Mikro ERP → Supabase stok_kartlari (aktif kartlar)",
  "siralama": "aylık tüketim (sa_aylik_tuketim) — en çok hareket gören üstte",
  "kategoriler": {
   "hidrolik-hortum": {
-   "toplamUrun": 298,
+   "toplamUrun": 205,
    "urunler": [
     {
      "kod": "HANSA.KP208",
@@ -95,7 +95,7 @@
    ]
   },
   "sel-hortum": {
-   "toplamUrun": 68,
+   "toplamUrun": 78,
    "urunler": [
     {
      "kod": "SEL.B.25",
@@ -166,7 +166,7 @@
    ]
   },
   "hidrolik-rakor": {
-   "toplamUrun": 1464,
+   "toplamUrun": 1361,
    "urunler": [
     {
      "kod": "AD-1324-MSD",
@@ -189,16 +189,6 @@
      "ad": "METRİK SOMUNLU DÜZ HORTUM RAKORU 5/16 M16x1,5 10L",
      "model": "M16x1,5 10L",
      "marka": "HansaFlex"
-    },
-    {
-     "kod": "EKO.REK.PC.04.08",
-     "ad": "REKOR BAĞLANTI 1/4 x 8",
-     "model": "4 x 8"
-    },
-    {
-     "kod": "EKO.REK.PC.04.06",
-     "ad": "REKOR BAĞLANTI 1/4 x 6",
-     "model": "4 x 6"
     },
     {
      "kod": "SARI.0116",
@@ -232,10 +222,6 @@
      "marka": "Oleocontrol"
     },
     {
-     "kod": "PC08-1/8",
-     "ad": "REKOR BAĞLANTI 1/8-8"
-    },
-    {
      "kod": "AD-1018-MSD",
      "ad": "METRİK SOMUNLU DÜZ HORTUM RAKORU 3/8 M18x1,5 12L",
      "model": "M18x1,5 12L"
@@ -251,16 +237,6 @@
      "ad": "METRİK SOMUNLU 90 HORTUM RAKORU 5/16 M16x1,5 10L",
      "model": "M16x1,5 10L",
      "marka": "HansaFlex"
-    },
-    {
-     "kod": "EKO.REK.PC.04.10",
-     "ad": "REKOR BAĞLANTI 1/4 x 10",
-     "model": "4 x 10"
-    },
-    {
-     "kod": "EKO.REK.PC.08.08",
-     "ad": "REKOR BAĞLANTI 1/2 x 8",
-     "model": "2 x 8"
     },
     {
      "kod": "SARI.0106",
@@ -293,6 +269,36 @@
      "ad": "HİDROLİK POPET TİP ÇABUK EKLEME RAKORU ERKEK 3/8",
      "model": "3/8",
      "marka": "Oleocontrol"
+    },
+    {
+     "kod": "OLEOC.QCA-25B-G1",
+     "ad": "HİDROLİK POPET TİP ÇABUK EKLEME RAKORU ERKEK 1",
+     "marka": "Oleocontrol",
+     "model": "QCA popet"
+    },
+    {
+     "kod": "OLEOC.QCA-25A-G1",
+     "ad": "HİDROLİK POPET TİP ÇABUK EKLEME RAKORU DİŞİ 1",
+     "marka": "Oleocontrol",
+     "model": "QCA popet"
+    },
+    {
+     "kod": "OLEOC.QCF-12B-G34",
+     "ad": "HİDROLİK DÜZ ALIN ÇABUK EKLEME RAKORU ERKEK 3/4",
+     "marka": "Oleocontrol",
+     "model": "QCF düz alın"
+    },
+    {
+     "kod": "OLEOC.QCF-12A-G34",
+     "ad": "HİDROLİK DÜZ ALIN ÇABUK EKLEME RAKORU DİŞİ 3/4",
+     "marka": "Oleocontrol",
+     "model": "QCF düz alın"
+    },
+    {
+     "kod": "OLEOC.QCA-10A-G38",
+     "ad": "HİDROLİK POPET TİP ÇABUK EKLEME RAKORU DİŞİ 3/8",
+     "marka": "Oleocontrol",
+     "model": "QCA popet"
     }
    ]
   },
@@ -355,7 +361,7 @@
    ]
   },
   "nipel": {
-   "toplamUrun": 578,
+   "toplamUrun": 565,
    "urunler": [
     {
      "kod": "HF.XVRNW20HL1/2ED",
@@ -565,7 +571,7 @@
    ]
   },
   "hidrolik-valf": {
-   "toplamUrun": 507,
+   "toplamUrun": 502,
    "urunler": [
     {
      "kod": "OLEOSTAR.01.171",
@@ -633,7 +639,7 @@
    ]
   },
   "solenoid-bobin": {
-   "toplamUrun": 75,
+   "toplamUrun": 72,
    "urunler": [
     {
      "kod": "EKO.BOB09.SOCMINILED",
@@ -781,7 +787,7 @@
    ]
   },
   "hidrolik-pompa": {
-   "toplamUrun": 277,
+   "toplamUrun": 276,
    "urunler": [
     {
      "kod": "HEMA.1PN.295",
@@ -1467,7 +1473,7 @@
    ]
   },
   "hidrolik-silindir": {
-   "toplamUrun": 374,
+   "toplamUrun": 382,
    "urunler": [
     {
      "kod": "CNC.04.01.063X75",
@@ -1536,7 +1542,7 @@
    ]
   },
   "krom-mil-boru": {
-   "toplamUrun": 183,
+   "toplamUrun": 989,
    "urunler": [
     {
      "kod": "A.TB.162",
@@ -1801,7 +1807,7 @@
    ]
   },
   "kuresel-vana": {
-   "toplamUrun": 162,
+   "toplamUrun": 147,
    "urunler": [
     {
      "kod": "SMS.KV.W1120.065",
@@ -1909,7 +1915,7 @@
    ]
   },
   "manometre": {
-   "toplamUrun": 147,
+   "toplamUrun": 146,
    "urunler": [
     {
      "kod": "PAK.0401000216",
@@ -2062,7 +2068,7 @@
    ]
   },
   "o-ring-sizdirmazlik": {
-   "toplamUrun": 948,
+   "toplamUrun": 949,
    "urunler": [
     {
      "kod": "KASTAS.KO-0203517",
@@ -2199,7 +2205,7 @@
    ]
   },
   "hidrolik-kece-nutring": {
-   "toplamUrun": 5295,
+   "toplamUrun": 5297,
    "urunler": [
     {
      "kod": "KASTAS.K21-008/5 PU",
@@ -2646,7 +2652,7 @@
    ]
   },
   "hortum-ucu-koruma": {
-   "toplamUrun": 81,
+   "toplamUrun": 57,
    "urunler": [
     {
      "kod": "AD-0606-HE",
@@ -2819,7 +2825,7 @@
    ]
   },
   "pnomatik-silindir": {
-   "toplamUrun": 414,
+   "toplamUrun": 413,
    "urunler": [
     {
      "kod": "PEM.S.PAG.040.025",
@@ -2919,7 +2925,7 @@
    ]
   },
   "pnomatik-valf": {
-   "toplamUrun": 249,
+   "toplamUrun": 248,
    "urunler": [
     {
      "kod": "EKO.4V210-08",
@@ -2981,7 +2987,7 @@
    ]
   },
   "sartlandirici": {
-   "toplamUrun": 115,
+   "toplamUrun": 114,
    "urunler": [
     {
      "kod": "EKO.AR-2000",
@@ -3131,7 +3137,7 @@
    ]
   },
   "pnomatik-rakor": {
-   "toplamUrun": 379,
+   "toplamUrun": 320,
    "urunler": [
     {
      "kod": "EKO.REK.PC.04.08",
@@ -3223,7 +3229,7 @@
    ]
   },
   "pnomatik-hortum": {
-   "toplamUrun": 73,
+   "toplamUrun": 90,
    "urunler": [
     {
      "kod": "EKO.PU.0805,5",

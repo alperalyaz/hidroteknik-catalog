@@ -53,7 +53,7 @@ const ONERI_LIMIT = 25 // konsolda önerilecek "listede yok ama çok satıyor" k
  * Ölçüldü (30.07.2026): 16 kart, biri aylık 362 hareketle en üstte çıkıyordu.
  */
 const GENEL_HARIC = [
-  '^ *(HORTUM|RAKOR|REKOR|N[İIiı]PEL|TAPA|VALF|POMPA|VANA|KELEPÇE|KEÇE|CONTA',
+  '^ *(PN[ÖO]MAT[İIiı]K |H[İIiı]DROL[İIiı]K |KATR[İIiı]C |K[ÜU]RESEL |KELEBEK |AKT[ÜU]AT[ÖO]R |AKT[ÜU]AT[ÖO]RL[ÜU] )?(HORTUM|RAKOR|REKOR|N[İIiı]PEL|TAPA|VALF|POMPA|VANA|KELEPÇE|KEÇE|CONTA',
   '|S[İIiı]L[İIiı]ND[İIiı]R|NUTR[İIiı]NG|SOKET|ADAPT[ÖO]R|MANOMETRE|BOB[İIiı]N',
   '|F[İIiı]LTRE|SOĞUTUCU|H[İIiı]DROMOTOR|ELEKTR[İIiı]K MOTORU',
   '|TAM[İIiı]R TAK[İIiı]M[İIiı]|KEÇE TAK[İIiı]M[İIiı]|KROM M[İIiı]L)( *\\(.{0,20}\\))? *$',
@@ -84,8 +84,24 @@ function filtre(k) {
   if (!esle.length) throw new Error(`${k.slug}: eslesme veya eslesmeKod gerekli`)
   p.push(`or=(${esle.join(',')})`) // tek koşulda da geçerli sözdizim
   const haric = k.haric ? `${sertlestir(k.haric)}|${GENEL_HARIC}` : GENEL_HARIC
-  p.push(`urun_ismi=not.imatch.${tirnak(haric)}`)
-  if (k.haricKod) p.push(`kodu=not.imatch.${tirnak(sertlestir(k.haricKod))}`)
+  // ⚠ HARİÇ FİLTRESİ and=() İÇİNDE OLMAK ZORUNDA — düz biçim SESSİZCE ÇALIŞMAZ.
+  //
+  // PostgREST'te `urun_ismi=not.imatch."DESEN"` yazıldığında tırnaklar desenin
+  // PARÇASI sayılıyor: sunucu `"DESEN"` (tırnaklar dahil) diye bir dize arıyor,
+  // hiçbir kayıtta bulamıyor, `not` da her şeyi geçiriyor. Yani filtre yok
+  // sayılıyor ve HATA VERMİYOR. Tırnak atılamaz da: desenlerde virgül ve
+  // parantez var ({0,20} gibi), tırnaksız değer onlarda bozulur.
+  //
+  // and=(...) içinde ise PostgREST tırnağı doğru ayrıştırıyor — or=() zaten
+  // öyle çalıştığı için eşleşme tarafı doğruydu, yalnız hariç tarafı ölüydü.
+  //
+  // Ölçüldü (31.07.2026, hidrolik-hortum): düz biçim 1240, and=() biçimi 205,
+  // doğrudan SQL 207 (aradaki 2 fark aktif=is.true'nun NULL satırları elemesi).
+  // Bu hata sessiz olduğu için bugüne kadar yazılan TÜM toplamUrun sayıları
+  // hariç desenleri hiç uygulanmadan hesaplanmış, yani şişikti.
+  const ve = [`urun_ismi.not.imatch.${tirnak(haric)}`]
+  if (k.haricKod) ve.push(`kodu.not.imatch.${tirnak(sertlestir(k.haricKod))}`)
+  p.push(`and=(${ve.join(',')})`)
   return p.join('&')
 }
 
