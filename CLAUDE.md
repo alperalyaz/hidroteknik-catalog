@@ -98,6 +98,14 @@ geçmez: `hidrolik-silindir` (`^CNC\.`), `o-ring-sizdirmazlik`
 anlatılan şekilde patladı: yeni düzende `A.` öneki kalmadı (183 → 3 kayıt).
 Ada çevrildi, bugün 180 kalem tutuyor.
 
+`hidrolik-silindir` de aynı hastalığın hafif hâlini yaşadı: kod şeması `CNC.` →
+`CNC-PV-T-` diye genişledi ve `^CNC\.` deseni 8 çelik pistonu tutmaz oldu.
+Bir süre fark edilmedi çünkü ters eğik çizgi hatası deseni `^CNC.` yapıp onları
+kazara yakalıyordu — iki hata birbirini örtmüş. Desen `^CNC[.-]` oldu.
+
+Bu 8 piston adında "keçeli" geçtiği için `hidrolik-kece-nutring`'e de düşüyordu;
+keçe arayana çelik piston göstermemek için oraya `haricKod: ^CNC-` eklendi.
+
 ### Yayımlanan kod ÜRETİCİNİNDİR, bizimki değil
 
 Stok kodumuz iki parçadır: **bizim önekimiz + üreticinin katalog kodu.**
@@ -180,8 +188,20 @@ yanlış alarm verir. Doğrusu Unicode bakışıdır: `(?<![\p{L}\p{N}_])`.
 
 Adı tek bir cins ismi olan, ölçüsüz kayıtlar (`MUH.MUH.26` = "HORTUM") gerçek ürün
 değil; listede olmayan bir kalemi hızlı satmak için açılmış tezgâh kartları. 16 tane
-var ve biri aylık 362 hareketle örnek tablonun en üstüne çıkıyordu. `veri-cek.mjs`
-içindeki `GENEL_HARIC` bunları tüm kategorilerden düşer.
+var ve biri aylık 362 hareketle örnek tablonun en üstüne çıkıyordu. `GENEL_HARIC`
+(`scripts/genel-haric.mjs`) bunları tüm kategorilerden düşer.
+
+**Desen TEK KOPYA olmak zorunda.** İki yerde kullanılıyor — `veri-cek.mjs` sayarken,
+`ornek-denetle.mjs` örnek satırları sınarken. Kopyalar ayrışırsa denetim yalan
+söyler: tazeleme bir kaydı eler, denetçi elemez, sonuç "kategorisine uymayan 0" der
+ama sayfada o kayıt durur. 02.08.2026'da gerçekten ayrıştılar (denetçininkinde
+`PNÖMATİK ` öneki yoktu) ve `MUHT.215` "PNÖMATİK SİLİNDİR" aylarca sayfada kaldı.
+
+**Cins isminden sonra tek dolgu kelimesine izin var** (` SETİ`, ` BAĞLANTI`), çünkü
+kart hep çıplak yazılmıyor: `MUHT.119` "HİDROLİK HORTUM SETİ", `MUHT.130` "NİPEL
+BAĞLANTI", `MUHT.283` "DÖNER DİRSEK BAĞLANTI". Sondaki `$` çapası korunduğu için
+ölçülü kardeşleri ("NİPEL BAĞLANTI 4", "DÖNER DİRSEK BAĞLANTI 1/4 x 6") etkilenmez —
+desene dokunurken bu ölçüldü, 15.258 kayıtta tam 5 kart eleniyor, yan etki sıfır.
 
 ### Filtre değişirse sayı bayatlar
 

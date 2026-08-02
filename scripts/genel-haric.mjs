@@ -25,7 +25,14 @@ export const GENEL_HARIC = [
   '^ *(PN[ÖO]MAT[İIiı]K |H[İIiı]DROL[İIiı]K |KATR[İIiı]C |K[ÜU]RESEL |KELEBEK |AKT[ÜU]AT[ÖO]R |AKT[ÜU]AT[ÖO]RL[ÜU] )?(HORTUM|RAKOR|REKOR|N[İIiı]PEL|TAPA|VALF|POMPA|VANA|KELEPÇE|KEÇE|CONTA',
   '|S[İIiı]L[İIiı]ND[İIiı]R|NUTR[İIiı]NG|SOKET|ADAPT[ÖO]R|MANOMETRE|BOB[İIiı]N',
   '|F[İIiı]LTRE|SOĞUTUCU|H[İIiı]DROMOTOR|ELEKTR[İIiı]K MOTORU',
-  '|TAM[İIiı]R TAK[İIiı]M[İIiı]|KEÇE TAK[İIiı]M[İIiı]|KROM M[İIiı]L)( *\\(.{0,20}\\))? *$',
+  '|TAM[İIiı]R TAK[İIiı]M[İIiı]|KEÇE TAK[İIiı]M[İIiı]|KROM M[İIiı]L',
+  // Bu üçü de aynı kalıpta çıplak cins ismi; listede olmadıkları için kaçıyorlardı.
+  '|TRANSM[İIiı]TTER|REG[ÜU]LAT[ÖO]R|D[ÖO]NER D[İIiı]RSEK)',
+  // TEK DOLGU KELİMESİNE İZİN: "NİPEL BAĞLANTI" ve "HİDROLİK HORTUM SETİ" de
+  // ölçüsüz tezgâh kartı, ama cins isminden sonra bir kelime geldiği için
+  // çıplak eşleşmeye takılmıyorlardı. `$` çapası korunuyor, o yüzden ölçülü
+  // kardeşleri ("NİPEL BAĞLANTI 4", "DÖNER DİRSEK BAĞLANTI 1/4 x 6") etkilenmez.
+  '( SET[İIiı]| BAĞLANT[İIiı])?( *\\(.{0,20}\\))? *$',
   '|^ *S[İIiı]L[İIiı]N[İIiı]Z *$',
   '|KOD G[İIiı]R[İIiı]N[İIiı]?[İIiı]?Z',
 ].join('')

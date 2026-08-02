@@ -529,7 +529,7 @@
   "giris": "Hidrolik silindir, basınçlı akışkanın enerjisini doğrusal harekete ve kuvvete çeviren elemandır. Ürettiği kuvvet basit bir ilişkiye dayanır: kuvvet, basınç ile piston alanının çarpımıdır. İtme yönünde tam piston alanı çalışır; çekme yönünde mil kesiti düştüğü için aynı basınçta elde edilen kuvvet daha küçüktür. Bir silindiri değiştirirken yalnız çapa değil, mil çapına ve bağlantı tipine de bakmak gerekir.\n\nBiz bu ürünü raftan satmıyoruz — ölçüye göre imal ediyoruz. Arka kapak, döküm ve çelik kep, vidalı ve yataklamalı piston, boğaz takozu ve bilezik gibi parçalar kendi tezgâhlarımızda işlenir; bu yüzden standart dışı boy, özel bağlantı veya artık tedarik edilemeyen bir silindirin muadili de yapılabilir.\n\nRevizyonda önce sökülüp ölçü alınır: mil aşınması, boru iç çapı ve keçe yuvaları kontrol edilir. Çoğu arıza silindirin tamamını değiştirmeyi gerektirmez; keçe takımı, boğaz takozu veya mil değişimiyle çözülür. Elinizdeki silindiri getirin, ölçüsünü bilmenize gerek yok.",
   "eslesme": "",
   "haric": "[İIiı]MALAT|REV[İIiı]ZYON|DEĞ[İIiı]Ş[İIiı]M|TAM[İIiı]R|MONTAJ|[İIiı]ŞÇ[İIiı]L[İIiı]K|BAK[İIiı]M",
-  "eslesmeKod": "^CNC\\.",
+  "eslesmeKod": "^CNC[.-]",
   "sss": [
    {
     "s": "Stokta hazır hidrolik silindir var mı?",
@@ -763,7 +763,7 @@
   "eslesme": "KEÇE|KECE|NUTR|S[İIiı]Y[İIiı]R[İIiı]C[İIiı]|YATAKLAMA|V.?R[İIiı]NG",
   "haric": "O.?R[İIiı]NG|POMPA|VALF|S[İIiı]L[İIiı]ND[İIiı]R|TAKOZ|[İIiı]MALAT|REV[İIiı]ZYON|DEĞ[İIiı]Ş[İIiı]M|TAM[İIiı]R|MONTAJ|[İIiı]ŞÇ[İIiı]L[İIiı]K|BAK[İIiı]M|APARAT",
   "eslesmeKod": "^KASTAS\\.",
-  "haricKod": "^KASTAS\\.(KO|KX|KSO)",
+  "haricKod": "^KASTAS\\.(KO|KX|KSO)|^CNC-",
   "sss": [
    {
     "s": "K21 nedir, nerede kullanılır?",
@@ -1173,7 +1173,7 @@
   "grup": "pnomatik",
   "ad": "Pnömatik Rakor",
   "h1": "Pnömatik Takmatik Rakor ve Bağlantı Elemanları",
-  "ozet": "Push-in rakor, döner dirsek, te ve nipel bağlantılar; susturucu ve hız ayar elemanları. Pemaks ve muadili, 4–16 mm.",
+  "ozet": "Push-in rakor, döner dirsek ve te bağlantılar; susturucu ve hız ayar elemanları. Pemaks ve muadili, 4–16 mm.",
   "giris": "Pnömatik bağlantıda hortum sıkılmaz, itilir: takmatik (push-in) rakorun içindeki paslanmaz tırnak hortumu tutar, o-ring sızdırmazlığı sağlar. Sökmek için bilezik bastırılır. Bu yüzden montaj alet istemez, ama rakor ölçüsünün hortumun DIŞ çapıyla eşleşmesi şarttır — 8 mm rakor 8x5,5 hortuma girer, 6x4’e girmez.\n\nGrupta düz rakor, 90° döner dirsek, te, düşürücü nipel ve kör tapa gibi tipler bulunur. Döner tipler montajdan sonra kendi ekseninde döndüğü için hortumun burulmasını engeller; hareketli aparatlarda ömrü belirgin şekilde uzatır. Diş tarafı genelde BSP (1/8, 1/4, 3/8, 1/2) veya metriktir; hazneye vidalanan uçta oring veya conta bulunur.\n\nAynı grupta egzoz susturucu, ayarlı susturucu ve otomatik tahliye elemanları da yer alır; bunlar valfin çıkış gürültüsünü ve hava hızını düzenler.",
   "eslesme": "REKOR BAĞLANT[İIiı]|D[ÖO]NER D[İIiı]RSEK|ÇABUK EKLEME|TE BAĞLANT[İIiı]|SUSTURUCU",
   "haric": "H[İIiı]DROL[İIiı]K|BSP-METR[İIiı]K|[İIiı]MALAT|REV[İIiı]ZYON|DEĞ[İIiı]Ş[İIiı]M|TAM[İIiı]R|MONTAJ|[İIiı]ŞÇ[İIiı]L[İIiı]K|BAK[İIiı]M",

@@ -4,7 +4,7 @@
  "siralama": "aylık tüketim (sa_aylik_tuketim) — en çok hareket gören üstte",
  "kategoriler": {
   "hidrolik-hortum": {
-   "toplamUrun": 205,
+   "toplamUrun": 204,
    "urunler": [
     {
      "kod": "HF.H.KP208",
@@ -363,7 +363,7 @@
    ]
   },
   "nipel": {
-   "toplamUrun": 578,
+   "toplamUrun": 577,
    "urunler": [
     {
      "kod": "HF.XVRNW20HL1/2ED",
@@ -1482,7 +1482,7 @@
    ]
   },
   "hidrolik-silindir": {
-   "toplamUrun": 374,
+   "toplamUrun": 382,
    "urunler": [
     {
      "kod": "CNC.04.01.063X75",
@@ -1928,7 +1928,7 @@
    ]
   },
   "manometre": {
-   "toplamUrun": 147,
+   "toplamUrun": 146,
    "urunler": [
     {
      "kod": "PAK.0401000216",
@@ -2218,7 +2218,7 @@
    ]
   },
   "hidrolik-kece-nutring": {
-   "toplamUrun": 5297,
+   "toplamUrun": 5289,
    "urunler": [
     {
      "kod": "KASTAS.K21-008/5 PU",
@@ -2989,7 +2989,7 @@
    ]
   },
   "sartlandirici": {
-   "toplamUrun": 114,
+   "toplamUrun": 113,
    "urunler": [
     {
      "kod": "AR.AR-2000",
@@ -3142,7 +3142,7 @@
    ]
   },
   "pnomatik-rakor": {
-   "toplamUrun": 381,
+   "toplamUrun": 380,
    "urunler": [
     {
      "kod": "AR.RAK.PC.04.08",
@@ -3198,10 +3198,6 @@
      "kod": "ALT.MUH.PDD.0408",
      "ad": "PLASTİK DÖNER DİRSEK BAĞLANTI 1/4 x 8 mm",
      "model": "4 x 8"
-    },
-    {
-     "kod": "MUHT.283",
-     "ad": "DÖNER DİRSEK BAĞLANTI"
     },
     {
      "kod": "AR.RAK.BSLM.04.00",
