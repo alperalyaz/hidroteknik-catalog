@@ -1,5 +1,5 @@
 {
- "uretim": "2026-08-01",
+ "uretim": "2026-08-02",
  "kaynak": "Mikro ERP → Supabase stok_kartlari (aktif kartlar)",
  "siralama": "aylık tüketim (sa_aylik_tuketim) — en çok hareket gören üstte",
  "kategoriler": {
@@ -168,7 +168,7 @@
    ]
   },
   "hidrolik-rakor": {
-   "toplamUrun": 1361,
+   "toplamUrun": 1360,
    "urunler": [
     {
      "kod": "AD.1324-MSD",
@@ -363,7 +363,7 @@
    ]
   },
   "nipel": {
-   "toplamUrun": 565,
+   "toplamUrun": 578,
    "urunler": [
     {
      "kod": "HF.XVRNW20HL1/2ED",
@@ -648,7 +648,7 @@
    ]
   },
   "solenoid-bobin": {
-   "toplamUrun": 72,
+   "toplamUrun": 74,
    "urunler": [
     {
      "kod": "AR.BOB09.SOCMINILED",
@@ -1482,7 +1482,7 @@
    ]
   },
   "hidrolik-silindir": {
-   "toplamUrun": 382,
+   "toplamUrun": 374,
    "urunler": [
     {
      "kod": "CNC.04.01.063X75",
@@ -1551,7 +1551,7 @@
    ]
   },
   "krom-mil-boru": {
-   "toplamUrun": 989,
+   "toplamUrun": 180,
    "urunler": [
     {
      "kod": "TA.TB.162",
@@ -1816,7 +1816,7 @@
    ]
   },
   "kuresel-vana": {
-   "toplamUrun": 147,
+   "toplamUrun": 158,
    "urunler": [
     {
      "kod": "SMS.KV.W1120.065",
@@ -1928,7 +1928,7 @@
    ]
   },
   "manometre": {
-   "toplamUrun": 146,
+   "toplamUrun": 147,
    "urunler": [
     {
      "kod": "PAK.0401000216",
@@ -2657,7 +2657,7 @@
    ]
   },
   "hortum-ucu-koruma": {
-   "toplamUrun": 57,
+   "toplamUrun": 81,
    "urunler": [
     {
      "kod": "AD.0606-HE",
@@ -2830,7 +2830,7 @@
    ]
   },
   "pnomatik-silindir": {
-   "toplamUrun": 413,
+   "toplamUrun": 383,
    "urunler": [
     {
      "kod": "PEM.S.PAG-040-SYA-0025",
@@ -2873,10 +2873,6 @@
      "ad": "FMS CETOP PNÖMATİK SİLİNDİR 100 X 050",
      "model": "100 X 050",
      "marka": "FMS"
-    },
-    {
-     "kod": "MUHT.215",
-     "ad": "PNÖMATİK SİLİNDİR"
     },
     {
      "kod": "PEM.S.PAG-032-SYA-0050",
@@ -3146,7 +3142,7 @@
    ]
   },
   "pnomatik-rakor": {
-   "toplamUrun": 320,
+   "toplamUrun": 381,
    "urunler": [
     {
      "kod": "AR.RAK.PC.04.08",

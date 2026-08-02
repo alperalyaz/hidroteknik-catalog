@@ -88,11 +88,15 @@ hidrolik hortum sayfasında görünmüyordu, çünkü eleme ada değil koda bak�
 İkincisi kod değişiminde sessizce patlar: desen hiçbir şeyi tutmaz, kategori
 SIFIR ürünle yayına çıkar. tsc geçer, build geçer, link denetimi geçer.
 
-Dört kategori koda MECBUR ve bunlar bilinçli istisnadır — sızdırmazlıkta ürün
+Üç kategori koda MECBUR ve bunlar bilinçli istisnadır — sızdırmazlıkta ürün
 adı `k21-040/11 ( 40 x 50 x 8 )` biçimindedir, ne olduğunu söyleyen kelime
-geçmez: `hidrolik-silindir` (`^CNC\.`), `krom-mil-boru` (`^A\.`),
-`o-ring-sizdirmazlik` ve `hidrolik-kece-nutring` (`^KASTAS\.`).
-`scripts/kod-gocur.mjs` her koşumda bu dördünü ekrana basar.
+geçmez: `hidrolik-silindir` (`^CNC\.`), `o-ring-sizdirmazlik`
+(`^KASTAS\.(KO|KX|KSO)`) ve `hidrolik-kece-nutring` (`^KASTAS\.` eksi o-ring).
+`scripts/kod-gocur.mjs` her koşumda bunları ekrana basar.
+
+`krom-mil-boru` eskiden dördüncüsüydü (`^A\.`) ve kod göçünde tam da yukarıda
+anlatılan şekilde patladı: yeni düzende `A.` öneki kalmadı (183 → 3 kayıt).
+Ada çevrildi, bugün 180 kalem tutuyor.
 
 ### Yayımlanan kod ÜRETİCİNİNDİR, bizimki değil
 
@@ -129,7 +133,7 @@ değildir, üç sebeple:**
   Gates'in kodu `6MXT`, `MXT.06` bizim yeniden dizmemiz. Üretici kodu ölçüyü
   nokta ile ayırmaz, içine gömer (`HD106`).
 
-Kapsam: 15.261 kaydın 9.891'i (%65) üretici kodu veriyor; sayfada görünen 686
+Kapsam: 15.258 aktif kaydın ~%65'i üretici kodu veriyor; sayfada görünen 686
 örnek satırın 300'ü (%44). Kalanların hücresi boş kalır — uydurmaktansa boş
 bırakılır (bkz. "Doğrulanamayan bilgi boş bırakılır").
 
@@ -199,9 +203,58 @@ anahtarın yoksa en azından değişen kategorilerin sayısını Supabase'den ö
 
 `npm run veri` (`scripts/veri-cek.mjs`) `SUPABASE_SERVICE_ROLE_KEY` ister; anon
 anahtar RLS yüzünden sıfır satır görür. Script yıkıcı değildir: elle düzenlenmiş
-örnek ürün satırlarını ezmez, yalnız `toplamUrun` sayılarını tazeler ve listede
-olmayan çok satan kalemleri konsola önerir. Sorgu boş dönerse dosyayı yazmadan
-durur.
+örnek ürün satırlarını ezmez, yalnız `toplamUrun` ve marka `adet` sayılarını
+tazeler ve listede olmayan çok satan kalemleri konsola önerir. Sorgu boş dönerse
+dosyayı yazmadan durur.
+
+Yalnız AKTİF kartlar sayılır (`aktif=is.true`). 15.364 kaydın 106'sı pasif;
+sayılırsa sayfa stokta olmayan ürünü stokta gösterir.
+
+### PostgREST'in iki sessiz tuzağı
+
+İkisi de HATA VERMEZ, yalnız yanlış sayı üretir. İkisi de aylarca fark edilmedi.
+
+**1. Tırnak — hariç filtresi `and=()` içinde olmak zorunda.** Düz
+`urun_ismi=not.imatch."DESEN"` yazıldığında PostgREST tırnakları desenin PARÇASI
+sayıyor, hiçbir kayıt tutmuyor, `not` da her şeyi geçiriyor. Ölçüldü
+(31.07.2026, hidrolik-hortum): düz biçim 1.240, `and=()` biçimi 205.
+
+**2. Ters eğik çizgi — `tirnak()` içinde İKİYE KATLANMALI.** PostgREST tırnaklı
+değerin içinde `\` karakterini kaçış işareti sayıp yutuyor:
+
+```
+yazılan     sunucunun gördüğü     sonuç
+^(AK)\.     ^(AK).                AKG. de tutuluyor  → Akon 57 yerine 246
+\mEK\M      mEKM                  hiçbir şey tutmuyor → 24 kalem eksik
+```
+
+Ölçüldü (02.08.2026): yedi kategorinin filtresi bu yüzden bozuk çalışıyordu.
+`hortum-ucu-koruma` 57 diyordu, gerçek 81; `hidrolik-silindir`in `^CNC\.` deseni
+`CNC-PV-T-040` gibi tireli kodları da yakalıyordu.
+
+**Bu sınıf hatayı yakalamanın tek güvenilir yolu ikinci bir motordur.** Aynı
+filtreleri bağımsız bir JS regex motoruyla yerel anlık görüntüye uygulayıp
+Postgres'in sonucuyla karşılaştırmak, iki tuzağı da anında görünür kıldı; 28
+kategoride 10'u sapıyordu. Sayı kontrolleri (sıfır mı, iki katına mı çıktı)
+gerekli ama yeterli değil — Akon'un 57→246 sıçraması sıfır kontrolünden geçmişti.
+
+### Sayı korumaları
+
+`veri-cek.mjs` üç eşikte durur ve dosyayı YAZMAZ:
+- kategori 0 döndü ama dosyada sayı var → yetki ya da desen bozuk
+- kategori sayısı 2 katından fazla arttı → mükerrer kayıt olabilir
+- marka sayısı 2 katından fazla arttı → desen komşu öneki tutuyor (AK. ↔ AKG.)
+
+Bilerek büyük sıçrama varsa `--zorla`.
+
+### Marka kalem sayısı
+
+`markalar.json` içindeki `adet` de `toplamUrun` gibi bayatlar. Artık `npm run veri`
+tazeliyor ama **yalnız tek markaya oturduğu doğrulanmış önekler için**. `AR.`
+altında 1.015 kalem var ve bunların yalnız 7'sinde Oxim adı geçiyor (75 KDNT,
+21 Festo, 912 markasız) — önekten saymak marka sayfasını 92 yerine 1.015 dedirtir.
+Oxim ve Oleostar bu yüzden elle ölçülmüştür ve script onlara dokunmaz, atladığını
+raporlar.
 
 ### Doğrulama
 

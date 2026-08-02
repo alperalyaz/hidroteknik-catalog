@@ -20,13 +20,8 @@
  */
 import { readFileSync } from 'node:fs'
 import { sertlestir } from './turkce-regex.mjs'
+import { GENEL_HARIC } from './genel-haric.mjs'
 
-const GENEL_HARIC = [
-  '^ *(HORTUM|RAKOR|REKOR|N[İIiı]PEL|TAPA|VALF|POMPA|VANA|KELEPÇE|KEÇE|CONTA',
-  '|S[İIiı]L[İIiı]ND[İIiı]R|NUTR[İIiı]NG|SOKET|ADAPT[ÖO]R|MANOMETRE|BOB[İIiı]N',
-  '|F[İIiı]LTRE|SOĞUTUCU|H[İIiı]DROMOTOR|ELEKTR[İIiı]K MOTORU',
-  '|TAM[İIiı]R TAK[İIiı]M[İIiı]|KEÇE TAK[İIiı]M[İIiı]|KROM M[İIiı]L)( *\\(.{0,20}\\))? *$',
-].join('')
 
 /**
  * Postgres deseni → JS deseni.

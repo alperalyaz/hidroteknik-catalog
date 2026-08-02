@@ -2,7 +2,7 @@
  {
   "slug": "kastas",
   "ad": "Kastaş",
-  "adet": 6208,
+  "adet": 6216,
   "kategoriler": [
    "hidrolik-kece-nutring",
    "o-ring-sizdirmazlik",
@@ -57,7 +57,7 @@
  {
   "slug": "hansaflex",
   "ad": "HansaFlex",
-  "adet": 1455,
+  "adet": 1454,
   "kategoriler": [
    "hidrolik-hortum",
    "hidrolik-rakor",
@@ -116,7 +116,7 @@
  {
   "slug": "pemaks",
   "ad": "Pemaks",
-  "adet": 878,
+  "adet": 835,
   "kategoriler": [
    "pnomatik-rakor",
    "pnomatik-silindir",
@@ -214,7 +214,7 @@
  {
   "slug": "ferro",
   "ad": "Ferro",
-  "adet": 277,
+  "adet": 268,
   "kategoriler": [
    "pnomatik-rakor",
    "hidrolik-rakor",
@@ -317,7 +317,7 @@
  {
   "slug": "pakkens",
   "ad": "Pakkens",
-  "adet": 212,
+  "adet": 213,
   "kategoriler": [
    "manometre"
   ],
@@ -361,7 +361,7 @@
  {
   "slug": "hydropack",
   "ad": "Hydropack",
-  "adet": 207,
+  "adet": 206,
   "kategoriler": [
    "hidrolik-valf",
    "hidrolik-pompa",
@@ -413,7 +413,7 @@
  {
   "slug": "hema",
   "ad": "Hema",
-  "adet": 196,
+  "adet": 198,
   "kategoriler": [
    "hidrolik-pompa",
    "hidromotor",
@@ -639,7 +639,7 @@
  {
   "slug": "semakmatik",
   "ad": "Semakmatik",
-  "adet": 29,
+  "adet": 36,
   "kategoriler": [
    "pnomatik-valf",
    "sartlandirici"
@@ -724,7 +724,7 @@
  {
   "slug": "gates",
   "ad": "Gates",
-  "adet": 28,
+  "adet": 27,
   "kategoriler": [
    "hidrolik-hortum"
   ],
@@ -768,7 +768,7 @@
  {
   "slug": "fms",
   "ad": "FMS",
-  "adet": 25,
+  "adet": 26,
   "kategoriler": [
    "hidrolik-filtre",
    "pnomatik-valf",

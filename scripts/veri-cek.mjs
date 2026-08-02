@@ -34,6 +34,7 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { sertlestir } from './turkce-regex.mjs'
+import { GENEL_HARIC } from './genel-haric.mjs'
 
 const KOK = join(dirname(fileURLToPath(import.meta.url)), '..')
 const ZORLA = process.argv.includes('--zorla')
@@ -46,22 +47,27 @@ if (!ANAHTAR) {
 
 const ONERI_LIMIT = 25 // konsolda önerilecek "listede yok ama çok satıyor" kalem sayısı
 
-/**
- * "Muhtelif" tezgâh kartları — adı tek bir cins ismi olan, ölçüsü/modeli
- * olmayan kayıtlar (MUH.MUH.26 "HORTUM", MUH.MUH.40 "REKOR" gibi). Listede
- * olmayan bir kalemi hızlıca satmak için açılmışlar; gerçek ürün değiller.
- * Sayıyı şişiriyor ve örnek tabloda "Hortum" diye bir satır olarak görünüyorlar.
- * Ölçüldü (30.07.2026): 16 kart, biri aylık 362 hareketle en üstte çıkıyordu.
- */
-const GENEL_HARIC = [
-  '^ *(PN[ÖO]MAT[İIiı]K |H[İIiı]DROL[İIiı]K |KATR[İIiı]C |K[ÜU]RESEL |KELEBEK |AKT[ÜU]AT[ÖO]R |AKT[ÜU]AT[ÖO]RL[ÜU] )?(HORTUM|RAKOR|REKOR|N[İIiı]PEL|TAPA|VALF|POMPA|VANA|KELEPÇE|KEÇE|CONTA',
-  '|S[İIiı]L[İIiı]ND[İIiı]R|NUTR[İIiı]NG|SOKET|ADAPT[ÖO]R|MANOMETRE|BOB[İIiı]N',
-  '|F[İIiı]LTRE|SOĞUTUCU|H[İIiı]DROMOTOR|ELEKTR[İIiı]K MOTORU',
-  '|TAM[İIiı]R TAK[İIiı]M[İIiı]|KEÇE TAK[İIiı]M[İIiı]|KROM M[İIiı]L)( *\\(.{0,20}\\))? *$',
-].join('')
 
-/** PostgREST değer kaçışı: regex'te virgül/parantez var, tırnak içine alınmalı. */
-const tirnak = (v) => `"${String(v).replace(/"/g, '\\"')}"`
+/**
+ * PostgREST değer kaçışı: regex'te virgül/parantez var, tırnak içine alınmalı.
+ *
+ * ⚠ TERS EĞİK ÇİZGİ ÖNCE İKİYE KATLANIR — atlanırsa desen SESSİZCE BOZULUR.
+ * PostgREST tırnaklı değerin içinde `\` karakterini kaçış işareti sayıp yutuyor:
+ *
+ *     yazılan          sunucunun gördüğü regex     sonuç
+ *     ^(AK)\.          ^(AK).                      AKG. de tutuluyor (57 → 246)
+ *     \mEK\M           mEKM                        hiçbir şey tutmuyor
+ *
+ * İkisi de hata VERMEZ; yalnız sayı yanlış çıkar. Ölçüldü (02.08.2026): yedi
+ * kategorinin filtresi bu yüzden bozuk çalışıyordu — hortum-ucu-koruma'nın
+ * kelime sınırları harfe dönüştüğü için 24 kalem eksik sayılıyordu,
+ * hidrolik-silindir'in `^CNC\.` deseni ise `CNC-PV-T-040` gibi tire'li kodları
+ * da yakalıyordu.
+ *
+ * Sıra önemli: önce `\`, sonra `"`. Ters sırada, tırnak için eklenen ters eğik
+ * çizgi de ikiye katlanır ve bu kez fazladan kaçış üretilir.
+ */
+const tirnak = (v) => `"${String(v).replace(/\\/g, '\\\\').replace(/"/g, '\\"')}"`
 
 async function sorgula(params) {
   const r = await fetch(`${URL_BASE}/rest/v1/stok_kartlari?${params}`, {
@@ -164,3 +170,75 @@ writeFileSync(join(KOK, 'data/urunler.json'), JSON.stringify(cikti, null, 1) + '
 const top = Object.values(cikti.kategoriler).reduce((a, b) => a + b.toplamUrun, 0)
 console.log(`\n✅ data/urunler.json yazıldı — ${kategoriler.length} kategori, ${top} kalem.`)
 console.log('   Yukarıdaki "listede yok" satırlarını tabloya eklemek İNSAN kararıdır.')
+
+/* ────────────────────────────────────────────────────────────────────────────
+ * MARKA KALEM SAYILARI
+ *
+ * `markalar.json` içindeki `adet`, marka sayfasında "X kalem" diye görünür ve
+ * `toplamUrun` ile aynı hastalığa yakalanır: kod öneki değişince ya da yeni ürün
+ * girince bayatlar, hiçbir denetim görmez. Eskiden elle ölçülüyordu —
+ * `kod-gocur.mjs` her koşumda "bunları yeniden sayın" diye uyarıyordu ve bu
+ * uyarı aylarca yapılmadı. Ölçüldü (02.08.2026): 9 markanın sayısı bayattı ve
+ * bayatlık kod göçünden bağımsızdı; Pemaks 878 diyordu, aktif kalem 835'ti
+ * (aradaki 43 pasif karttı — sayfa pasif ürünü stokta gibi gösteriyordu).
+ *
+ * ── ÖNEK SAYMAK HER MARKADA ÇALIŞMAZ ─────────────────────────────────────
+ * Bazı önekler tek markaya oturur (HF→HansaFlex 1.454/1.454) ve önekten saymak
+ * doğrudur. Bazıları ise TEDARİKÇİ gruplamasıdır: `AR.` altında 1.015 kalem var
+ * ama bunların yalnız 7'sinde Oxim adı geçiyor, 75'i KDNT, 21'i Festo, 912'si
+ * markasız. `AR.`i Oxim sayarsak marka sayfası 92 yerine 1.015 der — 11 kat yalan.
+ *
+ * Bu yüzden yalnız TEK MARKAYA OTURDUĞU DOĞRULANMIŞ önekler otomatik sayılır.
+ * Çok markalı öneklerin `adet` değeri elle ölçülmüştür ve DOKUNULMAZ; script
+ * onları "elle ölçüldü, atlandı" diye raporlar.
+ */
+const MARKA_ONEK = {
+  Kastaş: ['KASTAS'], HansaFlex: ['HF'], Pemaks: ['PEM'], Ferro: ['FR'],
+  'SMS Tork': ['SMS'], Pakkens: ['PAK'], Hydropack: ['HR'], Hema: ['HE'],
+  Esmaksan: ['ESM'], Duravis: ['US'], Akon: ['AK'], Semakmatik: ['SM'],
+  Gamak: ['GM'], Gates: ['GATES'], FMS: ['FM', 'FMS'],
+}
+
+const markaYolu = join(KOK, 'data/markalar.json')
+const markalar = JSON.parse(readFileSync(markaYolu, 'utf8'))
+const markaDegisen = []
+const markaAtlanan = []
+
+for (const marka of markalar) {
+  const onekler = MARKA_ONEK[marka.ad]
+  if (!onekler) { markaAtlanan.push(marka.ad); continue }
+  // `kodu.like.ÖNEK.*` yerine regex: önek sonundaki noktanın gerçekten ayraç
+  // olduğunu garantiler (AK. ile AKG. karışmasın).
+  //
+  // ⚠ and=() ŞART — düz `kodu=imatch."DESEN"` biçimi sessizce hiçbir şey tutmaz;
+  // PostgREST tırnakları desenin parçası sayıyor (yukarıda kategori filtresinde
+  // anlatılan aynı tuzak). İlk yazışımda bu hataya düştüm ve aşağıdaki sıfır
+  // kontrolü yakaladı — kontrol olmasaydı bütün marka sayıları 0 yazılacaktı.
+  const desen = `^(${onekler.join('|')})\\.`
+  const { toplam } = await sorgula(
+    `aktif=is.true&and=(kodu.imatch.${tirnak(desen)})&select=kodu&limit=1`
+  )
+  if (toplam === 0) {
+    console.error(`⛔ ${marka.ad}: önek ${desen} hiçbir şey tutmuyor — markalar.json YAZILMADI.`)
+    process.exit(1)
+  }
+  // İKİNCİ EMNİYET: sayı aniden şiştiyse de dur. Sıfır kontrolü tek başına
+  // yetmiyor — ters eğik çizgi kaçışı bozukken `^(AK)\.` deseni `AKG.`yi de
+  // tutup Akon'u 57'den 246'ya çıkarmıştı ve sıfır kontrolü bunu göremedi.
+  // Marka kalem sayısı iki katına çıkıyorsa bu ürün girişi değil, desen hatasıdır.
+  if (marka.adet && toplam > marka.adet * 2 + 20 && !ZORLA) {
+    console.error(`\n⛔ ${marka.ad}: ${marka.adet} → ${toplam} (${(toplam / marka.adet).toFixed(1)}× artış)`)
+    console.error(`   Desen ${desen} komşu bir öneki de tutuyor olabilir (AK. ↔ AKG. gibi).`)
+    console.error('   markalar.json YAZILMADI. Artış gerçekse --zorla ekleyin.')
+    process.exit(1)
+  }
+  if (toplam !== marka.adet) markaDegisen.push(`${marka.ad}: ${marka.adet} → ${toplam}`)
+  marka.adet = toplam
+}
+
+writeFileSync(markaYolu, JSON.stringify(markalar, null, 1) + '\n')
+console.log(`\n✅ data/markalar.json yazıldı — ${markaDegisen.length} markanın sayısı tazelendi.`)
+for (const d of markaDegisen) console.log(`   ${d}`)
+if (markaAtlanan.length) {
+  console.log(`   atlandı (öneki çok markalı, elle ölçülmüş): ${markaAtlanan.join(', ')}`)
+}
