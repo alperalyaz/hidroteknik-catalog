@@ -634,8 +634,17 @@ export const METIN: Record<Dil, Metin> = {
     kodGiris: (marka, desen, ornek) =>
       `Продукцию ${marka} на практике ищут не по нашему складскому коду, а по каталожному коду производителя. Код построен так: ${desen} — например, ${ornek}. Любой код из перечисленных серий может быть поставлен; часть из них есть на складе.`,
     kodSeriBaslik: (marka, seri) => `${marka}, серия ${seri}`,
-    kodKatalogNotu: (adet) =>
-      `В каталоге производителя в этой серии ${adet} кодов; все могут быть поставлены.`,
+    // Rusça sayı çekimi: 1 код · 2-4 кода · 5+ кодов. Son iki hane 11-14 ise
+    // her zaman чоğul (кодов). Sayı zaten biçimlenmiş dize olarak geliyor,
+    // ayracı atıp son haneye bakıyoruz.
+    kodKatalogNotu: (adet) => {
+      const n = Number(String(adet).replace(/\D/g, ''))
+      const yuz = n % 100
+      const on = n % 10
+      const kelime =
+        yuz >= 11 && yuz <= 14 ? 'кодов' : on === 1 ? 'код' : on >= 2 && on <= 4 ? 'кода' : 'кодов'
+      return `В каталоге производителя в этой серии ${adet} ${kelime}; все могут быть поставлены.`
+    },
     kodStokNotu: (adet) => `По этой серии у нас ${adet} складских позиций.`,
     kodTamMatris: (cap, strok) =>
       `Каждый из ${cap} диаметров выпускается в ${strok} ступенях хода; в списке ниже приведены все комбинации.`,

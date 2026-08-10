@@ -23,9 +23,9 @@ export const GRUPLAR = [
     enAzKod: 2,
     enFazlaSeri: 20,
     ozellikler: [
-      { etiket: 'kW', re: /GAMAK\s+([\d.,]+)\s*kW/i },
-      { etiket: 'kutup', re: /(\d+)\s*KUTUP/i },
-      { etiket: 'd/dk', re: /(\d+)\s*d\/dk/i },
+      { etiket: { tr: 'kW', en: 'kW', ru: 'кВт' }, re: /GAMAK\s+([\d.,]+)\s*kW/i },
+      { etiket: { tr: 'kutup', en: 'poles', ru: 'полюсов' }, re: /(\d+)\s*KUTUP/i },
+      { etiket: { tr: 'd/dk', en: 'rpm', ru: 'об/мин' }, re: /(\d+)\s*d\/dk/i },
     ],
     seriAciklama: (seri, satirlar) => {
       const ad = satirlar[0][1]

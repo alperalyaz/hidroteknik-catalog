@@ -261,8 +261,8 @@ export default async function KategoriSayfasi({
                         </tr>
                       )}
                       {s.ozellikler?.map((o) => (
-                        <tr key={o.etiket}>
-                          <th>{o.etiket}</th>
+                        <tr key={o.etiket.tr}>
+                          <th>{o.etiket[lang]}</th>
                           <td className="model">{o.degerler.join(', ')}</td>
                         </tr>
                       ))}

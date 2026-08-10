@@ -583,7 +583,11 @@
     "katalogAdet": 72,
     "ozellikler": [
      {
-      "etiket": "kW",
+      "etiket": {
+       "tr": "kW",
+       "en": "kW",
+       "ru": "кВт"
+      },
       "degerler": [
        "0.12",
        "0.18",
@@ -609,7 +613,11 @@
       ]
      },
      {
-      "etiket": "kutup",
+      "etiket": {
+       "tr": "kutup",
+       "en": "poles",
+       "ru": "полюсов"
+      },
       "degerler": [
        "2",
        "4",
@@ -618,7 +626,11 @@
       ]
      },
      {
-      "etiket": "d/dk",
+      "etiket": {
+       "tr": "d/dk",
+       "en": "rpm",
+       "ru": "об/мин"
+      },
       "degerler": [
        "750",
        "1000",
@@ -712,7 +724,11 @@
     "katalogAdet": 65,
     "ozellikler": [
      {
-      "etiket": "kW",
+      "etiket": {
+       "tr": "kW",
+       "en": "kW",
+       "ru": "кВт"
+      },
       "degerler": [
        "0.18",
        "0.25",
@@ -737,7 +753,11 @@
       ]
      },
      {
-      "etiket": "kutup",
+      "etiket": {
+       "tr": "kutup",
+       "en": "poles",
+       "ru": "полюсов"
+      },
       "degerler": [
        "2",
        "4",
@@ -746,7 +766,11 @@
       ]
      },
      {
-      "etiket": "d/dk",
+      "etiket": {
+       "tr": "d/dk",
+       "en": "rpm",
+       "ru": "об/мин"
+      },
       "degerler": [
        "750",
        "1000",
@@ -833,7 +857,11 @@
     "katalogAdet": 57,
     "ozellikler": [
      {
-      "etiket": "kW",
+      "etiket": {
+       "tr": "kW",
+       "en": "kW",
+       "ru": "кВт"
+      },
       "degerler": [
        "0.18",
        "0.37",
@@ -857,7 +885,11 @@
       ]
      },
      {
-      "etiket": "kutup",
+      "etiket": {
+       "tr": "kutup",
+       "en": "poles",
+       "ru": "полюсов"
+      },
       "degerler": [
        "2",
        "4",
@@ -866,7 +898,11 @@
       ]
      },
      {
-      "etiket": "d/dk",
+      "etiket": {
+       "tr": "d/dk",
+       "en": "rpm",
+       "ru": "об/мин"
+      },
       "degerler": [
        "750",
        "1000",
@@ -945,7 +981,11 @@
     "katalogAdet": 52,
     "ozellikler": [
      {
-      "etiket": "kW",
+      "etiket": {
+       "tr": "kW",
+       "en": "kW",
+       "ru": "кВт"
+      },
       "degerler": [
        "0.18",
        "0.37",
@@ -968,7 +1008,11 @@
       ]
      },
      {
-      "etiket": "kutup",
+      "etiket": {
+       "tr": "kutup",
+       "en": "poles",
+       "ru": "полюсов"
+      },
       "degerler": [
        "2",
        "4",
@@ -977,7 +1021,11 @@
       ]
      },
      {
-      "etiket": "d/dk",
+      "etiket": {
+       "tr": "d/dk",
+       "en": "rpm",
+       "ru": "об/мин"
+      },
       "degerler": [
        "750",
        "1000",
@@ -1051,7 +1099,11 @@
     "katalogAdet": 38,
     "ozellikler": [
      {
-      "etiket": "kW",
+      "etiket": {
+       "tr": "kW",
+       "en": "kW",
+       "ru": "кВт"
+      },
       "degerler": [
        "37",
        "45",
@@ -1068,7 +1120,11 @@
       ]
      },
      {
-      "etiket": "kutup",
+      "etiket": {
+       "tr": "kutup",
+       "en": "poles",
+       "ru": "полюсов"
+      },
       "degerler": [
        "2",
        "4",
@@ -1077,7 +1133,11 @@
       ]
      },
      {
-      "etiket": "d/dk",
+      "etiket": {
+       "tr": "d/dk",
+       "en": "rpm",
+       "ru": "об/мин"
+      },
       "degerler": [
        "750",
        "1000",
@@ -1137,7 +1197,11 @@
     "katalogAdet": 36,
     "ozellikler": [
      {
-      "etiket": "kW",
+      "etiket": {
+       "tr": "kW",
+       "en": "kW",
+       "ru": "кВт"
+      },
       "degerler": [
        "2.2",
        "3",
@@ -1154,7 +1218,11 @@
       ]
      },
      {
-      "etiket": "kutup",
+      "etiket": {
+       "tr": "kutup",
+       "en": "poles",
+       "ru": "полюсов"
+      },
       "degerler": [
        "2",
        "4",
@@ -1163,7 +1231,11 @@
       ]
      },
      {
-      "etiket": "d/dk",
+      "etiket": {
+       "tr": "d/dk",
+       "en": "rpm",
+       "ru": "об/мин"
+      },
       "degerler": [
        "750",
        "1000",
@@ -1221,7 +1293,11 @@
     "katalogAdet": 34,
     "ozellikler": [
      {
-      "etiket": "kW",
+      "etiket": {
+       "tr": "kW",
+       "en": "kW",
+       "ru": "кВт"
+      },
       "degerler": [
        "110",
        "132",
@@ -1239,7 +1315,11 @@
       ]
      },
      {
-      "etiket": "kutup",
+      "etiket": {
+       "tr": "kutup",
+       "en": "poles",
+       "ru": "полюсов"
+      },
       "degerler": [
        "2",
        "4",
@@ -1248,7 +1328,11 @@
       ]
      },
      {
-      "etiket": "d/dk",
+      "etiket": {
+       "tr": "d/dk",
+       "en": "rpm",
+       "ru": "об/мин"
+      },
       "degerler": [
        "750",
        "1000",
@@ -1304,7 +1388,11 @@
     "katalogAdet": 32,
     "ozellikler": [
      {
-      "etiket": "kW",
+      "etiket": {
+       "tr": "kW",
+       "en": "kW",
+       "ru": "кВт"
+      },
       "degerler": [
        "0.75",
        "1.1",
@@ -1325,14 +1413,22 @@
       ]
      },
      {
-      "etiket": "kutup",
+      "etiket": {
+       "tr": "kutup",
+       "en": "poles",
+       "ru": "полюсов"
+      },
       "degerler": [
        "2",
        "4"
       ]
      },
      {
-      "etiket": "d/dk",
+      "etiket": {
+       "tr": "d/dk",
+       "en": "rpm",
+       "ru": "об/мин"
+      },
       "degerler": [
        "1500",
        "3000"
@@ -1384,7 +1480,11 @@
     "katalogAdet": 31,
     "ozellikler": [
      {
-      "etiket": "kW",
+      "etiket": {
+       "tr": "kW",
+       "en": "kW",
+       "ru": "кВт"
+      },
       "degerler": [
        "3",
        "4",
@@ -1400,7 +1500,11 @@
       ]
      },
      {
-      "etiket": "kutup",
+      "etiket": {
+       "tr": "kutup",
+       "en": "poles",
+       "ru": "полюсов"
+      },
       "degerler": [
        "2",
        "4",
@@ -1409,7 +1513,11 @@
       ]
      },
      {
-      "etiket": "d/dk",
+      "etiket": {
+       "tr": "d/dk",
+       "en": "rpm",
+       "ru": "об/мин"
+      },
       "degerler": [
        "750",
        "1000",
@@ -1462,7 +1570,11 @@
     "katalogAdet": 28,
     "ozellikler": [
      {
-      "etiket": "kW",
+      "etiket": {
+       "tr": "kW",
+       "en": "kW",
+       "ru": "кВт"
+      },
       "degerler": [
        "0.12",
        "0.18",
@@ -1478,14 +1590,22 @@
       ]
      },
      {
-      "etiket": "kutup",
+      "etiket": {
+       "tr": "kutup",
+       "en": "poles",
+       "ru": "полюсов"
+      },
       "degerler": [
        "2",
        "4"
       ]
      },
      {
-      "etiket": "d/dk",
+      "etiket": {
+       "tr": "d/dk",
+       "en": "rpm",
+       "ru": "об/мин"
+      },
       "degerler": [
        "1500",
        "3000"
@@ -1533,7 +1653,11 @@
     "katalogAdet": 27,
     "ozellikler": [
      {
-      "etiket": "kW",
+      "etiket": {
+       "tr": "kW",
+       "en": "kW",
+       "ru": "кВт"
+      },
       "degerler": [
        "0.12",
        "0.18",
@@ -1549,14 +1673,22 @@
       ]
      },
      {
-      "etiket": "kutup",
+      "etiket": {
+       "tr": "kutup",
+       "en": "poles",
+       "ru": "полюсов"
+      },
       "degerler": [
        "2",
        "4"
       ]
      },
      {
-      "etiket": "d/dk",
+      "etiket": {
+       "tr": "d/dk",
+       "en": "rpm",
+       "ru": "об/мин"
+      },
       "degerler": [
        "1500",
        "3000"
@@ -1603,7 +1735,11 @@
     "katalogAdet": 20,
     "ozellikler": [
      {
-      "etiket": "kW",
+      "etiket": {
+       "tr": "kW",
+       "en": "kW",
+       "ru": "кВт"
+      },
       "degerler": [
        "0.75",
        "1.1",
@@ -1625,14 +1761,22 @@
       ]
      },
      {
-      "etiket": "kutup",
+      "etiket": {
+       "tr": "kutup",
+       "en": "poles",
+       "ru": "полюсов"
+      },
       "degerler": [
        "2",
        "4"
       ]
      },
      {
-      "etiket": "d/dk",
+      "etiket": {
+       "tr": "d/dk",
+       "en": "rpm",
+       "ru": "об/мин"
+      },
       "degerler": [
        "1500",
        "3000"
@@ -1672,7 +1816,11 @@
     "katalogAdet": 20,
     "ozellikler": [
      {
-      "etiket": "kW",
+      "etiket": {
+       "tr": "kW",
+       "en": "kW",
+       "ru": "кВт"
+      },
       "degerler": [
        "5.5",
        "7.5",
@@ -1687,14 +1835,22 @@
       ]
      },
      {
-      "etiket": "kutup",
+      "etiket": {
+       "tr": "kutup",
+       "en": "poles",
+       "ru": "полюсов"
+      },
       "degerler": [
        "2",
        "4"
       ]
      },
      {
-      "etiket": "d/dk",
+      "etiket": {
+       "tr": "d/dk",
+       "en": "rpm",
+       "ru": "об/мин"
+      },
       "degerler": [
        "1500",
        "3000"
@@ -1734,7 +1890,11 @@
     "katalogAdet": 20,
     "ozellikler": [
      {
-      "etiket": "kW",
+      "etiket": {
+       "tr": "kW",
+       "en": "kW",
+       "ru": "кВт"
+      },
       "degerler": [
        "5.5",
        "7.5",
@@ -1749,14 +1909,22 @@
       ]
      },
      {
-      "etiket": "kutup",
+      "etiket": {
+       "tr": "kutup",
+       "en": "poles",
+       "ru": "полюсов"
+      },
       "degerler": [
        "2",
        "4"
       ]
      },
      {
-      "etiket": "d/dk",
+      "etiket": {
+       "tr": "d/dk",
+       "en": "rpm",
+       "ru": "об/мин"
+      },
       "degerler": [
        "1500",
        "3000"
@@ -1796,7 +1964,11 @@
     "katalogAdet": 19,
     "ozellikler": [
      {
-      "etiket": "kW",
+      "etiket": {
+       "tr": "kW",
+       "en": "kW",
+       "ru": "кВт"
+      },
       "degerler": [
        "110",
        "132",
@@ -1812,7 +1984,11 @@
       ]
      },
      {
-      "etiket": "kutup",
+      "etiket": {
+       "tr": "kutup",
+       "en": "poles",
+       "ru": "полюсов"
+      },
       "degerler": [
        "2",
        "4",
@@ -1821,7 +1997,11 @@
       ]
      },
      {
-      "etiket": "d/dk",
+      "etiket": {
+       "tr": "d/dk",
+       "en": "rpm",
+       "ru": "об/мин"
+      },
       "degerler": [
        "750",
        "1000",
@@ -1862,7 +2042,11 @@
     "katalogAdet": 15,
     "ozellikler": [
      {
-      "etiket": "kW",
+      "etiket": {
+       "tr": "kW",
+       "en": "kW",
+       "ru": "кВт"
+      },
       "degerler": [
        "0.12",
        "0.18",
@@ -1874,14 +2058,22 @@
       ]
      },
      {
-      "etiket": "kutup",
+      "etiket": {
+       "tr": "kutup",
+       "en": "poles",
+       "ru": "полюсов"
+      },
       "degerler": [
        "2",
        "4"
       ]
      },
      {
-      "etiket": "d/dk",
+      "etiket": {
+       "tr": "d/dk",
+       "en": "rpm",
+       "ru": "об/мин"
+      },
       "degerler": [
        "1500",
        "3000"
@@ -1916,7 +2108,11 @@
     "katalogAdet": 14,
     "ozellikler": [
      {
-      "etiket": "kW",
+      "etiket": {
+       "tr": "kW",
+       "en": "kW",
+       "ru": "кВт"
+      },
       "degerler": [
        "0.12",
        "0.18",
@@ -1926,7 +2122,11 @@
       ]
      },
      {
-      "etiket": "kutup",
+      "etiket": {
+       "tr": "kutup",
+       "en": "poles",
+       "ru": "полюсов"
+      },
       "degerler": [
        "2",
        "4",
@@ -1935,7 +2135,11 @@
       ]
      },
      {
-      "etiket": "d/dk",
+      "etiket": {
+       "tr": "d/dk",
+       "en": "rpm",
+       "ru": "об/мин"
+      },
       "degerler": [
        "750",
        "1000",
@@ -1971,7 +2175,11 @@
     "katalogAdet": 14,
     "ozellikler": [
      {
-      "etiket": "kW",
+      "etiket": {
+       "tr": "kW",
+       "en": "kW",
+       "ru": "кВт"
+      },
       "degerler": [
        "30",
        "37",
@@ -1984,7 +2192,11 @@
       ]
      },
      {
-      "etiket": "kutup",
+      "etiket": {
+       "tr": "kutup",
+       "en": "poles",
+       "ru": "полюсов"
+      },
       "degerler": [
        "2",
        "4",
@@ -1993,7 +2205,11 @@
       ]
      },
      {
-      "etiket": "d/dk",
+      "etiket": {
+       "tr": "d/dk",
+       "en": "rpm",
+       "ru": "об/мин"
+      },
       "degerler": [
        "750",
        "1000",
@@ -2029,7 +2245,11 @@
     "katalogAdet": 12,
     "ozellikler": [
      {
-      "etiket": "kW",
+      "etiket": {
+       "tr": "kW",
+       "en": "kW",
+       "ru": "кВт"
+      },
       "degerler": [
        "9.2",
        "10",
@@ -2043,14 +2263,22 @@
       ]
      },
      {
-      "etiket": "kutup",
+      "etiket": {
+       "tr": "kutup",
+       "en": "poles",
+       "ru": "полюсов"
+      },
       "degerler": [
        "2",
        "4"
       ]
      },
      {
-      "etiket": "d/dk",
+      "etiket": {
+       "tr": "d/dk",
+       "en": "rpm",
+       "ru": "об/мин"
+      },
       "degerler": [
        "1500",
        "3000"
@@ -2082,7 +2310,11 @@
     "katalogAdet": 8,
     "ozellikler": [
      {
-      "etiket": "kW",
+      "etiket": {
+       "tr": "kW",
+       "en": "kW",
+       "ru": "кВт"
+      },
       "degerler": [
        "37",
        "45",
@@ -2092,7 +2324,11 @@
       ]
      },
      {
-      "etiket": "kutup",
+      "etiket": {
+       "tr": "kutup",
+       "en": "poles",
+       "ru": "полюсов"
+      },
       "degerler": [
        "2",
        "4",
@@ -2101,7 +2337,11 @@
       ]
      },
      {
-      "etiket": "d/dk",
+      "etiket": {
+       "tr": "d/dk",
+       "en": "rpm",
+       "ru": "об/мин"
+      },
       "degerler": [
        "750",
        "1000",

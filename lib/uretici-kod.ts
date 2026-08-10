@@ -22,8 +22,15 @@ import type { Dil } from './site'
 type CokDilli = Record<Dil, string>
 
 export type UreticiTip = { kod: string } & CokDilli
-/** Ürün adından toplanan teknik değer kümesi: "kW" → ["0.09", "0.12", …] */
-export type UreticiOzellik = { etiket: string; degerler: string[] }
+/**
+ * Ürün adından toplanan teknik değer kümesi: "kW" → ["0.09", "0.12", …]
+ *
+ * Etiket ÜÇ DİLLİ. İlk sürümde tek dizeydi ve Rusça sayfada da "kW" yazıyordu;
+ * Rusça'da birim `кВт`, "kutup" ise `полюсов`. Katalogda daha önce iki kez
+ * yaşanan hatanın (profil `ad`ı, `yer` alanı) aynısıydı — veride tek dilli
+ * tutulan bir alan üç dilde birden basılıyor.
+ */
+export type UreticiOzellik = { etiket: Record<Dil, string>; degerler: string[] }
 
 /**
  * İki farklı seri yapısı var ve ikisi de geçerli:

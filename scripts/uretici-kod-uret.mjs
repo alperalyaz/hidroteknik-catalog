@@ -91,6 +91,7 @@ for (const g of GRUPLAR) {
       seri,
       katalogAdet: satirlar.length,
       ozellikler: g.ozellikler.map((o) => ({
+        // Etiket üç dilli: Rusça sayfada "kW" değil "кВт" yazmalı.
         etiket: o.etiket,
         degerler: ozellikTopla(satirlar, o.re).slice(0, 40),
       })).filter((o) => o.degerler.length > 1),
@@ -121,6 +122,19 @@ for (const alan of ['fiyat', 'price', 'iskonto', 'para_birimi', 'birim_fiyat']) 
 const fiyatIzi = govde.match(/\d+[.,]\d{2}\s*(USD|EUR|TL|TRY|₺|\$|€)/i)
 if (fiyatIzi) throw new Error(`çıktıda fiyat izi var: ${fiyatIzi[0]}`)
 
+for (const g of cikti) {
+  for (const s of g.seriler) {
+    for (const o of s.ozellikler ?? []) {
+      if (!o.etiket?.tr || !o.etiket?.en || !o.etiket?.ru) {
+        throw new Error(`${g.marka}/${s.seri}: öznitelik etiketinin üç dili dolu değil`)
+      }
+      if (!/[Ѐ-ӿ]/.test(o.etiket.ru) && /[A-Za-z]/.test(o.etiket.ru) && o.etiket.ru === o.etiket.en) {
+        // Birim kısaltmaları (mm, bar) üç dilde aynı olabilir; uyarı değil.
+      }
+    }
+  }
+}
+
 const kategoriler = JSON.parse(readFileSync('data/kategoriler.json', 'utf8')).map((k) => k.slug)
 for (const g of cikti) {
   if (!kategoriler.includes(g.kategori)) throw new Error(`${g.marka}: "${g.kategori}" diye bir kategori yok`)
@@ -142,7 +156,7 @@ for (const g of cikti) {
     // Korunan Pemaks grubu eski (silindire özel) yapıda: caplar/stroklar taşır,
     // ozellikler taşımaz. Rapor iki yapıyı da basabilmeli.
     const oz = s.ozellikler
-      ? s.ozellikler.map((o) => `${o.etiket} ${o.degerler.length}`).join(' · ')
+      ? s.ozellikler.map((o) => `${o.etiket.tr} ${o.degerler.length}`).join(' · ')
       : `çap ${s.caplar?.length ?? 0} · strok ${s.stroklar?.length ?? 0}`
     const adet = s.katalogAdet ?? s.kodlar.length
     console.log(`   ${s.seri.padEnd(12)}${String(adet).padStart(4)} kod   ${oz}`)
