@@ -1,6 +1,8 @@
 import { FIRMA, SITE_URL, ANA_SITE } from './site'
 import type { Kategori, Urun } from './veri'
 import { satirUreticiKodu } from './uretici-kod'
+import { METIN } from './metin'
+import type { Dil } from './site'
 
 /**
  * JSON-LD üreticileri.
@@ -78,6 +80,16 @@ export function kategoriSchema(k: Kategori, urunler: Urun[], url: string, lang: 
         item: {
           '@type': 'Product',
           name: u.ad,
+          // description ZORUNLU DEĞİL ama Google Merchant listings istiyor ve
+          // eksikliğini Search Console raporluyor (02.08.2026). Metin uydurulmaz;
+          // elimizdeki gerçek alanlardan kurulur ve sayfanın dilinde yazılır.
+          description: METIN[lang as Dil].urunAciklama({
+            ad: u.ad,
+            kategori: k.ad,
+            marka: u.marka,
+            olcu: u.model,
+            ureticiKodu: satirUreticiKodu(u.kod) ?? undefined,
+          }),
           // sku YOK: Hidroteknik stok kodu iç bir referanstır, kimse onu aramaz
           // ve sık değişir. Yapılandırılmış veriyi kısa ömürlü bir değere
           // bağlamamak için yayımlanmaz.
@@ -148,6 +160,13 @@ export function profilSchema(
         item: {
           '@type': 'Product',
           name: o.olcu ? `Kastaş ${o.kod} — ${o.olcu} mm` : `Kastaş ${o.kod}`,
+          description: METIN[lang as Dil].urunAciklama({
+            ad: `Kastaş ${o.kod}`,
+            kategori: p.ad[lang] || `Kastaş ${p.kod}`,
+            marka: 'Kastaş',
+            olcu: o.olcu ? `${o.olcu} mm` : undefined,
+            ureticiKodu: o.kod,
+          }),
           // Önek atılır: "KASTAS." Hidroteknik'in iç öneki, "K21-040/11" ise
           // Kastaş'ın kendi katalog kodu — aranan ve kalıcı olan bu. Üreticinin
           // parça numarası olduğu için doğru alan `mpn`, `sku` değil.
@@ -201,6 +220,12 @@ export function markaSchema(
         item: {
           '@type': 'Product',
           name: `${marka.ad} ${o.ad}`,
+          description: METIN[lang as Dil].urunAciklama({
+            ad: o.ad,
+            kategori: marka.ad,
+            marka: marka.ad,
+            ureticiKodu: satirUreticiKodu(o.kod) ?? undefined,
+          }),
           // sku YOK — bkz. kategoriSchema'daki gerekçe (iç kod, sık değişir).
           // mpn ise üreticinin kendi kodudur; çıkarılabildiği kadarıyla yayımlanır.
           ...(satirUreticiKodu(o.kod) ? { mpn: satirUreticiKodu(o.kod)! } : {}),
@@ -274,7 +299,15 @@ export function parcaSchema(
     hasVariant: i.olculer.map((o) => ({
       '@type': 'Product',
       name: `${i.ad} ${o}`,
-      sku: o,
+      // `sku: o` YANLIŞTI — `o` bir ÖLÇÜDÜR ("32x16"), stok kodu değil. Aynı
+      // hata kategoriSchema'da `mpn: model` olarak da vardı. Bu parçaların kodu
+      // zaten yayımlanmıyor (tedarikçi adını ele veriyor), o yüzden yalnız ölçü.
+      size: o,
+      description: METIN[lang as Dil].urunAciklama({
+        ad: `${i.ad} ${o}`,
+        kategori: i.ad,
+        olcu: o,
+      }),
     })),
     isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}/#site`, name: `${FIRMA.ad} ${katalogAdi}` },
     brand: { '@id': ISLETME_ID },

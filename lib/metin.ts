@@ -45,6 +45,20 @@ export type Metin = {
   tabloMarka: string
   tabloModel: string
   tabloUreticiKodu: string
+  /**
+   * JSON-LD `Product.description`. Google Merchant listings bu alanı istiyor ve
+   * eksikliğini Search Console "Missing field description" diye raporluyor
+   * (02.08.2026). Metin UYDURULMAZ — yalnız elimizdeki gerçek alanlardan
+   * (kategori, marka, ölçü, üretici kodu) kurulur; olmayan alan cümleye hiç
+   * girmez. Fiyat yazılmaz, "teklif üzerine" denir; katalog fiyat yayımlamaz.
+   */
+  urunAciklama: (p: {
+    ad: string
+    kategori: string
+    marka?: string
+    olcu?: string
+    ureticiKodu?: string
+  }) => string
   ornekAltNot: (toplam: string, adKucuk: string) => string
   sssBaslik: string
   teklifBaslik: (ad: string) => string
@@ -199,6 +213,16 @@ export const METIN: Record<Dil, Metin> = {
     tabloMarka: 'Marka',
     tabloModel: 'Model / ölçü',
     tabloUreticiKodu: 'Üretici kodu',
+    urunAciklama: ({ ad, kategori, marka, olcu, ureticiKodu }) =>
+      [
+        `${kategori} grubunda ${ad}.`,
+        marka ? `Marka: ${marka}.` : '',
+        olcu ? `Ölçü/model: ${olcu}.` : '',
+        ureticiKodu ? `Üretici kodu: ${ureticiKodu}.` : '',
+        'Hidroteknik Denizli stoğundan tedarik edilir; fiyat teklif üzerine verilir.',
+      ]
+        .filter(Boolean)
+        .join(' '),
     ornekAltNot: (toplam, adKucuk) =>
       `Liste, en çok hareket gören kalemlere göre sıralanmıştır ve ${toplam} kalemlik ${adKucuk} stoğumuzun tamamı değildir. Aradığınız ölçü listede yoksa büyük olasılıkla stoğumuzda vardır — lütfen sorunuz.`,
     sssBaslik: 'Sık sorulan sorular',
@@ -364,6 +388,16 @@ export const METIN: Record<Dil, Metin> = {
     tabloMarka: 'Brand',
     tabloModel: 'Model / size',
     tabloUreticiKodu: 'Manufacturer code',
+    urunAciklama: ({ ad, kategori, marka, olcu, ureticiKodu }) =>
+      [
+        `${ad}, in the ${kategori} group.`,
+        marka ? `Brand: ${marka}.` : '',
+        olcu ? `Size/model: ${olcu}.` : '',
+        ureticiKodu ? `Manufacturer code: ${ureticiKodu}.` : '',
+        'Supplied from Hidroteknik stock in Denizli, Türkiye; price on request.',
+      ]
+        .filter(Boolean)
+        .join(' '),
     ornekAltNot: (toplam, adKucuk) =>
       `This list is sorted by our highest-moving items and isn't the whole of our ${toplam}-item ${adKucuk} stock. If the size you need isn't listed, we very likely have it — just ask.`,
     sssBaslik: 'Frequently asked questions',
@@ -529,6 +563,16 @@ export const METIN: Record<Dil, Metin> = {
     tabloMarka: 'Бренд',
     tabloModel: 'Модель / размер',
     tabloUreticiKodu: 'Код производителя',
+    urunAciklama: ({ ad, kategori, marka, olcu, ureticiKodu }) =>
+      [
+        `${ad} — группа «${kategori}».`,
+        marka ? `Бренд: ${marka}.` : '',
+        olcu ? `Размер/модель: ${olcu}.` : '',
+        ureticiKodu ? `Код производителя: ${ureticiKodu}.` : '',
+        'Поставляется со склада Hidroteknik в Денизли (Турция); цена по запросу.',
+      ]
+        .filter(Boolean)
+        .join(' '),
     ornekAltNot: (toplam, adKucuk) =>
       `Список отсортирован по наиболее ходовым позициям и не отражает весь наш ассортимент «${adKucuk}» — ${toplam} позиций. Если нужного размера нет в списке, он, скорее всего, есть на складе — просто спросите.`,
     sssBaslik: 'Часто задаваемые вопросы',
