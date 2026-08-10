@@ -350,6 +350,30 @@ Türkçesi "Saclı" yazılmış. Üreteç her `ru` dizgisinin Kiril olduğunu ay
 ("Kompakt Set"); bizimki ne işe yaradığını söyler ("Kompakt piston keçesi") ve
 Türkçe aramada karşılığı olan terimleri taşır. Üreteç farkı raporlar, ezmez.
 
+### JSON-LD: Product var, Offer YOK
+
+Katalog `Product` yayımlar ama `offers` yayımlamaz ve bu bilinçli bir karardır.
+
+Google, `Product` üzerinde `offers` görünce sayfayı **satın alınabilir ürün
+sayfası** (Merchant listing) sayar ve fiyat, görsel, kargo/iade bilgisi bekler.
+Katalog fiyat yayımlamaz — o beklentiler hiçbir zaman karşılanamaz, dolayısıyla
+Search Console sürekli uyarı üretir (02.08.2026: "Missing field description") ve
+uyarılardan biri kritikleşirse zengin sonuç kaybedilebilir. `offers` olmadan
+sayfa "ürün bilgisi" (product snippet) olarak sınıflanır — gerçekten olduğumuz
+şey budur.
+
+Stokta olma bilgisi kaybolmaz, `description` metninde düz cümleyle söylenir.
+İşletme bağlantısı da kaybolmaz: sayfa düzeyindeki `about` ve `provider` aynı
+LocalBusiness'a işaret eder.
+
+**`description` üç dilde `lib/metin.ts` → `urunAciklama` ile kurulur ve
+UYDURULMAZ**; yalnız eldeki gerçek alanlardan (kategori, marka, ölçü, üretici
+kodu) oluşur, olmayan alan cümleye hiç girmez.
+
+**Kimlik alanına ölçü yazma.** Bu hata iki kez yapıldı: `mpn: u.model`
+("M18x1,5 12L" bir ölçüdür) ve `sku: o` ("32x16" bir ölçüdür). Ölçünün alanı
+`size`; `mpn` üreticinin parça numarasıdır, `sku` satıcının stok kodudur.
+
 ### Doğrulanamayan bilgi boş bırakılır
 
 Kastaş profil kodlarının işlevi (`ad` alanı) yalnız Kastaş kataloğundan

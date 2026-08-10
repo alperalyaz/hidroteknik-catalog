@@ -103,18 +103,19 @@ export function kategoriSchema(k: Kategori, urunler: Urun[], url: string, lang: 
           // hâlidir: HF.H.HD106 → HD106 (HansaFlex'in kendi katalog kodu).
           ...(satirUreticiKodu(u.kod) ? { mpn: satirUreticiKodu(u.kod)! } : {}),
           ...(u.model ? { size: u.model } : {}),
-          offers: {
-            '@type': 'Offer',
-            // Fiyat müşteriye/miktara göre belirlendiği için sayı yayınlanmaz;
-            // teklif üzerine satış olduğunu bildiren doğru gösterim budur.
-            availability: 'https://schema.org/InStock',
-            priceSpecification: {
-              '@type': 'PriceSpecification',
-              priceCurrency: 'TRY',
-              valueAddedTaxIncluded: false,
-            },
-            seller: { '@id': ISLETME_ID },
-          },
+          // offers YOK — BİLİNÇLİ. `Product` üzerinde `offers` görünce Google
+          // sayfayı SATIN ALINABİLİR ürün sayfası (Merchant listing) sayıyor ve
+          // fiyat, görsel, kargo/iade bilgisi bekliyor. Katalog fiyat yayımlamaz
+          // ve yayımlamayacak; o beklentileri hiçbir zaman karşılayamayacağımız
+          // için sürekli uyarı üretiyordu (Search Console, 02.08.2026) ve
+          // uyarılardan biri kritikleşirse zengin sonuç kaybedilebilirdi.
+          // offers olmadan sayfa "ürün bilgisi" (product snippet) olarak
+          // sınıflanır — bizim gerçekten olduğumuz şey budur.
+          //
+          // Kaybedilen tek şey `availability: InStock` sinyaliydi; onun yerine
+          // stokta olduğu `description` metninde düz cümleyle söyleniyor.
+          // İşletme bağlantısı da kaybolmuyor: sayfa düzeyindeki `about` ve
+          // `provider` alanları zaten aynı LocalBusiness'a işaret ediyor.
         },
       })),
     },
@@ -174,16 +175,19 @@ export function profilSchema(
           ...(o.olcu ? { size: o.olcu } : {}),
           ...(p.ad[lang] ? { category: p.ad[lang] } : {}),
           brand: { '@type': 'Brand', name: 'Kastaş' },
-          offers: {
-            '@type': 'Offer',
-            availability: 'https://schema.org/InStock',
-            priceSpecification: {
-              '@type': 'PriceSpecification',
-              priceCurrency: 'TRY',
-              valueAddedTaxIncluded: false,
-            },
-            seller: { '@id': ISLETME_ID },
-          },
+          // offers YOK — BİLİNÇLİ. `Product` üzerinde `offers` görünce Google
+          // sayfayı SATIN ALINABİLİR ürün sayfası (Merchant listing) sayıyor ve
+          // fiyat, görsel, kargo/iade bilgisi bekliyor. Katalog fiyat yayımlamaz
+          // ve yayımlamayacak; o beklentileri hiçbir zaman karşılayamayacağımız
+          // için sürekli uyarı üretiyordu (Search Console, 02.08.2026) ve
+          // uyarılardan biri kritikleşirse zengin sonuç kaybedilebilirdi.
+          // offers olmadan sayfa "ürün bilgisi" (product snippet) olarak
+          // sınıflanır — bizim gerçekten olduğumuz şey budur.
+          //
+          // Kaybedilen tek şey `availability: InStock` sinyaliydi; onun yerine
+          // stokta olduğu `description` metninde düz cümleyle söyleniyor.
+          // İşletme bağlantısı da kaybolmuyor: sayfa düzeyindeki `about` ve
+          // `provider` alanları zaten aynı LocalBusiness'a işaret ediyor.
         },
       })),
     },
@@ -230,16 +234,19 @@ export function markaSchema(
           // mpn ise üreticinin kendi kodudur; çıkarılabildiği kadarıyla yayımlanır.
           ...(satirUreticiKodu(o.kod) ? { mpn: satirUreticiKodu(o.kod)! } : {}),
           brand: { '@type': 'Brand', name: marka.ad },
-          offers: {
-            '@type': 'Offer',
-            availability: 'https://schema.org/InStock',
-            priceSpecification: {
-              '@type': 'PriceSpecification',
-              priceCurrency: 'TRY',
-              valueAddedTaxIncluded: false,
-            },
-            seller: { '@id': ISLETME_ID },
-          },
+          // offers YOK — BİLİNÇLİ. `Product` üzerinde `offers` görünce Google
+          // sayfayı SATIN ALINABİLİR ürün sayfası (Merchant listing) sayıyor ve
+          // fiyat, görsel, kargo/iade bilgisi bekliyor. Katalog fiyat yayımlamaz
+          // ve yayımlamayacak; o beklentileri hiçbir zaman karşılayamayacağımız
+          // için sürekli uyarı üretiyordu (Search Console, 02.08.2026) ve
+          // uyarılardan biri kritikleşirse zengin sonuç kaybedilebilirdi.
+          // offers olmadan sayfa "ürün bilgisi" (product snippet) olarak
+          // sınıflanır — bizim gerçekten olduğumuz şey budur.
+          //
+          // Kaybedilen tek şey `availability: InStock` sinyaliydi; onun yerine
+          // stokta olduğu `description` metninde düz cümleyle söyleniyor.
+          // İşletme bağlantısı da kaybolmuyor: sayfa düzeyindeki `about` ve
+          // `provider` alanları zaten aynı LocalBusiness'a işaret ediyor.
         },
       })),
     },
