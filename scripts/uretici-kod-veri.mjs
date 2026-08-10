@@ -46,9 +46,9 @@ export const GRUPLAR = [
       // İngilizcede bozuk. Gövde bilgisi ayrı cümlecik olarak sona alınır.
       const ieEk = ie ? ` IE${ie}` : ''
       return {
-        tr: `Gamak ${seri} serisi —${ieEk} ${tip.tr} elektrik motoru${govde ? ', ' + govde.tr : ''}.`,
-        en: `Gamak ${seri} series —${ieEk} ${tip.en} electric motor${govde ? ', ' + govde.en : ''}.`,
-        ru: `Серия Gamak ${seri} —${ieEk} ${tip.ru} электродвигатель${govde ? ', ' + govde.ru : ''}.`,
+        tr: `${ieEk.trim()} ${tip.tr} elektrik motoru${govde ? ', ' + govde.tr : ''}.`.trim(),
+        en: `${ieEk.trim()} ${tip.en} electric motor${govde ? ', ' + govde.en : ''}.`.trim(),
+        ru: `${ieEk.trim()} ${tip.ru} электродвигатель${govde ? ', ' + govde.ru : ''}.`.trim(),
       }
     },
     satirlar: [
@@ -731,9 +731,9 @@ export const GRUPLAR = [
         ].filter(Boolean).join(', ')
       const e = (dil) => (ek(dil) ? ` (${ek(dil)})` : '')
       return {
-        tr: `Pemaks ${seri} serisi pnömatik silindir${e('tr')}.`,
-        en: `Pemaks ${seri} series pneumatic cylinder${e('en')}.`,
-        ru: `Пневмоцилиндр Pemaks серии ${seri}${e('ru')}.`,
+        tr: `Pnömatik silindir${e('tr')}.`,
+        en: `Pneumatic cylinder${e('en')}.`,
+        ru: `Пневмоцилиндр${e('ru')}.`,
       }
     },
     satirlar: [
@@ -2921,9 +2921,9 @@ export const GRUPLAR = [
         : tap ? { tr: 'körleme tapası', en: 'blanking plug', ru: 'заглушка' }
         : { tr: 'hidrolik bağlantı elemanı', en: 'hydraulic connector', ru: 'гидравлическое соединение' }
       return {
-        tr: `Ferro ${seri} serisi ${tur.tr}.`,
-        en: `Ferro ${seri} series ${tur.en}.`,
-        ru: `Ferro серии ${seri} — ${tur.ru}.`,
+        tr: `Ferro ${tur.tr}.`,
+        en: `Ferro ${tur.en}.`,
+        ru: `Ferro — ${tur.ru}.`,
       }
     },
     satirlar: [
@@ -5150,9 +5150,9 @@ export const GRUPLAR = [
         : kur ? { tr: 'küresel vana', en: 'ball valve', ru: 'шаровой кран' }
         : { tr: 'proses vanası', en: 'process valve', ru: 'технологический клапан' }
       return {
-        tr: `SMS Tork ${seri} serisi ${tur.tr}.`,
-        en: `SMS Tork ${seri} series ${tur.en}.`,
-        ru: `SMS Tork серии ${seri} — ${tur.ru}.`,
+        tr: `SMS Tork ${tur.tr}.`,
+        en: `SMS Tork ${tur.en}.`,
+        ru: `SMS Tork — ${tur.ru}.`,
       }
     },
     satirlar: [
@@ -6041,9 +6041,9 @@ export const GRUPLAR = [
         : { tr: 'hidrolik eleman', en: 'hydraulic component', ru: 'гидравлический элемент' }
       const ek = dokum ? { tr: ', döküm gövdeli', en: ', cast body', ru: ', чугунный корпус' } : null
       return {
-        tr: `Hema ${seri} serisi ${tur.tr}${ek ? ek.tr : ''}.`,
-        en: `Hema ${seri} series ${tur.en}${ek ? ek.en : ''}.`,
-        ru: `Hema серии ${seri} — ${tur.ru}${ek ? ek.ru : ''}.`,
+        tr: `Hema ${tur.tr}${ek ? ek.tr : ''}.`,
+        en: `Hema ${tur.en}${ek ? ek.en : ''}.`,
+        ru: `Hema — ${tur.ru}${ek ? ek.ru : ''}.`,
       }
     },
     satirlar: [

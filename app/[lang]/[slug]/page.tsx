@@ -216,7 +216,14 @@ export default async function KategoriSayfasi({
             </div>
             {g.seriler.map((s) => (
               <div key={s.seri} className="kod-seri">
-                <h3>{m.kodSeriBaslik(g.marka, s.seri)}</h3>
+                {/* Seri adı üreticinin değilse "X serisi" DENMEZ — kodu harf
+                    öbeğinden kesince elde edilen şey seri adı değil, kod
+                    önekidir. Kodlar yine yayımlanır; yalnız iddia düzeltilir. */}
+                <h3>
+                  {s.seriAdiUreticinin === false
+                    ? m.kodOnekBaslik(g.marka, s.seri)
+                    : m.kodSeriBaslik(g.marka, s.seri)}
+                </h3>
                 <div className="metin">
                   <p>
                     {s.aciklama[lang]}{' '}

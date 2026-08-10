@@ -113,6 +113,25 @@ for (const g of GRUPLAR) {
   const gecerli = [...seriler].filter(([, r]) => r.length >= g.enAzKod).sort((a, b) => b[1].length - a[1].length)
   const dusen = [...seriler].filter(([, r]) => r.length < g.enAzKod).reduce((a, [, r]) => a + r.length, 0)
 
+  /**
+   * SERİ ADI GERÇEK Mİ, BENİM ÇIKARIMIM MI?
+   *
+   * Kodu harf öbeğinden kesince elde edilen şey bir SERİ ADI değil, bir kod
+   * önekidir. "Ferro QCAFFMPG serisi" diye bir şey yok — QCAFFMPG benim
+   * QCAFFMPG12MN kodundan kestiğim parça. Bunu seri diye yayımlamak, üreticinin
+   * kullanmadığı bir terimi ona atfetmektir; Pakkens'in sentetik anahtarını
+   * reddederken kullandığım ölçütün aynısı.
+   *
+   * Ölçüt: ürün ADI "X SERİSİ" diyorsa seri adı ÜRETİCİNİNDİR. Demiyorsa grup
+   * yine yayımlanır (kodlar gerçek ve aranan şey onlar) ama başlıkta seri
+   * iddiası kurulmaz — ürün TÜRÜ yazılır.
+   */
+  for (const s of []) void s
+  const seriDogrula = (seri, satirlar) => {
+    const re = new RegExp(`\\b${seri.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*(SER[İI]S[İI]|SERIES)`, 'i')
+    return satirlar.some(([, ad]) => re.test(String(ad)))
+  }
+
   cikti.push({
     kategori: g.kategori,
     marka: g.marka,
@@ -121,6 +140,7 @@ for (const g of GRUPLAR) {
     kodOrnek: g.kodOrnek,
     seriler: gecerli.slice(0, g.enFazlaSeri).map(([seri, satirlar]) => ({
       seri,
+      seriAdiUreticinin: seriDogrula(seri, satirlar),
       katalogAdet: satirlar.length,
       ozellikler: g.ozellikler.map((o) => ({
         // Etiket üç dilli: Rusça sayfada "kW" değil "кВт" yazmalı.
@@ -128,7 +148,7 @@ for (const g of GRUPLAR) {
         degerler: ozellikTopla(satirlar, o.re).slice(0, 40),
       })).filter((o) => o.degerler.length > 1),
       kodlar: satirlar.map(([k]) => k).sort(),
-      aciklama: g.seriAciklama(seri, satirlar),
+      aciklama: g.seriAciklama(seri, satirlar, seriDogrula(seri, satirlar)),
     })),
   })
 
@@ -191,7 +211,8 @@ for (const g of cikti) {
       ? s.ozellikler.map((o) => `${o.etiket.tr} ${o.degerler.length}`).join(' · ')
       : `çap ${s.caplar?.length ?? 0} · strok ${s.stroklar?.length ?? 0}`
     const adet = s.katalogAdet ?? s.kodlar.length
-    console.log(`   ${s.seri.padEnd(12)}${String(adet).padStart(4)} kod   ${oz}`)
+    const isaret = s.seriAdiUreticinin === false ? ' ⚠ seri adı bizim çıkarımımız' : ''
+    console.log(`   ${s.seri.padEnd(12)}${String(adet).padStart(4)} kod   ${oz}${isaret}`)
   }
   if (g.seriler.length > 8) console.log(`   … ${g.seriler.length - 8} seri daha`)
 }

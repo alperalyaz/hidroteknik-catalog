@@ -54,6 +54,14 @@ export type UreticiSeri = {
   stroklar?: number[]
   /** true ise çap×strok×tip kombinasyonlarının tamamı üretiliyor. */
   tamMatris?: boolean
+  /**
+   * Seri adı ÜRETİCİNİN mi, bizim kod önekinden çıkarımımız mı?
+   *
+   * false ise sayfada "X serisi" DENMEZ — üreticinin kullanmadığı bir terimi
+   * ona atfetmek olurdu. Kodlar yine yayımlanır (gerçek ve aranan şey onlar),
+   * yalnız başlık ürün TÜRÜNÜ söyler.
+   */
+  seriAdiUreticinin?: boolean
   /** Üreticinin kataloğunda bu seride kaç kod var. Yalnız genel yapıda. */
   katalogAdet?: number
   ozellikler?: UreticiOzellik[]

@@ -112,6 +112,8 @@ export type Metin = {
   kodBaslik: (marka: string) => string
   kodGiris: (marka: string, desen: string, ornek: string) => string
   kodSeriBaslik: (marka: string, seri: string) => string
+  /** Seri adı üreticinin DEĞİLSE: kod öneki olduğu açıkça söylenir. */
+  kodOnekBaslik: (marka: string, onek: string) => string
   kodStokNotu: (adet: string) => string
   /** Genel yapıda: üreticinin kataloğunda bu seride kaç kod olduğu. */
   kodKatalogNotu: (adet: string) => string
@@ -280,6 +282,7 @@ export const METIN: Record<Dil, Metin> = {
     kodGiris: (marka, desen, ornek) =>
       `${marka} ürünleri sahada bizim stok kodumuzla değil, üreticinin katalog koduyla aranır. Kod şu düzendedir: ${desen} — örneğin ${ornek}. Aşağıdaki serilerin her kodu temin edilebilir; bir kısmı stoğumuzda hazır bekler.`,
     kodSeriBaslik: (marka, seri) => `${marka} ${seri} serisi`,
+    kodOnekBaslik: (marka, onek) => `${marka} — ${onek} ile başlayan kodlar`,
     kodKatalogNotu: (adet) =>
       `Üreticinin kataloğunda bu seride ${adet} kod var; hepsi temin edilebilir.`,
     kodStokNotu: (adet) => `Bu seride ${adet} kalem stok kartımız var.`,
@@ -457,6 +460,7 @@ export const METIN: Record<Dil, Metin> = {
     kodGiris: (marka, desen, ornek) =>
       `${marka} products are searched for in the field by the manufacturer's part number, not by our stock code. The code follows this pattern: ${desen} — for example ${ornek}. Every code in the series below can be supplied; some are held in stock ready to ship.`,
     kodSeriBaslik: (marka, seri) => `${marka} ${seri} series`,
+    kodOnekBaslik: (marka, onek) => `${marka} — codes beginning with ${onek}`,
     kodKatalogNotu: (adet) =>
       `The manufacturer's catalogue lists ${adet} codes in this series; all can be supplied.`,
     kodStokNotu: (adet) => `We hold ${adet} stock items in this series.`,
@@ -634,6 +638,7 @@ export const METIN: Record<Dil, Metin> = {
     kodGiris: (marka, desen, ornek) =>
       `Продукцию ${marka} на практике ищут не по нашему складскому коду, а по каталожному коду производителя. Код построен так: ${desen} — например, ${ornek}. Любой код из перечисленных серий может быть поставлен; часть из них есть на складе.`,
     kodSeriBaslik: (marka, seri) => `${marka}, серия ${seri}`,
+    kodOnekBaslik: (marka, onek) => `${marka} — коды, начинающиеся с ${onek}`,
     // Rusça sayı çekimi: 1 код · 2-4 кода · 5+ кодов. Son iki hane 11-14 ise
     // her zaman чоğul (кодов). Sayı zaten biçimlenmiş dize olarak geliyor,
     // ayracı atıp son haneye bakıyoruz.

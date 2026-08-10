@@ -8,6 +8,7 @@
   "seriler": [
    {
     "seri": "AGM3EL",
+    "seriAdiUreticinin": false,
     "katalogAdet": 72,
     "ozellikler": [
      {
@@ -142,13 +143,14 @@
      "AGM3EL 90 S 8a"
     ],
     "aciklama": {
-     "tr": "Gamak AGM3EL serisi — IE3 trifaze elektrik motoru, alüminyum gövdeli.",
-     "en": "Gamak AGM3EL series — IE3 three-phase electric motor, aluminium body.",
-     "ru": "Серия Gamak AGM3EL — IE3 трёхфазный электродвигатель, алюминиевый корпус."
+     "tr": "IE3 trifaze elektrik motoru, alüminyum gövdeli.",
+     "en": "IE3 three-phase electric motor, aluminium body.",
+     "ru": "IE3 трёхфазный электродвигатель, алюминиевый корпус."
     }
    },
    {
     "seri": "GG3EXD",
+    "seriAdiUreticinin": false,
     "katalogAdet": 65,
     "ozellikler": [
      {
@@ -275,13 +277,14 @@
      "GG3Exd 90 S 8b"
     ],
     "aciklama": {
-     "tr": "Gamak GG3EXD serisi — IE3 ex-proof (patlamaya karşı korumalı) elektrik motoru.",
-     "en": "Gamak GG3EXD series — IE3 explosion-proof electric motor.",
-     "ru": "Серия Gamak GG3EXD — IE3 взрывозащищённый электродвигатель."
+     "tr": "IE3 ex-proof (patlamaya karşı korumalı) elektrik motoru.",
+     "en": "IE3 explosion-proof electric motor.",
+     "ru": "IE3 взрывозащищённый электродвигатель."
     }
    },
    {
     "seri": "AGM4EL",
+    "seriAdiUreticinin": false,
     "katalogAdet": 57,
     "ozellikler": [
      {
@@ -399,13 +402,14 @@
      "AGM4EL 90 S 8a"
     ],
     "aciklama": {
-     "tr": "Gamak AGM4EL serisi — IE4 trifaze elektrik motoru, alüminyum gövdeli.",
-     "en": "Gamak AGM4EL series — IE4 three-phase electric motor, aluminium body.",
-     "ru": "Серия Gamak AGM4EL — IE4 трёхфазный электродвигатель, алюминиевый корпус."
+     "tr": "IE4 trifaze elektrik motoru, alüminyum gövdeli.",
+     "en": "IE4 three-phase electric motor, aluminium body.",
+     "ru": "IE4 трёхфазный электродвигатель, алюминиевый корпус."
     }
    },
    {
     "seri": "ATX3EL",
+    "seriAdiUreticinin": false,
     "katalogAdet": 52,
     "ozellikler": [
      {
@@ -517,13 +521,14 @@
      "ATX3EL 90 S 8a"
     ],
     "aciklama": {
-     "tr": "Gamak ATX3EL serisi — IE3 çift devirli elektrik motoru.",
-     "en": "Gamak ATX3EL series — IE3 two-speed electric motor.",
-     "ru": "Серия Gamak ATX3EL — IE3 двухскоростной электродвигатель."
+     "tr": "IE3 çift devirli elektrik motoru.",
+     "en": "IE3 two-speed electric motor.",
+     "ru": "IE3 двухскоростной электродвигатель."
     }
    },
    {
     "seri": "GM4E",
+    "seriAdiUreticinin": false,
     "katalogAdet": 38,
     "ozellikler": [
      {
@@ -615,13 +620,14 @@
      "GM4E 355 M 6f"
     ],
     "aciklama": {
-     "tr": "Gamak GM4E serisi — IE4 trifaze elektrik motoru, pik döküm gövdeli.",
-     "en": "Gamak GM4E series — IE4 three-phase electric motor, cast iron body.",
-     "ru": "Серия Gamak GM4E — IE4 трёхфазный электродвигатель, чугунный корпус."
+     "tr": "IE4 trifaze elektrik motoru, pik döküm gövdeli.",
+     "en": "IE4 three-phase electric motor, cast iron body.",
+     "ru": "IE4 трёхфазный электродвигатель, чугунный корпус."
     }
    },
    {
     "seri": "GM3EL",
+    "seriAdiUreticinin": false,
     "katalogAdet": 36,
     "ozellikler": [
      {
@@ -711,13 +717,14 @@
      "GM3EL 225 S 8a"
     ],
     "aciklama": {
-     "tr": "Gamak GM3EL serisi — IE3 trifaze elektrik motoru, pik döküm gövdeli.",
-     "en": "Gamak GM3EL series — IE3 three-phase electric motor, cast iron body.",
-     "ru": "Серия Gamak GM3EL — IE3 трёхфазный электродвигатель, чугунный корпус."
+     "tr": "IE3 trifaze elektrik motoru, pik döküm gövdeli.",
+     "en": "IE3 three-phase electric motor, cast iron body.",
+     "ru": "IE3 трёхфазный электродвигатель, чугунный корпус."
     }
    },
    {
     "seri": "GMM3E",
+    "seriAdiUreticinin": false,
     "katalogAdet": 34,
     "ozellikler": [
      {
@@ -806,13 +813,14 @@
      "GMM3E 400 L 8d"
     ],
     "aciklama": {
-     "tr": "Gamak GMM3E serisi — IE3 trifaze elektrik motoru, pik döküm gövdeli.",
-     "en": "Gamak GMM3E series — IE3 three-phase electric motor, cast iron body.",
-     "ru": "Серия Gamak GMM3E — IE3 трёхфазный электродвигатель, чугунный корпус."
+     "tr": "IE3 trifaze elektrik motoru, pik döküm gövdeli.",
+     "en": "IE3 three-phase electric motor, cast iron body.",
+     "ru": "IE3 трёхфазный электродвигатель, чугунный корпус."
     }
    },
    {
     "seri": "GM3F3",
+    "seriAdiUreticinin": false,
     "katalogAdet": 32,
     "ozellikler": [
      {
@@ -898,13 +906,14 @@
      "GM3F3 90 S 4a"
     ],
     "aciklama": {
-     "tr": "Gamak GM3F3 serisi — IE3 trifaze elektrik motoru.",
-     "en": "Gamak GM3F3 series — IE3 three-phase electric motor.",
-     "ru": "Серия Gamak GM3F3 — IE3 трёхфазный электродвигатель."
+     "tr": "IE3 trifaze elektrik motoru.",
+     "en": "IE3 three-phase electric motor.",
+     "ru": "IE3 трёхфазный электродвигатель."
     }
    },
    {
     "seri": "GM4EL",
+    "seriAdiUreticinin": false,
     "katalogAdet": 31,
     "ozellikler": [
      {
@@ -988,13 +997,14 @@
      "GM4EL 225 S 4a"
     ],
     "aciklama": {
-     "tr": "Gamak GM4EL serisi — IE4 trifaze elektrik motoru, pik döküm gövdeli.",
-     "en": "Gamak GM4EL series — IE4 three-phase electric motor, cast iron body.",
-     "ru": "Серия Gamak GM4EL — IE4 трёхфазный электродвигатель, чугунный корпус."
+     "tr": "IE4 trifaze elektrik motoru, pik döküm gövdeli.",
+     "en": "IE4 three-phase electric motor, cast iron body.",
+     "ru": "IE4 трёхфазный электродвигатель, чугунный корпус."
     }
    },
    {
     "seri": "MS22D",
+    "seriAdiUreticinin": false,
     "katalogAdet": 28,
     "ozellikler": [
      {
@@ -1071,13 +1081,14 @@
      "MS22D 90 S 4c"
     ],
     "aciklama": {
-     "tr": "Gamak MS22D serisi — IE2 monofaze elektrik motoru.",
-     "en": "Gamak MS22D series — IE2 single-phase electric motor.",
-     "ru": "Серия Gamak MS22D — IE2 однофазный электродвигатель."
+     "tr": "IE2 monofaze elektrik motoru.",
+     "en": "IE2 single-phase electric motor.",
+     "ru": "IE2 однофазный электродвигатель."
     }
    },
    {
     "seri": "MK22D",
+    "seriAdiUreticinin": false,
     "katalogAdet": 27,
     "ozellikler": [
      {
@@ -1153,13 +1164,14 @@
      "MK22D 90 S 4a"
     ],
     "aciklama": {
-     "tr": "Gamak MK22D serisi — IE2 monofaze elektrik motoru.",
-     "en": "Gamak MK22D series — IE2 single-phase electric motor.",
-     "ru": "Серия Gamak MK22D — IE2 однофазный электродвигатель."
+     "tr": "IE2 monofaze elektrik motoru.",
+     "en": "IE2 single-phase electric motor.",
+     "ru": "IE2 однофазный электродвигатель."
     }
    },
    {
     "seri": "C.AGM3EL",
+    "seriAdiUreticinin": false,
     "katalogAdet": 20,
     "ozellikler": [
      {
@@ -1234,13 +1246,14 @@
      "C.AGM3EL 90 H 4c"
     ],
     "aciklama": {
-     "tr": "Gamak C.AGM3EL serisi — IE3 trifaze elektrik motoru.",
-     "en": "Gamak C.AGM3EL series — IE3 three-phase electric motor.",
-     "ru": "Серия Gamak C.AGM3EL — IE3 трёхфазный электродвигатель."
+     "tr": "IE3 trifaze elektrik motoru.",
+     "en": "IE3 three-phase electric motor.",
+     "ru": "IE3 трёхфазный электродвигатель."
     }
    },
    {
     "seri": "COM3A",
+    "seriAdiUreticinin": false,
     "katalogAdet": 20,
     "ozellikler": [
      {
@@ -1308,13 +1321,14 @@
      "COM3A 250 M 4a"
     ],
     "aciklama": {
-     "tr": "Gamak COM3A serisi — IE3 trifaze elektrik motoru.",
-     "en": "Gamak COM3A series — IE3 three-phase electric motor.",
-     "ru": "Серия Gamak COM3A — IE3 трёхфазный электродвигатель."
+     "tr": "IE3 trifaze elektrik motoru.",
+     "en": "IE3 three-phase electric motor.",
+     "ru": "IE3 трёхфазный электродвигатель."
     }
    },
    {
     "seri": "COM3P",
+    "seriAdiUreticinin": false,
     "katalogAdet": 20,
     "ozellikler": [
      {
@@ -1382,13 +1396,14 @@
      "COM3P 250 M 4a"
     ],
     "aciklama": {
-     "tr": "Gamak COM3P serisi — IE3 trifaze elektrik motoru.",
-     "en": "Gamak COM3P series — IE3 three-phase electric motor.",
-     "ru": "Серия Gamak COM3P — IE3 трёхфазный электродвигатель."
+     "tr": "IE3 trifaze elektrik motoru.",
+     "en": "IE3 three-phase electric motor.",
+     "ru": "IE3 трёхфазный электродвигатель."
     }
    },
    {
     "seri": "GTXM3E",
+    "seriAdiUreticinin": false,
     "katalogAdet": 19,
     "ozellikler": [
      {
@@ -1460,13 +1475,14 @@
      "GTXM3E 355 M 8C"
     ],
     "aciklama": {
-     "tr": "Gamak GTXM3E serisi — IE3 çift devirli elektrik motoru.",
-     "en": "Gamak GTXM3E series — IE3 two-speed electric motor.",
-     "ru": "Серия Gamak GTXM3E — IE3 двухскоростной электродвигатель."
+     "tr": "IE3 çift devirli elektrik motoru.",
+     "en": "IE3 two-speed electric motor.",
+     "ru": "IE3 двухскоростной электродвигатель."
     }
    },
    {
     "seri": "M22D",
+    "seriAdiUreticinin": false,
     "katalogAdet": 15,
     "ozellikler": [
      {
@@ -1526,13 +1542,14 @@
      "M22D 80 M 4b"
     ],
     "aciklama": {
-     "tr": "Gamak M22D serisi — IE2 monofaze elektrik motoru.",
-     "en": "Gamak M22D series — IE2 single-phase electric motor.",
-     "ru": "Серия Gamak M22D — IE2 однофазный электродвигатель."
+     "tr": "IE2 monofaze elektrik motoru.",
+     "en": "IE2 single-phase electric motor.",
+     "ru": "IE2 однофазный электродвигатель."
     }
    },
    {
     "seri": "AGM2EL",
+    "seriAdiUreticinin": false,
     "katalogAdet": 14,
     "ozellikler": [
      {
@@ -1593,13 +1610,14 @@
      "AGM2EL 90 S 8a"
     ],
     "aciklama": {
-     "tr": "Gamak AGM2EL serisi — IE2 trifaze elektrik motoru, alüminyum gövdeli.",
-     "en": "Gamak AGM2EL series — IE2 three-phase electric motor, aluminium body.",
-     "ru": "Серия Gamak AGM2EL — IE2 трёхфазный электродвигатель, алюминиевый корпус."
+     "tr": "IE2 trifaze elektrik motoru, alüminyum gövdeli.",
+     "en": "IE2 three-phase electric motor, aluminium body.",
+     "ru": "IE2 трёхфазный электродвигатель, алюминиевый корпус."
     }
    },
    {
     "seri": "GM3E",
+    "seriAdiUreticinin": false,
     "katalogAdet": 14,
     "ozellikler": [
      {
@@ -1663,13 +1681,14 @@
      "GM3E 355 L 6e"
     ],
     "aciklama": {
-     "tr": "Gamak GM3E serisi — IE3 trifaze elektrik motoru, pik döküm gövdeli.",
-     "en": "Gamak GM3E series — IE3 three-phase electric motor, cast iron body.",
-     "ru": "Серия Gamak GM3E — IE3 трёхфазный электродвигатель, чугунный корпус."
+     "tr": "IE3 trifaze elektrik motoru, pik döküm gövdeli.",
+     "en": "IE3 three-phase electric motor, cast iron body.",
+     "ru": "IE3 трёхфазный электродвигатель, чугунный корпус."
     }
    },
    {
     "seri": "C.GM3EL",
+    "seriAdiUreticinin": false,
     "katalogAdet": 12,
     "ozellikler": [
      {
@@ -1728,13 +1747,14 @@
      "C.GM3EL 225 M 4c"
     ],
     "aciklama": {
-     "tr": "Gamak C.GM3EL serisi — IE3 trifaze elektrik motoru.",
-     "en": "Gamak C.GM3EL series — IE3 three-phase electric motor.",
-     "ru": "Серия Gamak C.GM3EL — IE3 трёхфазный электродвигатель."
+     "tr": "IE3 trifaze elektrik motoru.",
+     "en": "IE3 three-phase electric motor.",
+     "ru": "IE3 трёхфазный электродвигатель."
     }
    },
    {
     "seri": "GTX3E",
+    "seriAdiUreticinin": false,
     "katalogAdet": 8,
     "ozellikler": [
      {
@@ -1789,9 +1809,9 @@
      "GTX3E 315 S 8A"
     ],
     "aciklama": {
-     "tr": "Gamak GTX3E serisi — IE3 çift devirli elektrik motoru.",
-     "en": "Gamak GTX3E series — IE3 two-speed electric motor.",
-     "ru": "Серия Gamak GTX3E — IE3 двухскоростной электродвигатель."
+     "tr": "IE3 çift devirli elektrik motoru.",
+     "en": "IE3 two-speed electric motor.",
+     "ru": "IE3 двухскоростной электродвигатель."
     }
    }
   ]
@@ -1805,6 +1825,7 @@
   "seriler": [
    {
     "seri": "KS",
+    "seriAdiUreticinin": false,
     "katalogAdet": 368,
     "ozellikler": [
      {
@@ -2222,13 +2243,14 @@
      "KS-100-SN-0250"
     ],
     "aciklama": {
-     "tr": "Pemaks KS serisi pnömatik silindir (kompakt, manyetik pistonlu).",
-     "en": "Pemaks KS series pneumatic cylinder (compact, magnetic piston).",
-     "ru": "Пневмоцилиндр Pemaks серии KS (компактный, с магнитным поршнем)."
+     "tr": "Pnömatik silindir (kompakt, manyetik pistonlu).",
+     "en": "Pneumatic cylinder (compact, magnetic piston).",
+     "ru": "Пневмоцилиндр (компактный, с магнитным поршнем)."
     }
    },
    {
     "seri": "KC",
+    "seriAdiUreticinin": true,
     "katalogAdet": 360,
     "ozellikler": [
      {
@@ -2639,13 +2661,14 @@
      "KC-100-SA-0200"
     ],
     "aciklama": {
-     "tr": "Pemaks KC serisi pnömatik silindir (ISO 21287, manyetik pistonlu).",
-     "en": "Pemaks KC series pneumatic cylinder (ISO 21287, magnetic piston).",
-     "ru": "Пневмоцилиндр Pemaks серии KC (ISO 21287, с магнитным поршнем)."
+     "tr": "Pnömatik silindir (ISO 21287, manyetik pistonlu).",
+     "en": "Pneumatic cylinder (ISO 21287, magnetic piston).",
+     "ru": "Пневмоцилиндр (ISO 21287, с магнитным поршнем)."
     }
    },
    {
     "seri": "PK",
+    "seriAdiUreticinin": true,
     "katalogAdet": 262,
     "ozellikler": [
      {
@@ -2960,13 +2983,14 @@
      "PK-320-SA-0200"
     ],
     "aciklama": {
-     "tr": "Pemaks PK serisi pnömatik silindir (kompakt, manyetik pistonlu).",
-     "en": "Pemaks PK series pneumatic cylinder (compact, magnetic piston).",
-     "ru": "Пневмоцилиндр Pemaks серии PK (компактный, с магнитным поршнем)."
+     "tr": "Pnömatik silindir (kompakt, manyetik pistonlu).",
+     "en": "Pneumatic cylinder (compact, magnetic piston).",
+     "ru": "Пневмоцилиндр (компактный, с магнитным поршнем)."
     }
    },
    {
     "seri": "DMC",
+    "seriAdiUreticinin": true,
     "katalogAdet": 228,
     "ozellikler": [
      {
@@ -3244,13 +3268,14 @@
      "DMC-100-SYA-1000-R3"
     ],
     "aciklama": {
-     "tr": "Pemaks DMC serisi pnömatik silindir (ISO 15552, manyetik pistonlu).",
-     "en": "Pemaks DMC series pneumatic cylinder (ISO 15552, magnetic piston).",
-     "ru": "Пневмоцилиндр Pemaks серии DMC (ISO 15552, с магнитным поршнем)."
+     "tr": "Pnömatik silindir (ISO 15552, manyetik pistonlu).",
+     "en": "Pneumatic cylinder (ISO 15552, magnetic piston).",
+     "ru": "Пневмоцилиндр (ISO 15552, с магнитным поршнем)."
     }
    },
    {
     "seri": "KD",
+    "seriAdiUreticinin": false,
     "katalogAdet": 204,
     "ozellikler": [
      {
@@ -3502,13 +3527,14 @@
      "KD-063-SN-0250"
     ],
     "aciklama": {
-     "tr": "Pemaks KD serisi pnömatik silindir (kompakt, manyetik pistonlu).",
-     "en": "Pemaks KD series pneumatic cylinder (compact, magnetic piston).",
-     "ru": "Пневмоцилиндр Pemaks серии KD (компактный, с магнитным поршнем)."
+     "tr": "Pnömatik silindir (kompakt, manyetik pistonlu).",
+     "en": "Pneumatic cylinder (compact, magnetic piston).",
+     "ru": "Пневмоцилиндр (компактный, с магнитным поршнем)."
     }
    },
    {
     "seri": "PM",
+    "seriAdiUreticinin": true,
     "katalogAdet": 186,
     "ozellikler": [
      {
@@ -3737,13 +3763,14 @@
      "PM-025-SYA-0500"
     ],
     "aciklama": {
-     "tr": "Pemaks PM serisi pnömatik silindir (ISO 6432, manyetik pistonlu).",
-     "en": "Pemaks PM series pneumatic cylinder (ISO 6432, magnetic piston).",
-     "ru": "Пневмоцилиндр Pemaks серии PM (ISO 6432, с магнитным поршнем)."
+     "tr": "Pnömatik silindir (ISO 6432, manyetik pistonlu).",
+     "en": "Pneumatic cylinder (ISO 6432, magnetic piston).",
+     "ru": "Пневмоцилиндр (ISO 6432, с магнитным поршнем)."
     }
    },
    {
     "seri": "PNS",
+    "seriAdiUreticinin": true,
     "katalogAdet": 149,
     "ozellikler": [
      {
@@ -3947,13 +3974,14 @@
      "PNS-320-SN-1000"
     ],
     "aciklama": {
-     "tr": "Pemaks PNS serisi pnömatik silindir.",
-     "en": "Pemaks PNS series pneumatic cylinder.",
-     "ru": "Пневмоцилиндр Pemaks серии PNS."
+     "tr": "Pnömatik silindir.",
+     "en": "Pneumatic cylinder.",
+     "ru": "Пневмоцилиндр."
     }
    },
    {
     "seri": "ISO",
+    "seriAdiUreticinin": true,
     "katalogAdet": 133,
     "ozellikler": [
      {
@@ -4137,13 +4165,14 @@
      "ISO-125-SYA-1000"
     ],
     "aciklama": {
-     "tr": "Pemaks ISO serisi pnömatik silindir (ISO 15552, manyetik pistonlu).",
-     "en": "Pemaks ISO series pneumatic cylinder (ISO 15552, magnetic piston).",
-     "ru": "Пневмоцилиндр Pemaks серии ISO (ISO 15552, с магнитным поршнем)."
+     "tr": "Pnömatik silindir (ISO 15552, manyetik pistonlu).",
+     "en": "Pneumatic cylinder (ISO 15552, magnetic piston).",
+     "ru": "Пневмоцилиндр (ISO 15552, с магнитным поршнем)."
     }
    },
    {
     "seri": "ISQ",
+    "seriAdiUreticinin": true,
     "katalogAdet": 133,
     "ozellikler": [
      {
@@ -4327,13 +4356,14 @@
      "ISQ-125-SYA-1000"
     ],
     "aciklama": {
-     "tr": "Pemaks ISQ serisi pnömatik silindir (ISO 15552, manyetik pistonlu).",
-     "en": "Pemaks ISQ series pneumatic cylinder (ISO 15552, magnetic piston).",
-     "ru": "Пневмоцилиндр Pemaks серии ISQ (ISO 15552, с магнитным поршнем)."
+     "tr": "Pnömatik silindir (ISO 15552, manyetik pistonlu).",
+     "en": "Pneumatic cylinder (ISO 15552, magnetic piston).",
+     "ru": "Пневмоцилиндр (ISO 15552, с магнитным поршнем)."
     }
    },
    {
     "seri": "PNC",
+    "seriAdiUreticinin": true,
     "katalogAdet": 133,
     "ozellikler": [
      {
@@ -4517,9 +4547,9 @@
      "PNC-125-SN-1000"
     ],
     "aciklama": {
-     "tr": "Pemaks PNC serisi pnömatik silindir (ISO 15552).",
-     "en": "Pemaks PNC series pneumatic cylinder (ISO 15552).",
-     "ru": "Пневмоцилиндр Pemaks серии PNC (ISO 15552)."
+     "tr": "Pnömatik silindir (ISO 15552).",
+     "en": "Pneumatic cylinder (ISO 15552).",
+     "ru": "Пневмоцилиндр (ISO 15552)."
     }
    }
   ]
@@ -4533,6 +4563,7 @@
   "seriler": [
    {
     "seri": "BV",
+    "seriAdiUreticinin": false,
     "katalogAdet": 1627,
     "ozellikler": [
      {
@@ -6202,13 +6233,14 @@
      "BV3TWG58V"
     ],
     "aciklama": {
-     "tr": "Ferro BV serisi küresel vana.",
-     "en": "Ferro BV series ball valve.",
-     "ru": "Ferro серии BV — шаровой кран."
+     "tr": "Ferro küresel vana.",
+     "en": "Ferro ball valve.",
+     "ru": "Ferro — шаровой кран."
     }
    },
    {
     "seri": "FMBNG",
+    "seriAdiUreticinin": false,
     "katalogAdet": 118,
     "ozellikler": [],
     "kodlar": [
@@ -6332,13 +6364,14 @@
      "FMBNG10V1ZR-SC"
     ],
     "aciklama": {
-     "tr": "Ferro FMBNG serisi körleme tapası.",
-     "en": "Ferro FMBNG series blanking plug.",
-     "ru": "Ferro серии FMBNG — заглушка."
+     "tr": "Ferro körleme tapası.",
+     "en": "Ferro blanking plug.",
+     "ru": "Ferro — заглушка."
     }
    },
    {
     "seri": "QCG",
+    "seriAdiUreticinin": false,
     "katalogAdet": 72,
     "ozellikler": [
      {
@@ -6435,13 +6468,14 @@
      "QCG38SV"
     ],
     "aciklama": {
-     "tr": "Ferro QCG serisi otomatik rakor.",
-     "en": "Ferro QCG series quick coupling.",
-     "ru": "Ferro серии QCG — быстроразъёмное соединение."
+     "tr": "Ferro otomatik rakor.",
+     "en": "Ferro quick coupling.",
+     "ru": "Ferro — быстроразъёмное соединение."
     }
    },
    {
     "seri": "PN",
+    "seriAdiUreticinin": false,
     "katalogAdet": 70,
     "ozellikler": [
      {
@@ -6533,13 +6567,14 @@
      "PN25SGT14MCN"
     ],
     "aciklama": {
-     "tr": "Ferro PN serisi otomatik rakor.",
-     "en": "Ferro PN series quick coupling.",
-     "ru": "Ferro серии PN — быстроразъёмное соединение."
+     "tr": "Ferro otomatik rakor.",
+     "en": "Ferro quick coupling.",
+     "ru": "Ferro — быстроразъёмное соединение."
     }
    },
    {
     "seri": "HP",
+    "seriAdiUreticinin": false,
     "katalogAdet": 65,
     "ozellikler": [
      {
@@ -6635,13 +6670,14 @@
      "HP700RPC"
     ],
     "aciklama": {
-     "tr": "Ferro HP serisi otomatik rakor.",
-     "en": "Ferro HP series quick coupling.",
-     "ru": "Ferro серии HP — быстроразъёмное соединение."
+     "tr": "Ferro otomatik rakor.",
+     "en": "Ferro quick coupling.",
+     "ru": "Ferro — быстроразъёмное соединение."
     }
    },
    {
     "seri": "CRSS",
+    "seriAdiUreticinin": false,
     "katalogAdet": 50,
     "ozellikler": [],
     "kodlar": [
@@ -6697,13 +6733,14 @@
      "CRSS75-55"
     ],
     "aciklama": {
-     "tr": "Ferro CRSS serisi hidrolik bağlantı elemanı.",
-     "en": "Ferro CRSS series hydraulic connector.",
-     "ru": "Ferro серии CRSS — гидравлическое соединение."
+     "tr": "Ferro hidrolik bağlantı elemanı.",
+     "en": "Ferro hydraulic connector.",
+     "ru": "Ferro — гидравлическое соединение."
     }
    },
    {
     "seri": "QCAFFMPG",
+    "seriAdiUreticinin": false,
     "katalogAdet": 48,
     "ozellikler": [
      {
@@ -6775,13 +6812,14 @@
      "QCAFFMPG38MN"
     ],
     "aciklama": {
-     "tr": "Ferro QCAFFMPG serisi otomatik rakor.",
-     "en": "Ferro QCAFFMPG series quick coupling.",
-     "ru": "Ferro серии QCAFFMPG — быстроразъёмное соединение."
+     "tr": "Ferro otomatik rakor.",
+     "en": "Ferro quick coupling.",
+     "ru": "Ferro — быстроразъёмное соединение."
     }
    },
    {
     "seri": "QCBRFFG",
+    "seriAdiUreticinin": false,
     "katalogAdet": 48,
     "ozellikler": [
      {
@@ -6853,13 +6891,14 @@
      "QCBRFFG38SV"
     ],
     "aciklama": {
-     "tr": "Ferro QCBRFFG serisi otomatik rakor.",
-     "en": "Ferro QCBRFFG series quick coupling.",
-     "ru": "Ferro серии QCBRFFG — быстроразъёмное соединение."
+     "tr": "Ferro otomatik rakor.",
+     "en": "Ferro quick coupling.",
+     "ru": "Ferro — быстроразъёмное соединение."
     }
    },
    {
     "seri": "QCBRFFMPG",
+    "seriAdiUreticinin": false,
     "katalogAdet": 48,
     "ozellikler": [
      {
@@ -6931,13 +6970,14 @@
      "QCBRFFMPG38MN"
     ],
     "aciklama": {
-     "tr": "Ferro QCBRFFMPG serisi otomatik rakor.",
-     "en": "Ferro QCBRFFMPG series quick coupling.",
-     "ru": "Ferro серии QCBRFFMPG — быстроразъёмное соединение."
+     "tr": "Ferro otomatik rakor.",
+     "en": "Ferro quick coupling.",
+     "ru": "Ferro — быстроразъёмное соединение."
     }
    },
    {
     "seri": "QCBRG",
+    "seriAdiUreticinin": false,
     "katalogAdet": 48,
     "ozellikler": [
      {
@@ -7009,9 +7049,9 @@
      "QCBRG38SV"
     ],
     "aciklama": {
-     "tr": "Ferro QCBRG serisi otomatik rakor.",
-     "en": "Ferro QCBRG series quick coupling.",
-     "ru": "Ferro серии QCBRG — быстроразъёмное соединение."
+     "tr": "Ferro otomatik rakor.",
+     "en": "Ferro quick coupling.",
+     "ru": "Ferro — быстроразъёмное соединение."
     }
    }
   ]
@@ -7025,6 +7065,7 @@
   "seriler": [
    {
     "seri": "PAV",
+    "seriAdiUreticinin": false,
     "katalogAdet": 269,
     "ozellikler": [
      {
@@ -7344,13 +7385,14 @@
      "PAV 913.80 SR"
     ],
     "aciklama": {
-     "tr": "SMS Tork PAV serisi proses vanası.",
-     "en": "SMS Tork PAV series process valve.",
-     "ru": "SMS Tork серии PAV — технологический клапан."
+     "tr": "SMS Tork proses vanası.",
+     "en": "SMS Tork process valve.",
+     "ru": "SMS Tork — технологический клапан."
     }
    },
    {
     "seri": "EAV",
+    "seriAdiUreticinin": false,
     "katalogAdet": 180,
     "ozellikler": [
      {
@@ -7592,13 +7634,14 @@
      "EAV 913.80 DC"
     ],
     "aciklama": {
-     "tr": "SMS Tork EAV serisi elektrik aktüatörlü vana.",
-     "en": "SMS Tork EAV series electrically actuated valve.",
-     "ru": "SMS Tork серии EAV — кран с электроприводом."
+     "tr": "SMS Tork elektrik aktüatörlü vana.",
+     "en": "SMS Tork electrically actuated valve.",
+     "ru": "SMS Tork — кран с электроприводом."
     }
    },
    {
     "seri": "TORK-KV",
+    "seriAdiUreticinin": false,
     "katalogAdet": 103,
     "ozellikler": [
      {
@@ -7765,13 +7808,14 @@
      "TORK-KV.W121.80"
     ],
     "aciklama": {
-     "tr": "SMS Tork TORK-KV serisi küresel vana.",
-     "en": "SMS Tork TORK-KV series ball valve.",
-     "ru": "SMS Tork серии TORK-KV — шаровой кран."
+     "tr": "SMS Tork küresel vana.",
+     "en": "SMS Tork ball valve.",
+     "ru": "SMS Tork — шаровой кран."
     }
    },
    {
     "seri": "S4011",
+    "seriAdiUreticinin": false,
     "katalogAdet": 52,
     "ozellikler": [
      {
@@ -7846,13 +7890,14 @@
      "S4011.08"
     ],
     "aciklama": {
-     "tr": "SMS Tork S4011 serisi proses vanası.",
-     "en": "SMS Tork S4011 series process valve.",
-     "ru": "SMS Tork серии S4011 — технологический клапан."
+     "tr": "SMS Tork proses vanası.",
+     "en": "SMS Tork process valve.",
+     "ru": "SMS Tork — технологический клапан."
     }
    },
    {
     "seri": "RX",
+    "seriAdiUreticinin": false,
     "katalogAdet": 46,
     "ozellikler": [],
     "kodlar": [
@@ -7904,13 +7949,14 @@
      "RX 80.8P"
     ],
     "aciklama": {
-     "tr": "SMS Tork RX serisi pnömatik aktüatörlü vana.",
-     "en": "SMS Tork RX series pneumatically actuated valve.",
-     "ru": "SMS Tork серии RX — кран с пневмоприводом."
+     "tr": "SMS Tork pnömatik aktüatörlü vana.",
+     "en": "SMS Tork pneumatically actuated valve.",
+     "ru": "SMS Tork — кран с пневмоприводом."
     }
    },
    {
     "seri": "S1010",
+    "seriAdiUreticinin": false,
     "katalogAdet": 46,
     "ozellikler": [
      {
@@ -7992,13 +8038,14 @@
      "S1010.08.460.N-F"
     ],
     "aciklama": {
-     "tr": "SMS Tork S1010 serisi proses vanası.",
-     "en": "SMS Tork S1010 series process valve.",
-     "ru": "SMS Tork серии S1010 — технологический клапан."
+     "tr": "SMS Tork proses vanası.",
+     "en": "SMS Tork process valve.",
+     "ru": "SMS Tork — технологический клапан."
     }
    },
    {
     "seri": "RA",
+    "seriAdiUreticinin": false,
     "katalogAdet": 44,
     "ozellikler": [],
     "kodlar": [
@@ -8048,13 +8095,14 @@
      "RA 80.8P"
     ],
     "aciklama": {
-     "tr": "SMS Tork RA serisi pnömatik aktüatörlü vana.",
-     "en": "SMS Tork RA series pneumatically actuated valve.",
-     "ru": "SMS Tork серии RA — кран с пневмоприводом."
+     "tr": "SMS Tork pnömatik aktüatörlü vana.",
+     "en": "SMS Tork pneumatically actuated valve.",
+     "ru": "SMS Tork — кран с пневмоприводом."
     }
    },
    {
     "seri": "S2010",
+    "seriAdiUreticinin": false,
     "katalogAdet": 42,
     "ozellikler": [
      {
@@ -8119,13 +8167,14 @@
      "S2010.08.046"
     ],
     "aciklama": {
-     "tr": "SMS Tork S2010 serisi proses vanası.",
-     "en": "SMS Tork S2010 series process valve.",
-     "ru": "SMS Tork серии S2010 — технологический клапан."
+     "tr": "SMS Tork proses vanası.",
+     "en": "SMS Tork process valve.",
+     "ru": "SMS Tork — технологический клапан."
     }
    },
    {
     "seri": "S1050",
+    "seriAdiUreticinin": false,
     "katalogAdet": 40,
     "ozellikler": [
      {
@@ -8185,13 +8234,14 @@
      "S1050.05.70"
     ],
     "aciklama": {
-     "tr": "SMS Tork S1050 serisi proses vanası.",
-     "en": "SMS Tork S1050 series process valve.",
-     "ru": "SMS Tork серии S1050 — технологический клапан."
+     "tr": "SMS Tork proses vanası.",
+     "en": "SMS Tork process valve.",
+     "ru": "SMS Tork — технологический клапан."
     }
    },
    {
     "seri": "S1011",
+    "seriAdiUreticinin": false,
     "katalogAdet": 38,
     "ozellikler": [
      {
@@ -8252,9 +8302,9 @@
      "S1011.08.046"
     ],
     "aciklama": {
-     "tr": "SMS Tork S1011 serisi proses vanası.",
-     "en": "SMS Tork S1011 series process valve.",
-     "ru": "SMS Tork серии S1011 — технологический клапан."
+     "tr": "SMS Tork proses vanası.",
+     "en": "SMS Tork process valve.",
+     "ru": "SMS Tork — технологический клапан."
     }
    }
   ]
@@ -8268,6 +8318,7 @@
   "seriler": [
    {
     "seri": "1PN",
+    "seriAdiUreticinin": true,
     "katalogAdet": 158,
     "ozellikler": [
      {
@@ -8452,13 +8503,14 @@
      "1PN.281.CJT3"
     ],
     "aciklama": {
-     "tr": "Hema 1PN serisi dişli pompa.",
-     "en": "Hema 1PN series gear pump.",
-     "ru": "Hema серии 1PN — шестерённый насос."
+     "tr": "Hema dişli pompa.",
+     "en": "Hema gear pump.",
+     "ru": "Hema — шестерённый насос."
     }
    },
    {
     "seri": "1CP11",
+    "seriAdiUreticinin": false,
     "katalogAdet": 96,
     "ozellikler": [],
     "kodlar": [
@@ -8560,13 +8612,14 @@
      "1CP110578M"
     ],
     "aciklama": {
-     "tr": "Hema 1CP11 serisi dişli pompa.",
-     "en": "Hema 1CP11 series gear pump.",
-     "ru": "Hema серии 1CP11 — шестерённый насос."
+     "tr": "Hema dişli pompa.",
+     "en": "Hema gear pump.",
+     "ru": "Hema — шестерённый насос."
     }
    },
    {
     "seri": "2P1",
+    "seriAdiUreticinin": true,
     "katalogAdet": 89,
     "ozellikler": [
      {
@@ -8678,13 +8731,14 @@
      "2P1.3180SCBP1"
     ],
     "aciklama": {
-     "tr": "Hema 2P1 serisi dişli pompa.",
-     "en": "Hema 2P1 series gear pump.",
-     "ru": "Hema серии 2P1 — шестерённый насос."
+     "tr": "Hema dişli pompa.",
+     "en": "Hema gear pump.",
+     "ru": "Hema — шестерённый насос."
     }
    },
    {
     "seri": "HPR41",
+    "seriAdiUreticinin": false,
     "katalogAdet": 40,
     "ozellikler": [],
     "kodlar": [
@@ -8730,13 +8784,14 @@
      "HPR41145"
     ],
     "aciklama": {
-     "tr": "Hema HPR41 serisi dişli pompa, döküm gövdeli.",
-     "en": "Hema HPR41 series gear pump, cast body.",
-     "ru": "Hema серии HPR41 — шестерённый насос, чугунный корпус."
+     "tr": "Hema dişli pompa, döküm gövdeli.",
+     "en": "Hema gear pump, cast body.",
+     "ru": "Hema — шестерённый насос, чугунный корпус."
     }
    },
    {
     "seri": "3P1",
+    "seriAdiUreticinin": true,
     "katalogAdet": 29,
     "ozellikler": [
      {
@@ -8785,13 +8840,14 @@
      "3P1.4380SCBP"
     ],
     "aciklama": {
-     "tr": "Hema 3P1 serisi dişli pompa.",
-     "en": "Hema 3P1 series gear pump.",
-     "ru": "Hema серии 3P1 — шестерённый насос."
+     "tr": "Hema dişli pompa.",
+     "en": "Hema gear pump.",
+     "ru": "Hema — шестерённый насос."
     }
    },
    {
     "seri": "05P01",
+    "seriAdiUreticinin": false,
     "katalogAdet": 24,
     "ozellikler": [
      {
@@ -8835,13 +8891,14 @@
      "05P018CDR6"
     ],
     "aciklama": {
-     "tr": "Hema 05P01 serisi dişli pompa.",
-     "en": "Hema 05P01 series gear pump.",
-     "ru": "Hema серии 05P01 — шестерённый насос."
+     "tr": "Hema dişli pompa.",
+     "en": "Hema gear pump.",
+     "ru": "Hema — шестерённый насос."
     }
    },
    {
     "seri": "F1PN0",
+    "seriAdiUreticinin": false,
     "katalogAdet": 24,
     "ozellikler": [
      {
@@ -8884,13 +8941,14 @@
      "F1PN095CJT3"
     ],
     "aciklama": {
-     "tr": "Hema F1PN0 serisi dişli pompa.",
-     "en": "Hema F1PN0 series gear pump.",
-     "ru": "Hema серии F1PN0 — шестерённый насос."
+     "tr": "Hema dişli pompa.",
+     "en": "Hema gear pump.",
+     "ru": "Hema — шестерённый насос."
     }
    },
    {
     "seri": "F1PN1",
+    "seriAdiUreticinin": false,
     "katalogAdet": 24,
     "ozellikler": [
      {
@@ -8934,13 +8992,14 @@
      "F1PN192CJT3"
     ],
     "aciklama": {
-     "tr": "Hema F1PN1 serisi dişli pompa.",
-     "en": "Hema F1PN1 series gear pump.",
-     "ru": "Hema серии F1PN1 — шестерённый насос."
+     "tr": "Hema dişli pompa.",
+     "en": "Hema gear pump.",
+     "ru": "Hema — шестерённый насос."
     }
    },
    {
     "seri": "F2P13",
+    "seriAdiUreticinin": false,
     "katalogAdet": 24,
     "ozellikler": [
      {
@@ -8987,13 +9046,14 @@
      "F2P13180CBP1"
     ],
     "aciklama": {
-     "tr": "Hema F2P13 serisi dişli pompa.",
-     "en": "Hema F2P13 series gear pump.",
-     "ru": "Hema серии F2P13 — шестерённый насос."
+     "tr": "Hema dişli pompa.",
+     "en": "Hema gear pump.",
+     "ru": "Hema — шестерённый насос."
     }
    },
    {
     "seri": "R1PN0",
+    "seriAdiUreticinin": false,
     "katalogAdet": 24,
     "ozellikler": [
      {
@@ -9036,9 +9096,9 @@
      "R1PN095CX3"
     ],
     "aciklama": {
-     "tr": "Hema R1PN0 serisi dişli pompa.",
-     "en": "Hema R1PN0 series gear pump.",
-     "ru": "Hema серии R1PN0 — шестерённый насос."
+     "tr": "Hema dişli pompa.",
+     "en": "Hema gear pump.",
+     "ru": "Hema — шестерённый насос."
     }
    }
   ]
