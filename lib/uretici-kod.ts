@@ -22,17 +22,34 @@ import type { Dil } from './site'
 type CokDilli = Record<Dil, string>
 
 export type UreticiTip = { kod: string } & CokDilli
+/** Ürün adından toplanan teknik değer kümesi: "kW" → ["0.09", "0.12", …] */
+export type UreticiOzellik = { etiket: string; degerler: string[] }
+
+/**
+ * İki farklı seri yapısı var ve ikisi de geçerli:
+ *
+ * SİLİNDİR YAPISI (elle kurulmuş, Pemaks) — çap × strok matrisi. `tamMatris`
+ * o serinin her çap×strok kombinasyonunun üretildiğinin aritmetikle
+ * doğrulandığını söyler.
+ *
+ * GENEL YAPI (üreteçten, Gamak vb.) — motor/valf/pompada çap×strok diye bir
+ * şey yok; onun yerine ürün ADINDAN toplanan öznitelikler (kW, kutup, d/dk)
+ * taşınır. Aranan şey zaten bunlardır: "5.5 kw 1500 devir elektrik motoru".
+ */
 export type UreticiSeri = {
   seri: string
-  /** Bu seride kaç aktif stok kartımız var. */
-  stokAdet: number
-  tipler: UreticiTip[]
-  caplar: number[]
-  stroklar: number[]
-  /** true ise çap×strok×tip kombinasyonlarının tamamı üretiliyor (sayı ile doğrulandı). */
-  tamMatris: boolean
   kodlar: string[]
   aciklama: CokDilli
+  /** Bu seride kaç aktif stok kartımız var. Yalnız silindir yapısında. */
+  stokAdet?: number
+  tipler?: UreticiTip[]
+  caplar?: number[]
+  stroklar?: number[]
+  /** true ise çap×strok×tip kombinasyonlarının tamamı üretiliyor. */
+  tamMatris?: boolean
+  /** Üreticinin kataloğunda bu seride kaç kod var. Yalnız genel yapıda. */
+  katalogAdet?: number
+  ozellikler?: UreticiOzellik[]
 }
 export type UreticiKodGrubu = {
   /** Bu kod grubunun gösterileceği kategori slug'ı. */

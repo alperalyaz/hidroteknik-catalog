@@ -570,5 +570,1562 @@
     }
    }
   ]
+ },
+ {
+  "kategori": "elektrik-motoru",
+  "marka": "Gamak",
+  "markaSlug": "gamak",
+  "kodDeseni": "SERİ GÖVDE BOY KUTUP",
+  "kodOrnek": "AGM2EL 71 M 4B",
+  "seriler": [
+   {
+    "seri": "AGM3EL",
+    "katalogAdet": 72,
+    "ozellikler": [
+     {
+      "etiket": "kW",
+      "degerler": [
+       "0.12",
+       "0.18",
+       "0.25",
+       "0.37",
+       "0.55",
+       "0.75",
+       "1.1",
+       "1.5",
+       "2.2",
+       "3",
+       "4",
+       "5.5",
+       "7.5",
+       "11",
+       "15",
+       "18.5",
+       "22",
+       "30",
+       "37",
+       "45",
+       "55"
+      ]
+     },
+     {
+      "etiket": "kutup",
+      "degerler": [
+       "2",
+       "4",
+       "6",
+       "8"
+      ]
+     },
+     {
+      "etiket": "d/dk",
+      "degerler": [
+       "750",
+       "1000",
+       "1500",
+       "3000"
+      ]
+     }
+    ],
+    "kodlar": [
+     "AGM3EL 100 L 2a",
+     "AGM3EL 100 L 4a",
+     "AGM3EL 100 L 4b",
+     "AGM3EL 100 L 6a",
+     "AGM3EL 100 L 8a",
+     "AGM3EL 100 L 8b",
+     "AGM3EL 112 M 2a",
+     "AGM3EL 112 M 4a",
+     "AGM3EL 112 M 6a",
+     "AGM3EL 112 M 8a",
+     "AGM3EL 132 M 2b",
+     "AGM3EL 132 M 4b",
+     "AGM3EL 132 M 6b",
+     "AGM3EL 132 M 6c",
+     "AGM3EL 132 M 8b",
+     "AGM3EL 132 S 2a",
+     "AGM3EL 132 S 4a",
+     "AGM3EL 132 S 6a",
+     "AGM3EL 132 S 8a",
+     "AGM3EL 160 L 2c",
+     "AGM3EL 160 L 4b",
+     "AGM3EL 160 L 6b",
+     "AGM3EL 160 L 8c",
+     "AGM3EL 160 M 2a",
+     "AGM3EL 160 M 2b",
+     "AGM3EL 160 M 4a",
+     "AGM3EL 160 M 6a",
+     "AGM3EL 160 M 8a",
+     "AGM3EL 160 M 8b",
+     "AGM3EL 180 L 4b",
+     "AGM3EL 180 L 6a",
+     "AGM3EL 180 L 8a",
+     "AGM3EL 180 M 2a",
+     "AGM3EL 180 M 4a",
+     "AGM3EL 200 L 2a",
+     "AGM3EL 200 L 2b",
+     "AGM3EL 200 L 4a",
+     "AGM3EL 200 L 6a",
+     "AGM3EL 200 L 6b",
+     "AGM3EL 200 L 8a",
+     "AGM3EL 225 M 2a",
+     "AGM3EL 225 M 4b",
+     "AGM3EL 225 M 6a",
+     "AGM3EL 225 M 8b",
+     "AGM3EL 225 S 4a",
+     "AGM3EL 225 S 8a",
+     "AGM3EL 250 M 2a",
+     "AGM3EL 250 M 4a",
+     "AGM3EL 250 M 6a",
+     "AGM3EL 250 M 8a",
+     "AGM3EL 71 M 2a",
+     "AGM3EL 71 M 2b",
+     "AGM3EL 71 M 4a",
+     "AGM3EL 71 M 4b",
+     "AGM3EL 71 M 6a",
+     "AGM3EL 71 M 8b",
+     "AGM3EL 80 H 6b",
+     "AGM3EL 80 M 2a",
+     "AGM3EL 80 M 2b",
+     "AGM3EL 80 M 4a",
+     "AGM3EL 80 M 4b",
+     "AGM3EL 80 M 6a",
+     "AGM3EL 80 M 8a",
+     "AGM3EL 80 M 8b",
+     "AGM3EL 90 L 2b",
+     "AGM3EL 90 L 4b",
+     "AGM3EL 90 L 6b",
+     "AGM3EL 90 L 8b",
+     "AGM3EL 90 S 2a",
+     "AGM3EL 90 S 4a",
+     "AGM3EL 90 S 6a",
+     "AGM3EL 90 S 8a"
+    ],
+    "aciklama": {
+     "tr": "Gamak AGM3EL serisi — IE3 trifaze elektrik motoru, alüminyum gövdeli.",
+     "en": "Gamak AGM3EL series — IE3 three-phase electric motor, aluminium body.",
+     "ru": "Серия Gamak AGM3EL — IE3 трёхфазный электродвигатель, алюминиевый корпус."
+    }
+   },
+   {
+    "seri": "GG3EXD",
+    "katalogAdet": 65,
+    "ozellikler": [
+     {
+      "etiket": "kW",
+      "degerler": [
+       "0.18",
+       "0.25",
+       "0.37",
+       "0.55",
+       "0.75",
+       "1.1",
+       "1.5",
+       "2.2",
+       "3",
+       "4",
+       "5.5",
+       "7.5",
+       "11",
+       "15",
+       "18.5",
+       "22",
+       "30",
+       "37",
+       "45",
+       "55"
+      ]
+     },
+     {
+      "etiket": "kutup",
+      "degerler": [
+       "2",
+       "4",
+       "6",
+       "8"
+      ]
+     },
+     {
+      "etiket": "d/dk",
+      "degerler": [
+       "750",
+       "1000",
+       "1500",
+       "3000"
+      ]
+     }
+    ],
+    "kodlar": [
+     "GG3Exd 100 H 4b",
+     "GG3Exd 100 H 8b",
+     "GG3Exd 100 L 2a",
+     "GG3Exd 100 L 4a",
+     "GG3Exd 100 L 6a",
+     "GG3Exd 100 L 8a",
+     "GG3Exd 112 M 2a",
+     "GG3Exd 112 M 4a",
+     "GG3Exd 112 M 6a",
+     "GG3Exd 112 M 8a",
+     "GG3Exd 132 M 2b",
+     "GG3Exd 132 M 4b",
+     "GG3Exd 132 M 6b",
+     "GG3Exd 132 M 6c",
+     "GG3Exd 132 M 8b",
+     "GG3Exd 132 S 2a",
+     "GG3Exd 132 S 4a",
+     "GG3Exd 132 S 6a",
+     "GG3Exd 132 S 8a",
+     "GG3Exd 160 L 2c",
+     "GG3Exd 160 L 4b",
+     "GG3Exd 160 L 6b",
+     "GG3Exd 160 L 8c",
+     "GG3Exd 160 M 2a",
+     "GG3Exd 160 M 2b",
+     "GG3Exd 160 M 4a",
+     "GG3Exd 160 M 6a",
+     "GG3Exd 160 M 8a",
+     "GG3Exd 160 M 8b",
+     "GG3Exd 180 L 4b",
+     "GG3Exd 180 L 6a",
+     "GG3Exd 180 L 8a",
+     "GG3Exd 180 M 2a",
+     "GG3Exd 180 M 4a",
+     "GG3Exd 200 L 2a",
+     "GG3Exd 200 L 2b",
+     "GG3Exd 200 L 4a",
+     "GG3Exd 200 L 6a",
+     "GG3Exd 200 L 6b",
+     "GG3Exd 200 L 8a",
+     "GG3Exd 225 M 2a",
+     "GG3Exd 225 M 4b",
+     "GG3Exd 225 M 6a",
+     "GG3Exd 225 M 8a",
+     "GG3Exd 225 M 8b",
+     "GG3Exd 225 S 4a",
+     "GG3Exd 250 M 2a",
+     "GG3Exd 250 M 4a",
+     "GG3Exd 250 M 6a",
+     "GG3Exd 250 M 8a",
+     "GG3Exd 71 M 2b",
+     "GG3Exd 80 M 2a",
+     "GG3Exd 80 M 2b",
+     "GG3Exd 80 M 4a",
+     "GG3Exd 80 M 4b",
+     "GG3Exd 80 M 8a",
+     "GG3Exd 80 M 8b",
+     "GG3Exd 90 L 2b",
+     "GG3Exd 90 L 4b",
+     "GG3Exd 90 L 6b",
+     "GG3Exd 90 S 2a",
+     "GG3Exd 90 S 4a",
+     "GG3Exd 90 S 6a",
+     "GG3Exd 90 S 8a",
+     "GG3Exd 90 S 8b"
+    ],
+    "aciklama": {
+     "tr": "Gamak GG3EXD serisi — IE3 ex-proof (patlamaya karşı korumalı) elektrik motoru.",
+     "en": "Gamak GG3EXD series — IE3 explosion-proof electric motor.",
+     "ru": "Серия Gamak GG3EXD — IE3 взрывозащищённый электродвигатель."
+    }
+   },
+   {
+    "seri": "AGM4EL",
+    "katalogAdet": 57,
+    "ozellikler": [
+     {
+      "etiket": "kW",
+      "degerler": [
+       "0.18",
+       "0.37",
+       "0.55",
+       "0.75",
+       "1.1",
+       "1.5",
+       "2.2",
+       "3",
+       "4",
+       "5.5",
+       "7.5",
+       "11",
+       "15",
+       "18.5",
+       "22",
+       "30",
+       "37",
+       "45",
+       "55"
+      ]
+     },
+     {
+      "etiket": "kutup",
+      "degerler": [
+       "2",
+       "4",
+       "6",
+       "8"
+      ]
+     },
+     {
+      "etiket": "d/dk",
+      "degerler": [
+       "750",
+       "1000",
+       "1500",
+       "3000"
+      ]
+     }
+    ],
+    "kodlar": [
+     "AGM4EL 100 H 6a",
+     "AGM4EL 100 H 8b",
+     "AGM4EL 100 L 2a",
+     "AGM4EL 100 L 8a",
+     "AGM4EL 112 H 2a",
+     "AGM4EL 112 H 6a",
+     "AGM4EL 112 H 8a",
+     "AGM4EL 132 M 2b",
+     "AGM4EL 132 M 6b",
+     "AGM4EL 132 M 6c",
+     "AGM4EL 132 M 8b",
+     "AGM4EL 132 S 2a",
+     "AGM4EL 132 S 6a",
+     "AGM4EL 132 S 8a",
+     "AGM4EL 160 H 4a",
+     "AGM4EL 160 L 2b",
+     "AGM4EL 160 L 2c",
+     "AGM4EL 160 L 8c",
+     "AGM4EL 160 M 2a",
+     "AGM4EL 160 M 4e",
+     "AGM4EL 160 M 6a",
+     "AGM4EL 160 M 8a",
+     "AGM4EL 160 M 8b",
+     "AGM4EL 180 L 4b",
+     "AGM4EL 180 L 6a",
+     "AGM4EL 180 L 8a",
+     "AGM4EL 180 M 2a",
+     "AGM4EL 180 M 4a",
+     "AGM4EL 180 M 4d",
+     "AGM4EL 200 H 2b",
+     "AGM4EL 200 H 4a",
+     "AGM4EL 200 H 6b",
+     "AGM4EL 200 L 2a",
+     "AGM4EL 200 L 6a",
+     "AGM4EL 200 L 8a",
+     "AGM4EL 225 M 2a",
+     "AGM4EL 225 M 4b",
+     "AGM4EL 225 M 6a",
+     "AGM4EL 225 S 4a",
+     "AGM4EL 250 M 2a",
+     "AGM4EL 250 M 4a",
+     "AGM4EL 250 M 6a",
+     "AGM4EL 71 M 2a",
+     "AGM4EL 71 M 2b",
+     "AGM4EL 71 M 6a",
+     "AGM4EL 80 H 2b",
+     "AGM4EL 80 H 4a",
+     "AGM4EL 80 H 6a",
+     "AGM4EL 80 M 2a",
+     "AGM4EL 90 H 4b",
+     "AGM4EL 90 H 6b",
+     "AGM4EL 90 H 8b",
+     "AGM4EL 90 L 2a",
+     "AGM4EL 90 L 2b",
+     "AGM4EL 90 L 4a",
+     "AGM4EL 90 S 6a",
+     "AGM4EL 90 S 8a"
+    ],
+    "aciklama": {
+     "tr": "Gamak AGM4EL serisi — IE4 trifaze elektrik motoru, alüminyum gövdeli.",
+     "en": "Gamak AGM4EL series — IE4 three-phase electric motor, aluminium body.",
+     "ru": "Серия Gamak AGM4EL — IE4 трёхфазный электродвигатель, алюминиевый корпус."
+    }
+   },
+   {
+    "seri": "ATX3EL",
+    "katalogAdet": 52,
+    "ozellikler": [
+     {
+      "etiket": "kW",
+      "degerler": [
+       "0.18",
+       "0.37",
+       "0.75",
+       "1.1",
+       "1.5",
+       "2.2",
+       "3",
+       "4",
+       "5.5",
+       "7.5",
+       "11",
+       "15",
+       "18.5",
+       "22",
+       "30",
+       "37",
+       "45",
+       "55"
+      ]
+     },
+     {
+      "etiket": "kutup",
+      "degerler": [
+       "2",
+       "4",
+       "6",
+       "8"
+      ]
+     },
+     {
+      "etiket": "d/dk",
+      "degerler": [
+       "750",
+       "1000",
+       "1500",
+       "3000"
+      ]
+     }
+    ],
+    "kodlar": [
+     "ATX3EL 100 L 2a",
+     "ATX3EL 100 L 4a",
+     "ATX3EL 100 L 4b",
+     "ATX3EL 100 L 6a",
+     "ATX3EL 100 L 8a",
+     "ATX3EL 112 M 2a",
+     "ATX3EL 112 M 4a",
+     "ATX3EL 112 M 6a",
+     "ATX3EL 112 M 8a",
+     "ATX3EL 132 M 2b",
+     "ATX3EL 132 M 4b",
+     "ATX3EL 132 S 2a",
+     "ATX3EL 132 S 4a",
+     "ATX3EL 132 S 6a",
+     "ATX3EL 132 S 8a",
+     "ATX3EL 160 L 2c",
+     "ATX3EL 160 L 4b",
+     "ATX3EL 160 M 2a",
+     "ATX3EL 160 M 2b",
+     "ATX3EL 160 M 4a",
+     "ATX3EL 160 M 6a",
+     "ATX3EL 160 M 8a",
+     "ATX3EL 180 L 4b",
+     "ATX3EL 180 L 8a",
+     "ATX3EL 180 M 2a",
+     "ATX3EL 180 M 4a",
+     "ATX3EL 200 L 2a",
+     "ATX3EL 200 L 2b",
+     "ATX3EL 200 L 4a",
+     "ATX3EL 200 L 6a",
+     "ATX3EL 200 L 6b",
+     "ATX3EL 200 L 8a",
+     "ATX3EL 225 M 2a",
+     "ATX3EL 225 M 4b",
+     "ATX3EL 225 M 6a",
+     "ATX3EL 225 M 8b",
+     "ATX3EL 225 S 4a",
+     "ATX3EL 225 S 8a",
+     "ATX3EL 250 M 2a",
+     "ATX3EL 250 M 4a",
+     "ATX3EL 250 M 6a",
+     "ATX3EL 250 M 8a",
+     "ATX3EL 80 H 4b",
+     "ATX3EL 80 M 2a",
+     "ATX3EL 80 M 2b",
+     "ATX3EL 80 M 8a",
+     "ATX3EL 90 L 2b",
+     "ATX3EL 90 L 4b",
+     "ATX3EL 90 S 2a",
+     "ATX3EL 90 S 4a",
+     "ATX3EL 90 S 6a",
+     "ATX3EL 90 S 8a"
+    ],
+    "aciklama": {
+     "tr": "Gamak ATX3EL serisi — IE3 çift devirli elektrik motoru.",
+     "en": "Gamak ATX3EL series — IE3 two-speed electric motor.",
+     "ru": "Серия Gamak ATX3EL — IE3 двухскоростной электродвигатель."
+    }
+   },
+   {
+    "seri": "GM4E",
+    "katalogAdet": 38,
+    "ozellikler": [
+     {
+      "etiket": "kW",
+      "degerler": [
+       "37",
+       "45",
+       "55",
+       "75",
+       "90",
+       "110",
+       "132",
+       "160",
+       "185",
+       "200",
+       "250",
+       "315"
+      ]
+     },
+     {
+      "etiket": "kutup",
+      "degerler": [
+       "2",
+       "4",
+       "6",
+       "8"
+      ]
+     },
+     {
+      "etiket": "d/dk",
+      "degerler": [
+       "750",
+       "1000",
+       "1500",
+       "3000"
+      ]
+     }
+    ],
+    "kodlar": [
+     "GM4E 250 M 2a",
+     "GM4E 250 M 4a",
+     "GM4E 250 M 6a",
+     "GM4E 280 H 4b",
+     "GM4E 280 M 2b",
+     "GM4E 280 M 6b",
+     "GM4E 280 S 2a",
+     "GM4E 280 S 4a",
+     "GM4E 280 S 6a",
+     "GM4E 315 H 2f",
+     "GM4E 315 H 4f",
+     "GM4E 315 L 2d",
+     "GM4E 315 L 2e",
+     "GM4E 315 L 4c",
+     "GM4E 315 L 4d",
+     "GM4E 315 L 6d",
+     "GM4E 315 L 6e",
+     "GM4E 315 L 8d",
+     "GM4E 315 L 8e",
+     "GM4E 315 M 2b",
+     "GM4E 315 M 2c",
+     "GM4E 315 M 4b",
+     "GM4E 315 M 6b",
+     "GM4E 315 M 6c",
+     "GM4E 315 M 8b",
+     "GM4E 315 M 8c",
+     "GM4E 315 S 2a",
+     "GM4E 315 S 4a",
+     "GM4E 315 S 6a",
+     "GM4E 315 S 8a",
+     "GM4E 355 L 6c",
+     "GM4E 355 L 6d",
+     "GM4E 355 M 2a",
+     "GM4E 355 M 4a",
+     "GM4E 355 M 4b",
+     "GM4E 355 M 6a",
+     "GM4E 355 M 6b",
+     "GM4E 355 M 6f"
+    ],
+    "aciklama": {
+     "tr": "Gamak GM4E serisi — IE4 trifaze elektrik motoru, pik döküm gövdeli.",
+     "en": "Gamak GM4E series — IE4 three-phase electric motor, cast iron body.",
+     "ru": "Серия Gamak GM4E — IE4 трёхфазный электродвигатель, чугунный корпус."
+    }
+   },
+   {
+    "seri": "GM3EL",
+    "katalogAdet": 36,
+    "ozellikler": [
+     {
+      "etiket": "kW",
+      "degerler": [
+       "2.2",
+       "3",
+       "4",
+       "5.5",
+       "7.5",
+       "11",
+       "15",
+       "18.5",
+       "22",
+       "30",
+       "37",
+       "45"
+      ]
+     },
+     {
+      "etiket": "kutup",
+      "degerler": [
+       "2",
+       "4",
+       "6",
+       "8"
+      ]
+     },
+     {
+      "etiket": "d/dk",
+      "degerler": [
+       "750",
+       "1000",
+       "1500",
+       "3000"
+      ]
+     }
+    ],
+    "kodlar": [
+     "GM3EL 132 M 2b",
+     "GM3EL 132 M 4b",
+     "GM3EL 132 M 6b",
+     "GM3EL 132 M 6c",
+     "GM3EL 132 M 8b",
+     "GM3EL 132 S 2a",
+     "GM3EL 132 S 4a",
+     "GM3EL 132 S 6a",
+     "GM3EL 132 S 8a",
+     "GM3EL 160 L 2c",
+     "GM3EL 160 L 4b",
+     "GM3EL 160 L 6b",
+     "GM3EL 160 L 8c",
+     "GM3EL 160 M 2a",
+     "GM3EL 160 M 2b",
+     "GM3EL 160 M 4a",
+     "GM3EL 160 M 6a",
+     "GM3EL 160 M 8a",
+     "GM3EL 160 M 8b",
+     "GM3EL 180 L 4b",
+     "GM3EL 180 L 6a",
+     "GM3EL 180 L 8a",
+     "GM3EL 180 M 2a",
+     "GM3EL 180 M 4a",
+     "GM3EL 200 L 2a",
+     "GM3EL 200 L 2b",
+     "GM3EL 200 L 4a",
+     "GM3EL 200 L 6a",
+     "GM3EL 200 L 6b",
+     "GM3EL 200 L 8a",
+     "GM3EL 225 M 2a",
+     "GM3EL 225 M 4b",
+     "GM3EL 225 M 6a",
+     "GM3EL 225 M 8b",
+     "GM3EL 225 S 4a",
+     "GM3EL 225 S 8a"
+    ],
+    "aciklama": {
+     "tr": "Gamak GM3EL serisi — IE3 trifaze elektrik motoru, pik döküm gövdeli.",
+     "en": "Gamak GM3EL series — IE3 three-phase electric motor, cast iron body.",
+     "ru": "Серия Gamak GM3EL — IE3 трёхфазный электродвигатель, чугунный корпус."
+    }
+   },
+   {
+    "seri": "GMM3E",
+    "katalogAdet": 34,
+    "ozellikler": [
+     {
+      "etiket": "kW",
+      "degerler": [
+       "110",
+       "132",
+       "160",
+       "200",
+       "250",
+       "315",
+       "355",
+       "400",
+       "450",
+       "500",
+       "560",
+       "630",
+       "710"
+      ]
+     },
+     {
+      "etiket": "kutup",
+      "degerler": [
+       "2",
+       "4",
+       "6",
+       "8"
+      ]
+     },
+     {
+      "etiket": "d/dk",
+      "degerler": [
+       "750",
+       "1000",
+       "1500",
+       "3000"
+      ]
+     }
+    ],
+    "kodlar": [
+     "GMM3E 315 L 8d",
+     "GMM3E 315 L 8e",
+     "GMM3E 355 L 2d",
+     "GMM3E 355 L 2e",
+     "GMM3E 355 L 2f",
+     "GMM3E 355 L 4d",
+     "GMM3E 355 L 6c",
+     "GMM3E 355 L 6d",
+     "GMM3E 355 L 8d",
+     "GMM3E 355 M 2a",
+     "GMM3E 355 M 2b",
+     "GMM3E 355 M 2c",
+     "GMM3E 355 M 4a",
+     "GMM3E 355 M 4b",
+     "GMM3E 355 M 4c",
+     "GMM3E 355 M 8a",
+     "GMM3E 355 M 8b",
+     "GMM3E 355 M 8c",
+     "GMM3E 400 L 2c",
+     "GMM3E 400 L 2d",
+     "GMM3E 400 L 4a",
+     "GMM3E 400 L 4b",
+     "GMM3E 400 L 4c",
+     "GMM3E 400 L 4d",
+     "GMM3E 400 L 4e",
+     "GMM3E 400 L 6a",
+     "GMM3E 400 L 6b",
+     "GMM3E 400 L 6c",
+     "GMM3E 400 L 6d",
+     "GMM3E 400 L 6e",
+     "GMM3E 400 L 8a",
+     "GMM3E 400 L 8b",
+     "GMM3E 400 L 8c",
+     "GMM3E 400 L 8d"
+    ],
+    "aciklama": {
+     "tr": "Gamak GMM3E serisi — IE3 trifaze elektrik motoru, pik döküm gövdeli.",
+     "en": "Gamak GMM3E series — IE3 three-phase electric motor, cast iron body.",
+     "ru": "Серия Gamak GMM3E — IE3 трёхфазный электродвигатель, чугунный корпус."
+    }
+   },
+   {
+    "seri": "GM3F3",
+    "katalogAdet": 32,
+    "ozellikler": [
+     {
+      "etiket": "kW",
+      "degerler": [
+       "0.75",
+       "1.1",
+       "1.5",
+       "2.2",
+       "3",
+       "4",
+       "5.5",
+       "7.5",
+       "11",
+       "15",
+       "18.5",
+       "22",
+       "30",
+       "37",
+       "45",
+       "55"
+      ]
+     },
+     {
+      "etiket": "kutup",
+      "degerler": [
+       "2",
+       "4"
+      ]
+     },
+     {
+      "etiket": "d/dk",
+      "degerler": [
+       "1500",
+       "3000"
+      ]
+     }
+    ],
+    "kodlar": [
+     "GM3F3 100 H 4b",
+     "GM3F3 100 L 2a",
+     "GM3F3 100 L 4a",
+     "GM3F3 112 H 4a",
+     "GM3F3 112 M 2a",
+     "GM3F3 132 M 2b",
+     "GM3F3 132 M 4b",
+     "GM3F3 132 S 2a",
+     "GM3F3 132 S 4a",
+     "GM3F3 160 L 2c",
+     "GM3F3 160 L 4b",
+     "GM3F3 160 M 2a",
+     "GM3F3 160 M 2b",
+     "GM3F3 160 M 4a",
+     "GM3F3 180 L 4b",
+     "GM3F3 180 M 2a",
+     "GM3F3 180 M 4a",
+     "GM3F3 200 L 2a",
+     "GM3F3 200 L 2b",
+     "GM3F3 200 L 4a",
+     "GM3F3 225 M 2a",
+     "GM3F3 225 M 4b",
+     "GM3F3 225 S 4a",
+     "GM3F3 250 M 2a",
+     "GM3F3 250 M 4a",
+     "GM3F3 80 M 2a",
+     "GM3F3 80 M 2b",
+     "GM3F3 80 M 4b",
+     "GM3F3 90 L 2b",
+     "GM3F3 90 L 4b",
+     "GM3F3 90 S 2a",
+     "GM3F3 90 S 4a"
+    ],
+    "aciklama": {
+     "tr": "Gamak GM3F3 serisi — IE3 trifaze elektrik motoru.",
+     "en": "Gamak GM3F3 series — IE3 three-phase electric motor.",
+     "ru": "Серия Gamak GM3F3 — IE3 трёхфазный электродвигатель."
+    }
+   },
+   {
+    "seri": "GM4EL",
+    "katalogAdet": 31,
+    "ozellikler": [
+     {
+      "etiket": "kW",
+      "degerler": [
+       "3",
+       "4",
+       "5.5",
+       "7.5",
+       "11",
+       "15",
+       "18.5",
+       "22",
+       "30",
+       "37",
+       "45"
+      ]
+     },
+     {
+      "etiket": "kutup",
+      "degerler": [
+       "2",
+       "4",
+       "6",
+       "8"
+      ]
+     },
+     {
+      "etiket": "d/dk",
+      "degerler": [
+       "750",
+       "1000",
+       "1500",
+       "3000"
+      ]
+     }
+    ],
+    "kodlar": [
+     "GM4EL 132 M 2b",
+     "GM4EL 132 M 6b",
+     "GM4EL 132 M 6c",
+     "GM4EL 132 M 8b",
+     "GM4EL 132 S 2a",
+     "GM4EL 132 S 6a",
+     "GM4EL 160 H 4a",
+     "GM4EL 160 L 2b",
+     "GM4EL 160 L 2c",
+     "GM4EL 160 L 8c",
+     "GM4EL 160 M 2a",
+     "GM4EL 160 M 4e",
+     "GM4EL 160 M 6a",
+     "GM4EL 160 M 8a",
+     "GM4EL 160 M 8b",
+     "GM4EL 180 L 4b",
+     "GM4EL 180 L 6a",
+     "GM4EL 180 L 8a",
+     "GM4EL 180 M 2a",
+     "GM4EL 180 M 4a",
+     "GM4EL 180 M 4d",
+     "GM4EL 200 H 2b",
+     "GM4EL 200 H 4a",
+     "GM4EL 200 H 6b",
+     "GM4EL 200 L 2a",
+     "GM4EL 200 L 6a",
+     "GM4EL 200 L 8a",
+     "GM4EL 225 M 2a",
+     "GM4EL 225 M 4b",
+     "GM4EL 225 M 6a",
+     "GM4EL 225 S 4a"
+    ],
+    "aciklama": {
+     "tr": "Gamak GM4EL serisi — IE4 trifaze elektrik motoru, pik döküm gövdeli.",
+     "en": "Gamak GM4EL series — IE4 three-phase electric motor, cast iron body.",
+     "ru": "Серия Gamak GM4EL — IE4 трёхфазный электродвигатель, чугунный корпус."
+    }
+   },
+   {
+    "seri": "MS22D",
+    "katalogAdet": 28,
+    "ozellikler": [
+     {
+      "etiket": "kW",
+      "degerler": [
+       "0.12",
+       "0.18",
+       "0.25",
+       "0.37",
+       "0.55",
+       "0.75",
+       "1.1",
+       "1.5",
+       "1.8",
+       "2.2",
+       "3"
+      ]
+     },
+     {
+      "etiket": "kutup",
+      "degerler": [
+       "2",
+       "4"
+      ]
+     },
+     {
+      "etiket": "d/dk",
+      "degerler": [
+       "1500",
+       "3000"
+      ]
+     }
+    ],
+    "kodlar": [
+     "MS22D 100 L 2a",
+     "MS22D 100 L 4a",
+     "MS22D 100 L 4b",
+     "MS22D 100 L 4c",
+     "MS22D 71 M 2a",
+     "MS22D 71 M 2b",
+     "MS22D 71 M 2c",
+     "MS22D 71 M 2d",
+     "MS22D 71 M 4a",
+     "MS22D 71 M 4b",
+     "MS22D 71 M 4c",
+     "MS22D 71 M 4d",
+     "MS22D 80 H 4c",
+     "MS22D 80 M 2a",
+     "MS22D 80 M 2b",
+     "MS22D 80 M 2c",
+     "MS22D 80 M 2d",
+     "MS22D 80 M 4a",
+     "MS22D 80 M 4b",
+     "MS22D 90 L 2d",
+     "MS22D 90 L 2e",
+     "MS22D 90 L 4d",
+     "MS22D 90 S 2a",
+     "MS22D 90 S 2b",
+     "MS22D 90 S 2c",
+     "MS22D 90 S 4a",
+     "MS22D 90 S 4b",
+     "MS22D 90 S 4c"
+    ],
+    "aciklama": {
+     "tr": "Gamak MS22D serisi — IE2 monofaze elektrik motoru.",
+     "en": "Gamak MS22D series — IE2 single-phase electric motor.",
+     "ru": "Серия Gamak MS22D — IE2 однофазный электродвигатель."
+    }
+   },
+   {
+    "seri": "MK22D",
+    "katalogAdet": 27,
+    "ozellikler": [
+     {
+      "etiket": "kW",
+      "degerler": [
+       "0.12",
+       "0.18",
+       "0.25",
+       "0.37",
+       "0.55",
+       "0.75",
+       "1.1",
+       "1.5",
+       "1.8",
+       "2.2",
+       "3"
+      ]
+     },
+     {
+      "etiket": "kutup",
+      "degerler": [
+       "2",
+       "4"
+      ]
+     },
+     {
+      "etiket": "d/dk",
+      "degerler": [
+       "1500",
+       "3000"
+      ]
+     }
+    ],
+    "kodlar": [
+     "MK22D 100 H 4b",
+     "MK22D 100 H 4c",
+     "MK22D 100 L 2a",
+     "MK22D 100 L 4a",
+     "MK22D 71 M 2a",
+     "MK22D 71 M 2b",
+     "MK22D 71 M 2c",
+     "MK22D 71 M 2d",
+     "MK22D 71 M 4a",
+     "MK22D 71 M 4b",
+     "MK22D 71 M 4c",
+     "MK22D 71 M 4d",
+     "MK22D 80 M 2a",
+     "MK22D 80 M 2b",
+     "MK22D 80 M 2c",
+     "MK22D 80 M 2d",
+     "MK22D 80 M 4a",
+     "MK22D 80 M 4b",
+     "MK22D 90 H 2d",
+     "MK22D 90 H 2e",
+     "MK22D 90 H 4c",
+     "MK22D 90 H 4d",
+     "MK22D 90 L 2b",
+     "MK22D 90 L 2c",
+     "MK22D 90 L 4b",
+     "MK22D 90 S 2a",
+     "MK22D 90 S 4a"
+    ],
+    "aciklama": {
+     "tr": "Gamak MK22D serisi — IE2 monofaze elektrik motoru.",
+     "en": "Gamak MK22D series — IE2 single-phase electric motor.",
+     "ru": "Серия Gamak MK22D — IE2 однофазный электродвигатель."
+    }
+   },
+   {
+    "seri": "C.AGM3EL",
+    "katalogAdet": 20,
+    "ozellikler": [
+     {
+      "etiket": "kW",
+      "degerler": [
+       "0.75",
+       "1.1",
+       "1.5",
+       "2.2",
+       "3",
+       "4",
+       "5.5",
+       "9.2",
+       "10",
+       "11",
+       "18.5",
+       "22",
+       "30",
+       "37",
+       "45",
+       "55",
+       "72.5"
+      ]
+     },
+     {
+      "etiket": "kutup",
+      "degerler": [
+       "2",
+       "4"
+      ]
+     },
+     {
+      "etiket": "d/dk",
+      "degerler": [
+       "1500",
+       "3000"
+      ]
+     }
+    ],
+    "kodlar": [
+     "C.AGM3EL 100 L 2b",
+     "C.AGM3EL 112 M 2b",
+     "C.AGM3EL 132 H 4d",
+     "C.AGM3EL 132 M 2c",
+     "C.AGM3EL 132 M 2d",
+     "C.AGM3EL 132 M 4c",
+     "C.AGM3EL 160 H 2d",
+     "C.AGM3EL 160 H 4c",
+     "C.AGM3EL 180 L 2b",
+     "C.AGM3EL 180 L 4c",
+     "C.AGM3EL 200 H 2c",
+     "C.AGM3EL 200 L 4b",
+     "C.AGM3EL 225 M 2b",
+     "C.AGM3EL 225 M 4c",
+     "C.AGM3EL 250 H 4d",
+     "C.AGM3EL 71 M 2c",
+     "C.AGM3EL 80 H 2c",
+     "C.AGM3EL 80 H 4c",
+     "C.AGM3EL 90 H 2c",
+     "C.AGM3EL 90 H 4c"
+    ],
+    "aciklama": {
+     "tr": "Gamak C.AGM3EL serisi — IE3 trifaze elektrik motoru.",
+     "en": "Gamak C.AGM3EL series — IE3 three-phase electric motor.",
+     "ru": "Серия Gamak C.AGM3EL — IE3 трёхфазный электродвигатель."
+    }
+   },
+   {
+    "seri": "COM3A",
+    "katalogAdet": 20,
+    "ozellikler": [
+     {
+      "etiket": "kW",
+      "degerler": [
+       "5.5",
+       "7.5",
+       "11",
+       "15",
+       "18.5",
+       "22",
+       "30",
+       "37",
+       "45",
+       "55"
+      ]
+     },
+     {
+      "etiket": "kutup",
+      "degerler": [
+       "2",
+       "4"
+      ]
+     },
+     {
+      "etiket": "d/dk",
+      "degerler": [
+       "1500",
+       "3000"
+      ]
+     }
+    ],
+    "kodlar": [
+     "COM3A 132 M 2b",
+     "COM3A 132 M 4b",
+     "COM3A 132 S 2a",
+     "COM3A 132 S 4a",
+     "COM3A 160 L 2c",
+     "COM3A 160 L 4b",
+     "COM3A 160 M 2a",
+     "COM3A 160 M 2b",
+     "COM3A 160 M 4a",
+     "COM3A 180 L 4b",
+     "COM3A 180 M 2a",
+     "COM3A 180 M 4a",
+     "COM3A 200 L 2a",
+     "COM3A 200 L 2b",
+     "COM3A 200 L 4a",
+     "COM3A 225 M 2a",
+     "COM3A 225 M 4b",
+     "COM3A 225 S 4a",
+     "COM3A 250 M 2a",
+     "COM3A 250 M 4a"
+    ],
+    "aciklama": {
+     "tr": "Gamak COM3A serisi — IE3 trifaze elektrik motoru.",
+     "en": "Gamak COM3A series — IE3 three-phase electric motor.",
+     "ru": "Серия Gamak COM3A — IE3 трёхфазный электродвигатель."
+    }
+   },
+   {
+    "seri": "COM3P",
+    "katalogAdet": 20,
+    "ozellikler": [
+     {
+      "etiket": "kW",
+      "degerler": [
+       "5.5",
+       "7.5",
+       "11",
+       "15",
+       "18.5",
+       "22",
+       "30",
+       "37",
+       "45",
+       "55"
+      ]
+     },
+     {
+      "etiket": "kutup",
+      "degerler": [
+       "2",
+       "4"
+      ]
+     },
+     {
+      "etiket": "d/dk",
+      "degerler": [
+       "1500",
+       "3000"
+      ]
+     }
+    ],
+    "kodlar": [
+     "COM3P 132 M 2b",
+     "COM3P 132 M 4b",
+     "COM3P 132 S 2a",
+     "COM3P 132 S 4a",
+     "COM3P 160 L 2c",
+     "COM3P 160 L 4b",
+     "COM3P 160 M 2a",
+     "COM3P 160 M 2b",
+     "COM3P 160 M 4a",
+     "COM3P 180 L 4b",
+     "COM3P 180 M 2a",
+     "COM3P 180 M 4a",
+     "COM3P 200 L 2a",
+     "COM3P 200 L 2b",
+     "COM3P 200 L 4a",
+     "COM3P 225 M 2a",
+     "COM3P 225 M 4b",
+     "COM3P 225 S 4a",
+     "COM3P 250 M 2a",
+     "COM3P 250 M 4a"
+    ],
+    "aciklama": {
+     "tr": "Gamak COM3P serisi — IE3 trifaze elektrik motoru.",
+     "en": "Gamak COM3P series — IE3 three-phase electric motor.",
+     "ru": "Серия Gamak COM3P — IE3 трёхфазный электродвигатель."
+    }
+   },
+   {
+    "seri": "GTXM3E",
+    "katalogAdet": 19,
+    "ozellikler": [
+     {
+      "etiket": "kW",
+      "degerler": [
+       "110",
+       "132",
+       "160",
+       "200",
+       "205",
+       "250",
+       "315",
+       "355",
+       "400",
+       "450",
+       "500"
+      ]
+     },
+     {
+      "etiket": "kutup",
+      "degerler": [
+       "2",
+       "4",
+       "6",
+       "8"
+      ]
+     },
+     {
+      "etiket": "d/dk",
+      "degerler": [
+       "750",
+       "1000",
+       "1500",
+       "3000"
+      ]
+     }
+    ],
+    "kodlar": [
+     "GTXM3E 315 L 8D",
+     "GTXM3E 315 L 8E",
+     "GTXM3E 355 L 2d",
+     "GTXM3E 355 L 2e",
+     "GTXM3E 355 L 2f",
+     "GTXM3E 355 L 4c",
+     "GTXM3E 355 L 4d",
+     "GTXM3E 355 L 6c",
+     "GTXM3E 355 L 6d",
+     "GTXM3E 355 L 8D",
+     "GTXM3E 355 M 2a",
+     "GTXM3E 355 M 2b",
+     "GTXM3E 355 M 2c",
+     "GTXM3E 355 M 4a",
+     "GTXM3E 355 M 4b",
+     "GTXM3E 355 M 6e",
+     "GTXM3E 355 M 8A",
+     "GTXM3E 355 M 8B",
+     "GTXM3E 355 M 8C"
+    ],
+    "aciklama": {
+     "tr": "Gamak GTXM3E serisi — IE3 çift devirli elektrik motoru.",
+     "en": "Gamak GTXM3E series — IE3 two-speed electric motor.",
+     "ru": "Серия Gamak GTXM3E — IE3 двухскоростной электродвигатель."
+    }
+   },
+   {
+    "seri": "M22D",
+    "katalogAdet": 15,
+    "ozellikler": [
+     {
+      "etiket": "kW",
+      "degerler": [
+       "0.12",
+       "0.18",
+       "0.25",
+       "0.37",
+       "0.55",
+       "0.75",
+       "1.1"
+      ]
+     },
+     {
+      "etiket": "kutup",
+      "degerler": [
+       "2",
+       "4"
+      ]
+     },
+     {
+      "etiket": "d/dk",
+      "degerler": [
+       "1500",
+       "3000"
+      ]
+     }
+    ],
+    "kodlar": [
+     "M22D 71 M 2a",
+     "M22D 71 M 2b",
+     "M22D 71 M 2c",
+     "M22D 71 M 2d",
+     "M22D 71 M 4a",
+     "M22D 71 M 4b",
+     "M22D 71 M 4c",
+     "M22D 71 M 4d",
+     "M22D 80 H 4c",
+     "M22D 80 M 2a",
+     "M22D 80 M 2b",
+     "M22D 80 M 2c",
+     "M22D 80 M 2d",
+     "M22D 80 M 4a",
+     "M22D 80 M 4b"
+    ],
+    "aciklama": {
+     "tr": "Gamak M22D serisi — IE2 monofaze elektrik motoru.",
+     "en": "Gamak M22D series — IE2 single-phase electric motor.",
+     "ru": "Серия Gamak M22D — IE2 однофазный электродвигатель."
+    }
+   },
+   {
+    "seri": "AGM2EL",
+    "katalogAdet": 14,
+    "ozellikler": [
+     {
+      "etiket": "kW",
+      "degerler": [
+       "0.12",
+       "0.18",
+       "0.25",
+       "0.37",
+       "0.55"
+      ]
+     },
+     {
+      "etiket": "kutup",
+      "degerler": [
+       "2",
+       "4",
+       "6",
+       "8"
+      ]
+     },
+     {
+      "etiket": "d/dk",
+      "degerler": [
+       "750",
+       "1000",
+       "1500",
+       "3000"
+      ]
+     }
+    ],
+    "kodlar": [
+     "AGM2EL 71 M 2a",
+     "AGM2EL 71 M 2b",
+     "AGM2EL 71 M 4a",
+     "AGM2EL 71 M 4b",
+     "AGM2EL 71 M 6a",
+     "AGM2EL 71 M 6b",
+     "AGM2EL 71 M 8b",
+     "AGM2EL 80 M 4a",
+     "AGM2EL 80 M 6a",
+     "AGM2EL 80 M 6b",
+     "AGM2EL 80 M 8a",
+     "AGM2EL 80 M 8b",
+     "AGM2EL 90 L 8b",
+     "AGM2EL 90 S 8a"
+    ],
+    "aciklama": {
+     "tr": "Gamak AGM2EL serisi — IE2 trifaze elektrik motoru, alüminyum gövdeli.",
+     "en": "Gamak AGM2EL series — IE2 three-phase electric motor, aluminium body.",
+     "ru": "Серия Gamak AGM2EL — IE2 трёхфазный электродвигатель, алюминиевый корпус."
+    }
+   },
+   {
+    "seri": "GM3E",
+    "katalogAdet": 14,
+    "ozellikler": [
+     {
+      "etiket": "kW",
+      "degerler": [
+       "30",
+       "37",
+       "45",
+       "55",
+       "75",
+       "90",
+       "250",
+       "355"
+      ]
+     },
+     {
+      "etiket": "kutup",
+      "degerler": [
+       "2",
+       "4",
+       "6",
+       "8"
+      ]
+     },
+     {
+      "etiket": "d/dk",
+      "degerler": [
+       "750",
+       "1000",
+       "1500",
+       "3000"
+      ]
+     }
+    ],
+    "kodlar": [
+     "GM3E 250 M 2a",
+     "GM3E 250 M 4a",
+     "GM3E 250 M 6a",
+     "GM3E 250 M 8a",
+     "GM3E 280 M 6b",
+     "GM3E 280 M 8b",
+     "GM3E 280 S 6a",
+     "GM3E 280 S 8a",
+     "GM3E 315 H 2f",
+     "GM3E 315 H 4f",
+     "GM3E 315 M 8b",
+     "GM3E 315 M 8c",
+     "GM3E 315 S 8a",
+     "GM3E 355 L 6e"
+    ],
+    "aciklama": {
+     "tr": "Gamak GM3E serisi — IE3 trifaze elektrik motoru, pik döküm gövdeli.",
+     "en": "Gamak GM3E series — IE3 three-phase electric motor, cast iron body.",
+     "ru": "Серия Gamak GM3E — IE3 трёхфазный электродвигатель, чугунный корпус."
+    }
+   },
+   {
+    "seri": "C.GM3EL",
+    "katalogAdet": 12,
+    "ozellikler": [
+     {
+      "etiket": "kW",
+      "degerler": [
+       "9.2",
+       "10",
+       "11",
+       "18.5",
+       "22",
+       "30",
+       "37",
+       "45",
+       "55"
+      ]
+     },
+     {
+      "etiket": "kutup",
+      "degerler": [
+       "2",
+       "4"
+      ]
+     },
+     {
+      "etiket": "d/dk",
+      "degerler": [
+       "1500",
+       "3000"
+      ]
+     }
+    ],
+    "kodlar": [
+     "C.GM3EL 132 H 4d",
+     "C.GM3EL 132 M 2c",
+     "C.GM3EL 132 M 2d",
+     "C.GM3EL 132 M 4c",
+     "C.GM3EL 160 H 2d",
+     "C.GM3EL 160 H 4c",
+     "C.GM3EL 180 L 2b",
+     "C.GM3EL 180 L 4c",
+     "C.GM3EL 200 H 2c",
+     "C.GM3EL 200 L 4b",
+     "C.GM3EL 225 M 2b",
+     "C.GM3EL 225 M 4c"
+    ],
+    "aciklama": {
+     "tr": "Gamak C.GM3EL serisi — IE3 trifaze elektrik motoru.",
+     "en": "Gamak C.GM3EL series — IE3 three-phase electric motor.",
+     "ru": "Серия Gamak C.GM3EL — IE3 трёхфазный электродвигатель."
+    }
+   },
+   {
+    "seri": "GTX3E",
+    "katalogAdet": 8,
+    "ozellikler": [
+     {
+      "etiket": "kW",
+      "degerler": [
+       "37",
+       "45",
+       "55",
+       "75",
+       "250"
+      ]
+     },
+     {
+      "etiket": "kutup",
+      "degerler": [
+       "2",
+       "4",
+       "6",
+       "8"
+      ]
+     },
+     {
+      "etiket": "d/dk",
+      "degerler": [
+       "750",
+       "1000",
+       "1500",
+       "3000"
+      ]
+     }
+    ],
+    "kodlar": [
+     "GTX3E 280 M 6b",
+     "GTX3E 280 M 8B",
+     "GTX3E 280 S 6a",
+     "GTX3E 280 S 8A",
+     "GTX3E 315 H 2f",
+     "GTX3E 315 H 4f",
+     "GTX3E 315 M 8B",
+     "GTX3E 315 S 8A"
+    ],
+    "aciklama": {
+     "tr": "Gamak GTX3E serisi — IE3 çift devirli elektrik motoru.",
+     "en": "Gamak GTX3E series — IE3 two-speed electric motor.",
+     "ru": "Серия Gamak GTX3E — IE3 двухскоростной электродвигатель."
+    }
+   }
+  ]
  }
 ]

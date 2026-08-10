@@ -219,32 +219,53 @@ export default async function KategoriSayfasi({
                 <h3>{m.kodSeriBaslik(g.marka, s.seri)}</h3>
                 <div className="metin">
                   <p>
-                    {s.aciklama[lang]} {m.kodStokNotu(sayiFormat(s.stokAdet, lang))}{' '}
-                    {s.tamMatris
-                      ? m.kodTamMatris(
-                          sayiFormat(s.caplar.length, lang),
-                          sayiFormat(s.stroklar.length, lang)
-                        )
-                      : m.kodSeyrekMatris(sayiFormat(s.kodlar.length, lang))}
+                    {s.aciklama[lang]}{' '}
+                    {/* İki seri yapısı var (bkz. lib/uretici-kod.ts): silindirde
+                        stok sayısı + çap×strok matrisi, motor/valfte üreticinin
+                        katalog genişliği. Hangi cümlenin kurulacağı yapıya göre
+                        değişir; olmayan alanla cümle kurulmaz. */}
+                    {s.stokAdet != null ? (
+                      <>
+                        {m.kodStokNotu(sayiFormat(s.stokAdet, lang))}{' '}
+                        {s.tamMatris && s.caplar && s.stroklar
+                          ? m.kodTamMatris(
+                              sayiFormat(s.caplar.length, lang),
+                              sayiFormat(s.stroklar.length, lang)
+                            )
+                          : m.kodSeyrekMatris(sayiFormat(s.kodlar.length, lang))}
+                      </>
+                    ) : (
+                      m.kodKatalogNotu(sayiFormat(s.katalogAdet ?? s.kodlar.length, lang))
+                    )}
                   </p>
                 </div>
                 <div className="tablo-kutu">
                   <table>
                     <tbody>
-                      <tr>
-                        <th>{m.kodTipBaslik}</th>
-                        <td>
-                          {s.tipler.map((t) => `${t.kod} — ${t[lang]}`).join(' · ')}
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>{m.kodCapBaslik}</th>
-                        <td className="model">{s.caplar.join(', ')}</td>
-                      </tr>
-                      <tr>
-                        <th>{m.kodStrokBaslik}</th>
-                        <td className="model">{s.stroklar.join(', ')}</td>
-                      </tr>
+                      {s.tipler && (
+                        <tr>
+                          <th>{m.kodTipBaslik}</th>
+                          <td>{s.tipler.map((t) => `${t.kod} — ${t[lang]}`).join(' · ')}</td>
+                        </tr>
+                      )}
+                      {s.caplar && (
+                        <tr>
+                          <th>{m.kodCapBaslik}</th>
+                          <td className="model">{s.caplar.join(', ')}</td>
+                        </tr>
+                      )}
+                      {s.stroklar && (
+                        <tr>
+                          <th>{m.kodStrokBaslik}</th>
+                          <td className="model">{s.stroklar.join(', ')}</td>
+                        </tr>
+                      )}
+                      {s.ozellikler?.map((o) => (
+                        <tr key={o.etiket}>
+                          <th>{o.etiket}</th>
+                          <td className="model">{o.degerler.join(', ')}</td>
+                        </tr>
+                      ))}
                     </tbody>
                   </table>
                 </div>
