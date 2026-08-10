@@ -86,9 +86,30 @@ function ozellikTopla(satirlar, re) {
 // Elle kurulmuş gruplar KORUNUR. Pemaks silindir bloğu silindire özel bir
 // yapıda (çap × strok matrisi, tamMatris doğrulaması) ve elle doğrulanmış;
 // üreteç onu yeniden kuramaz, olduğu gibi taşır.
+/**
+ * BİLEREK KALDIRILAN MARKALAR.
+ *
+ * Koruma mantığı "yeniden üretilmeyeni koru" olduğu için, bir markayı veri
+ * dosyasından silmek onu yayından KALDIRMIYOR — üreteç elle kurulmuş sanıp
+ * taşıyor. Kaldırma açık bir karar olmalı ve gerekçesi kayıtta durmalı.
+ *
+ * SMS Tork: liste 3.389 satır ama ürün ADLARI tarif değil, iç grup kodu —
+ * `S4011` grubunun adı "KVNSLNKSS-V (Yakıt Grubu)". Ölçüldü: yayımladığım 10
+ * grubun 5'inde ürün türü %100 belirsiz, kalanlarda %49-75. Bu adlarla
+ * "SMS Tork proses vanası" demek, veriden çıkarılamayan bir iddiadır.
+ * Kaynak liste düzeltilirse geri alınabilir.
+ */
+const KALDIRILAN = new Set(['SMS Tork'])
+
 const oncekiler = JSON.parse(readFileSync('data/uretici-kodlari.json', 'utf8'))
 const uretilenAnahtar = new Set(GRUPLAR.map((g) => `${g.kategori}|${g.marka}`))
-const korunan = oncekiler.filter((g) => !uretilenAnahtar.has(`${g.kategori}|${g.marka}`))
+const korunan = oncekiler.filter(
+  (g) => !uretilenAnahtar.has(`${g.kategori}|${g.marka}`) && !KALDIRILAN.has(g.marka)
+)
+const dusurulen = oncekiler.filter((g) => KALDIRILAN.has(g.marka))
+for (const g of dusurulen) {
+  console.log(`⊘ kaldırıldı: ${g.marka} → ${g.kategori} (${g.seriler.reduce((a, s) => a + s.kodlar.length, 0)} kod)`)
+}
 
 const cikti = [...korunan]
 const rapor = []
@@ -132,13 +153,33 @@ for (const g of GRUPLAR) {
     return satirlar.some(([, ad]) => re.test(String(ad)))
   }
 
+  /**
+   * ELLE KURULMUŞ SERİLER SERİ DÜZEYİNDE KORUNUR.
+   *
+   * Koruma önce grup düzeyindeydi ve sessiz bir kayıp verdi: Pemaks'ın elle
+   * kurulmuş bloğu (PAG/DMC/PM) aynı `kategori|marka` anahtarını taşıdığı için
+   * üretilmiş grup tarafından bütünüyle ezildi. Kaybedilenler PAG serisinin
+   * kendisi, `stokAdet` (gerçek stok kartı sayısı — "üreticinin kataloğunda N
+   * kod var"dan daha güçlü bir iddia), `tipler` (üç dilli varyant açıklaması)
+   * ve `tamMatris` doğrulamasıydı.
+   *
+   * Artık üretilmiş seri, aynı adı taşıyan elle kurulmuş seriyi EZMEZ; elle
+   * kurulanlar olduğu gibi taşınır ve üretilmiş olanlar yanına eklenir.
+   */
+  const eskiGrup = oncekiler.find((x) => x.kategori === g.kategori && x.marka === g.marka)
+  const elleSeriler = (eskiGrup?.seriler ?? []).filter((s) => s.stokAdet != null)
+  const elleAdlar = new Set(elleSeriler.map((s) => s.seri.toUpperCase()))
+  if (elleSeriler.length) {
+    console.log(`   ↻ ${g.marka}: elle kurulmuş ${elleSeriler.length} seri korundu (${elleSeriler.map((s) => s.seri).join(', ')})`)
+  }
+
   cikti.push({
     kategori: g.kategori,
     marka: g.marka,
     markaSlug: g.markaSlug,
     kodDeseni: g.kodDeseni,
     kodOrnek: g.kodOrnek,
-    seriler: gecerli.slice(0, g.enFazlaSeri).map(([seri, satirlar]) => ({
+    seriler: [...elleSeriler, ...gecerli.filter(([seri]) => !elleAdlar.has(seri)).slice(0, g.enFazlaSeri).map(([seri, satirlar]) => ({
       seri,
       seriAdiUreticinin: seriDogrula(seri, satirlar),
       katalogAdet: satirlar.length,
@@ -149,7 +190,7 @@ for (const g of GRUPLAR) {
       })).filter((o) => o.degerler.length > 1),
       kodlar: satirlar.map(([k]) => k).sort(),
       aciklama: g.seriAciklama(seri, satirlar, seriDogrula(seri, satirlar)),
-    })),
+    }))],
   })
 
   rapor.push({
@@ -158,7 +199,9 @@ for (const g of GRUPLAR) {
     atlanan,
     dusen,
     seri: gecerli.length,
-    yayimlanan: gecerli.slice(0, g.enFazlaSeri).reduce((a, [, r]) => a + r.length, 0),
+    yayimlanan:
+      elleSeriler.reduce((a, s) => a + s.kodlar.length, 0) +
+      gecerli.filter(([seri]) => !elleAdlar.has(seri)).slice(0, g.enFazlaSeri).reduce((a, [, r]) => a + r.length, 0),
   })
 }
 
