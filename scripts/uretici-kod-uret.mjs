@@ -124,6 +124,24 @@ for (const g of GRUPLAR) {
     // Bunlar OCR/ayrıştırma artığıdır, ürün kodu değildir.
     if (!k || /^\d+$/.test(k) || /^\d+[:.]\d+$/.test(k) || /\.{2,}/.test(k)) { atlanan++; continue }
     if (/\b(bar|mbar|m3|°C|V DC|V AC|lt\/dk)\b/i.test(k)) { atlanan++; continue }
+    // Kod sütununa ürün ADI düşmüş satırlar: kod, adın kendisiyle (ya da onun
+    // baştan kırpılmış hâliyle) aynıysa katalog kodu değildir. TKC listesinde
+    // 20 satır böyle: kod alanında "Braket Aktüatör Ara Parça / Kare Düşürücü…"
+    // yazıyor. Kod diye yayımlanırsa sayfada cümle görünür.
+    const adDuz = String(ad || '').trim()
+    if (adDuz && (k === adDuz || adDuz.startsWith(k)) && /\s/.test(k) && k.length > 12) {
+      atlanan++
+      continue
+    }
+    // Kod içinde TÜRKÇE KELİME geçmez. Üreticinin katalog kodu harf+rakam
+    // dizisidir; "Wafer Eko Tip Kelebek Vana ve Kelebek Vana Contaları … 100 V1"
+    // bir kod değil, ürün adının kod sütununa düşmüş hâlidir. Üstteki
+    // ad==kod kontrolü bunları kaçırıyordu çünkü sonlarına varyant eklenmiş,
+    // yani adla birebir aynı değiller. Ölçüldü: TKC listesinde 42 satır.
+    if (/(?:Parça|Düşürücü|Yıldız|Aktüatör|Çeşit|Bağlantı|Contalar|Kelebek|Küresel|Vana|Somun|Kapak)/i.test(k)) {
+      atlanan++
+      continue
+    }
     const s = seriAdi(k, g)
     if (!s) { atlanan++; continue }
     if (!seriler.has(s)) seriler.set(s, [])
