@@ -106,10 +106,29 @@ for (const [slug, liste] of [...grupla].sort((a, b) => b[1].length - a[1].length
  * yanlış alarm verir.
  */
 const markalar = JSON.parse(readFileSync('data/markalar.json', 'utf8'))
+// ⚠ Sayı ile cins isim BİTİŞİK OLMAYABİLİR: "6,208 sealing items". İlk sürümde
+// bitişik arıyordum ve denetim "bayat: 0" dedi — oysa İngilizce Kastaş metni
+// gerçekten bayattı. Yalan söyleyen denetim, hatanın kendisinden kötüdür;
+// araya 3 kelimeye kadar izin verilir.
 const SAYI_KALIP = {
-  tr: /([\d][\d.,\s\u00a0\u202f]*\d|\d)(\s*kalem)/gi,
-  en: /([\d][\d.,\s\u00a0\u202f]*\d|\d)(\s*items)/gi,
-  ru: /([\d][\d.,\s\u00a0\u202f]*\d|\d)(\s*позиц)/gi,
+  tr: /([\d][\d.,\s\u00a0\u202f]*\d|\d)((?:\s+\S+){0,3}\s*kalem)/gi,
+  en: /([\d][\d.,\s\u00a0\u202f]*\d|\d)((?:\s+\S+){0,3}\s*items)/gi,
+  ru: /([\d][\d.,\s\u00a0\u202f]*\d|\d)((?:\s+\S+){0,3}\s*позиц\S*)/gi,
+}
+
+/**
+ * Rusça sayı çekimi: 1 позиция · 2-4 позиции · 5+ позиций; son iki hane 11-14
+ * ise her zaman позиций. Yanlış çekim metni acemi gösterir ve Rusça pazarda
+ * güven kaybettirir — Pemaks sayfası özellikle Rusya'ya konumlandırıldığı için
+ * denetleniyor.
+ */
+function ruCekim(n) {
+  const yuz = n % 100
+  const on = n % 10
+  if (yuz >= 11 && yuz <= 14) return 'позиций'
+  if (on === 1) return 'позиция'
+  if (on >= 2 && on <= 4) return 'позиции'
+  return 'позиций'
 }
 const bayat = []
 for (const marka of markalar) {
@@ -122,7 +141,15 @@ for (const marka of markalar) {
       let m
       while ((m = re.exec(metin))) {
         const v = Number(String(m[1]).replace(/[.,\s\u00a0\u202f]/g, ''))
-        if (v !== marka.adet) bayat.push({ marka: marka.slug, yer: `${alan}.${dil}`, metinde: v, gercek: marka.adet })
+        if (v !== marka.adet) {
+          bayat.push({ marka: marka.slug, yer: `${alan}.${dil}`, metinde: v, gercek: marka.adet })
+        } else if (dil === 'ru') {
+          const gecen = (m[0].match(/позиц\S*/) || [''])[0]
+          const dogru = ruCekim(v)
+          if (gecen && gecen !== dogru) {
+            bayat.push({ marka: marka.slug, yer: `${alan}.ru`, metinde: `${v} ${gecen}`, gercek: `${v} ${dogru}` })
+          }
+        }
       }
     }
   }

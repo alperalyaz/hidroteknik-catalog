@@ -35,21 +35,52 @@ import { GRUPLAR } from './uretici-kod-veri.mjs'
 
 const UYGULA = process.argv.includes('--uygula')
 
-/** Kodun serisi: ilk boşluk/tire öncesi parça. */
-function seriAdi(kod, ayrac) {
+/**
+ * Kodun serisi.
+ *
+ * Basit ayraç (boşluk/tire) her markada işe yaramıyor: Ferro `BV2G112N` ve Hema
+ * `05P008AB3` hiç ayraç taşımıyor, seri baştaki harf/rakam öbeğidir. Tire ile
+ * ayırmaya kalkışınca her kod kendi "serisi" oldu ve 1.627 Ferro kodu 8'erlik
+ * parçalara dağıldı. O yüzden grup kendi `seriCikar` fonksiyonunu verebilir.
+ */
+function seriAdi(kod, g) {
   const s = String(kod).trim()
-  const i = ayrac === 'bosluk' ? s.indexOf(' ') : s.indexOf('-')
+  if (g.seriCikar) return String(g.seriCikar(s) || '').toUpperCase()
+  const i = g.ayrac === 'bosluk' ? s.indexOf(' ') : s.indexOf('-')
   return (i > 0 ? s.slice(0, i) : s).toUpperCase()
 }
 
-/** Ürün adından sayısal bir özniteliği toplar: "3 kW" → 3 */
+/**
+ * Ürün adından sayısal bir özniteliği toplar: "3 kW" → 3
+ *
+ * Diş ölçüleri veride iki yazımla geçiyor: "1-1/2" ve "1 1/2". Normalleştirmezsek
+ * aynı ölçü listede iki kez görünür ve sayfa özensiz durur. Tire kesirli
+ * ifadenin İÇİNDE ayraçtır, tek başına eksi değildir — o yüzden yalnız
+ * "rakam-rakam/rakam" kalıbında boşluğa çevrilir.
+ */
+function normalizeDeger(v) {
+  return String(v)
+    .replace(',', '.')
+    .replace(/^(\d+)-(\d+\/\d+)$/, '$1 $2')
+    .trim()
+}
+
+/** Kesirli diş ölçüsünü sayıya çevirir: "1 1/2" → 1.5 (sıralama için). */
+function sayisalDeger(v) {
+  const m = String(v).match(/^(\d+)\s+(\d+)\/(\d+)$/)
+  if (m) return Number(m[1]) + Number(m[2]) / Number(m[3])
+  const k = String(v).match(/^(\d+)\/(\d+)$/)
+  if (k) return Number(k[1]) / Number(k[2])
+  return parseFloat(v)
+}
+
 function ozellikTopla(satirlar, re) {
   const kume = new Set()
   for (const [, ad] of satirlar) {
     const m = String(ad).match(re)
-    if (m) kume.add(m[1].replace(',', '.'))
+    if (m) kume.add(normalizeDeger(m[1]))
   }
-  return [...kume].sort((a, b) => parseFloat(a) - parseFloat(b))
+  return [...kume].sort((a, b) => sayisalDeger(a) - sayisalDeger(b))
 }
 
 // Elle kurulmuş gruplar KORUNUR. Pemaks silindir bloğu silindire özel bir
@@ -72,7 +103,8 @@ for (const g of GRUPLAR) {
     // Bunlar OCR/ayrıştırma artığıdır, ürün kodu değildir.
     if (!k || /^\d+$/.test(k) || /^\d+[:.]\d+$/.test(k) || /\.{2,}/.test(k)) { atlanan++; continue }
     if (/\b(bar|mbar|m3|°C|V DC|V AC|lt\/dk)\b/i.test(k)) { atlanan++; continue }
-    const s = seriAdi(k, g.ayrac)
+    const s = seriAdi(k, g)
+    if (!s) { atlanan++; continue }
     if (!seriler.has(s)) seriler.set(s, [])
     seriler.get(s).push([k, String(ad || '').trim()])
   }
