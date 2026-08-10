@@ -90,4 +90,44 @@ for (const [slug, liste] of [...grupla].sort((a, b) => b[1].length - a[1].length
   for (const s of liste) console.log(`     ${s.kod.padEnd(20)} ${s.ad.slice(0, 46).padEnd(48)} ${s.sebep}`)
 }
 
-process.exit(sorunlu.length === 0 ? 0 : 1)
+/* ────────────────────────────────────────────────────────────────────────────
+ * MARKA METİNLERİNDEKİ KALEM SAYISI İDDİASI
+ *
+ * `markalar.json` içindeki ozet/giris metinlerinde "878 kalem" gibi sayılar
+ * ELLE yazılmıştır ve `adet` alanı tazelendiğinde OTOMATİK güncellenmez.
+ * `ozet` aynı zamanda sayfanın meta açıklamasıdır — yani bayat sayı doğrudan
+ * Google sonuçlarında görünür.
+ *
+ * Ölçüldü (02.08.2026): 10 markanın metninde 27 bayat iddia vardı; Pemaks
+ * "878 позиций" diyordu, gerçek 835 idi.
+ *
+ * Rusça binlik ayracı BOŞLUKTUR ("1 455"), Türkçe nokta, İngilizce virgül —
+ * üçü de ayrıştırılmalı, yoksa "1 455" okunurken 455'e düşer ve denetim
+ * yanlış alarm verir.
+ */
+const markalar = JSON.parse(readFileSync('data/markalar.json', 'utf8'))
+const SAYI_KALIP = {
+  tr: /([\d][\d.,\s\u00a0\u202f]*\d|\d)(\s*kalem)/gi,
+  en: /([\d][\d.,\s\u00a0\u202f]*\d|\d)(\s*items)/gi,
+  ru: /([\d][\d.,\s\u00a0\u202f]*\d|\d)(\s*позиц)/gi,
+}
+const bayat = []
+for (const marka of markalar) {
+  for (const alan of ['ozet', 'giris']) {
+    for (const dil of ['tr', 'en', 'ru']) {
+      const metin = marka[alan]?.[dil]
+      if (!metin) continue
+      const re = SAYI_KALIP[dil]
+      re.lastIndex = 0
+      let m
+      while ((m = re.exec(metin))) {
+        const v = Number(String(m[1]).replace(/[.,\s\u00a0\u202f]/g, ''))
+        if (v !== marka.adet) bayat.push({ marka: marka.slug, yer: `${alan}.${dil}`, metinde: v, gercek: marka.adet })
+      }
+    }
+  }
+}
+console.log(`\nmarka metnindeki kalem sayısı iddiası — bayat: ${bayat.length}`)
+for (const b of bayat) console.log(`     ${b.marka.padEnd(12)} ${b.yer.padEnd(10)} metinde ${b.metinde} · gerçek ${b.gercek}`)
+
+process.exit(sorunlu.length === 0 && bayat.length === 0 ? 0 : 1)
