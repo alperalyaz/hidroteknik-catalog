@@ -41,6 +41,14 @@ TR (varsayılan) / EN / RU üç dilde yayında, ~306 statik sayfa.
 - `lib/metin.ts` — arayüz etiketleri (üç dil). Sayfa içeriği burada DEĞİL.
 - `app/sitemap.ts`, `app/llms.txt/route.ts` ve `app/llms-full.txt/route.ts` —
   aileleri kapsar; yeni bir aile eklenirse ÜÇÜNE de yazılmalı.
+- İkonlar `app/` altında: `icon.png` (512), `apple-icon.png` (180, opak),
+  `favicon.ico` (16/32/48). Kaynak `public/logo.png`'nin sol 108 pikseli — HT
+  monogramı; kelime markası favicon'da okunmaz. Ana sitenin faviconuyla aynı
+  görünüm (kare beyaz zemin, yuvarlatma yok) çünkü iki mülkün aynı ikonu
+  taşıması marka tutarlılığıdır; fark yalnız çözünürlükte (onlarınki 40x40
+  kaynak). Yeni bir HTML OLMAYAN rota eklenirse `build-denetle.mjs` içindeki
+  `HTML_OLMAYAN_ROTALAR` listesine de yazılmalı, yoksa link denetimi onu
+  "kırık" sanar.
 
 Yeni sayfa ailesi eklerken sırayla: veri JSON → `lib/` tipi → `lib/metin.ts`
 etiketleri (3 dil) → `lib/schema.ts` JSON-LD üreticisi → rota → sitemap → llms.txt

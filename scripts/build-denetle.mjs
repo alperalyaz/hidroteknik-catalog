@@ -85,6 +85,32 @@ for (const ad of readdirSync('public', { recursive: true })) {
   if (statSync(yol).isFile()) yollar.add('/' + String(ad).split(sep).join('/'))
 }
 
+/**
+ * HTML OLMAYAN ROTALAR da geçerli hedeftir.
+ *
+ * `yollar` kümesi yalnız *.html dosyalarından kuruluyor, ama Next.js metadata
+ * dosyaları ve route handler'ları HTML üretmez: sitemap XML, robots düz metin,
+ * manifest JSON, ikonlar ise ikili. Bunlar .next/server/app altında .body ya da
+ * doğrudan dosya olarak duruyor, .html olarak değil.
+ *
+ * Gerçekten yaşandı (24.08.2026): favicon eklenince denetim `/favicon.ico` ve
+ * `/manifest.webmanifest` için "kırık link" dedi — ikisi de canlıda 200
+ * dönüyordu. Yalan söyleyen denetçi görmezden gelinir; o yüzden denetçi
+ * düzeltildi. Liste ELLE tutuluyor çünkü kısa ve yeni bir rota eklendiğinde
+ * insanın haberi olması İSTENEN şey.
+ */
+const HTML_OLMAYAN_ROTALAR = [
+  '/sitemap.xml',
+  '/robots.txt',
+  '/llms.txt',
+  '/llms-full.txt',
+  '/manifest.webmanifest',
+  '/favicon.ico',
+  '/icon.png',
+  '/apple-icon.png',
+]
+for (const r of HTML_OLMAYAN_ROTALAR) yollar.add(r)
+
 const kirik = new Map()
 const basliklar = new Map()
 const sizinti = []
