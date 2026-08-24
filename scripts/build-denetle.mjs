@@ -3,12 +3,14 @@
  *
  *   node scripts/build-denetle.mjs
  *
- * Beş şeyi arar; beşi de sessizce bozulabilen, elle fark edilmeyen şeylerdir:
+ * Yedi şeyi arar; yedisi de sessizce bozulabilen, elle fark edilmeyen şeylerdir:
  *   1. Kırık iç link   — 15.000'in üzerinde href var, elle bakılamaz
  *   2. Tedarikçi adı sızıntısı — yalnız ürünün üzerindeki marka yayımlanır
  *   3. Yinelenen <title> — aynı başlık iki sayfada varsa biri diğerini yer
  *   4. İç stok kodu sızıntısı — yalnız ÜRETİCİNİN kodu yayımlanır, bizimki asla
  *   5. Kanonik bütünlüğü — kökün 308'i, kendini gösteren canonical, x-default
+ *   6. Rusça sayı çekimi — "1 223 размеров" değil "размера"
+ *   7. Sayı biçimi — ru/en sayfasında Türkçe binlik ayracı (5.297)
  *
  * ⚠ RSC YÜKÜ AYIKLANIR (önemli): Next.js sayfanın sonuna `self.__next_f.push`
  * çağrılarıyla akış yükünü gömer ve uzun dizeleri RASTGELE yerlerden böler.
@@ -179,6 +181,91 @@ for (const f of dosyalar) {
   if (!/hrefLang="x-default"/i.test(ham)) kanonik.push(`${yol} — x-default yok`)
 }
 
+/* ────────────────────────────────────────────────────────────────────────────
+ * 6. RUSÇA SAYI ÇEKİMİ
+ *
+ * Rusça'da sayıdan sonraki isim sayıya göre çekilir: 1 размер · 2-4 размера ·
+ * 5+ размеров; son iki hane 11–14 ise her zaman çoğul. Şablonda tek biçim sabit
+ * yazılırsa sayıların çoğunda yanlış çıkar ve METİN MAKİNE ÇEVİRİSİ GİBİ görünür.
+ *
+ * Gerçekten yaşandı (24.08.2026): ölçü listeleri tam listeye çıkarılınca
+ * `profilListeNotTam` 2 profil yerine 43'ünde tetiklendi ve K21 sayfasında
+ * "все 1 223 размеров" yazdı — doğrusu "размера". Sabit yazılmış sekiz dize
+ * vardı; hiçbiri tsc'den, build'den ya da göz taramasından geçerken görünmedi.
+ *
+ * Katalog Rusya'ya bilerek konumlandırıldı; orada bu hatanın maliyeti estetik
+ * değil, güven.
+ */
+const RU_CEKIM = [
+  ['размер', 'размера', 'размеров'],
+  ['позиция', 'позиции', 'позиций'],
+  ['код', 'кода', 'кодов'],
+  ['типоразмер', 'типоразмера', 'типоразмеров'],
+]
+const ruDogru = (n, [tekil, ikiDort, cogul]) => {
+  const yuz = n % 100
+  if (yuz >= 11 && yuz <= 14) return cogul
+  const on = n % 10
+  if (on === 1) return tekil
+  if (on >= 2 && on <= 4) return ikiDort
+  return cogul
+}
+/**
+ * Sayıdan ÖNCE bunlardan biri geliyorsa çekim kuralı UYGULANMAZ: bu edat ve
+ * niceleyiciler ismi, sayı ne olursa olsun tamlayan çoğula sokar.
+ *   «из 1223 размеров» · «свыше 5290 размеров» · «каждый из 3 диаметров»
+ * Bunu bilmeyen bir denetçi DOĞRU Rusça'yı hata diye bildirir. Yalan söyleyen
+ * denetçi görmezden gelinir, o yüzden istisna baştan yazılıdır.
+ */
+const RU_TAMLAYAN = /(из|свыше|более|около|порядка|до|от|менее)\s*$/i
+
+const ruCekimHata = []
+for (const f of dosyalar) {
+  const yol = '/' + f.slice(KOK.length + 1).replace(/\.html$/, '')
+  if (!yol.startsWith('/ru')) continue
+  const gorunen = gorunenHtml(readFileSync(f, 'utf8'))
+  for (const biçim of RU_CEKIM) {
+    // Binlik ayracı üç türlü çıkabiliyor: ru-RU'nun kırılmaz boşluğu, dar
+    // kırılmaz boşluk, ve (hatalı olarak veriye elle yazılmış) Türkçe noktası.
+    // Üçü de tanınmalı — yoksa "1.223 размеров" sayı olarak 223 okunur ve
+    // denetçi doğru sayıyı bilmeden rapor üretir.
+    const sayi = '\\d{1,3}(?:[\\u00a0\\u202f .]\\d{3})*|\\d+'
+    const re = new RegExp(`(${sayi})\\s(${biçim.join('|')})(?![\\p{L}])`, 'gu')
+    for (const m of gorunen.matchAll(re)) {
+      if (RU_TAMLAYAN.test(gorunen.slice(Math.max(0, m.index - 14), m.index))) continue
+      const n = parseInt(m[1].replace(/\D/g, ''), 10)
+      if (!Number.isFinite(n)) continue
+      const d = ruDogru(n, biçim)
+      if (m[2] !== d) ruCekimHata.push(`${yol} — "${m[1]} ${m[2]}" olmalıydı "${m[1]} ${d}"`)
+    }
+  }
+}
+
+
+/**
+ * TÜRKÇE BİÇİMLİ SAYI, RUSÇA/İNGİLİZCE SAYFADA.
+ *
+ * Binlik ayracı dile göre değişir: Türkçe nokta (5.297), İngilizce virgül
+ * (5,297), Rusça kırılmaz boşluk (5 297). Şablondaki sayılar `sayiFormat()`ten
+ * geçtiği için doğru; tehlike VERİYE ELLE YAZILAN sayılarda.
+ *
+ * Ölçüldü (24.08.2026): `kategoriler.ru.json` içinde dört yerde "5.297 позиций"
+ * yazıyordu. Rusça okuyan biri bunu "beş tam iki yüz doksan yedi" diye okur —
+ * yani 5.297 kalemlik stok, 5 kalem gibi görünür. tsc, build ve link denetimi
+ * bunu göremez; metin dilbilgisi olarak da kusursuzdur.
+ */
+const sayiBicim = []
+for (const f of dosyalar) {
+  const yol = '/' + f.slice(KOK.length + 1).replace(/\.html$/, '')
+  const dil = yol.startsWith('/ru') ? 'ru' : yol.startsWith('/en') ? 'en' : null
+  if (!dil) continue
+  const gorunen = gorunenHtml(readFileSync(f, 'utf8'))
+  // Nokta ayraçlı bin: Türkçe biçim. Ondalıktan ayırt etmek için tam üç hane
+  // aranır — "1.5 mm" tutmaz, "5.297" tutar.
+  for (const m of gorunen.matchAll(/(?<![\d.,])\d{1,3}\.\d{3}(?![\d.,])/g)) {
+    sayiBicim.push(`${yol} — "${m[0]}" Türkçe binlik ayracı (${dil} sayfasında)`)
+  }
+}
 console.log(`sayfa ${dosyalar.length} · iç link ${toplamLink}`)
 console.log(`kırık link hedefi : ${kirik.size}`)
 for (const [hedef, kaynak] of [...kirik].slice(0, 10)) {
@@ -192,7 +279,12 @@ console.log(`iç stok kodu (${icKodlar.size} kod arandı): ${icKod.length}`)
 for (const s of icKod.slice(0, 10)) console.log(`   ✗ ${s.yol} — ${s.kod}`)
 console.log(`kanonik bütünlüğü  : ${kanonik.length}`)
 for (const s of kanonik.slice(0, 10)) console.log(`   ✗ ${s}`)
+console.log(`rusça sayı çekimi  : ${ruCekimHata.length}`)
+for (const s of ruCekimHata.slice(0, 10)) console.log(`   ✗ ${s}`)
+console.log(`sayı biçimi (dil)  : ${sayiBicim.length}`)
+for (const s of sayiBicim.slice(0, 10)) console.log(`   ✗ ${s}`)
 
-const hata = kirik.size + sizinti.length + yinelenen.length + icKod.length + kanonik.length
+const hata =
+  kirik.size + sizinti.length + yinelenen.length + icKod.length + kanonik.length + ruCekimHata.length + sayiBicim.length
 console.log(hata === 0 ? '\n✅ temiz' : `\n⛔ ${hata} sorun`)
 process.exit(hata === 0 ? 0 : 1)

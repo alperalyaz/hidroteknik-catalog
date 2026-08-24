@@ -169,6 +169,39 @@ export type Metin = {
   ftKunye: string
 }
 
+/**
+ * Rusça sayı çekimi: 1 размер · 2-4 размера · 5+ размеров.
+ * Son iki hane 11–14 ise sayı ne olursa olsun çoğul (11 размеров, 112 размеров).
+ *
+ * Sayı buraya BİÇİMLENDİRİLMİŞ dize olarak gelir ("1 223"), çünkü çağrı yerleri
+ * `sayiFormat()` çıktısını taşıyor. Rakam dışındaki her şey atılıp tam sayıya
+ * dönülür — ru-RU binlik ayracı kırılmaz boşluktur, düz boşluk değil.
+ *
+ * NEDEN ÖNEMLİ: yanlış çekim metni makine çevirisi gibi gösterir ve Rusça
+ * pazarda güven kaybettirir. Katalog Rusya'ya bilerek konumlandırıldı, orada
+ * hatanın maliyeti yalnız estetik değil.
+ *
+ * Bu hata 24.08.2026'da ölçü listeleri tam listeye çıkarılınca görünür oldu:
+ * `profilListeNotTam` daha önce yalnız iki profilde tetikleniyordu, artık
+ * 43'ünde de tetikleniyor ve K21 için "все 1 223 размеров" yazıyordu —
+ * doğrusu "размера" (sonu 3).
+ */
+function ruCekim(sayi: string, tekil: string, ikiDort: string, cogul: string): string {
+  const n = parseInt(String(sayi).replace(/\D/g, ''), 10)
+  if (!Number.isFinite(n)) return cogul
+  const yuz = n % 100
+  if (yuz >= 11 && yuz <= 14) return cogul
+  const on = n % 10
+  if (on === 1) return tekil
+  if (on >= 2 && on <= 4) return ikiDort
+  return cogul
+}
+
+const ruOlcu = (n: string) => ruCekim(n, 'размер', 'размера', 'размеров')
+const ruPoz = (n: string) => ruCekim(n, 'позиция', 'позиции', 'позиций')
+const ruKod = (n: string) => ruCekim(n, 'код', 'кода', 'кодов')
+const ruTipo = (n: string) => ruCekim(n, 'типоразмер', 'типоразмера', 'типоразмеров')
+
 export const METIN: Record<Dil, Metin> = {
   tr: {
     urunKatalogu: 'Ürün Kataloğu',
@@ -584,7 +617,7 @@ export const METIN: Record<Dil, Metin> = {
         .filter(Boolean)
         .join(' '),
     ornekAltNot: (toplam, adKucuk) =>
-      `Список отсортирован по наиболее ходовым позициям и не отражает весь наш ассортимент «${adKucuk}» — ${toplam} позиций. Если нужного размера нет в списке, он, скорее всего, есть на складе — просто спросите.`,
+      `Список отсортирован по наиболее ходовым позициям и не отражает весь наш ассортимент «${adKucuk}» — ${toplam} ${ruPoz(toplam)}. Если нужного размера нет в списке, он, скорее всего, есть на складе — просто спросите.`,
     sssBaslik: 'Часто задаваемые вопросы',
     teklifBaslik: (ad) => `Запросить предложение: ${ad}`,
     teklifMetin:
@@ -596,8 +629,8 @@ export const METIN: Record<Dil, Metin> = {
     profilSayfaH1: (kod) => `Размеры уплотнений Kastaş ${kod}`,
     profilSayfaBaslik: (kod) => `Kastaş ${kod} — размеры в наличии и подбор аналогов`,
     profilSayfaOzet: (kod, adet, yer) =>
-      `В наличии ${adet} размеров профиля Kastaş ${kod}. Устанавливается со стороны: ${yer}. Если нужного размера нет в списке, всё равно спросите — мы поставляем и остальные размеры из каталога Kastaş.`,
-    profilRozetOlcu: (adet) => `${adet} размеров в наличии`,
+      `В наличии ${adet} ${ruOlcu(adet)} профиля Kastaş ${kod}. Устанавливается со стороны: ${yer}. Если нужного размера нет в списке, всё равно спросите — мы поставляем и остальные размеры из каталога Kastaş.`,
+    profilRozetOlcu: (adet) => `${adet} ${ruOlcu(adet)} в наличии`,
     profilRozetYer: (yer) => `сторона: ${yer}`,
     profilRozetPu: 'Есть вариант из полиуретана (PU)',
     profilIslevBilinmiyor:
@@ -610,9 +643,9 @@ export const METIN: Record<Dil, Metin> = {
     profilTabloKod: 'Складской код',
     profilTabloOlcuBasligi: 'Размер (мм)',
     profilTabloMalzeme: 'Материал',
-    profilListeNotTam: (adet) => `Перечислены все ${adet} размеров этого профиля.`,
+    profilListeNotTam: (adet) => `Перечислены все ${adet} ${ruOlcu(adet)} этого профиля.`,
     profilListeNotKismi: (gosterilen, adet) =>
-      `Всего в наличии ${adet} размеров этого профиля; перечислены ${gosterilen} наиболее востребованных. Если нужного размера нет в списке, спросите — скорее всего он есть на складе или доступен в короткий срок.`,
+      `Всего в наличии ${adet} ${ruOlcu(adet)} этого профиля; перечислены ${gosterilen} наиболее востребованных. Если нужного размера нет в списке, спросите — скорее всего он есть на складе или доступен в короткий срок.`,
     profilOlcuYok: 'Этот профиль обозначается диаметром штока и буквой типа, а не тройкой размеров.',
     profilDigerBaslik: 'Другие коды профилей',
     profilKategoriDon: 'Все уплотнения, нутринги и грязесъёмники',
@@ -621,7 +654,7 @@ export const METIN: Record<Dil, Metin> = {
     profilYerIkisi: 'шток и поршень',
     markaKirinti: 'Бренды',
     markaSayfaBaslik: (ad) => `${ad} — товары и размеры в наличии`,
-    markaRozetKalem: (adet) => `${adet} позиций в наличии`,
+    markaRozetKalem: (adet) => `${adet} ${ruPoz(adet)} в наличии`,
     markaRozetGrup: (n, g) => (n === 1 ? `в ${g} группе товаров` : `в ${g} группах товаров`),
     markaGruplarBaslik: (ad) => `В каких группах есть ${ad}?`,
     markaOrneklerBaslik: (ad) => `Примеры ${ad} со склада`,
@@ -639,33 +672,25 @@ export const METIN: Record<Dil, Metin> = {
       `Продукцию ${marka} на практике ищут не по нашему складскому коду, а по каталожному коду производителя. Код построен так: ${desen} — например, ${ornek}. Любой код из перечисленных серий может быть поставлен; часть из них есть на складе.`,
     kodSeriBaslik: (marka, seri) => `${marka}, серия ${seri}`,
     kodOnekBaslik: (marka, onek) => `${marka} — коды, начинающиеся с ${onek}`,
-    // Rusça sayı çekimi: 1 код · 2-4 кода · 5+ кодов. Son iki hane 11-14 ise
-    // her zaman чоğul (кодов). Sayı zaten biçimlenmiş dize olarak geliyor,
-    // ayracı atıp son haneye bakıyoruz.
-    kodKatalogNotu: (adet) => {
-      const n = Number(String(adet).replace(/\D/g, ''))
-      const yuz = n % 100
-      const on = n % 10
-      const kelime =
-        yuz >= 11 && yuz <= 14 ? 'кодов' : on === 1 ? 'код' : on >= 2 && on <= 4 ? 'кода' : 'кодов'
-      return `В каталоге производителя в этой серии ${adet} ${kelime}; все могут быть поставлены.`
-    },
-    kodStokNotu: (adet) => `По этой серии у нас ${adet} складских позиций.`,
+    kodKatalogNotu: (adet) =>
+      `В каталоге производителя в этой серии ${adet} ${ruKod(adet)}; все могут быть поставлены.`,
+    kodStokNotu: (adet) =>
+      `По этой серии у нас ${adet} ${ruCekim(adet, 'складская позиция', 'складские позиции', 'складских позиций')}.`,
     kodTamMatris: (cap, strok) =>
       `Каждый из ${cap} диаметров выпускается в ${strok} ступенях хода; в списке ниже приведены все комбинации.`,
     kodSeyrekMatris: (adet) =>
-      `В этой серии не каждый диаметр выпускается в каждом типе и ходе. Приведённые ниже ${adet} кодов — реально существующие размеры.`,
+      `В этой серии не каждый диаметр выпускается в каждом типе и ходе. Приведённые ниже ${adet} ${ruKod(adet)} — реально существующие размеры.`,
     kodTipBaslik: 'Коды типов',
     kodCapBaslik: 'Диаметры (мм)',
     kodStrokBaslik: 'Ходы (мм)',
-    kodListeBaslik: (adet) => `${adet} кодов`,
+    kodListeBaslik: (adet) => `${adet} ${ruKod(adet)}`,
     kodAltNot:
       'Приведённые коды — каталожные номера самого производителя. По размерам, которых нет на складе, уточняйте срок поставки: серия у нас есть, поэтому поставка быстрая. Цена — по запросу.',
     parcaKirinti: 'Запчасти для цилиндров',
     parcaH1: (ad) => `${ad} гидроцилиндра`,
     parcaOzet: (ad, adet, capMin, capMax) =>
-      `${ad} гидроцилиндра — ${adet} типоразмеров в диапазоне диаметров Ø${capMin}–${capMax} мм. Применяется при изготовлении и ремонте.`,
-    parcaRozetOlcu: (adet) => `${adet} типоразмеров`,
+      `${ad} гидроцилиндра — ${adet} ${ruTipo(adet)} в диапазоне диаметров Ø${capMin}–${capMax} мм. Применяется при изготовлении и ремонте.`,
+    parcaRozetOlcu: (adet) => `${adet} ${ruTipo(adet)}`,
     parcaRozetCap: (min, max) => `Ø${min}–${max} мм`,
     parcaOlcuBaslik: 'Список типоразмеров',
     parcaTabloCap: 'Диаметр корпуса (мм)',

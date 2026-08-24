@@ -282,7 +282,7 @@ Değişiklikten sonra `npx tsc --noEmit` ve `npm run build` çalıştır. Build 
 sayfaları statik üretir; yeni bir sayfa eklendiyse ilgili HTML'in
 `.next/server/app/tr/` altında oluştuğu görülmelidir.
 
-Sonra `npm run denetle` (`scripts/build-denetle.mjs`). Beş şeyi arar, beşi de
+Sonra `npm run denetle` (`scripts/build-denetle.mjs`). Yedi şeyi arar, yedisi de
 sessizce bozulabilen şeylerdir; sorun bulursa çıkış kodu 1 döner:
 
 - **Kırık iç link.** Üretilen HTML'deki her `href="/..."` bir dosyaya karşılık
@@ -296,6 +296,9 @@ sessizce bozulabilen şeylerdir; sorun bulursa çıkış kodu 1 döner:
   Bu tek denetim HAM html'de arar (bkz. React `key` tuzağı).
 - **Kanonik bütünlüğü.** Kök 308 mü, her sayfanın canonical'ı kendini gösteriyor
   mu, çok dilli her sayfa x-default beyan ediyor mu (bkz. bir alttaki bölüm).
+- **Rusça sayı çekimi.** 1 размер · 2-4 размера · 5+ размеров; son iki hane
+  11-14 ise her zaman çoğul (bkz. "Rusça sayı çekimi" bölümü).
+- **Sayı biçimi.** ru/en sayfasında Türkçe binlik ayracı (`5.297`) aranır.
 
 **Denetim ham HTML'de arama YAPMAZ, `<script>` bloklarını ayıklar.** Next.js
 sayfa sonuna `self.__next_f.push` ile akış yükünü gömüyor ve uzun dizeleri
@@ -339,6 +342,36 @@ yüksek (`kuresel-vana` %59, `pnomatik-silindir` %42, `elektrik-motoru` %41)
 metin var. Google'ın ölçütü şudur: "yerelleştirilmiş sürümler yalnız ANA İÇERİK
 çevrilmemişse kopya sayılır." Ayrıca 305 sayfanın `<title>`, `description` ve
 `canonical` alanlarının hepsi tekil.
+
+### Rusça sayı çekimi
+
+Rusça'da sayıdan sonraki isim sayıya göre çekilir ve bu, şablona sabit yazılan
+her Rusça dizede sessiz bir hatadır:
+
+```
+1 размер   ·   2-4 размера   ·   5+ размеров
+son iki hane 11-14 ise HER ZAMAN çoğul:  11 размеров, 112 размеров
+```
+
+Ölçüldü (24.08.2026): sekiz dizede tek biçim sabit yazılmıştı. Ölçü listeleri
+tam listeye çıkarılınca `profilListeNotTam` 2 profil yerine 43'ünde tetiklendi
+ve K21 sayfası "все 1 223 размеров" dedi — doğrusu **размера** (sonu 3).
+`kodListeBaslik` de "52 кодов" diyordu; doğrusu **кода**.
+
+`ruCekim()` (`lib/metin.ts`) ve dört kısayolu (`ruOlcu`, `ruPoz`, `ruKod`,
+`ruTipo`) bunu tek yerde çözer. Sayı fonksiyonlara BİÇİMLENDİRİLMİŞ dize olarak
+geliyor ("1 223"), o yüzden rakam dışı atılıp tam sayıya dönülür.
+
+**Her sayı çekim istemez.** `из / свыше / более / около / до / от / менее`
+edatlarından sonra isim, sayı ne olursa olsun tamlayan çoğuldur — «из 1223
+размеров» DOĞRUDUR. Denetim bu istisnayı tanır; tanımayan bir denetçi doğru
+Rusça'yı hata diye bildirir.
+
+**Binlik ayracı da dile göre değişir:** Türkçe nokta (5.297), İngilizce virgül
+(5,297), Rusça kırılmaz boşluk (5 297). Şablon sayıları `sayiFormat()`ten
+geçtiği için doğru; tehlike VERİYE ELLE yazılan sayıda. `kategoriler.ru.json`
+içinde dört yerde "5.297 позиций" yazıyordu — Rusça okuyan biri bunu "beş tam
+iki yüz doksan yedi" diye okur, yani 5.297 kalemlik stok 5 kalem gibi görünür.
 
 ### Tedarikçi adı hiçbir yerde geçmez
 

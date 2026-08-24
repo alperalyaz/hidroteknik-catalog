@@ -127,6 +127,26 @@ export function kategoriSchema(k: Kategori, urunler: Urun[], url: string, lang: 
  * ölçüdür — ItemList içinde Product olarak beyan edilir ki "k21 40x50x8" gibi
  * ölçü aramalarında sayfa somut bir kaleme bağlanabilsin.
  */
+/**
+ * JSON-LD `itemListElement` üst sınırı.
+ *
+ * Ölçü listeleri tam listeye çıkarıldığında (24.08.2026) K21 sayfası 1.223
+ * ölçü taşımaya başladı ve her ölçü için bir `Product` düğümü basılıyordu —
+ * her birinde tam cümlelik `description` ile birlikte. Ölçüldü: sayfanın
+ * JSON-LD'si 560 KB, GÖRÜNEN tablo ise yalnız 103 KB. Yani yapılandırılmış
+ * veri, tarif ettiği içeriğin beş katı yer kaplıyordu.
+ *
+ * Sınır İÇERİK KAYBETTİRMEZ: ölçülerin tamamı sayfada, tabloda, düz metin
+ * olarak duruyor — tarayıcının da dil modelinin de okuduğu yer orası.
+ * `numberOfItems` gerçek toplamı söylemeye devam eder; schema.org'da ItemList'in
+ * kısmi olması geçerlidir, sayı alanı tam da bunun için vardır.
+ *
+ * Şişik yapılandırılmış veri ters teper: sayfa ağırlığı Core Web Vitals'ı
+ * düşürür ve bazı tarayıcılar büyük belgeleri budar — yani her ölçüyü JSON-LD'ye
+ * basmak, tam da korumak istediğin kuyruğu kaybettirebilir.
+ */
+const ITEMLIST_SINIR = 50
+
 export function profilSchema(
   p: {
     kod: string
@@ -154,8 +174,9 @@ export function profilSchema(
     provider: { '@id': ISLETME_ID },
     mainEntity: {
       '@type': 'ItemList',
+      // GERÇEK toplam burada durur; liste bir ÖRNEKLEMDİR (bkz. ITEMLIST_SINIR).
       numberOfItems: p.olculer.length,
-      itemListElement: p.olculer.map((o, i) => ({
+      itemListElement: p.olculer.slice(0, ITEMLIST_SINIR).map((o, i) => ({
         '@type': 'ListItem',
         position: i + 1,
         item: {
