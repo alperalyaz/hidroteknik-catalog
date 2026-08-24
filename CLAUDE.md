@@ -418,6 +418,28 @@ yerleştirmek. Marka işareti birebir doğru oluyordu ama plakayı yeniden boyam
 görselde ön plan maskesi çıkarmak gerekiyordu. Modelin kendi bastığı logo
 yeterince yakın; yerleştirme bırakıldı.
 
+### Üretilen görselde BAŞKA firmanın markası olmamalı
+
+Ana sayfada beş banner var (`public/banner/*.webp`), yedi rehberde birer sahne
+görseli; hepsi OpenAI `gpt-image-2` ile üretildi.
+
+**Model, istenmediği hâlde gerçek marka basıyor.** "Güç ve kontrol" banner'ının
+ilk sürümünde valf bloklarının üstünde **Rexroth** yazıyordu ve gövdede
+"return filter RF-10-3 MADE IN EUROPE" etiketi vardı. Rexroth bizim
+markalarımızdan biri DEĞİL — `markalar.json`da hiç geçmiyor. Böyle bir görsel
+iki şeyi birden yapar: satmadığımız bir markayı satıyormuş gibi gösterir ve
+başka firmanın tescilli işaretinin yaklaşık kopyasını bizim ticari sayfamıza
+koyar. Banner markasız yeniden üretildi; istem açıkça "gövdeler işaretsiz,
+okunabilir marka ve ürün etiketi YOK" diyor.
+
+**Kastaş istisnası bilinçlidir.** Profil kodları banner'ında ambalajda "KASTAS"
+yazıyor ve bu meşru: Kastaş ürünün ÜZERİNDEKİ markadır, bayisiyiz ve o bölüm
+tümüyle Kastaş grubuyla ilgili. Bu, tedarikçi adı yasağıyla karıştırılmamalı —
+yasak olan ürünü ALDIĞIMIZ firmanın adıdır, ürünün markası değil.
+
+**Kontrol edilecek şey:** yeni bir görsel üretildiğinde okunabilir yazıları
+gözle tara. Denetim bunu otomatik yakalayamaz; görseldeki metin HTML'de yok.
+
 ### llms.txt içindekiler, llms-full.txt içeriktir
 
 İkisi ayrı iş yapar ve karıştırılmamalı:

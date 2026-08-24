@@ -123,6 +123,19 @@ export default async function KatalogAnaSayfa({ params }: { params: Promise<{ la
             if (!uyeler.length) return null
             return (
               <div key={grup} className="aile">
+                {/* Aile banner'ı: başlığın hemen üstünde, tam genişlik.
+                    priority YOK — ilk aile dışında hepsi ilk ekranın altında ve
+                    dördü birden öncelikli olsaydı ana sayfanın LCP'si düşerdi.
+                    sizes tam genişliği söylüyor, aspect-ratio yer tutuyor. */}
+                <div className="aile-banner">
+                  <Image
+                    src={`/banner/${grup}.webp`}
+                    alt={m.aileGorselAlt[grup]}
+                    width={1536}
+                    height={512}
+                    sizes="(max-width: 1100px) 100vw, 1040px"
+                  />
+                </div>
                 <h3>{m[anahtar]}</h3>
                 <div className="kartlar">
                   {uyeler.map((k) => (
@@ -165,6 +178,19 @@ export default async function KatalogAnaSayfa({ params }: { params: Promise<{ la
             <span className="bolum-sayac">{sayiFormat(PROFILLER.length, lang)}</span>
           </div>
           <p className="bolum-not">{m.notProfil}</p>
+          {/* Bu bölüm tümüyle Kastaş sızdırmazlık ürün grubuyla ilgili; banner
+              da onu gösteriyor. Kastaş adının görselde geçmesi bilinçli ve
+              meşru — bayisiyiz. Bu, tedarikçi adı yasağından farklıdır:
+              Kastaş ürünün ÜZERİNDEKİ markadır, tedarikçi değil. */}
+          <div className="aile-banner">
+            <Image
+              src="/banner/profil.webp"
+              alt={m.aileGorselAlt.profil}
+              width={1536}
+              height={512}
+              sizes="(max-width: 1100px) 100vw, 1040px"
+            />
+          </div>
           <div className="cipler">
             {PROFILLER.map((p) => (
               <Link key={p.kod} href={`/${lang}/profil/${profilSlug(p.kod)}`} className="cip">

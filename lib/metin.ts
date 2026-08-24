@@ -163,6 +163,7 @@ export type Metin = {
   notMarka: string
   basYaklasim: string
   tercihBas: string
+  aileGorselAlt: Record<string, string>
   tercih1Bas: string
   tercih1Metin: (kalem: string, grup: string) => string
   tercih1Etiket: string
@@ -387,6 +388,13 @@ export const METIN: Record<Dil, Metin> = {
     notMarka: 'Ürünün üzerinde yazan markalar.',
     basYaklasim: 'Bu katalog nasıl hazırlanıyor',
     tercihBas: 'Neden Hidroteknik?',
+    aileGorselAlt: {
+      hat: 'Tezgâhta hidrolik hortumlar, rakorlar, dirsek ve nipeller, hortum kelepçeleri',
+      guc: 'Tezgâhta dişli pompa, orbit hidromotor, NG6 yön kontrol valfleri, manometre ve dönüş filtresi',
+      silindir: 'Tezgâhta krom mil, honlanmış boru, piston ve boğaz kapağı ile keçe, sıyırıcı ve o-ring dizileri',
+      pnomatik: 'Tezgâhta pnömatik silindirler, valf adası, şartlandırıcı, poliüretan hortum ve rakorlar',
+      profil: 'Tezgâhta tepsiler dolusu Kastaş keçe, nutring, sıyırıcı ve yataklama halkası; yanında kumpas ve ölçü tablosu',
+    },
     tercih1Bas: 'Aradığınız ölçü büyük ihtimalle rafta',
     tercih1Metin: (kalem, grup) =>
       `${kalem} ayrı stok kalemi ${grup} ürün grubunda hazır bekliyor. Sızdırmazlıkta tek başına ${'5.030'} ölçü var — bir keçeyi ölçüsüyle arayan müşteri, çoğu zaman aynı gün alıp gidiyor.`,
@@ -582,6 +590,13 @@ export const METIN: Record<Dil, Metin> = {
     notMarka: 'The brands printed on the products themselves.',
     basYaklasim: 'How this catalogue is put together',
     tercihBas: 'Why Hidroteknik?',
+    aileGorselAlt: {
+      hat: 'Hydraulic hoses, fittings, elbows and nipples, and hose clamps on a workbench',
+      guc: 'A gear pump, orbital hydraulic motor, NG6 directional control valves, pressure gauge and return filter on a workbench',
+      silindir: 'A chrome rod, honed tube, piston and gland head with rows of seals, wipers and O-rings on a workbench',
+      pnomatik: 'Pneumatic cylinders, a valve manifold, an air preparation unit, polyurethane tubing and push-in fittings on a workbench',
+      profil: 'Trays of Kastaş seals, nutrings, wipers and guide rings on a workbench, with a caliper and a size chart',
+    },
     tercih1Bas: 'The size you need is probably on the shelf',
     tercih1Metin: (kalem, grup) =>
       `${kalem} separate stock items across ${grup} product groups, ready now. Sealing alone accounts for over 5,000 sizes — a customer who comes in with a seal measurement usually leaves with it the same day.`,
@@ -778,6 +793,13 @@ export const METIN: Record<Dil, Metin> = {
     notMarka: 'Бренды, нанесённые на саму продукцию.',
     basYaklasim: 'Как составлен этот каталог',
     tercihBas: 'Почему Hidroteknik?',
+    aileGorselAlt: {
+      hat: 'Гидравлические рукава, фитинги, угольники и ниппели, хомуты на верстаке',
+      guc: 'Шестерённый насос, героторный гидромотор, распределители NG6, манометр и сливной фильтр на верстаке',
+      silindir: 'Хромированный шток, хонингованная труба, поршень и крышка с рядами уплотнений, грязесъёмников и колец на верстаке',
+      pnomatik: 'Пневмоцилиндры, клапанный остров, блок подготовки воздуха, полиуретановая трубка и фитинги на верстаке',
+      profil: 'Лотки с уплотнениями Kastaş, нутрингами, грязесъёмниками и направляющими кольцами на верстаке, рядом штангенциркуль и таблица размеров',
+    },
     tercih1Bas: 'Нужный размер, скорее всего, есть на складе',
     tercih1Metin: (kalem, grup) =>
       `${kalem} отдельных складских позиций в ${grup} товарных группах — в наличии сейчас. Только на уплотнения приходится более 5 000 размеров: клиент, пришедший с замером, обычно уезжает с деталью в тот же день.`,
