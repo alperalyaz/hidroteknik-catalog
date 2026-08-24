@@ -1233,5 +1233,43 @@
    "PA (polyamid)",
    "PTFE (teflon)"
   ]
+ },
+ {
+  "slug": "vakum",
+  "grup": "pnomatik",
+  "ad": "Vakum Ekipmanları",
+  "h1": "Vakum Vantuzu, Ejektör ve Vakum Tutma Ekipmanları",
+  "ozet": "Körüklü ve düz tip vakum vantuzları, venturi prensipli vakum ejektörleri, vakum filtreleri ve vantuz bağlantı rakorları. Kaldırma, tutma ve besleme otomasyonu için.",
+  "giris": "Vakumla tutma, parçayı çeneyle sıkmadan kaldırmanın yoludur: cam, sac, ahşap panel, karton kutu ve plastik levha gibi yüzeyi düzgün ama kavranması zor malzemeler bu yöntemle taşınır. Sistem üç parçadan oluşur — vakumu üreten kaynak, onu parçaya ileten vantuz ve arada duran filtre.\n\nVakumu üreten en yaygın eleman ejektördür. İçinden geçen basınçlı hava bir daralma noktasında hızlanır, venturi etkisiyle yan kanaldan hava emer ve orada negatif basınç oluşturur. Hareketli parçası yoktur, bakım istemez ve saniyenin altında vakuma ulaşır; buna karşılık sürekli hava tüketir. Aralıksız çalışan hatlarda mekanik vakum pompası daha ekonomik olabilir, ama çevrimli bir tutma-bırakma işinde ejektör neredeyse her zaman doğru seçimdir.\n\nVantuz seçimi iki soruyla yapılır: yüzey nasıl ve parça ne kadar ağır. Düz tip vantuz, sert ve düz yüzeylerde en yüksek tutma kuvvetini verir ve parçayı en az sallar. Körüklü tip ise katlanabilir gövdesi sayesinde eğimli, kavisli ya da yüksekliği değişen yüzeylere uyar; katlanırken parçayı hafifçe kaldırdığı için kalıptan çıkarma işlerinde tercih edilir. Kaç vantuz gerektiği parçanın ağırlığına, vantuz çapına ve emniyet katsayısına göre hesaplanır — yatay kaldırmada tipik olarak iki kat, dikey tutmada dört kat emniyet alınır.\n\nMalzeme, taşınan yüzeye göre seçilir. NBR genel amaçlıdır ve yağlı sacda iyi çalışır; silikon gıda ve temiz oda uygulamalarında kullanılır ama bazı boyalarda iz bırakabilir; poliüretan aşınmaya en dayanıklı olanıdır ve keskin kenarlı sacda uzun ömürlüdür.\n\nFiltre atlanmaması gereken parçadır. Emilen hava parçanın yüzeyindeki tozu da içeri çeker; filtresiz bir ejektörün venturi kanalı tıkanır ve vakum sessizce zayıflar.",
+  "eslesme": "VANTUZ|EJEKT[ÖOöo]R|VENTUR[İIiı]|VAKUM JENERAT[ÖOöo]R|VAKUM POMPA|VAKUM KIRICI",
+  "haric": "MANOMETRE|G[ÖO]STERGE|BAR ALT|BAR ARKA",
+  "sss": [
+   {
+    "s": "Vakum ejektörü mü vakum pompası mı almalıyım?",
+    "c": "Çevrimli bir tutma-bırakma işiyse ejektör. Hareketli parçası yok, bakım istemez, saniyenin altında vakuma ulaşır ve ucuzdur; karşılığında çalıştığı sürece hava tüketir. Vakum aralıksız ve uzun süre gerekiyorsa mekanik pompanın enerji maliyeti daha düşüktür."
+   },
+   {
+    "s": "Kaç vantuz gerekir, nasıl hesaplarım?",
+    "c": "Parça ağırlığını vantuz başına tutma kuvvetine bölün, sonra emniyet katsayısıyla çarpın. Yatay kaldırmada tipik katsayı 2, dikey tutmada 4'tür. Vantuz başına kuvvet, vantuz alanı ile ulaşılan vakum seviyesinin çarpımıdır — üretici tablosu bu değeri verir. Pürüzlü ya da gözenekli yüzeyde gerçek kuvvet tablodakinin altında kalır."
+   },
+   {
+    "s": "Düz tip mi körüklü tip mi?",
+    "c": "Yüzey sert ve düzse düz tip: en yüksek kuvveti verir ve parçayı en az sallar. Yüzey eğimli, kavisli ya da yüksekliği değişkense körüklü tip; katlanabilir gövdesi farkı kapatır. Körüklü tip katlanırken parçayı hafifçe kaldırdığı için kalıptan çıkarmada da tercih edilir."
+   },
+   {
+    "s": "Vantuz malzemesi nasıl seçilir?",
+    "c": "NBR genel amaçlıdır ve yağlı sacda iyi çalışır. Silikon gıda ve temiz oda uygulamaları içindir ama bazı boyalı yüzeylerde iz bırakabilir. Poliüretan aşınmaya en dayanıklısıdır; keskin kenarlı sac ve abrasif yüzeylerde en uzun ömrü verir."
+   },
+   {
+    "s": "Vakum filtresi gerçekten gerekli mi?",
+    "c": "Evet, ve atlanması en sık yapılan hatadır. Emilen hava parçanın yüzeyindeki tozu da içeri çeker; ejektörün venturi kanalı daralınca vakum sessizce zayıflar ve parça düşmeye başlar. Arıza belirtisi ani değil kademelidir, o yüzden geç fark edilir."
+   },
+   {
+    "s": "Listede olmayan vantuz ölçüsü temin edilir mi?",
+    "c": "Edilir. Aşağıdaki kod listesi temin edebildiğimiz ürün grubunu gösterir; bir kısmı stokta, kalanı kısa sürede tedarik edilir. Ölçüyü, tutulacak malzemeyi ve parça ağırlığını yazarsanız uygun vantuz ve ejektör kombinasyonunu birlikte çıkarırız."
+   }
+  ],
+  "markalar": [],
+  "standartlar": []
  }
 ]

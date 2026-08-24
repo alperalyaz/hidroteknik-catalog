@@ -1010,5 +1010,38 @@
    "PA (polyamide)",
    "PTFE (Teflon)"
   ]
+ },
+ {
+  "slug": "vakum",
+  "ad": "Vacuum Equipment",
+  "h1": "Vacuum Cups, Ejectors and Vacuum Handling Equipment",
+  "ozet": "Bellows and flat vacuum cups, venturi vacuum ejectors, vacuum filters and cup fittings. For lifting, holding and feeding automation.",
+  "giris": "Vacuum handling is how you lift a part without clamping it: glass, sheet metal, wood panel, cardboard box and plastic sheet — materials with a smooth surface that is hard to grip — are moved this way. The system has three parts: the source that creates the vacuum, the cup that transfers it to the part, and the filter in between.\n\nThe most common source is the ejector. Compressed air passing through it accelerates at a restriction, draws air from a side channel by the venturi effect and creates negative pressure there. It has no moving parts, needs no maintenance and reaches vacuum in under a second; in exchange it consumes air continuously. On a line that runs without pause a mechanical vacuum pump may be more economical, but for a cyclic pick-and-place job the ejector is almost always the right choice.\n\nCup selection comes down to two questions: what is the surface like, and how heavy is the part. A flat cup gives the highest holding force on hard, flat surfaces and lets the part swing least. A bellows cup, with its folding body, adapts to inclined, curved or varying-height surfaces; because it lifts the part slightly as it folds, it is preferred for removing parts from moulds. How many cups you need follows from part weight, cup diameter and a safety factor — typically two for horizontal lifting and four for vertical holding.\n\nMaterial is chosen for the surface being carried. NBR is general purpose and works well on oily sheet; silicone is used in food and cleanroom applications but can mark some paints; polyurethane is the most abrasion resistant and lasts longest on sharp-edged sheet.\n\nThe filter is the part not to skip. The air drawn in carries dust from the part's surface with it; without a filter the ejector's venturi channel clogs and the vacuum weakens silently.",
+  "sss": [
+   {
+    "s": "Should I buy a vacuum ejector or a vacuum pump?",
+    "c": "For a cyclic pick-and-place job, an ejector. It has no moving parts, needs no maintenance, reaches vacuum in under a second and is inexpensive; in exchange it consumes air whenever it runs. If vacuum is needed continuously and for long periods, a mechanical pump has the lower energy cost."
+   },
+   {
+    "s": "How many cups do I need, and how do I calculate it?",
+    "c": "Divide part weight by the holding force per cup, then multiply by a safety factor. Typical factors are 2 for horizontal lifting and 4 for vertical holding. Force per cup is cup area multiplied by the vacuum level reached — the manufacturer's table gives this figure. On a rough or porous surface the real force falls below the table value."
+   },
+   {
+    "s": "Flat type or bellows type?",
+    "c": "If the surface is hard and flat, flat type: it gives the highest force and lets the part swing least. If the surface is inclined, curved or of varying height, bellows type — its folding body absorbs the difference. Because a bellows cup lifts the part slightly as it folds, it is also preferred for mould removal."
+   },
+   {
+    "s": "How do I choose the cup material?",
+    "c": "NBR is general purpose and works well on oily sheet. Silicone is for food and cleanroom applications but can mark some painted surfaces. Polyurethane is the most abrasion resistant and gives the longest life on sharp-edged sheet and abrasive surfaces."
+   },
+   {
+    "s": "Is a vacuum filter really necessary?",
+    "c": "Yes, and skipping it is the most common mistake. The air drawn in carries dust from the part's surface with it; as the ejector's venturi channel narrows, vacuum weakens silently and the part begins to drop. The failure is gradual rather than sudden, which is why it is noticed late."
+   },
+   {
+    "s": "Can you supply a cup size that is not in the list?",
+    "c": "Yes. The code list below shows the product group we can supply; some are in stock and the rest are sourced quickly. Send us the size, the material to be handled and the part weight, and we will work out the right cup and ejector combination with you."
+   }
+  ]
  }
 ]
