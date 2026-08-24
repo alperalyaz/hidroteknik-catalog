@@ -325,7 +325,7 @@ Değişiklikten sonra `npx tsc --noEmit` ve `npm run build` çalıştır. Build 
 sayfaları statik üretir; yeni bir sayfa eklendiyse ilgili HTML'in
 `.next/server/app/tr/` altında oluştuğu görülmelidir.
 
-Sonra `npm run denetle` (`scripts/build-denetle.mjs`). Dokuz şeyi arar, dokuzu da
+Sonra `npm run denetle` (`scripts/build-denetle.mjs`). On şeyi arar, onu da
 sessizce bozulabilen şeylerdir; sorun bulursa çıkış kodu 1 döner:
 
 - **Kırık iç link.** Üretilen HTML'deki her `href="/..."` bir dosyaya karşılık
@@ -347,6 +347,8 @@ sessizce bozulabilen şeylerdir; sorun bulursa çıkış kodu 1 döner:
   alttaki bölüm). Sığ klonda atlanır.
 - **Düz metin çıktıları.** `llms.txt` ve `llms-full.txt` HTML olmadığı için
   yukarıdaki denetimlerin kapsamında değiller; ayrıca taranırlar.
+- **Rehber görselleri.** Dosya `public/` altında var mı, alt metin üç dilde de
+  dolu mu, `ru` gerçekten Kiril mi (bkz. bir alttaki bölüm).
 
 **Denetim ham HTML'de arama YAPMAZ, `<script>` bloklarını ayıklar.** Next.js
 sayfa sonuna `self.__next_f.push` ile akış yükünü gömüyor ve uzun dizeleri
@@ -390,6 +392,31 @@ yüksek (`kuresel-vana` %59, `pnomatik-silindir` %42, `elektrik-motoru` %41)
 metin var. Google'ın ölçütü şudur: "yerelleştirilmiş sürümler yalnız ANA İÇERİK
 çevrilmemişse kopya sayılır." Ayrıca 305 sayfanın `<title>`, `description` ve
 `canonical` alanlarının hepsi tekil.
+
+### Rehber görselleri
+
+Yedi teknik rehberin her birinde bir sahne görseli var (`public/rehber/*.webp`).
+Görseller **OpenAI `gpt-image-2` ile üretildi**; katalogda başka görsel yok.
+
+**Alt metin süs değil, üç ayrı işi birden yapıyor:** görme engelli okuyucunun
+sayfadan aldığı tek şey, Google Görseller'in sayfayı sınıflandırdığı yer, ve
+görsel yüklenmediğinde kalan metin. Bu yüzden `gorselAlt` üç dilde ZORUNLU ve
+denetimin onuncu adımı `ru` alanının gerçekten Kiril olduğunu ayrıca sınar —
+projede iki kez Türkçe metin EN/RU sayfada kalmıştı.
+
+**Boyut:** üretilen PNG'ler ~2,4 MB. WebP'ye çevrilince 115–178 KB'a düşüyor
+(%94). Yedi görselin toplamı 1,1 MB. `next/image` ile `priority` veriliyor
+çünkü görsel ilk ekranda ve LCP öğesi o; `aspect-ratio` CSS'te sabit, yoksa
+görsel yüklenirken metin aşağı zıplar.
+
+**JSON-LD `image` MUTLAK adresle verilir** — yapay zekâ cevap arayüzlerinin ve
+Google'ın kaynak görselini aldığı alan orası, göreli yol işe yaramaz.
+
+**Denenip vazgeçilen yol:** gerçek logoyu üretilen sahneye perspektifle
+yerleştirmek. Marka işareti birebir doğru oluyordu ama plakayı yeniden boyamak
+önündeki kişiyi de kapatıyordu (teknisyenin kafasının üstü kesildi) ve her
+görselde ön plan maskesi çıkarmak gerekiyordu. Modelin kendi bastığı logo
+yeterince yakın; yerleştirme bırakıldı.
 
 ### llms.txt içindekiler, llms-full.txt içeriktir
 

@@ -3,7 +3,7 @@
  *
  *   node scripts/build-denetle.mjs
  *
- * Dokuz şeyi arar; dokuzu da sessizce bozulabilen, elle fark edilmeyen şeylerdir:
+ * On şeyi arar; onu da sessizce bozulabilen, elle fark edilmeyen şeylerdir:
  *   1. Kırık iç link   — 15.000'in üzerinde href var, elle bakılamaz
  *   2. Tedarikçi adı sızıntısı — yalnız ürünün üzerindeki marka yayımlanır
  *   3. Yinelenen <title> — aynı başlık iki sayfada varsa biri diğerini yer
@@ -13,6 +13,7 @@
  *   7. Sayı biçimi — ru/en sayfasında Türkçe binlik ayracı (5.297)
  *   8. Güncelleme damgası — dateModified git ile tutuyor mu
  *   9. Düz metin çıktıları — llms.txt / llms-full.txt sızıntı taraması
+ *  10. Rehber görselleri — dosya var mı, alt metin üç dilde dolu mu
  *
  * ⚠ RSC YÜKÜ AYIKLANIR (önemli): Next.js sayfanın sonuna `self.__next_f.push`
  * çağrılarıyla akış yükünü gömer ve uzun dizeleri RASTGELE yerlerden böler.
@@ -417,6 +418,46 @@ for (const ad of ['llms.txt', 'llms-full.txt']) {
   const para = icerik.match(/\d+[.,]\d{2}\s*(USD|EUR|TL|TRY|₺|\$|€)/i)
   if (para) duzMetin.push(`/${ad} — fiyat izi ("${para[0]}")`)
 }
+
+/**
+ * REHBER GÖRSELLERİ.
+ *
+ * Görsel sessizce kaybolabilen bir şeydir: dosya adı değişir, WebP üretimi
+ * atlanır, alt metin bir dilde boş kalır. Üçü de build'i kırmaz — sayfa
+ * yüklenir, yalnız görsel yerine boşluk kalır ya da EN sayfada Türkçe alt
+ * metin durur (projede iki kez yaşanan hatanın aynısı).
+ *
+ * Alt metin süs değil: görme engelli okuyucunun aldığı tek şey, Google
+ * Görseller'in sayfayı sınıflandırdığı yer ve görsel yüklenmediğinde kalan
+ * metin.
+ */
+const gorselHata = []
+{
+  const rehberler = JSON.parse(readFileSync('data/rehberler.json', 'utf8'))
+  for (const r of rehberler) {
+    if (!r.gorsel) { gorselHata.push(`${r.slug} — gorsel alanı yok`); continue }
+    try {
+      statSync(join('public', r.gorsel.replace(/^\//, '')))
+    } catch {
+      gorselHata.push(`${r.slug} — dosya yok: public${r.gorsel}`)
+    }
+    for (const dil of ['tr', 'en', 'ru']) {
+      const alt = r[dil]?.gorselAlt
+      if (!alt) { gorselHata.push(`${r.slug} — ${dil}.gorselAlt boş`); continue }
+      if (dil === 'ru' && !/[Ѐ-ӿ]/.test(alt)) gorselHata.push(`${r.slug} — ru.gorselAlt Kiril değil`)
+      if (dil !== 'tr' && /[ğışĞİŞ]/.test(alt)) gorselHata.push(`${r.slug} — ${dil}.gorselAlt Türkçe görünüyor`)
+    }
+  }
+  // Üretilen sayfada gerçekten <img> var mı, alt metni dolu mu?
+  for (const f of dosyalar) {
+    const yol = '/' + f.slice(KOK.length + 1).replace(/\.html$/, '')
+    if (!/\/rehber\//.test(yol)) continue
+    const ham = readFileSync(f, 'utf8')
+    const img = ham.match(/<img[^>]+alt="([^"]*)"[^>]*>/)
+    if (!img) gorselHata.push(`${yol} — sayfada <img> yok`)
+    else if (!img[1].trim()) gorselHata.push(`${yol} — <img> alt metni boş`)
+  }
+}
 console.log(`sayfa ${dosyalar.length} · iç link ${toplamLink}`)
 console.log(`kırık link hedefi : ${kirik.size}`)
 for (const [hedef, kaynak] of [...kirik].slice(0, 10)) {
@@ -438,8 +479,10 @@ console.log(`güncelleme damgası : ${tarihBayat.length}`)
 for (const s of tarihBayat.slice(0, 10)) console.log(`   ✗ ${s}`)
 console.log(`düz metin çıktısı : ${duzMetin.length}`)
 for (const s of duzMetin.slice(0, 10)) console.log(`   ✗ ${s}`)
+console.log(`rehber görseli    : ${gorselHata.length}`)
+for (const s of gorselHata.slice(0, 10)) console.log(`   ✗ ${s}`)
 
 const hata =
-  kirik.size + sizinti.length + yinelenen.length + icKod.length + kanonik.length + ruCekimHata.length + sayiBicim.length + tarihBayat.length + duzMetin.length
+  kirik.size + sizinti.length + yinelenen.length + icKod.length + kanonik.length + ruCekimHata.length + sayiBicim.length + tarihBayat.length + duzMetin.length + gorselHata.length
 console.log(hata === 0 ? '\n✅ temiz' : `\n⛔ ${hata} sorun`)
 process.exit(hata === 0 ? 0 : 1)

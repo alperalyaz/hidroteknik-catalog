@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { DILLER, SITE_URL, FIRMA, sayiFormat, dilAlternatifleri, type Dil } from '@/lib/site'
 import { METIN } from '@/lib/metin'
@@ -31,7 +32,15 @@ export async function generateMetadata({
       canonical: url,
       languages: dilAlternatifleri(`/rehber/${r.slug}`),
     },
-    openGraph: { title: i.h1, description: i.ozet, url, type: 'article', locale: OG_LOCALE[lang] },
+    openGraph: {
+      title: i.h1,
+      description: i.ozet,
+      url,
+      type: 'article',
+      locale: OG_LOCALE[lang],
+      // Paylaşım kartı görseli — MUTLAK adres şart, göreli yol çalışmaz.
+      images: [{ url: `${SITE_URL}${r.gorsel}`, width: 1536, height: 1024, alt: i.gorselAlt }],
+    },
   }
 }
 
@@ -57,7 +66,7 @@ export default async function RehberSayfasi({
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={jsonLd(rehberSchema(i, url, lang, m.urunKatalogu))}
+        dangerouslySetInnerHTML={jsonLd(rehberSchema(i, url, lang, m.urunKatalogu, r.gorsel))}
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(sssSchema(i.sss, lang))} />
       <script
@@ -86,6 +95,21 @@ export default async function RehberSayfasi({
       </div>
 
       <div className="sarmal">
+        {/* Görsel giriş metninin ÜSTÜNDE: sayfanın ilk ekranında yer alıyor ve
+            LCP öğesi o. `priority` bu yüzden veriliyor — tembel yüklenirse
+            Core Web Vitals'ta en büyük içerik boyaması gecikir.
+            Alt metin üç dilli ve zorunlu (bkz. lib/rehber.ts). */}
+        <figure className="rehber-gorsel">
+          <Image
+            src={r.gorsel}
+            alt={i.gorselAlt}
+            width={1536}
+            height={1024}
+            sizes="(max-width: 1100px) 100vw, 1040px"
+            priority
+          />
+        </figure>
+
         <section>
           <div className="metin">
             {i.giris.split('\n\n').map((p, n) => (

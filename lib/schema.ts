@@ -292,10 +292,11 @@ export function markaSchema(
  * değil, açıklayıcı metin. Yazar olarak işletme beyan edilir.
  */
 export function rehberSchema(
-  i: { ad: string; h1: string; ozet: string },
+  i: { ad: string; h1: string; ozet: string; gorselAlt?: string },
   url: string,
   lang: string,
-  katalogAdi: string
+  katalogAdi: string,
+  gorsel?: string
 ) {
   return {
     '@context': 'https://schema.org',
@@ -307,6 +308,20 @@ export function rehberSchema(
     description: i.ozet,
     inLanguage: lang,
     ...tarihAlani('rehber'),
+    // Görsel MUTLAK adresle verilir: JSON-LD'yi okuyan taraf sayfanın kendi
+    // adresini bilmek zorunda kalmasın. Yapay zekâ cevap arayüzlerinin ve
+    // Google'ın kaynak görselini aldığı alan burası.
+    ...(gorsel
+      ? {
+          image: {
+            '@type': 'ImageObject',
+            url: `${SITE_URL}${gorsel}`,
+            width: 1536,
+            height: 1024,
+            ...(i.gorselAlt ? { caption: i.gorselAlt } : {}),
+          },
+        }
+      : {}),
 
     isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}/#site`, name: `${FIRMA.ad} ${katalogAdi}` },
     author: { '@id': ISLETME_ID },

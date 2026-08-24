@@ -278,3 +278,23 @@ footer h3 {
   .ustbar-sag { margin-left: 0; width: 100%; justify-content: space-between; gap: 10px; }
   .ustbar-tel { font-size: 0.86rem; }
 }
+
+/* Rehber görseli — giriş metninin üstünde, sayfa genişliğinde.
+   `aspect-ratio` yer tutar: görsel yüklenmeden önce de yüksekliği bilinir ve
+   metin aşağı zıplamaz (düzen kayması, CLS). */
+.rehber-gorsel {
+  margin: 0 0 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--dalga);
+  aspect-ratio: 3 / 2;
+}
+.rehber-gorsel img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 700px) {
+  .rehber-gorsel { margin-bottom: 1.4rem; border-radius: 8px; }
+}

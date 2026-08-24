@@ -37,7 +37,8 @@
      "s": "Diş tipini ölçemiyorum, ne göndermeliyim?",
      "c": "Parçanın yan ve alın yüzeyinden iki fotoğraf ile kumpasla alınmış diş dış çapı yeterlidir. Alın fotoğrafı o-ring kanalı olup olmadığını (ORFS mi, JIC mi) gösterir; yan fotoğraf dişin paralel mi konik mi olduğunu gösterir. Bu üçüyle doğru muadil belirlenebilir."
     }
-   ]
+   ],
+   "gorselAlt": "Tezgâhta yan yana dizilmiş farklı diş tiplerinde hidrolik rakorlar: BSP düz, BSPT konik, metrik 24° koni, JIC 37° havşa ve O-ringli ORFS; yanında diş mastarı ve kumpas"
   },
   "en": {
    "ad": "Fitting thread types",
@@ -69,7 +70,8 @@
      "s": "I cannot measure the thread — what should I send?",
      "c": "Two photographs, one from the side and one of the sealing face, together with the thread outside diameter taken with calipers. The face photo shows whether there is an O-ring groove (ORFS or JIC); the side photo shows whether the thread is parallel or tapered. Those three are enough to identify the correct equivalent."
     }
-   ]
+   ],
+   "gorselAlt": "Hydraulic fittings with different thread types laid out on a workbench: BSP parallel, BSPT tapered, metric 24° cone, JIC 37° flare and ORFS with an O-ring; a thread gauge and caliper beside them"
   },
   "ru": {
    "ad": "Типы резьб фитингов",
@@ -101,8 +103,10 @@
      "s": "Я не могу измерить резьбу — что прислать?",
      "c": "Две фотографии — сбоку и с торца — вместе с наружным диаметром резьбы, снятым штангенциркулем. Снимок торца показывает, есть ли канавка под кольцо (ORFS или JIC); снимок сбоку показывает, цилиндрическая резьба или коническая. Этих трёх данных достаточно для подбора правильного аналога."
     }
-   ]
-  }
+   ],
+   "gorselAlt": "Гидравлические фитинги с разными типами резьбы на верстаке: BSP цилиндрическая, BSPT коническая, метрическая с конусом 24°, JIC с развальцовкой 37° и ORFS с кольцом; рядом резьбомер и штангенциркуль"
+  },
+  "gorsel": "/rehber/rakor-dis-tipleri.webp"
  },
  {
   "slug": "hidrolik-hortum-secimi",
@@ -142,7 +146,8 @@
      "s": "R6 hortum basınç hattında kullanılabilir mi?",
      "c": "Kullanılmamalıdır. R6 tek örgülüdür ve düşük basınç sınıfındadır; tank dönüşü, drenaj ve benzeri basınçsız hatlar için uygundur. Basınç hattına takılan R6 hortum, sistem tam basınca çıktığında kısa sürede patlar."
     }
-   ]
+   ],
+   "gorselAlt": "Kesilmiş üç hidrolik hortum ucu tezgâhta yan yana: tek çelik örgülü, çift örgülü ve dört katmanlı spiral; arkada hortum presleme makinesi"
   },
   "en": {
    "ad": "Hose selection",
@@ -174,7 +179,8 @@
      "s": "Can R6 hose be used on a pressure line?",
      "c": "It should not be. R6 is single-braid and low pressure; it suits tank return, drain and similar unpressurised lines. Fitted to a pressure line, R6 hose bursts within a short time once the system reaches full pressure."
     }
-   ]
+   ],
+   "gorselAlt": "Three cut hydraulic hose ends side by side on a workbench: single steel braid, double braid and four-layer spiral; a hose crimping machine behind"
   },
   "ru": {
    "ad": "Выбор рукава",
@@ -206,8 +212,10 @@
      "s": "Можно ли ставить рукав R6 на напорную линию?",
      "c": "Не следует. R6 однооплёточный и низконапорный; он подходит для слива в бак, дренажа и подобных линий без давления. Установленный на напорную линию рукав R6 лопается вскоре после выхода системы на полное давление."
     }
-   ]
-  }
+   ],
+   "gorselAlt": "Три отрезка гидравлического рукава на верстаке: с одной стальной оплёткой, с двумя оплётками и с четырьмя спиральными слоями; за ними обжимной станок"
+  },
+  "gorsel": "/rehber/hidrolik-hortum-secimi.webp"
  },
  {
   "slug": "silindir-hesabi",
@@ -247,7 +255,8 @@
      "s": "Piston çapını nasıl ölçerim?",
      "c": "Piston çapı, silindir gövdesinin iç çapıdır ve honlanmış borunun iç ölçüsüne eşittir. Silindir sökülü değilse gövde dış çapından ve et kalınlığından hesaplanabilir; etiketi okunabiliyorsa etikette yazar. Ölçü genellikle 40, 50, 63, 70, 80, 90, 100 mm gibi standart kademelerdedir."
     }
-   ]
+   ],
+   "gorselAlt": "Tezgâhta krom milli hidrolik silindir, mil çapını ölçen dijital kumpas ve ölçü krokili mühendislik defteri"
   },
   "en": {
    "ad": "Cylinder calculations",
@@ -279,7 +288,8 @@
      "s": "How do I measure the bore?",
      "c": "The bore is the inside diameter of the cylinder barrel and equals the inside dimension of the honed tube. If the cylinder is not stripped, it can be worked out from the barrel outside diameter and wall thickness; where the label is legible, it is printed there. The size is normally a standard step such as 40, 50, 63, 70, 80, 90 or 100 mm."
     }
-   ]
+   ],
+   "gorselAlt": "A chrome-rod hydraulic cylinder on a workbench, a digital caliper measuring the rod diameter and an engineering notebook with dimension sketches"
   },
   "ru": {
    "ad": "Расчёт цилиндра",
@@ -311,8 +321,10 @@
      "s": "Как измерить диаметр поршня?",
      "c": "Диаметр поршня — это внутренний диаметр гильзы, он равен внутреннему размеру хонингованной трубы. Если цилиндр не разобран, его можно вычислить по наружному диаметру гильзы и толщине стенки; при читаемом шильдике он указан там. Размер обычно соответствует стандартному ряду: 40, 50, 63, 70, 80, 90, 100 мм."
     }
-   ]
-  }
+   ],
+   "gorselAlt": "Гидроцилиндр с хромированным штоком на верстаке, штангенциркуль, измеряющий диаметр штока, и инженерный блокнот с эскизами размеров"
+  },
+  "gorsel": "/rehber/silindir-hesabi.webp"
  },
  {
   "slug": "silindir-kacagi",
@@ -356,7 +368,8 @@
      "s": "Silindir yükü havada tutamıyor, keçe mi suçlu?",
      "c": "Her zaman değil. Yük yavaşça iniyorsa iki olasılık vardır: piston keçesi kaçırıyordur ya da devredeki valf iç kaçak yapıyordur. Ayırt etmek için silindirin hatları kapatılır; yük yine iniyorsa suçlu silindirin içindedir, durursa arıza valftedir. Emniyet gerektiren uygulamalarda ayrıca yük tutma valfi kullanılmalıdır."
     }
-   ]
+   ],
+   "gorselAlt": "Sökülmüş hidrolik silindir: çizik krom mil, boğaz kapağındaki aşınmış mil keçesi ve sıyırıcı, yanında yeni keçe takımı"
   },
   "en": {
    "ad": "Cylinder leaks",
@@ -392,7 +405,8 @@
      "s": "The cylinder will not hold a load in the air — is the seal to blame?",
      "c": "Not always. If the load descends slowly there are two possibilities: the piston seal is passing, or a valve in the circuit is leaking internally. To tell them apart, close off the cylinder's lines; if the load still descends the fault is inside the cylinder, if it stops the fault is in the valve. Applications that require safety should also use a load-holding valve."
     }
-   ]
+   ],
+   "gorselAlt": "A disassembled hydraulic cylinder: a scratched chrome rod, the worn rod seal and wiper from the gland head, and a new seal kit beside them"
   },
   "ru": {
    "ad": "Течь цилиндра",
@@ -428,8 +442,10 @@
      "s": "Цилиндр не держит груз на весу — виновато ли уплотнение?",
      "c": "Не всегда. Если груз медленно опускается, возможны два варианта: пропускает поршневое уплотнение либо клапан в контуре имеет внутреннюю утечку. Чтобы их различить, перекрывают линии цилиндра; если груз всё равно опускается — неисправность внутри цилиндра, если останавливается — в клапане. В применениях, требующих безопасности, дополнительно ставят клапан удержания нагрузки."
     }
-   ]
-  }
+   ],
+   "gorselAlt": "Разобранный гидроцилиндр: хромированный шток с задиром, изношенное уплотнение штока и грязесъёмник из крышки, рядом новый ремкомплект"
+  },
+  "gorsel": "/rehber/silindir-kacagi.webp"
  },
  {
   "slug": "kece-malzemesi",
@@ -473,7 +489,8 @@
      "s": "O-ring için de aynı kural geçerli mi?",
      "c": "Sıcaklık ve akışkan kuralı aynen geçerlidir; NBR ve FKM en yaygın iki seçenektir. Fark, o-ringde aşınma kriterinin çoğu zaman devre dışı kalmasıdır: o-ring genelde statik sızdırmazlık yapar, hareket etmez. Bu yüzden poliüretanın aşınma üstünlüğü o-ringde anlamını yitirir."
     }
-   ]
+   ],
+   "gorselAlt": "Aynı ölçüde üç hidrolik mil keçesi yan yana: siyah NBR, sarı-amber poliüretan ve kahverengi-yeşil FKM"
   },
   "en": {
    "ad": "Seal material selection",
@@ -509,7 +526,8 @@
      "s": "Do the same rules apply to O-rings?",
      "c": "The temperature and fluid rules apply exactly; NBR and FKM are the two most common options. The difference is that the abrasion criterion usually drops out: an O-ring normally seals statically and does not move. Polyurethane’s abrasion advantage therefore loses its meaning in an O-ring."
     }
-   ]
+   ],
+   "gorselAlt": "Three hydraulic rod seals of the same size side by side: black NBR, amber-yellow polyurethane and brown-green FKM"
   },
   "ru": {
    "ad": "Выбор материала уплотнения",
@@ -545,8 +563,10 @@
      "s": "Действуют ли те же правила для колец O-ring?",
      "c": "Правила по температуре и жидкости действуют точно так же; NBR и FKM — два самых распространённых варианта. Разница в том, что критерий истирания обычно отпадает: кольцо O-ring, как правило, уплотняет статически и не движется. Поэтому преимущество полиуретана по истиранию для O-ring теряет смысл."
     }
-   ]
-  }
+   ],
+   "gorselAlt": "Три уплотнения штока одного размера рядом: чёрное NBR, янтарно-жёлтое полиуретановое и коричнево-зелёное FKM"
+  },
+  "gorsel": "/rehber/kece-malzemesi.webp"
  },
  {
   "slug": "manometre-secimi",
@@ -590,7 +610,8 @@
      "s": "Düşük basınç ölçmem gerekiyor, aynı manometre olur mu?",
      "c": "Olmaz. Birkaç bar ya da mbar seviyesindeki basınçlar için diyafram tipi gösterge gerekir; Bourdon borulu bir manometre o aralıkta anlamlı bir hareket üretmez. Pnömatik hatlarda ve düşük basınçlı devrelerde mbar skalalı diyaframlı tipler kullanılır."
     }
-   ]
+   ],
+   "gorselAlt": "Farklı kadran çaplarında manometreler yan yana: kuru ve gliserinli tipler, alt ve arka bağlantılı gövdeler"
   },
   "en": {
    "ad": "Pressure gauge selection",
@@ -626,7 +647,8 @@
      "s": "I need to measure low pressure — will the same gauge do?",
      "c": "No. Pressures of a few bar or in the mbar region need a diaphragm-type instrument; a Bourdon tube gauge produces no meaningful movement in that range. Pneumatic lines and low-pressure circuits use diaphragm types with an mbar scale."
     }
-   ]
+   ],
+   "gorselAlt": "Pressure gauges of different dial diameters side by side: dry and glycerine-filled types, bottom and back connection bodies"
   },
   "ru": {
    "ad": "Выбор манометра",
@@ -662,8 +684,10 @@
      "s": "Нужно измерять низкое давление — подойдёт тот же манометр?",
      "c": "Нет. Для давлений в несколько бар или в области мбар нужен мембранный прибор; манометр с трубкой Бурдона в этом диапазоне не даёт заметного хода стрелки. В пневмолиниях и контурах низкого давления применяют мембранные типы со шкалой в мбар."
     }
-   ]
-  }
+   ],
+   "gorselAlt": "Манометры разных диаметров корпуса рядом: сухие и глицериновые, с радиальным и осевым присоединением"
+  },
+  "gorsel": "/rehber/manometre-secimi.webp"
  },
  {
   "slug": "hidromotor-secimi",
@@ -707,7 +731,8 @@
      "s": "Aynı motoru ters yönde çalıştırabilir miyim?",
      "c": "Orbit motorların çoğu iki yönlüdür; hatları yer değiştirdiğinizde ters döner. Dikkat edilecek nokta drenaj ve dönüş hattıdır: yön değiştiğinde hangi hattın basınç altında kaldığı da değişir, bu yüzden dönüş hattının her iki yönde de serbest kaldığından emin olun."
     }
-   ]
+   ],
+   "gorselAlt": "Tezgâhta orbit hidromotor ve yanında iç gerotor takımını gösteren kesit; çevrede preslenmiş hidrolik hortumlar"
   },
   "en": {
    "ad": "Hydraulic motor selection",
@@ -743,7 +768,8 @@
      "s": "Can I run the same motor in reverse?",
      "c": "Most orbital motors are bidirectional; swapping the lines reverses rotation. The point to watch is the drain and return line: when direction changes, so does which line is under pressure, so make sure the return line is unrestricted in both directions."
     }
-   ]
+   ],
+   "gorselAlt": "An orbital hydraulic motor on a workbench beside a sectioned motor showing the internal gerotor set; crimped hydraulic hoses nearby"
   },
   "ru": {
    "ad": "Выбор гидромотора",
@@ -779,7 +805,9 @@
      "s": "Можно ли запустить тот же мотор в обратную сторону?",
      "c": "Большинство героторных моторов двусторонние; при смене линий местами направление вращения меняется. Следить нужно за дренажной и сливной линиями: при смене направления меняется и то, какая линия оказывается под давлением, поэтому убедитесь, что слив свободен в обе стороны."
     }
-   ]
-  }
+   ],
+   "gorselAlt": "Героторный гидромотор на верстаке рядом с разрезом, показывающим внутренний героторный комплект; вокруг обжатые гидравлические рукава"
+  },
+  "gorsel": "/rehber/hidromotor-secimi.webp"
  }
 ]
