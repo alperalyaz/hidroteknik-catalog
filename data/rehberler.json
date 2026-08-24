@@ -430,5 +430,356 @@
     }
    ]
   }
+ },
+ {
+  "slug": "kece-malzemesi",
+  "kategoriler": [
+   "hidrolik-kece-nutring",
+   "o-ring-sizdirmazlik",
+   "tamir-takimi",
+   "hidrolik-silindir"
+  ],
+  "tr": {
+   "ad": "Keçe malzemesi seçimi",
+   "h1": "Keçe Malzemesi Seçimi: NBR, Poliüretan ve FKM Arasındaki Fark",
+   "ozet": "Aynı ölçüde üç farklı malzeme bulunur ve hangisinin doğru olduğunu sıcaklık, akışkan ve aşınma belirler. NBR, PU ve FKM’in çalışma sınırları, güçlü ve zayıf yanları.",
+   "giris": "Bir sızdırmazlık elemanını seçerken ölçü ve profil kodu işin yarısıdır; diğer yarısı malzemedir. Aynı K21 profilinde, aynı 40 x 50 x 8 ölçüsünde üç ayrı malzeme bulunabilir ve yanlış olanı takmak, doğru ölçüyü takmakla aynı sonucu vermez.\n\nKarar üç soruyla verilir ve sırası önemlidir: önce sıcaklık, sonra akışkan, en sonda basınç ve aşınma.\n\nNBR (nitril kauçuk) varsayılan malzemedir ve stoğun büyük kısmı budur. Mineral esaslı hidrolik yağla mükemmel çalışır, yaklaşık –30 °C ile +100 °C arasında güvenlidir ve en ucuzudur. Sıradan bir hidrolik devrede, sıcaklığın 80 °C’yi geçmediği ve ortamın temiz olduğu yerde NBR dışında bir şeye ihtiyaç yoktur. Sorun, sınırlarının dar olmasıdır: sıcak yağda sertleşir, çatlar ve dudak esnekliğini kaybeder.\n\nPoliüretan (PU) aşınmaya ve ekstrüzyona NBR’den belirgin biçimde dayanıklıdır. Tozlu, çamurlu, darbeli iş makinesi uygulamalarında mil keçesi olarak tercih edilir; yüksek basınçta dudağın aralığa akmasına NBR’den çok daha uzun direnir. Karşılığında sıcaklık penceresi daha dardır (yaklaşık –30 °C ile +80 °C) ve asıl zayıf noktası sudur: 50 °C üzerindeki suyla temasta hidroliz olur, yani kimyasal olarak parçalanır. Sıcak su, buhar ya da yüksek su oranlı akışkan varsa PU seçilmez.\n\nFKM (Viton) sıcaklık ve kimyasal direnç malzemesidir. +200 °C’ye kadar çalışır, mineral yağların yanı sıra pek çok kimyasala dayanır. Fırın, döküm, pres ve kimya hattı gibi yerlerde başka seçenek kalmaz. İki bedeli vardır: fiyatı belirgin biçimde yüksektir ve düşük sıcaklıkta NBR kadar esnek değildir, yaklaşık –20 °C’nin altında sertleşir. Ayrıca yaygın kanının aksine sıcak su ve buharda iyi değildir.\n\nPratikte yol haritası şudur: sıcaklık 100 °C’yi geçiyorsa ya da agresif kimyasal varsa FKM; ortam abrasif, basınç yüksek ve su yoksa PU; kalan her durumda NBR.",
+   "sss": [
+    {
+     "s": "Hangi malzemeyi kullandığımı nasıl anlarım?",
+     "c": "Söküp bakmak en kesin yoldur ama renk güçlü bir ipucudur: NBR genellikle siyah, poliüretan sarı-amber ya da kırmızımsı, FKM ise çoğunlukla kahverengi-yeşil veya siyahtır. Renk üreticiye göre değişebildiği için emin olamıyorsanız eski parçayı gönderin; profil ve malzemeyi birlikte söyleriz."
+    },
+    {
+     "s": "Poliüretan her zaman daha mı iyi?",
+     "c": "Hayır, ve bu yaygın bir yanılgı. PU aşınma ve basınç dayanımında NBR’yi geçer ama sıcak suda hidroliz olur ve sıcaklık penceresi daha dardır. Su-glikol akışkan kullanan ya da 50 °C üzerinde su teması olan bir sistemde PU, NBR’den daha kısa ömürlüdür."
+    },
+    {
+     "s": "Sıcaklık sınırı yağın sıcaklığı mı, ortamın mı?",
+     "c": "Keçenin gördüğü sıcaklık, temas ettiği yağın sıcaklığıdır ve bu depo sıcaklığından yüksektir. Mil yüzeyindeki sürtünme yerel olarak ısıtır. Depoda 70 °C ölçüyorsanız keçe dudağı bunun üzerini görüyor demektir; sınıra yakın çalışıyorsanız bir üst malzemeye geçin."
+    },
+    {
+     "s": "Su-glikol veya HFC akışkan kullanıyorum, hangisi?",
+     "c": "NBR bu akışkanlarla uyumludur ve doğru seçimdir. Poliüretan uygun değildir — su oranı yüksek akışkanlarda hidroliz olur. FKM de su ve buharla iyi çalışmaz. Yangına dayanıklı akışkan kullanıyorsanız akışkanın kendi teknik föyündeki uyumluluk tablosunu esas alın."
+    },
+    {
+     "s": "FKM keçe pahalı, NBR ile idare edebilir miyim?",
+     "c": "Sıcaklık gerçekten 100 °C üzerindeyse edemezsiniz; NBR sertleşir, dudağı çatlar ve haftalar içinde kaçırmaya başlar. Ama sıcaklığı ölçtüğünüzden emin olun — “sıcak çalışıyor” hissi çoğu zaman 70-80 °C çıkar ve orada NBR yeterlidir. Ölçmeden FKM almak gereksiz masraftır."
+    },
+    {
+     "s": "Aynı silindirde farklı malzemeler bir arada olur mu?",
+     "c": "Olur ve normaldir. Piston keçesi, mil keçesi ve sıyırıcı farklı görevler yapar; sıyırıcı dışarıdaki toza ve suya bakar, piston keçesi yalnız yağa. Tamir takımlarında bu yüzden karışık malzeme çıkabilir. Takımı bozup tek parça değiştirirken eski parçanın malzemesini koruyun."
+    },
+    {
+     "s": "O-ring için de aynı kural geçerli mi?",
+     "c": "Sıcaklık ve akışkan kuralı aynen geçerlidir; NBR ve FKM en yaygın iki seçenektir. Fark, o-ringde aşınma kriterinin çoğu zaman devre dışı kalmasıdır: o-ring genelde statik sızdırmazlık yapar, hareket etmez. Bu yüzden poliüretanın aşınma üstünlüğü o-ringde anlamını yitirir."
+    }
+   ]
+  },
+  "en": {
+   "ad": "Seal material selection",
+   "h1": "Seal Material Selection: NBR, Polyurethane and FKM Compared",
+   "ozet": "The same size exists in three materials, and temperature, fluid and abrasion decide which one is right. Working limits, strengths and weaknesses of NBR, PU and FKM.",
+   "giris": "Choosing a seal is half size and profile code, half material. The same K21 profile in the same 40 x 50 x 8 size may exist in three materials, and fitting the wrong one does not give the same result as fitting the right size.\n\nThree questions decide it, and the order matters: temperature first, then fluid, then pressure and abrasion.\n\nNBR (nitrile rubber) is the default and makes up most of the stock. It works excellently with mineral-based hydraulic oil, is safe roughly between −30 °C and +100 °C, and is the cheapest. In an ordinary hydraulic circuit that stays below 80 °C in a clean environment, nothing beyond NBR is needed. Its weakness is a narrow window: in hot oil it hardens, cracks and loses lip flexibility.\n\nPolyurethane (PU) resists abrasion and extrusion markedly better than NBR. It is the preferred rod seal in dusty, muddy, shock-loaded construction machinery, and at high pressure it holds the lip out of the clearance gap far longer than NBR. In exchange its temperature window is narrower (roughly −30 °C to +80 °C), and its real weak point is water: above 50 °C it hydrolyses, meaning it breaks down chemically. Where there is hot water, steam or a high-water-content fluid, PU is not the choice.\n\nFKM (Viton) is the temperature and chemical resistance material. It works up to +200 °C and withstands many chemicals besides mineral oils. Around furnaces, foundries, presses and chemical lines there is no alternative. It costs twice: the price is markedly higher, and it is less flexible than NBR at low temperature, stiffening below roughly −20 °C. Contrary to common belief it is also not good in hot water and steam.\n\nThe practical route: if temperature exceeds 100 °C or aggressive chemicals are present, FKM; if the environment is abrasive, pressure high and there is no water, PU; in every remaining case, NBR.",
+   "sss": [
+    {
+     "s": "How do I tell which material I currently have?",
+     "c": "Removing and inspecting is the only certain way, but colour is a strong hint: NBR is usually black, polyurethane amber-yellow or reddish, FKM most often brown-green or black. Colour varies between manufacturers, so if you are unsure send us the old part and we will identify profile and material together."
+    },
+    {
+     "s": "Is polyurethane always better?",
+     "c": "No, and this is a common misconception. PU beats NBR on abrasion and pressure resistance, but it hydrolyses in hot water and has a narrower temperature window. In a system running water-glycol fluid, or with water contact above 50 °C, PU lasts a shorter time than NBR."
+    },
+    {
+     "s": "Is the temperature limit the oil or the ambient?",
+     "c": "The seal sees the temperature of the oil it touches, and that is higher than tank temperature. Friction at the rod surface heats it locally. If you measure 70 °C in the tank, the seal lip is seeing more than that; if you are working near the limit, move up a material."
+    },
+    {
+     "s": "I run water-glycol or HFC fluid — which material?",
+     "c": "NBR is compatible with these fluids and is the right choice. Polyurethane is not suitable: it hydrolyses in high-water-content fluids. FKM also performs poorly with water and steam. If you use a fire-resistant fluid, follow the compatibility table in that fluid’s own datasheet."
+    },
+    {
+     "s": "FKM seals are expensive — can I get by with NBR?",
+     "c": "Not if the temperature really is above 100 °C; NBR hardens, the lip cracks and it starts leaking within weeks. But make sure you have measured it — a system that \"feels hot\" often turns out to be 70-80 °C, and NBR is adequate there. Buying FKM without measuring is money spent for nothing."
+    },
+    {
+     "s": "Can different materials be mixed in one cylinder?",
+     "c": "Yes, and it is normal. Piston seal, rod seal and wiper do different jobs; the wiper faces outside dust and water, the piston seal only oil. Repair kits therefore often contain mixed materials. If you break a kit and replace a single part, keep the material of the old part."
+    },
+    {
+     "s": "Do the same rules apply to O-rings?",
+     "c": "The temperature and fluid rules apply exactly; NBR and FKM are the two most common options. The difference is that the abrasion criterion usually drops out: an O-ring normally seals statically and does not move. Polyurethane’s abrasion advantage therefore loses its meaning in an O-ring."
+    }
+   ]
+  },
+  "ru": {
+   "ad": "Выбор материала уплотнения",
+   "h1": "Выбор материала уплотнения: NBR, полиуретан и FKM",
+   "ozet": "Один и тот же размер выпускается в трёх материалах, и выбор определяют температура, рабочая жидкость и абразивность. Рабочие пределы, сильные и слабые стороны NBR, PU и FKM.",
+   "giris": "Выбор уплотнения наполовину состоит из размера и кода профиля, наполовину — из материала. Один и тот же профиль K21 в одном и том же размере 40 x 50 x 8 может существовать в трёх материалах, и установка неправильного не даст того же результата, что установка правильного размера.\n\nРешение принимается по трём вопросам, и порядок важен: сначала температура, затем рабочая жидкость, и лишь потом давление и абразивность.\n\nNBR (бутадиен-нитрильный каучук) — материал по умолчанию, и большая часть склада именно такая. Он отлично работает с минеральным гидравлическим маслом, безопасен примерно от −30 °C до +100 °C и стоит дешевле всех. В обычном гидроконтуре, где температура не превышает 80 °C, а среда чистая, ничего кроме NBR не нужно. Слабость — узкие границы: в горячем масле он твердеет, трескается и теряет упругость кромки.\n\nПолиуретан (PU) заметно превосходит NBR по стойкости к истиранию и выдавливанию. Его выбирают как уплотнение штока в пыльной, грязной, ударной технике; при высоком давлении он держит кромку от затекания в зазор намного дольше NBR. Взамен температурное окно уже (примерно от −30 °C до +80 °C), а настоящее слабое место — вода: при контакте с водой выше 50 °C происходит гидролиз, то есть химическое разрушение. Там, где есть горячая вода, пар или жидкость с высоким содержанием воды, полиуретан не выбирают.\n\nFKM (Viton) — материал температуры и химической стойкости. Работает до +200 °C, выдерживает многие химикаты помимо минеральных масел. У печей, литейных участков, прессов и химических линий альтернативы не остаётся. Плата двойная: цена заметно выше, и при низкой температуре он менее эластичен, чем NBR, — примерно ниже −20 °C твердеет. Вопреки распространённому мнению, в горячей воде и паре он тоже работает плохо.\n\nПрактический маршрут: если температура выше 100 °C или присутствует агрессивная химия — FKM; если среда абразивная, давление высокое и воды нет — PU; во всех остальных случаях — NBR.",
+   "sss": [
+    {
+     "s": "Как понять, какой материал стоит сейчас?",
+     "c": "Снять и осмотреть — единственный надёжный способ, но цвет даёт сильную подсказку: NBR обычно чёрный, полиуретан янтарно-жёлтый или красноватый, FKM чаще всего коричнево-зелёный или чёрный. Цвет отличается у разных производителей, поэтому если вы не уверены, пришлите старую деталь — определим и профиль, и материал."
+    },
+    {
+     "s": "Полиуретан всегда лучше?",
+     "c": "Нет, и это распространённое заблуждение. PU превосходит NBR по стойкости к истиранию и давлению, но подвергается гидролизу в горячей воде и имеет более узкое температурное окно. В системе на водно-гликолевой жидкости или при контакте с водой выше 50 °C полиуретан прослужит меньше, чем NBR."
+    },
+    {
+     "s": "Температурный предел — это масло или окружающая среда?",
+     "c": "Уплотнение видит температуру масла, с которым соприкасается, а она выше температуры бака. Трение на поверхности штока нагревает локально. Если в баке вы измеряете 70 °C, кромка уплотнения видит больше; при работе у самой границы переходите на материал классом выше."
+    },
+    {
+     "s": "Я использую водно-гликолевую жидкость или HFC — что выбрать?",
+     "c": "NBR совместим с этими жидкостями и является правильным выбором. Полиуретан не подходит: в жидкостях с высоким содержанием воды он гидролизуется. FKM с водой и паром тоже работает плохо. Если применяется огнестойкая жидкость, ориентируйтесь на таблицу совместимости из её собственного технического паспорта."
+    },
+    {
+     "s": "Уплотнения FKM дорогие — можно обойтись NBR?",
+     "c": "Нельзя, если температура действительно выше 100 °C: NBR твердеет, кромка трескается, и через несколько недель начинается течь. Но убедитесь, что вы её измерили — система, которая «кажется горячей», часто оказывается на 70-80 °C, и там NBR достаточно. Покупать FKM без замера — деньги на ветер."
+    },
+    {
+     "s": "Можно ли в одном цилиндре сочетать разные материалы?",
+     "c": "Можно, и это нормально. Поршневое уплотнение, уплотнение штока и грязесъёмник выполняют разные задачи: грязесъёмник обращён к наружной пыли и воде, поршневое уплотнение — только к маслу. Поэтому в ремкомплектах часто встречаются разные материалы. Разбирая комплект ради одной детали, сохраняйте материал старой."
+    },
+    {
+     "s": "Действуют ли те же правила для колец O-ring?",
+     "c": "Правила по температуре и жидкости действуют точно так же; NBR и FKM — два самых распространённых варианта. Разница в том, что критерий истирания обычно отпадает: кольцо O-ring, как правило, уплотняет статически и не движется. Поэтому преимущество полиуретана по истиранию для O-ring теряет смысл."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "manometre-secimi",
+  "kategoriler": [
+   "manometre",
+   "hidrolik-rakor",
+   "hidrolik-valf",
+   "hidrolik-pompa"
+  ],
+  "tr": {
+   "ad": "Manometre seçimi",
+   "h1": "Manometre Seçimi: Ölçüm Aralığı, Kadran Çapı, Bağlantı ve Gliserin",
+   "ozet": "Yanlış aralık seçilen manometre ya okunmaz ya da kısa sürede ölür. Aralığın çalışma basıncına göre nasıl seçileceği, gliserinin ne işe yaradığı ve alt/arka bağlantı farkı.",
+   "giris": "Manometre seçiminde en sık yapılan hata, sistem basıncına en yakın aralığı almaktır. 200 bar çalışan bir devreye 0-250 bar manometre takmak mantıklı görünür ama yanlıştır ve göstergeyi hızla bitirir.\n\nKural şudur: normal çalışma basıncı, skalanın ortalarında okunmalıdır. Sabit yükte tam skalanın yaklaşık dörtte üçünü, dalgalı yükte üçte ikisini geçmemek gerekir. 200 bar çalışan bir devrede doğru seçim 0-400 bar’dır: iğne saat 12 civarında durur, basınç sıçramaları skalanın içinde kalır ve mekanizma sürekli sınırda zorlanmaz. Skalanın en tepesinde çalışan bir manometrede Bourdon borusu kalıcı olarak esner, iğne zamanla sıfıra dönmemeye başlar.\n\nTers yöndeki hata da vardır: 200 bar için 0-1000 bar almak. Bu kez iğne skalanın ilk beşte birinde kalır, 10 bar’lık bir değişim gözle ayırt edilemez ve manometre bir gösterge olmaktan çıkar.\n\nKadran çapı okunabilirlikle doğru orantılıdır. Ø40 dar yerlere sığar ama uzaktan okunmaz; Ø63 en yaygın dengedir; Ø100 ise panolarda ve hassas ayar gereken yerlerde kullanılır. Büyük kadran aynı zamanda daha iyi hassasiyet sınıfı demektir, çünkü skala taksimatı seyrekleşmez.\n\nGliserin dolgusu titreşim ve nabız içindir. Pompa çıkışında, valf yakınında ve hareketli iş makinesinde iğne sürekli titrer; hem okunmaz hem de dişli mekanizma aşınır. Gliserin bu titreşimi söndürür ve göstergenin ömrünü belirgin biçimde uzatır. Durağan bir hatta gerekmez, kuru tip yeterlidir ve daha ucuzdur. Çok düşük sıcaklıkta gliserin koyulaşıp iğneyi yavaşlatır; çok yüksek sıcaklıkta dolgu genleşir.\n\nBağlantı yönü montaj yerine göre seçilir: alttan bağlantı (radyal) hat üzerine dik durur, arkadan bağlantı (aksiyel) pano yüzeyine gömülü montaj içindir. Diş ölçüsü genelde 1/4\" ya da 1/2\" BSP’dir; manometreyi hatta bağlarken diş tipini rakor tarafıyla birlikte doğrulayın.",
+   "sss": [
+    {
+     "s": "200 bar sistemde kaç bar’lık manometre almalıyım?",
+     "c": "0-400 bar. Genel kural, normal çalışma basıncının tam skalanın yarısı ile üçte ikisi arasında kalmasıdır. 200 bar için 0-250 bar almak iğneyi sürekli skalanın tepesinde tutar ve Bourdon borusunu kalıcı olarak esnetir; 0-600 bar ise değişimleri okunmaz hâle getirir."
+    },
+    {
+     "s": "Gliserinli mi kuru mu almalıyım?",
+     "c": "Titreşim ya da nabız varsa gliserinli. Pompa çıkışı, valf bloğu yakını ve hareketli iş makinesi bu sınıfa girer; oralarda kuru manometrenin iğnesi okunamayacak kadar titrer ve mekanizma birkaç ayda aşınır. Durağan bir depo ya da test hattında kuru tip yeterlidir ve daha ucuzdur."
+    },
+    {
+     "s": "Manometrem sıfıra dönmüyor, tamir edilir mi?",
+     "c": "Pratikte edilmez, değiştirilir. Sıfıra dönmemek Bourdon borusunun kalıcı deforme olduğunu gösterir ve bu geri alınamaz. Sebebi genellikle aralığın dar seçilmesi ya da bir basınç darbesidir. Yenisini alırken aralığı bir kademe yukarı çekin, aksi hâlde aynı sonuç tekrarlar."
+    },
+    {
+     "s": "Alt bağlantı ile arka bağlantı arasındaki fark ne?",
+     "c": "Yalnız montaj yönüdür, ölçüm aynıdır. Alttan bağlantı (radyal) hat üzerinde dik durur ve en yaygın olanıdır. Arkadan bağlantı (aksiyel) pano ya da kapak yüzeyine gömülü montaj içindir; genelde kelepçe ya da flanşla birlikte kullanılır. Yer darlığı hangisini alacağınızı belirler."
+    },
+    {
+     "s": "Kadran çapı ölçüm hassasiyetini etkiler mi?",
+     "c": "Dolaylı olarak evet. Büyük kadranda aynı basınç aralığı daha uzun bir yay boyunca dağılır, taksimat seyrekleşmez ve okuma hatası azalır; bu yüzden Ø100 göstergeler tipik olarak daha iyi hassasiyet sınıfında bulunur. Ø40 sıkışık yerler için pratiktir ama ince ayar için uygun değildir."
+    },
+    {
+     "s": "Manometreyi doğrudan pompa çıkışına takabilir miyim?",
+     "c": "Takabilirsiniz ama gliserinli tip seçin ve mümkünse bir kısma (throttle) ya da manometre musluğu kullanın. Pompa çıkışı sistemdeki en sert nabzın olduğu yerdir; kısma, darbeyi yumuşatarak göstergenin ömrünü uzatır. Musluk ayrıca sistemi boşaltmadan manometre değiştirmenizi sağlar."
+    },
+    {
+     "s": "Düşük basınç ölçmem gerekiyor, aynı manometre olur mu?",
+     "c": "Olmaz. Birkaç bar ya da mbar seviyesindeki basınçlar için diyafram tipi gösterge gerekir; Bourdon borulu bir manometre o aralıkta anlamlı bir hareket üretmez. Pnömatik hatlarda ve düşük basınçlı devrelerde mbar skalalı diyaframlı tipler kullanılır."
+    }
+   ]
+  },
+  "en": {
+   "ad": "Pressure gauge selection",
+   "h1": "Pressure Gauge Selection: Range, Dial Size, Connection and Glycerine",
+   "ozet": "A gauge with the wrong range is either unreadable or dies quickly. How to pick the range against working pressure, what glycerine filling does, and the difference between bottom and back connection.",
+   "giris": "The most common mistake in gauge selection is buying the range closest to system pressure. Fitting a 0-250 bar gauge to a circuit running at 200 bar looks sensible but is wrong, and it wears the instrument out fast.\n\nThe rule: normal working pressure should be read in the middle of the scale. Under steady load it should not exceed about three quarters of full scale, and under fluctuating load about two thirds. For a circuit running at 200 bar the right choice is 0-400 bar: the pointer sits around twelve o'clock, pressure spikes stay inside the scale, and the movement is not permanently strained at its limit. In a gauge working at the very top of its scale the Bourdon tube deforms permanently, and in time the pointer stops returning to zero.\n\nThere is an opposite mistake too: buying 0-1000 bar for 200 bar. Now the pointer stays in the first fifth of the scale, a 10 bar change cannot be distinguished by eye, and the gauge stops being an instrument.\n\nDial diameter is directly related to readability. Ø40 fits tight spaces but cannot be read from a distance; Ø63 is the most common balance; Ø100 is used in panels and where fine adjustment is needed. A larger dial also means a better accuracy class, because the graduations do not become crowded.\n\nGlycerine filling exists for vibration and pulsation. At a pump outlet, near a valve block, and on mobile machinery the pointer vibrates constantly; it is both unreadable and the geared movement wears. Glycerine damps that vibration and markedly extends instrument life. On a steady line it is unnecessary — a dry gauge is enough and cheaper. At very low temperature glycerine thickens and slows the pointer; at very high temperature the filling expands.\n\nConnection orientation follows the mounting: bottom (radial) connection stands upright on the line, back (axial) connection is for flush mounting in a panel face. Thread size is usually 1/4\" or 1/2\" BSP; when connecting a gauge, confirm the thread type together with the fitting side.",
+   "sss": [
+    {
+     "s": "What gauge range should I buy for a 200 bar system?",
+     "c": "0-400 bar. The general rule is that normal working pressure should fall between half and two thirds of full scale. Buying 0-250 bar for 200 bar keeps the pointer permanently at the top of the scale and deforms the Bourdon tube; 0-600 bar makes changes unreadable."
+    },
+    {
+     "s": "Should I buy glycerine-filled or dry?",
+     "c": "Glycerine-filled if there is vibration or pulsation. Pump outlets, the area near a valve block and mobile machinery all fall into that class; there a dry gauge vibrates too much to read and the movement wears within months. On a steady tank or test line a dry gauge is adequate and cheaper."
+    },
+    {
+     "s": "My gauge does not return to zero — can it be repaired?",
+     "c": "In practice no, it is replaced. Failing to return to zero shows the Bourdon tube is permanently deformed, and that is irreversible. The cause is usually a range chosen too tight, or a pressure shock. When buying a replacement, move the range up one step or the same result repeats."
+    },
+    {
+     "s": "What is the difference between bottom and back connection?",
+     "c": "Only the mounting direction; the measurement is identical. Bottom (radial) connection stands upright on the line and is the most common. Back (axial) connection is for flush mounting in a panel or cover face, usually together with a clamp or flange. Available space decides which you take."
+    },
+    {
+     "s": "Does dial diameter affect measurement accuracy?",
+     "c": "Indirectly, yes. On a larger dial the same pressure range is spread over a longer arc, graduations stay open and reading error falls; this is why Ø100 gauges are typically found in a better accuracy class. Ø40 is practical for tight spaces but not suitable for fine adjustment."
+    },
+    {
+     "s": "Can I fit a gauge directly to the pump outlet?",
+     "c": "You can, but choose a glycerine-filled type and if possible use a throttle or a gauge isolator cock. The pump outlet is where the sharpest pulsation in the system occurs; a throttle softens the shock and extends instrument life. A cock also lets you change the gauge without draining the system."
+    },
+    {
+     "s": "I need to measure low pressure — will the same gauge do?",
+     "c": "No. Pressures of a few bar or in the mbar region need a diaphragm-type instrument; a Bourdon tube gauge produces no meaningful movement in that range. Pneumatic lines and low-pressure circuits use diaphragm types with an mbar scale."
+    }
+   ]
+  },
+  "ru": {
+   "ad": "Выбор манометра",
+   "h1": "Выбор манометра: диапазон, диаметр корпуса, присоединение и глицерин",
+   "ozet": "Манометр с неверным диапазоном либо не читается, либо быстро выходит из строя. Как подобрать диапазон под рабочее давление, зачем нужно глицериновое заполнение и чем отличается радиальное присоединение от осевого.",
+   "giris": "Самая частая ошибка при выборе манометра — брать диапазон, ближайший к давлению системы. Поставить манометр 0-250 бар в контур, работающий на 200 бар, кажется разумным, но это неверно и быстро изнашивает прибор.\n\nПравило такое: нормальное рабочее давление должно читаться в середине шкалы. При постоянной нагрузке не следует превышать примерно три четверти полной шкалы, при пульсирующей — две трети. Для контура на 200 бар правильный выбор — 0-400 бар: стрелка стоит около двенадцати часов, скачки давления остаются внутри шкалы, а механизм не работает постоянно на пределе. У манометра, работающего у самой вершины шкалы, трубка Бурдона деформируется необратимо, и со временем стрелка перестаёт возвращаться на ноль.\n\nЕсть и обратная ошибка: взять 0-1000 бар для 200 бар. Тогда стрелка остаётся в первой пятой части шкалы, изменение в 10 бар глазом не различить, и манометр перестаёт быть прибором.\n\nДиаметр корпуса прямо связан с читаемостью. Ø40 помещается в тесноте, но издалека не читается; Ø63 — самый распространённый компромисс; Ø100 применяют на щитах и там, где нужна точная настройка. Больший корпус означает и лучший класс точности, потому что деления шкалы не сгущаются.\n\nГлицериновое заполнение существует ради вибрации и пульсации. На выходе насоса, рядом с клапанным блоком и на подвижной технике стрелка непрерывно дрожит: и прочесть нельзя, и зубчатый механизм изнашивается. Глицерин гасит эту вибрацию и заметно продлевает срок службы. На спокойной линии он не нужен — сухого типа достаточно, и он дешевле. При очень низкой температуре глицерин густеет и замедляет стрелку; при очень высокой заполнение расширяется.\n\nНаправление присоединения выбирают по месту монтажа: радиальное (снизу) стоит вертикально на линии, осевое (сзади) предназначено для утопленного монтажа в лицевую панель. Резьба обычно 1/4\" или 1/2\" BSP; подключая манометр, сверяйте тип резьбы вместе со стороной фитинга.",
+   "sss": [
+    {
+     "s": "Какой диапазон манометра нужен для системы на 200 бар?",
+     "c": "0-400 бар. Общее правило: нормальное рабочее давление должно попадать между половиной и двумя третями полной шкалы. Манометр 0-250 бар для 200 бар держит стрелку постоянно у вершины шкалы и деформирует трубку Бурдона; 0-600 бар делает изменения нечитаемыми."
+    },
+    {
+     "s": "Брать с глицерином или сухой?",
+     "c": "С глицерином, если есть вибрация или пульсация. Выход насоса, зона рядом с клапанным блоком и подвижная техника относятся к этому классу: там сухой манометр дрожит так, что его не прочесть, а механизм изнашивается за несколько месяцев. На спокойном баке или испытательной линии достаточно сухого, и он дешевле."
+    },
+    {
+     "s": "Манометр не возвращается на ноль — можно ли отремонтировать?",
+     "c": "На практике нет, его меняют. Невозврат на ноль означает, что трубка Бурдона необратимо деформирована. Причина обычно в слишком узко выбранном диапазоне или в гидроударе. Покупая замену, поднимите диапазон на ступень выше, иначе результат повторится."
+    },
+    {
+     "s": "Чем отличается радиальное присоединение от осевого?",
+     "c": "Только направлением монтажа, измерение одинаковое. Радиальное (снизу) стоит вертикально на линии и встречается чаще всего. Осевое (сзади) предназначено для утопленного монтажа в панель или крышку, обычно вместе с хомутом или фланцем. Выбор определяет наличие места."
+    },
+    {
+     "s": "Влияет ли диаметр корпуса на точность измерения?",
+     "c": "Косвенно да. На большем корпусе тот же диапазон давления распределяется по более длинной дуге, деления не сгущаются и ошибка считывания уменьшается; поэтому приборы Ø100 обычно относятся к лучшему классу точности. Ø40 удобен в тесноте, но для точной настройки не подходит."
+    },
+    {
+     "s": "Можно ли ставить манометр прямо на выход насоса?",
+     "c": "Можно, но выбирайте глицериновый тип и по возможности ставьте дроссель или манометрический кран. Выход насоса — место самой резкой пульсации в системе; дроссель смягчает удар и продлевает срок службы прибора. Кран к тому же позволяет менять манометр, не сливая систему."
+    },
+    {
+     "s": "Нужно измерять низкое давление — подойдёт тот же манометр?",
+     "c": "Нет. Для давлений в несколько бар или в области мбар нужен мембранный прибор; манометр с трубкой Бурдона в этом диапазоне не даёт заметного хода стрелки. В пневмолиниях и контурах низкого давления применяют мембранные типы со шкалой в мбар."
+    }
+   ]
+  }
+ },
+ {
+  "slug": "hidromotor-secimi",
+  "kategoriler": [
+   "hidromotor",
+   "hidrolik-pompa",
+   "hidrolik-valf",
+   "hidrolik-hortum"
+  ],
+  "tr": {
+   "ad": "Hidromotor seçimi",
+   "h1": "Orbit Hidromotor Seçimi: Deplasman, Devir ve Tork Nasıl Hesaplanır?",
+   "ozet": "Deplasman devri ve torku aynı anda belirler; birini büyütmek diğerini küçültür. Debiden devir, basınçtan tork hesabı ve seçimde en sık yapılan hata.",
+   "giris": "Orbit hidromotor seçimi tek bir sayıya dayanır: deplasman, yani motorun bir turda yuttuğu yağ hacmi (cm³/tur). Devir de tork da bu sayıdan çıkar ve ikisi ters yönde hareket eder — deplasmanı büyütmek torku artırır, devri düşürür.\n\nDevir, debinin deplasmana bölünmesiyle bulunur:\n\nn (d/dk) = Q (L/dk) × 1000 / V (cm³/tur)\n\n40 L/dk debi veren bir pompayla 200 cm³/tur deplasmanlı motor 200 d/dk döner. Aynı pompayla 400 cm³/tur’luk motor takarsanız devir yarıya, 100 d/dk’ya düşer.\n\nTork, basınç farkı ile deplasmanın çarpımından çıkar:\n\nM (Nm) = Δp (bar) × V (cm³/tur) / (20 × π)\n\nYani M ≈ Δp × V / 62,8. Aynı 200 cm³/tur motorda 150 bar basınç farkı yaklaşık 478 Nm tork verir. Deplasmanı 400 cm³/tur’a çıkarırsanız tork iki katına, 956 Nm’ye çıkar — ama devir yarıya inmişti. Motordan alınan güç değişmez; yalnız devir ile tork arasında paylaşımı değişir.\n\nBu formüllerin ikisi de teoriktir. Gerçekte hacimsel ve mekanik verim devreye girer; pratik hesapta torkun yaklaşık %90’ını, devrin de yine yaklaşık %90’ını almak gerçeğe daha yakın sonuç verir. Düşük devirde çalışan orbit motorlarda kayıp oranı artar.\n\nSeçimde en sık yapılan hata sırayı ters kurmaktır: önce motor seçilip sonra pompa aranır. Doğrusu tersidir — işin gerektirdiği tork ve devir bellidir, deplasman bunlardan hesaplanır, gereken debi ve basınç ise pompaya ve devreye şart olarak yazılır. Dönüş hattının da unutulmaması gerekir: orbit motorun drenaj hattı, mil keçesini basınçtan korumak için doğrudan depoya, kısıntısız gitmelidir.",
+   "sss": [
+    {
+     "s": "Deplasmanı büyütürsem daha güçlü mü olur?",
+     "c": "Daha çok tork verir ama daha yavaş döner; motordan alınan güç aynı kalır. Güç, tork ile devrin çarpımıdır ve o çarpım debi ile basınca bağlıdır. Daha fazla güç istiyorsanız deplasmanı değil, debiyi ya da basıncı artırmanız gerekir."
+    },
+    {
+     "s": "40 L/dk pompam var, ne kadar devir alırım?",
+     "c": "Deplasmana bölün: n = 40 × 1000 / V. 200 cm³/tur motorda 200 d/dk, 100 cm³/tur motorda 400 d/dk, 400 cm³/tur motorda 100 d/dk çıkar. Pratikte hacimsel verim yüzünden bu değerin yaklaşık %90’ını alırsınız."
+    },
+    {
+     "s": "Tork hesabında hangi basıncı kullanmalıyım?",
+     "c": "Sistem basıncını değil, motorun giriş ve çıkışı arasındaki FARKI. Dönüş hattında karşı basınç varsa etkin fark küçülür ve tork beklediğinizin altında kalır. Dönüş hattı filtresi tıkalı bir sistemde motorun zayıflamasının sebebi çoğu zaman budur."
+    },
+    {
+     "s": "Orbit motor ile pistonlu motor arasındaki fark nedir?",
+     "c": "Orbit (gerotor) motor düşük devirde yüksek tork verir, kompakttır ve ucuzdur; karıştırıcı, konveyör, vinç, tarım ve temizlik makinelerinin tipik seçimidir. Eksenel pistonlu motor daha yüksek verim ve daha yüksek devir sunar, daha pahalıdır ve genelde daha yüksek güçlü uygulamalarda kullanılır."
+    },
+    {
+     "s": "Drenaj hattını depoya bağlamak şart mı?",
+     "c": "Drenaj çıkışı olan tiplerde şarttır ve doğrudan, kısıntısız depoya gitmelidir. Drenaj hattına karşı basınç binerse mil keçesi bunu taşımak zorunda kalır ve kaçırmaya başlar. Drenajı dönüş hattına bağlamak, dönüşteki basıncın keçeye binmesi demektir."
+    },
+    {
+     "s": "Motor yükte duruyor ama boşta dönüyor, sebebi ne?",
+     "c": "Genellikle basınç farkı yetersizdir: ya pompa gereken basıncı üretmiyordur ya da bir emniyet valfi düşük ayarlıdır. İkinci ihtimal motorun iç kaçağıdır — aşınmış bir orbit set boşta döner ama yük altında yağı içeriden geçirip torku veremez. Basıncı motor girişinden ölçerek ikisini ayırt edebilirsiniz."
+    },
+    {
+     "s": "Aynı motoru ters yönde çalıştırabilir miyim?",
+     "c": "Orbit motorların çoğu iki yönlüdür; hatları yer değiştirdiğinizde ters döner. Dikkat edilecek nokta drenaj ve dönüş hattıdır: yön değiştiğinde hangi hattın basınç altında kaldığı da değişir, bu yüzden dönüş hattının her iki yönde de serbest kaldığından emin olun."
+    }
+   ]
+  },
+  "en": {
+   "ad": "Hydraulic motor selection",
+   "h1": "Orbital Hydraulic Motor Selection: Displacement, Speed and Torque",
+   "ozet": "Displacement sets speed and torque at the same time, and raising one lowers the other. Speed from flow, torque from pressure, and the most common mistake in selection.",
+   "giris": "Selecting an orbital hydraulic motor rests on a single number: displacement, the volume of oil the motor takes in one revolution (cm³/rev). Both speed and torque follow from it, and they move in opposite directions — increasing displacement raises torque and lowers speed.\n\nSpeed is flow divided by displacement:\n\nn (rpm) = Q (L/min) × 1000 / V (cm³/rev)\n\nA pump delivering 40 L/min turns a 200 cm³/rev motor at 200 rpm. Fit a 400 cm³/rev motor to the same pump and speed halves to 100 rpm.\n\nTorque comes from pressure difference multiplied by displacement:\n\nM (Nm) = Δp (bar) × V (cm³/rev) / (20 × π)\n\nThat is M ≈ Δp × V / 62.8. On the same 200 cm³/rev motor, a 150 bar pressure difference gives roughly 478 Nm. Raise displacement to 400 cm³/rev and torque doubles to 956 Nm — but speed had already halved. The power taken from the motor does not change; only its split between speed and torque does.\n\nBoth formulas are theoretical. In reality volumetric and mechanical efficiency intervene; in practical calculation taking about 90% of the torque and again about 90% of the speed gives a result closer to reality. In orbital motors running at low speed the loss share increases.\n\nThe most common mistake in selection is reversing the order: picking a motor first and then looking for a pump. It is the other way round — the torque and speed the job needs are known, displacement is calculated from them, and the required flow and pressure are written as requirements on the pump and the circuit. The return line must not be forgotten either: an orbital motor's drain line must run directly to tank without restriction, to keep pressure off the shaft seal.",
+   "sss": [
+    {
+     "s": "If I increase displacement, does the motor get more powerful?",
+     "c": "It gives more torque but turns more slowly; the power taken from the motor stays the same. Power is torque multiplied by speed, and that product depends on flow and pressure. If you want more power you must raise flow or pressure, not displacement."
+    },
+    {
+     "s": "I have a 40 L/min pump — what speed will I get?",
+     "c": "Divide by displacement: n = 40 × 1000 / V. A 200 cm³/rev motor gives 200 rpm, a 100 cm³/rev motor 400 rpm, a 400 cm³/rev motor 100 rpm. In practice volumetric efficiency means you get about 90% of that figure."
+    },
+    {
+     "s": "Which pressure do I use in the torque calculation?",
+     "c": "Not system pressure, but the DIFFERENCE between motor inlet and outlet. If there is back pressure in the return line, the effective difference shrinks and torque falls below what you expected. In a system with a blocked return filter this is often exactly why the motor feels weak."
+    },
+    {
+     "s": "What is the difference between an orbital and a piston motor?",
+     "c": "An orbital (gerotor) motor gives high torque at low speed, is compact and inexpensive; it is the typical choice for mixers, conveyors, winches, agricultural and cleaning machinery. An axial piston motor offers higher efficiency and higher speed, costs more, and is generally used in higher-power applications."
+    },
+    {
+     "s": "Must the drain line go to tank?",
+     "c": "On types with a drain port, yes, and it must run directly to tank without restriction. If back pressure builds in the drain line, the shaft seal has to carry it and begins to leak. Connecting the drain into the return line means the return pressure lands on the seal."
+    },
+    {
+     "s": "The motor stalls under load but spins freely — why?",
+     "c": "Usually the pressure difference is insufficient: either the pump is not producing the required pressure, or a relief valve is set too low. The second possibility is internal leakage in the motor — a worn orbital set spins freely but passes oil internally under load and cannot deliver torque. Measuring pressure at the motor inlet separates the two."
+    },
+    {
+     "s": "Can I run the same motor in reverse?",
+     "c": "Most orbital motors are bidirectional; swapping the lines reverses rotation. The point to watch is the drain and return line: when direction changes, so does which line is under pressure, so make sure the return line is unrestricted in both directions."
+    }
+   ]
+  },
+  "ru": {
+   "ad": "Выбор гидромотора",
+   "h1": "Выбор героторного гидромотора: рабочий объём, обороты и момент",
+   "ozet": "Рабочий объём одновременно задаёт обороты и момент, и увеличение одного снижает другое. Расчёт оборотов по расходу, момента по давлению и самая частая ошибка при подборе.",
+   "giris": "Подбор героторного (орбитального) гидромотора опирается на одно число — рабочий объём, то есть объём масла, который мотор принимает за один оборот (см³/об). И обороты, и момент следуют из него, причём в противоположных направлениях: увеличение рабочего объёма поднимает момент и снижает обороты.\n\nОбороты — это расход, делённый на рабочий объём:\n\nn (об/мин) = Q (л/мин) × 1000 / V (см³/об)\n\nНасос, дающий 40 л/мин, вращает мотор на 200 см³/об со скоростью 200 об/мин. Поставьте на тот же насос мотор 400 см³/об — обороты упадут вдвое, до 100 об/мин.\n\nМомент получается из перепада давления, умноженного на рабочий объём:\n\nM (Н·м) = Δp (бар) × V (см³/об) / (20 × π)\n\nТо есть M ≈ Δp × V / 62,8. На том же моторе 200 см³/об перепад в 150 бар даёт примерно 478 Н·м. Увеличьте рабочий объём до 400 см³/об — момент удвоится до 956 Н·м, но обороты уже упали вдвое. Мощность, снимаемая с мотора, не меняется; меняется только её распределение между оборотами и моментом.\n\nОбе формулы теоретические. В реальности вмешиваются объёмный и механический КПД; в практическом расчёте разумно брать около 90% момента и снова около 90% оборотов. У героторных моторов на малых оборотах доля потерь возрастает.\n\nСамая частая ошибка при подборе — обратный порядок: сначала выбирают мотор, потом ищут насос. Правильно наоборот: момент и обороты, которые требует задача, известны, из них рассчитывают рабочий объём, а необходимые расход и давление записывают как требование к насосу и контуру. Не забывайте и о линии слива: дренажная линия героторного мотора должна идти напрямую в бак без сужений, чтобы снять давление с манжеты вала.",
+   "sss": [
+    {
+     "s": "Если увеличить рабочий объём, мотор станет мощнее?",
+     "c": "Он даст больший момент, но будет вращаться медленнее; снимаемая мощность останется прежней. Мощность — это момент, умноженный на обороты, и это произведение зависит от расхода и давления. Чтобы получить больше мощности, нужно увеличивать расход или давление, а не рабочий объём."
+    },
+    {
+     "s": "У меня насос 40 л/мин — какие обороты я получу?",
+     "c": "Разделите на рабочий объём: n = 40 × 1000 / V. Мотор 200 см³/об даст 200 об/мин, мотор 100 см³/об — 400 об/мин, мотор 400 см³/об — 100 об/мин. На практике из-за объёмного КПД вы получите около 90% от этой величины."
+    },
+    {
+     "s": "Какое давление подставлять в расчёт момента?",
+     "c": "Не давление системы, а РАЗНОСТЬ между входом и выходом мотора. Если в сливной линии есть противодавление, эффективная разность уменьшается и момент оказывается ниже ожидаемого. В системе с забитым сливным фильтром именно поэтому мотор часто и слабеет."
+    },
+    {
+     "s": "Чем героторный мотор отличается от поршневого?",
+     "c": "Героторный мотор даёт высокий момент на малых оборотах, компактен и недорог; это типичный выбор для мешалок, конвейеров, лебёдок, сельхоз- и уборочной техники. Аксиально-поршневой мотор обеспечивает более высокий КПД и обороты, стоит дороже и применяется, как правило, в более мощных задачах."
+    },
+    {
+     "s": "Обязательно ли выводить дренаж в бак?",
+     "c": "На типах с дренажным портом — обязательно, и линия должна идти прямо в бак без сужений. Если в дренажной линии возникает противодавление, манжета вала вынуждена его держать и начинает течь. Подключение дренажа в сливную линию означает, что давление слива ложится на манжету."
+    },
+    {
+     "s": "Мотор останавливается под нагрузкой, но свободно крутится вхолостую — почему?",
+     "c": "Обычно недостаточен перепад давления: либо насос не создаёт нужного давления, либо предохранительный клапан настроен слишком низко. Второй вариант — внутренние утечки в моторе: изношенный героторный комплект крутится вхолостую, но под нагрузкой пропускает масло внутри и не даёт момента. Замер давления на входе мотора разделяет эти два случая."
+    },
+    {
+     "s": "Можно ли запустить тот же мотор в обратную сторону?",
+     "c": "Большинство героторных моторов двусторонние; при смене линий местами направление вращения меняется. Следить нужно за дренажной и сливной линиями: при смене направления меняется и то, какая линия оказывается под давлением, поэтому убедитесь, что слив свободен в обе стороны."
+    }
+   ]
+  }
  }
 ]
