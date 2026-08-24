@@ -208,11 +208,19 @@ export default async function KategoriSayfasi({
           <p className="tablo-not">{m.ornekAltNot(sayiFormat(toplam, lang), adKucuk)}</p>
         </section>
 
-        {kodGruplari.map((g) => (
-          <section key={g.markaSlug}>
-            <h2>{m.kodBaslik(g.marka)}</h2>
+        {kodGruplari.map((g, gi) => (
+          /* Marka İSTEĞE BAĞLI: jenerik endüstri bileşenlerinde ürünün üzerinde
+             marka yok ve uydurulmaz (bkz. lib/uretici-kod.ts). Marka yoksa
+             başlık ürün türünü söyler. Anahtar markaSlug olamaz — markasız
+             grupta undefined olurdu. */
+          <section key={g.markaSlug ?? `${g.kategori}-${gi}`}>
+            <h2>{g.marka ? m.kodBaslik(g.marka) : m.kodBaslikMarkasiz}</h2>
             <div className="metin">
-              <p>{m.kodGiris(g.marka, g.kodDeseni, g.kodOrnek)}</p>
+              <p>
+                {g.marka
+                  ? m.kodGiris(g.marka, g.kodDeseni, g.kodOrnek)
+                  : m.kodGirisMarkasiz(g.kodDeseni, g.kodOrnek)}
+              </p>
             </div>
             {g.seriler.map((s) => (
               <div key={s.seri} className="kod-seri">
@@ -220,9 +228,11 @@ export default async function KategoriSayfasi({
                     öbeğinden kesince elde edilen şey seri adı değil, kod
                     önekidir. Kodlar yine yayımlanır; yalnız iddia düzeltilir. */}
                 <h3>
-                  {s.seriAdiUreticinin === false
-                    ? m.kodOnekBaslik(g.marka, s.seri)
-                    : m.kodSeriBaslik(g.marka, s.seri)}
+                  {!g.marka
+                    ? m.kodSeriBaslikMarkasiz(s.seri)
+                    : s.seriAdiUreticinin === false
+                      ? m.kodOnekBaslik(g.marka, s.seri)
+                      : m.kodSeriBaslik(g.marka, s.seri)}
                 </h3>
                 <div className="metin">
                   <p>

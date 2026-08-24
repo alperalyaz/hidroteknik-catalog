@@ -69,8 +69,16 @@ export type UreticiSeri = {
 export type UreticiKodGrubu = {
   /** Bu kod grubunun gösterileceği kategori slug'ı. */
   kategori: string
-  marka: string
-  markaSlug: string
+  /**
+   * Marka — İSTEĞE BAĞLI.
+   *
+   * Kodların bir kısmı jenerik endüstri bileşenlerine ait ve üzerlerinde marka
+   * YOK: aynı rakor onlarca üreticiden aynı kodla çıkıyor. Böyle bir gruba
+   * marka atfetmek uydurma olurdu — `seriAdiUreticinin: false` ile aynı
+   * disiplin. Marka yoksa sayfa başlığı ürün TÜRÜNÜ söyler, marka adını değil.
+   */
+  marka?: string
+  markaSlug?: string
   kodDeseni: string
   kodOrnek: string
   seriler: UreticiSeri[]

@@ -110,6 +110,9 @@ export type Metin = {
   rehberlerBaslik: string
   // — Üretici kod listesi (kategori sayfasında bölüm) —
   kodBaslik: (marka: string) => string
+  kodBaslikMarkasiz: string
+  kodGirisMarkasiz: (desen: string, ornek: string) => string
+  kodSeriBaslikMarkasiz: (seri: string) => string
   kodGiris: (marka: string, desen: string, ornek: string) => string
   kodSeriBaslik: (marka: string, seri: string) => string
   /** Seri adı üreticinin DEĞİLSE: kod öneki olduğu açıkça söylenir. */
@@ -312,6 +315,10 @@ export const METIN: Record<Dil, Metin> = {
     rehberSssBaslik: 'Sık sorulan sorular',
     rehberlerBaslik: 'Teknik rehberler',
     kodBaslik: (marka) => `${marka} üretici katalog kodları`,
+    kodBaslikMarkasiz: 'Üretici katalog kodları',
+    kodGirisMarkasiz: (desen, ornek) =>
+      `Bu ürünler sahada bizim stok kodumuzla değil, üreticinin katalog koduyla aranır. Kod şu düzendedir: ${desen} — örneğin ${ornek}. Aşağıdaki listelerin her kodu temin edilebilir; bir kısmı stoğumuzda hazır bekler.`,
+    kodSeriBaslikMarkasiz: (seri) => seri,
     kodGiris: (marka, desen, ornek) =>
       `${marka} ürünleri sahada bizim stok kodumuzla değil, üreticinin katalog koduyla aranır. Kod şu düzendedir: ${desen} — örneğin ${ornek}. Aşağıdaki serilerin her kodu temin edilebilir; bir kısmı stoğumuzda hazır bekler.`,
     kodSeriBaslik: (marka, seri) => `${marka} ${seri} serisi`,
@@ -490,6 +497,10 @@ export const METIN: Record<Dil, Metin> = {
     rehberSssBaslik: 'Frequently asked questions',
     rehberlerBaslik: 'Technical guides',
     kodBaslik: (marka) => `${marka} manufacturer part numbers`,
+    kodBaslikMarkasiz: 'Manufacturer part numbers',
+    kodGirisMarkasiz: (desen, ornek) =>
+      `These products are searched for in the field by the manufacturer's part number, not by our stock code. The code follows this pattern: ${desen} — for example ${ornek}. Every code in the lists below can be supplied; some are held in stock ready to ship.`,
+    kodSeriBaslikMarkasiz: (seri) => seri,
     kodGiris: (marka, desen, ornek) =>
       `${marka} products are searched for in the field by the manufacturer's part number, not by our stock code. The code follows this pattern: ${desen} — for example ${ornek}. Every code in the series below can be supplied; some are held in stock ready to ship.`,
     kodSeriBaslik: (marka, seri) => `${marka} ${seri} series`,
@@ -668,6 +679,10 @@ export const METIN: Record<Dil, Metin> = {
     rehberSssBaslik: 'Часто задаваемые вопросы',
     rehberlerBaslik: 'Технические руководства',
     kodBaslik: (marka) => `Каталожные коды производителя ${marka}`,
+    kodBaslikMarkasiz: 'Каталожные коды производителя',
+    kodGirisMarkasiz: (desen, ornek) =>
+      `Эти изделия на практике ищут не по нашему складскому коду, а по каталожному коду производителя. Код построен так: ${desen} — например, ${ornek}. Любой код из перечисленных ниже списков может быть поставлен; часть из них есть на складе.`,
+    kodSeriBaslikMarkasiz: (seri) => seri,
     kodGiris: (marka, desen, ornek) =>
       `Продукцию ${marka} на практике ищут не по нашему складскому коду, а по каталожному коду производителя. Код построен так: ${desen} — например, ${ornek}. Любой код из перечисленных серий может быть поставлен; часть из них есть на складе.`,
     kodSeriBaslik: (marka, seri) => `${marka}, серия ${seri}`,
