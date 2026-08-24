@@ -39,8 +39,8 @@ TR (varsayılan) / EN / RU üç dilde yayında, ~306 statik sayfa.
   tipler; kategori ve profil çevirileri ayrı dosyada, marka ve rehber çevirileri
   kaydın içinde (az sayıda kayıt olduğu için senkron tutmak daha kolay).
 - `lib/metin.ts` — arayüz etiketleri (üç dil). Sayfa içeriği burada DEĞİL.
-- `app/sitemap.ts` ve `app/llms.txt/route.ts` — dört aileyi de kapsar; yeni bir
-  aile eklenirse ikisine de yazılmalı.
+- `app/sitemap.ts`, `app/llms.txt/route.ts` ve `app/llms-full.txt/route.ts` —
+  aileleri kapsar; yeni bir aile eklenirse ÜÇÜNE de yazılmalı.
 
 Yeni sayfa ailesi eklerken sırayla: veri JSON → `lib/` tipi → `lib/metin.ts`
 etiketleri (3 dil) → `lib/schema.ts` JSON-LD üreticisi → rota → sitemap → llms.txt
@@ -282,7 +282,7 @@ Değişiklikten sonra `npx tsc --noEmit` ve `npm run build` çalıştır. Build 
 sayfaları statik üretir; yeni bir sayfa eklendiyse ilgili HTML'in
 `.next/server/app/tr/` altında oluştuğu görülmelidir.
 
-Sonra `npm run denetle` (`scripts/build-denetle.mjs`). Sekiz şeyi arar, sekizi de
+Sonra `npm run denetle` (`scripts/build-denetle.mjs`). Dokuz şeyi arar, dokuzu da
 sessizce bozulabilen şeylerdir; sorun bulursa çıkış kodu 1 döner:
 
 - **Kırık iç link.** Üretilen HTML'deki her `href="/..."` bir dosyaya karşılık
@@ -301,6 +301,8 @@ sessizce bozulabilen şeylerdir; sorun bulursa çıkış kodu 1 döner:
 - **Sayı biçimi.** ru/en sayfasında Türkçe binlik ayracı (`5.297`) aranır.
 - **Güncelleme damgası.** `data/guncelleme.json` git ile tutuyor mu (bkz. bir
   alttaki bölüm). Sığ klonda atlanır.
+- **Düz metin çıktıları.** `llms.txt` ve `llms-full.txt` HTML olmadığı için
+  yukarıdaki denetimlerin kapsamında değiller; ayrıca taranırlar.
 
 **Denetim ham HTML'de arama YAPMAZ, `<script>` bloklarını ayıklar.** Next.js
 sayfa sonuna `self.__next_f.push` ile akış yükünü gömüyor ve uzun dizeleri
@@ -344,6 +346,26 @@ yüksek (`kuresel-vana` %59, `pnomatik-silindir` %42, `elektrik-motoru` %41)
 metin var. Google'ın ölçütü şudur: "yerelleştirilmiş sürümler yalnız ANA İÇERİK
 çevrilmemişse kopya sayılır." Ayrıca 305 sayfanın `<title>`, `description` ve
 `canonical` alanlarının hepsi tekil.
+
+### llms.txt içindekiler, llms-full.txt içeriktir
+
+İkisi ayrı iş yapar ve karıştırılmamalı:
+
+- **`llms.txt`** bir İÇİNDEKİLER'dir: ne olduğumuzu, hangi sayfaların
+  bulunduğunu ve her grupta kaç kalem olduğunu söyler. ~155 satır.
+- **`llms-full.txt`** İÇERİĞİN KENDİSİDİR: 5.030 sızdırmazlık ölçüsü, 9.335
+  üretici katalog kodu, 574 örnek ürün satırı, dört rehberin tam metni.
+  ~16.800 satır, 459 KB.
+
+Gerekçe: üretken bir motor cevabını ÇEKTİĞİ METİNDEN kurar. 306 sayfayı tek tek
+gezmek zorunda kalan bir istemci pratikte birkaçını okuyup kalanını hiç görmez.
+Tek dosya, "K21 40x50x8 kimde var" sorusunun cevabını bir istek uzağa indirir.
+
+**Yeni bilgi yayımlamaz**, var olanı tek yerde toplar — sayfalarda olmayan
+hiçbir şey buraya girmez. Fiyat, tedarikçi adı ve bizim stok kodumuz burada da
+yasaktır ve denetimin dokuzuncu adımı üçünü de arar. Bu ayrı bir adım olmak
+zorunda: dosya HTML olmadığı için diğer denetimlerin `dosyalar` kümesinde yok
+ve sızıntı için EN GENİŞ yüzey burası.
 
 ### dateModified: tarih DOĞRU olmalı, yoksa hiç olmasın
 

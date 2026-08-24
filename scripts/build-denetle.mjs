@@ -3,7 +3,7 @@
  *
  *   node scripts/build-denetle.mjs
  *
- * Sekiz şeyi arar; sekizi de sessizce bozulabilen, elle fark edilmeyen şeylerdir:
+ * Dokuz şeyi arar; dokuzu da sessizce bozulabilen, elle fark edilmeyen şeylerdir:
  *   1. Kırık iç link   — 15.000'in üzerinde href var, elle bakılamaz
  *   2. Tedarikçi adı sızıntısı — yalnız ürünün üzerindeki marka yayımlanır
  *   3. Yinelenen <title> — aynı başlık iki sayfada varsa biri diğerini yer
@@ -12,6 +12,7 @@
  *   6. Rusça sayı çekimi — "1 223 размеров" değil "размера"
  *   7. Sayı biçimi — ru/en sayfasında Türkçe binlik ayracı (5.297)
  *   8. Güncelleme damgası — dateModified git ile tutuyor mu
+ *   9. Düz metin çıktıları — llms.txt / llms-full.txt sızıntı taraması
  *
  * ⚠ RSC YÜKÜ AYIKLANIR (önemli): Next.js sayfanın sonuna `self.__next_f.push`
  * çağrılarıyla akış yükünü gömer ve uzun dizeleri RASTGELE yerlerden böler.
@@ -310,6 +311,38 @@ try {
 } catch {
   // guncelleme.json yoksa dateModified zaten basılmaz; ayrı bir sorun değil.
 }
+
+/**
+ * DÜZ METİN ÇIKTILARI (llms.txt, llms-full.txt).
+ *
+ * Bu dosyalar HTML DEĞİL, o yüzden yukarıdaki dört denetimin hiçbirinin
+ * kapsamında değiller — `dosyalar` yalnız *.html topluyor. Oysa llms-full.txt
+ * kataloğun tam dökümü: 5.030 ölçü, 9.335 kod, 574 örnek satır. Sızıntı için
+ * en geniş yüzey burası.
+ *
+ * RSC ayıklaması gerekmez (script yok), o yüzden dosya ham hâliyle taranır.
+ */
+const duzMetin = []
+for (const ad of ['llms.txt', 'llms-full.txt']) {
+  let icerik
+  try {
+    icerik = readFileSync(join(KOK, `${ad}.body`), 'utf8')
+  } catch {
+    duzMetin.push(`${ad} üretilmemiş`)
+    continue
+  }
+  for (const { ad: firma, re } of YASAK) {
+    const m = icerik.match(re)
+    if (m) duzMetin.push(`/${ad} — tedarikçi adı ${firma} ("${m[0]}")`)
+  }
+  for (const kod of icKodlar) {
+    if (icerik.includes(kod)) duzMetin.push(`/${ad} — iç stok kodu ${kod}`)
+  }
+  // Fiyat izi: "1.234,56 TL" gibi para biçimleri. Katalog fiyat yayımlamaz;
+  // kaynak havuzu fiyat sütunları taşıdığı için bu denetim kalıcıdır.
+  const para = icerik.match(/\d+[.,]\d{2}\s*(USD|EUR|TL|TRY|₺|\$|€)/i)
+  if (para) duzMetin.push(`/${ad} — fiyat izi ("${para[0]}")`)
+}
 console.log(`sayfa ${dosyalar.length} · iç link ${toplamLink}`)
 console.log(`kırık link hedefi : ${kirik.size}`)
 for (const [hedef, kaynak] of [...kirik].slice(0, 10)) {
@@ -329,8 +362,10 @@ console.log(`sayı biçimi (dil)  : ${sayiBicim.length}`)
 for (const s of sayiBicim.slice(0, 10)) console.log(`   ✗ ${s}`)
 console.log(`güncelleme damgası : ${tarihBayat.length}`)
 for (const s of tarihBayat.slice(0, 10)) console.log(`   ✗ ${s}`)
+console.log(`düz metin çıktısı : ${duzMetin.length}`)
+for (const s of duzMetin.slice(0, 10)) console.log(`   ✗ ${s}`)
 
 const hata =
-  kirik.size + sizinti.length + yinelenen.length + icKod.length + kanonik.length + ruCekimHata.length + sayiBicim.length + tarihBayat.length
+  kirik.size + sizinti.length + yinelenen.length + icKod.length + kanonik.length + ruCekimHata.length + sayiBicim.length + tarihBayat.length + duzMetin.length
 console.log(hata === 0 ? '\n✅ temiz' : `\n⛔ ${hata} sorun`)
 process.exit(hata === 0 ? 0 : 1)

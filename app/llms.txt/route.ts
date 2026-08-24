@@ -26,6 +26,10 @@ export function GET() {
 > This catalog is also available in English: ${SITE_URL}/en
 > Каталог также доступен на русском языке: ${SITE_URL}/ru
 
+Bu dosya bir İÇİNDEKİLER'dir. Kataloğun TAM DÖKÜMÜ — her sızdırmazlık ölçüsü,
+her üretici katalog kodu, rehberlerin tam metni — tek dosyada:
+${SITE_URL}/llms-full.txt
+
 ## İletişim
 
 - Telefon: ${FIRMA.telefon}
