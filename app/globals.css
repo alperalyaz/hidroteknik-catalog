@@ -298,3 +298,14 @@ footer h3 {
 @media (max-width: 700px) {
   .rehber-gorsel { margin-bottom: 1.4rem; border-radius: 8px; }
 }
+
+/* ── görselli kart (ana sayfa rehber kartları) ──
+   Görsel kartın üst kenarına yaslanır, iç dolgu yalnız metne uygulanır.
+   aspect-ratio yer tutar: yedi görsel tembel yüklendiği için, ölçü bilinmezse
+   kartlar yüklendikçe zıplar. */
+.kart-gorselli { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
+.kart-gorsel { display: block; aspect-ratio: 3 / 2; background: var(--dalga); overflow: hidden; }
+.kart-gorsel img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.kart-gorselli b { margin: 16px 20px 6px; }
+.kart-gorselli > span:not(.kart-gorsel) { margin: 0 20px; }
+.kart-gorselli em { margin: 10px 20px 18px; }

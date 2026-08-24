@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { DILLER, SITE_URL, FIRMA, sayiFormat, dilAlternatifleri, type Dil } from '@/lib/site'
 import { METIN } from '@/lib/metin'
 import { kategorilerIcin, kategoriUrunleri, AILELER } from '@/lib/veri'
@@ -185,7 +186,21 @@ export default async function KatalogAnaSayfa({ params }: { params: Promise<{ la
           <p className="bolum-not">{m.notRehber}</p>
           <div className="kartlar">
             {REHBERLER.map((r) => (
-              <Link key={r.slug} href={`/${lang}/rehber/${r.slug}`} className="kart">
+              <Link key={r.slug} href={`/${lang}/rehber/${r.slug}`} className="kart kart-gorselli">
+                {/* Kart görseli: `priority` YOK — bunlar ilk ekranın altında ve
+                    tembel yüklenmeleri gerekiyor. Yedi görsele öncelik vermek
+                    ana sayfanın LCP'sini düşürürdü. `sizes` gerçek kart
+                    genişliğini söyler ki Next küçük sürümü üretsin; 1536'lık
+                    aslı 300 pikselik karta indirilirse bant boşa gider. */}
+                <span className="kart-gorsel">
+                  <Image
+                    src={r.gorsel}
+                    alt={r[lang].gorselAlt}
+                    width={1536}
+                    height={1024}
+                    sizes="(max-width: 620px) 100vw, (max-width: 1000px) 50vw, 340px"
+                  />
+                </span>
                 <b>{r[lang].ad}</b>
                 <span>{r[lang].ozet}</span>
                 <em>{m.rehberRozet}</em>
