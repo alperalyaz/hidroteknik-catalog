@@ -1,6 +1,7 @@
 import { FIRMA, SITE_URL, ANA_SITE } from './site'
 import type { Kategori, Urun } from './veri'
 import { satirUreticiKodu } from './uretici-kod'
+import { tarihAlani } from './guncelleme'
 import { METIN } from './metin'
 import type { Dil } from './site'
 
@@ -68,6 +69,8 @@ export function kategoriSchema(k: Kategori, urunler: Urun[], url: string, lang: 
     name: k.h1,
     description: k.ozet,
     inLanguage: lang,
+    ...tarihAlani('kategori'),
+
     isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}/#site`, name: `${FIRMA.ad} ${katalogAdi}` },
     about: { '@id': ISLETME_ID },
     provider: { '@id': ISLETME_ID },
@@ -169,6 +172,8 @@ export function profilSchema(
     name: baslik,
     description: ozet,
     inLanguage: lang,
+    ...tarihAlani('profil'),
+
     isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}/#site`, name: `${FIRMA.ad} ${katalogAdi}` },
     about: { '@id': ISLETME_ID },
     provider: { '@id': ISLETME_ID },
@@ -233,6 +238,8 @@ export function markaSchema(
     url,
     name: baslik,
     inLanguage: lang,
+    ...tarihAlani('marka'),
+
     isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}/#site`, name: `${FIRMA.ad} ${katalogAdi}` },
     about: { '@type': 'Brand', name: marka.ad },
     provider: { '@id': ISLETME_ID },
@@ -293,6 +300,8 @@ export function rehberSchema(
     name: i.ad,
     description: i.ozet,
     inLanguage: lang,
+    ...tarihAlani('rehber'),
+
     isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}/#site`, name: `${FIRMA.ad} ${katalogAdi}` },
     author: { '@id': ISLETME_ID },
     publisher: { '@id': ISLETME_ID },
@@ -321,6 +330,8 @@ export function parcaSchema(
     name: i.h1,
     description: i.ozet,
     inLanguage: lang,
+    ...tarihAlani('silindirParca'),
+
     category: i.ad,
     productGroupID: url.split('/').pop(),
     variesBy: i.eksen === 'capMil' ? ['width', 'depth'] : ['width'],
@@ -372,4 +383,55 @@ export function kirintiSchema(parcalar: { ad: string; url: string }[]) {
 /** JSON-LD'yi güvenle gömer (</script> kaçışı XSS'i önler). */
 export function jsonLd(veri: unknown) {
   return { __html: JSON.stringify(veri).replace(/</g, '\\u003c') }
+}
+
+/**
+ * Dil ana sayfası (`/tr`, `/en`, `/ru`).
+ *
+ * Bu sayfalarda SAYFA DÜZEYİNDE hiç yapılandırılmış veri yoktu: yalnız
+ * yerleşimden gelen LocalBusiness düğümü vardı. Yani sitenin en önemli sayfası
+ * makineye NE OLDUĞUNU söylemiyordu — ne katalog olduğunu, ne neyi kapsadığını.
+ *
+ * `ItemList` burada ürün değil GRUP listeler; bir dil modeline "bu katalogda ne
+ * var" sorusunun tek isteğe cevabı budur. Kalem sayısı her grubun kendi
+ * `description`ında geçer, uydurulmaz — hepsi veriden gelir.
+ */
+export function anaSayfaSchema(
+  url: string,
+  lang: string,
+  baslik: string,
+  aciklama: string,
+  katalogAdi: string,
+  gruplar: { ad: string; url: string; ozet: string }[]
+) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    '@id': `${url}#sayfa`,
+    url,
+    name: baslik,
+    description: aciklama,
+    inLanguage: lang,
+    ...tarihAlani('kategori'),
+    isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}/#site`, name: `${FIRMA.ad} ${katalogAdi}` },
+    about: { '@id': ISLETME_ID },
+    provider: { '@id': ISLETME_ID },
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: gruplar.length,
+      itemListElement: gruplar.map((g, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: g.ad,
+        url: g.url,
+        item: {
+          '@type': 'CollectionPage',
+          '@id': `${g.url}#sayfa`,
+          name: g.ad,
+          description: g.ozet,
+          url: g.url,
+        },
+      })),
+    },
+  }
 }

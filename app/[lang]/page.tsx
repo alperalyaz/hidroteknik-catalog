@@ -7,6 +7,7 @@ import { REHBERLER } from '@/lib/rehber'
 import { MARKALAR } from '@/lib/marka'
 import { PROFILLER, profilSlug, yerMetni } from '@/lib/profil'
 import { SILINDIR_PARCALARI, parcaAdi } from '@/lib/silindir-parca'
+import { anaSayfaSchema, jsonLd } from '@/lib/schema'
 
 const BASLIK: Record<Dil, string> = {
   tr: 'Hidrolik ve Pnömatik Ürün Kataloğu',
@@ -58,6 +59,23 @@ export default async function KatalogAnaSayfa({ params }: { params: Promise<{ la
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLd(
+          anaSayfaSchema(
+            `${SITE_URL}/${lang}`,
+            lang,
+            BASLIK[lang],
+            ACIKLAMA[lang],
+            m.urunKatalogu,
+            kategoriler.map((k) => ({
+              ad: k.h1,
+              url: `${SITE_URL}/${lang}/${k.slug}`,
+              ozet: k.ozet,
+            }))
+          )
+        )}
+      />
       <div className="hero">
         <div className="sarmal">
           <h1>{m.anaSayfaBaslik}</h1>

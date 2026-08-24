@@ -282,7 +282,7 @@ Değişiklikten sonra `npx tsc --noEmit` ve `npm run build` çalıştır. Build 
 sayfaları statik üretir; yeni bir sayfa eklendiyse ilgili HTML'in
 `.next/server/app/tr/` altında oluştuğu görülmelidir.
 
-Sonra `npm run denetle` (`scripts/build-denetle.mjs`). Yedi şeyi arar, yedisi de
+Sonra `npm run denetle` (`scripts/build-denetle.mjs`). Sekiz şeyi arar, sekizi de
 sessizce bozulabilen şeylerdir; sorun bulursa çıkış kodu 1 döner:
 
 - **Kırık iç link.** Üretilen HTML'deki her `href="/..."` bir dosyaya karşılık
@@ -299,6 +299,8 @@ sessizce bozulabilen şeylerdir; sorun bulursa çıkış kodu 1 döner:
 - **Rusça sayı çekimi.** 1 размер · 2-4 размера · 5+ размеров; son iki hane
   11-14 ise her zaman çoğul (bkz. "Rusça sayı çekimi" bölümü).
 - **Sayı biçimi.** ru/en sayfasında Türkçe binlik ayracı (`5.297`) aranır.
+- **Güncelleme damgası.** `data/guncelleme.json` git ile tutuyor mu (bkz. bir
+  alttaki bölüm). Sığ klonda atlanır.
 
 **Denetim ham HTML'de arama YAPMAZ, `<script>` bloklarını ayıklar.** Next.js
 sayfa sonuna `self.__next_f.push` ile akış yükünü gömüyor ve uzun dizeleri
@@ -342,6 +344,28 @@ yüksek (`kuresel-vana` %59, `pnomatik-silindir` %42, `elektrik-motoru` %41)
 metin var. Google'ın ölçütü şudur: "yerelleştirilmiş sürümler yalnız ANA İÇERİK
 çevrilmemişse kopya sayılır." Ayrıca 305 sayfanın `<title>`, `description` ve
 `canonical` alanlarının hepsi tekil.
+
+### dateModified: tarih DOĞRU olmalı, yoksa hiç olmasın
+
+JSON-LD'de beş şablonun da `dateModified` alanı var ve tarih `new Date()`ten
+DEĞİL, git geçmişinden geliyor (`npm run guncelleme` → `data/guncelleme.json`).
+
+Sebebi: her build'de bugünü damgalamak 306 sayfanın hepsine "bugün değişti"
+dedirtir. Google tutarlı ve doğrulanabilir olmayan tazelik sinyallerini dikkate
+almayı bırakır — yani yalan söyleyen tarih, hiç tarih olmamasından kötüdür.
+
+Tarih neden dosyaya YAZILIYOR: Vercel sığ klon yapıyor, build sırasında
+`git log` çoğu dosya için boş döner. Hesap tam geçmişin bulunduğu yerde yapılıp
+commit'lenir. Veri dosyasına dokunduysan `npm run guncelleme` çalıştır —
+denetimin sekizinci adımı damganın bayatladığını yakalar.
+
+**`app/sitemap.ts` hâlâ `new Date()` kullanıyor** ve 304 URL'nin hepsine her
+deploy'da bugünü basıyor. Aynı hastalık, ayrı iş olarak duruyor.
+
+Ana sayfalarda (`/tr`, `/en`, `/ru`) sayfa düzeyinde hiç yapılandırılmış veri
+YOKTU — yalnız yerleşimden gelen LocalBusiness vardı. `anaSayfaSchema()`
+eklendi: `CollectionPage` + 28 grubu listeleyen `ItemList`. Bir dil modeline
+"bu katalogda ne var" sorusunun tek isteğe cevabı budur.
 
 ### Rusça sayı çekimi
 

@@ -3,7 +3,7 @@
  *
  *   node scripts/build-denetle.mjs
  *
- * Yedi şeyi arar; yedisi de sessizce bozulabilen, elle fark edilmeyen şeylerdir:
+ * Sekiz şeyi arar; sekizi de sessizce bozulabilen, elle fark edilmeyen şeylerdir:
  *   1. Kırık iç link   — 15.000'in üzerinde href var, elle bakılamaz
  *   2. Tedarikçi adı sızıntısı — yalnız ürünün üzerindeki marka yayımlanır
  *   3. Yinelenen <title> — aynı başlık iki sayfada varsa biri diğerini yer
@@ -11,6 +11,7 @@
  *   5. Kanonik bütünlüğü — kökün 308'i, kendini gösteren canonical, x-default
  *   6. Rusça sayı çekimi — "1 223 размеров" değil "размера"
  *   7. Sayı biçimi — ru/en sayfasında Türkçe binlik ayracı (5.297)
+ *   8. Güncelleme damgası — dateModified git ile tutuyor mu
  *
  * ⚠ RSC YÜKÜ AYIKLANIR (önemli): Next.js sayfanın sonuna `self.__next_f.push`
  * çağrılarıyla akış yükünü gömer ve uzun dizeleri RASTGELE yerlerden böler.
@@ -27,6 +28,7 @@
  * yanlış alarm değil EKSİK alarm üretir; yani ham arama burada güvenli taraftır.
  */
 import { readdirSync, readFileSync, statSync } from 'node:fs'
+import { execFileSync } from 'node:child_process'
 import { join, sep } from 'node:path'
 
 const KOK = '.next/server/app'
@@ -266,6 +268,48 @@ for (const f of dosyalar) {
     sayiBicim.push(`${yol} — "${m[0]}" Türkçe binlik ayracı (${dil} sayfasında)`)
   }
 }
+
+/**
+ * GÜNCELLEME DAMGASI BAYAT MI?
+ *
+ * `data/guncelleme.json` JSON-LD'deki `dateModified`i besliyor ve git'ten
+ * üretiliyor. Veri dosyası değişip damga güncellenmezse sayfa YANLIŞ tarih
+ * yayımlar — ve yanlış tarih, tarih olmamasından kötüdür: Google tutarlı
+ * olmayan tazelik sinyallerini dikkate almayı bırakır.
+ *
+ * Sığ klonda (Vercel) git geçmişi yok; orada denetim ATLANIR, hata vermez.
+ * Bu denetim geliştiricinin makinesinde anlamlı, build sunucusunda değil.
+ */
+const tarihBayat = []
+try {
+  const damga = JSON.parse(readFileSync(join('data', 'guncelleme.json'), 'utf8'))
+  const AILE = {
+    kategori: ['data/kategoriler.json', 'data/kategoriler.en.json', 'data/kategoriler.ru.json', 'data/urunler.json'],
+    profil: ['data/profiller.json'],
+    marka: ['data/markalar.json'],
+    rehber: ['data/rehberler.json'],
+    silindirParca: ['data/silindir-parcalari.json'],
+    ureticiKod: ['data/uretici-kodlari.json'],
+  }
+  for (const [aile, dosyalar] of Object.entries(AILE)) {
+    const tarihler = dosyalar
+      .map((d) => {
+        try {
+          return execFileSync('git', ['log', '-1', '--format=%cs', '--', d], { encoding: 'utf8' }).trim()
+        } catch {
+          return ''
+        }
+      })
+      .filter(Boolean)
+    if (!tarihler.length) continue // sığ klon: atla
+    const gercek = tarihler.sort().at(-1)
+    if (damga[aile] !== gercek) {
+      tarihBayat.push(`${aile}: damga ${damga[aile] || '(yok)'} ama git ${gercek} — npm run guncelleme`)
+    }
+  }
+} catch {
+  // guncelleme.json yoksa dateModified zaten basılmaz; ayrı bir sorun değil.
+}
 console.log(`sayfa ${dosyalar.length} · iç link ${toplamLink}`)
 console.log(`kırık link hedefi : ${kirik.size}`)
 for (const [hedef, kaynak] of [...kirik].slice(0, 10)) {
@@ -283,8 +327,10 @@ console.log(`rusça sayı çekimi  : ${ruCekimHata.length}`)
 for (const s of ruCekimHata.slice(0, 10)) console.log(`   ✗ ${s}`)
 console.log(`sayı biçimi (dil)  : ${sayiBicim.length}`)
 for (const s of sayiBicim.slice(0, 10)) console.log(`   ✗ ${s}`)
+console.log(`güncelleme damgası : ${tarihBayat.length}`)
+for (const s of tarihBayat.slice(0, 10)) console.log(`   ✗ ${s}`)
 
 const hata =
-  kirik.size + sizinti.length + yinelenen.length + icKod.length + kanonik.length + ruCekimHata.length + sayiBicim.length
+  kirik.size + sizinti.length + yinelenen.length + icKod.length + kanonik.length + ruCekimHata.length + sayiBicim.length + tarihBayat.length
 console.log(hata === 0 ? '\n✅ temiz' : `\n⛔ ${hata} sorun`)
 process.exit(hata === 0 ? 0 : 1)

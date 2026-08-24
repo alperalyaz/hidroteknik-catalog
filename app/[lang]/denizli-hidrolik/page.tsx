@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { SITE_URL, FIRMA, ANA_SITE } from '@/lib/site'
 import { KATEGORILER, kategoriUrunleri } from '@/lib/veri'
-import { sssSchema, kirintiSchema, jsonLd } from '@/lib/schema'
+import { sssSchema, kirintiSchema, anaSayfaSchema, jsonLd } from '@/lib/schema'
 
 /**
  * YEREL SAYFA — "Denizli'de hidrolikçi" hedefinin doğrudan karşılığı.
@@ -64,6 +64,26 @@ export default async function DenizliHidrolik({
 
   return (
     <>
+      {/* Sayfa düzeyi düğüm: bu sayfanın NE olduğunu ve verisinin ne zaman
+          değiştiğini söyler. Elle yazılmış tek sayfa olduğu için kategori
+          şablonundan gelmiyordu; eksikliği dateModified denetiminde çıktı. */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={jsonLd(
+          anaSayfaSchema(
+            url,
+            'tr',
+            'Denizli Hidrolik Malzeme ve Yedek Parça',
+            metadata.description as string,
+            'Ürün Kataloğu',
+            KATEGORILER.map((k) => ({
+              ad: k.h1,
+              url: `${SITE_URL}/${lang}/${k.slug}`,
+              ozet: k.ozet,
+            }))
+          )
+        )}
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(sssSchema(SSS, 'tr'))} />
       <script
         type="application/ld+json"
