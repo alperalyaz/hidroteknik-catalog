@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { DILLER, SITE_URL, FIRMA, sayiFormat, type Dil } from '@/lib/site'
+import { DILLER, SITE_URL, FIRMA, sayiFormat, dilAlternatifleri, type Dil } from '@/lib/site'
 import { METIN } from '@/lib/metin'
 import { REHBERLER, rehberBul } from '@/lib/rehber'
 import { kategoriBul, kategoriUrunleri } from '@/lib/veri'
@@ -29,7 +29,7 @@ export async function generateMetadata({
     description: i.ozet,
     alternates: {
       canonical: url,
-      languages: Object.fromEntries(DILLER.map((d) => [d, `${SITE_URL}/${d}/rehber/${r.slug}`])),
+      languages: dilAlternatifleri(`/rehber/${r.slug}`),
     },
     openGraph: { title: i.h1, description: i.ozet, url, type: 'article', locale: OG_LOCALE[lang] },
   }

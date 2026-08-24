@@ -282,7 +282,7 @@ Değişiklikten sonra `npx tsc --noEmit` ve `npm run build` çalıştır. Build 
 sayfaları statik üretir; yeni bir sayfa eklendiyse ilgili HTML'in
 `.next/server/app/tr/` altında oluştuğu görülmelidir.
 
-Sonra `npm run denetle` (`scripts/build-denetle.mjs`). Üç şeyi arar, üçü de
+Sonra `npm run denetle` (`scripts/build-denetle.mjs`). Beş şeyi arar, beşi de
 sessizce bozulabilen şeylerdir; sorun bulursa çıkış kodu 1 döner:
 
 - **Kırık iç link.** Üretilen HTML'deki her `href="/..."` bir dosyaya karşılık
@@ -292,6 +292,10 @@ sessizce bozulabilen şeylerdir; sorun bulursa çıkış kodu 1 döner:
 - **Yinelenen `<title>`.** Aynı başlık iki sayfada varsa biri diğerini yer.
   Aynı `<h1>`ın üç dilde tekrarlaması normaldir (marka adları çevrilmez), o
   yüzden h1 denetlenmez.
+- **İç stok kodu sızıntısı.** Yalnız üreticinin kodu yayımlanır; bizimki asla.
+  Bu tek denetim HAM html'de arar (bkz. React `key` tuzağı).
+- **Kanonik bütünlüğü.** Kök 308 mü, her sayfanın canonical'ı kendini gösteriyor
+  mu, çok dilli her sayfa x-default beyan ediyor mu (bkz. bir alttaki bölüm).
 
 **Denetim ham HTML'de arama YAPMAZ, `<script>` bloklarını ayıklar.** Next.js
 sayfa sonuna `self.__next_f.push` ile akış yükünü gömüyor ve uzun dizeleri
@@ -300,6 +304,41 @@ rastgele yerlerden bölüyor: `hidroteknik.com.tr` bir chunk sınırında
 denetçi bunu tedarikçi adı sızıntısı sanıyor. Bölünme her build'de yer
 değiştirdiği için alarm da kararsız. Yalan söyleyen denetçi görmezden gelinir —
 bu yüzden yalnız kullanıcıya görünen işaretleme taranır.
+
+### Kanonik: kök 308 olmak ZORUNDA
+
+Search Console 24.08.2026'da "Duplicate, Google chose different canonical than
+user" dedi. Sebebi tek satırlıktı: `app/page.tsx` `redirect()` çağırıyordu ve
+Next.js'in `redirect()`i **307** döndürür — yani GEÇİCİ yönlendirme.
+
+Google'ın kendi dokümanı ayrımı açıkça koyar: 301/308'de "yönlendirmeyi, hedefin
+kanonik olması gerektiğine dair bir işaret" sayar; 302/307'de **saymaz**, kaynağı
+dizinde tutmaya devam eder. Yani Google `/` adresini kanonik kabul edip `/tr`
+sayfasını onun kopyası saydı, `/tr` ise kendi kanoniğini `/tr` diye beyan
+ediyordu. Uyarı tam olarak bu çelişkidir.
+
+Çözüm `permanentRedirect()` (308). Canlıda ölçüldü: `/` 307 → 308,
+`/tr/` ve diğer eğik çizgili adresler zaten 308'di (`trailingSlash: false`).
+
+**x-default de eklendi** ve aynı ailedendir. Üç dil beyan edip hiçbirine
+"varsayılan" demezsek, dili tutmayan bir arama için hangi sürümün gösterileceğine
+Google karar verir — bu, yinelenen bir kümede kanonik seçmekle aynı işlemdir.
+`dilAlternatifleri()` (`lib/site.ts`) altı şablonun da `alternates.languages`
+haritasını üretir ve x-default'u TR'ye bağlar. Google üç yöntemi (HTML etiketi,
+HTTP başlığı, sitemap) eşdeğer sayıp birinin seçilmesini istiyor; biz HTML
+etiketini kullanıyoruz, o yüzden sitemap'e `xhtml:link` eklenmez.
+
+Denetimin beşinci adımı üçünü de sınar ve regresyon testi yapıldı: `index.meta`
+elle 307'ye çevrilip bir sayfadan x-default silindiğinde denetçi ikisini de
+yakaladı, geri alınınca temiz döndü.
+
+**Ölçüldü, sorun DEĞİL:** dil sürümleri birbirinin kopyası değil. Görünen metnin
+5'li pencere benzerliği TR~EN ortalama %13. Yalnız kod ağırlıklı üç sayfa
+yüksek (`kuresel-vana` %59, `pnomatik-silindir` %42, `elektrik-motoru` %41)
+çünkü sayfanın %74'ü çevrilmeyen üretici kodu. Orada bile 1.400 kelime çevrilmiş
+metin var. Google'ın ölçütü şudur: "yerelleştirilmiş sürümler yalnız ANA İÇERİK
+çevrilmemişse kopya sayılır." Ayrıca 305 sayfanın `<title>`, `description` ve
+`canonical` alanlarının hepsi tekil.
 
 ### Tedarikçi adı hiçbir yerde geçmez
 

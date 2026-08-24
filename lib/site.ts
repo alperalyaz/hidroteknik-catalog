@@ -57,3 +57,28 @@ export function sayiFormat(n: number, lang: Dil): string {
   const locale = { tr: 'tr-TR', en: 'en-US', ru: 'ru-RU' }[lang]
   return n.toLocaleString(locale)
 }
+
+/**
+ * Bir sayfanın dil sürümleri — `alternates.languages` için hazır harita.
+ * `yol` dil segmentinden SONRAKİ kısımdır: '' (ana sayfa), '/hidrolik-hortum',
+ * '/marka/kastas' gibi.
+ *
+ * ── NEDEN x-default ────────────────────────────────────────────────────────
+ * Üç dil beyan edip hiçbirine "varsayılan" demezsek, dili tutmayan bir arama
+ * için hangisinin gösterileceğine Google kendi karar verir. O karar, yinelenen
+ * bir kümede kanonik seçmekle AYNI işlemdir; seçtiği bizim beyan ettiğimizden
+ * başkası olduğunda Search Console "Duplicate, Google chose different canonical
+ * than user" der. x-default kararı bize geri alır: eşleşmeyen her dil TR'ye.
+ *
+ * Google'ın dokümanı x-default'u "yedek sayfayı belirtmek için önerilir" diye
+ * geçirir ve üç yöntemi (HTML etiketi, HTTP başlığı, sitemap) eşdeğer sayıp
+ * BİRİNİN seçilmesini ister — biz HTML etiketini kullanıyoruz, o yüzden
+ * sitemap'e xhtml:link eklenmez.
+ */
+export function dilAlternatifleri(yol: string): Record<string, string> {
+  const harita: Record<string, string> = Object.fromEntries(
+    DILLER.map((d) => [d, `${SITE_URL}/${d}${yol}`])
+  )
+  harita['x-default'] = `${SITE_URL}/${VARSAYILAN_DIL}${yol}`
+  return harita
+}

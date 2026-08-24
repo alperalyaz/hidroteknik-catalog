@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { DILLER, SITE_URL, FIRMA, sayiFormat, type Dil } from '@/lib/site'
+import { DILLER, SITE_URL, FIRMA, sayiFormat, dilAlternatifleri, type Dil } from '@/lib/site'
 import { METIN } from '@/lib/metin'
 import { kategorilerIcin, kategoriUrunleri, AILELER } from '@/lib/veri'
 import { REHBERLER } from '@/lib/rehber'
@@ -32,7 +32,7 @@ export async function generateMetadata({
     description: ACIKLAMA[lang],
     alternates: {
       canonical: url,
-      languages: Object.fromEntries(DILLER.map((d) => [d, `${SITE_URL}/${d}`])),
+      languages: dilAlternatifleri(''),
     },
   }
 }

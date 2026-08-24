@@ -3,11 +3,12 @@
  *
  *   node scripts/build-denetle.mjs
  *
- * Dört şeyi arar; dördü de sessizce bozulabilen, elle fark edilmeyen şeylerdir:
+ * Beş şeyi arar; beşi de sessizce bozulabilen, elle fark edilmeyen şeylerdir:
  *   1. Kırık iç link   — 15.000'in üzerinde href var, elle bakılamaz
  *   2. Tedarikçi adı sızıntısı — yalnız ürünün üzerindeki marka yayımlanır
  *   3. Yinelenen <title> — aynı başlık iki sayfada varsa biri diğerini yer
  *   4. İç stok kodu sızıntısı — yalnız ÜRETİCİNİN kodu yayımlanır, bizimki asla
+ *   5. Kanonik bütünlüğü — kökün 308'i, kendini gösteren canonical, x-default
  *
  * ⚠ RSC YÜKÜ AYIKLANIR (önemli): Next.js sayfanın sonuna `self.__next_f.push`
  * çağrılarıyla akış yükünü gömer ve uzun dizeleri RASTGELE yerlerden böler.
@@ -134,6 +135,50 @@ for (const f of dosyalar) {
 
 const yinelenen = [...basliklar].filter(([, v]) => v.length > 1)
 
+/* ────────────────────────────────────────────────────────────────────────────
+ * 5. KANONİK BÜTÜNLÜĞÜ
+ *
+ * Üçü de sessiz: hata vermezler, build'i kırmazlar, sayfa doğru görünür. Yalnız
+ * Google başka bir adresi kanonik seçer ve bunu haftalar sonra Search Console'da
+ * bir e-postayla öğrenirsiniz.
+ *
+ * a) KÖK 308 OLMALI. `redirect()` 307 (geçici) döndürür ve Google geçici
+ *    yönlendirmede KAYNAĞI kanonik saymaya devam eder: `/` dizinde kalır, `/tr`
+ *    onun kopyası sayılır, `/tr`nin kendi canonical'ı ile çelişir. Gerçekten
+ *    yaşandı (24.08.2026) — `permanentRedirect()` ile 308'e çevrildi. Tek harflik
+ *    bir geri dönüş (`permanentRedirect` → `redirect`) hatayı geri getirir.
+ * b) Her sayfanın canonical'ı KENDİNİ göstermeli.
+ * c) Çok dilli her sayfa x-default beyan etmeli — yoksa dili tutmayan aramada
+ *    hangi sürümün gösterileceğine Google karar verir.
+ */
+const kanonik = []
+{
+  let kokMeta = null
+  try {
+    kokMeta = JSON.parse(readFileSync(join(KOK, 'index.meta'), 'utf8'))
+  } catch {
+    kanonik.push('kök (/) için index.meta okunamadı — yönlendirme üretilmemiş')
+  }
+  if (kokMeta && kokMeta.status !== 308) {
+    kanonik.push(
+      `kök (/) ${kokMeta.status} döndürüyor, 308 olmalı` +
+        ` — 307/302'de Google '/' adresini kanonik tutar (bkz. app/page.tsx)`
+    )
+  }
+}
+for (const f of dosyalar) {
+  const yol = '/' + f.slice(KOK.length + 1).replace(/\.html$/, '')
+  // Kök yönlendirme sayfasının gövdesi yoktur; canonical'ı da olmaz.
+  if (yol === '/index' || yol === '/_not-found') continue
+  const ham = readFileSync(f, 'utf8')
+  const c = (ham.match(/<link rel="canonical" href="([^"]*)"/) || [])[1]
+  if (!c) kanonik.push(`${yol} — canonical yok`)
+  else if (!c.endsWith(yol)) kanonik.push(`${yol} — canonical başkasını gösteriyor: ${c}`)
+  // denizli-hidrolik tek dillidir (yalnız TR üretilir), alternatifi olmaz.
+  if (yol.endsWith('/denizli-hidrolik')) continue
+  if (!/hrefLang="x-default"/i.test(ham)) kanonik.push(`${yol} — x-default yok`)
+}
+
 console.log(`sayfa ${dosyalar.length} · iç link ${toplamLink}`)
 console.log(`kırık link hedefi : ${kirik.size}`)
 for (const [hedef, kaynak] of [...kirik].slice(0, 10)) {
@@ -145,7 +190,9 @@ console.log(`yinelenen <title>  : ${yinelenen.length}`)
 for (const [t, v] of yinelenen.slice(0, 10)) console.log(`   ✗ "${t.slice(0, 60)}" → ${v.join(', ')}`)
 console.log(`iç stok kodu (${icKodlar.size} kod arandı): ${icKod.length}`)
 for (const s of icKod.slice(0, 10)) console.log(`   ✗ ${s.yol} — ${s.kod}`)
+console.log(`kanonik bütünlüğü  : ${kanonik.length}`)
+for (const s of kanonik.slice(0, 10)) console.log(`   ✗ ${s}`)
 
-const hata = kirik.size + sizinti.length + yinelenen.length + icKod.length
+const hata = kirik.size + sizinti.length + yinelenen.length + icKod.length + kanonik.length
 console.log(hata === 0 ? '\n✅ temiz' : `\n⛔ ${hata} sorun`)
 process.exit(hata === 0 ? 0 : 1)

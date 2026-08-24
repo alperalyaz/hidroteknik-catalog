@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { DILLER, SITE_URL, FIRMA, sayiFormat, type Dil } from '@/lib/site'
+import { DILLER, SITE_URL, FIRMA, sayiFormat, dilAlternatifleri, type Dil } from '@/lib/site'
 import { METIN } from '@/lib/metin'
 import { SILINDIR_PARCALARI, parcaBul, parcaAdi } from '@/lib/silindir-parca'
 import { parcaSchema, kirintiSchema, jsonLd } from '@/lib/schema'
@@ -42,9 +42,7 @@ export async function generateMetadata({
     description: i.ozet,
     alternates: {
       canonical: url,
-      languages: Object.fromEntries(
-        DILLER.map((d) => [d, `${SITE_URL}/${d}/silindir-parca/${slug}`])
-      ),
+      languages: dilAlternatifleri(`/silindir-parca/${slug}`),
     },
     openGraph: { title: i.h1, description: i.ozet, url, type: 'website', locale: OG_LOCALE[lang] },
   }
