@@ -166,6 +166,41 @@ bile sayfa kaynağında kalır ve arama motoru görür. Örnek tablolarda anahta
 olarak dizin kullanılır. `build-denetle.mjs` bunu artık HAM html'de arar (diğer
 üç denetimin tersine — orada RSC yükü ayıklanır, burada tam da o yük taranır).
 
+### Kod ada gömülünce denetim kör kalır
+
+24.08.2026'da canlıda iç stok kodu bulundu: `CNC-AK-63X75`, üç sayfada ve
+`llms-full.txt`'te, üstelik JSON-LD'de hem `name` hem `description` alanında.
+`npm run denetle` aylardır temiz diyordu. Sebebi üç katmanlıydı:
+
+**1. Denetim yanlış alana bakıyordu.** İç kod kümesini `u.kod` alanından
+kuruyordu. Ama kod göçünde yeni kod ERP'de ürün ADINA da yazılmıştı ve iki alan
+AYRI şemadaydı:
+
+```
+kod = "CNC.04.01.063X75"                    ← denetimin aradığı, canlıda YOK
+ad  = "ARKA KAPAK BASİT TİP CNC-AK-63X75"   ← YAYIMLANAN, canlıda VAR
+```
+
+Denetim aradığını bulamadı ve temiz dedi. **Veri alanına bakan denetim, aynı
+bilginin BAŞKA bir alana sızmasını asla göremez.** Artık önek DESENİ aranıyor.
+
+**2. Ayraç değişmişti.** Eski şema `CNC.`, yenisi `CNC-PV-T-`. Yalnız noktayı
+arayan bir desen göçten sonraki hiçbir kodu görmez; desen `[.-]` olmalı.
+
+**3. Temizlik yarım kaldı.** `urunAdiDuzelt()` görünen tabloyu temizliyordu ama
+JSON-LD ham `u.ad`'ı kullanıyordu. Görünen yüzeyi temizleyip yapılandırılmış
+veriyi unutmak sızıntıyı GİZLİ hâle getirir — gözle bakınca temiz görünür.
+
+Kod tamamen silinmez, **kuyruğu ölçüdür ve korunur**: `CNC-AK-63X75` → `63X75`.
+Atılan kısım önek ve grup harfleridir (AK = arka kapak, PV = piston vidalı) ve
+ikisi de adın Türkçesinde zaten yazıyor, yani bilgi kaybı yok.
+
+**Süs denetim, denetim olmamasından kötüdür.** Deseni ilk yazışımda gövdede
+ayraca izin vermemiştim; `CNC-AK-63X75` kodunda rakamdan önce bir tire daha var
+ve desen hiçbir şey tutmuyordu. Regresyon testi olmasa "düzelttim" diye
+raporlayacaktım. Her denetim adımı, kasten bozulup yakaladığı görülerek
+eklenmelidir.
+
 ### Kod göçü
 
 Stok kodları değiştiğinde `npm run kod-gocur -- eski-yeni.csv` kuru çalıştırma
@@ -301,7 +336,8 @@ sessizce bozulabilen şeylerdir; sorun bulursa çıkış kodu 1 döner:
   Aynı `<h1>`ın üç dilde tekrarlaması normaldir (marka adları çevrilmez), o
   yüzden h1 denetlenmez.
 - **İç stok kodu sızıntısı.** Yalnız üreticinin kodu yayımlanır; bizimki asla.
-  Bu tek denetim HAM html'de arar (bkz. React `key` tuzağı).
+  Bu tek denetim HAM html'de arar (bkz. React `key` tuzağı) ve LİTERAL kod
+  değil ÖNEK DESENİ arar (bkz. "Kod ada gömülünce" bölümü).
 - **Kanonik bütünlüğü.** Kök 308 mü, her sayfanın canonical'ı kendini gösteriyor
   mu, çok dilli her sayfa x-default beyan ediyor mu (bkz. bir alttaki bölüm).
 - **Rusça sayı çekimi.** 1 размер · 2-4 размера · 5+ размеров; son iki hane

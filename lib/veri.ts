@@ -155,8 +155,56 @@ export function kategoriUrunleri(slug: string): { toplam: number; liste: Urun[] 
 }
 
 /** Ürün adlarındaki ERP yazım tutarsızlıklarını gösterim için düzeltir (veriyi değiştirmez). */
+/**
+ * Ürün ADININ içine gömülmüş İÇ STOK KODU önekleri.
+ *
+ * ── NASIL SIZDI ────────────────────────────────────────────────────────────
+ * Kod göçünde (CNC. → CNC-PV-T-) yeni kod ERP'de ürün ADINA da yazılmış:
+ *     kod = "CNC.04.01.063X75"   (eski şema, snapshot'ta duran)
+ *     ad  = "ARKA KAPAK BASİT TİP CNC-AK-63X75"   (yeni şema, YAYIMLANAN)
+ *
+ * `build-denetle.mjs` iç kod kümesini `u.kod` alanından kuruyordu, yani canlıda
+ * aradığı literal (CNC.04.01.063X75) gerçekten yoktu ve denetim TEMİZ geçti —
+ * oysa adın içindeki CNC-AK-63X75 üç sayfada ve llms-full.txt'te yayındaydı,
+ * üstelik JSON-LD'de hem `name` hem `description` alanında (24.08.2026).
+ *
+ * Kod alanına bakan bir denetim bu sınıfı ASLA göremez. Denetim artık önek
+ * DESENİNİ arıyor, literal kod değerlerini değil.
+ *
+ * ── NEDEN TAMAMI SİLİNMİYOR ────────────────────────────────────────────────
+ * Kodun kuyruğu ÖLÇÜDÜR ve gerçekten işe yarar: CNC-AK-63X75 → 63X75.
+ * Silinen kısım yalnız bizim önekimiz ve grup harflerimizdir (AK = arka kapak,
+ * PV = piston vidalı, ÇB = çelik boru) — ikisi de ürün adında zaten Türkçe
+ * olarak yazıyor, yani hiçbir bilgi kaybolmuyor:
+ *     "ARKA KAPAK BASİT TİP CNC-AK-63X75"  →  "ARKA KAPAK BASİT TİP 63X75"
+ *     "ÇELİK KEP CNC-ÇB 50X30K"            →  "ÇELİK KEP 50X30K"
+ *
+ * ÜRETİCİ kodları buraya GİRMEZ; onlar yayımlanır (bkz. lib/uretici-kod.ts).
+ * Bu liste yalnız BİZİM öneklerimizdir.
+ */
+const IC_ONEK = ['CNC', 'KASTAS', 'GDC', 'MUHT', 'MUH', 'SEL', 'TA']
+
+/** Önek + grup harfleri + (ölçü). Ölçü korunur, önek ve grup atılır. */
+const ONEK_OLCULU = new RegExp(
+  `(?<![\\p{L}\\p{N}])(?:${IC_ONEK.join('|')})(?:[.\\-][\\p{Lu}]{1,3})+[.\\- ]?(?=\\p{N})`,
+  'gu'
+)
+/** Ölçü kuyruğu olmayan tam kod: bütünüyle atılır. */
+const ONEK_TAM = new RegExp(
+  `(?<![\\p{L}\\p{N}])(?:${IC_ONEK.join('|')})[.\\-][\\p{L}\\p{N}./\\-]+`,
+  'gu'
+)
+
+/**
+ * Yayımlanacak ürün adını temizler. Yayımlanan HER ad bu huniden geçer —
+ * kategori tablosu ve llms-full.txt aynı fonksiyonu çağırır.
+ */
 export function urunAdiDuzelt(ad: string): string {
-  const t = ad.trim().replace(/\s+/g, ' ')
+  const t = ad
+    .replace(ONEK_OLCULU, '')
+    .replace(ONEK_TAM, '')
+    .trim()
+    .replace(/\s+/g, ' ')
   // Tamamı küçük harf girilmiş kayıtları başlık düzenine çevir; karışık olanlara dokunma.
   if (t === t.toLocaleLowerCase('tr')) {
     return t.replace(/(^|\s|\()([\p{L}])/gu, (_, ö, h) => ö + h.toLocaleUpperCase('tr'))

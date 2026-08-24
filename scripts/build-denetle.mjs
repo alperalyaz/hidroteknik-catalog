@@ -135,6 +135,47 @@ for (const kat of Object.values(JSON.parse(readFileSync('data/urunler.json', 'ut
 for (const marka of JSON.parse(readFileSync('data/markalar.json', 'utf8')))
   for (const o of marka.ornekler || []) if (o.kod?.trim()) icKodlar.add(o.kod.trim())
 
+/**
+ * ⚠ LİTERAL KOD ARAMAK YETMEZ — bu denetim tam da bu yüzden bir kez yalan söyledi.
+ *
+ * Yukarıdaki küme `u.kod` alanlarından kuruluyor. Ama kod göçünde yeni kod ERP'de
+ * ürün ADINA da yazılmıştı ve iki alan AYRI şemadaydı:
+ *     kod = "CNC.04.01.063X75"                     ← denetimin aradığı, canlıda YOK
+ *     ad  = "ARKA KAPAK BASİT TİP CNC-AK-63X75"    ← YAYIMLANAN, canlıda VAR
+ * Denetim aradığını bulamadı, temiz dedi; CNC-AK-63X75 ise üç sayfada ve
+ * llms-full.txt'te, üstelik JSON-LD `name`/`description` alanlarında yayındaydı
+ * (24.08.2026, canlı doğrulamada yakalandı).
+ *
+ * Ders: veri alanına bakan denetim, verinin BAŞKA bir alanına sızan aynı bilgiyi
+ * göremez. O yüzden artık ÖNEK DESENİ aranıyor — kodun nereden geldiği önemsiz.
+ *
+ * Ayraç hem nokta hem TİRE olmalı: eski şema `CNC.`, yenisi `CNC-PV-T-`. Yalnız
+ * noktayı arayan bir desen göçten sonraki kodların hiçbirini görmez.
+ */
+const IC_ONEK = [
+  'KASTAS', 'HF', 'PEM', 'PAK', 'AR', 'SEL', 'MUHT', 'MUH', 'HE', 'FR', 'ESM',
+  'HR', 'SMS', 'GATES', 'AK', 'LMC', 'SM', 'GM', 'CNC', 'TA',
+]
+// Önek + ayraç + kod gövdesi.
+//
+// Gövde AYRAÇ İÇEREBİLİR — ilk yazdığım desen bunu kaçırdı ve "yakaladı" diye
+// rapor ettiğim şey aslında hiçbir şey yakalamıyordu: `CNC-AK-63X75` kodunda
+// rakamdan ÖNCE bir tire daha var (`-AK-`) ve desen rakama kadar yalnız harf
+// ve rakam bekliyordu. Regresyon testi olmasa fark edilmezdi — süs denetim,
+// denetim olmamasından kötüdür çünkü güven verir.
+//
+// Rakam şartı gövdenin TAMAMINA bakılarak uygulanır (aşağıda, post-filtre):
+// "AK-" gibi bir kelime parçası tek başına alarm vermesin, "CNC-AK-63X75" versin.
+const IC_KOD_DESENI = new RegExp(
+  `(?<![\\p{L}\\p{N}._-])(?:${IC_ONEK.join('|')})[.-][\\p{L}\\p{N}./-]+`,
+  'gu'
+)
+// GDC istisnası: 1.086 kalemin HEPSİNİN kodu GDC- ile başlıyor, yani kodun
+// kendisi tedarikçiyi ele veriyor. Orada rakam şartı aranmaz.
+const GDC_DESENI = /(?<![\p{L}\p{N}._-])GDC-[\p{L}\p{N}./-]+/gu
+/** Eşleşmenin gerçekten kod olduğunu doğrular: içinde rakam geçmeli. */
+const kodMu = (m) => /\p{N}/u.test(m)
+
 for (const f of dosyalar) {
   const yol = '/' + f.slice(KOK.length + 1).replace(/\.html$/, '')
   const ham = readFileSync(f, 'utf8')
@@ -156,6 +197,8 @@ for (const f of dosyalar) {
   }
 
   for (const kod of icKodlar) if (ham.includes(kod)) icKod.push({ yol, kod })
+  for (const m of ham.matchAll(IC_KOD_DESENI)) if (kodMu(m[0])) icKod.push({ yol, kod: m[0] })
+  for (const m of ham.matchAll(GDC_DESENI)) icKod.push({ yol, kod: m[0] })
 
   const t = (ham.match(/<title>(.*?)<\/title>/s) || [])[1]
   if (t) {
@@ -364,6 +407,11 @@ for (const ad of ['llms.txt', 'llms-full.txt']) {
   for (const kod of icKodlar) {
     if (icerik.includes(kod)) duzMetin.push(`/${ad} — iç stok kodu ${kod}`)
   }
+  // Literal kodların yanında ÖNEK DESENİ de aranır — llms-full.txt kataloğun
+  // tam dökümü, yani ada gömülü bir kodun ulaşacağı en geniş yüzey orası.
+  for (const m of icerik.matchAll(IC_KOD_DESENI))
+    if (kodMu(m[0])) duzMetin.push(`/${ad} — iç kod deseni ${m[0]}`)
+  for (const m of icerik.matchAll(GDC_DESENI)) duzMetin.push(`/${ad} — GDC kodu ${m[0]}`)
   // Fiyat izi: "1.234,56 TL" gibi para biçimleri. Katalog fiyat yayımlamaz;
   // kaynak havuzu fiyat sütunları taşıdığı için bu denetim kalıcıdır.
   const para = icerik.match(/\d+[.,]\d{2}\s*(USD|EUR|TL|TRY|₺|\$|€)/i)

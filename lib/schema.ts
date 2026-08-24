@@ -1,4 +1,5 @@
 import { FIRMA, SITE_URL, ANA_SITE } from './site'
+import { urunAdiDuzelt } from './veri'
 import type { Kategori, Urun } from './veri'
 import { satirUreticiKodu } from './uretici-kod'
 import { tarihAlani } from './guncelleme'
@@ -82,12 +83,17 @@ export function kategoriSchema(k: Kategori, urunler: Urun[], url: string, lang: 
         position: i + 1,
         item: {
           '@type': 'Product',
-          name: u.ad,
+          // ⚠ HAM `u.ad` DEĞİL. Ürün adının içine iç stok kodu gömülü olabiliyor
+          // (kod göçü ERP'de adı da güncellemişti) ve JSON-LD'deki `name`/
+          // `description` tam da sayfada görünmeyen ama yayımlanan yüzeydir.
+          // Görünen tabloyu temizleyip burayı unutmak, sızıntıyı gizli hâle
+          // getirir — 24.08.2026'da tam olarak bu oldu.
+          name: urunAdiDuzelt(u.ad),
           // description ZORUNLU DEĞİL ama Google Merchant listings istiyor ve
           // eksikliğini Search Console raporluyor (02.08.2026). Metin uydurulmaz;
           // elimizdeki gerçek alanlardan kurulur ve sayfanın dilinde yazılır.
           description: METIN[lang as Dil].urunAciklama({
-            ad: u.ad,
+            ad: urunAdiDuzelt(u.ad),
             kategori: k.ad,
             marka: u.marka,
             olcu: u.model,
