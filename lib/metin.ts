@@ -162,6 +162,16 @@ export type Metin = {
   notRehber: string
   notMarka: string
   basYaklasim: string
+  tercihBas: string
+  tercih1Bas: string
+  tercih1Metin: (kalem: string, grup: string) => string
+  tercih1Etiket: string
+  tercih2Bas: string
+  tercih2Metin: string
+  tercih2Etiket: string
+  tercih3Bas: string
+  tercih3Metin: (kod: string) => string
+  tercih3Etiket: string
   yaklasim1Bas: string
   yaklasim1Metin: string
   yaklasim2Bas: string
@@ -376,6 +386,19 @@ export const METIN: Record<Dil, Metin> = {
     notRehber: 'Seçim ve ölçü alma üzerine kısa rehberler.',
     notMarka: 'Ürünün üzerinde yazan markalar.',
     basYaklasim: 'Bu katalog nasıl hazırlanıyor',
+    tercihBas: 'Neden Hidroteknik?',
+    tercih1Bas: 'Aradığınız ölçü büyük ihtimalle rafta',
+    tercih1Metin: (kalem, grup) =>
+      `${kalem} ayrı stok kalemi ${grup} ürün grubunda hazır bekliyor. Sızdırmazlıkta tek başına ${'5.030'} ölçü var — bir keçeyi ölçüsüyle arayan müşteri, çoğu zaman aynı gün alıp gidiyor.`,
+    tercih1Etiket: 'stoktaki kalem',
+    tercih2Bas: 'Hortum presleme yerinde, aynı gün',
+    tercih2Metin:
+      'Hidrolik hortum kendi atölyemizde hazırlanıyor: hortum kesiliyor, rakor takılıyor, presleniyor ve test ediliyor. Duran bir makine için dışarıdan hortum beklemek gerekmiyor.',
+    tercih2Etiket: 'kendi atölyemizde',
+    tercih3Bas: 'Üreticinin kendi kodunu yayımlıyoruz',
+    tercih3Metin: (kod) =>
+      `Sanayide ürün bizim stok kodumuzla değil üreticinin katalog koduyla aranır. Katalogda ${kod} üretici kodu yayımlı; elinizdeki kodu ya da ölçüyü yazın, karşılığını birlikte bulalım.`,
+    tercih3Etiket: 'yayımlanan üretici kodu',
     yaklasim1Bas: 'Sayfalar kendi kalem listemizden üretilir',
     yaklasim1Metin:
       'Her ürün grubunun sayfasındaki örnekler, stok kayıtlarımızda bulunan kalemlerden seçilir. Fiyat ve güncel bulunurluk katalogda yer almaz.',
@@ -558,6 +581,19 @@ export const METIN: Record<Dil, Metin> = {
     notRehber: 'Short guides on selection and taking measurements.',
     notMarka: 'The brands printed on the products themselves.',
     basYaklasim: 'How this catalogue is put together',
+    tercihBas: 'Why Hidroteknik?',
+    tercih1Bas: 'The size you need is probably on the shelf',
+    tercih1Metin: (kalem, grup) =>
+      `${kalem} separate stock items across ${grup} product groups, ready now. Sealing alone accounts for over 5,000 sizes — a customer who comes in with a seal measurement usually leaves with it the same day.`,
+    tercih1Etiket: 'items in stock',
+    tercih2Bas: 'Hose crimping on site, same day',
+    tercih2Metin:
+      'Hydraulic hose is made up in our own workshop: cut, fitted, crimped and tested. A machine standing idle does not have to wait for a hose from somewhere else.',
+    tercih2Etiket: 'in our own workshop',
+    tercih3Bas: "We publish the manufacturer's own part number",
+    tercih3Metin: (kod) =>
+      `In the field a part is searched for by the manufacturer's catalogue number, not by our stock code. ${kod} manufacturer part numbers are published here; send us the code or the measurement you have and we will find its match together.`,
+    tercih3Etiket: 'published part numbers',
     yaklasim1Bas: 'Pages are generated from our own item list',
     yaklasim1Metin:
       'The examples on each product-group page are drawn from items in our stock records. Prices and current availability are not published in the catalogue.',
@@ -741,6 +777,19 @@ export const METIN: Record<Dil, Metin> = {
     notRehber: 'Краткие руководства по подбору и снятию размеров.',
     notMarka: 'Бренды, нанесённые на саму продукцию.',
     basYaklasim: 'Как составлен этот каталог',
+    tercihBas: 'Почему Hidroteknik?',
+    tercih1Bas: 'Нужный размер, скорее всего, есть на складе',
+    tercih1Metin: (kalem, grup) =>
+      `${kalem} отдельных складских позиций в ${grup} товарных группах — в наличии сейчас. Только на уплотнения приходится более 5 000 размеров: клиент, пришедший с замером, обычно уезжает с деталью в тот же день.`,
+    tercih1Etiket: 'позиций на складе',
+    tercih2Bas: 'Обжим рукавов у нас, в тот же день',
+    tercih2Metin:
+      'Гидравлические рукава изготавливаются в собственной мастерской: обрезка, установка фитинга, обжим и проверка. Простаивающей машине не нужно ждать рукав со стороны.',
+    tercih2Etiket: 'в собственной мастерской',
+    tercih3Bas: 'Публикуем каталожный код самого производителя',
+    tercih3Metin: (kod) =>
+      `На практике деталь ищут по каталожному коду производителя, а не по нашему складскому. В каталоге опубликовано ${kod} каталожных кодов производителей: пришлите свой код или замер — подберём соответствие вместе.`,
+    tercih3Etiket: 'опубликованных кодов',
     yaklasim1Bas: 'Страницы формируются из нашего перечня позиций',
     yaklasim1Metin:
       'Примеры на странице каждой товарной группы взяты из позиций нашего складского учёта. Цены и текущее наличие в каталоге не публикуются.',

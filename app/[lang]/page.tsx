@@ -8,6 +8,7 @@ import { REHBERLER } from '@/lib/rehber'
 import { MARKALAR } from '@/lib/marka'
 import { PROFILLER, profilSlug, yerMetni } from '@/lib/profil'
 import { SILINDIR_PARCALARI, parcaAdi } from '@/lib/silindir-parca'
+import { URETICI_KODLARI } from '@/lib/uretici-kod'
 import { anaSayfaSchema, jsonLd } from '@/lib/schema'
 
 const BASLIK: Record<Dil, string> = {
@@ -50,6 +51,11 @@ export default async function KatalogAnaSayfa({ params }: { params: Promise<{ la
   // eklendiği gün sabit yazılmış bir sayı üç dilde birden yalan söylerdi ve
   // `npm run denetle` bunu göremezdi.
   const bosProfil = PROFILLER.filter((p) => !p.ad[lang]).length
+  // Yayımlanan üretici kodu sayısı — veriden sayılır, elle yazılmaz.
+  const toplamUreticiKodu = URETICI_KODLARI.reduce(
+    (a, g) => a + g.seriler.reduce((b, s) => b + s.kodlar.length, 0),
+    0
+  )
 
   const SAYAC = [
     { hedef: 'urun-gruplari', deger: kategoriler.length, etiket: m.seritGrup },
@@ -237,27 +243,46 @@ export default async function KatalogAnaSayfa({ params }: { params: Promise<{ la
           RU'da sayı ismin çekimini yönetir. Değer ayrı <dt> olunca hiçbir dilde
           çekim kırılmaz — sayı veriden türetilse bile.
         */}
+        {/* NEDEN HİDROTEKNİK
+            Metodoloji bölümünün ("Bu katalog nasıl hazırlanıyor") yerini aldı:
+            oraya bakan kullanıcıya katalogun nasıl üretildiğini değil, neden
+            buradan alması gerektiğini söylemek daha işe yarıyor.
+
+            Her kartın sayısı VERİDEN türetilir, kopyaya gömülmez — 30. kategori
+            eklendiği gün sabit yazılmış bir sayı üç dilde birden yalan söyler
+            ve hiçbir denetim bunu göremez. */}
         <section>
           <div className="bolum-bas">
-            <h2>{m.basYaklasim}</h2>
+            <h2>{m.tercihBas}</h2>
           </div>
           <div className="yaklasim">
             <div className="yaklasim-hucre">
-              <h3>{m.yaklasim1Bas}</h3>
-              <p>{m.yaklasim1Metin}</p>
-            </div>
-            <div className="yaklasim-hucre">
-              <h3>{m.yaklasim2Bas}</h3>
-              <p>{m.yaklasim2Metin}</p>
-            </div>
-            <div className="yaklasim-hucre">
-              <h3>{m.yaklasim3Bas}</h3>
-              <p>{m.yaklasim3Metin}</p>
+              <h3>{m.tercih1Bas}</h3>
+              <p>
+                {m.tercih1Metin(
+                  sayiFormat(toplamKalem, lang),
+                  sayiFormat(kategoriler.length, lang)
+                )}
+              </p>
               <dl className="yaklasim-olcu">
-                <dt>
-                  {sayiFormat(bosProfil, lang)} / {sayiFormat(PROFILLER.length, lang)}
-                </dt>
-                <dd>{m.yaklasim3Etiket}</dd>
+                <dt>{sayiFormat(toplamKalem, lang)}</dt>
+                <dd>{m.tercih1Etiket}</dd>
+              </dl>
+            </div>
+            <div className="yaklasim-hucre">
+              <h3>{m.tercih2Bas}</h3>
+              <p>{m.tercih2Metin}</p>
+              <dl className="yaklasim-olcu">
+                <dt>1984</dt>
+                <dd>{m.tercih2Etiket}</dd>
+              </dl>
+            </div>
+            <div className="yaklasim-hucre">
+              <h3>{m.tercih3Bas}</h3>
+              <p>{m.tercih3Metin(sayiFormat(toplamUreticiKodu, lang))}</p>
+              <dl className="yaklasim-olcu">
+                <dt>{sayiFormat(toplamUreticiKodu, lang)}</dt>
+                <dd>{m.tercih3Etiket}</dd>
               </dl>
             </div>
           </div>
