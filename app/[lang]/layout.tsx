@@ -145,16 +145,23 @@ export default async function DilLayout({
                   <li>
                     <a href={`mailto:${FIRMA.epostaSatis}`}>{FIRMA.epostaSatis}</a>
                   </li>
-                  <li>
-                    {m.haftaIci} {FIRMA.saatler.haftaIci}
-                  </li>
-                  <li>
-                    {m.cumartesi} {FIRMA.saatler.cumartesi}
-                  </li>
-                  <li>
-                    {FIRMA.adres.ilce} / {FIRMA.adres.il}
-                  </li>
                 </ul>
+                {/*
+                  Saatler ve ilçe listeden ÇIKARILDI, silinmedi. Link kardeşleriyle
+                  aynı <ul> içinde, aynı madde ritminde duruyorlardı; alt çizgi
+                  kalkınca tıklanabilir olanla olmayan tamamen aynı görünecekti.
+                */}
+                <div className="footer-bilgi">
+                  <span>
+                    {m.haftaIci} {FIRMA.saatler.haftaIci}
+                  </span>
+                  <span>
+                    {m.cumartesi} {FIRMA.saatler.cumartesi}
+                  </span>
+                  <span>
+                    {FIRMA.adres.ilce} / {FIRMA.adres.il}
+                  </span>
+                </div>
               </div>
               <div>
                 <h3>{m.kurumsal}</h3>

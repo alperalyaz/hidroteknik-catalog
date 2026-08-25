@@ -143,11 +143,24 @@ td.model { font-family: var(--mono); font-size: 0.78rem; color: var(--murekkep-2
 
 /* ── alt bilgi ── */
 footer { background: var(--murekkep); color: #aebbc7; padding: 36px 0 44px; font-size: 0.9rem; }
-footer a { color: #cddcf0; }
+
+/* Footer'da 52 iç link alt alta duruyor. Tarayıcının varsayılan alt çizgisi düz
+   metinde okumaya yardım eder; böyle bir listede ise her satıra ikinci bir yatay
+   çizgi ekler ve blok bir yazı yığını değil bir tel örgü gibi görünür. Üst bar
+   (.dil-degistirici) ve kırıntı yolu (.kirinti) zaten aynı deseni kullanıyor:
+   çizgi yalnız imleç üzerindeyken. Link SAYISI değişmiyor — hepsi yerinde. */
+footer a { color: #cddcf0; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+
 .footer-ic { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 26px; }
 footer b { color: #fff; display: block; margin-bottom: 8px; font-size: 0.95rem; }
 footer ul { list-style: none; padding: 0; margin: 0; }
-footer li { margin: 4px 0; }
+
+/* Satır içi 1.35, satırlar arası 5+5px. Uzun kategori adları ("Hortum Eki,
+   Spiral Koruma ve Hortum Kanalı") iki satıra sarıyor; alt çizgi kalkınca
+   sarmanın nerede bittiğini yalnız bu iki boşluğun farkı söylüyor —
+   madde içi ~19px, maddeler arası ~29px. */
+footer li { margin: 5px 0; line-height: 1.35; }
 .footer-alt { border-top: 1px solid #2a3742; margin-top: 28px; padding-top: 18px; font-size: 0.82rem; color: #7d8b98; }
 
 @media (prefers-reduced-motion: reduce) {
@@ -257,9 +270,32 @@ footer li { margin: 4px 0; }
   font-size: 0.82rem; color: #7d8b98;
 }
 .footer-logo { height: 30px; width: auto; opacity: 0.95; }
+/* min-height iki satırlıktır ve ZORUNLU. Sütun genişliği ~243px, mono 0.7rem'de
+   satır başına ~31 karakter alıyor; "Hidrolik Silindir Yedek Parçaları" (32) tek
+   başına sarıyor ve o sütunun ilk linkini bir satır aşağı itiyordu — dört sütunun
+   ilk maddeleri farklı yükseklikte başlayınca bant hizasız görünüyor. Sabit
+   yükseklik hepsini aynı taban çizgisine oturtur ve hangi başlığın hangi dilde
+   sardığından bağımsız çalışır (EN "Hydraulic Cylinder Spare Parts" 30, RU
+   "Запасные части гидроцилиндров" 29 — üçü de en fazla iki satır). */
 footer h3 {
   margin: 0 0 8px; font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.09em;
-  color: var(--amber); font-weight: 600;
+  color: var(--amber); font-weight: 600; line-height: 1.45; min-height: 2.9em;
+}
+
+/* Çalışma saatleri ve ilçe LİNK DEĞİL. Aynı <ul> içinde link kardeşleriyle
+   birebir aynı görünüyorlardı; alt çizgi kalkınca fark büsbütün kapanacaktı,
+   yani tıklanabilir olanla olmayan ayırt edilemeyecekti. Kendi bloğuna alındı. */
+.footer-bilgi { margin-top: 12px; font-size: 0.84rem; line-height: 1.7; color: #7d8b98; }
+.footer-bilgi span { display: block; }
+
+/* Tek sütuna düşen genişlikte min-height'ın karşılığı yok: yan yana duran sütun
+   kalmadığı için hizalanacak bir şey de yok, geriye yalnız sekiz başlığın altına
+   birer boş satır eklemesi kalıyor (~128px fazladan kaydırma).
+   Eşik hesapla bulundu, elle seçilmedi: .sarmal içi = viewport − 40, iki sütun
+   190×2 + 22 gap = 402 istiyor, yani 442'den dar ekran tek sütundur. minmax()
+   veya gap değişirse bu sayı da değişmeli. */
+@media (max-width: 441px) {
+  footer h3 { min-height: 0; }
 }
 
 /* Hero düğmeleri beyaz zemin üzerinde durur; .btn-birincil/.btn-ikincil ise
