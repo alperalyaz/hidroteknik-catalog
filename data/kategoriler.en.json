@@ -435,7 +435,7 @@
   "ad": "Hydraulic Cylinder Manufacturing",
   "h1": "Hydraulic Cylinder Manufacturing, Overhaul and Spare Parts",
   "ozet": "Custom hydraulic cylinder manufacturing and overhaul, built to your dimensions. Rear covers, steel caps, pistons, gland bushings and wear rings are machined in-house. Including refuse truck and municipal vehicle hydraulics, from delivered work.",
-  "giris": "A hydraulic cylinder is the component that converts the energy of pressurized fluid into linear motion and force. The force it produces follows a simple relationship: force equals pressure times piston area. In the push direction the full piston area is active; in the pull direction the rod cross-section reduces the effective area, so the force obtained at the same pressure is smaller. When replacing a cylinder, it's necessary to look not only at the bore diameter but also at the rod diameter and mounting type.\n\nWe don't sell this product off the shelf — we manufacture it to your dimensions. Parts such as rear covers, cast and steel caps, threaded and bearing-mounted pistons, gland bushings and wear rings are machined in our own shop; this means we can also produce the equivalent of a non-standard length, a special mounting, or a cylinder that is no longer available.\n\nFor an overhaul, the cylinder is first disassembled and measured: rod wear, tube bore diameter and seal grooves are checked. Most failures don't require replacing the entire cylinder — they're resolved with a seal kit, a gland bushing, or a rod replacement. Bring in the cylinder you have; you don't need to know its dimensions.\n\nA concrete example of what we build: one delivered batch comprised 13 single-acting cylinders for refuse collection vehicle hydraulics — eight distinct bore/rod combinations from 50 × 30 × 160 up to 90 × 60 × 740. The list contains strokes such as 369 and 590 mm, and that is not incidental: stroke follows the vehicle's kinematics, it is not picked from a catalogue. One item was built as a two-stage 80 × 40 body (200 + 200 mm), so a single cylinder delivers two separate movements in sequence. Municipal vehicles, tipper bodies, compaction bodies and lifting gear are the typical field for this work.",
+  "giris": "A hydraulic cylinder is the component that converts the energy of pressurized fluid into linear motion and force. The force it produces follows a simple relationship: force equals pressure times piston area. In the push direction the full piston area is active; in the pull direction the rod cross-section reduces the effective area, so the force obtained at the same pressure is smaller. When replacing a cylinder, it's necessary to look not only at the bore diameter but also at the rod diameter and mounting type.\n\nWe don't sell this product off the shelf — we manufacture it to your dimensions. Parts such as rear covers, cast and steel caps, threaded and bearing-mounted pistons, gland bushings and wear rings are machined in our own shop; this means we can also produce the equivalent of a non-standard length, a special mounting, or a cylinder that is no longer available.\n\nFor an overhaul, the cylinder is first disassembled and measured: rod wear, tube bore diameter and seal grooves are checked. Most failures don't require replacing the entire cylinder — they're resolved with a seal kit, a gland bushing, or a rod replacement. Bring in the cylinder you have; you don't need to know its dimensions.\n\nA concrete example of what we build: one delivered batch comprised 13 single-acting cylinders for refuse collection vehicle hydraulics — eight distinct bore/rod combinations from 50 × 30 × 160 up to 90 × 60 × 740. The list contains strokes such as 369 and 590 mm, and that is not incidental: stroke follows the vehicle's kinematics, it is not picked from a catalogue. One item was built as a two-stage 80 × 40 body (200 + 200 mm), so a single cylinder delivers two separate movements in sequence. Municipal vehicles, tipper bodies, compaction bodies and lifting gear are the typical field for this work.\n\nThe working figures on our manufacturing drawings are these: 200 bar continuous, 250 bar peak, service temperature −30 °C to +80 °C, top speed 0.5 m/s. Force is always quoted at continuous pressure; peak is momentary and selection is not based on it. The port is G3/8 on 50–80 mm bores and G1/2 on 100 mm. Where rod end and rear eye are built with spherical bearings, the eye bore grows with the bore — ø25 on a 50 mm body, ø30 on 63, ø40 on 80 and ø50 on 100.",
   "sss": [
    {
     "s": "Do you have ready-made hydraulic cylinders in stock?",
@@ -452,6 +452,10 @@
    {
     "s": "How is cylinder force calculated?",
     "c": "Push force = pressure × piston area. For example, a 63 mm diameter piston at 160 bar produces approximately 5 tons of push force. In the pull direction, force decreases because the rod cross-section reduces the effective area; with a 36 mm rod on the same cylinder, it drops to approximately 3.4 tons. You can use calculate.hidroteknik.com.tr to run the calculation."
+   },
+   {
+    "s": "What pressure do your cylinders run at?",
+    "c": "Our manufacturing drawings give 200 bar continuous and 250 bar peak. Force figures are calculated at the continuous pressure — peak is a momentary limit and selection is not based on it. Service temperature is −30 °C to +80 °C and maximum piston speed 0.5 m/s."
    },
    {
     "s": "Do you make cylinders for refuse trucks and municipal vehicles?",
@@ -477,73 +481,73 @@
   ],
   "tablolar": [
    {
-    "baslik": "Cylinder sizes we manufacture and the force they deliver",
+    "baslik": "Cylinder sizes we manufacture and the force they give at 200 bar",
     "sutunlar": [
      "Bore × rod (mm)",
      "Stroke (mm)",
-     "Push 160 bar (kN)",
-     "Push 250 bar (kN)",
-     "Pull 250 bar (kN)"
+     "Push (kN)",
+     "Pull (kN)",
+     "Port"
     ],
     "satirlar": [
      [
       "50 × 30",
       "160",
-      "31.4",
-      "49.1",
-      "31.4"
+      "39.3",
+      "25.1",
+      "—"
      ],
      [
       "50 × 32",
       "100–400",
-      "31.4",
-      "49.1",
-      "29.0"
+      "39.3",
+      "23.2",
+      "G3/8"
      ],
      [
       "63 × 35",
       "369",
-      "49.9",
-      "77.9",
-      "53.9"
+      "62.3",
+      "43.1",
+      "—"
      ],
      [
       "63 × 40",
       "320–630",
-      "49.9",
-      "77.9",
-      "46.5"
+      "62.3",
+      "37.2",
+      "G3/8"
      ],
      [
       "80 × 40",
       "400",
-      "80.4",
-      "125.7",
-      "94.2"
+      "100.5",
+      "75.4",
+      "G3/8"
      ],
      [
       "90 × 50",
       "590",
-      "101.8",
-      "159.0",
-      "110.0"
+      "127.2",
+      "88.0",
+      "—"
      ],
      [
       "90 × 60",
       "430–740",
-      "101.8",
-      "159.0",
-      "88.4"
+      "127.2",
+      "70.7",
+      "—"
      ],
      [
       "100 × 50",
       "500",
-      "125.7",
-      "196.3",
-      "147.3"
+      "157.1",
+      "117.8",
+      "G1/2"
      ]
     ],
-    "not": "These sizes come from approved manufacturing drawings — not a catalogue range but combinations actually built. The stroke column is the span produced so far, not a limit; since everything is made to measure, intermediate and longer strokes are possible. Force = pressure × area; on the pull stroke the rod section is subtracted. 160 bar is typical in mobile hydraulics, 250 bar in fixed installations."
+    "not": "Sizes come from approved manufacturing drawings — not a catalogue range but combinations actually built. Working figures on those drawings: 200 bar continuous, 250 bar peak, −30 °C…+80 °C, top speed 0.5 m/s. Forces are quoted at CONTINUOUS pressure; peak is momentary and selection is not based on it. On the pull stroke the rod section is subtracted. Port size is listed only where a drawing confirms it. The stroke column is the span built so far, not a limit — everything is made to measure."
    }
   ]
  },

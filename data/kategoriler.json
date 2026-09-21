@@ -526,7 +526,7 @@
   "ad": "Hidrolik Silindir İmalatı",
   "h1": "Hidrolik Silindir İmalatı, Revizyonu ve Yedek Parçaları",
   "ozet": "Ölçüye göre hidrolik silindir imalatı ve revizyonu. Arka kapak, çelik kep, piston, boğaz takozu ve bilezik kendi tezgâhlarımızda işlenir. Çöp kamyonu ve belediye aracı hidroliği dâhil, teslim edilmiş imalat.",
-  "giris": "Hidrolik silindir, basınçlı akışkanın enerjisini doğrusal harekete ve kuvvete çeviren elemandır. Ürettiği kuvvet basit bir ilişkiye dayanır: kuvvet, basınç ile piston alanının çarpımıdır. İtme yönünde tam piston alanı çalışır; çekme yönünde mil kesiti düştüğü için aynı basınçta elde edilen kuvvet daha küçüktür. Bir silindiri değiştirirken yalnız çapa değil, mil çapına ve bağlantı tipine de bakmak gerekir.\n\nBiz bu ürünü raftan satmıyoruz — ölçüye göre imal ediyoruz. Arka kapak, döküm ve çelik kep, vidalı ve yataklamalı piston, boğaz takozu ve bilezik gibi parçalar kendi tezgâhlarımızda işlenir; bu yüzden standart dışı boy, özel bağlantı veya artık tedarik edilemeyen bir silindirin muadili de yapılabilir.\n\nRevizyonda önce sökülüp ölçü alınır: mil aşınması, boru iç çapı ve keçe yuvaları kontrol edilir. Çoğu arıza silindirin tamamını değiştirmeyi gerektirmez; keçe takımı, boğaz takozu veya mil değişimiyle çözülür. Elinizdeki silindiri getirin, ölçüsünü bilmenize gerek yok.\n\nNe ürettiğimize dair somut bir örnek: teslim edilen bir partide çöp kamyonu hidroliği için 13 kalem tek etkili silindir imal edildi — 50 × 30 × 160'tan 90 × 60 × 740'a kadar sekiz ayrı çap/mil kombinasyonu. Listede 369 ve 590 mm gibi yuvarlak olmayan stroklar var ve bu tesadüf değil: strok aracın kinematiğinden çıkar, katalogdan seçilmez. Bir kalemde 80 × 40 gövde çift kademeli yapıldı (200 + 200 mm), yani tek silindir iki ayrı hareketi sırayla veriyor. Belediye araçları, damper, sıkıştırmalı gövde ve kaldırma düzeneği bu işin tipik kullanım alanıdır.",
+  "giris": "Hidrolik silindir, basınçlı akışkanın enerjisini doğrusal harekete ve kuvvete çeviren elemandır. Ürettiği kuvvet basit bir ilişkiye dayanır: kuvvet, basınç ile piston alanının çarpımıdır. İtme yönünde tam piston alanı çalışır; çekme yönünde mil kesiti düştüğü için aynı basınçta elde edilen kuvvet daha küçüktür. Bir silindiri değiştirirken yalnız çapa değil, mil çapına ve bağlantı tipine de bakmak gerekir.\n\nBiz bu ürünü raftan satmıyoruz — ölçüye göre imal ediyoruz. Arka kapak, döküm ve çelik kep, vidalı ve yataklamalı piston, boğaz takozu ve bilezik gibi parçalar kendi tezgâhlarımızda işlenir; bu yüzden standart dışı boy, özel bağlantı veya artık tedarik edilemeyen bir silindirin muadili de yapılabilir.\n\nRevizyonda önce sökülüp ölçü alınır: mil aşınması, boru iç çapı ve keçe yuvaları kontrol edilir. Çoğu arıza silindirin tamamını değiştirmeyi gerektirmez; keçe takımı, boğaz takozu veya mil değişimiyle çözülür. Elinizdeki silindiri getirin, ölçüsünü bilmenize gerek yok.\n\nNe ürettiğimize dair somut bir örnek: teslim edilen bir partide çöp kamyonu hidroliği için 13 kalem tek etkili silindir imal edildi — 50 × 30 × 160'tan 90 × 60 × 740'a kadar sekiz ayrı çap/mil kombinasyonu. Listede 369 ve 590 mm gibi yuvarlak olmayan stroklar var ve bu tesadüf değil: strok aracın kinematiğinden çıkar, katalogdan seçilmez. Bir kalemde 80 × 40 gövde çift kademeli yapıldı (200 + 200 mm), yani tek silindir iki ayrı hareketi sırayla veriyor. Belediye araçları, damper, sıkıştırmalı gövde ve kaldırma düzeneği bu işin tipik kullanım alanıdır.\n\nİmalat çizimlerimizdeki çalışma değerleri şunlardır: sürekli 200 bar, tepe 250 bar, çalışma sıcaklığı −30 °C ile +80 °C arası, azami hız 0,5 m/s. Kuvvet daima sürekli basınçta verilir; tepe basıncı anlıktır ve seçim ona göre yapılmaz. Bağlantı ağzı 50–80 mm çaplarda G3/8, 100 mm'de G1/2'dir. Mil ucu ve arka göz mafsallı yapıldığında göz deliği çapla birlikte büyür — 50 mm gövdede ø25, 63'te ø30, 80'de ø40, 100'de ø50.",
   "eslesme": "",
   "haric": "[İIiı]MALAT|REV[İIiı]ZYON|DEĞ[İIiı]Ş[İIiı]M|TAM[İIiı]R|MONTAJ|[İIiı]ŞÇ[İIiı]L[İIiı]K|BAK[İIiı]M",
   "eslesmeKod": "^CNC[.-]",
@@ -546,6 +546,10 @@
    {
     "s": "Silindirin kuvveti nasıl hesaplanır?",
     "c": "İtme kuvveti = basınç × piston alanı. Örneğin 63 mm çaplı bir pistonda 160 bar ile yaklaşık 5 ton itme elde edilir. Çekmede mil kesiti düştüğü için kuvvet azalır; 36 mm mil ile aynı silindirde yaklaşık 3,4 tona iner. Hesaplama için hesapla.hidroteknik.com.tr adresini kullanabilirsiniz."
+   },
+   {
+    "s": "Silindirleriniz kaç bar çalışır?",
+    "c": "İmalat çizimlerimizde sürekli çalışma basıncı 200 bar, tepe basıncı 250 bar olarak verilir. Kuvvet hesapları sürekli basınç üzerinden yapılır — tepe basıncı anlık bir sınırdır, seçim ona göre yapılmaz. Sıcaklık aralığı −30 °C ile +80 °C, azami piston hızı 0,5 m/s'dir."
    },
    {
     "s": "Çöp kamyonu ve belediye aracı silindiri yapıyor musunuz?",
@@ -574,73 +578,73 @@
   ],
   "tablolar": [
    {
-    "baslik": "İmal ettiğimiz silindir ölçüleri ve verdikleri kuvvet",
+    "baslik": "İmal ettiğimiz silindir ölçüleri ve 200 bar'da verdikleri kuvvet",
     "sutunlar": [
      "Çap × mil (mm)",
      "Strok (mm)",
-     "İtme 160 bar (kN)",
-     "İtme 250 bar (kN)",
-     "Çekme 250 bar (kN)"
+     "İtme (kN)",
+     "Çekme (kN)",
+     "Bağlantı"
     ],
     "satirlar": [
      [
       "50 × 30",
       "160",
-      "31,4",
-      "49,1",
-      "31,4"
+      "39,3",
+      "25,1",
+      "—"
      ],
      [
       "50 × 32",
       "100–400",
-      "31,4",
-      "49,1",
-      "29,0"
+      "39,3",
+      "23,2",
+      "G3/8"
      ],
      [
       "63 × 35",
       "369",
-      "49,9",
-      "77,9",
-      "53,9"
+      "62,3",
+      "43,1",
+      "—"
      ],
      [
       "63 × 40",
       "320–630",
-      "49,9",
-      "77,9",
-      "46,5"
+      "62,3",
+      "37,2",
+      "G3/8"
      ],
      [
       "80 × 40",
       "400",
-      "80,4",
-      "125,7",
-      "94,2"
+      "100,5",
+      "75,4",
+      "G3/8"
      ],
      [
       "90 × 50",
       "590",
-      "101,8",
-      "159,0",
-      "110,0"
+      "127,2",
+      "88,0",
+      "—"
      ],
      [
       "90 × 60",
       "430–740",
-      "101,8",
-      "159,0",
-      "88,4"
+      "127,2",
+      "70,7",
+      "—"
      ],
      [
       "100 × 50",
       "500",
-      "125,7",
-      "196,3",
-      "147,3"
+      "157,1",
+      "117,8",
+      "G1/2"
      ]
     ],
-    "not": "Tablodaki ölçüler onaylanmış imalat çizimlerinden alınmıştır — katalog ölçüsü değil, gerçekten ürettiğimiz kombinasyonlar. Strok sütunu bugüne kadar yapılan aralıktır, sınır değildir; ölçüye göre imalat yapıldığı için ara ve üst değerler de mümkündür. Kuvvet = basınç × alan; çekmede mil kesiti alandan düşer. 160 bar mobil hidrolikte, 250 bar sabit tesiste tipik çalışma basıncıdır."
+    "not": "Ölçüler onaylanmış imalat çizimlerinden alınmıştır — katalog aralığı değil, gerçekten ürettiğimiz kombinasyonlar. Çizimlerdeki çalışma değerleri: sürekli 200 bar, tepe 250 bar, −30 °C…+80 °C, azami hız 0,5 m/s. Kuvvetler SÜREKLİ basınçta verilir; tepe basıncı anlıktır ve seçim ona göre yapılmaz. Çekmede mil kesiti alandan düşer. Bağlantı ölçüsü yalnız çizimden doğrulanabilen satırlarda yazılıdır. Strok sütunu bugüne kadar yapılan aralıktır, sınır değildir — imalat ölçüye göredir."
    }
   ]
  },

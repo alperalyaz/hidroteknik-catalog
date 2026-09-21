@@ -96,13 +96,34 @@ const DIS = [
  */
 const SILINDIR_IMALAT = [
   { cap: 50, mil: 30, strok: '160' },
-  { cap: 50, mil: 32, strok: '100–400' },
+  { cap: 50, mil: 32, strok: '100–400', port: 'G3/8' },
   { cap: 63, mil: 35, strok: '369' },
-  { cap: 63, mil: 40, strok: '320–630' },
-  { cap: 80, mil: 40, strok: '400' },
+  { cap: 63, mil: 40, strok: '320–630', port: 'G3/8' },
+  { cap: 80, mil: 40, strok: '400', port: 'G3/8' },
   { cap: 90, mil: 50, strok: '590' },
   { cap: 90, mil: 60, strok: '430–740' },
-  { cap: 100, mil: 50, strok: '500' },
+  { cap: 100, mil: 50, strok: '500', port: 'G1/2' },
+]
+
+/**
+ * ÇALIŞMA BASINCI imalat çizimlerinden okundu, varsayılmadı: dört çizimin
+ * dördünde de "Continuous pressure 200 bar · Peak pressure 250 bar" yazıyor.
+ * Kuvvetler SÜREKLİ basınçta verilir — tepe basıncı anlık, seçim ona göre
+ * yapılmaz.
+ */
+const SUREKLI_BAR = 200
+const TEPE_BAR = 250
+
+/**
+ * REGRESYON: hesabımız çizimlerin kendi yazdığı kuvvetle tutmalı.
+ * Dört çizim gözle okundu; buradaki değerler onlardan alındı.
+ * Tutmazsa üretim DURUR — yanlış sayı taşıyan tablo, tablo olmamasından kötü.
+ */
+const CIZIM_DOGRULAMA = [
+  { cap: 50, mil: 32, itme: 39.2, cekme: 23.17 },
+  { cap: 63, mil: 40, itme: 62.3, cekme: 41.4 },
+  { cap: 80, mil: 40, itme: 100.4, cekme: 75.4 },
+  { cap: 100, mil: 50, itme: 157, cekme: 118 },
 ]
 
 const alan = (d) => (Math.PI * d * d) / 4
@@ -330,53 +351,79 @@ function tabloDis(dil) {
 
 const METIN_IMALAT = {
   tr: {
-    baslik: 'İmal ettiğimiz silindir ölçüleri ve verdikleri kuvvet',
-    sutunlar: ['Çap × mil (mm)', 'Strok (mm)', 'İtme 160 bar (kN)', 'İtme 250 bar (kN)', 'Çekme 250 bar (kN)'],
+    baslik: `İmal ettiğimiz silindir ölçüleri ve ${SUREKLI_BAR} bar'da verdikleri kuvvet`,
+    sutunlar: ['Çap × mil (mm)', 'Strok (mm)', 'İtme (kN)', 'Çekme (kN)', 'Bağlantı'],
     not:
-      'Tablodaki ölçüler onaylanmış imalat çizimlerinden alınmıştır — katalog ölçüsü ' +
-      'değil, gerçekten ürettiğimiz kombinasyonlar. Strok sütunu bugüne kadar yapılan ' +
-      'aralıktır, sınır değildir; ölçüye göre imalat yapıldığı için ara ve üst değerler ' +
-      'de mümkündür. Kuvvet = basınç × alan; çekmede mil kesiti alandan düşer. ' +
-      '160 bar mobil hidrolikte, 250 bar sabit tesiste tipik çalışma basıncıdır.',
+      `Ölçüler onaylanmış imalat çizimlerinden alınmıştır — katalog aralığı değil, ` +
+      `gerçekten ürettiğimiz kombinasyonlar. Çizimlerdeki çalışma değerleri: sürekli ` +
+      `${SUREKLI_BAR} bar, tepe ${TEPE_BAR} bar, −30 °C…+80 °C, azami hız 0,5 m/s. ` +
+      `Kuvvetler SÜREKLİ basınçta verilir; tepe basıncı anlıktır ve seçim ona göre ` +
+      `yapılmaz. Çekmede mil kesiti alandan düşer. Bağlantı ölçüsü yalnız çizimden ` +
+      `doğrulanabilen satırlarda yazılıdır. Strok sütunu bugüne kadar yapılan aralıktır, ` +
+      `sınır değildir — imalat ölçüye göredir.`,
   },
   en: {
-    baslik: 'Cylinder sizes we manufacture and the force they deliver',
-    sutunlar: ['Bore × rod (mm)', 'Stroke (mm)', 'Push 160 bar (kN)', 'Push 250 bar (kN)', 'Pull 250 bar (kN)'],
+    baslik: `Cylinder sizes we manufacture and the force they give at ${SUREKLI_BAR} bar`,
+    sutunlar: ['Bore × rod (mm)', 'Stroke (mm)', 'Push (kN)', 'Pull (kN)', 'Port'],
     not:
-      'These sizes come from approved manufacturing drawings — not a catalogue range but ' +
-      'combinations actually built. The stroke column is the span produced so far, not a ' +
-      'limit; since everything is made to measure, intermediate and longer strokes are ' +
-      'possible. Force = pressure × area; on the pull stroke the rod section is subtracted. ' +
-      '160 bar is typical in mobile hydraulics, 250 bar in fixed installations.',
+      `Sizes come from approved manufacturing drawings — not a catalogue range but ` +
+      `combinations actually built. Working figures on those drawings: ${SUREKLI_BAR} bar ` +
+      `continuous, ${TEPE_BAR} bar peak, −30 °C…+80 °C, top speed 0.5 m/s. Forces are ` +
+      `quoted at CONTINUOUS pressure; peak is momentary and selection is not based on it. ` +
+      `On the pull stroke the rod section is subtracted. Port size is listed only where a ` +
+      `drawing confirms it. The stroke column is the span built so far, not a limit — ` +
+      `everything is made to measure.`,
   },
   ru: {
-    baslik: 'Типоразмеры изготавливаемых цилиндров и развиваемое усилие',
-    sutunlar: ['Гильза × шток (мм)', 'Ход (мм)', 'Толкание 160 бар (кН)', 'Толкание 250 бар (кН)', 'Втягивание 250 бар (кН)'],
+    baslik: `Типоразмеры изготавливаемых цилиндров и усилие при ${SUREKLI_BAR} бар`,
+    sutunlar: ['Гильза × шток (мм)', 'Ход (мм)', 'Толкание (кН)', 'Втягивание (кН)', 'Присоединение'],
     not:
-      'Размеры взяты из согласованных производственных чертежей — это не каталожный ряд, ' +
-      'а фактически изготовленные сочетания. Столбец хода отражает выполненный диапазон, ' +
-      'а не предел: изготовление ведётся по индивидуальным размерам, поэтому возможны ' +
-      'промежуточные и большие значения хода. Усилие = давление × площадь; при втягивании ' +
-      'из площади вычитается сечение штока. 160 бар типичны для мобильной гидравлики, ' +
-      '250 бар — для стационарных установок.',
+      `Размеры взяты из согласованных производственных чертежей — это не каталожный ряд, ` +
+      `а фактически изготовленные сочетания. Рабочие параметры по чертежам: ${SUREKLI_BAR} бар ` +
+      `постоянное давление, ${TEPE_BAR} бар пиковое, −30 °C…+80 °C, скорость до 0,5 м/с. ` +
+      `Усилия приведены при ПОСТОЯННОМ давлении; пиковое кратковременно, и подбор по нему ` +
+      `не ведётся. При втягивании из площади вычитается сечение штока. Присоединительная ` +
+      `резьба указана только там, где её подтверждает чертёж. Столбец хода отражает ` +
+      `выполненный диапазон, а не предел: изготовление ведётся по индивидуальным размерам.`,
   },
 }
 
 function tabloImalat(dil) {
   const f = new Intl.NumberFormat(BICIM[dil], { minimumFractionDigits: 1, maximumFractionDigits: 1 })
   const m = METIN_IMALAT[dil]
-  const kN = (mm2, bar) => f.format(Math.round((mm2 * (bar / 10)) / 100) / 10)
+  const kN = (mm2) => (mm2 * (SUREKLI_BAR / 10)) / 1000
   return {
     baslik: m.baslik,
     sutunlar: m.sutunlar,
     satirlar: SILINDIR_IMALAT.map((c) => [
       `${c.cap} × ${c.mil}`,
       c.strok,
-      kN(alan(c.cap), 160),
-      kN(alan(c.cap), 250),
-      kN(alan(c.cap) - alan(c.mil), 250),
+      f.format(Math.round(kN(alan(c.cap)) * 10) / 10),
+      f.format(Math.round(kN(alan(c.cap) - alan(c.mil)) * 10) / 10),
+      c.port ?? '—',
     ]),
     not: m.not,
+  }
+}
+
+// ── Çizim doğrulaması ─────────────────────────────────────────────────────
+{
+  const sapma = []
+  for (const d of CIZIM_DOGRULAMA) {
+    const i = (alan(d.cap) * (SUREKLI_BAR / 10)) / 1000
+    const c = ((alan(d.cap) - alan(d.mil)) * (SUREKLI_BAR / 10)) / 1000
+    // Göreli tolerans %1: çizimdeki yuvarlama (117,8 → 118) alarm üretmemeli,
+    // gerçek sapma (37,2 ↔ 41,4 = %11) tek başına kalmalı.
+    const sap = (h, ciz) => Math.abs(h - ciz) / ciz > 0.01
+    if (sap(i, d.itme)) sapma.push(`${d.cap}x${d.mil} itme : hesap ${i.toFixed(1)} · çizim ${d.itme}`)
+    if (sap(c, d.cekme)) sapma.push(`${d.cap}x${d.mil} çekme: hesap ${c.toFixed(1)} · çizim ${d.cekme}  (%${((Math.abs(c-d.cekme)/d.cekme)*100).toFixed(0)})`)
+  }
+  if (sapma.length) {
+    console.log('⚠  ÇİZİMLE SAPMA:')
+    for (const x of sapma) console.log(`   ${x}`)
+    console.log('   (tablo HESAPLANAN değeri yayımlar — fizik doğrulanabilir, çizim rakamı değil)\n')
+  } else {
+    console.log('✅ dört çizimin de kuvveti hesapla tutuyor\n')
   }
 }
 
