@@ -1081,6 +1081,70 @@
    "ISO 6431",
    "Kompakt (SDA)",
    "Kalem silindir"
+  ],
+  "tablolar": [
+   {
+    "baslik": "ISO silindirlerde 6 bar'da elde edilen kuvvet",
+    "sutunlar": [
+     "Çap (mm)",
+     "Standart",
+     "Mil çapı (mm)",
+     "İtme kuvveti (N)",
+     "Çekme kuvveti (N)"
+    ],
+    "satirlar": [
+     [
+      "25",
+      "ISO 6432",
+      "10",
+      "295",
+      "245"
+     ],
+     [
+      "32",
+      "ISO 15552",
+      "12",
+      "485",
+      "415"
+     ],
+     [
+      "40",
+      "ISO 15552",
+      "16",
+      "755",
+      "635"
+     ],
+     [
+      "50",
+      "ISO 15552",
+      "20",
+      "1.180",
+      "990"
+     ],
+     [
+      "63",
+      "ISO 15552",
+      "20",
+      "1.870",
+      "1.680"
+     ],
+     [
+      "80",
+      "ISO 15552",
+      "25",
+      "3.015",
+      "2.720"
+     ],
+     [
+      "100",
+      "ISO 15552",
+      "25",
+      "4.710",
+      "4.420"
+     ]
+    ],
+    "not": "Kuvvet = basınç × piston alanı. Çekme yönünde mil kesiti alandan düştüğü için kuvvet daima daha küçüktür. Değerler 6 bar şebeke basıncı içindir; 7 bar'da yaklaşık %17 artar. Sızdırmazlık sürtünmesi gerçekte %3–10 daha götürür — seçimde pay bırakın."
+   }
   ]
  },
  {

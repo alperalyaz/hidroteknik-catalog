@@ -14,7 +14,8 @@
     "kod-gocur": "node scripts/kod-gocur.mjs",
     "profil": "node scripts/profil-uret.mjs",
     "guncelleme": "node scripts/guncelleme-yaz.mjs",
-    "indexnow": "node scripts/indexnow.mjs"
+    "indexnow": "node scripts/indexnow.mjs",
+    "tablo": "node scripts/tablo-uret.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

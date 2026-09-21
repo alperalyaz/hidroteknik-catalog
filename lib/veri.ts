@@ -5,6 +5,26 @@ import urunlerJson from '@/data/urunler.json'
 import type { Dil } from './site'
 
 export type Sss = { s: string; c: string }
+
+/**
+ * Sayfaya gömülen teknik tablo. Kategoriden bağımsız, genel amaçlıdır.
+ *
+ * Neden veride değil şablonda değil: tablo İÇERİKTİR, üç dilde de ayrı yazılır
+ * ve çeviri dosyalarına girer. Şablona sabitlenseydi tek kategoriye çakılı
+ * kalırdı; burada her kategori kendi tablosunu taşıyabilir.
+ *
+ * Hücreler DİZGİDİR, sayı değil: binlik ayracı dile göre değişiyor (TR 1.178,
+ * EN 1,178, RU 1 178) ve biçimlendirme üretim anında yapılır. Şablonda
+ * sayiFormat()'tan geçirmek, hücrede "1.178 N (120 kgf)" gibi karma metin
+ * olduğunda işe yaramazdı.
+ */
+export type Tablo = {
+  baslik: string
+  sutunlar: string[]
+  satirlar: string[][]
+  /** Tablonun altına yazılan açıklama — hesabın nasıl yapıldığı, varsayımlar. */
+  not?: string
+}
 /**
  * Profil ailesi satırı (ör. Kastaş K21). Sızdırmazlıkta müşteri ürün adını değil
  * PROFİL KODUNU arar ("k21 40x50x8"), bu yüzden kodlar tabloyla yayımlanır.
@@ -73,6 +93,8 @@ export type Kategori = {
   profiller?: Profil[]
   /** Profil tablosunun altına yazılacak açıklama. */
   profilNot?: string
+  /** Teknik tablolar (kuvvet, ölçü, basınç sınıfı...). Girişin hemen altına girer. */
+  tablolar?: Tablo[]
 }
 export type Urun = { kod: string; ad: string; marka?: string; model?: string }
 
@@ -93,6 +115,7 @@ type KategoriCeviri = {
   standartlar?: string[]
   profiller?: ProfilCeviri[]
   profilNot?: string
+  tablolar?: Tablo[]
 }
 
 const CEVIRILER: Record<Dil, KategoriCeviri[]> = {
@@ -131,6 +154,7 @@ export function kategoriIcerik(k: Kategori, lang: Dil): Kategori {
       return pc ? { ...p, ad: pc.ad ?? p.ad, yer: pc.yer ?? p.yer } : p
     }),
     profilNot: c.profilNot ?? k.profilNot,
+    tablolar: c.tablolar ?? k.tablolar,
   }
 }
 

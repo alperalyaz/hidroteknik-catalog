@@ -82,6 +82,33 @@ Bu yüzden her i-türevi harf **dört yazımı da** kapsayan `[İIiı]` sınıf�
 `veri-cek.mjs` sorgu anında da uygular. Elle regex yazarken sınıfı eksik bırakmak
 serbest — script düzeltir — ama dosyaya sert hâlini yazmak diff'i okunur tutar.
 
+### Teknik tablolar: sayılar HESAPLANIR, elle yazılmaz
+
+Kategori sayfalarına `tablolar` alanıyla teknik tablo gömülür (`lib/veri.ts` →
+`Tablo`). Şablonda girişin hemen altında, marka çiplerinden önce render edilir.
+
+**Sayılar `npm run tablo` ile üretilir** (`scripts/tablo-uret.mjs`), kuru çalışır,
+`--uygula` ile yazar. Elle yazılsaydı üç dil dosyasında üç ayrı kopya olurdu ve
+biri düzeltilip diğeri unutulurdu — bu projede tam olarak bu hata yaşandı
+(bkz. "Desen TEK KOPYA olmak zorunda"). Burada tek kaynak fizik, üç dil ondan
+türetilir.
+
+**Yanlış sayı taşıyan teknik tablo, tablo olmamasından kötüdür:** okuyan kişi
+ona göre silindir seçer.
+
+Pnömatik silindir tablosu (21.09.2026): kuvvet = basınç × piston alanı, 6 bar,
+5 N'a yuvarlanmış. Çaplar UYDURULMADI — `data/urunler.json` örnek satırlarında
+gerçekten geçen ölçüler alındı (25, 32, 40, 63, 80, 100 + Pemaks DMC-A'daki 50).
+Mil çapları standardın kendisinden: 25 mm ISO 6432, kalanı ISO 15552.
+
+**Binlik ayracı üç dosyaya AYRI biçimde yazılır** (TR 1.180 · EN 1,180 ·
+RU 1 180, kırılmaz boşluk). `Intl.NumberFormat` üretim anında uygular. Tek biçim
+kopyalansaydı denetimin yedinci adımı yakalardı; doğrulandı, EN/RU sayfasında
+Türkçe ayraç 0 geçiş.
+
+Hücreler sayı değil DİZGİDİR: hücrede "1.180 N (120 kgf)" gibi karma metin
+olabildiği için şablonda `sayiFormat()`'tan geçirmek işe yaramazdı.
+
 ### Kategori kod desenine dayanmamalı
 
 Kategoriler ürün ADINDAN tanınır. Stok kodu önekine dayanan bir kategori iki

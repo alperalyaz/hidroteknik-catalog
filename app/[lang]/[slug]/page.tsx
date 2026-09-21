@@ -101,6 +101,35 @@ export default async function KategoriSayfasi({
           </div>
         </section>
 
+        {/* Teknik tablolar — girişin hemen altında, marka çiplerinden önce.
+            Sayfayı jenerik bir tanıtım metninden referansa çeviren kısım burası. */}
+        {k.tablolar?.map((t, ti) => (
+          <section key={ti}>
+            <h2>{t.baslik}</h2>
+            <div className="tablo-kutu">
+              <table>
+                <thead>
+                  <tr>
+                    {t.sutunlar.map((c, ci) => (
+                      <th key={ci}>{c}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {t.satirlar.map((satir, ri) => (
+                    <tr key={ri}>
+                      {satir.map((h, hi) => (
+                        <td key={hi}>{hi === 0 ? <b>{h}</b> : h}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            {t.not ? <p className="tablo-not">{t.not}</p> : null}
+          </section>
+        ))}
+
         {Boolean(k.markalar?.length || k.standartlar?.length) && (
           <section>
             <h2>{m.markalarStandartlarBaslik}</h2>

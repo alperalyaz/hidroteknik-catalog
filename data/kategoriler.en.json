@@ -888,6 +888,70 @@
    "ISO 6431",
    "Compact (SDA)",
    "Pencil cylinder"
+  ],
+  "tablolar": [
+   {
+    "baslik": "Force from ISO cylinders at 6 bar",
+    "sutunlar": [
+     "Bore (mm)",
+     "Standard",
+     "Rod (mm)",
+     "Push force (N)",
+     "Pull force (N)"
+    ],
+    "satirlar": [
+     [
+      "25",
+      "ISO 6432",
+      "10",
+      "295",
+      "245"
+     ],
+     [
+      "32",
+      "ISO 15552",
+      "12",
+      "485",
+      "415"
+     ],
+     [
+      "40",
+      "ISO 15552",
+      "16",
+      "755",
+      "635"
+     ],
+     [
+      "50",
+      "ISO 15552",
+      "20",
+      "1,180",
+      "990"
+     ],
+     [
+      "63",
+      "ISO 15552",
+      "20",
+      "1,870",
+      "1,680"
+     ],
+     [
+      "80",
+      "ISO 15552",
+      "25",
+      "3,015",
+      "2,720"
+     ],
+     [
+      "100",
+      "ISO 15552",
+      "25",
+      "4,710",
+      "4,420"
+     ]
+    ],
+    "not": "Force = pressure × piston area. On the pull stroke the rod cross-section is subtracted from the area, so pull force is always lower. Values are for 6 bar line pressure; at 7 bar they rise by roughly 17%. Seal friction costs a further 3–10% in practice — leave margin when selecting."
+   }
   ]
  },
  {
