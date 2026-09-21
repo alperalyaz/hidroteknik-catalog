@@ -1053,22 +1053,50 @@
   "grup": "pnomatik",
   "ad": "Pnömatik Silindir",
   "h1": "Pnömatik Silindir",
-  "ozet": "ISO 15552 ve ISO 6432 standardında pnömatik silindirler, manyetik pistonlu ve yastıklı tipler.",
-  "giris": "Pnömatik silindir, basınçlı havanın enerjisini doğrusal harekete çevirir. Hidrolik silindire göre daha hızlı ve daha temizdir, ancak havanın sıkışabilir olması nedeniyle konum hassasiyeti ve taşınabilen kuvvet daha düşüktür.\n\nTipik şebeke basıncı 6-8 bar olduğu için pnömatik silindirlerden elde edilen kuvvet, aynı çaptaki hidrolik silindirin çok altındadır. Bu nedenle yüksek kuvvet gereken yerlerde hidrolik, hızlı ve tekrarlı hafif hareketlerde pnömatik tercih edilir. Manyetik pistonlu tiplerde silindir gövdesine takılan sensörlerle uç konumları algılanabilir.",
+  "ozet": "ISO 15552 ve ISO 6432 standardında pnömatik silindirler: manyetik pistonlu, yastıklı ve kompakt tipler. Çap seçimi için 6 bar kuvvet tablosu, strok, yastıklama ve sensör notlarıyla.",
+  "giris": "Pnömatik silindir, basınçlı havanın enerjisini doğrusal harekete çevirir. Hidrolik silindire göre daha hızlı, daha temiz ve daha ucuzdur; buna karşılık hava sıkışabilir olduğu için konum hassasiyeti düşüktür ve aynı çapta çok daha az kuvvet taşır. Seçim bu iki sınırın nereye düştüğüyle başlar.\n\nÇap kuvvetten seçilir. Yukarıdaki tablo 6 bar'da her çapın verdiği kuvveti gösteriyor: 50 mm'lik bir silindir iterken 1.180 N, çekerken 990 N üretir. Seçimde iki pay bırakılmalıdır — sızdırmazlık sürtünmesi teorik değerin %3-10'unu götürür ve şebeke basıncı gün içinde düşer. Pratik kural, gereken kuvvetin en az 1,5 katını veren çapı almaktır. Çekerek çalışan bir uygulamada bağlayıcı sütun itme değil çekmedir; tablodaki ikinci kuvvet sütunu bunun içindir.\n\nStrok çaptan bağımsız seçilemez. Uzun stroklu ince silindirlerde mil, yük altında burkulmaya girer. 25 mm çapta 500 mm strok isteniyorsa ya çap büyütülür ya da dışarıdan mil kılavuzu eklenir; ince ve uzun bir silindir kâğıt üzerinde yeterli kuvveti verse bile sahada eğilir.\n\nManyetik pistonlu tipler konumu algılatır. Pistona gömülü mıknatıs, gövdeye kelepçeyle tutturulan reed ya da PNP sensörü tetikler; silindirin uç konumları böylece kumandaya bildirilir. Otomasyon hattında çalışacak bir silindirde bu neredeyse her zaman gerekir ve sonradan eklenemez — piston baştan mıknatıslı olmalıdır.\n\nYastıklama stroğun sonundaki darbeyi alır. Yastıksız bir silindir yüksek hızda kapağı ve mil yatağını döver; ömür kısalır, ses artar. Ayarlanabilir yastıklı tiplerde uçtaki vidayla yavaşlama şiddeti ayarlanır, yük ve hız değiştikçe yeniden ayar gerekir.\n\nISO ölçüsü marka bağımsızlığı demektir. ISO 15552 (eski adıyla ISO 6431) silindirlerde bağlantı delikleri, mil dişi ve gövde ölçüleri standarttır; markadan markaya geçerken montaj değişmez. Kompakt (SDA) ve kalem tipi silindirler bu standardın dışındadır — değiştirirken ölçü tek tek karşılaştırılmalıdır.\n\nSilindir tek başına çalışmaz. Havanın hazırlanması, yönlendirilmesi ve taşınması aynı devrenin halkalarıdır: şartlandırıcı nemi ve kiri tutar, valf yönü verir, rakor ve hortum havayı götürür. Stoğumuzdaki Pemaks ailesi bu dört halkanın hepsini kapsıyor; devre tek markadan tamamlandığında ölçü ve yedek parça uyumu karışık kurulan devrelere göre daha az sürpriz üretir.",
   "eslesme": "PNÖMAT|PNOMAT",
   "haric": "VANA|VALF|MAKAS|HORTUM|KONTROL|AKTÜATÖR|AKTUATOR|SENSÖR|SENSOR|FLANŞ|[İIiı]MALAT|REV[İIiı]ZYON|DEĞ[İIiı]Ş[İIiı]M|TAM[İIiı]R|MONTAJ|[İIiı]ŞÇ[İIiı]L[İIiı]K|BAK[İIiı]M|ÇABUK EKLEME|V[İIiı]BRAT[ÖO]R|Y[ÜU]KSELT[İIiı]C[İIiı]|ŞARTLAND[İIiı]R[İIiı]C[İIiı]|SUSTURUCU|REKOR|MALZEME SET|AR[İIiı]ZA|BOB[İIiı]N|PLEYT",
   "sss": [
    {
     "s": "Pnömatik silindir kaç bar basınçta çalışır?",
-    "c": "Endüstriyel şebeke basıncı genellikle 6-8 bar aralığındadır. Standart pnömatik silindirlerin çoğu 10 bar'a kadar dayanacak şekilde üretilir, ancak sürekli çalışma için üretici tarafından belirtilen anma basıncı esas alınmalıdır."
+    "c": "Tipik şebeke basıncı 6-8 bar'dır ve katalog değerleri genellikle 6 bar üzerinden verilir. Çoğu silindirin azami çalışma basıncı 10 bar civarındadır, ancak basıncı yükseltmek kuvveti artırırken hava tüketimini ve darbeyi de artırır."
+   },
+   {
+    "s": "50 mm çapında bir silindir ne kadar kuvvet verir?",
+    "c": "6 bar'da iterken yaklaşık 1.180 N, çekerken 990 N. Kilogram kuvvet cinsinden kabaca 120 kg ve 101 kg. Bunlar teorik değerlerdir; sızdırmazlık sürtünmesi nedeniyle sahada %3-10 daha azı elde edilir."
+   },
+   {
+    "s": "Çekme kuvveti neden itme kuvvetinden düşük?",
+    "c": "Silindir çekerken basınç, pistonun mil tarafındaki yüzüne etki eder ve bu yüzeyden milin kesit alanı düşer. Alan küçüldüğü için kuvvet de küçülür. Fark mil çapı büyüdükçe artar: 63 mm çapta itme 1.870 N iken çekme 1.680 N'dur."
    },
    {
     "s": "Hidrolik mi pnömatik mi seçmeliyim?",
-    "c": "Yüksek kuvvet, hassas konumlama ve yük altında durma gerekiyorsa hidrolik uygundur. Hızlı, tekrarlı ve nispeten düşük kuvvetli hareketlerde, temizlik gereken ortamlarda pnömatik daha ekonomik ve bakımı kolaydır."
+    "c": "Kuvvet ihtiyacı yüksekse ve konumun hassas tutulması gerekiyorsa hidrolik; hızlı, tekrarlı ve görece hafif hareketlerde pnömatik. Aynı çapta hidrolik silindir, 6 bar'lık pnömatiğe göre onlarca kat kuvvet verir çünkü sistem basıncı 150-250 bar mertebesindedir."
    },
    {
-    "s": "Manyetik pistonlu silindir nedir?",
-    "c": "Piston üzerine yerleştirilen mıknatıs sayesinde, silindir gövdesine dışarıdan takılan reed veya elektronik sensörler pistonun konumunu algılar. Otomasyon hatlarında uç konum geri bildirimi için standart çözümdür."
+    "s": "ISO 15552 ile ISO 6432 arasındaki fark nedir?",
+    "c": "ISO 15552 (eski ISO 6431) profil gövdeli, 32 mm ve üzeri çaplardaki silindirleri tanımlar. ISO 6432 ise 8-25 mm arası mini silindirlerin standardıdır. İkisinin bağlantı ölçüleri farklıdır, birbirinin yerine takılamaz."
+   },
+   {
+    "s": "Manyetik pistonlu silindir nedir, ne zaman gerekir?",
+    "c": "Pistonuna kalıcı mıknatıs gömülmüş silindirdir. Gövdeye takılan reed veya PNP sensör bu mıknatısı görerek pistonun uç konumda olduğunu kumandaya bildirir. Otomasyonda sıra kontrolü için gereklidir ve sonradan eklenemez — silindir baştan manyetik pistonlu alınmalıdır."
+   },
+   {
+    "s": "Yastıklama ne işe yarar?",
+    "c": "Piston stroğun sonuna geldiğinde kapağa çarpar. Yastıklama bu son birkaç milimetrede havayı kısarak pistonu yavaşlatır; darbe, ses ve yataktaki aşınma azalır. Ayarlanabilir tiplerde uçtaki iğne vidayla yavaşlama şiddeti yük ve hıza göre ayarlanır."
+   },
+   {
+    "s": "Silindirin hızı neye bağlı?",
+    "c": "Debiye, yani birim zamanda geçen hava miktarına. Hızı belirleyen silindirin kendisi değil; valfin ve rakorun geçirgenliği, hortum çapı ve uzunluğudur. Yavaş kalan bir silindirde önce hortum kesiti ve valf ölçüsü kontrol edilir, çap büyütmek çoğu zaman yanlış çözümdür."
+   },
+   {
+    "s": "Kompakt silindir ne zaman tercih edilir?",
+    "c": "Montaj boyu kısıtlı olduğunda. Kompakt (SDA) tipler aynı çapta profil silindirden belirgin şekilde kısadır, ancak strokları sınırlıdır ve ISO bağlantı ölçüsünü taşımazlar; marka değiştirirken ölçü karşılaştırması şarttır."
+   },
+   {
+    "s": "Silindirin keçesi değişir mi, yoksa komple mi alınır?",
+    "c": "Gövde ve mil sağlamsa keçe takımı değiştirilerek silindir kurtarılır; sızdırma vakalarının çoğu keçe kaynaklıdır. Mil çizilmişse ya da gövde içi aşınmışsa yeni keçe kısa sürede yeniden sızdırır, o durumda komple değişim daha ekonomiktir."
    }
   ],
   "markalar": [

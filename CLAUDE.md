@@ -109,6 +109,26 @@ Türkçe ayraç 0 geçiş.
 Hücreler sayı değil DİZGİDİR: hücrede "1.180 N (120 kgf)" gibi karma metin
 olabildiği için şablonda `sayiFormat()`'tan geçirmek işe yaramazdı.
 
+### "Dolu sayfa" ölçütü
+
+`pnomatik-silindir` 21.09.2026'da şablon olarak dolduruldu; kalan pnömatik
+sayfaları aynı desende gidecek. Ölçüt şu dört madde:
+
+1. **Giriş 300+ kelime ve SEÇİM MANTIĞI anlatır**, ürünü tanıtmaz. Çap nasıl
+   seçilir, strok neden çaptan bağımsız değildir, hangi tip ne zaman. Önceki
+   hâli 71 kelimeydi ve "pnömatik silindir havayı harekete çevirir" diyordu —
+   bunu bilen zaten arıyor, bilmeyen müşteri değil.
+2. **En az bir hesaplanmış tablo** (bkz. bir üstteki bölüm).
+3. **10 civarı SSS**, gerçek sorulardan. Üçü azdı.
+4. **Her iddia ya veriden türetilir ya standarttan gelir.** Markanın kurumsal
+   geçmişi hakkında doğrulanamayan cümle yazılmaz (bkz. "Doğrulanamayan bilgi
+   boş bırakılır"). Pemaks için yazılabilen şey şuydu: stoktaki ürün ailesi
+   devrenin dört halkasını da kapsıyor — bu veriden görülüyor, iddia değil.
+
+**Görünen kelime sayısı yanıltıcıdır.** Sayfanın büyük kısmı üretici kod
+tablolarıdır; `/tr/pnomatik-silindir` 5.060 kelime görünüyor ama bunun yalnız
+~700'ü okunacak metin. Ölçmek istediğiniz şey giriş + SSS uzunluğudur.
+
 ### Kategori kod desenine dayanmamalı
 
 Kategoriler ürün ADINDAN tanınır. Stok kodu önekine dayanan bir kategori iki

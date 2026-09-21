@@ -867,20 +867,48 @@
   "grup": "pnomatik",
   "ad": "Pneumatic Cylinders",
   "h1": "Pneumatic Cylinders",
-  "ozet": "Pneumatic cylinders to ISO 15552 and ISO 6432 standards, magnetic piston and cushioned types.",
-  "giris": "A pneumatic cylinder converts the energy of compressed air into linear motion. It is faster and cleaner than a hydraulic cylinder, but because air is compressible, both positioning accuracy and the force it can transmit are lower.\n\nSince typical supply pressure is 6–8 bar, the force produced by a pneumatic cylinder is far below that of a hydraulic cylinder of the same bore. This is why hydraulic cylinders are preferred where high force is required, while pneumatic cylinders are chosen for fast, repetitive, light-duty movements. On magnetic piston types, sensors mounted on the cylinder body can detect the end-of-stroke positions.",
+  "ozet": "Pneumatic cylinders to ISO 15552 and ISO 6432: magnetic-piston, cushioned and compact types. With a 6 bar force table for bore selection plus stroke, cushioning and sensing notes.",
+  "giris": "A pneumatic cylinder converts the energy of compressed air into linear motion. Compared with a hydraulic cylinder it is faster, cleaner and cheaper; in exchange, because air is compressible, positioning accuracy is poor and the same bore carries far less force. Selection starts with where those two limits fall.\n\nBore is chosen from force. The table above gives the force each bore delivers at 6 bar: a 50 mm cylinder produces 1,180 N extending and 990 N retracting. Two margins belong in the choice — seal friction costs 3-10% of the theoretical value, and line pressure sags during the day. A practical rule is to pick the bore that gives at least 1.5 times the force you need. Where the application pulls rather than pushes, the binding figure is the retract column, which is why it is listed separately.\n\nStroke cannot be chosen independently of bore. A slender cylinder with a long stroke will buckle its rod under load. If 500 mm of stroke is wanted at 25 mm bore, either the bore goes up or an external rod guide is added; a long, thin cylinder that satisfies the force calculation on paper will still bend in service.\n\nMagnetic-piston types report position. A permanent magnet embedded in the piston triggers a reed or PNP sensor clamped to the barrel, so the end positions reach the controller. On an automation line this is nearly always required, and it cannot be retrofitted — the piston has to be magnetic from the start.\n\nCushioning absorbs the impact at end of stroke. Without it the piston hammers the end cap and rod bearing at speed; life shortens and noise rises. Adjustable types have a needle screw at each end that sets how hard the deceleration is, and it needs resetting when load or speed changes.\n\nAn ISO size means brand independence. On ISO 15552 cylinders (formerly ISO 6431) the mounting holes, rod thread and body dimensions are standardised, so moving from one make to another leaves the mounting untouched. Compact (SDA) and pen-type cylinders fall outside that standard — compare dimensions item by item before substituting.\n\nA cylinder does not work alone. Preparing, directing and carrying the air are links in the same circuit: the FRL unit removes moisture and dirt, the valve sets direction, fittings and hose deliver the flow. The Pemaks range we stock covers all four links, and completing a circuit from a single make leaves fewer surprises in sizing and spares than mixing brands.",
   "sss": [
    {
-    "s": "What pressure does a pneumatic cylinder operate at?",
-    "c": "Industrial supply pressure is typically in the 6–8 bar range. Most standard pneumatic cylinders are rated to withstand up to 10 bar, but for continuous operation the nominal pressure specified by the manufacturer should be used as the reference."
+    "s": "What pressure does a pneumatic cylinder run at?",
+    "c": "Typical line pressure is 6-8 bar and catalogue figures are usually quoted at 6 bar. Most cylinders are rated to around 10 bar maximum, but raising pressure increases air consumption and end-of-stroke impact along with force."
+   },
+   {
+    "s": "How much force does a 50 mm bore cylinder give?",
+    "c": "About 1,180 N extending and 990 N retracting at 6 bar — roughly 120 kg and 101 kg. These are theoretical values; seal friction leaves 3-10% less in service."
+   },
+   {
+    "s": "Why is pull force lower than push force?",
+    "c": "On the retract stroke pressure acts on the rod side of the piston, and the rod's cross-section is subtracted from that face. Less area means less force. The gap widens with rod diameter: at 63 mm bore, push is 1,870 N while pull is 1,680 N."
    },
    {
     "s": "Should I choose hydraulic or pneumatic?",
-    "c": "Hydraulic is the right choice when high force, precise positioning, and holding position under load are required. For fast, repetitive, relatively low-force motion, and in environments where cleanliness matters, pneumatic systems are more economical and easier to maintain."
+    "c": "Hydraulic where force demand is high and position must be held accurately; pneumatic for fast, repetitive, comparatively light motion. At equal bore a hydraulic cylinder delivers tens of times more force, because system pressure is 150-250 bar rather than 6."
    },
    {
-    "s": "What is a magnetic piston cylinder?",
-    "c": "A magnet fitted to the piston allows reed or electronic sensors mounted externally on the cylinder body to detect the piston's position. It is the standard solution for end-of-stroke position feedback on automation lines."
+    "s": "What is the difference between ISO 15552 and ISO 6432?",
+    "c": "ISO 15552 (formerly ISO 6431) covers profile-body cylinders from 32 mm bore upward. ISO 6432 is the standard for mini cylinders between 8 and 25 mm. Their mounting dimensions differ and they are not interchangeable."
+   },
+   {
+    "s": "What is a magnetic-piston cylinder and when is it needed?",
+    "c": "One with a permanent magnet embedded in the piston. A reed or PNP sensor clamped to the barrel detects it and reports the end position to the controller. It is required for sequence control in automation and cannot be retrofitted — specify it at purchase."
+   },
+   {
+    "s": "What does cushioning do?",
+    "c": "The piston strikes the end cap when it reaches the end of stroke. Cushioning throttles the air over the last few millimetres to slow it, cutting impact, noise and bearing wear. Adjustable types set the deceleration with a needle screw to suit load and speed."
+   },
+   {
+    "s": "What determines cylinder speed?",
+    "c": "Flow — how much air passes per unit time. Speed is set not by the cylinder but by the flow capacity of the valve and fittings and by hose bore and length. When a cylinder is slow, check hose section and valve size first; increasing bore is usually the wrong fix."
+   },
+   {
+    "s": "When is a compact cylinder the right choice?",
+    "c": "When mounting length is tight. Compact (SDA) types are markedly shorter than a profile cylinder of the same bore, but strokes are limited and they do not carry ISO mounting dimensions, so dimensions must be compared when changing brand."
+   },
+   {
+    "s": "Can the seals be replaced, or must the whole cylinder be changed?",
+    "c": "If barrel and rod are sound, a seal kit saves the cylinder; most leak cases are seal related. If the rod is scored or the bore worn, new seals will leak again quickly and full replacement is the cheaper route."
    }
   ],
   "standartlar": [
