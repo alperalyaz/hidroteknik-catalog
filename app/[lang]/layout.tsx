@@ -6,6 +6,7 @@ import { isletmeSchema, jsonLd } from '@/lib/schema'
 import { kategorilerIcin, AILELER } from '@/lib/veri'
 import { SILINDIR_PARCALARI, parcaAdi } from '@/lib/silindir-parca'
 import { REHBERLER } from '@/lib/rehber'
+import { Analitik } from '@/app/analitik'
 
 export function generateStaticParams() {
   return DILLER.map((lang) => ({ lang }))
@@ -246,6 +247,9 @@ export default async function DilLayout({
           src="https://tawkto-one.vercel.app/widget.js"
           strategy="lazyOnload"
         />
+
+        {/* Ziyaretçi ölçümü. İşyeri trafiği elenir — bkz. app/analitik.tsx */}
+        <Analitik />
       </body>
     </html>
   )

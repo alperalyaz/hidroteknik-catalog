@@ -512,6 +512,39 @@ geçtiği için doğru; tehlike VERİYE ELLE yazılan sayıda. `kategoriler.ru.j
 içinde dört yerde "5.297 позиций" yazıyordu — Rusça okuyan biri bunu "beş tam
 iki yüz doksan yedi" diye okur, yani 5.297 kalemlik stok 5 kalem gibi görünür.
 
+### Ziyaretçi ölçümü: iki parçalı ve ayara BAĞIMLI
+
+Vercel Web Analytics açık. Ölçüm iki dosyaya bölünmüştür ve bölünme zorunludur:
+
+- `middleware.ts` — ziyaretçinin IP'sine bakar, işyerinden geliyorsa `ht_ic`
+  çerezi basar. Elemeyi YAPMAZ.
+- `app/analitik.tsx` — tarayıcıda çerezi okur, varsa `beforeSend` null döner ve
+  olay Vercel'e hiç gitmez.
+
+**Neden sunucuda elenmiyor:** 306 sayfanın tamamı statik üretiliyor. Sunucuda
+"bu ziyaretçi içeriden mi" diye karar verip `<Analitik/>` render etmemek sayfayı
+isteğe bağımlı yani DİNAMİK hâle getirir ve statik üretim çöker. Çerez basmak
+sayfa gövdesine dokunmaz.
+
+**IP kaynağa yazılmaz.** Depo herkese açıktır; işyeri IP'si commit'lenirse git
+geçmişinde kalıcı olarak yayımlanır. Değer Vercel ortam değişkenindedir:
+`IC_IPLER`, virgülle ayrılmış liste. Dışarıdan gelen ziyaretçi hiç çerez almaz —
+çerez yalnız IP tutarsa yazılır.
+
+**`IC_IPLER` tanımsızsa eleme sessizce KAPALIDIR** ve işyeri trafiği veriyi
+kirletir. Rakamlara bakan kişi bunu göremez. Bu yüzden middleware modül
+yüklenirken konsola uyarı basar; Vercel çalışma günlüğünde görünür.
+
+**Çerez tek yönlü olamaz.** Yalnız yazan bir kural, ofis dizüstüsü eve
+gittiğinde çerezi üzerinde taşır ve o kişi sonsuza dek sayılmaz. Middleware IP
+tutmuyorsa damgayı SİLER. Beş senaryo da elle sınandı (ofis IP'si, yabancı IP,
+vekil zinciri `x-forwarded-for: ofis, 10.0.0.1`, ofis dışına çıkan damgalı
+cihaz, ayar tanımsız).
+
+**IP statik değilse filtre sessizce çürür.** İşyeri IP'si değiştiği gün eleme
+durur ve o IP'yi alan yabancı biri elenmeye başlar. Ne build ne denetim bunu
+görür. IP değişirse `IC_IPLER` elle güncellenmelidir.
+
 ### Tedarikçi adı hiçbir yerde geçmez
 
 Ürünü aldığımız toptancılar **marka değildir** ve adları ticari sırdır: Adem Kardeşler,
