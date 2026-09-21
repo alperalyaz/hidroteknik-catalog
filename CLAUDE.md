@@ -699,6 +699,57 @@ gönderimi durdurdu.
 **Sıra önemli: önce deploy, sonra bildirim.** Anahtar dosyası yayında
 olmadan gönderim anlamsızdır.
 
+### Rusça: ders kitabı değil TİCARET Rusçası
+
+21.09.2026'da ölçüldü — katalog dört ayda Rusya'dan 13 gösterim, 0 tık almıştı.
+Sebebin bir kısmı bulundu: Rusça metin DOĞRU ama sanayinin kullandığı kelimeleri
+taşımıyordu. Gerçek bir Rus alıcının kendi yazdığı teklif listesiyle karşılaştırıldı:
+
+```
+РВД                   ✗ katalogda 0 geçiş   ← en kritiği
+штуцер                ✗ 0
+гидрораспределитель   ✗ 0
+обратный клапан       ✗ 0
+переборочный          ✗ 0
+```
+
+**`РВД` = рукава высокого давления.** Rusça'da hidrolik hortumun standart
+kısaltmasıdır ve arayan kişi `гидравлический рукав` değil `РВД` yazar. Alıcı
+belgede küçük harfle, laf arasında kullanmıştı (`спираль для рвд`) — o kadar
+sıradan bir kelime.
+
+Terimler ANAHTAR KELİME OLARAK DEĞİL, metnin içinde gerçek karşılık olarak
+yerleştirildi: «Фитинг, или штуцер, —», «Распределители — их также называют
+гидрораспределителями —». SSS'ye de karşılık soruları eklendi
+(«Чем штуцер отличается от фитинга?»).
+
+**Bu çeviriyle çözülemezdi.** Doğru çeviri ders kitabı kelimesini verir; ticaret
+kelimesini ancak o ticareti yapan birinin yazdığı metin verir.
+
+### Müşteri belgesinden ne alınır, ne alınmaz
+
+Katalog içeriğinin bir kısmı gerçek müşteri belgelerinden türetildi (teklif
+listeleri, onaylanmış imalat çizimleri, sözleşme ekleri). Ayrım nettir:
+
+**ALINIR:** ürünün teknik tanımı — ölçü, strok, çap/mil kombinasyonu, tek/çift
+etkili oluşu, kullanım alanı (çöp kamyonu / мусоровоз), ve karşı tarafın
+kullandığı SEKTÖR terimleri. Bunlar sektörün ortak malıdır.
+
+**ALINMAZ:** firma adı, kişi adı, fiyat, toplam tutar, ödeme koşulu, IBAN/SWIFT,
+vergi numarası, e-posta, ve **karşı tarafın kendi çizim kodu**. Sonuncusu
+sanılanın aksine evrensel değildir: 13 kalemlik bir listede yalnız BİR kalemde
+kod vardı (`HC2X.1.80.40.400.000`) — evrensel bir şema olsaydı on üçünde de
+olurdu. O kod alıcının kendi mühendisliğidir, kimse aramaz, ve yayımlanması
+"yayımlanan kod ÜRETİCİNİNDİR" kuralının ihlalidir.
+
+**Yuvarlak olmayan ölçü, en ikna edici veridir.** Teslim listesindeki 369 mm ve
+590 mm stroklar uydurulamaz; ölçüye göre imalat yapıldığının kanıtı ve
+yuvarlanmış bir katalog aralığından çok daha inandırıcı. Bu yüzden tabloya
+olduğu gibi girdiler.
+
+Build sonrası doğrulandı: `LRT` · `ЛРТ` · `Анисимова` · `HC2X` · IBAN · SWIFT ·
+hesap no · vergi no · tutar — üretilen 318 sayfanın hiçbirinde geçmiyor.
+
 ### Tedarikçi adı hiçbir yerde geçmez
 
 Ürünü aldığımız toptancılar **marka değildir** ve adları ticari sırdır: Adem Kardeşler,

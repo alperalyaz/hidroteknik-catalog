@@ -434,8 +434,8 @@
   "grup": "silindir",
   "ad": "Hydraulic Cylinder Manufacturing",
   "h1": "Hydraulic Cylinder Manufacturing, Overhaul and Spare Parts",
-  "ozet": "Custom hydraulic cylinder manufacturing and overhaul, built to your dimensions. Rear covers, steel caps, pistons, gland bushings and wear rings are machined in-house.",
-  "giris": "A hydraulic cylinder is the component that converts the energy of pressurized fluid into linear motion and force. The force it produces follows a simple relationship: force equals pressure times piston area. In the push direction the full piston area is active; in the pull direction the rod cross-section reduces the effective area, so the force obtained at the same pressure is smaller. When replacing a cylinder, it's necessary to look not only at the bore diameter but also at the rod diameter and mounting type.\n\nWe don't sell this product off the shelf — we manufacture it to your dimensions. Parts such as rear covers, cast and steel caps, threaded and bearing-mounted pistons, gland bushings and wear rings are machined in our own shop; this means we can also produce the equivalent of a non-standard length, a special mounting, or a cylinder that is no longer available.\n\nFor an overhaul, the cylinder is first disassembled and measured: rod wear, tube bore diameter and seal grooves are checked. Most failures don't require replacing the entire cylinder — they're resolved with a seal kit, a gland bushing, or a rod replacement. Bring in the cylinder you have; you don't need to know its dimensions.",
+  "ozet": "Custom hydraulic cylinder manufacturing and overhaul, built to your dimensions. Rear covers, steel caps, pistons, gland bushings and wear rings are machined in-house. Including refuse truck and municipal vehicle hydraulics, from delivered work.",
+  "giris": "A hydraulic cylinder is the component that converts the energy of pressurized fluid into linear motion and force. The force it produces follows a simple relationship: force equals pressure times piston area. In the push direction the full piston area is active; in the pull direction the rod cross-section reduces the effective area, so the force obtained at the same pressure is smaller. When replacing a cylinder, it's necessary to look not only at the bore diameter but also at the rod diameter and mounting type.\n\nWe don't sell this product off the shelf — we manufacture it to your dimensions. Parts such as rear covers, cast and steel caps, threaded and bearing-mounted pistons, gland bushings and wear rings are machined in our own shop; this means we can also produce the equivalent of a non-standard length, a special mounting, or a cylinder that is no longer available.\n\nFor an overhaul, the cylinder is first disassembled and measured: rod wear, tube bore diameter and seal grooves are checked. Most failures don't require replacing the entire cylinder — they're resolved with a seal kit, a gland bushing, or a rod replacement. Bring in the cylinder you have; you don't need to know its dimensions.\n\nA concrete example of what we build: one delivered batch comprised 13 single-acting cylinders for refuse collection vehicle hydraulics — eight distinct bore/rod combinations from 50 × 30 × 160 up to 90 × 60 × 740. The list contains strokes such as 369 and 590 mm, and that is not incidental: stroke follows the vehicle's kinematics, it is not picked from a catalogue. One item was built as a two-stage 80 × 40 body (200 + 200 mm), so a single cylinder delivers two separate movements in sequence. Municipal vehicles, tipper bodies, compaction bodies and lifting gear are the typical field for this work.",
   "sss": [
    {
     "s": "Do you have ready-made hydraulic cylinders in stock?",
@@ -452,12 +452,99 @@
    {
     "s": "How is cylinder force calculated?",
     "c": "Push force = pressure × piston area. For example, a 63 mm diameter piston at 160 bar produces approximately 5 tons of push force. In the pull direction, force decreases because the rod cross-section reduces the effective area; with a 36 mm rod on the same cylinder, it drops to approximately 3.4 tons. You can use calculate.hidroteknik.com.tr to run the calculation."
+   },
+   {
+    "s": "Do you make cylinders for refuse trucks and municipal vehicles?",
+    "c": "Yes — it is work we have built and delivered. One batch comprised 13 single-acting cylinders for refuse vehicle hydraulics, bores 50–100 mm and strokes 160–740 mm. The compaction body, the lifting gear and the tipping body are the main places cylinders sit on these vehicles."
+   },
+   {
+    "s": "What is a single-acting cylinder and how does it differ from double-acting?",
+    "c": "In a single-acting cylinder pressure is applied in one direction only; return comes from gravity, the weight of the load or a spring. A double-acting cylinder is driven by pressure both ways. Where the load descends under its own weight, as on a refuse truck, single-acting is sufficient and the circuit is simpler and cheaper."
+   },
+   {
+    "s": "Does the stroke have to be a round number?",
+    "c": "No, and in practice it usually is not. The batch we delivered included strokes of 369 mm and 590 mm; those figures come from the vehicle's kinematics. Because everything is made to measure, the stroke is built to the value required rather than rounded to the nearest catalogue length."
+   },
+   {
+    "s": "Can one cylinder give a two-stage movement?",
+    "c": "It can. In the same batch an 80 × 40 body was built as two stages of 200 + 200 mm: the cylinder extends the first stage, then the second. It is used where total stroke must be split in two because mounting length is tight."
    }
   ],
   "standartlar": [
    "Custom manufacturing",
    "Overhaul",
    "Single- and double-acting"
+  ],
+  "tablolar": [
+   {
+    "baslik": "Cylinder sizes we manufacture and the force they deliver",
+    "sutunlar": [
+     "Bore × rod (mm)",
+     "Stroke (mm)",
+     "Push 160 bar (kN)",
+     "Push 250 bar (kN)",
+     "Pull 250 bar (kN)"
+    ],
+    "satirlar": [
+     [
+      "50 × 30",
+      "160",
+      "31.4",
+      "49.1",
+      "31.4"
+     ],
+     [
+      "50 × 32",
+      "100–400",
+      "31.4",
+      "49.1",
+      "29.0"
+     ],
+     [
+      "63 × 35",
+      "369",
+      "49.9",
+      "77.9",
+      "53.9"
+     ],
+     [
+      "63 × 40",
+      "320–630",
+      "49.9",
+      "77.9",
+      "46.5"
+     ],
+     [
+      "80 × 40",
+      "400",
+      "80.4",
+      "125.7",
+      "94.2"
+     ],
+     [
+      "90 × 50",
+      "590",
+      "101.8",
+      "159.0",
+      "110.0"
+     ],
+     [
+      "90 × 60",
+      "430–740",
+      "101.8",
+      "159.0",
+      "88.4"
+     ],
+     [
+      "100 × 50",
+      "500",
+      "125.7",
+      "196.3",
+      "147.3"
+     ]
+    ],
+    "not": "These sizes come from approved manufacturing drawings — not a catalogue range but combinations actually built. The stroke column is the span produced so far, not a limit; since everything is made to measure, intermediate and longer strokes are possible. Force = pressure × area; on the pull stroke the rod section is subtracted. 160 bar is typical in mobile hydraulics, 250 bar in fixed installations."
+   }
   ]
  },
  {

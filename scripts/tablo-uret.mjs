@@ -81,6 +81,30 @@ const DIS = [
   ['1/2"', 21.0, 24, '10–12 mm'],
 ]
 
+
+/**
+ * GERÇEKTEN ÜRETİLMİŞ silindir ölçüleri. Uydurma değil: onaylanmış ve TESLİM
+ * EDİLMİŞ bir imalat partisinin ürün listesinden alındı: 13 kalem, 8 ayrı
+ * çap/mil kombinasyonu, strok 100–740 mm. Tek etkili, çöp kamyonu (мусоровоз)
+ * hidroliği.
+ *
+ * 369 ve 590 gibi tek sayılar UYDURMA DEĞİL; ölçüye göre imalat yapıldığının
+ * kanıtı ve tam da bu yüzden tabloda duruyor — yuvarlanmış bir listeden çok
+ * daha inandırıcı. 80x40 satırı aslında (200+200) çift kademelidir, toplam
+ * strok 400 olarak yazıldı; kademe ayrıntısı metinde anlatılıyor. Kuvvetler iki basınçta veriliyor çünkü mobil hidrolikte
+ * 160 bar, sabit tesiste 250 bar tipiktir ve seçim buna göre değişir.
+ */
+const SILINDIR_IMALAT = [
+  { cap: 50, mil: 30, strok: '160' },
+  { cap: 50, mil: 32, strok: '100–400' },
+  { cap: 63, mil: 35, strok: '369' },
+  { cap: 63, mil: 40, strok: '320–630' },
+  { cap: 80, mil: 40, strok: '400' },
+  { cap: 90, mil: 50, strok: '590' },
+  { cap: 90, mil: 60, strok: '430–740' },
+  { cap: 100, mil: 50, strok: '500' },
+]
+
 const alan = (d) => (Math.PI * d * d) / 4
 /** 5 N'a yuvarlanır: sürtünme payı zaten bu hassasiyeti anlamsız kılıyor. */
 const kuvvet = (mm2) => Math.round((P * mm2) / 5) * 5
@@ -303,12 +327,66 @@ function tabloDis(dil) {
   }
 }
 
+
+const METIN_IMALAT = {
+  tr: {
+    baslik: 'İmal ettiğimiz silindir ölçüleri ve verdikleri kuvvet',
+    sutunlar: ['Çap × mil (mm)', 'Strok (mm)', 'İtme 160 bar (kN)', 'İtme 250 bar (kN)', 'Çekme 250 bar (kN)'],
+    not:
+      'Tablodaki ölçüler onaylanmış imalat çizimlerinden alınmıştır — katalog ölçüsü ' +
+      'değil, gerçekten ürettiğimiz kombinasyonlar. Strok sütunu bugüne kadar yapılan ' +
+      'aralıktır, sınır değildir; ölçüye göre imalat yapıldığı için ara ve üst değerler ' +
+      'de mümkündür. Kuvvet = basınç × alan; çekmede mil kesiti alandan düşer. ' +
+      '160 bar mobil hidrolikte, 250 bar sabit tesiste tipik çalışma basıncıdır.',
+  },
+  en: {
+    baslik: 'Cylinder sizes we manufacture and the force they deliver',
+    sutunlar: ['Bore × rod (mm)', 'Stroke (mm)', 'Push 160 bar (kN)', 'Push 250 bar (kN)', 'Pull 250 bar (kN)'],
+    not:
+      'These sizes come from approved manufacturing drawings — not a catalogue range but ' +
+      'combinations actually built. The stroke column is the span produced so far, not a ' +
+      'limit; since everything is made to measure, intermediate and longer strokes are ' +
+      'possible. Force = pressure × area; on the pull stroke the rod section is subtracted. ' +
+      '160 bar is typical in mobile hydraulics, 250 bar in fixed installations.',
+  },
+  ru: {
+    baslik: 'Типоразмеры изготавливаемых цилиндров и развиваемое усилие',
+    sutunlar: ['Гильза × шток (мм)', 'Ход (мм)', 'Толкание 160 бар (кН)', 'Толкание 250 бар (кН)', 'Втягивание 250 бар (кН)'],
+    not:
+      'Размеры взяты из согласованных производственных чертежей — это не каталожный ряд, ' +
+      'а фактически изготовленные сочетания. Столбец хода отражает выполненный диапазон, ' +
+      'а не предел: изготовление ведётся по индивидуальным размерам, поэтому возможны ' +
+      'промежуточные и большие значения хода. Усилие = давление × площадь; при втягивании ' +
+      'из площади вычитается сечение штока. 160 бар типичны для мобильной гидравлики, ' +
+      '250 бар — для стационарных установок.',
+  },
+}
+
+function tabloImalat(dil) {
+  const f = new Intl.NumberFormat(BICIM[dil], { minimumFractionDigits: 1, maximumFractionDigits: 1 })
+  const m = METIN_IMALAT[dil]
+  const kN = (mm2, bar) => f.format(Math.round((mm2 * (bar / 10)) / 100) / 10)
+  return {
+    baslik: m.baslik,
+    sutunlar: m.sutunlar,
+    satirlar: SILINDIR_IMALAT.map((c) => [
+      `${c.cap} × ${c.mil}`,
+      c.strok,
+      kN(alan(c.cap), 160),
+      kN(alan(c.cap), 250),
+      kN(alan(c.cap) - alan(c.mil), 250),
+    ]),
+    not: m.not,
+  }
+}
+
 /** slug → o kategoriye yazılacak tablolar (dile göre). */
 const HEDEF = {
   'pnomatik-silindir': (dil) => [tablo(dil)],
   'pnomatik-hortum': (dil) => [tabloHortum(dil)],
   'pnomatik-valf': (dil) => [tabloValf(dil)],
   'pnomatik-rakor': (dil) => [tabloDis(dil)],
+  'hidrolik-silindir': (dil) => [tabloImalat(dil)],
 }
 
 let degisen = 0
