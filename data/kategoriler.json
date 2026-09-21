@@ -1180,22 +1180,46 @@
   "grup": "pnomatik",
   "ad": "Pnömatik Valf",
   "h1": "Pnömatik Yön Kontrol Valfleri (5/2, 3/2, 5/3)",
-  "ozet": "Solenoid, pedal, kol ve el kumandalı pnömatik valfler; 5/2, 3/2 ve 5/3 tipler, valf manifoldları. Pemaks ve muadili.",
-  "giris": "Pnömatik valf, silindire havanın hangi yoldan gireceğini belirler. Adlandırma iki sayıdan oluşur: ilki yol (port) sayısı, ikincisi konum sayısıdır. 5/2 bir valf beş yollu ve iki konumludur ve çift etkili bir silindiri ileri–geri sürer. 3/2 valf üç yollu iki konumludur; tek etkili silindirlerde ve hava kesme görevinde kullanılır. 5/3 valfler ortada üçüncü bir konum taşır — kapalı merkezli tipte silindir bulunduğu yerde durur.\n\nKumanda şekli ikinci seçimdir: solenoid (bobinli) valfler elektrik sinyaliyle sürülür ve otomasyona bağlanır; pedal, kol ve el kumandalı tipler ise operatörün doğrudan kullandığı basit devrelerde tercih edilir. Solenoidlerde bobin gerilimi (24V DC, 220V AC) sipariş sırasında belirtilmelidir; gövde aynı olsa da bobin farklıdır.\n\nBirden çok valf kullanılan hatlarda tek tek bağlantı yerine manifold pleyt kullanılır: hava girişi ortaktır, montaj derli toplu olur ve bakım kolaylaşır.",
+  "ozet": "Pnömatik yön kontrol valfleri: 5/2, 3/2 ve 5/3. Gösterim tablosu, tek bobin-çift bobin güvenlik farkı, bobin gerilimi ve hızın neden valfe bağlı olduğu.",
+  "giris": "Pnömatik valf, silindire havanın hangi yoldan gireceğini belirler. Devrenin karar veren parçasıdır: silindir işi yapar, valf ne zaman ve hangi yönde yapacağını söyler.\n\nAdlandırma iki sayıdan oluşur ve yukarıdaki tablo bunu açar. İlki yol (port) sayısı, ikincisi konum sayısıdır. 5/2 valf beş yollu iki konumludur ve çift etkili bir silindiri ileri-geri sürer. 3/2 valf üç yolludur; tek etkili silindirlerde ve hava kesme görevinde kullanılır. 5/3 valfler ortada üçüncü bir konum taşır.\n\nTek bobin mi çift bobin mi sorusu bir güvenlik sorusudur. Tek bobinli valf enerji kesildiğinde yayla başlangıç konumuna döner — yani silindir kendiliğinden geri gelir. Çift bobinli valfin hafızası vardır, enerji kesilse de son konumunda kalır. Milde asılı bir yük varsa ya da parça tutulu kalmalıysa bu fark, elektrik kesintisinde parçanın düşüp düşmeyeceğini belirler. Tablonun son sütunu bunun içindir.\n\n5/3 valflerde orta konumun tipi ayrıca seçilir. Kapalı merkezde her iki hat da kapanır ve silindir bulunduğu yerde kilitlenir; ara konumda durdurmak gerekiyorsa bu seçilir. Açık merkezde hatlar egzoza açılır, silindir serbest kalır ve elle itilebilir — ayar ve kurulum sırasında istenen davranış budur.\n\nKumanda şekli üçüncü seçimdir. Solenoid valfler elektrik sinyaliyle sürülür ve otomasyona bağlanır; pedal, kol, makaralı ve el kumandalı tipler operatörün doğrudan kullandığı basit devrelerde tercih edilir. NAMUR gövdeli valfler ise doğrudan aktüatör üzerine takılır, ara boru gerektirmez.\n\nBobin gerilimi sipariş sırasında belirtilmelidir. Gövde aynı olsa da bobin farklıdır: 24 V DC ve 220 V AC en yaygın ikisidir. Çoğu solenoid valfte tornavidayla çevrilen bir el kumandası (manual override) bulunur; devreyi enerjilendirmeden mekanik kontrol yapmaya yarar ve devreye alma sırasında zaman kazandırır.\n\nValfin ölçüsü silindirin hızını belirler, silindirin çapı değil. Yavaş kalan bir silindirde önce valf ölçüsü, rakor geçirgenliği ve hortum kesiti kontrol edilir. Egzoz çıkışına takılan susturucu gürültüyü düşürür; ayarlı tipi aynı zamanda hava hızını kısarak silindirin hızını ayarlamaya yarar. Birden çok valf kullanılan hatlarda manifold pleyt tercih edilir: hava girişi ortaktır, montaj derli topludur, bakım kolaylaşır.",
   "eslesme": "(PN[ÖO]MAT|NAMUR|SEMAKMAT|PEMAKS|VEMA|CAMOZZ[İIiı]|METALWORK|[35]/[23]|[35]-[23]|SLAYT|PEDAL|MEKAN[İIiı]K KONTROL|HAVA KUMANDAL[İIiı]|HAVA UYAR|HAVA YAY|KOL KUMANDA|MAN[İIiı]FOLDU|GRUP VALF).*VALF|VALF.*(PN[ÖO]MAT|NAMUR|SEMAKMAT|PEMAKS|VEMA|CAMOZZ[İIiı]|METALWORK|[35]/[23]|[35]-[23]|SLAYT|PEDAL|MEKAN[İIiı]K KONTROL|HAVA KUMANDAL[İIiı]|HAVA UYAR|HAVA YAY|KOL KUMANDA|MAN[İIiı]FOLDU|GRUP VALF)",
   "haric": "H[İIiı]DROL[İIiı]|Y[ÜU]K TUT|K[İIiı]L[İIiı]T VALF|EMN[İIiı]YET VALF|HORTUM PAT|AK[ÜU] ŞARJ|BAS[İIiı]NÇ S[İIiı]RALAMA|PLATFORM VALF|KATR[İIiı]C|POPET|MOTOR VALF|S[İIiı]F[İIiı]RLAMA|ÇEKVALF|ÇEK VALF|BUHAR|YAK[İIiı]T|DOĞALGAZ|SULAMA|KOMPRES[ÖO]R|OS[İIiı]LAT[ÖO]R|DAMPER|AUTO DRA[İIiı]N|[İIiı]MALAT|REV[İIiı]ZYON|DEĞ[İIiı]Ş[İIiı]M|TAM[İIiı]R|MONTAJ|[İIiı]ŞÇ[İIiı]L[İIiı]K|BAK[İIiı]M",
   "sss": [
    {
     "s": "5/2 ile 3/2 valf arasındaki fark nedir?",
-    "c": "5/2 valf beş yolludur ve çift etkili silindiri iki yönde de sürer: bir tarafa hava basarken diğer tarafı egzoza açar. 3/2 valf üç yolludur; tek etkili (yaylı dönüşlü) silindirlerde veya hattı açıp kapatmak için kullanılır. Çift etkili bir silindiri 3/2 ile süremezsiniz."
+    "c": "5/2 valf beş yolludur ve çift etkili silindiri iki yönde de sürer: bir hat basınçlanırken diğeri egzoza açılır. 3/2 valf üç yolludur, tek etkili silindirleri sürer ya da bir hattı açıp kapatır. Çift etkili silindiriniz varsa 5/2 gerekir."
+   },
+   {
+    "s": "Tek bobin mi çift bobin mi almalıyım?",
+    "c": "Bu bir güvenlik kararıdır. Tek bobinli valf enerji kesilince yayla başlangıç konumuna döner, silindir kendiliğinden geri gelir. Çift bobinli valf son konumunda kalır. Milde asılı yük varsa ya da elektrik kesildiğinde parça tutulu kalmalıysa çift bobin gerekir."
+   },
+   {
+    "s": "5/3 kapalı merkez ile açık merkez farkı ne?",
+    "c": "Kapalı merkezde orta konumda her iki hat kapanır, silindir bulunduğu yerde kilitlenir — ara konumda durdurmak için kullanılır. Açık merkezde hatlar egzoza açılır, silindir serbest kalır ve elle hareket ettirilebilir; kurulum ve ayar sırasında istenen budur."
    },
    {
     "s": "Bobin gerilimi neye göre seçilir?",
-    "c": "Valfi süren kumanda devresine göre. PLC çıkışlarıyla çalışılıyorsa genellikle 24V DC, doğrudan şebekeden sürülüyorsa 220V AC bobin kullanılır. Gövde aynı kalır, yalnız bobin değişir; yanlış gerilim bobini yakar. Sipariş verirken gerilimi mutlaka belirtin."
+    "c": "Kumanda panosunun gerilimine göre. 24 V DC otomasyonda en yaygın olanıdır ve PLC çıkışına doğrudan bağlanır; 220 V AC basit ve röleli devrelerde kullanılır. Gövde aynı olsa da bobin farklıdır, sipariş sırasında belirtilmelidir."
    },
    {
     "s": "Valf çıkışındaki susturucu şart mı?",
-    "c": "Zorunlu değil ama şiddetle önerilir. Egzoz portundan çıkan hava keskin bir gürültü üretir; susturucu bu sesi belirgin şekilde düşürür. Ayarlı tip aynı zamanda egzoz debisini kısarak silindirin hızını da ayarlamanıza yarar."
+    "c": "Gürültü açısından pratikte şarttır: egzozdan çıkan hava susturucusuz tiz ve yüksek ses üretir. Ayrıca ayarlı susturucu hava çıkış hızını kısarak silindir hızını ayarlamaya yarar, yani ikinci bir işi de vardır."
+   },
+   {
+    "s": "Silindirim yavaş çalışıyor, daha büyük valf mi almalıyım?",
+    "c": "Önce ölçmek gerekir. Hızı belirleyen debidir ve debiyi valf, rakor ve hortum birlikte kısıtlar. Çoğu vakada darboğaz ince hortum ya da küçük rakordur; valfi büyütmek para harcayıp sorunu çözmeyebilir. Hat boyunca en küçük kesit hangisiyse hız onu takip eder."
+   },
+   {
+    "s": "NAMUR valf nedir, normal valften farkı ne?",
+    "c": "NAMUR, valfin doğrudan aktüatörün üzerine takılmasını sağlayan standart bir bağlantı yüzeyidir. Ara boru ve rakor gerekmez, montaj kısalır ve kaçak noktası azalır. Özellikle vana aktüatörlerinde kullanılır."
+   },
+   {
+    "s": "Manual override ne işe yarar?",
+    "c": "Çoğu solenoid valfte bulunan, tornavidayla çevrilen küçük bir düğmedir. Bobini enerjilendirmeden valfi elle konumlandırmaya yarar; devreye alma sırasında mekanik hareketi elektrik olmadan denemek için kullanılır. Test bittikten sonra eski konuma alınmalıdır."
+   },
+   {
+    "s": "Manifold pleyt ne zaman gerekir?",
+    "c": "Yan yana birkaç valf kullanılacaksa. Hava girişi ortak olduğu için her valfe ayrı besleme çekmek gerekmez; montaj derli toplu olur, kaçak noktası azalır ve bakımda valf tek tek sökülebilir."
    }
   ],
   "markalar": [
@@ -1211,6 +1235,56 @@
    "3/2",
    "5/3 kapalı merkez",
    "24V DC / 220V AC bobin"
+  ],
+  "tablolar": [
+   {
+    "baslik": "Valf gösterimi ne anlatır",
+    "sutunlar": [
+     "Gösterim",
+     "Yol",
+     "Konum",
+     "Ne sürer",
+     "Enerji kesilince"
+    ],
+    "satirlar": [
+     [
+      "3/2 NC",
+      "3",
+      "2",
+      "Tek etkili silindir, hava kesme",
+      "Yay geri iter, çıkış boşalır"
+     ],
+     [
+      "5/2 tek bobin",
+      "5",
+      "2",
+      "Çift etkili silindir",
+      "Yay başlangıç konumuna döndürür"
+     ],
+     [
+      "5/2 çift bobin",
+      "5",
+      "2",
+      "Çift etkili silindir",
+      "Son konumda kalır (hafızalı)"
+     ],
+     [
+      "5/3 kapalı merkez",
+      "5",
+      "3",
+      "Çift etkili, ara konumda durdurma",
+      "Silindir bulunduğu yerde kilitlenir"
+     ],
+     [
+      "5/3 açık merkez",
+      "5",
+      "3",
+      "Çift etkili, ara konumda durdurma",
+      "Silindir serbest kalır, elle itilebilir"
+     ]
+    ],
+    "not": "İlk sayı yol (port) sayısı, ikinci sayı konum sayısıdır. Son sütun devreyi tasarlarken asıl belirleyici olandır ve kataloglarda nadiren yazar: elektrik kesildiğinde ya da acil stopta silindirin ne yapacağını valf tipi belirler. Yük asılı kalıyorsa çift bobin ya da kapalı merkez seçmek güvenlik kararıdır."
+   }
   ]
  },
  {
@@ -1265,22 +1339,46 @@
   "grup": "pnomatik",
   "ad": "Pnömatik Rakor",
   "h1": "Pnömatik Takmatik Rakor ve Bağlantı Elemanları",
-  "ozet": "Push-in rakor, döner dirsek ve te bağlantılar; susturucu ve hız ayar elemanları. Pemaks ve muadili, 4–16 mm.",
-  "giris": "Pnömatik bağlantıda hortum sıkılmaz, itilir: takmatik (push-in) rakorun içindeki paslanmaz tırnak hortumu tutar, o-ring sızdırmazlığı sağlar. Sökmek için bilezik bastırılır. Bu yüzden montaj alet istemez, ama rakor ölçüsünün hortumun DIŞ çapıyla eşleşmesi şarttır — 8 mm rakor 8x5,5 hortuma girer, 6x4’e girmez.\n\nGrupta düz rakor, 90° döner dirsek, te, düşürücü nipel ve kör tapa gibi tipler bulunur. Döner tipler montajdan sonra kendi ekseninde döndüğü için hortumun burulmasını engeller; hareketli aparatlarda ömrü belirgin şekilde uzatır. Diş tarafı genelde BSP (1/8, 1/4, 3/8, 1/2) veya metriktir; hazneye vidalanan uçta oring veya conta bulunur.\n\nAynı grupta egzoz susturucu, ayarlı susturucu ve otomatik tahliye elemanları da yer alır; bunlar valfin çıkış gürültüsünü ve hava hızını düzenler.",
+  "ozet": "Pnömatik takmatik rakor ve bağlantı elemanları. Diş ölçü tablosu (ölçtüğünüz çap hangi diş), BSPP-BSPT farkı, döner dirsek ve sızdırma nedenleri.",
+  "giris": "Pnömatik bağlantıda hortum sıkılmaz, itilir. Takmatik (push-in) rakorun içindeki paslanmaz tırnak hortumu geri çıkmayacak şekilde tutar, arkasındaki o-ring hortumun dış yüzeyine oturarak sızdırmazlığı sağlar. Sökmek için öndeki bilezik parmakla bastırılır ve hortum çekilir. Montaj alet istemez, ama iki ölçünün doğru olması şarttır.\n\nRakor ölçüsü hortumun DIŞ çapına göre seçilir. 8 mm rakor 8x5,5 hortuma da 8x6 hortuma da girer, çünkü ikisinin de dış çapı 8 mm'dir; 6x4 hortuma girmez. İç çap rakor seçimini ilgilendirmez, yalnız hattan geçecek hava miktarını belirler.\n\nDiş tarafı ikinci ölçüdür ve kafa karıştıran yer burasıdır. Dişin adındaki kesir inç değildir: \"1/4 diş\" 6,35 mm değil, dış çapı 13,2 mm olan diştir. Kesir, standardın doğduğu dönemde o dişe takılan borunun iç çapının tarihsel adıdır. Elinizdeki parçayı kumpasla ölçüp yukarıdaki tabloyla karşılaştırmak en hızlı yoldur.\n\nBSP dişin iki türü vardır ve karıştırılırsa sızdırır. Paralel (BSPP, G) dişte çap boyunca sabittir ve sızdırmazlık uçtaki o-ring ya da contayla sağlanır. Konik (BSPT, R) dişte çap boyunca daralır, sızdırmazlığı dişin kendisi yapar ve macun ya da teflon bant gerekir. Konik dişi paralel hazneye zorlamak dişi bozar.\n\nGövde tipi işlevi belirler. Düz rakor hortumu doğrudan haznenin ucuna bağlar. 90° dirsek dar yerde yön değiştirir. Döner tipler montajdan sonra kendi ekseninde döner, böylece hortumun burulmasını engeller — hareketli aparatlarda hortum ömrünü belirgin şekilde uzatır ve kıvrılma yarıçapına uyulmasını kolaylaştırır. Te bağlantı hattı ikiye ayırır, düşürücü nipel ölçü değiştirir, kör tapa kullanılmayan çıkışı kapatır.\n\nAynı grupta egzoz susturucu, ayarlı susturucu ve otomatik tahliye elemanları da bulunur. Ayarlı susturucu valfin egzoz çıkışına takılır; havanın çıkış hızını kıstığı için silindirin hızını ayarlamanın en pratik yolu budur.",
   "eslesme": "REKOR BAĞLANT[İIiı]|D[ÖO]NER D[İIiı]RSEK|ÇABUK EKLEME|TE BAĞLANT[İIiı]|SUSTURUCU",
   "haric": "H[İIiı]DROL[İIiı]K|BSP-METR[İIiı]K|[İIiı]MALAT|REV[İIiı]ZYON|DEĞ[İIiı]Ş[İIiı]M|TAM[İIiı]R|MONTAJ|[İIiı]ŞÇ[İIiı]L[İIiı]K|BAK[İIiı]M",
   "sss": [
    {
     "s": "Takmatik rakor ölçüsü nasıl seçilir?",
-    "c": "Rakorun hortum tarafı hortumun dış çapına göre seçilir (6, 8, 10, 12, 16 mm). Diş tarafı ise makinedeki bağlantıya göre belirlenir; en yaygınları 1/8, 1/4 ve 3/8 BSP’dir. İki değeri birlikte söylemeniz yeterli: “1/4 diş, 8 hortum” gibi."
+    "c": "Hortumun dış çapına göre. 8x5,5 ve 8x6 hortumların ikisi de 8 mm rakora girer çünkü dış çapları aynıdır. İç çap rakor seçimini etkilemez, yalnız hattan geçecek hava miktarını belirler."
+   },
+   {
+    "s": "Kumpasla ölçtüm, 13 mm çıktı — bu hangi diş?",
+    "c": "1/4 BSP. Yukarıdaki tabloda dişlerin gerçek dış çapları var: 1/8 için 9,7 mm, 1/4 için 13,2 mm, 3/8 için 16,7 mm, 1/2 için 21,0 mm. Dişin adındaki kesir inç değil, standardın doğduğu dönemde o dişe takılan borunun iç çapının tarihsel adıdır."
+   },
+   {
+    "s": "BSPP ile BSPT arasındaki fark nedir?",
+    "c": "BSPP paralel diştir, çapı boyunca sabittir ve sızdırmazlığı uçtaki o-ring veya conta sağlar. BSPT konik diştir, çapı boyunca daralır ve sızdırmazlığı dişin kendisi yapar, bu yüzden macun ya da teflon bant gerekir. Konik dişi paralel hazneye zorlamak iki tarafı da bozar."
    },
    {
     "s": "Döner dirsek ile sabit dirsek arasındaki fark ne?",
-    "c": "Döner tipte hortumun bağlandığı gövde, dişe vidalandıktan sonra kendi ekseninde serbestçe döner. Hareketli bir aparatta hortum her harekette burulmaz, bu da hem hortumun hem rakorun ömrünü uzatır. Sabit tesisatta ikisi arasında pratik fark yoktur."
+    "c": "Döner tip montajdan sonra kendi ekseninde dönebilir. Hortum bağlandıktan sonra yön ayarlanabildiği için hortum burulmaz ve kıvrılma yarıçapına uymak kolaylaşır; hareketli aparatlarda hortum ömrünü belirgin şekilde uzatır. Sabit dirsek daha ucuzdur ve yönün değişmeyeceği yerlerde yeterlidir."
    },
    {
     "s": "Takmatik rakor hava kaçırıyor, ne yapmalıyım?",
-    "c": "En sık sebep hortum ucunun düzgün kesilmemesidir: eğik veya ezik kesilen uç o-ringe tam oturmaz. Hortumu dik açıyla, temiz bir bıçakla kesip yeniden itin. Kaçak devam ediyorsa rakorun içindeki o-ring yorulmuştur; rakor değişmelidir."
+    "c": "Önce hortumu çıkarıp kesim ağzına bakın: eğik kesilmiş ya da çapaklıysa o-ring oturmaz. Eksene dik, ezmeden yeniden kesip takmak vakaların çoğunu çözer. Hortumun dış yüzeyi çizikse o bölge atılmalıdır. Bunlar düzgünse rakorun o-ringi yorulmuştur, rakor değişir."
+   },
+   {
+    "s": "Diş tarafına teflon bant sarmalı mıyım?",
+    "c": "Konik (BSPT) dişte evet, sızdırmazlığı diş yaptığı için bant ya da macun gerekir. Paralel (BSPP) dişte hayır: sızdırmazlık uçtaki o-ring veya conta ile sağlanır, banda gerek yoktur ve fazla bant dişi zorlar."
+   },
+   {
+    "s": "Hortumu rakordan nasıl çıkarırım?",
+    "c": "Öndeki bileziği parmakla gövdeye doğru bastırıp basılı tutarken hortumu çekin. Bilezik bastırılmadan çekmek tırnağı ve hortumun yüzeyini bozar; çizilen hortum bir daha takıldığında sızdırır."
+   },
+   {
+    "s": "Ayarlı susturucu ne işe yarar?",
+    "c": "Valfin egzoz çıkışına takılır. Gürültüyü düşürmesinin yanında havanın çıkış hızını kıstığı için silindirin hareket hızını ayarlamaya yarar — pnömatik devrede hız ayarının en pratik yolu budur."
+   },
+   {
+    "s": "Plastik rakor mu metal rakor mu?",
+    "c": "Plastik gövdeli rakorlar hafiftir ve korozyona uğramaz, standart hava hattında yeterlidir. Metal gövdeli tipler darbe ve titreşimin yüksek olduğu, sıcaklığın arttığı ya da rakorun mekanik yük taşıdığı yerlerde tercih edilir."
    }
   ],
   "markalar": [
@@ -1291,6 +1389,44 @@
    "BSP 1/8–1/2",
    "Metrik",
    "Push-in 4–16 mm"
+  ],
+  "tablolar": [
+   {
+    "baslik": "BSP diş ölçüleri — ölçtüğünüz çap hangi diş?",
+    "sutunlar": [
+     "Diş",
+     "Gerçek dış çap (mm)",
+     "Anahtar ağzı (mm)",
+     "Tipik hortum"
+    ],
+    "satirlar": [
+     [
+      "1/8\"",
+      "9,7",
+      "14",
+      "4–6 mm"
+     ],
+     [
+      "1/4\"",
+      "13,2",
+      "17",
+      "6–8 mm"
+     ],
+     [
+      "3/8\"",
+      "16,7",
+      "19",
+      "8–10 mm"
+     ],
+     [
+      "1/2\"",
+      "21,0",
+      "24",
+      "10–12 mm"
+     ]
+    ],
+    "not": "Dişin adındaki kesir inç DEĞİL: \"1/4 diş\" 6,35 mm değil, dış çapı 13,2 mm olan diştir. Kesir, standardın doğduğu dönemde o dişe takılan borunun İÇ çapının tarihsel adıdır. Kumpasla ölçtüğünüz değeri bu sütunla karşılaştırın. Ölçüler ISO 228 (BSP paralel) içindir; konik BSPT dişte çap boyunca değişir, ölçüm diş başlangıcından alınır."
+   }
   ]
  },
  {
@@ -1298,22 +1434,46 @@
   "grup": "pnomatik",
   "ad": "Pnömatik Hortum",
   "h1": "Poliüretan, Polyamid ve PTFE Pnömatik Hortum",
-  "ozet": "Basınçlı hava hatları için poliüretan (PU), polyamid (PA) ve teflon (PTFE) hortum. 4x2,5’ten 16x12’ye kadar metrede satış.",
-  "giris": "Pnömatik hortum, hidrolik hortumla aynı işi yapmaz: basınç çok daha düşüktür (tipik olarak 6–10 bar), buna karşılık hat sık hareket eder ve dar yerlerden kıvrılarak geçer. Bu yüzden çelik örgü değil, esnek plastik gövde kullanılır ve ölçü dış çap x iç çap olarak verilir — 8x5,5 ifadesi 8 mm dış, 5,5 mm iç çap demektir. Takmatik (push-in) rakorlar dış çapa göre seçildiği için bu iki sayıyı karıştırmamak gerekir.\n\nPoliüretan (PU) en yaygın olanıdır: yumuşaktır, küçük yarıçapta kıvrılır, hareketli aparatlarda ezilmeye dayanır. Polyamid (PA) daha serttir ve daha yüksek sıcaklığa çıkar; sabit tesisat hatlarında ve makine içi döşemede tercih edilir. PTFE (teflon) hortum ise kimyasal dayanımı ve sıcaklık aralığı gerektiren yerlerde kullanılır.\n\nMetre ile satılır; istenen boyda kesilir. Şeffaf spiral ve örgülü hava hortumu tipleri de aynı grupta bulunur.\n\nJava marka hava hortumu ve teflon soket Sel kod ailesindendir ve ayrı bir grupta listelenir: bkz. «Sel Hortum».",
+  "ozet": "Poliüretan, polyamid ve PTFE pnömatik hortum. Ölçü tablosu, malzeme seçimi, kesim ve kıvrılma yarıçapı notlarıyla — 8x5,5 ile 8x6 arasındaki fark dâhil.",
+  "giris": "Pnömatik hortum, hidrolik hortumla aynı işi yapmaz. Basınç çok daha düşüktür — tipik şebeke 6-8 bar — buna karşılık hat sık hareket eder, dar yerlerden kıvrılarak geçer ve sürekli titreşim altındadır. Bu yüzden çelik örgü değil, esnek plastik gövde kullanılır.\n\nÖlçü daima dış çap × iç çap olarak verilir. 8x5,5 ifadesi 8 mm dış, 5,5 mm iç çap demektir. Takmatik rakor DIŞ çapa göre seçildiği için iki sayıyı karıştırmak doğrudan yanlış sipariş demektir. İç çap ise havanın ne kadar geçeceğini belirler: yukarıdaki tabloda 8x5,5 ile 8x6 aynı rakora girer ama iç kesitleri %19 farklıdır. İnce etli olan daha çok hava geçirir, kalın etli olan ezilmeye ve dış darbeye daha dayanıklıdır.\n\nMalzeme seçimi üç başlıkta toplanır. Poliüretan (PU) en yaygın olanıdır: yumuşaktır, küçük yarıçapta kıvrılır, hareketli aparatta ezilmeye dayanır ve geri yaylanır. Polyamid (PA) daha serttir, daha yüksek sıcaklığa çıkar ve basınç altında daha az şişer; sabit tesisat hatlarında ve makine içi döşemede tercih edilir. PTFE (teflon) hortum kimyasal dayanım ya da geniş sıcaklık aralığı gerektiren yerlerde kullanılır.\n\nKesim şekli sızdırmanın en sık sebebidir. Takmatik rakor, hortumun dış yüzeyine oturan bir o-ring ile sızdırmazlık sağlar; hortum eğik kesilmişse ya da kesim ağzında çapak kaldıysa o-ring tam oturmaz ve bağlantı kaçırır. Hortum daima eksene dik kesilmeli, kesim ağzı ezilmemelidir — makasla ezerek kesmek yerine hortum makası kullanılır.\n\nKıvrılma yarıçapı sessiz bir sınırdır. Hortum kendi izin verdiği yarıçaptan daha dar kıvrıldığında kesiti basıklaşır, hava geçişi düşer ve o noktada yorulup çatlar. Dirsek gereken yerde hortumu zorlamak yerine 90° dirsek rakor kullanmak hem debiyi korur hem ömrü uzatır.\n\nMetre ile satılır ve istenen boyda kesilir. Şeffaf spiral ve örgülü hava hortumu tipleri de aynı grupta bulunur; spiral tipler hareketli tezgâh ve el aleti beslemesinde toplanıp açıldığı için tercih edilir.",
   "eslesme": "POL[İIiı][ÜU]R[AE]TAN|POLYAM[İIiı]D|TEFLON HORTUM|PTFE|HAVA HORTUMU|PU HORTUM|POL[İIiı]ET[İIiı]LEN HORTUM|HAVA TABANCA",
   "haric": "RAKOR|REKOR|SOKET|KELEP",
   "sss": [
    {
-    "s": "Poliüretan ile polyamid hortum arasındaki fark nedir?",
-    "c": "Poliüretan yumuşaktır ve küçük yarıçapta kıvrılır; hareket eden, sürekli açılıp kapanan aparatlarda kullanılır. Polyamid daha sert ve daha dayanıklıdır, daha yüksek sıcaklığa çıkar; sabit makine içi tesisatta tercih edilir. Aynı ölçüde polyamid daha yüksek basınca dayanır, poliüretan ise ezilmeye ve tekrarlı bükülmeye daha iyi karşı koyar."
+    "s": "8x5,5 hortum ne demek, hangi rakoru alırım?",
+    "c": "8 mm dış çap, 5,5 mm iç çap demektir. Takmatik rakor dış çapa göre seçilir, yani 8 mm'lik rakor alırsınız. İç çap rakor seçimini değil, hattan geçecek hava miktarını ilgilendirir."
    },
    {
-    "s": "8x5,5 hortum ne demek, hangi rakoru alırım?",
-    "c": "İlk sayı dış çap, ikincisi iç çaptır. Takmatik rakorlar dış çapa göre seçilir; yani 8x5,5 hortum için 8 mm’lik rakor alınır. Rakorun diğer ucundaki diş (1/8, 1/4, 3/8) makinenizdeki bağlantıya göre belirlenir."
+    "s": "Poliüretan ile polyamid hortum arasındaki fark nedir?",
+    "c": "Poliüretan yumuşaktır, küçük yarıçapta kıvrılır ve ezilmeye dayanır; hareketli aparatlarda tercih edilir. Polyamid daha sert ve daha yüksek sıcaklığa dayanıklıdır, basınç altında daha az genleşir; sabit tesisat ve makine içi döşemede kullanılır."
+   },
+   {
+    "s": "8x5,5 mi 8x6 mı almalıyım?",
+    "c": "İkisi de 8 mm rakora girer. 8x6 daha ince etlidir ve iç kesiti %19 daha büyüktür, yani daha çok hava geçirir — uzun hatlarda ve hızlı silindirlerde avantajlıdır. 8x5,5 kalın etli olduğu için ezilmeye ve dış darbeye daha dayanıklıdır, hareketli ve korumasız güzergâhta daha uygundur."
+   },
+   {
+    "s": "Takmatik bağlantı hava kaçırıyor, hortum mu suçlu?",
+    "c": "Çoğu zaman evet, ama hortumun kendisi değil kesimi. Eğik kesilmiş ya da ağzında çapak kalmış hortumda rakorun o-ringi tam oturmaz. Hortumu eksene dik ve ezmeden yeniden kesip tekrar takmak vakaların büyük kısmını çözer. Hortumun dış yüzeyi çizikse o bölge kesilip atılmalıdır."
    },
    {
     "s": "Hortum metreyle mi satılıyor?",
-    "c": "Evet, istenen boyda kesilerek metre üzerinden satılır. Rulo olarak da verilebilir. Renk seçenekleri (mavi, siyah, natural) stok durumuna göre değişir."
+    "c": "Evet, metre ile satılır ve istediğiniz boyda kesilir. Rulo hâlinde standart boylar da bulunur."
+   },
+   {
+    "s": "Pnömatik hortum kaç bar dayanır?",
+    "c": "Şebeke basıncı olan 6-8 bar için tasarlanmıştır ve emniyet payı taşır. Ancak dayanım sıcaklıkla düşer: aynı hortum oda sıcaklığında taşıdığı basıncı 60 °C'de taşımaz. Sıcak ortamda çalışacaksa polyamid ya da PTFE tercih edilir."
+   },
+   {
+    "s": "Hortumu istediğim gibi kıvırabilir miyim?",
+    "c": "Hayır. Her hortumun izin verdiği bir en küçük kıvrılma yarıçapı vardır; daha dar kıvrıldığında kesit basıklaşır, debi düşer ve hortum o noktada yorulup çatlar. Keskin dönüş gereken yerde hortumu zorlamak yerine 90° dirsek rakor kullanılır."
+   },
+   {
+    "s": "PTFE hortum ne zaman gerekir?",
+    "c": "Kimyasal temas ya da geniş sıcaklık aralığı olan yerlerde. PU ve PA'nın dayanmadığı çözücü, yağ ve yüksek sıcaklık koşullarında PTFE kullanılır; standart hava hattında gereksiz bir maliyettir."
+   },
+   {
+    "s": "Spiral hortumun düz hortumdan farkı ne?",
+    "c": "Spiral hortum kullanılmadığında kendi üzerine toplanır, çekildiğinde uzar. Hareketli tezgâhta ve el aleti beslemesinde yerde hortum dolaşmasını önlediği için tercih edilir. Aynı iç çapta düz hortuma göre basınç kaybı biraz daha yüksektir çünkü hat daha uzundur."
    }
   ],
   "markalar": [
@@ -1324,6 +1484,56 @@
    "PU (poliüretan)",
    "PA (polyamid)",
    "PTFE (teflon)"
+  ],
+  "tablolar": [
+   {
+    "baslik": "Stoktaki hortum ölçüleri ve hava geçirgenliği",
+    "sutunlar": [
+     "Ölçü (dış × iç)",
+     "Et kalınlığı (mm)",
+     "Takılacak rakor",
+     "İç kesit (mm²)",
+     "Debi (4×2,5 = 1)"
+    ],
+    "satirlar": [
+     [
+      "4 × 2,5",
+      "0,8",
+      "4 mm",
+      "4,9",
+      "1,00"
+     ],
+     [
+      "6 × 4",
+      "1,0",
+      "6 mm",
+      "12,6",
+      "2,56"
+     ],
+     [
+      "8 × 5,5",
+      "1,3",
+      "8 mm",
+      "23,8",
+      "4,84"
+     ],
+     [
+      "8 × 6",
+      "1,0",
+      "8 mm",
+      "28,3",
+      "5,76"
+     ],
+     [
+      "10 × 6,5",
+      "1,8",
+      "10 mm",
+      "33,2",
+      "6,76"
+     ]
+    ],
+    "not": "Ölçü daima dış × iç çaptır. Takmatik rakor DIŞ çapa göre seçilir, iç çap havanın ne kadar geçeceğini belirler. 8×5,5 ile 8×6 aynı rakora girer ama iç kesiti %19 farklıdır: ince etli olan daha çok hava geçirir, kalın etli olan ezilmeye ve dış darbeye daha dayanıklıdır. Debi sütunu iç kesitlerin oranıdır (kesit = π × iç çap² ÷ 4), basınç kaybı hesabı değildir."
+   }
   ]
  },
  {

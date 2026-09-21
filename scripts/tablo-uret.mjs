@@ -42,6 +42,45 @@ const SILINDIR = [
   { cap: 100, mil: 25, std: 'ISO 15552' },
 ]
 
+
+/**
+ * Stoktaki pnömatik hortum ölçüleri (urunler.json örnek satırlarından ölçüldü:
+ * 4x2,5 · 6x4 · 8x5,5 · 8x6 · 10x6,5). 8x5,5 ile 8x6 bilerek yan yana:
+ * aynı rakora girerler ama iç kesitleri farklıdır — tablonun asıl anlattığı bu.
+ */
+const HORTUM = [
+  { d: 4, i: 2.5 },
+  { d: 6, i: 4 },
+  { d: 8, i: 5.5 },
+  { d: 8, i: 6 },
+  { d: 10, i: 6.5 },
+]
+
+/**
+ * Valf gösterimi. Uydurma değil, standart adlandırmanın açılımı: ilk sayı yol,
+ * ikinci sayı konum. Son sütun asıl işe yarayan kısım — kataloglarda nadiren
+ * yazar ama devreyi tasarlayanın bilmesi gereken tek şey odur.
+ */
+const VALF = [
+  ['3/2 NC', '3', '2', 'tekEtkili', 'yayGeri'],
+  ['5/2 tek bobin', '5', '2', 'ciftEtkili', 'yayKonum'],
+  ['5/2 çift bobin', '5', '2', 'ciftEtkili', 'sonKonum'],
+  ['5/3 kapalı merkez', '5', '3', 'ciftEtkiliAra', 'yerindeDurur'],
+  ['5/3 açık merkez', '5', '3', 'ciftEtkiliAra', 'serbest'],
+]
+
+/**
+ * BSP (ISO 228) dişlerin GERÇEK dış çapı. "1/4 diş" 6,35 mm değil 13,2 mm'dir;
+ * kesir inç cinsinden boru İÇ çapının tarihsel adıdır, dişin ölçüsü değil.
+ * Ölçüp kafası karışan kişi için tablonun en çok işe yarayan satırı budur.
+ */
+const DIS = [
+  ['1/8"', 9.7, 14, '4–6 mm'],
+  ['1/4"', 13.2, 17, '6–8 mm'],
+  ['3/8"', 16.7, 19, '8–10 mm'],
+  ['1/2"', 21.0, 24, '10–12 mm'],
+]
+
 const alan = (d) => (Math.PI * d * d) / 4
 /** 5 N'a yuvarlanır: sürtünme payı zaten bu hassasiyeti anlamsız kılıyor. */
 const kuvvet = (mm2) => Math.round((P * mm2) / 5) * 5
@@ -93,8 +132,184 @@ function tablo(dil) {
   }
 }
 
+
+const METIN_HORTUM = {
+  tr: {
+    baslik: 'Stoktaki hortum ölçüleri ve hava geçirgenliği',
+    sutunlar: ['Ölçü (dış × iç)', 'Et kalınlığı (mm)', 'Takılacak rakor', 'İç kesit (mm²)', 'Debi (4×2,5 = 1)'],
+    not:
+      'Ölçü daima dış × iç çaptır. Takmatik rakor DIŞ çapa göre seçilir, iç çap ' +
+      'havanın ne kadar geçeceğini belirler. 8×5,5 ile 8×6 aynı rakora girer ama ' +
+      'iç kesiti %19 farklıdır: ince etli olan daha çok hava geçirir, kalın etli olan ' +
+      'ezilmeye ve dış darbeye daha dayanıklıdır. Debi sütunu iç kesitlerin oranıdır ' +
+      '(kesit = π × iç çap² ÷ 4), basınç kaybı hesabı değildir.',
+  },
+  en: {
+    baslik: 'Hose sizes in stock and air capacity',
+    sutunlar: ['Size (OD × ID)', 'Wall (mm)', 'Fitting size', 'Bore area (mm²)', 'Flow (4×2.5 = 1)'],
+    not:
+      'Sizes are always outside × inside diameter. A push-in fitting is chosen by the ' +
+      'OUTSIDE diameter, while the bore sets how much air passes. 8×5.5 and 8×6 take the ' +
+      'same fitting but differ by 19% in bore area: the thin-wall version flows more, the ' +
+      'thick-wall version resists crushing and impact better. The flow column is the ratio ' +
+      'of bore areas (area = π × ID² ÷ 4), not a pressure-drop calculation.',
+  },
+  ru: {
+    baslik: 'Типоразмеры рукавов на складе и пропускная способность',
+    sutunlar: ['Размер (нар. × внутр.)', 'Стенка (мм)', 'Размер фитинга', 'Сечение (мм²)', 'Расход (4×2,5 = 1)'],
+    not:
+      'Размер всегда указывается как наружный × внутренний диаметр. Цанговый фитинг ' +
+      'подбирают по НАРУЖНОМУ диаметру, а внутренний определяет, сколько воздуха пройдёт. ' +
+      '8×5,5 и 8×6 входят в один и тот же фитинг, но сечение отличается на 19 %: ' +
+      'тонкостенный пропускает больше, толстостенный лучше держит смятие и удар. ' +
+      'Столбец расхода — это отношение сечений (площадь = π × внутр.² ÷ 4), ' +
+      'а не расчёт потери давления.',
+  },
+}
+
+const METIN_VALF = {
+  tr: {
+    baslik: 'Valf gösterimi ne anlatır',
+    sutunlar: ['Gösterim', 'Yol', 'Konum', 'Ne sürer', 'Enerji kesilince'],
+    hucre: {
+      tekEtkili: 'Tek etkili silindir, hava kesme',
+      ciftEtkili: 'Çift etkili silindir',
+      ciftEtkiliAra: 'Çift etkili, ara konumda durdurma',
+      yayGeri: 'Yay geri iter, çıkış boşalır',
+      yayKonum: 'Yay başlangıç konumuna döndürür',
+      sonKonum: 'Son konumda kalır (hafızalı)',
+      yerindeDurur: 'Silindir bulunduğu yerde kilitlenir',
+      serbest: 'Silindir serbest kalır, elle itilebilir',
+    },
+    not:
+      'İlk sayı yol (port) sayısı, ikinci sayı konum sayısıdır. Son sütun devreyi ' +
+      'tasarlarken asıl belirleyici olandır ve kataloglarda nadiren yazar: elektrik ' +
+      'kesildiğinde ya da acil stopta silindirin ne yapacağını valf tipi belirler. ' +
+      'Yük asılı kalıyorsa çift bobin ya da kapalı merkez seçmek güvenlik kararıdır.',
+  },
+  en: {
+    baslik: 'What the valve designation tells you',
+    sutunlar: ['Designation', 'Ports', 'Positions', 'What it drives', 'On loss of power'],
+    hucre: {
+      tekEtkili: 'Single-acting cylinder, air shut-off',
+      ciftEtkili: 'Double-acting cylinder',
+      ciftEtkiliAra: 'Double-acting, stop at mid position',
+      yayGeri: 'Spring returns it, outlet vents',
+      yayKonum: 'Spring returns to initial position',
+      sonKonum: 'Stays in last position (memory)',
+      yerindeDurur: 'Cylinder locks where it stands',
+      serbest: 'Cylinder goes free, can be pushed by hand',
+    },
+    not:
+      'The first number is the port count, the second the number of positions. The last ' +
+      'column is what actually decides the circuit and is rarely printed in catalogues: ' +
+      'the valve type determines what the cylinder does when power fails or E-stop is hit. ' +
+      'If a load hangs on the rod, choosing double-coil or closed-centre is a safety decision.',
+  },
+  ru: {
+    baslik: 'Что означает обозначение распределителя',
+    sutunlar: ['Обозначение', 'Линии', 'Позиции', 'Чем управляет', 'При снятии питания'],
+    hucre: {
+      tekEtkili: 'Цилиндр одностороннего действия, отсечка воздуха',
+      ciftEtkili: 'Цилиндр двустороннего действия',
+      ciftEtkiliAra: 'Двустороннего действия, останов в средней позиции',
+      yayGeri: 'Пружина возвращает, выход сбрасывается',
+      yayKonum: 'Пружина возвращает в исходную позицию',
+      sonKonum: 'Остаётся в последней позиции (с памятью)',
+      yerindeDurur: 'Цилиндр фиксируется на месте',
+      serbest: 'Цилиндр освобождается, его можно двигать рукой',
+    },
+    not:
+      'Первая цифра — число линий, вторая — число позиций. Последний столбец и определяет ' +
+      'схему, но в каталогах его пишут редко: именно тип распределителя задаёт поведение ' +
+      'цилиндра при пропадании питания или аварийном останове. Если на штоке висит груз, ' +
+      'выбор исполнения с двумя катушками или закрытым центром — это решение по безопасности.',
+  },
+}
+
+const METIN_DIS = {
+  tr: {
+    baslik: 'BSP diş ölçüleri — ölçtüğünüz çap hangi diş?',
+    sutunlar: ['Diş', 'Gerçek dış çap (mm)', 'Anahtar ağzı (mm)', 'Tipik hortum'],
+    not:
+      'Dişin adındaki kesir inç DEĞİL: "1/4 diş" 6,35 mm değil, dış çapı 13,2 mm olan ' +
+      'diştir. Kesir, standardın doğduğu dönemde o dişe takılan borunun İÇ çapının ' +
+      'tarihsel adıdır. Kumpasla ölçtüğünüz değeri bu sütunla karşılaştırın. ' +
+      'Ölçüler ISO 228 (BSP paralel) içindir; konik BSPT dişte çap boyunca değişir, ' +
+      'ölçüm diş başlangıcından alınır.',
+  },
+  en: {
+    baslik: 'BSP thread sizes — which thread is the diameter you measured?',
+    sutunlar: ['Thread', 'Actual OD (mm)', 'Spanner (mm)', 'Typical hose'],
+    not:
+      'The fraction in the name is NOT inches: a "1/4 thread" is not 6.35 mm, it is a ' +
+      'thread whose outside diameter is 13.2 mm. The fraction is the historical name for ' +
+      'the INSIDE diameter of the pipe that took the thread when the standard was written. ' +
+      'Compare what you measure with callipers against this column. Figures are for ISO 228 ' +
+      '(BSP parallel); on tapered BSPT the diameter varies along the thread, so measure at its start.',
+  },
+  ru: {
+    baslik: 'Размеры резьбы BSP — какой резьбе соответствует измеренный диаметр?',
+    sutunlar: ['Резьба', 'Фактический нар. диаметр (мм)', 'Ключ (мм)', 'Типичный рукав'],
+    not:
+      'Дробь в названии — это НЕ дюймы: «резьба 1/4» имеет наружный диаметр не 6,35 мм, ' +
+      'а 13,2 мм. Дробь — историческое название ВНУТРЕННЕГО диаметра трубы, на которую ' +
+      'нарезалась эта резьба во времена создания стандарта. Сравнивайте измеренное ' +
+      'штангенциркулем значение с этим столбцом. Значения приведены для ISO 228 ' +
+      '(цилиндрическая BSP); у конической BSPT диаметр меняется по длине, измеряют у начала резьбы.',
+  },
+}
+
+function tabloHortum(dil) {
+  // Ölçü sütunu tam sayıyı tam gösterir (8, 10), et ve kesit sütunları HEP bir
+  // ondalık taşır — "1" ile "0,8" yan yana gelince sütun hizasız okunuyor.
+  const f = new Intl.NumberFormat(BICIM[dil], { maximumFractionDigits: 1 })
+  const f1 = new Intl.NumberFormat(BICIM[dil], { minimumFractionDigits: 1, maximumFractionDigits: 1 })
+  const f2 = new Intl.NumberFormat(BICIM[dil], { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+  const m = METIN_HORTUM[dil]
+  const enKucuk = alan(HORTUM[0].i)
+  return {
+    baslik: m.baslik,
+    sutunlar: m.sutunlar,
+    satirlar: HORTUM.map((h) => [
+      `${f.format(h.d)} × ${f.format(h.i)}`,
+      f1.format(Math.round(((h.d - h.i) / 2) * 100) / 100),
+      `${f.format(h.d)} mm`,
+      f1.format(Math.round(alan(h.i) * 10) / 10),
+      f2.format(Math.round((alan(h.i) / enKucuk) * 100) / 100),
+    ]),
+    not: m.not,
+  }
+}
+
+function tabloValf(dil) {
+  const m = METIN_VALF[dil]
+  return {
+    baslik: m.baslik,
+    sutunlar: m.sutunlar,
+    satirlar: VALF.map((v) => [v[0], v[1], v[2], m.hucre[v[3]], m.hucre[v[4]]]),
+    not: m.not,
+  }
+}
+
+function tabloDis(dil) {
+  const f = new Intl.NumberFormat(BICIM[dil], { minimumFractionDigits: 1, maximumFractionDigits: 1 })
+  const m = METIN_DIS[dil]
+  return {
+    baslik: m.baslik,
+    sutunlar: m.sutunlar,
+    satirlar: DIS.map((d) => [d[0], f.format(d[1]), String(d[2]), d[3]]),
+    not: m.not,
+  }
+}
+
 /** slug → o kategoriye yazılacak tablolar (dile göre). */
-const HEDEF = { 'pnomatik-silindir': (dil) => [tablo(dil)] }
+const HEDEF = {
+  'pnomatik-silindir': (dil) => [tablo(dil)],
+  'pnomatik-hortum': (dil) => [tabloHortum(dil)],
+  'pnomatik-valf': (dil) => [tabloValf(dil)],
+  'pnomatik-rakor': (dil) => [tabloDis(dil)],
+}
 
 let degisen = 0
 for (const [dil, yol] of Object.entries(DOSYA)) {

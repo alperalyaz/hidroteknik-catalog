@@ -111,8 +111,17 @@ olabildiği için şablonda `sayiFormat()`'tan geçirmek işe yaramazdı.
 
 ### "Dolu sayfa" ölçütü
 
-`pnomatik-silindir` 21.09.2026'da şablon olarak dolduruldu; kalan pnömatik
-sayfaları aynı desende gidecek. Ölçüt şu dört madde:
+Dört pnömatik sayfası 21.09.2026'da bu desende dolduruldu:
+
+```
+                     giriş          SSS      tablo
+pnomatik-silindir    71 → 315      3 → 10      1
+pnomatik-hortum     146 → 285      3 →  9      1
+pnomatik-valf       128 → 311      3 →  9      1
+pnomatik-rakor      112 → 260      3 →  9      1
+```
+
+Ölçüt şu dört madde:
 
 1. **Giriş 300+ kelime ve SEÇİM MANTIĞI anlatır**, ürünü tanıtmaz. Çap nasıl
    seçilir, strok neden çaptan bağımsız değildir, hangi tip ne zaman. Önceki
@@ -372,7 +381,7 @@ Değişiklikten sonra `npx tsc --noEmit` ve `npm run build` çalıştır. Build 
 sayfaları statik üretir; yeni bir sayfa eklendiyse ilgili HTML'in
 `.next/server/app/tr/` altında oluştuğu görülmelidir.
 
-Sonra `npm run denetle` (`scripts/build-denetle.mjs`). On şeyi arar, onu da
+Sonra `npm run denetle` (`scripts/build-denetle.mjs`). On bir şeyi arar, onu da
 sessizce bozulabilen şeylerdir; sorun bulursa çıkış kodu 1 döner:
 
 - **Kırık iç link.** Üretilen HTML'deki her `href="/..."` bir dosyaya karşılık
@@ -396,6 +405,12 @@ sessizce bozulabilen şeylerdir; sorun bulursa çıkış kodu 1 döner:
   yukarıdaki denetimlerin kapsamında değiller; ayrıca taranırlar.
 - **Rehber görselleri.** Dosya `public/` altında var mı, alt metin üç dilde de
   dolu mu, `ru` gerçekten Kiril mi (bkz. bir alttaki bölüm).
+- **Yabancı yazı sistemi.** Katalog TR/EN/RU yayımlıyor; latin ve kiril dışında
+  bir yazı sistemi sayfada bulunmamalı. GERÇEK vakayla eklendi (21.09.2026):
+  elle yazılan Rusça SSS'ye `масел и高 температуры` diye bir CJK karakteri
+  karışmıştı — gözle fark edilmiyor, tsc görmüyor, build geçiyor. Beyaz liste
+  tutulmuyor; meşru işaretler (â, ş, İ, π, Ø, ³) zaten latin/yunan bloklarında,
+  yalnız katalogda hiçbir gerekçesi olmayan bloklar aranıyor.
 
 **Denetim ham HTML'de arama YAPMAZ, `<script>` bloklarını ayıklar.** Next.js
 sayfa sonuna `self.__next_f.push` ile akış yükünü gömüyor ve uzun dizeleri

@@ -987,20 +987,44 @@
   "grup": "pnomatik",
   "ad": "Pneumatic Valves",
   "h1": "Pneumatic Directional Control Valves (5/2, 3/2, 5/3)",
-  "ozet": "Solenoid, pedal, lever, and hand-operated pneumatic valves; 5/2, 3/2, and 5/3 types, valve manifolds. Pemaks and equivalents.",
-  "giris": "A pneumatic valve determines which path the air takes into the cylinder. Its designation consists of two numbers: the first is the number of ports (ways), the second is the number of positions. A 5/2 valve has five ports and two positions, and drives a double-acting cylinder forward and back. A 3/2 valve has three ports and two positions; it is used with single-acting cylinders and for shutting off air. 5/3 valves have a third, center position — in the closed-center type, the cylinder stays wherever it happens to be.\n\nThe type of actuation is the second choice to make: solenoid (coil-operated) valves are driven by an electrical signal and connect into automation systems, while pedal, lever, and hand-operated types are preferred for simple circuits operated directly by the operator. For solenoid valves, coil voltage (24V DC, 220V AC) must be specified when ordering; the valve body is the same, but the coil is not.\n\nOn lines using multiple valves, a manifold plate is used instead of connecting each valve individually: the air supply is shared, the installation is tidier, and maintenance becomes easier.",
+  "ozet": "Pneumatic directional control valves: 5/2, 3/2 and 5/3. With a designation table, the safety difference between single and double coil, coil voltage, and why speed follows the valve.",
+  "giris": "A pneumatic valve decides which way air reaches the cylinder. It is the deciding element of the circuit: the cylinder does the work, the valve says when and in which direction.\n\nThe designation is two numbers, and the table above unpacks it. The first is the number of ports, the second the number of positions. A 5/2 valve has five ports and two positions and drives a double-acting cylinder both ways. A 3/2 valve has three ports; it drives single-acting cylinders or simply opens and closes a line. 5/3 valves carry a third, middle position.\n\nSingle coil or double coil is a safety question. A single-coil valve springs back to its initial position when power is lost, so the cylinder returns by itself. A double-coil valve has memory and stays where it was. If a load hangs on the rod, or a part must stay clamped, that difference decides whether the part drops during a power cut. That is what the last column of the table is for.\n\nOn 5/3 valves the type of centre is a separate choice. A closed centre blocks both lines and locks the cylinder where it stands, which is what you want for stopping mid-stroke. An open centre vents both lines, leaving the cylinder free to be pushed by hand — the behaviour wanted during setup and adjustment.\n\nActuation is the third choice. Solenoid valves take an electrical signal and connect to automation; pedal, lever, roller and hand-operated types suit simple circuits an operator drives directly. NAMUR-bodied valves mount straight onto the actuator with no interconnecting pipework.\n\nCoil voltage must be stated at order. The body may be identical while the coil differs: 24 V DC and 220 V AC are the common two. Most solenoid valves carry a manual override turned with a screwdriver, which lets you shift the valve without energising the coil — useful for proving mechanical movement during commissioning.\n\nValve size, not cylinder bore, sets cylinder speed. When a cylinder is slow, check valve size, fitting capacity and hose bore before anything else. A silencer on the exhaust cuts noise; the adjustable type also throttles the outgoing air, which is how cylinder speed is set. Where several valves sit together, a manifold plate shares one air supply, tidies the mounting and simplifies maintenance.",
   "sss": [
    {
     "s": "What is the difference between a 5/2 and a 3/2 valve?",
-    "c": "A 5/2 valve has five ports and drives a double-acting cylinder in both directions: it feeds air to one side while opening the other side to exhaust. A 3/2 valve has three ports and is used with single-acting (spring-return) cylinders or to open and close a line. A double-acting cylinder cannot be driven with a 3/2 valve."
+    "c": "A 5/2 valve has five ports and drives a double-acting cylinder in both directions: one line pressurises while the other vents. A 3/2 valve has three ports and drives single-acting cylinders or opens and closes a line. If your cylinder is double-acting you need a 5/2."
    },
    {
-    "s": "How is coil voltage selected?",
-    "c": "By the control circuit driving the valve. If controlled by PLC outputs, a 24V DC coil is typically used; if driven directly from mains power, 220V AC is used. The valve body stays the same and only the coil changes; the wrong voltage will burn out the coil. Always specify the voltage when ordering."
+    "s": "Should I choose single-coil or double-coil?",
+    "c": "It is a safety decision. A single-coil valve springs back to its initial position on loss of power, so the cylinder returns by itself. A double-coil valve stays where it was. If a load hangs on the rod, or a part must stay clamped through a power cut, you need double-coil."
    },
    {
-    "s": "Is a silencer required on the valve exhaust?",
-    "c": "Not mandatory, but strongly recommended. Air discharging from the exhaust port produces sharp noise; a silencer noticeably reduces this. The adjustable type also lets you regulate cylinder speed by throttling the exhaust flow."
+    "s": "What is the difference between 5/3 closed centre and open centre?",
+    "c": "A closed centre blocks both lines in mid position and locks the cylinder in place — used to stop mid-stroke. An open centre vents both lines, leaving the cylinder free to be moved by hand, which is what you want during setup."
+   },
+   {
+    "s": "How do I choose coil voltage?",
+    "c": "By the control panel. 24 V DC is the common choice in automation and connects straight to a PLC output; 220 V AC suits simple relay circuits. The body may be the same but the coil differs, so state it when ordering."
+   },
+   {
+    "s": "Is a silencer on the valve exhaust necessary?",
+    "c": "In practice yes, for noise: exhausting air without one is loud and shrill. An adjustable silencer also throttles the outgoing air, which is the usual way of setting cylinder speed, so it does a second job."
+   },
+   {
+    "s": "My cylinder is slow — should I fit a bigger valve?",
+    "c": "Measure first. Speed follows flow, and valve, fittings and hose all restrict it together. In most cases the bottleneck is thin hose or a small fitting; a bigger valve may cost money without fixing anything. Speed follows the smallest section anywhere in the line."
+   },
+   {
+    "s": "What is a NAMUR valve?",
+    "c": "NAMUR is a standard mounting face that lets the valve bolt directly onto an actuator. No interconnecting pipe or fittings are needed, the assembly is shorter and there are fewer leak points. It is common on valve actuators."
+   },
+   {
+    "s": "What is the manual override for?",
+    "c": "A small screwdriver-turned button on most solenoid valves. It shifts the valve without energising the coil, so mechanical movement can be proven without electrics during commissioning. Return it to its normal position when testing is done."
+   },
+   {
+    "s": "When do I need a manifold plate?",
+    "c": "When several valves sit side by side. One shared air inlet means no separate feed to each valve; mounting is tidier, leak points are fewer, and valves can be removed individually for maintenance."
    }
   ],
   "standartlar": [
@@ -1008,6 +1032,56 @@
    "3/2",
    "5/3 closed center",
    "24V DC / 220V AC coil"
+  ],
+  "tablolar": [
+   {
+    "baslik": "What the valve designation tells you",
+    "sutunlar": [
+     "Designation",
+     "Ports",
+     "Positions",
+     "What it drives",
+     "On loss of power"
+    ],
+    "satirlar": [
+     [
+      "3/2 NC",
+      "3",
+      "2",
+      "Single-acting cylinder, air shut-off",
+      "Spring returns it, outlet vents"
+     ],
+     [
+      "5/2 tek bobin",
+      "5",
+      "2",
+      "Double-acting cylinder",
+      "Spring returns to initial position"
+     ],
+     [
+      "5/2 çift bobin",
+      "5",
+      "2",
+      "Double-acting cylinder",
+      "Stays in last position (memory)"
+     ],
+     [
+      "5/3 kapalı merkez",
+      "5",
+      "3",
+      "Double-acting, stop at mid position",
+      "Cylinder locks where it stands"
+     ],
+     [
+      "5/3 açık merkez",
+      "5",
+      "3",
+      "Double-acting, stop at mid position",
+      "Cylinder goes free, can be pushed by hand"
+     ]
+    ],
+    "not": "The first number is the port count, the second the number of positions. The last column is what actually decides the circuit and is rarely printed in catalogues: the valve type determines what the cylinder does when power fails or E-stop is hit. If a load hangs on the rod, choosing double-coil or closed-centre is a safety decision."
+   }
   ]
  },
  {
@@ -1054,26 +1128,88 @@
   "grup": "pnomatik",
   "ad": "Pneumatic Fittings",
   "h1": "Pneumatic Push-In Fittings and Connection Elements",
-  "ozet": "Push-in fittings, swivel elbows and tee connections; silencers and speed-control elements. Pemaks and equivalents, 4–16 mm.",
-  "giris": "In pneumatic connections, the hose is not clamped — it is pushed in: a stainless steel grab ring inside the push-in fitting grips the hose, while an O-ring provides the seal. To release it, the collar is pressed down. This means installation requires no tools, but the fitting size must match the OUTER diameter of the hose — an 8 mm fitting takes an 8x5.5 hose, not a 6x4.\n\nThis category includes straight fittings, 90° swivel elbows, tees, reducing nipples, and blanking plugs. Swivel types rotate freely on their axis after installation, preventing the hose from twisting; on moving apparatus this significantly extends service life. The threaded side is typically BSP (1/8, 1/4, 3/8, 1/2) or metric; the end that screws into the port has an O-ring or gasket.\n\nThis category also includes exhaust silencers, adjustable silencers, and automatic drain elements, which regulate the valve's exhaust noise and air flow speed.",
+  "ozet": "Pneumatic push-in fittings and connectors. With a thread size table (which thread is the diameter you measured), the BSPP/BSPT difference, swivel elbows and why joints leak.",
+  "giris": "Pneumatic connections are pushed, not clamped. A stainless collet inside the push-in fitting grips the tube so it cannot pull back out, and an O-ring behind it seals against the outside of the tube. To release, the collar at the front is pressed in and the tube pulled out. No tools are needed, but two dimensions have to be right.\n\nFitting size follows the OUTSIDE diameter of the tube. An 8 mm fitting takes both 8x5.5 and 8x6 hose because both are 8 mm outside; it will not take 6x4. The bore does not affect fitting choice, only how much air the line will pass.\n\nThe thread is the second dimension, and this is where confusion starts. The fraction in the thread name is not inches: a \"1/4 thread\" is not 6.35 mm, it is a thread with an outside diameter of 13.2 mm. The fraction is the historical name for the inside diameter of the pipe that carried the thread when the standard was written. Measuring the part with callipers and comparing against the table above is the quickest route.\n\nBSP threads come in two kinds, and mixing them leaks. Parallel (BSPP, G) threads keep the same diameter along their length and seal on an O-ring or washer at the face. Tapered (BSPT, R) threads narrow along their length, seal on the thread itself and need sealant or PTFE tape. Forcing a tapered thread into a parallel port damages both.\n\nBody style sets the function. A straight fitting connects the tube directly to the port. A 90° elbow turns the line in a tight space. Swivel types rotate on their own axis after fitting, which stops the tube being twisted — on moving equipment this noticeably extends hose life and makes it easier to respect the bend radius. Tees split the line, reducing nipples change size, blanking plugs close unused ports.\n\nThe same group carries exhaust silencers, adjustable silencers and automatic drains. An adjustable silencer fits the valve's exhaust port; because it throttles outgoing air, it is the most practical way to set cylinder speed.",
   "sss": [
    {
-    "s": "How do I choose the correct push-in fitting size?",
-    "c": "The hose side of the fitting is selected according to the hose's outer diameter (6, 8, 10, 12, 16 mm). The threaded side is determined by the connection on the machine; the most common are 1/8, 1/4, and 3/8 BSP. Simply specify both values together — for example, “1/4 thread, 8 hose.”"
+    "s": "How do I choose push-in fitting size?",
+    "c": "By the outside diameter of the tube. Both 8x5.5 and 8x6 hose take an 8 mm fitting because their outside diameter is the same. The bore does not affect fitting choice, only how much air the line will pass."
    },
    {
-    "s": "What is the difference between a swivel elbow and a fixed elbow?",
-    "c": "On the swivel type, the body that the hose connects to rotates freely on its axis once screwed onto the thread. On moving apparatus, this means the hose does not twist with every movement, extending the service life of both the hose and the fitting. On fixed installations, there is no practical difference between the two."
+    "s": "I measured 13 mm with callipers — which thread is that?",
+    "c": "1/4 BSP. The table above gives actual thread diameters: 9.7 mm for 1/8, 13.2 mm for 1/4, 16.7 mm for 3/8 and 21.0 mm for 1/2. The fraction in the name is not inches; it is the historical name for the bore of the pipe that carried the thread when the standard was written."
    },
    {
-    "s": "My push-in fitting is leaking air, what should I do?",
-    "c": "The most common cause is a poorly cut hose end: an end cut at an angle or crushed will not seat properly against the O-ring. Cut the hose square with a clean blade and reinsert it. If the leak continues, the O-ring inside the fitting has worn out and the fitting must be replaced."
+    "s": "What is the difference between BSPP and BSPT?",
+    "c": "BSPP is parallel: constant diameter along its length, sealing on an O-ring or washer at the face. BSPT is tapered: it narrows along its length and seals on the thread itself, so it needs sealant or PTFE tape. Forcing a tapered thread into a parallel port damages both."
+   },
+   {
+    "s": "What is the difference between a swivel and a fixed elbow?",
+    "c": "A swivel rotates on its own axis after fitting. Because direction can be set after the tube is connected, the tube is not twisted and the bend radius is easier to respect; on moving equipment it noticeably extends hose life. A fixed elbow is cheaper and enough where direction will not change."
+   },
+   {
+    "s": "The push-in fitting leaks — what should I do?",
+    "c": "Pull the tube and look at the cut first: if it is angled or burred, the O-ring cannot seat. Recutting square without crushing and refitting solves most cases. If the outside surface is scored, cut that section off. If both are sound, the fitting's O-ring is worn and the fitting should be replaced."
+   },
+   {
+    "s": "Should I wrap PTFE tape on the thread?",
+    "c": "On tapered (BSPT) threads yes, because the thread does the sealing and needs tape or sealant. On parallel (BSPP) threads no: sealing is by the O-ring or washer at the face, tape is unnecessary and too much of it strains the port."
+   },
+   {
+    "s": "How do I release the tube from the fitting?",
+    "c": "Press the collar at the front in towards the body, hold it there and pull the tube. Pulling without pressing the collar damages the collet and scores the tube; a scored tube will leak when refitted."
+   },
+   {
+    "s": "What is an adjustable silencer for?",
+    "c": "It fits the valve's exhaust port. Besides cutting noise, it throttles the outgoing air, which is how cylinder speed is set — the most practical speed adjustment in a pneumatic circuit."
+   },
+   {
+    "s": "Plastic or metal fittings?",
+    "c": "Plastic bodies are light and will not corrode, and are sufficient on a standard air line. Metal bodies are preferred where impact and vibration are high, temperature rises, or the fitting carries mechanical load."
    }
   ],
   "standartlar": [
    "BSP 1/8–1/2",
    "Metric",
    "Push-in 4–16 mm"
+  ],
+  "tablolar": [
+   {
+    "baslik": "BSP thread sizes — which thread is the diameter you measured?",
+    "sutunlar": [
+     "Thread",
+     "Actual OD (mm)",
+     "Spanner (mm)",
+     "Typical hose"
+    ],
+    "satirlar": [
+     [
+      "1/8\"",
+      "9.7",
+      "14",
+      "4–6 mm"
+     ],
+     [
+      "1/4\"",
+      "13.2",
+      "17",
+      "6–8 mm"
+     ],
+     [
+      "3/8\"",
+      "16.7",
+      "19",
+      "8–10 mm"
+     ],
+     [
+      "1/2\"",
+      "21.0",
+      "24",
+      "10–12 mm"
+     ]
+    ],
+    "not": "The fraction in the name is NOT inches: a \"1/4 thread\" is not 6.35 mm, it is a thread whose outside diameter is 13.2 mm. The fraction is the historical name for the INSIDE diameter of the pipe that took the thread when the standard was written. Compare what you measure with callipers against this column. Figures are for ISO 228 (BSP parallel); on tapered BSPT the diameter varies along the thread, so measure at its start."
+   }
   ]
  },
  {
@@ -1081,26 +1217,100 @@
   "grup": "pnomatik",
   "ad": "Pneumatic Hose",
   "h1": "Polyurethane, Polyamide, and PTFE Pneumatic Hose",
-  "ozet": "Polyurethane (PU), polyamide (PA), and Teflon (PTFE) hose for compressed air lines. Sold by the meter, from 4x2.5 to 16x12.",
-  "giris": "Pneumatic hose does not do the same job as hydraulic hose: pressure is far lower (typically 6–10 bar), but the line moves frequently and has to bend through tight spaces. For this reason, a flexible plastic body is used instead of steel braiding, and size is given as outer diameter x inner diameter — 8x5.5 means an 8 mm outer diameter and a 5.5 mm inner diameter. Since push-in fittings are selected by outer diameter, it is important not to confuse the two numbers.\n\nPolyurethane (PU) is the most common: it is soft, bends to a small radius, and resists crushing on moving apparatus. Polyamide (PA) is stiffer and withstands higher temperatures; it is preferred for fixed installation lines and in-machine routing. PTFE (Teflon) hose is used where chemical resistance and a wide temperature range are required.\n\nIt is sold by the meter and cut to the desired length. Transparent spiral and braided air hose types are also included in this category.\n\nJava-brand air hose and Teflon sockets belong to the Sel code family and are listed as a separate category: see «Sel Hose».",
+  "ozet": "Polyurethane, polyamide and PTFE pneumatic hose. With a size table, material selection, and notes on cutting and bend radius — including the difference between 8x5.5 and 8x6.",
+  "giris": "A pneumatic hose is not doing the same job as a hydraulic one. Pressure is far lower — a typical line runs 6-8 bar — but the run moves constantly, threads through tight spaces and lives under vibration. That is why the body is flexible plastic rather than steel braid.\n\nSizes are always given as outside diameter × inside diameter. 8x5.5 means 8 mm outside, 5.5 mm inside. A push-in fitting is chosen by the OUTSIDE diameter, so swapping the two numbers means ordering the wrong part. The bore governs how much air passes: in the table above, 8x5.5 and 8x6 take the same fitting but differ by 19% in bore area. The thin-wall version flows more, the thick-wall version resists crushing and impact better.\n\nMaterial comes down to three choices. Polyurethane (PU) is the common one: soft, bends to a small radius, survives being trodden on and springs back. Polyamide (PA) is stiffer, takes higher temperature and expands less under pressure, which suits fixed pipework and runs inside machines. PTFE hose is for chemical exposure or a wide temperature range.\n\nHow the hose is cut is the most frequent cause of leaks. A push-in fitting seals on an O-ring that grips the outside of the tube; if the cut is at an angle or leaves a burr, the O-ring cannot seat and the joint leaks. Always cut square to the axis without crushing the end — use a tube cutter rather than crushing it with side cutters.\n\nBend radius is a silent limit. Bent tighter than the hose allows, the section flattens, flow falls and the tube fatigues and cracks at that point. Where a sharp turn is unavoidable, a 90° elbow fitting preserves both flow and service life.\n\nIt is sold by the metre and cut to length. Coiled and braided air hose belong to the same group; coiled types are chosen for moving benches and hand tools because they retract out of the way.",
   "sss": [
    {
+    "s": "What does 8x5.5 hose mean, and which fitting do I need?",
+    "c": "8 mm outside diameter, 5.5 mm inside. Push-in fittings are selected by the outside diameter, so you need an 8 mm fitting. The bore does not affect fitting choice, only how much air the line will pass."
+   },
+   {
     "s": "What is the difference between polyurethane and polyamide hose?",
-    "c": "Polyurethane is soft and bends to a small radius; it is used on moving apparatus that opens and closes repeatedly. Polyamide is stiffer and more durable, and withstands higher temperatures; it is preferred for fixed in-machine installations. At the same size, polyamide withstands higher pressure, while polyurethane better resists crushing and repeated flexing."
+    "c": "Polyurethane is soft, bends to a small radius and tolerates being crushed, which suits moving equipment. Polyamide is stiffer, handles higher temperature and expands less under pressure, which suits fixed pipework and runs inside machines."
    },
    {
-    "s": "What does 8x5.5 hose mean, and which fitting should I buy?",
-    "c": "The first number is the outer diameter, the second is the inner diameter. Push-in fittings are selected by outer diameter, so for an 8x5.5 hose you need an 8 mm fitting. The thread on the other end of the fitting (1/8, 1/4, 3/8) is determined by the connection on your machine."
+    "s": "Should I take 8x5.5 or 8x6?",
+    "c": "Both fit an 8 mm fitting. 8x6 has a thinner wall and 19% more bore area, so it flows more — an advantage on long runs and fast cylinders. 8x5.5 has a thicker wall and resists crushing and impact better, which suits exposed or moving routes."
    },
    {
-    "s": "Is the hose sold by the meter?",
-    "c": "Yes, it is sold by the meter and cut to the desired length. It can also be supplied as a full roll. Color options (blue, black, natural) depend on stock availability."
+    "s": "The push-in joint leaks — is the hose at fault?",
+    "c": "Usually yes, but the cut rather than the hose. If the end is cut at an angle or carries a burr, the fitting's O-ring cannot seat. Recutting square without crushing and refitting solves most cases. If the outside surface is scored, cut that section off."
+   },
+   {
+    "s": "Is hose sold by the metre?",
+    "c": "Yes, by the metre and cut to the length you need. Standard coil lengths are also available."
+   },
+   {
+    "s": "What pressure will pneumatic hose take?",
+    "c": "It is designed for line pressure of 6-8 bar with a safety margin. But rating falls with temperature: the same hose will not carry at 60 °C what it carries at room temperature. For hot environments choose polyamide or PTFE."
+   },
+   {
+    "s": "Can I bend the hose however I like?",
+    "c": "No. Every hose has a minimum bend radius; bent tighter, the section flattens, flow drops and the tube fatigues and splits there. Where a sharp turn is needed, use a 90° elbow fitting instead of forcing the hose."
+   },
+   {
+    "s": "When is PTFE hose necessary?",
+    "c": "Where there is chemical contact or a wide temperature range. PTFE is used where PU and PA will not survive solvents, oils or high heat; on a standard air line it is unnecessary cost."
+   },
+   {
+    "s": "How does coiled hose differ from straight?",
+    "c": "Coiled hose retracts on itself when not in use and extends when pulled. It is chosen for moving benches and hand tools because it keeps hose off the floor. For the same bore it loses slightly more pressure than straight hose, because the run is longer."
    }
   ],
   "standartlar": [
    "PU (polyurethane)",
    "PA (polyamide)",
    "PTFE (Teflon)"
+  ],
+  "tablolar": [
+   {
+    "baslik": "Hose sizes in stock and air capacity",
+    "sutunlar": [
+     "Size (OD × ID)",
+     "Wall (mm)",
+     "Fitting size",
+     "Bore area (mm²)",
+     "Flow (4×2.5 = 1)"
+    ],
+    "satirlar": [
+     [
+      "4 × 2.5",
+      "0.8",
+      "4 mm",
+      "4.9",
+      "1.00"
+     ],
+     [
+      "6 × 4",
+      "1.0",
+      "6 mm",
+      "12.6",
+      "2.56"
+     ],
+     [
+      "8 × 5.5",
+      "1.3",
+      "8 mm",
+      "23.8",
+      "4.84"
+     ],
+     [
+      "8 × 6",
+      "1.0",
+      "8 mm",
+      "28.3",
+      "5.76"
+     ],
+     [
+      "10 × 6.5",
+      "1.8",
+      "10 mm",
+      "33.2",
+      "6.76"
+     ]
+    ],
+    "not": "Sizes are always outside × inside diameter. A push-in fitting is chosen by the OUTSIDE diameter, while the bore sets how much air passes. 8×5.5 and 8×6 take the same fitting but differ by 19% in bore area: the thin-wall version flows more, the thick-wall version resists crushing and impact better. The flow column is the ratio of bore areas (area = π × ID² ÷ 4), not a pressure-drop calculation."
+   }
   ]
  },
  {

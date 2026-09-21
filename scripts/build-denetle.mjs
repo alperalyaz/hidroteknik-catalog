@@ -458,6 +458,32 @@ const gorselHata = []
     else if (!img[1].trim()) gorselHata.push(`${yol} — <img> alt metni boş`)
   }
 }
+/**
+ * YABANCI YAZI SİSTEMİ.
+ *
+ * Katalog TR/EN/RU yayımlıyor; latin ve kiril dışında bir yazı sistemi
+ * sayfada bulunmamalı. Gerçek vakayla eklendi (21.09.2026): Rusça pnömatik
+ * hortum SSS'sine "масел и高 температуры" diye bir CJK karakteri karışmıştı —
+ * elle yazılan üç dilli metinde gözle fark edilmiyor, tsc görmüyor, build
+ * geçiyor ve sayfa canlıya öyle çıkıyor.
+ *
+ * Kasten bozulup sınanması gerekmedi: bu adım YAZILIRKEN var olan bir hatayı
+ * yakaladı. Beyaz liste tutulmuyor — meşru işaretler (â, ş, İ, π, Ø, ³) zaten
+ * latin/yunan bloklarında; yalnız katalogda hiçbir gerekçesi olmayan bloklar
+ * aranıyor, o yüzden yanlış alarm üretmiyor.
+ */
+const YABANCI = /[぀-ヿ㐀-䶿一-鿿가-힯֐-׿؀-ۿ฀-๿ऀ-ॿ]/
+const yabanciYazi = []
+for (const f of dosyalar) {
+  const yol = '/' + f.slice(KOK.length + 1).replace(/\.html$/, '')
+  const metin = gorunenHtml(readFileSync(f, 'utf8'))
+  const m = metin.match(YABANCI)
+  if (m) {
+    const i = metin.indexOf(m[0])
+    yabanciYazi.push(`${yol} — ${JSON.stringify(m[0])} … ${metin.slice(Math.max(0, i - 30), i + 30).replace(/\s+/g, ' ')}`)
+  }
+}
+
 console.log(`sayfa ${dosyalar.length} · iç link ${toplamLink}`)
 console.log(`kırık link hedefi : ${kirik.size}`)
 for (const [hedef, kaynak] of [...kirik].slice(0, 10)) {
@@ -479,10 +505,12 @@ console.log(`güncelleme damgası : ${tarihBayat.length}`)
 for (const s of tarihBayat.slice(0, 10)) console.log(`   ✗ ${s}`)
 console.log(`düz metin çıktısı : ${duzMetin.length}`)
 for (const s of duzMetin.slice(0, 10)) console.log(`   ✗ ${s}`)
+console.log(`yabancı yazı sist.: ${yabanciYazi.length}`)
+for (const y of yabanciYazi.slice(0, 10)) console.log(`   ✗ ${y}`)
 console.log(`rehber görseli    : ${gorselHata.length}`)
 for (const s of gorselHata.slice(0, 10)) console.log(`   ✗ ${s}`)
 
 const hata =
-  kirik.size + sizinti.length + yinelenen.length + icKod.length + kanonik.length + ruCekimHata.length + sayiBicim.length + tarihBayat.length + duzMetin.length + gorselHata.length
+  kirik.size + sizinti.length + yinelenen.length + icKod.length + kanonik.length + ruCekimHata.length + sayiBicim.length + tarihBayat.length + duzMetin.length + gorselHata.length + yabanciYazi.length
 console.log(hata === 0 ? '\n✅ temiz' : `\n⛔ ${hata} sorun`)
 process.exit(hata === 0 ? 0 : 1)
