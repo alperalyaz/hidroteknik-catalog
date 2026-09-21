@@ -736,19 +736,44 @@ etkili oluşu, kullanım alanı (çöp kamyonu / мусоровоз), ve karşı
 kullandığı SEKTÖR terimleri. Bunlar sektörün ortak malıdır.
 
 **ALINMAZ:** firma adı, kişi adı, fiyat, toplam tutar, ödeme koşulu, IBAN/SWIFT,
-vergi numarası, e-posta, ve **karşı tarafın kendi çizim kodu**. Sonuncusu
-sanılanın aksine evrensel değildir: 13 kalemlik bir listede yalnız BİR kalemde
-kod vardı (`HC2X.1.80.40.400.000`) — evrensel bir şema olsaydı on üçünde de
-olurdu. O kod alıcının kendi mühendisliğidir, kimse aramaz, ve yayımlanması
-"yayımlanan kod ÜRETİCİNİNDİR" kuralının ihlalidir.
+vergi numarası, e-posta, ve **proje çizim kodu**.
+
+Çizim kodu hakkında önce yanlış sonuç çıkarıldı ve düzeltildi. Sözleşme ekinde
+13 kalemin yalnız birinde kod görünüyordu, buradan "şema sistematik değil"
+denmişti. Çizimler PNG'ye çevrilip GÖRSEL olarak okununca şema net çıktı:
+
+```
+HCD.1.50.32.100.000      HCD  = tek kademeli
+HCD.1.63.40.630.000      HC2X = çift kademeli
+HCD.1.100.50.500.000            │  │  │   │
+HC2X.1.80.40.400.000           tip çap mil strok
+```
+
+Yani sistematik. Yine de yayımlanmaz — sebebi gizlilik değil FAYDASIZLIK:
+bu bir proje çizim numarasıdır, kimse `HCD.1.63.40.630.000` aramaz.
+
+**Ders: metin katmanı olmayan PDF'ten "veri yok" sonucu çıkarma.** Sekiz
+çizimden metin çıkarma denendi ve yalnız pdfFactory filigranı döndü; bundan
+"çıkarılacak bir şey yok" sonucu çıkarıldı. Oysa çizimler PNG'ye çevrilip
+görsel okununca hem kod şeması hem de tüm çalışma değerleri (200/250 bar,
+−30…+80 °C, 0,5 m/s, G3/8 ve G1/2 bağlantı, göz delik çapları) oradaydı.
 
 **Yuvarlak olmayan ölçü, en ikna edici veridir.** Teslim listesindeki 369 mm ve
 590 mm stroklar uydurulamaz; ölçüye göre imalat yapıldığının kanıtı ve
 yuvarlanmış bir katalog aralığından çok daha inandırıcı. Bu yüzden tabloya
 olduğu gibi girdiler.
 
-Build sonrası doğrulandı: `LRT` · `ЛРТ` · `Анисимова` · `HC2X` · IBAN · SWIFT ·
-hesap no · vergi no · tutar — üretilen 318 sayfanın hiçbirinde geçmiyor.
+Build sonrası doğrulandı: `LRT` · `ЛРТ` · `Анисимова` · `HCD.1` · `HC2X` ·
+IBAN · SWIFT · hesap no · vergi no · tutar — üretilen 318 sayfanın hiçbirinde
+geçmiyor.
+
+**Çizimde bir hata bulundu ve DURUYOR.** `HCD.1.63.40.630.000` çiziminde çekme
+kuvveti 41,4 kN yazıyor; π(63²−40²)/4 × 20 N/mm² = **37,2 kN** verir (%10 sapma).
+Aynı çizimin itme kuvveti (62,3) ve diğer üç çizimin hem itmesi hem çekmesi
+hesapla birebir tutuyor — yani hata tek rakamda. `tablo-uret.mjs` içindeki
+`CIZIM_DOGRULAMA` bunu her koşumda raporlar. Tablo HESAPLANAN değeri yayımlar:
+fizik doğrulanabilir, çizimdeki rakam değil. Çizimin kendisi müşteriye gitmiş
+durumda ve kontrol edilmeli.
 
 ### Tedarikçi adı hiçbir yerde geçmez
 
