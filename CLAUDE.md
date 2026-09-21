@@ -541,9 +541,11 @@ tutmuyorsa damgayı SİLER. Beş senaryo da elle sınandı (ofis IP'si, yabancı
 vekil zinciri `x-forwarded-for: ofis, 10.0.0.1`, ofis dışına çıkan damgalı
 cihaz, ayar tanımsız).
 
-**IP statik değilse filtre sessizce çürür.** İşyeri IP'si değiştiği gün eleme
-durur ve o IP'yi alan yabancı biri elenmeye başlar. Ne build ne denetim bunu
-görür. IP değişirse `IC_IPLER` elle güncellenmelidir.
+**IP STATİKTİR** (doğrulandı 21.09.2026, kullanıcı beyanı) — filtre bu yüzden
+güvenilir. Dinamik olsaydı sessizce çürürdü: IP'nin değiştiği gün eleme durur ve
+o IP'yi devralan yabancı biri elenmeye başlar; ne build ne denetim bunu görür.
+Bağlantı değişirse (hat taşınması, yeni ofis, ikinci şube) `IC_IPLER` ELLE
+güncellenmelidir; liste virgülle çoğaltılabilir.
 
 ### Tedarikçi adı hiçbir yerde geçmez
 
