@@ -37,6 +37,21 @@ export const FIRMA = {
 /** Desteklenen diller. */
 export const DILLER = ['tr', 'en', 'ru'] as const
 export type Dil = (typeof DILLER)[number]
+
+/**
+ * `[lang]` segmentinden gelen dizgenin gerçekten desteklenen bir dil olup
+ * olmadığını ÇALIŞMA ZAMANINDA sınar.
+ *
+ * Gerekçesi ölçülmüş bir hata: rota `as Dil` diye cast ediyordu ve cast
+ * yalandır — tsc'yi susturur, çalışma zamanında hiçbir şey doğrulamaz.
+ * `/boyle-bir-sayfa-yok` adresi `[lang]` ile eşleşip lang="boyle-bir-sayfa-yok"
+ * oluyor, `METIN[lang]` undefined dönüyor ve sayfa `.find` üzerinde çöküp
+ * 500 veriyordu (21.09.2026). Alt segmentlerin hepsi `if (!k) notFound()`
+ * yapıyordu; yalnız dilin kendisi denetimsizdi.
+ */
+export function gecerliDil(d: string): d is Dil {
+  return (DILLER as readonly string[]).includes(d)
+}
 export const VARSAYILAN_DIL: Dil = 'tr'
 
 /** Dil değiştirici ve <html lang> için görünen ad. */

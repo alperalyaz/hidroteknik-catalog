@@ -393,6 +393,52 @@ metin var. Google'ın ölçütü şudur: "yerelleştirilmiş sürümler yalnız 
 çevrilmemişse kopya sayılır." Ayrıca 305 sayfanın `<title>`, `description` ve
 `canonical` alanlarının hepsi tekil.
 
+### Olmayan adres 404 vermeli — 500 DEĞİL
+
+21.09.2026'da ölçüldü: dil segmentine girmeyen her adres **500** dönüyordu.
+
+```
+/tr/boyle-bir-kategori-yok   404   ← doğru
+/tr/profil/k999              404   ← doğru
+/boyle-bir-sayfa-yok         500   ← YANLIŞ
+/de                          500   ← YANLIŞ
+/olmayan.txt                 500   ← YANLIŞ
+```
+
+**Neden 500 zararlı:** Google 5xx'i "sunucu bozuk, sonra gel" diye okur ve
+adresi dizin kuyruğunda TUTAR; 404 "bunu sil" der. Dahası yaygın 5xx,
+Googlebot'un tüm siteyi tarama hızını kısar — bu sitenin zaten en büyük sorunu
+Google'ın taramayı bırakmış olması, yani hata tam da kanamanın olduğu yerdeydi.
+
+**Sebep `as Dil` castıydı.** Alt segmentlerin HEPSİ kendi parametresini
+sınıyordu (`if (!k) notFound()`), yalnız dilin kendisi sınanmıyordu:
+
+```ts
+const lang = langHam as Dil        // cast yalandır: tsc susar, çalışma anında
+                                   // hiçbir şey doğrulanmaz
+```
+
+`/de` adresi `[lang]` ile eşleşip `lang="de"` oluyor, `METIN[lang]` undefined
+dönüyor, sayfa `.find` üzerinde çöküyordu. tsc temiz, build temiz, denetim
+temiz — hiçbiri göremez, çünkü hata TİP DÜZEYİNDE değil çalışma anındadır.
+
+**Layout'a denetim koymak YETMEZ.** Layout ile page bağımsız render ediliyor;
+layout `notFound()` atsa bile page bileşeni yine çağrılıyor ve yine çöküyor.
+Ölçüldü: yalnız layout denetimiyle `/de` hâlâ 500 veriyordu.
+
+**Asıl kapı `dynamicParams = false`** (`app/[lang]/layout.tsx`). Next.js,
+`generateStaticParams`'ın döndürmediği bir `lang` için sayfayı hiç çalıştırmaz.
+Her sayfaya tek tek denetim koymak kırılgandır — yeni aile eklenince unutulur.
+Alt segmentler etkilenmez, onlar kendi `notFound()`larını çağırmaya devam eder.
+
+**Kök 404 sayfası `<html>` ve `<body>`yi KENDİ açar** (`app/not-found.tsx`),
+çünkü `app/layout.tsx` yalnız `children` döndürür — gerçek kök gövde
+`app/[lang]/layout.tsx`'tedir. Dil TR sabittir (varsayılan ve x-default hedefi)
+ama üç dilin girişi de listelenir; kök seviyesinde adres bize dil söylemiyor.
+
+Regresyon olarak on yol sınandı: beş 404 hâli, dört çalışan aile ve kökün
+hâlâ 308 verdiği. Sunucu günlüğünde sıfır hata.
+
 ### Rehber görselleri
 
 Yedi teknik rehberin her birinde bir sahne görseli var (`public/rehber/*.webp`).

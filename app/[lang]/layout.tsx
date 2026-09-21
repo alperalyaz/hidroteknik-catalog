@@ -1,6 +1,7 @@
 import Link from 'next/link'
+import { notFound } from 'next/navigation'
 import Script from 'next/script'
-import { DILLER, DIL_ADI, FIRMA, ANA_SITE, HESAPLA_URL, type Dil } from '@/lib/site'
+import { DILLER, DIL_ADI, FIRMA, ANA_SITE, HESAPLA_URL, gecerliDil, type Dil } from '@/lib/site'
 import { METIN } from '@/lib/metin'
 import { isletmeSchema, jsonLd } from '@/lib/schema'
 import { kategorilerIcin, AILELER } from '@/lib/veri'
@@ -11,6 +12,21 @@ import { Analitik } from '@/app/analitik'
 export function generateStaticParams() {
   return DILLER.map((lang) => ({ lang }))
 }
+
+/**
+ * ASIL KAPI BURASI. Next.js, generateStaticParams'ın döndürmediği bir `lang`
+ * geldiğinde sayfayı hiç çalıştırmaz, doğrudan 404 verir.
+ *
+ * Neden layout'taki notFound() yetmiyor: layout ile page BAĞIMSIZ render
+ * ediliyor. Layout `notFound()` atsa bile page bileşeni yine çağrılıyor ve
+ * `lang` geçersizken `METIN[lang]` undefined dönüp `.find` üzerinde çöküyor.
+ * Ölçüldü (21.09.2026): yalnız layout denetimiyle /de hâlâ 500 veriyordu.
+ *
+ * Her sayfaya tek tek denetim koymak da kırılgan: yeni bir sayfa ailesi
+ * eklenince unutulur ve hata sessizce geri gelir. Bu tek satır bütün
+ * [lang] altını yapısal olarak kapatır.
+ */
+export const dynamicParams = false
 
 /**
  * Gerçek kök gövde burasıdır (<html>/<body>). app/layout.tsx [lang] parametresini
@@ -25,7 +41,10 @@ export default async function DilLayout({
   params: Promise<{ lang: string }>
 }) {
   const { lang: langHam } = await params
-  const lang = langHam as Dil
+  // Dil ALT SEGMENTLER gibi doğrulanır. Layout tüm [lang] altını sardığı için
+  // buradaki tek denetim bütün aileyi korur; cast tek başına yalandır.
+  if (!gecerliDil(langHam)) notFound()
+  const lang: Dil = langHam
   const m = METIN[lang]
   const kategoriler = kategorilerIcin(lang)
 
