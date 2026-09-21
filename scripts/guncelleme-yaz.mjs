@@ -14,8 +14,12 @@
  * Her build'de bugünü damgalamak `dateModified`i yalancı yapar: 306 sayfanın
  * hepsi her deploy'da "bugün değişti" der. Google, tutarlı ve doğrulanabilir
  * olmayan tarih sinyallerini dikkate almayı bırakır — yani yalan söyleyen
- * tarih, hiç tarih olmamasından kötüdür. `app/sitemap.ts` hâlâ bu hatayı
- * yapıyor (lastModified: new Date()); ayrı bir iş olarak duruyor.
+ * tarih, hiç tarih olmamasından kötüdür.
+ *
+ * `app/sitemap.ts` de 21.09.2026'dan beri bu dosyayı okuyor; öncesinde
+ * `new Date()` kullanıyordu. İki sinyalin AYNI kaynaktan gelmesi şart:
+ * sitemap "bugün değişti" derken JSON-LD "24 Ağustos" derse çelişki,
+ * hiç tarih vermemekten kötüdür.
  */
 import { execFileSync } from 'node:child_process'
 import { writeFileSync, readFileSync } from 'node:fs'
@@ -31,6 +35,9 @@ const AILE_DOSYALARI = {
   rehber: ['data/rehberler.json'],
   silindirParca: ['data/silindir-parcalari.json'],
   ureticiKod: ['data/uretici-kodlari.json'],
+  // Elle yazılmış sayfanın "verisi" sayfanın KENDİSİDİR; besleyen bir JSON yok.
+  // Yalnız sitemap'in lastmod'u için gerekli; JSON-LD bu aileyi kullanmıyor.
+  denizliHidrolik: ['app/[lang]/denizli-hidrolik/page.tsx'],
 }
 
 function sonDegisim(dosya) {
