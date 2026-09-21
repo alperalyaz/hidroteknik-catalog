@@ -13,7 +13,8 @@
     "ornek-denetle": "node scripts/ornek-denetle.mjs",
     "kod-gocur": "node scripts/kod-gocur.mjs",
     "profil": "node scripts/profil-uret.mjs",
-    "guncelleme": "node scripts/guncelleme-yaz.mjs"
+    "guncelleme": "node scripts/guncelleme-yaz.mjs",
+    "indexnow": "node scripts/indexnow.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

@@ -474,8 +474,22 @@ Tarih neden dosyaya YAZILIYOR: Vercel sığ klon yapıyor, build sırasında
 commit'lenir. Veri dosyasına dokunduysan `npm run guncelleme` çalıştır —
 denetimin sekizinci adımı damganın bayatladığını yakalar.
 
-**`app/sitemap.ts` hâlâ `new Date()` kullanıyor** ve 304 URL'nin hepsine her
-deploy'da bugünü basıyor. Aynı hastalık, ayrı iş olarak duruyor.
+**`app/sitemap.ts` de artık aynı dosyayı okuyor** (21.09.2026). Öncesinde
+`new Date()` kullanıyordu ve her deploy'da 316 URL'nin HEPSİNE o anki zaman
+damgasını basıyordu; canlıda ölçüldü, benzersiz `lastmod` sayısı **1**'di.
+Onarımdan sonra 2: 292 URL 2026-08-24, 24 URL 2026-07-30 (silindir parça
+ailesi o gün değişmiş). Az sayıda farklı tarih olması normaldir — veri
+dosyalarının çoğu gerçekten aynı gün değişti.
+
+**İki sinyal AYNI kaynaktan gelmek zorunda.** Sitemap "bugün değişti" derken
+JSON-LD "24 Ağustos" derse bu çelişkidir ve çelişki, hiç tarih vermemekten
+kötüdür. İkisi de `data/guncelleme.json` okur.
+
+Gün hassasiyeti (`YYYY-MM-DD`) kasıtlıdır ve sitemap şemasında geçerlidir;
+saat/salise uydurmak elimizde olmayan bir kesinlik iddia etmek olurdu.
+
+Elle yazılmış `denizli-hidrolik` sayfasının besleyen JSON'u yok, o yüzden
+`guncelleme-yaz.mjs` içinde ailesi sayfanın KENDİ dosyasına bağlandı.
 
 Ana sayfalarda (`/tr`, `/en`, `/ru`) sayfa düzeyinde hiç yapılandırılmış veri
 YOKTU — yalnız yerleşimden gelen LocalBusiness vardı. `anaSayfaSchema()`
@@ -546,6 +560,36 @@ güvenilir. Dinamik olsaydı sessizce çürürdü: IP'nin değiştiği gün elem
 o IP'yi devralan yabancı biri elenmeye başlar; ne build ne denetim bunu görür.
 Bağlantı değişirse (hat taşınması, yeni ofis, ikinci şube) `IC_IPLER` ELLE
 güncellenmelidir; liste virgülle çoğaltılabilir.
+
+### IndexNow: Yandex ve Bing'e bildirim — Google'a DEĞİL
+
+`npm run indexnow` kuru çalışır, `-- --gonder` ile bildirir.
+
+**Google bu yoldan kapsanmaz ve script öyleymiş gibi davranmaz.** Google
+IndexNow'a katılmıyor; ayrıca Google'a sayfa bildirmenin genel bir API'si
+YOK: Search Console'un "Request Indexing" düğmesinin arkasında herkese açık
+bir uç bulunmuyor, ayrı Indexing API ise yalnız iş ilanı ve canlı yayın
+kabul ediyor. Google için elde kalan tek otomatik yol sitemap göndermek ve
+Google sitemap'i zaten kendisi indiriyor.
+
+**Asıl kazanç Yandex.** Rusya'da arama pazarının çoğunluğu orada, katalog da
+Rusça yayımlıyor. Ölçüldü (21.09.2026): dört ayda Rusya'dan 13 gösterim,
+0 tık; tüm BDT 33 gösterim, 0 tık. Bing aynı bildirimle kapsanıyor.
+
+**Anahtar gizli değil, olamaz.** Protokol sahipliği anahtarın alan adında
+YAYIMLANMASIYLA kanıtlıyor; dosya `public/` altında ve herkese açık olmak
+ZORUNDA. Depo açık olduğu için commit'lenmesi ek sızıntı yaratmaz. Anahtarı
+bilen biri yalnız bizim alan adımıza ait adresleri bildirebilir.
+
+**Sessiz başarısızlığın yolu:** anahtar dosyası canlıda yoksa motor bildirimi
+reddeder, ama bazı uçlar buna yine 200 döner — yani "gönderdim" diye rapor
+edip hiçbir şey olmamış olabilir. Script bu yüzden gönderimden ÖNCE dosyayı
+indirip içeriğini anahtarla karşılaştırır ve tutmuyorsa durur. Denetim kasten
+bozulup sınandı: anahtar henüz deploy edilmemişken script HTTP 500 görüp
+gönderimi durdurdu.
+
+**Sıra önemli: önce deploy, sonra bildirim.** Anahtar dosyası yayında
+olmadan gönderim anlamsızdır.
 
 ### Tedarikçi adı hiçbir yerde geçmez
 
