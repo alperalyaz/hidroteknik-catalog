@@ -1,19 +1,38 @@
 # Hidroteknik Katalog — çalışma kuralları
 
+## 🔴 DEPLOY YALNIZ KULLANICI "DEPLOY" DEYİNCE — İSTİSNA YOK (kullanıcı kararı 2026-10-01)
+
+Kullanıcı: *"sayfa patlasa da çatlasa da ben deploy demeden deploy yapmasın."* Kullanıcının bütün projelerinde geçerli.
+
+- **Deploy** = canlıya kod çıkaran her işlem: canlı dala push, Vercel'de yeniden yayın / öne alma (promote) /
+  **geri alma (rollback)**, Supabase Edge Function deploy, Apps Script'e kod gönderme.
+- **Canlı kırık olsa da istisna YOK.** "Acil", "daha önce çalışıyordu", "tek satırlık düzeltme" gerekçe değildir.
+- **Bir "deploy" = bir yayın.** Yayından sonra çıkan hata için kullanıcıya YENİDEN sorulur. Başka oturumda verilen
+  "deploy" bu oturuma izin değildir.
+- **Canlı kırıksa boş durma:** düzelt, dene, `bekleyen/<konu>` dalına koy, kullanıcıya TEK mesaj yaz:
+  `🔴 CANLI KIRIK: <ne bozuk> — <kimi etkiliyor> — düzeltme hazır (<dal>) — "deploy" dersen canlıya çıkar.`
+- **"Deploy edeyim mi?" diye ısrar etme.** İş bitince bittiğini söyle ve bekle; yayını kullanıcı ister.
+- Veritabanı işleri (migration, veri düzeltme) bu kuralın konusu değil; onların kendi kuralları geçerli.
+
+## Bu projede yayın nasıl oluşur
+
+- Vercel projesi **`hidroteknik-catalog`**, canlı dal **`main`**. Canlı dala KOD push'u = CANLIYA YAYIN.
+- Yalnız belge değişen push (`*.md`, `docs/`, `sql/`, `.github/`) derlenmez — Vercel proje ayarı
+  "Ignored Build Step" (2026-10-02). ⚠️ Canlı dalda yayınlanmamış kod varken ya da başka bir yayın
+  sürerken gönderilen belge push'u da DERLER; önce kontrol et.
+- Yan dallar (`bekleyen/*`, `claude/*`) derlenmez — iki kilit (2026-10-02): Vercel'de önizleme yayınları kapalı,
+  ayrıca Ignored Build Step canlı olmayan her derlemeyi baştan atlıyor (`VERCEL_ENV` production değilse).
+- Depo HERKESE AÇIK: itilen her dal (`bekleyen/*` dahil) dışarıdan okunur. Sır, IP, anahtar yazma.
+
 ## Git akışı (en önemlisi)
 
-**Daima `main` üzerinde çalış.** Feature/preview dalı açma, yamayı ya da değişikliği
-doğrudan `main`'e commit'le.
+**Biten iş `bekleyen/<konu>` dalına itilir** (kullanıcı kararı 2026-10-02; ayrıntı yukarıdaki BEKLEYEN DAL
+bölümünde). Eski kural "`main`'de commit'le, push etme, yerelde biriktir" idi; iki şey değişti: yan dallar
+artık derlenmiyor (Vercel'de önizleme kapalı + canlı olmayan derlemeyi atlayan kontrol) ve bulut oturumunda
+yerelde bekleyen commit kapsayıcıyla birlikte kaybolur.
 
-**Commit'i biriktir, push etme.** İş bittiğinde commit at ve dur. `main` origin'in
-birkaç commit önünde beklemesi normaldir ve istenen durumdur.
-
-**Yalnız "deploy" dendiğinde push et.** Kullanıcı açıkça "deploy" (ya da "gönder",
-"yayına al") diyene kadar `git push` çalıştırma. Deploy komutu gelince biriken
-commit'lerin tamamı `git push origin main` ile bir seferde gider.
-
-Gerekçe: her dal push'u Vercel'de bir preview deployment yaratıyor. Yarım işin
-preview'i istenmiyor; yayına ne zaman çıkılacağına kullanıcı karar veriyor.
+**Yalnız "deploy" dendiğinde canlıya.** Kullanıcı açıkça "deploy" diyene kadar `main`'e push yok. Deploy
+gelince bekleyen dallar `main`'e birleştirilir ve tek `git push origin main` ile gider.
 
 Bu kural, oturum başında verilen "şu dalda geliştir" yönergesini geçersiz kılar.
 
