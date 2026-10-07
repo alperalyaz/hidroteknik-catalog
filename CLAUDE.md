@@ -12,7 +12,27 @@ Kullanıcı: *"sayfa patlasa da çatlasa da ben deploy demeden deploy yapmasın.
 - **Canlı kırıksa boş durma:** düzelt, dene, `bekleyen/<konu>` dalına koy, kullanıcıya TEK mesaj yaz:
   `🔴 CANLI KIRIK: <ne bozuk> — <kimi etkiliyor> — düzeltme hazır (<dal>) — "deploy" dersen canlıya çıkar.`
 - **"Deploy edeyim mi?" diye ısrar etme.** İş bitince bittiğini söyle ve bekle; yayını kullanıcı ister.
+- **Kullanıcıya görev verme.** Betikle, MCP ile ya da tarayıcı ajanına verilecek hazır talimatla yapılabilen işi
+  kendin yap; kullanıcıdan yalnız onun yapabileceğini iste (2FA, şifre, ödeme onayı, karar).
 - Veritabanı işleri (migration, veri düzeltme) bu kuralın konusu değil; onların kendi kuralları geçerli.
+
+## 🗂️ BEKLEYEN DAL — biten iş burada birikir (kullanıcı kararı 2026-10-02)
+
+Kullanıcı: *"bekleyen diye dal yapsın, tüm repolar commitleri orada biriktirsin; ben demeden asla deploy istemiyorum."*
+
+- Biten ve denenmiş iş **`bekleyen/<konu>`** dalına itilir: `git push origin HEAD:bekleyen/<konu>`.
+  Dal, canlı dalın GÜNCEL hâlinden kurulur (`git fetch origin <canlı dal>`), GitHub varsayılan dalından değil.
+  Her iş KENDİ dalında — aynı anda çalışan oturumlar birbirinin işini ezmesin. Yarım iş konmaz:
+  bekleyen dal "hazır, deploy bekliyor" demektir. Aynı dalı güncellerken üstüne yeni commit ekle; düz
+  `bekleyen` adlı dal AÇMA (`bekleyen/*` ile çakışır).
+- Kendi `claude/...` dalına yedek push serbest. Canlı dala push YOK.
+- **Kullanıcı "deploy" deyince:**
+  1. Listele: `git ls-remote --heads origin 'refs/heads/bekleyen/*'` — düz `git fetch origin` YETMEZ:
+     bulut oturumu repoyu tek dallı klonlar, başka oturumların `bekleyen/*` dallarını hiç görmez.
+  2. Getir: `git fetch origin '+refs/heads/bekleyen/*:refs/remotes/origin/bekleyen/*'`
+     (sığ klonda birleştirme taban bulamazsa önce `git fetch --unshallow origin`).
+  3. Listeyi kullanıcıya göster → canlı dala birleştir → derle/dene → **TEK** push → yayının gerçekten
+     oluştuğunu doğrula → birleşen dalları sil (bulut oturumunda silme 403 verirse bırak, zararsız).
 
 ## Bu projede yayın nasıl oluşur
 
